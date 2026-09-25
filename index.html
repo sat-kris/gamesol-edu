@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <script src="generators.js"></script>
+<script src="play.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Caveat:wght@600&display=swap">
 <style>
 :root{
@@ -276,6 +277,107 @@ h2{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-
 .fig-cells,.fig-tally{max-width:600px}
 .paper td:first-child{font-weight:700;white-space:nowrap}
 .tbl table.paper td,.tbl table.paper th{text-align:left}
+
+/* ---------- play & learn ---------- */
+.grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.lessonList button svg{width:18px;height:18px;color:var(--accent)}
+.play{position:relative;border:2px solid var(--accent);border-radius:14px;background:var(--sheet);padding:16px;display:flex;flex-direction:column;gap:10px;overflow:hidden}
+.play-h{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.play-h strong{font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:20px}
+.play-badge{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:var(--accent);color:var(--sheet);padding:3px 9px;border-radius:999px}
+.play-stars{margin-left:auto;color:#D99A00;font-weight:700}
+.play-say{margin:0;color:var(--ink-soft);font-size:15px}
+.play-stage{display:flex;flex-direction:column;gap:10px}
+.play-fb{margin:0;min-height:1.5em;font-weight:700;font-size:15px}
+.play-fb.good{color:var(--good)} .play-fb.bad{color:var(--bad)}
+.pop{position:absolute;right:24px;top:10px;font-size:34px;color:#F5B400;animation:popstar .9s ease-out forwards;pointer-events:none}
+@keyframes popstar{0%{transform:scale(.3);opacity:0}30%{transform:scale(1.3);opacity:1}100%{transform:translateY(-30px) scale(1);opacity:0}}
+.prow{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.pbtn{font:inherit;font-weight:700;font-size:14px;border-radius:10px;border:1.5px solid var(--line-strong);background:var(--sheet);color:var(--ink);padding:8px 13px;cursor:pointer;min-height:40px}
+.pbtn:hover{border-color:var(--accent);color:var(--accent)}
+.pbtn.primary{background:var(--accent);border-color:var(--accent);color:var(--sheet)}
+.pbtn.light{background:var(--accent-soft);border-color:transparent}
+.pbtn.key{min-width:44px;font-size:17px}
+.pbtn:active{transform:scale(.96)}
+.pin{font:inherit;font-size:17px;width:9em;max-width:100%;padding:8px 10px;border-radius:10px;border:1.5px solid var(--line-strong);background:var(--paper);color:var(--ink)}
+.plab{display:flex;align-items:center;gap:8px;font-weight:700;font-size:14px}
+.plab input[type=range]{width:200px;max-width:55vw;accent-color:var(--accent)}
+.pbig{font-size:18px;margin:0}
+.ptask{margin:0;font-size:15px}
+.phint{margin:0;font-size:13px;color:var(--ink-soft)}
+.ptype{display:inline-block;padding:1px 9px;border-radius:999px;background:var(--note);color:var(--note-ink);font-weight:700}
+.psvg{width:100%;max-width:340px;height:auto;align-self:center;background:var(--paper);border-radius:10px}
+.psvg.wide{max-width:520px}
+.psvg.drag{touch-action:none;cursor:grab}
+.psvg text{font-family:"Atkinson Hyperlegible",system-ui,sans-serif}
+.pd1{fill:var(--accent)} .pd2{fill:var(--series2)} .pd3{fill:var(--series3)}
+.pline{stroke:var(--accent);stroke-width:1.6;opacity:0;animation:fadein .3s forwards}
+@keyframes fadein{to{opacity:.85}}
+.pline2{stroke:var(--accent);stroke-width:3} .pah{fill:var(--accent)}
+.phandle{fill:var(--accent);fill-opacity:.25;stroke:var(--accent);stroke-width:2.5;cursor:grab}
+.phandlebar{fill:var(--series2);fill-opacity:.35;stroke:var(--series2);stroke-width:1.5;cursor:ns-resize}
+.plbl{fill:var(--ink);font-weight:700;font-size:15px}
+.parm{stroke:var(--ink);stroke-width:3;stroke-linecap:round} .parm2{stroke:var(--accent);stroke-width:3;stroke-linecap:round}
+.pwedge{fill:var(--series2);fill-opacity:.2;stroke:var(--series2);stroke-width:1.5}
+.pright{fill:none;stroke:var(--series2);stroke-width:2}
+.pdot{fill:var(--ink)}
+.pprot{fill:var(--accent-soft);stroke:var(--line-strong)} .ptick{stroke:var(--ink-soft)}
+.pscale{font-size:12px} .pscale.in{fill:var(--accent);font-weight:700} .pscale.out{fill:var(--ink-soft);font-size:10.5px}
+.pinword{color:var(--accent);font-weight:700}
+.pgrid{stroke:var(--line)} .pax{fill:var(--ink-soft);font-size:12px}
+.pbar{fill:var(--accent)} .pbar.on{fill:var(--series2)} .pbar2{fill:var(--series2)}
+.pguide{stroke:var(--series2);stroke-dasharray:5 4;stroke-width:1.5}
+.ptl{stroke:var(--ink);stroke-width:2.5;stroke-linecap:round}
+.minitable{display:flex;flex-wrap:wrap;gap:6px}
+.minitable span{min-width:40px;text-align:center;padding:4px 8px;border-radius:8px;background:var(--paper);border:1px solid var(--line);font-variant-numeric:tabular-nums}
+.minitable span.on{background:var(--series2);border-color:var(--series2);color:#fff;font-weight:700}
+.seqcards{display:flex;flex-wrap:wrap;gap:8px}
+.seqcard{display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:58px;min-height:58px;padding:6px 10px;border-radius:12px;background:var(--accent-soft);font-variant-numeric:tabular-nums}
+.seqcard b{font-size:22px} .seqcard small{color:var(--series2);font-weight:700}
+.seqcard.q{background:var(--note);color:var(--note-ink)}
+.cells{display:flex;flex-wrap:wrap;gap:6px}
+.cell{font:inherit;font-size:18px;font-weight:700;min-width:64px;padding:12px 8px;border-radius:10px;border:2px solid var(--line-strong);background:var(--sheet);color:var(--ink);cursor:pointer;font-variant-numeric:tabular-nums}
+.cell.on{border-color:var(--accent);background:var(--accent-soft)}
+.cell.sc{border-color:var(--good);background:var(--good-soft)} .cell.wrong{border-color:var(--bad);background:var(--bad-soft)}
+.pdisplay{font-size:28px;font-variant-numeric:tabular-nums;padding:10px 14px;border-radius:12px;background:var(--paper);border:1px solid var(--line)}
+.pdisplay small{font-size:15px;color:var(--ink-soft)}
+.pdisplay.big{font-size:36px;letter-spacing:.06em;text-align:center}
+.pdisplay .tail{color:var(--series2);font-weight:700;text-decoration:underline;text-underline-offset:6px}
+.keys{display:flex;flex-wrap:wrap;gap:6px}
+.steps .step{padding:6px 10px;border-bottom:1px dashed var(--line);font-variant-numeric:tabular-nums}
+.palin{color:var(--good)}
+.dcards{display:flex;gap:10px}
+.dcard{width:56px;height:70px;border-radius:12px;background:var(--accent);color:var(--sheet);font-size:34px;font-weight:700;display:flex;align-items:center;justify-content:center;box-shadow:0 3px 0 rgba(0,0,0,.18)}
+.pitem{font-size:64px;text-align:center;line-height:1.2}
+.pitem.num{font-family:"Young Serif",Georgia,serif;font-size:72px;color:var(--accent)}
+.tallies{display:flex;flex-direction:column;border:1px solid var(--line-strong);border-radius:10px;overflow:hidden}
+.trow{display:grid;grid-template-columns:9em 1fr 6em;gap:8px;align-items:center;padding:6px 10px;border-bottom:1px solid var(--line)}
+.trow.th{background:var(--accent-soft);font-weight:700;font-size:13px}
+.trow span:last-child{text-align:center;font-weight:700}
+.prows{display:flex;flex-direction:column;gap:6px}
+.prowi{display:grid;grid-template-columns:10em 1fr auto;gap:8px;align-items:center;padding:6px 8px;border:1px solid var(--line);border-radius:10px}
+.icons{display:flex;flex-wrap:wrap;gap:2px;font-size:22px}
+.ico.half{clip-path:inset(0 50% 0 0)}
+.pctl{display:flex;gap:4px}
+.rects{display:flex;flex-wrap:wrap;gap:14px;align-items:flex-end}
+.rects figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:4px}
+.rects figcaption{font-size:13px;font-weight:700}
+.sieve{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:3px;max-width:460px}
+.sieve span{text-align:center;padding:5px 0;border-radius:6px;font-size:13px;font-variant-numeric:tabular-nums;background:var(--paper)}
+.sieve span.x{color:var(--ink-soft);text-decoration:line-through;opacity:.45}
+.sieve span.p{background:var(--good-soft);color:var(--good);font-weight:700;box-shadow:inset 0 0 0 2px var(--good);border-radius:50%}
+.fcompare{display:flex;flex-direction:column;gap:10px}
+.fchips{display:flex;flex-wrap:wrap;gap:5px;margin-top:4px}
+.fchips span{padding:3px 9px;border-radius:999px;background:var(--paper);border:1px solid var(--line)}
+.fchips span.com{background:var(--series2);border-color:var(--series2);color:#fff;font-weight:700}
+.fchips span.one{background:var(--good-soft);border-color:var(--good);font-weight:700}
+.ladder2{display:flex;flex-direction:column;width:max-content;font-size:20px;font-variant-numeric:tabular-nums}
+.ladder2 .lr{display:grid;grid-template-columns:3em 5em}
+.ladder2 .lp{border-right:2px solid var(--ink);padding:2px 10px;text-align:right;color:var(--series2);font-weight:700}
+.ladder2 .lv{border-bottom:2px solid var(--ink);padding:2px 10px}
+.playsec{display:flex;flex-direction:column;gap:10px;padding-top:6px}
+@media (max-width:640px){.grid.three{grid-template-columns:1fr}.trow{grid-template-columns:6.5em 1fr 4em}.prowi{grid-template-columns:1fr auto}.prowi .icons{grid-column:1/-1;order:3}.dcard{width:46px;height:58px;font-size:28px}}
+@media (prefers-reduced-motion:reduce){.pop,.pline{animation:none;opacity:.85}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
@@ -373,8 +475,9 @@ function renderHome(){
         '</span></label>').join("")+
       '</div>'+soonLine(notOngoing(subj.chapters))+'</div>';
     if(chap&&chap.tutor){
-      if(sel.mode!=="tutor"&&sel.mode!=="quiz")sel.mode="tutor";
-      h+='<div class="step"><h2>What do you want to do?</h2><div class="grid two modes">'+
+      if(!["tutor","quiz","play"].includes(sel.mode))sel.mode="tutor";
+      h+='<div class="step"><h2>What do you want to do?</h2><div class="grid three modes">'+
+        '<label class="choice"><input type="radio" name="mode" value="play"'+(sel.mode==="play"?" checked":"")+'><span><span class="big">'+ICON_PLAY+' Play &amp; learn</span><small>Hands-on activities: drag, tap and build to see how each idea works. Great for starting a topic.</small></span></label>'+
         '<label class="choice"><input type="radio" name="mode" value="tutor"'+(sel.mode==="tutor"?" checked":"")+'><span><span class="big">'+ICON_BOOK+' Chapter tutor</span><small>Learn each topic simply, see worked examples, then revise smart and get exam-ready.</small></span></label>'+
         '<label class="choice"><input type="radio" name="mode" value="quiz"'+(sel.mode==="quiz"?" checked":"")+'><span><span class="big">'+ICON_CHECK+' Check knowledge</span><small>Quiz yourself on chosen topics at Easy or Hard level and see your rank.</small></span></label>'+
         '</div></div>';
@@ -387,7 +490,8 @@ function renderHome(){
   $("home").querySelectorAll('input[name="chapter"]').forEach(i=>i.addEventListener("change",()=>{sel.chapter=i.value;sel.topics=null;keepNames();renderHome()}));
   $("home").querySelectorAll('input[name="mode"]').forEach(i=>i.addEventListener("change",()=>{sel.mode=i.value;store.set("gamesol-sel",sel);keepNames();renderHome()}));
   $("home").querySelectorAll('.tutorIcon').forEach(b=>b.addEventListener("click",e=>{e.preventDefault();e.stopPropagation();const c=chapters.find(x=>x.id===b.dataset.tutor);sel.chapter=c.id;keepNames();openTutor(cls,subj,c,"overview")}));
-  if(chap&&chap.tutor&&sel.mode==="tutor") loadTutor(chap).then(t=>renderTutorSummary(t,cls,subj,chap)).catch(()=>{$("topicStep").innerHTML='<h2>Chapter tutor</h2><p class="warn">Could not load the tutor file "'+esc(chap.tutor)+'". Check the path in edu-kids-config.json.</p>'});
+  if(chap&&chap.tutor&&sel.mode==="play") loadTutor(chap).then(t=>renderPlaySummary(t,cls,subj,chap)).catch(()=>{$("topicStep").innerHTML='<p class="warn">Could not load the tutor file "'+esc(chap.tutor)+'".</p>'});
+  else if(chap&&chap.tutor&&sel.mode==="tutor") loadTutor(chap).then(t=>renderTutorSummary(t,cls,subj,chap)).catch(()=>{$("topicStep").innerHTML='<h2>Chapter tutor</h2><p class="warn">Could not load the tutor file "'+esc(chap.tutor)+'". Check the path in edu-kids-config.json.</p>'});
   else if(chap) loadBank(chap).then(b=>renderTopics(b,cls,subj,chap)).catch(()=>{$("topicStep").innerHTML='<h2>Topics</h2><p class="warn">Could not load the question bank "'+esc(chap.bank)+'". Check the path in edu-kids-config.json.</p>'});
 }
 function soonLine(list){return list.length?'<p class="soon">Coming soon: '+list.map(x=>'<b>'+esc(x.name)+'</b>').join(", ")+'</p>':""}
@@ -612,6 +716,16 @@ async function showBoard(el,cls,subj,level){
 /* ---------- chapter tutor ---------- */
 const ICON_BOOK='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 5.5C4.5 4 8 4 12 6c4-2 7.5-2 10-.5V19c-2.5-1.5-6-1.5-10 .5-4-2-7.5-2-10-.5z"/><path d="M12 6v13.5"/></svg>';
 const ICON_CHECK='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7.5 12.5l3 3 6-7"/></svg>';
+const ICON_PLAY='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10a4 4 0 0 1 4 4v3a3 3 0 0 1-5.2 2L14 14h-4l-1.8 2A3 3 0 0 1 3 14v-3a4 4 0 0 1 4-4z"/><path d="M8 10v3M6.5 11.5h3"/><circle cx="15.5" cy="10.5" r=".6" fill="currentColor"/><circle cx="17.5" cy="12.5" r=".6" fill="currentColor"/></svg>';
+const hasPlay=T=>T.lessons.some(l=>l.play&&l.play.length);
+function renderPlaySummary(T,cls,subj,chap){
+  const acts=T.lessons.flatMap((l,i)=>(l.play||[]).map(a=>[a,l,i]));
+  if(!acts.length){$("topicStep").innerHTML='<h2>Play &amp; learn</h2><p class="muted">No activities for this chapter yet – try the Chapter tutor.</p>';return}
+  $("topicStep").innerHTML='<h2>Play &amp; learn · '+acts.length+' activities</h2><div class="lessonList">'+acts.map(([a,l,i])=>'<button data-go="L'+i+'"><span>'+ICON_PLAY+'</span><span class="ref">'+esc(l.ref)+'</span><span><b>'+esc(a.title)+'</b><br><small class="muted">'+esc(l.title)+'</small></span><span class="t">Play →</span></button>').join("")+'</div>'+
+    '<div class="row"><button class="btn primary" id="openPlay">Open all activities →</button></div>';
+  $("topicStep").querySelectorAll("[data-go]").forEach(b=>b.addEventListener("click",()=>{keepNames();openTutor(cls,subj,chap,b.dataset.go)}));
+  $("openPlay").addEventListener("click",()=>{keepNames();openTutor(cls,subj,chap,"play")});
+}
 const tutorCache={};
 async function loadTutor(chap){
   if(tutorCache[chap.tutor])return tutorCache[chap.tutor];
@@ -630,6 +744,7 @@ function renderTutorSummary(T,cls,subj,chap){
     '<div class="meter"><span>'+p.done.length+' of '+n+' understood</span><span class="bar"><i style="width:'+(100*p.done.length/n)+'%"></i></span></div>'+
     '<div class="lessonList">'+
     '<button data-go="overview"><span>★</span><span class="ref">Start</span><span>Overview and study plan</span><span class="t">3 min</span></button>'+
+    (hasPlay(T)?'<button data-go="play"><span>'+ICON_PLAY+'</span><span class="ref">Play</span><span>Play &amp; learn – hands-on activities</span><span class="t">fun</span></button>':'')+
     T.lessons.map((l,i)=>'<button data-go="L'+i+'"><span class="'+(p.done.includes(l.topic)?"ok":"")+'">'+(p.done.includes(l.topic)?"✓":(i+1))+'</span><span class="ref">'+esc(l.ref)+'</span><span>'+esc(l.title)+'</span><span class="t">'+esc(l.time)+'</span></button>').join("")+
     '<button data-go="formulas"><span>∑</span><span class="ref">Sheet</span><span>'+esc(T.sheetTitle||"Formula sheet")+'</span><span class="t">1 page</span></button>'+
     '<button data-go="revision"><span>↻</span><span class="ref">Revise</span><span>Smart revision – last-minute sheet</span><span class="t">5 min</span></button>'+
@@ -649,11 +764,11 @@ async function openTutor(cls,subj,chap,page){
   renderTutor();window.scrollTo({top:0});
 }
 function alertBox(m){$("tutorArea").hidden=false;$("tutorArea").innerHTML='<div class="error">'+esc(m)+'</div>'}
-function tutorPages(){return ["overview",...TUT.lessons.map((_,i)=>"L"+i),"formulas","revision","exam"]}
+function tutorPages(){return ["overview",...(hasPlay(TUT)?["play"]:[]),...TUT.lessons.map((_,i)=>"L"+i),"formulas","revision","exam"]}
 function renderTutor(){
   const p=tprog(TCTX.chap);
   const pages=tutorPages();
-  const label=k=>k==="overview"?"Overview":k==="formulas"?sheetName():k==="revision"?"Smart revision":k==="exam"?"Exam readiness":(()=>{const i=+k.slice(1);const l=TUT.lessons[i];return (p.done.includes(l.topic)?'<span class="d">✓</span> ':'')+(i+1)+". "+esc(shortTitle(l.title))})();
+  const label=k=>k==="overview"?"Overview":k==="play"?"Play & learn":k==="formulas"?sheetName():k==="revision"?"Smart revision":k==="exam"?"Exam readiness":(()=>{const i=+k.slice(1);const l=TUT.lessons[i];return (p.done.includes(l.topic)?'<span class="d">✓</span> ':'')+(i+1)+". "+esc(shortTitle(l.title))})();
   let h='<div class="row" style="justify-content:space-between"><button class="btn" id="tBack">← '+esc(TCTX.subj.name)+' home</button>'+
     '<div class="meter" style="min-width:200px"><span>'+p.done.length+'/'+TUT.lessons.length+' understood</span><span class="bar"><i style="width:'+(100*p.done.length/TUT.lessons.length)+'%"></i></span></div></div>'+
     '<nav class="tnav" aria-label="Chapter tutor sections">'+pages.map(k=>'<button data-p="'+k+'"'+(k===tpage?' aria-current="page"':'')+'>'+label(k)+'</button>').join("")+'</nav>'+
@@ -666,12 +781,14 @@ function renderTutor(){
   $("tutorArea").querySelectorAll("[data-reveal]").forEach(b=>b.addEventListener("click",()=>{const box=b.closest(".worked");box.querySelector(".sol").hidden=false;b.remove()}));
   $("tutorArea").querySelectorAll("[data-done]").forEach(b=>b.addEventListener("click",()=>{const q=tprog(TCTX.chap);const t=b.dataset.done;q.done=q.done.includes(t)?q.done.filter(x=>x!==t):[...q.done,t];store.set(tprogKey(TCTX.chap),q);renderTutor()}));
   $("tutorArea").querySelectorAll("[data-practise]").forEach(b=>b.addEventListener("click",()=>practise(b.dataset.practise.split(","),b.dataset.level||"easy")));
+  $("tutorArea").querySelectorAll(".playhost").forEach(h=>{const a=TUT.lessons[+h.dataset.l].play[+h.dataset.j];const f=window.PLAY&&window.PLAY[a.type];
+    if(!f){h.innerHTML='<p class="muted">Activity unavailable.</p>';return}try{f(h,a)}catch(err){h.innerHTML='<p class="warn">This activity could not start.</p>';console.error(err)}});
   $("tutorArea").querySelectorAll("[data-check]").forEach(c=>c.addEventListener("change",()=>{const q=tprog(TCTX.chap);const i=+c.dataset.check;q.check=c.checked?[...new Set([...q.check,i])]:q.check.filter(x=>x!==i);store.set(tprogKey(TCTX.chap),q);const m=$("readyMeter");if(m)m.innerHTML=readyMeter(q)}));
 }
 const SHORT={"Describing position and motion":"Position & motion","Distance travelled and displacement":"Distance & displacement","Average speed and average velocity":"Speed & velocity","Motion in a plane and uniform circular motion":"Circular motion"};
 const shortTitle=t=>SHORT[t]||t;
 function nextBtn(k){const pages=tutorPages();const i=pages.indexOf(k);if(i<0||i===pages.length-1)return "";const n=pages[i+1];
-  const name=n==="formulas"?sheetName():n==="revision"?"Smart revision":n==="exam"?"Exam readiness":TUT.lessons[+n.slice(1)].title;
+  const name=n==="play"?"Play & learn":n==="formulas"?sheetName():n==="revision"?"Smart revision":n==="exam"?"Exam readiness":TUT.lessons[+n.slice(1)].title;
   return '<button class="btn primary" data-p="'+n+'">Next: '+esc(name)+' →</button>'}
 function figBox(d){
   if(d.type==="numberline")return '<div class="nl">'+numberlineSVG(d)+'</div>';
@@ -686,6 +803,12 @@ function figureHTML(d,cap){
 function tableHTML(t){return '<div><h3>'+md(t.title)+'</h3><div class="tbl"><table><thead><tr>'+t.head.map(x=>'<th>'+esc(x)+'</th>').join("")+'</tr></thead><tbody>'+t.rows.map(r=>'<tr>'+r.map(x=>'<td>'+esc(x)+'</td>').join("")+'</tr>').join("")+'</tbody></table></div></div>'}
 function cardsHTML(cards){return '<div class="cards">'+cards.map(c=>'<button class="fc" aria-expanded="false"><span class="fq">'+md(c.q)+'</span><span class="fa" hidden>'+md(c.a)+'</span><small>Say your answer, then tap to check</small></button>').join("")+'</div>'}
 function tutorPage(k,p){
+  if(k==="play"){
+    return '<span class="tag">Play &amp; learn</span><h2 class="t">Learn it with your hands</h2>'+
+      '<p>Try each activity before reading the lesson. Drag, tap and build – then explain to someone what you noticed. Mistakes are fine here: every wrong try shows you something!</p>'+
+      TUT.lessons.map((l,i)=>(l.play||[]).length?'<section class="playsec"><div class="row" style="justify-content:space-between"><h3 style="margin:0">'+esc(l.ref)+' · '+esc(l.title)+'</h3><button class="btn small" data-p="L'+i+'">Open lesson →</button></div>'+l.play.map((a,j)=>'<div class="playhost" data-l="'+i+'" data-j="'+j+'"></div>').join("")+'</section>':"").join("")+
+      '<div class="lfoot"><span class="spacer"></span>'+nextBtn(k)+'</div>';
+  }
   if(k==="overview"){const o=TUT.overview;
     return '<span class="tag">Start here · '+esc(TUT.source)+'</span><h2 class="t">'+esc(TUT.chapter)+'</h2>'+
       '<div class="hook">'+md(o.bigIdea)+'</div>'+
@@ -724,6 +847,7 @@ function tutorPage(k,p){
   const i=+k.slice(1),L=TUT.lessons[i],done=p.done.includes(L.topic);
   return '<span class="tag">'+esc(L.ref)+' · '+esc(L.time)+' read</span><h2 class="t">'+esc(L.title)+'</h2>'+
     '<div class="hook">'+md(L.hook)+'</div>'+
+    (L.play||[]).map((a,j)=>'<div class="playhost" data-l="'+i+'" data-j="'+j+'"></div>').join("")+
     '<div><h3>Core ideas – learn these exactly</h3><dl class="defs" style="margin:0">'+L.core.map(c=>'<div><dt>'+md(c.term)+'</dt><dd>'+md(c.def)+'</dd></div>').join("")+'</dl></div>'+
     (L.graph?figureHTML(L.graph,L.graphCaption):"")+(L.diagram?figureHTML(L.diagram):"")+
     '<div><h3>Understand it</h3>'+L.explain.map(x=>'<p>'+md(x)+'</p>').join("")+'</div>'+

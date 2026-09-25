@@ -61,6 +61,17 @@ Questions follow the BHPS midterm model paper answer key (1-mark MCQs, assertion
 
 Note: `6/maths/model/CLASS_6_MIDTERM_EXAM_MODEL_PAPER_2026.pdf` on GitHub is empty (2 bytes). Re-upload it if you want it stored; the app does not need it.
 
+## Play & learn (Class VI Maths)
+
+`play.js` adds 24 hands-on activities, one or two per lesson, for learning by doing before reading definitions. Students open them from the **Play & learn** mode on the home screen, the Play & learn tab in the tutor, or at the top of each lesson:
+- Ch 1: pattern detective, dot builder, odd numbers build squares, join every dot
+- Ch 2: segment/ray/line, angle maker, name that angle, protractor practice
+- Ch 3: supercell spotter, digit sum builder, palindrome maker, Kaprekar machine, quick estimate, Collatz hailstones
+- Ch 4: tally tapper, pictograph builder, bar graph reader, bar graph builder
+- Ch 5: idli-vada game, rectangle maker, sieve of Eratosthenes, co-prime checker, factor ladder, divisibility detective
+
+Activities are attached in each tutor file as `"play": [{"type": "…", "title": "…", "say": "…"}]`.
+
 ## Chapter tutor
 
 When a chapter has a `"tutor"` file in the config, a **Tutor** book icon appears on its chapter card. Students also get a choice: **Chapter tutor** (learn) or **Check knowledge** (quiz).
