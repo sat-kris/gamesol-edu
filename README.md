@@ -47,6 +47,20 @@ Edit the file on GitHub with the ✏️ pencil icon and commit. The site updates
 
 There are 83 question templates: concept MCQs taken from the chapter, drawn graphs, and numerical problems (km h⁻¹ conversion, v = u + at, s = ut + ½at², v² = u² + 2as, braking and reaction distance, areas under v–t graphs, circular motion). The numerical questions get new numbers every time.
 
+## Class VI Mathematics (NCERT Ganita Prakash, midterm Chapters 1–5)
+
+| Chapter | Topics | Files in `6/maths/` |
+|---|---|---|
+| 1 · Patterns in Mathematics | sequences, visualising, relations, shape patterns | `bank-ch1-patterns.json`, `tutor-ch1-patterns.json` |
+| 2 · Lines and Angles | point/segment/line/ray, naming angles, angle types, protractor | `bank-ch2-lines-angles.json`, `tutor-ch2-lines-angles.json` |
+| 3 · Number Play | supercells, digits, palindromes, Kaprekar, mental maths, Collatz | `bank-ch3-number-play.json`, `tutor-ch3-number-play.json` |
+| 4 · Data Handling and Presentation | tally/frequency, pictographs, bar graphs, scales | `bank-ch4-data-handling.json`, `tutor-ch4-data-handling.json` |
+| 5 · Prime Time | common factors/multiples, primes, co-primes, prime factorisation, divisibility | `bank-ch5-prime-time.json`, `tutor-ch5-prime-time.json` |
+
+Questions follow the BHPS midterm model paper answer key (1-mark MCQs, assertion–reason, 2/3/4-mark types and case studies). Many questions are generated fresh each time by `generators.js`: Kaprekar rounds, Collatz sequences, prime factorisation, co-prime pairs, divisibility, protractor readings, pictographs, bar graphs and tally marks. Each tutor's **Exam readiness** page lists which model paper questions came from that chapter.
+
+Note: `6/maths/model/CLASS_6_MIDTERM_EXAM_MODEL_PAPER_2026.pdf` on GitHub is empty (2 bytes). Re-upload it if you want it stored; the app does not need it.
+
 ## Chapter tutor
 
 When a chapter has a `"tutor"` file in the config, a **Tutor** book icon appears on its chapter card. Students also get a choice: **Chapter tutor** (learn) or **Check knowledge** (quiz).

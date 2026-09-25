@@ -6,6 +6,56 @@
   },
   "classes": [
     {
+      "id": "6",
+      "name": "Class VI",
+      "status": "ongoing",
+      "subjects": [
+        {
+          "id": "maths",
+          "name": "Mathematics",
+          "status": "ongoing",
+          "note": "Midterm: Chapters 1–5 (NCERT Ganita Prakash)",
+          "chapters": [
+            {
+              "id": "ch1",
+              "name": "Chapter 1 · Patterns in Mathematics",
+              "status": "ongoing",
+              "bank": "6/maths/bank-ch1-patterns.json",
+              "tutor": "6/maths/tutor-ch1-patterns.json"
+            },
+            {
+              "id": "ch2",
+              "name": "Chapter 2 · Lines and Angles",
+              "status": "ongoing",
+              "bank": "6/maths/bank-ch2-lines-angles.json",
+              "tutor": "6/maths/tutor-ch2-lines-angles.json"
+            },
+            {
+              "id": "ch3",
+              "name": "Chapter 3 · Number Play",
+              "status": "ongoing",
+              "bank": "6/maths/bank-ch3-number-play.json",
+              "tutor": "6/maths/tutor-ch3-number-play.json"
+            },
+            {
+              "id": "ch4",
+              "name": "Chapter 4 · Data Handling and Presentation",
+              "status": "ongoing",
+              "bank": "6/maths/bank-ch4-data-handling.json",
+              "tutor": "6/maths/tutor-ch4-data-handling.json"
+            },
+            {
+              "id": "ch5",
+              "name": "Chapter 5 · Prime Time",
+              "status": "ongoing",
+              "bank": "6/maths/bank-ch5-prime-time.json",
+              "tutor": "6/maths/tutor-ch5-prime-time.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "9",
       "name": "Class IX",
       "status": "ongoing",

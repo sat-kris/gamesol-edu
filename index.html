@@ -7,6 +7,7 @@
 <title>Gamesol Edu</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="generators.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Caveat:wght@600&display=swap">
 <style>
 :root{
@@ -93,7 +94,7 @@ h2{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-
 .sheet::before{content:"";position:absolute;top:0;bottom:0;left:40px;width:2px;background:var(--margin);opacity:.75}
 .qnum{position:absolute;left:0;width:40px;top:28px;text-align:center;font-family:"Young Serif",Georgia,serif;color:var(--margin);font-size:15px}
 .tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);padding:3px 8px;border-radius:4px}
-.qtext{font-family:"Young Serif",Georgia,serif;font-size:clamp(19px,3.3vw,23px);line-height:1.5;margin:14px 0 6px;text-wrap:pretty}
+.qtext{white-space:pre-line;font-family:"Young Serif",Georgia,serif;font-size:clamp(19px,3.3vw,23px);line-height:1.5;margin:14px 0 6px;text-wrap:pretty}
 .graph{background:var(--sheet);border:1px solid var(--line-strong);border-radius:8px;padding:8px;margin:12px 0 4px;max-width:480px}
 .graph svg{display:block;width:100%;height:auto}
 .graph text{fill:var(--ink-soft);font-size:12px;font-family:"Atkinson Hyperlegible",system-ui,sans-serif}
@@ -230,7 +231,7 @@ h2{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-
 .lfoot{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding-top:14px;border-top:1px solid var(--line)}
 .lfoot .spacer{flex:1}
 .btn.done{background:var(--good-soft);border-color:var(--good);color:var(--good)}
-.ladder{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px;position:relative}
+.ladder{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:22px;position:relative}
 .rung{position:relative;padding:12px;border-radius:10px;border:1.5px solid var(--accent);background:var(--sheet);display:flex;flex-direction:column;gap:4px}
 .rung b{font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:18px;color:var(--accent)}
 .rung i{font-style:normal;font-weight:700;font-size:14px}
@@ -259,6 +260,22 @@ h2{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-
   .defs div{grid-template-columns:1fr;gap:2px}
   .lessonList button{grid-template-columns:2em 1fr;row-gap:0}.lessonList .ref{display:none}
 }
+
+/* maths figures */
+.fig svg{max-height:300px}
+.fig .d1{fill:var(--accent)} .fig .d2{fill:var(--series2)}
+.fig .ray{stroke:var(--ink);stroke-width:2} .fig .ray.hl{stroke:var(--accent);stroke-width:2.5}
+.fig .arc{stroke:var(--series2);stroke-width:2;fill:none}
+.fig .pt{fill:var(--ink)} .fig .pl{fill:var(--ink);font-weight:700;font-size:15px}
+.fig .prot{fill:var(--accent-soft);stroke:var(--line-strong)} .fig .tk{stroke:var(--ink-soft)}
+.fig .rd{fill:var(--series2);font-weight:700;font-size:13px}
+.fig .cell{fill:var(--sheet);stroke:var(--line-strong)} .fig .cv{fill:var(--ink);font-size:16px;font-weight:700}
+.fig .tl{stroke:var(--ink);stroke-width:2.5;stroke-linecap:round}
+.fig .ic{fill:var(--accent)}
+.fig .br{fill:var(--accent)} .fig .gl{stroke:var(--line)} .fig .ax{stroke:var(--ink-soft)} .fig .ttl{fill:var(--ink);font-weight:700}
+.fig-cells,.fig-tally{max-width:600px}
+.paper td:first-child{font-weight:700;white-space:nowrap}
+.tbl table.paper td,.tbl table.paper th{text-align:left}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
@@ -430,6 +447,11 @@ function fmt(x,dp){
 }
 function fill(t,env,ansStr){return String(t).replace(/\{(\w+)\}/g,(m,k)=>k==="ans"?ansStr:(k in env?fmt(env[k],2):m))}
 function instantiate(item){
+  if(item.type==="fn"){
+    const G=window.GEN&&window.GEN[item.fn];if(!G)return null;
+    for(let t=0;t<20;t++){const r=G(item.args||{});if(r){const opts=shuffle([r.ans,...r.wrong]);return {topic:item.topic,q:r.q,ans:r.ans,opts,expl:r.expl,graph:r.fig||null,long:opts.some(o=>String(o).length>34)}}}
+    return null;
+  }
   if(item.type!=="calc"){
     return {topic:item.topic,q:item.q,ans:item.a,opts:shuffle([item.a,...item.w]),expl:item.e,graph:item.graph?resolveGraph(item.graph,{}):null,long:[item.a,...item.w].some(o=>o.length>34)};
   }
@@ -454,6 +476,7 @@ function instantiate(item){
 }
 function resolveGraph(g,env){
   const val=v=>typeof v==="string"?evalIn(v,env):v;
+  if(!g.lines)return g;
   return Object.assign({},g,{lines:g.lines.map(l=>Object.assign({},l,{pts:l.pts.map(p=>[val(p[0]),val(p[1])])}))});
 }
 function niceStep(max,target){const raw=max/(target||5);const p=Math.pow(10,Math.floor(Math.log10(raw||1)));const n=raw/p;return (n<=1?1:n<=2?2:n<=2.5?2.5:n<=5?5:10)*p}
@@ -511,7 +534,7 @@ function render(){
   if(idx>=total){renderResults();return}
   const q=quiz[idx];
   let h='<article class="sheet"><span class="qnum">'+(idx+1)+'.</span><span class="tag">'+esc((q.topicObj.ref?q.topicObj.ref+" · ":"")+q.topicObj.name)+'</span>'+
-    '<p class="qtext">'+esc(q.q)+'</p>'+(q.graph?'<div class="graph">'+graphSVG(q.graph)+'</div>':'')+
+    '<p class="qtext">'+esc(q.q)+'</p>'+(q.graph?figBox(q.graph):'')+
     '<div class="opts'+(q.long?' long':'')+'" role="group" aria-label="Answers">';
   q.opts.forEach((o,i)=>{let c="opt";if(answered){c+=o===q.ans?" ok":o===q.picked?" bad":" dim"}
     h+='<button class="'+c+'" data-i="'+i+'"'+(answered?" disabled":"")+'><kbd>'+(i+1)+'</kbd><span>'+esc(o)+'</span></button>'});
@@ -608,7 +631,7 @@ function renderTutorSummary(T,cls,subj,chap){
     '<div class="lessonList">'+
     '<button data-go="overview"><span>★</span><span class="ref">Start</span><span>Overview and study plan</span><span class="t">3 min</span></button>'+
     T.lessons.map((l,i)=>'<button data-go="L'+i+'"><span class="'+(p.done.includes(l.topic)?"ok":"")+'">'+(p.done.includes(l.topic)?"✓":(i+1))+'</span><span class="ref">'+esc(l.ref)+'</span><span>'+esc(l.title)+'</span><span class="t">'+esc(l.time)+'</span></button>').join("")+
-    '<button data-go="formulas"><span>∑</span><span class="ref">Sheet</span><span>Formula sheet</span><span class="t">1 page</span></button>'+
+    '<button data-go="formulas"><span>∑</span><span class="ref">Sheet</span><span>'+esc(T.sheetTitle||"Formula sheet")+'</span><span class="t">1 page</span></button>'+
     '<button data-go="revision"><span>↻</span><span class="ref">Revise</span><span>Smart revision – last-minute sheet</span><span class="t">5 min</span></button>'+
     '<button data-go="exam"><span>🎯</span><span class="ref">Exam</span><span>Exam readiness</span><span class="t">5 min</span></button>'+
     '</div><div class="row"><button class="btn primary" id="openTutor">'+(p.done.length?"Continue learning →":"Start the chapter tutor →")+'</button></div>';
@@ -630,7 +653,7 @@ function tutorPages(){return ["overview",...TUT.lessons.map((_,i)=>"L"+i),"formu
 function renderTutor(){
   const p=tprog(TCTX.chap);
   const pages=tutorPages();
-  const label=k=>k==="overview"?"Overview":k==="formulas"?"Formula sheet":k==="revision"?"Smart revision":k==="exam"?"Exam readiness":(()=>{const i=+k.slice(1);const l=TUT.lessons[i];return (p.done.includes(l.topic)?'<span class="d">✓</span> ':'')+(i+1)+". "+esc(shortTitle(l.title))})();
+  const label=k=>k==="overview"?"Overview":k==="formulas"?sheetName():k==="revision"?"Smart revision":k==="exam"?"Exam readiness":(()=>{const i=+k.slice(1);const l=TUT.lessons[i];return (p.done.includes(l.topic)?'<span class="d">✓</span> ':'')+(i+1)+". "+esc(shortTitle(l.title))})();
   let h='<div class="row" style="justify-content:space-between"><button class="btn" id="tBack">← '+esc(TCTX.subj.name)+' home</button>'+
     '<div class="meter" style="min-width:200px"><span>'+p.done.length+'/'+TUT.lessons.length+' understood</span><span class="bar"><i style="width:'+(100*p.done.length/TUT.lessons.length)+'%"></i></span></div></div>'+
     '<nav class="tnav" aria-label="Chapter tutor sections">'+pages.map(k=>'<button data-p="'+k+'"'+(k===tpage?' aria-current="page"':'')+'>'+label(k)+'</button>').join("")+'</nav>'+
@@ -648,11 +671,16 @@ function renderTutor(){
 const SHORT={"Describing position and motion":"Position & motion","Distance travelled and displacement":"Distance & displacement","Average speed and average velocity":"Speed & velocity","Motion in a plane and uniform circular motion":"Circular motion"};
 const shortTitle=t=>SHORT[t]||t;
 function nextBtn(k){const pages=tutorPages();const i=pages.indexOf(k);if(i<0||i===pages.length-1)return "";const n=pages[i+1];
-  const name=n==="formulas"?"Formula sheet":n==="revision"?"Smart revision":n==="exam"?"Exam readiness":TUT.lessons[+n.slice(1)].title;
+  const name=n==="formulas"?sheetName():n==="revision"?"Smart revision":n==="exam"?"Exam readiness":TUT.lessons[+n.slice(1)].title;
   return '<button class="btn primary" data-p="'+n+'">Next: '+esc(name)+' →</button>'}
+function figBox(d){
+  if(d.type==="numberline")return '<div class="nl">'+numberlineSVG(d)+'</div>';
+  if(d.type&&window.FIG&&window.FIG[d.type])return '<div class="graph fig fig-'+d.type+'">'+window.FIG[d.type](d)+'</div>';
+  return '<div class="graph">'+graphSVG(d)+'</div>';
+}
 function figureHTML(d,cap){
   if(!d)return "";
-  const svg=d.type==="numberline"?'<div class="nl">'+numberlineSVG(d)+'</div>':'<div class="graph">'+graphSVG(d)+'</div>';
+  const svg=figBox(d);
   return '<figure class="figure" style="margin:0">'+svg+(cap||d.caption?'<figcaption>'+md(cap||d.caption)+'</figcaption>':'')+'</figure>';
 }
 function tableHTML(t){return '<div><h3>'+md(t.title)+'</h3><div class="tbl"><table><thead><tr>'+t.head.map(x=>'<th>'+esc(x)+'</th>').join("")+'</tr></thead><tbody>'+t.rows.map(r=>'<tr>'+r.map(x=>'<td>'+esc(x)+'</td>').join("")+'</tr>').join("")+'</tbody></table></div></div>'}
@@ -661,15 +689,16 @@ function tutorPage(k,p){
   if(k==="overview"){const o=TUT.overview;
     return '<span class="tag">Start here · '+esc(TUT.source)+'</span><h2 class="t">'+esc(TUT.chapter)+'</h2>'+
       '<div class="hook">'+md(o.bigIdea)+'</div>'+
-      '<div><h3>The ladder of motion</h3><div class="ladder">'+o.ladder.map(r=>'<div class="rung"><b>'+esc(r.step)+'</b><i>'+esc(r.q)+'</i><small>'+esc(r.a)+'</small></div>').join("")+'</div></div>'+
-      '<div><h3>Three ways to describe the same motion</h3><div class="langs">'+o.languages.map(l=>'<div><b>'+esc(l.name)+'</b>'+md(l.text)+'</div>').join("")+'</div></div>'+
+      '<div><h3>'+esc(o.ladderTitle||"The ladder of motion")+'</h3><div class="ladder">'+o.ladder.map(r=>'<div class="rung"><b>'+esc(r.step)+'</b><i>'+esc(r.q)+'</i><small>'+esc(r.a)+'</small></div>').join("")+'</div></div>'+
+      '<div><h3>'+esc(o.languagesTitle||"Three ways to describe the same motion")+'</h3><div class="langs">'+o.languages.map(l=>'<div><b>'+esc(l.name)+'</b>'+md(l.text)+'</div>').join("")+'</div></div>'+
       '<div><h3>Your study plan</h3><ol class="plan">'+o.plan.map(x=>'<li><span><b>'+esc(x.pass)+' <span class="muted" style="font-weight:400">· '+esc(x.time)+'</span></b><small>'+md(x.text)+'</small></span></li>').join("")+'</ol></div>'+
       '<p class="method">'+md(TUT.method)+'</p>'+
       '<div class="lfoot"><span class="spacer"></span>'+nextBtn(k)+'</div>';
   }
   if(k==="formulas"){
-    return '<span class="tag">One-page formula sheet</span><h2 class="t">Formula sheet</h2><p>Revise this page the night before and again 10 minutes before the exam. Cover the middle column and try to write each formula from memory.</p>'+
-      '<div class="tbl fsheet"><table><thead><tr><th>Quantity</th><th>Formula</th><th>Unit</th><th>Use it when</th></tr></thead><tbody>'+
+    const cols=TUT.sheetCols||["Quantity","Formula","Unit","Use it when"];
+    return '<span class="tag">One-page '+esc(sheetName().toLowerCase())+'</span><h2 class="t">'+esc(sheetName())+'</h2><p>Revise this page the night before and again 10 minutes before the exam. Cover the second column and try to write each rule from memory.</p>'+
+      '<div class="tbl fsheet"><table><thead><tr>'+cols.map(c=>'<th>'+esc(c)+'</th>').join("")+'</tr></thead><tbody>'+
       TUT.formulas.map(f=>'<tr><td>'+esc(f.name)+'</td><td>'+esc(f.f)+'</td><td>'+esc(f.unit)+'</td><td>'+esc(f.when)+'</td></tr>').join("")+'</tbody></table></div>'+
       '<div class="lfoot"><button class="btn" data-practise="'+TUT.lessons.map(l=>l.topic).join(",")+'" data-level="easy">Quick mixed quiz (Easy) →</button><span class="spacer"></span>'+nextBtn(k)+'</div>';
   }
@@ -681,10 +710,13 @@ function tutorPage(k,p){
       '<div class="lfoot"><button class="btn primary" data-practise="'+TUT.lessons.map(l=>l.topic).join(",")+'" data-level="hard">Mixed exam-level quiz →</button><span class="spacer"></span>'+nextBtn(k)+'</div>';
   }
   if(k==="exam"){const e=TUT.exam;
+    const secs=e.sections||[{title:"Numericals · the GUFS method",kind:"steps",items:e.numerical},{title:"Graph questions",kind:"note",items:e.graph},{title:"Answer writing",kind:"mem",items:e.writing}];
+    const list=(x,o)=>'<'+(o?'ol':'ul')+' class="steps">'+x.items.map(i=>'<li>'+md(i)+'</li>').join("")+'</'+(o?'ol':'ul')+'>';
+    const main=secs.filter(x=>x.kind==="steps"),side=secs.filter(x=>x.kind!=="steps");
     return '<span class="tag">Exam readiness</span><h2 class="t">Score full marks: how to answer</h2>'+
-      '<div><h3>Numericals · the GUFS method</h3><ol class="steps">'+e.numerical.map(x=>'<li>'+md(x)+'</li>').join("")+'</ol></div>'+
-      '<div class="duo"><div class="note-card"><h3>Graph questions</h3><ol class="steps">'+e.graph.map(x=>'<li>'+md(x)+'</li>').join("")+'</ol></div>'+
-      '<div class="note-card mem"><h3>Answer writing</h3><ul class="steps">'+e.writing.map(x=>'<li>'+md(x)+'</li>').join("")+'</ul></div></div>'+
+      (e.paper?'<div><h3>This chapter in the model paper</h3><div class="tbl"><table class="paper"><thead><tr><th>Question</th><th>Marks</th><th>What was asked</th></tr></thead><tbody>'+e.paper.map(r=>'<tr><td>'+esc(r.q)+'</td><td>'+esc(r.marks)+'</td><td>'+esc(r.what)+'</td></tr>').join("")+'</tbody></table></div><p class="caption" style="margin-top:6px">BHPS Class VI midterm model paper 2026-27 answer key. Practise these question types first.</p></div>':'')+
+      main.map(x=>'<div><h3>'+esc(x.title)+'</h3>'+list(x,true)+'</div>').join("")+
+      '<div class="duo">'+side.map(x=>'<div class="note-card'+(x.kind==="mem"?" mem":"")+'"><h3>'+esc(x.title)+'</h3>'+list(x,x.kind!=="mem")+'</div>').join("")+'</div>'+
       '<div><h3>Am I ready? Tick what you can do without the book</h3><div class="meter" id="readyMeter">'+readyMeter(p)+'</div><div class="check" style="margin-top:8px">'+
       e.checklist.map((c,i)=>'<label><input type="checkbox" data-check="'+i+'"'+(p.check.includes(i)?" checked":"")+'><span>'+md(c)+'</span></label>').join("")+'</div></div>'+
       '<div class="lfoot"><button class="btn primary" data-practise="'+TUT.lessons.map(l=>l.topic).join(",")+'" data-level="hard">Take the exam-level quiz →</button></div>';
@@ -706,6 +738,7 @@ function tutorPage(k,p){
     '<div class="lfoot"><button class="btn '+(done?"done":"")+'" data-done="'+esc(L.topic)+'">'+(done?"✓ Understood":"Mark as understood")+'</button>'+
     '<button class="btn" data-practise="'+esc(L.topic)+'">Practise this topic →</button><span class="spacer"></span>'+nextBtn(k)+'</div>';
 }
+function sheetName(){return TUT.sheetTitle||"Formula sheet"}
 function readyMeter(p){const n=TUT.exam.checklist.length,c=p.check.length;
   return '<span>'+c+' of '+n+' ready</span><span class="bar"><i style="width:'+(100*c/n)+'%"></i></span><span>'+(c===n?"Exam ready!":c>=n*0.7?"Nearly there":"Keep going")+'</span>'}
 async function practise(topics,level){
