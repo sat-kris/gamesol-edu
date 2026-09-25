@@ -1,0 +1,605 @@
+{
+ "id": "class6-maths-ch3",
+ "class": "6",
+ "subject": "maths",
+ "chapter": "Chapter 3 · Number Play",
+ "source": "NCERT Ganita Prakash | Grade 6, Chapter 3 + BHPS midterm model paper (2026-27)",
+ "topics": [
+  {
+   "id": "tell",
+   "name": "Numbers tell us things & supercells",
+   "ref": "3.1–3.2"
+  },
+  {
+   "id": "digits",
+   "name": "Number line, digits and digit sums",
+   "ref": "3.3–3.4"
+  },
+  {
+   "id": "palin",
+   "name": "Palindromes, clock and calendar numbers",
+   "ref": "3.5, 3.7"
+  },
+  {
+   "id": "kaprekar",
+   "name": "Kaprekar's magic number",
+   "ref": "3.6"
+  },
+  {
+   "id": "mental",
+   "name": "Mental maths, patterns and estimation",
+   "ref": "3.8, 3.9, 3.11"
+  },
+  {
+   "id": "collatz",
+   "name": "Collatz conjecture and number games",
+   "ref": "3.10, 3.12"
+  }
+ ],
+ "questions": [
+  {
+   "topic": "tell",
+   "level": "easy",
+   "q": "In the ‘taller neighbours’ game, a child says ‘2’ when…",
+   "a": "both children next to them are taller",
+   "w": [
+    "they are the tallest",
+    "they are the second child",
+    "neither neighbour is taller"
+   ],
+   "e": "Each child says how many of their neighbours are taller."
+  },
+  {
+   "topic": "tell",
+   "level": "easy",
+   "q": "Can a child standing at the end of the line say ‘2’?",
+   "a": "No, they have only one neighbour",
+   "w": [
+    "Yes, always",
+    "Only if they are the shortest",
+    "Only if there are 2 children"
+   ],
+   "e": "An end child has just one neighbour, so the most they can say is 1."
+  },
+  {
+   "topic": "tell",
+   "level": "easy",
+   "q": "A cell is a ‘supercell’ if…",
+   "a": "its number is greater than all its neighbouring cells",
+   "w": [
+    "its number is the largest in the table",
+    "its number is even",
+    "it is in the middle of the row"
+   ],
+   "e": "Compare with the cells immediately left, right (and top/bottom in a grid). (Model paper Q27a.)"
+  },
+  {
+   "topic": "tell",
+   "level": "hard",
+   "q": "Will the cell with the largest number in a table always be a supercell?",
+   "a": "Yes, it is bigger than all its neighbours",
+   "w": [
+    "No, never",
+    "Only if it is at the end",
+    "Only in a single row"
+   ],
+   "e": "The largest number beats every other number, including its neighbours."
+  },
+  {
+   "topic": "tell",
+   "level": "hard",
+   "q": "Can the cell with the smallest number be a supercell (in a table with more than one cell)?",
+   "a": "No, its neighbours are all bigger",
+   "w": [
+    "Yes, always",
+    "Only if it is at the end",
+    "Only if it is odd"
+   ],
+   "e": "The smallest number is smaller than its neighbours."
+  },
+  {
+   "topic": "tell",
+   "level": "hard",
+   "type": "fn",
+   "fn": "supercells"
+  },
+  {
+   "topic": "tell",
+   "level": "hard",
+   "type": "fn",
+   "fn": "supercells"
+  },
+  {
+   "topic": "tell",
+   "level": "hard",
+   "type": "fn",
+   "fn": "supercells"
+  },
+  {
+   "topic": "digits",
+   "level": "easy",
+   "q": "How many 2-digit numbers are there?",
+   "a": "90",
+   "w": [
+    "99",
+    "100",
+    "89"
+   ],
+   "e": "From 10 to 99: 99 − 10 + 1 = 90."
+  },
+  {
+   "topic": "digits",
+   "level": "hard",
+   "q": "What is the smallest number whose digit sum is 14?",
+   "a": "59",
+   "w": [
+    "95",
+    "77",
+    "149"
+   ],
+   "e": "Use as few digits as possible and put the smaller digit first: 5 + 9 = 14 → 59."
+  },
+  {
+   "topic": "digits",
+   "level": "hard",
+   "q": "What is the largest 5-digit number whose digit sum is 14?",
+   "a": "95000",
+   "w": [
+    "99999",
+    "77000",
+    "14000"
+   ],
+   "e": "Put the biggest digits first: 9 + 5 = 14, then zeros → 95000."
+  },
+  {
+   "topic": "digits",
+   "level": "hard",
+   "q": "Among the numbers 1–100, how many times does the digit 7 occur?",
+   "a": "20",
+   "w": [
+    "10",
+    "11",
+    "19"
+   ],
+   "e": "Units place: 7, 17, …, 97 (10 times). Tens place: 70–79 (10 times). Total 20."
+  },
+  {
+   "topic": "digits",
+   "level": "easy",
+   "q": "On a number line from 1000 to 10,000 marked every 1000, where does 2754 lie?",
+   "a": "Between 2000 and 3000, closer to 3000",
+   "w": [
+    "Between 2000 and 3000, closer to 2000",
+    "Between 7000 and 8000",
+    "Exactly at 3000"
+   ],
+   "e": "2754 is 754 past 2000 and only 246 before 3000."
+  },
+  {
+   "topic": "digits",
+   "level": "easy",
+   "type": "fn",
+   "fn": "digitSum"
+  },
+  {
+   "topic": "digits",
+   "level": "easy",
+   "type": "fn",
+   "fn": "digitSum"
+  },
+  {
+   "topic": "digits",
+   "level": "easy",
+   "type": "fn",
+   "fn": "digitCount"
+  },
+  {
+   "topic": "palin",
+   "level": "easy",
+   "q": "A palindrome is a number that…",
+   "a": "reads the same from left to right and from right to left",
+   "w": [
+    "has all digits the same",
+    "is divisible by 11",
+    "has an even number of digits"
+   ],
+   "e": "66, 848, 575, 1111 are palindromes."
+  },
+  {
+   "topic": "palin",
+   "level": "easy",
+   "q": "What is the smallest 5-digit palindrome?",
+   "a": "10001",
+   "w": [
+    "10000",
+    "11111",
+    "10101"
+   ],
+   "e": "It must start and end with 1 and be as small as possible: 10001. (Model paper Q29.)"
+  },
+  {
+   "topic": "palin",
+   "level": "hard",
+   "q": "What is the sum of the smallest and largest 5-digit palindromes?",
+   "a": "110000",
+   "w": [
+    "109999",
+    "100000",
+    "110001"
+   ],
+   "e": "10001 + 99999 = 110000. (Model paper Q29.)"
+  },
+  {
+   "topic": "palin",
+   "level": "hard",
+   "q": "What is the difference between the largest and smallest 5-digit palindromes?",
+   "a": "89998",
+   "w": [
+    "89999",
+    "90000",
+    "89988"
+   ],
+   "e": "99999 − 10001 = 89998. (Model paper Q29.)"
+  },
+  {
+   "topic": "palin",
+   "level": "hard",
+   "q": "How many 3-digit palindromes can be made using only the digits 1, 2 and 3 (repetition allowed)?",
+   "a": "9",
+   "w": [
+    "6",
+    "27",
+    "3"
+   ],
+   "e": "First digit = last digit (3 choices) and middle digit (3 choices): 3 × 3 = 9."
+  },
+  {
+   "topic": "palin",
+   "level": "hard",
+   "q": "Puzzle: I am a 5-digit odd palindrome. My tens digit is double my units digit, and my hundreds digit is double my tens digit. Who am I?",
+   "a": "12421",
+   "w": [
+    "24842",
+    "36963",
+    "12321"
+   ],
+   "e": "Units must be odd and small: units 1 → tens 2 → hundreds 4 → 12421."
+  },
+  {
+   "topic": "palin",
+   "level": "hard",
+   "q": "The time is 10:01. After how many minutes will a 12-hour clock next show a palindromic time?",
+   "a": "70 minutes",
+   "w": [
+    "10 minutes",
+    "60 minutes",
+    "110 minutes"
+   ],
+   "e": "The next palindromic time is 11:11, which is 1 hour 10 minutes later."
+  },
+  {
+   "topic": "palin",
+   "level": "hard",
+   "q": "Start with 39, reverse and add until you get a palindrome: 39 + 93 = 132; 132 + 231 = ?",
+   "a": "363",
+   "w": [
+    "353",
+    "462",
+    "333"
+   ],
+   "e": "132 + 231 = 363, which is a palindrome."
+  },
+  {
+   "topic": "palin",
+   "level": "easy",
+   "q": "Which date is written as a palindrome (dd/mm/yyyy)?",
+   "a": "11/02/2011",
+   "w": [
+    "20/12/2012",
+    "12/12/2012",
+    "01/02/2021"
+   ],
+   "e": "11022011 reads the same both ways."
+  },
+  {
+   "topic": "palin",
+   "level": "easy",
+   "type": "fn",
+   "fn": "palinFind"
+  },
+  {
+   "topic": "palin",
+   "level": "easy",
+   "type": "fn",
+   "fn": "palinFind"
+  },
+  {
+   "topic": "palin",
+   "level": "hard",
+   "type": "fn",
+   "fn": "palinExtreme"
+  },
+  {
+   "topic": "palin",
+   "level": "hard",
+   "type": "fn",
+   "fn": "palinExtreme"
+  },
+  {
+   "topic": "kaprekar",
+   "level": "easy",
+   "q": "The Kaprekar constant is…",
+   "a": "6174",
+   "w": [
+    "6147",
+    "4176",
+    "1000"
+   ],
+   "e": "Repeating the routine on 4-digit numbers always reaches 6174."
+  },
+  {
+   "topic": "kaprekar",
+   "level": "easy",
+   "q": "D. R. Kaprekar was…",
+   "a": "a mathematics teacher from Devlali, Maharashtra",
+   "w": [
+    "a Greek mathematician",
+    "a German mathematician",
+    "an astronomer from Kerala"
+   ],
+   "e": "He discovered the 6174 pattern in 1949."
+  },
+  {
+   "topic": "kaprekar",
+   "level": "easy",
+   "q": "For 3524, the largest and smallest numbers from its digits are…",
+   "a": "5432 and 2345",
+   "w": [
+    "5432 and 3524",
+    "4532 and 2354",
+    "5423 and 2435"
+   ],
+   "e": "Arrange digits in descending then ascending order. (Model paper Q37a.)"
+  },
+  {
+   "topic": "kaprekar",
+   "level": "hard",
+   "q": "How many rounds does 3524 take to reach 6174?",
+   "a": "3",
+   "w": [
+    "2",
+    "4",
+    "5"
+   ],
+   "e": "5432 − 2345 = 3087; 8730 − 0378 = 8352; 8532 − 2358 = 6174 → 3 rounds. (Model paper Q37a.)"
+  },
+  {
+   "topic": "kaprekar",
+   "level": "hard",
+   "q": "The Kaprekar routine does NOT work for which number?",
+   "a": "3333",
+   "w": [
+    "3524",
+    "1000",
+    "6382"
+   ],
+   "e": "You need at least two different digits; 3333 − 3333 = 0."
+  },
+  {
+   "topic": "kaprekar",
+   "level": "hard",
+   "q": "For 3-digit numbers, the Kaprekar routine reaches which number?",
+   "a": "495",
+   "w": [
+    "6174",
+    "594",
+    "999"
+   ],
+   "e": "Try 352: 532 − 235 = 297; 972 − 279 = 693; 963 − 369 = 594; 954 − 459 = 495."
+  },
+  {
+   "topic": "kaprekar",
+   "level": "easy",
+   "type": "fn",
+   "fn": "kapStep"
+  },
+  {
+   "topic": "kaprekar",
+   "level": "easy",
+   "type": "fn",
+   "fn": "kapStep"
+  },
+  {
+   "topic": "kaprekar",
+   "level": "easy",
+   "type": "fn",
+   "fn": "kapStep"
+  },
+  {
+   "topic": "kaprekar",
+   "level": "hard",
+   "type": "fn",
+   "fn": "kapRounds"
+  },
+  {
+   "topic": "kaprekar",
+   "level": "hard",
+   "type": "fn",
+   "fn": "kapRounds"
+  },
+  {
+   "topic": "kaprekar",
+   "level": "hard",
+   "type": "fn",
+   "fn": "kapRounds"
+  },
+  {
+   "topic": "mental",
+   "level": "easy",
+   "q": "Class sections have 32, 29 and 35 children. About how many children are in the class?",
+   "a": "About 100",
+   "w": [
+    "About 50",
+    "About 300",
+    "About 1000"
+   ],
+   "e": "32 + 29 + 35 = 96 ≈ 100. Round to easy numbers for estimates."
+  },
+  {
+   "topic": "mental",
+   "level": "hard",
+   "q": "‘A 5-digit number + a 5-digit number gives a 5-digit number.’ This is…",
+   "a": "only sometimes true",
+   "w": [
+    "always true",
+    "never true",
+    "true only for even numbers"
+   ],
+   "e": "12,000 + 13,000 = 25,000 (5 digits) but 60,000 + 50,000 = 1,10,000 (6 digits)."
+  },
+  {
+   "topic": "mental",
+   "level": "hard",
+   "q": "‘A 4-digit number + a 2-digit number gives a 6-digit number.’ This is…",
+   "a": "never true",
+   "w": [
+    "always true",
+    "sometimes true",
+    "true for large numbers"
+   ],
+   "e": "The biggest possible sum is 9999 + 99 = 10,098, only 5 digits."
+  },
+  {
+   "topic": "mental",
+   "level": "hard",
+   "q": "‘A 5-digit number − a 2-digit number gives a 3-digit number.’ This is…",
+   "a": "never true",
+   "w": [
+    "always true",
+    "sometimes true",
+    "true if the number is even"
+   ],
+   "e": "The smallest result is 10,000 − 99 = 9901, a 4-digit number."
+  },
+  {
+   "topic": "mental",
+   "level": "easy",
+   "q": "Quick way to add 40 + 40 + 40 + 40 + 40 + 50 + 50 + 50 + 50 + 50?",
+   "a": "5 × 40 + 5 × 50 = 450",
+   "w": [
+    "40 + 50 = 90",
+    "10 × 40 = 400",
+    "10 × 50 = 500"
+   ],
+   "e": "Group equal numbers and multiply."
+  },
+  {
+   "topic": "mental",
+   "level": "hard",
+   "q": "38,800 = 25,000 + 13,000 + 400 × ?",
+   "a": "2",
+   "w": [
+    "3",
+    "4",
+    "8"
+   ],
+   "e": "25,000 + 13,000 = 38,000; 38,800 − 38,000 = 800 = 400 × 2."
+  },
+  {
+   "topic": "collatz",
+   "level": "easy",
+   "q": "Collatz rule: if the number is even, ___; if it is odd, ___.",
+   "a": "halve it; multiply by 3 and add 1",
+   "w": [
+    "double it; subtract 1",
+    "halve it; add 1",
+    "add 3; halve it"
+   ],
+   "e": "Repeat the rule until you reach 1. (Model paper Q35.)"
+  },
+  {
+   "topic": "collatz",
+   "level": "easy",
+   "q": "Collatz sequence starting with 21: 21, 64, 32, 16, … What comes after 16?",
+   "a": "8",
+   "w": [
+    "4",
+    "49",
+    "32"
+   ],
+   "e": "16 is even, so 16 ÷ 2 = 8. The sequence ends 8, 4, 2, 1. (Model paper Q35.)"
+  },
+  {
+   "topic": "collatz",
+   "level": "hard",
+   "q": "The Collatz conjecture says that…",
+   "a": "every starting number eventually reaches 1 – but nobody has proved it yet",
+   "w": [
+    "every sequence reaches 6174",
+    "every sequence has 10 terms",
+    "it is proved for all numbers"
+   ],
+   "e": "It is one of the most famous unsolved problems in mathematics (Lothar Collatz, 1937)."
+  },
+  {
+   "topic": "collatz",
+   "level": "hard",
+   "q": "Why does the Collatz conjecture hold for every power of 2 (2, 4, 8, 16, …)?",
+   "a": "Halving a power of 2 again and again always reaches 1",
+   "w": [
+    "Powers of 2 are odd",
+    "Multiplying by 3 gives 1",
+    "They are palindromes"
+   ],
+   "e": "64 → 32 → 16 → 8 → 4 → 2 → 1: only halving is needed."
+  },
+  {
+   "topic": "collatz",
+   "level": "hard",
+   "q": "In the game ‘21’ (say 1, 2 or 3 more each turn; first to reach 21 wins), which numbers should the winner say?",
+   "a": "1, 5, 9, 13, 17, 21",
+   "w": [
+    "3, 6, 9, 12, 15, 18, 21",
+    "2, 4, 8, 16, 21",
+    "7, 14, 21"
+   ],
+   "e": "Stay 4 apart: whatever the other player adds (1–3), you add the rest to make 4."
+  },
+  {
+   "topic": "collatz",
+   "level": "easy",
+   "type": "fn",
+   "fn": "collatzNext"
+  },
+  {
+   "topic": "collatz",
+   "level": "easy",
+   "type": "fn",
+   "fn": "collatzNext"
+  },
+  {
+   "topic": "collatz",
+   "level": "easy",
+   "type": "fn",
+   "fn": "collatzNext"
+  },
+  {
+   "topic": "collatz",
+   "level": "hard",
+   "type": "fn",
+   "fn": "collatzSeq"
+  },
+  {
+   "topic": "collatz",
+   "level": "hard",
+   "type": "fn",
+   "fn": "collatzSeq"
+  },
+  {
+   "topic": "collatz",
+   "level": "hard",
+   "type": "fn",
+   "fn": "collatzSeq"
+  }
+ ]
+}

@@ -1,0 +1,463 @@
+{
+ "id": "class6-maths-ch2",
+ "class": "6",
+ "subject": "maths",
+ "chapter": "Chapter 2 · Lines and Angles",
+ "source": "NCERT Ganita Prakash | Grade 6, Chapter 2 + BHPS midterm model paper (2026-27)",
+ "topics": [
+  {
+   "id": "basics",
+   "name": "Point, line segment, line and ray",
+   "ref": "2.1–2.4"
+  },
+  {
+   "id": "angles",
+   "name": "Angles: naming and comparing",
+   "ref": "2.5–2.7"
+  },
+  {
+   "id": "types",
+   "name": "Special types of angles",
+   "ref": "2.8, 2.11"
+  },
+  {
+   "id": "measure",
+   "name": "Measuring and drawing angles",
+   "ref": "2.9–2.10"
+  }
+ ],
+ "questions": [
+  {
+   "topic": "basics",
+   "level": "easy",
+   "q": "The shortest path between two points is a…",
+   "a": "line segment",
+   "w": [
+    "ray",
+    "line",
+    "angle"
+   ],
+   "e": "A line segment is the shortest distance between two points. (Model paper Q3.)"
+  },
+  {
+   "topic": "basics",
+   "level": "easy",
+   "q": "A line segment has…",
+   "a": "two end points",
+   "w": [
+    "one end point",
+    "no end points",
+    "three end points"
+   ],
+   "e": "A line segment starts and stops at its two end points."
+  },
+  {
+   "topic": "basics",
+   "level": "easy",
+   "q": "A ray has…",
+   "a": "one starting point and goes on forever in one direction",
+   "w": [
+    "two end points",
+    "no starting point",
+    "a fixed length"
+   ],
+   "e": "Ray DP starts at D and goes on through P indefinitely."
+  },
+  {
+   "topic": "basics",
+   "level": "easy",
+   "q": "A line…",
+   "a": "extends indefinitely in both directions",
+   "w": [
+    "has two end points",
+    "has one end point",
+    "can be measured with a ruler"
+   ],
+   "e": "A line has no end points."
+  },
+  {
+   "topic": "basics",
+   "level": "easy",
+   "q": "A point is usually named using…",
+   "a": "a capital letter",
+   "w": [
+    "a small letter",
+    "a number",
+    "two letters"
+   ],
+   "e": "Points are named P, Q, A …"
+  },
+  {
+   "topic": "basics",
+   "level": "hard",
+   "q": "How many lines can pass through one given point?",
+   "a": "Countless (infinitely many)",
+   "w": [
+    "Only one",
+    "Two",
+    "None"
+   ],
+   "e": "Lines in every direction can pass through a single point."
+  },
+  {
+   "topic": "basics",
+   "level": "hard",
+   "q": "How many lines can pass through two given points?",
+   "a": "Exactly one",
+   "w": [
+    "Two",
+    "Countless",
+    "None"
+   ],
+   "e": "Only one straight line passes through two points."
+  },
+  {
+   "topic": "basics",
+   "level": "hard",
+   "q": "In ray DP, which point is the starting point?",
+   "a": "D",
+   "w": [
+    "P",
+    "Both D and P",
+    "Neither"
+   ],
+   "e": "A ray is named with its starting point first."
+  },
+  {
+   "topic": "basics",
+   "level": "hard",
+   "q": "Assertion (A): We cannot measure the length of a ray.\nReason (R): A ray goes on indefinitely in one direction.",
+   "a": "Both A and R are true, and R is the correct explanation of A.",
+   "w": [
+    "Both A and R are true, but R is not the correct explanation of A.",
+    "A is true, but R is false.",
+    "A is false, but R is true."
+   ],
+   "e": "A ray has no second end, so it has no fixed length. R explains A."
+  },
+  {
+   "topic": "basics",
+   "level": "hard",
+   "q": "Assertion (A): A line segment has a definite length.\nReason (R): A line segment extends in both directions without end.",
+   "a": "A is true, but R is false.",
+   "w": [
+    "Both A and R are true, and R is the correct explanation of A.",
+    "Both A and R are true, but R is not the correct explanation of A.",
+    "A is false, but R is true."
+   ],
+   "e": "A is true. R describes a line, not a line segment, so R is false."
+  },
+  {
+   "topic": "angles",
+   "level": "easy",
+   "q": "Two rays starting from a common point form a(n)…",
+   "a": "angle",
+   "w": [
+    "line",
+    "line segment",
+    "triangle"
+   ],
+   "e": "An angle is formed by two rays with a common starting point. (Model paper Q5.)"
+  },
+  {
+   "topic": "angles",
+   "level": "easy",
+   "q": "In ∠POM, the vertex is…",
+   "a": "O",
+   "w": [
+    "P",
+    "M",
+    "PM"
+   ],
+   "e": "The middle letter names the vertex."
+  },
+  {
+   "topic": "angles",
+   "level": "easy",
+   "q": "Which is another name for ∠PQR?",
+   "a": "∠RQP",
+   "w": [
+    "∠QPR",
+    "∠PRQ",
+    "∠RPQ"
+   ],
+   "e": "The vertex Q stays in the middle."
+  },
+  {
+   "topic": "angles",
+   "level": "easy",
+   "q": "The rays that form an angle are called its…",
+   "a": "arms",
+   "w": [
+    "vertices",
+    "sides of a triangle",
+    "end points"
+   ],
+   "e": "The two rays are the arms; the common point is the vertex."
+  },
+  {
+   "topic": "angles",
+   "level": "hard",
+   "q": "The size of an angle is…",
+   "a": "the amount of rotation about the vertex to turn one arm onto the other",
+   "w": [
+    "the length of its arms",
+    "the distance between the arm ends",
+    "the area between the arms"
+   ],
+   "e": "Size = amount of turn, not arm length."
+  },
+  {
+   "topic": "angles",
+   "level": "hard",
+   "q": "If the arms of an angle are made longer, the angle…",
+   "a": "stays the same",
+   "w": [
+    "becomes bigger",
+    "becomes smaller",
+    "becomes a straight angle"
+   ],
+   "e": "Angle size depends on the turn, not on arm length."
+  },
+  {
+   "topic": "angles",
+   "level": "hard",
+   "type": "fn",
+   "fn": "nameAngle"
+  },
+  {
+   "topic": "angles",
+   "level": "hard",
+   "type": "fn",
+   "fn": "nameAngle"
+  },
+  {
+   "topic": "angles",
+   "level": "hard",
+   "type": "fn",
+   "fn": "nameAngle"
+  },
+  {
+   "topic": "types",
+   "level": "easy",
+   "q": "One full turn is…",
+   "a": "360°",
+   "w": [
+    "180°",
+    "90°",
+    "100°"
+   ],
+   "e": "A full turn is 360°. (Model paper Q17.)"
+  },
+  {
+   "topic": "types",
+   "level": "easy",
+   "q": "A straight angle measures…",
+   "a": "180°",
+   "w": [
+    "90°",
+    "360°",
+    "100°"
+   ],
+   "e": "Half of a full turn = 180°."
+  },
+  {
+   "topic": "types",
+   "level": "easy",
+   "q": "A right angle measures…",
+   "a": "90°",
+   "w": [
+    "45°",
+    "180°",
+    "100°"
+   ],
+   "e": "A quarter turn = 90°."
+  },
+  {
+   "topic": "types",
+   "level": "easy",
+   "q": "An angle of 200° is…",
+   "a": "a reflex angle",
+   "w": [
+    "an obtuse angle",
+    "an acute angle",
+    "a straight angle"
+   ],
+   "e": "Reflex angles are more than 180° and less than 360°. (Model paper Q2.)"
+  },
+  {
+   "topic": "types",
+   "level": "easy",
+   "q": "An angle more than 90° but less than 180° is…",
+   "a": "an obtuse angle",
+   "w": [
+    "an acute angle",
+    "a reflex angle",
+    "a right angle"
+   ],
+   "e": "Obtuse: between a right angle and a straight angle."
+  },
+  {
+   "topic": "types",
+   "level": "easy",
+   "q": "Lines that meet at right angles are called…",
+   "a": "perpendicular lines",
+   "w": [
+    "parallel lines",
+    "curved lines",
+    "intersecting rays only"
+   ],
+   "e": "Perpendicular lines meet at 90°."
+  },
+  {
+   "topic": "types",
+   "level": "hard",
+   "q": "How many right angles make a full turn?",
+   "a": "4",
+   "w": [
+    "2",
+    "3",
+    "6"
+   ],
+   "e": "4 × 90° = 360°."
+  },
+  {
+   "topic": "types",
+   "level": "hard",
+   "q": "Which angle is formed by the hands of a clock at 6 o'clock?",
+   "a": "A straight angle",
+   "w": [
+    "A right angle",
+    "An acute angle",
+    "A reflex angle"
+   ],
+   "e": "The hands point in opposite directions: 180°."
+  },
+  {
+   "topic": "types",
+   "level": "hard",
+   "q": "Assertion (A): An angle of 90° is an acute angle.\nReason (R): Acute angles are less than 90°.",
+   "a": "A is false, but R is true.",
+   "w": [
+    "Both A and R are true, and R is the correct explanation of A.",
+    "Both A and R are true, but R is not the correct explanation of A.",
+    "A is true, but R is false."
+   ],
+   "e": "A is false: 90° is a right angle. R is true."
+  },
+  {
+   "topic": "types",
+   "level": "easy",
+   "type": "fn",
+   "fn": "angleType"
+  },
+  {
+   "topic": "types",
+   "level": "easy",
+   "type": "fn",
+   "fn": "angleType"
+  },
+  {
+   "topic": "types",
+   "level": "easy",
+   "type": "fn",
+   "fn": "angleType"
+  },
+  {
+   "topic": "types",
+   "level": "hard",
+   "type": "fn",
+   "fn": "clockAngle"
+  },
+  {
+   "topic": "types",
+   "level": "hard",
+   "type": "fn",
+   "fn": "clockAngle"
+  },
+  {
+   "topic": "types",
+   "level": "easy",
+   "type": "fn",
+   "fn": "turns"
+  },
+  {
+   "topic": "measure",
+   "level": "easy",
+   "q": "The instrument used to measure angles is a…",
+   "a": "protractor",
+   "w": [
+    "ruler",
+    "compass",
+    "divider"
+   ],
+   "e": "A protractor measures angles in degrees. (Model paper Q14.)"
+  },
+  {
+   "topic": "measure",
+   "level": "easy",
+   "q": "When measuring an angle, the centre of the protractor is placed on the…",
+   "a": "vertex",
+   "w": [
+    "end of an arm",
+    "middle of an arm",
+    "paper edge"
+   ],
+   "e": "Place the centre on the vertex and the base line along one arm."
+  },
+  {
+   "topic": "measure",
+   "level": "hard",
+   "q": "Why does a protractor have two scales (inner and outer)?",
+   "a": "So an angle can be measured from either side (left or right arm)",
+   "w": [
+    "One is in cm and one in inches",
+    "One is for acute and one for obtuse angles",
+    "For drawing circles"
+   ],
+   "e": "Use the scale that starts at 0° on the arm lying along the base line."
+  },
+  {
+   "topic": "measure",
+   "level": "hard",
+   "q": "To draw an angle of 80° at point O on ray OA, which step comes first after placing the protractor?",
+   "a": "Put the centre on O and the base line along OA, then mark 80° from the 0° side",
+   "w": [
+    "Draw any line and measure it with a ruler",
+    "Mark 80 cm from O",
+    "Mark 100° on the outer scale"
+   ],
+   "e": "Always count from the 0° that sits on the given arm. (Model paper Q38a.)"
+  },
+  {
+   "topic": "measure",
+   "level": "hard",
+   "type": "fn",
+   "fn": "protractor"
+  },
+  {
+   "topic": "measure",
+   "level": "hard",
+   "type": "fn",
+   "fn": "protractor"
+  },
+  {
+   "topic": "measure",
+   "level": "hard",
+   "type": "fn",
+   "fn": "protractor"
+  },
+  {
+   "topic": "measure",
+   "level": "hard",
+   "type": "fn",
+   "fn": "straightPair"
+  },
+  {
+   "topic": "measure",
+   "level": "hard",
+   "type": "fn",
+   "fn": "straightPair"
+  }
+ ]
+}

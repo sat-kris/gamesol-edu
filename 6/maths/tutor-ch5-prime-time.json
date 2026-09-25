@@ -1,0 +1,602 @@
+{
+ "id": "class6-maths-ch5-tutor",
+ "chapter": "Chapter 5 · Prime Time",
+ "source": "NCERT Ganita Prakash | Grade 6, Chapter 5",
+ "overview": {
+  "bigIdea": "**Prime numbers are the building blocks of all whole numbers.** Every number greater than 1 can be built by multiplying primes in exactly one way – and that single fact unlocks common factors, co-primes and divisibility.",
+  "ladderTitle": "From multiples to prime building blocks",
+  "ladder": [
+   {
+    "step": "Multiples & factors",
+    "q": "What is shared?",
+    "a": "Common multiples and common factors"
+   },
+   {
+    "step": "Primes",
+    "q": "Only two factors?",
+    "a": "2, 3, 5, 7, 11, … (1 is neither)"
+   },
+   {
+    "step": "Prime factorisation",
+    "q": "Which primes build it?",
+    "a": "456 = 2 × 2 × 2 × 3 × 19"
+   },
+   {
+    "step": "Use it",
+    "q": "Co-prime? Divisible?",
+    "a": "Compare prime factors; divisibility tests"
+   }
+  ],
+  "languagesTitle": "Three quick tools",
+  "languages": [
+   {
+    "name": "Factor lists",
+    "text": "List factors in pairs: 20 → 1×20, 2×10, 4×5."
+   },
+   {
+    "name": "Factor tree / division",
+    "text": "Divide by the smallest prime again and again."
+   },
+   {
+    "name": "Divisibility tests",
+    "text": "Look at the last 1, 2 or 3 digits for 2, 5, 10, 4, 8."
+   }
+  ],
+  "plan": [
+   {
+    "pass": "Factors and primes",
+    "time": "15 min",
+    "text": "Lessons 1–2: idli-vada game, common factors, prime/composite, sieve."
+   },
+   {
+    "pass": "Prime factorisation",
+    "time": "15 min",
+    "text": "Lessons 3–4: factorise 5 numbers by division; test co-prime pairs."
+   },
+   {
+    "pass": "Divisibility",
+    "time": "10 min",
+    "text": "Lesson 5: learn the 5 tests and try 10 numbers."
+   },
+   {
+    "pass": "Test and revise",
+    "time": "10 min",
+    "text": "Check knowledge quiz; revisit after 1, 3, 7 days."
+   }
+  ]
+ },
+ "lessons": [
+  {
+   "topic": "common",
+   "ref": "5.1",
+   "title": "Common multiples and common factors",
+   "time": "8 min",
+   "hook": "In the **idli-vada game**, children say ‘idli’ for multiples of 3, ‘vada’ for multiples of 5 – and ‘idli-vada’ for numbers that are multiples of **both**: 15, 30, 45 … These are **common multiples**.",
+   "core": [
+    {
+     "term": "Multiple",
+     "def": "A number obtained by multiplying: multiples of 3 are 3, 6, 9, 12, …"
+    },
+    {
+     "term": "Common multiple",
+     "def": "A multiple of two numbers at once (15, 30, 45 for 3 and 5)."
+    },
+    {
+     "term": "Factor",
+     "def": "A number that divides exactly: factors of 20 are 1, 2, 4, 5, 10, 20."
+    },
+    {
+     "term": "Common factor",
+     "def": "A factor of both numbers (common factors of 20 and 28: 1, 2, 4)."
+    },
+    {
+     "term": "Perfect number",
+     "def": "Its factors (other than itself) add to the number: 6 = 1 + 2 + 3, 28 = 1 + 2 + 4 + 7 + 14."
+    }
+   ],
+   "explain": [
+    "List factors in **pairs** so you don’t miss any: 28 = 1 × 28 = 2 × 14 = 4 × 7.",
+    "The nth common multiple of 3 and 5 is n × 15 – so ‘idli-vada’ is said for the 10th time at 150."
+   ],
+   "example": {
+    "q": "Find the common factors of 20 and 28. (Model paper Q23, 2 marks)",
+    "steps": [
+     "Factors of 20: 1, 2, 4, 5, 10, 20.",
+     "Factors of 28: 1, 2, 4, 7, 14, 28.",
+     "Common to both: 1, 2, 4."
+    ],
+    "answer": "1, 2 and 4"
+   },
+   "mistakes": [
+    "Mixing up factors (divide into) and multiples (multiply out).",
+    "Missing factor pairs.",
+    "Forgetting 1 is a common factor of every pair."
+   ],
+   "tip": "Write both factor lists in full, then circle the common ones – the lists themselves carry a mark.",
+   "memory": "Factors are FEW (divide in). Multiples are MANY (multiply out).",
+   "examAsk": [
+    "Find common factors of two numbers.",
+    "Idli-vada: at which number is it said for the nth time?",
+    "Find common multiples of two numbers."
+   ],
+   "cards": [
+    {
+     "q": "First idli-vada number?",
+     "a": "15"
+    },
+    {
+     "q": "Common factors of 12 and 18?",
+     "a": "1, 2, 3, 6"
+    },
+    {
+     "q": "Is 6 a perfect number?",
+     "a": "Yes: 1 + 2 + 3 = 6."
+    }
+   ]
+  },
+  {
+   "topic": "primes",
+   "ref": "5.2",
+   "title": "Prime and composite numbers",
+   "time": "8 min",
+   "hook": "Some numbers can only be arranged in a single row – they have just two factors. These **prime numbers** are the atoms of arithmetic: every other number is built from them.",
+   "core": [
+    {
+     "term": "Prime number",
+     "def": "Exactly two factors: 1 and itself. 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, …"
+    },
+    {
+     "term": "Composite number",
+     "def": "More than two factors: 4, 6, 8, 9, 10, …"
+    },
+    {
+     "term": "The number 1",
+     "def": "Neither prime nor composite (only one factor)."
+    },
+    {
+     "term": "2",
+     "def": "The only even prime; the smallest prime. The smallest composite is 4."
+    },
+    {
+     "term": "Twin primes",
+     "def": "Primes that differ by 2: (3, 5), (5, 7), (11, 13), (17, 19), …"
+    },
+    {
+     "term": "Sieve of Eratosthenes",
+     "def": "Cross out 1; circle 2 and cross out its multiples; circle the next number left and repeat. Circled numbers are primes."
+    }
+   ],
+   "explain": [
+    "There are **25 primes up to 100**. Watch out for numbers that *look* prime: 51 = 3 × 17, 57 = 3 × 19, 87 = 3 × 29, 91 = 7 × 13.",
+    "There is no largest prime – the list goes on forever (Euclid proved this over 2000 years ago)."
+   ],
+   "example": {
+    "q": "List the composite numbers from 70 to 80. (Model paper Q38b)",
+    "steps": [
+     "Primes between 70 and 80: 71, 73, 79.",
+     "Every other number is composite."
+    ],
+    "answer": "70, 72, 74, 75, 76, 77, 78, 80"
+   },
+   "mistakes": [
+    "Calling 1 a prime.",
+    "Calling all odd numbers prime (9, 15, 21 are composite).",
+    "Forgetting 2 is prime because it is even."
+   ],
+   "tip": "To test if a number is prime, try dividing only by primes whose square is at most the number (for 91: 2, 3, 5, 7 → 7 × 13 = 91, composite).",
+   "memory": "1 is lonely (neither). 2 is the only even prime.",
+   "examAsk": [
+    "Is 1 prime? Why?",
+    "List primes/composites between two numbers.",
+    "Twin primes and the Sieve of Eratosthenes."
+   ],
+   "cards": [
+    {
+     "q": "Smallest composite number?",
+     "a": "4"
+    },
+    {
+     "q": "Is 91 prime?",
+     "a": "No – 7 × 13."
+    },
+    {
+     "q": "Twin primes between 40 and 50?",
+     "a": "41 and 43"
+    }
+   ]
+  },
+  {
+   "topic": "coprime",
+   "ref": "5.3",
+   "title": "Co-prime numbers",
+   "time": "7 min",
+   "hook": "Two treasure boxes are kept safe using numbers that share **nothing but 1** – they are **co-prime**. Co-prime numbers don’t have to be prime themselves: 8 and 15 are both composite, yet co-prime.",
+   "core": [
+    {
+     "term": "Co-prime",
+     "def": "Two numbers whose **only common factor is 1**."
+    },
+    {
+     "term": "Examples",
+     "def": "4 and 9; 14 and 25; 28 and 45 are co-prime."
+    },
+    {
+     "term": "Not co-prime",
+     "def": "15 and 39 (common factor 3); 22 and 44 (2 and 11)."
+    },
+    {
+     "term": "Quick facts",
+     "def": "Two different primes are always co-prime; two consecutive numbers are always co-prime."
+    }
+   ],
+   "explain": [
+    "Best method: find the **prime factorisation** of both. If they share **no prime factor**, they are co-prime.",
+    "Two even numbers can never be co-prime (both have 2)."
+   ],
+   "example": {
+    "q": "Check whether 14 and 25, 22 and 44, 28 and 45 are co-prime. (Model paper Q31, 3 marks)",
+    "steps": [
+     "14 = 2 × 7, 25 = 5 × 5 → no common prime factor → co-prime.",
+     "22 = 2 × 11, 44 = 2 × 2 × 11 → common 2 and 11 → not co-prime.",
+     "28 = 2 × 2 × 7, 45 = 3 × 3 × 5 → no common prime factor → co-prime."
+    ],
+    "answer": "14 & 25 co-prime; 22 & 44 not; 28 & 45 co-prime"
+   },
+   "mistakes": [
+    "Thinking co-prime numbers must both be prime.",
+    "Checking only whether one number is prime.",
+    "Stopping after finding 1 as a common factor – you must show there is no other."
+   ],
+   "tip": "Write each factorisation and then the sentence ‘Common prime factors: none, so they are co-prime’. That sentence is what the marking scheme looks for.",
+   "memory": "Co-prime = share only 1.",
+   "examAsk": [
+    "Check if pairs are co-prime using prime factorisation.",
+    "Give an example of two composite co-prime numbers.",
+    "Are consecutive numbers always co-prime?"
+   ],
+   "cards": [
+    {
+     "q": "Are 8 and 15 co-prime?",
+     "a": "Yes."
+    },
+    {
+     "q": "Are 21 and 35 co-prime?",
+     "a": "No – common factor 7."
+    },
+    {
+     "q": "Two consecutive numbers are…",
+     "a": "Always co-prime."
+    }
+   ]
+  },
+  {
+   "topic": "factorise",
+   "ref": "5.4",
+   "title": "Prime factorisation",
+   "time": "9 min",
+   "hook": "Just as every word is made of letters, every number greater than 1 is made of primes – and in **only one way**. Finding those primes is **prime factorisation**.",
+   "core": [
+    {
+     "term": "Prime factorisation",
+     "def": "Writing a number as a product of primes: 56 = 2 × 2 × 2 × 7."
+    },
+    {
+     "term": "Uniqueness",
+     "def": "Every number > 1 has exactly one prime factorisation (order doesn’t matter)."
+    },
+    {
+     "term": "Method",
+     "def": "Divide by the smallest prime that works, again and again, until you reach 1."
+    },
+    {
+     "term": "Divisibility check",
+     "def": "n is divisible by m if all of m’s prime factors (with repeats) appear in n’s factorisation."
+    },
+    {
+     "term": "1",
+     "def": "Has no prime factorisation."
+    }
+   ],
+   "explain": [
+    "The division ladder: 456 ÷ 2 = 228, ÷ 2 = 114, ÷ 2 = 57, ÷ 3 = 19, ÷ 19 = 1. So 456 = 2 × 2 × 2 × 3 × 19.",
+    "Smallest number with three different prime factors: 2 × 3 × 5 = 30; with four: 2 × 3 × 5 × 7 = 210."
+   ],
+   "example": {
+    "q": "Using prime factorisation, show that 72 is divisible by 18. (Model paper Q36a)",
+    "steps": [
+     "72 = 2 × 2 × 2 × 3 × 3.",
+     "18 = 2 × 3 × 3.",
+     "All the prime factors of 18 (one 2, two 3s) are inside 72’s factorisation.",
+     "72 ÷ 18 = 2 × 2 = 4."
+    ],
+    "answer": "72 is divisible by 18 (72 ÷ 18 = 4)."
+   },
+   "mistakes": [
+    "Stopping with a composite factor (2 × 4 × 57).",
+    "Dividing by a non-prime like 4 or 6 in the ladder.",
+    "Missing repeated factors (writing 2 × 3 for 12)."
+   ],
+   "tip": "Check your factorisation by multiplying back – it must give the original number.",
+   "memory": "Divide by the smallest prime, again and again.",
+   "examAsk": [
+    "Find the prime factorisation of a number (Model paper Q25: 456).",
+    "Use factorisation to check divisibility.",
+    "Smallest number with three/four different prime factors."
+   ],
+   "cards": [
+    {
+     "q": "Prime factorisation of 60?",
+     "a": "2 × 2 × 3 × 5"
+    },
+    {
+     "q": "Is 2 × 4 × 5 a prime factorisation?",
+     "a": "No – 4 is not prime."
+    },
+    {
+     "q": "Does 1 have a prime factorisation?",
+     "a": "No."
+    }
+   ],
+   "table": {
+    "title": "Division ladder for 456 (Model paper Q25)",
+    "head": [
+     "Divide by",
+     "Number"
+    ],
+    "rows": [
+     [
+      "2",
+      "456"
+     ],
+     [
+      "2",
+      "228"
+     ],
+     [
+      "2",
+      "114"
+     ],
+     [
+      "3",
+      "57"
+     ],
+     [
+      "19",
+      "19"
+     ],
+     [
+      "",
+      "1"
+     ]
+    ]
+   }
+  },
+  {
+   "topic": "divis",
+   "ref": "5.5",
+   "title": "Divisibility tests",
+   "time": "8 min",
+   "hook": "Is 546840 divisible by 8? You don’t need long division – just look at the **last three digits**. Divisibility tests are shortcuts that turn big questions into small ones.",
+   "core": [
+    {
+     "term": "By 10",
+     "def": "Last digit is 0."
+    },
+    {
+     "term": "By 5",
+     "def": "Last digit is 0 or 5."
+    },
+    {
+     "term": "By 2",
+     "def": "Last digit is even: 0, 2, 4, 6 or 8."
+    },
+    {
+     "term": "By 4",
+     "def": "The number formed by the **last two digits** is divisible by 4."
+    },
+    {
+     "term": "By 8",
+     "def": "The number formed by the **last three digits** is divisible by 8."
+    }
+   ],
+   "explain": [
+    "Why do only the last digits matter? 100 is divisible by 4, and 1000 is divisible by 8, so everything to the left is already a multiple – only the tail decides.",
+    "Being even is not enough for 4 or 8: 3366 is even, but 66 is not divisible by 4."
+   ],
+   "example": {
+    "q": "Check whether 546840 and 786111 are divisible by 8. (Model paper Q21, 2 marks)",
+    "steps": [
+     "546840: last three digits 840. 840 ÷ 8 = 105 → divisible by 8.",
+     "786111: last three digits 111. 111 is not divisible by 8 → not divisible."
+    ],
+    "answer": "546840 is divisible by 8; 786111 is not."
+   },
+   "mistakes": [
+    "Using the last digit only for 4 or 8.",
+    "Saying every even number is divisible by 4.",
+    "Forgetting to show the division of the last digits."
+   ],
+   "tip": "Always write the tail number and its division (840 ÷ 8 = 105) – the reason is worth the marks.",
+   "memory": "10 → last 0 · 5 → last 0/5 · 2 → last even · 4 → last two · 8 → last three.",
+   "examAsk": [
+    "Test divisibility by 4 or 8 and justify.",
+    "Assertion–reason on divisibility.",
+    "Find numbers in a range divisible by 4/8."
+   ],
+   "cards": [
+    {
+     "q": "Is 3366 divisible by 4?",
+     "a": "No – 66 is not divisible by 4."
+    },
+    {
+     "q": "Test for 8 looks at…",
+     "a": "The last three digits."
+    },
+    {
+     "q": "Divisible by 5 if…",
+     "a": "Last digit is 0 or 5."
+    }
+   ]
+  }
+ ],
+ "formulas": [
+  {
+   "name": "Prime",
+   "f": "exactly two factors",
+   "unit": "2, 3, 5, 7, 11, 13",
+   "when": "Classifying numbers"
+  },
+  {
+   "name": "Composite",
+   "f": "more than two factors",
+   "unit": "4, 6, 8, 9",
+   "when": "1 is neither"
+  },
+  {
+   "name": "Common factors",
+   "f": "list both, circle common",
+   "unit": "20 & 28 → 1, 2, 4",
+   "when": "2-mark questions"
+  },
+  {
+   "name": "Common multiples",
+   "f": "multiples of both",
+   "unit": "3 & 5 → 15, 30, 45",
+   "when": "Idli-vada"
+  },
+  {
+   "name": "Co-prime",
+   "f": "only common factor is 1",
+   "unit": "14 & 25",
+   "when": "Compare prime factors"
+  },
+  {
+   "name": "Prime factorisation",
+   "f": "divide by smallest prime repeatedly",
+   "unit": "456 = 2³ × 3 × 19",
+   "when": "Every factor question"
+  },
+  {
+   "name": "Divisible by 4",
+   "f": "last two digits ÷ 4",
+   "unit": "3366 → 66 ✗",
+   "when": "Tests"
+  },
+  {
+   "name": "Divisible by 8",
+   "f": "last three digits ÷ 8",
+   "unit": "546840 → 840 ✓",
+   "when": "Tests"
+  },
+  {
+   "name": "Divisible by 2, 5, 10",
+   "f": "last digit even / 0 or 5 / 0",
+   "unit": "8560 ✓ all three",
+   "when": "Tests"
+  }
+ ],
+ "revision": [
+  "Common multiples of 3 and 5: 15, 30, 45 … (idli-vada numbers).",
+  "Common factors: list factors of both and pick the shared ones (20 & 28 → 1, 2, 4).",
+  "Prime: exactly two factors. Composite: more than two. 1 is neither.",
+  "2 is the only even prime; 4 is the smallest composite; 25 primes up to 100.",
+  "Twin primes differ by 2 (17, 19). Sieve of Eratosthenes lists primes.",
+  "Co-prime: only common factor is 1. Different primes and consecutive numbers are always co-prime.",
+  "Prime factorisation is unique; divide by the smallest prime repeatedly; 1 has none.",
+  "n is divisible by m if every prime factor of m appears in n (72 = 2³ × 3², 18 = 2 × 3² → yes).",
+  "Tests: 10 → last digit 0; 5 → 0 or 5; 2 → even; 4 → last two digits; 8 → last three digits.",
+  "Smallest number with 3 different prime factors: 30; with 4: 210."
+ ],
+ "exam": {
+  "paper": [
+   {
+    "q": "Q11",
+    "marks": 1,
+    "what": "MCQ: co-prime numbers"
+   },
+   {
+    "q": "Q20",
+    "marks": 1,
+    "what": "Assertion–reason (answer: both true, R explains A)"
+   },
+   {
+    "q": "Q21",
+    "marks": 2,
+    "what": "Divisibility by 8 for 546840 and 786111"
+   },
+   {
+    "q": "Q23",
+    "marks": 2,
+    "what": "Common factors of 20 and 28"
+   },
+   {
+    "q": "Q25",
+    "marks": 2,
+    "what": "Prime factorisation of 456"
+   },
+   {
+    "q": "Q31",
+    "marks": 3,
+    "what": "Co-prime check for three pairs"
+   },
+   {
+    "q": "Q36a, Q37b, Q38b",
+    "marks": "parts of 4",
+    "what": "Divisible by 18? · 3366 by 4? · composites 70–80"
+   },
+   {
+    "q": "Q40",
+    "marks": 4,
+    "what": "Case study: primes, multiples and factors"
+   }
+  ],
+  "sections": [
+   {
+    "title": "Factor questions · 4 steps",
+    "kind": "steps",
+    "items": [
+     "Write the prime factorisation (division ladder) of each number.",
+     "Compare: list the common prime factors.",
+     "Conclude: co-prime / common factors / divisible or not.",
+     "Check by multiplying back."
+    ]
+   },
+   {
+    "title": "Assertion–reason",
+    "kind": "note",
+    "items": [
+     "Decide if A is true on its own.",
+     "Decide if R is true on its own.",
+     "Only if both are true: does R explain WHY A is true?",
+     "Match to the four standard options."
+    ]
+   },
+   {
+    "title": "Answer writing",
+    "kind": "mem",
+    "items": [
+     "Write the rule or definition in one line first, then apply it – rule lines earn marks even if the arithmetic slips.",
+     "Show every step on its own line (for example each division in a prime factorisation or each Kaprekar round).",
+     "Underline or box the final answer and write the unit (°, students, books) where there is one.",
+     "For ‘Give reason / Justify’ questions: state the rule, then show that the number or figure fits (or does not fit) it."
+    ]
+   }
+  ],
+  "checklist": [
+   "I can find common factors and common multiples.",
+   "I can tell prime and composite numbers apart (up to 100).",
+   "I can check if two numbers are co-prime using prime factorisation.",
+   "I can find the prime factorisation of any number up to 1000.",
+   "I can use the tests for 2, 4, 5, 8 and 10 with reasons.",
+   "I can answer assertion–reason questions correctly."
+  ]
+ },
+ "method": "Built on proven learning methods: see it as a picture first, understand why it works, learn from worked examples, then test yourself (active recall) and revisit after 1, 3 and 7 days (spaced revision).",
+ "sheetTitle": "Key facts sheet",
+ "sheetCols": [
+  "Idea",
+  "Rule or fact",
+  "Example",
+  "Use it when"
+ ]
+}

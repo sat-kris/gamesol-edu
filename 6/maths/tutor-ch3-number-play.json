@@ -1,0 +1,603 @@
+{
+ "id": "class6-maths-ch3-tutor",
+ "chapter": "Chapter 3 · Number Play",
+ "source": "NCERT Ganita Prakash | Grade 6, Chapter 3",
+ "overview": {
+  "bigIdea": "Numbers are for playing, puzzling and discovering. This chapter trains **computational thinking**: follow a set procedure (a routine) carefully, step by step, and look for what happens.",
+  "ladderTitle": "Four famous number games",
+  "ladder": [
+   {
+    "step": "Supercells",
+    "q": "Bigger than neighbours?",
+    "a": "Compare each cell with left, right (top, bottom)"
+   },
+   {
+    "step": "Palindromes",
+    "q": "Same both ways?",
+    "a": "12321, 10001, 11:11"
+   },
+   {
+    "step": "Kaprekar",
+    "q": "Largest − smallest?",
+    "a": "4-digit numbers always reach 6174"
+   },
+   {
+    "step": "Collatz",
+    "q": "Even ÷ 2, odd × 3 + 1",
+    "a": "Always reaches 1? Still unsolved!"
+   }
+  ],
+  "languagesTitle": "Skills this chapter trains",
+  "languages": [
+   {
+    "name": "Follow a routine",
+    "text": "Kaprekar and Collatz: one careful step at a time."
+   },
+   {
+    "name": "Reason with digits",
+    "text": "Digit sums, palindromes, smallest/largest numbers."
+   },
+   {
+    "name": "Estimate",
+    "text": "Round to friendly numbers to judge if an answer is sensible."
+   }
+  ],
+  "plan": [
+   {
+    "pass": "Routines",
+    "time": "20 min",
+    "text": "Kaprekar and Collatz lessons – practise 3 numbers each with full working (4-mark questions)."
+   },
+   {
+    "pass": "Digits and palindromes",
+    "time": "15 min",
+    "text": "Palindrome puzzles, smallest/largest numbers, digit sums."
+   },
+   {
+    "pass": "Supercells and mental maths",
+    "time": "15 min",
+    "text": "Mark supercells, always/sometimes/never statements, estimation."
+   },
+   {
+    "pass": "Test and revise",
+    "time": "10 min",
+    "text": "Check knowledge quiz; revisit after 1, 3, 7 days."
+   }
+  ]
+ },
+ "lessons": [
+  {
+   "topic": "tell",
+   "ref": "3.1–3.2",
+   "title": "Numbers tell us things & supercells",
+   "time": "7 min",
+   "hook": "Children in a line each call out the number of **taller neighbours** they have. Numbers can carry information – and in a table, a number that beats all its neighbours becomes a **supercell**.",
+   "core": [
+    {
+     "term": "Taller neighbours",
+     "def": "Each child says 0, 1 or 2 – how many of the children next to them are taller. End children have only one neighbour."
+    },
+    {
+     "term": "Supercell",
+     "def": "A cell whose number is **greater than all its neighbouring cells**."
+    },
+    {
+     "term": "Neighbours",
+     "def": "In a row: left and right. In a grid: left, right, top and bottom."
+    },
+    {
+     "term": "Largest number",
+     "def": "Always a supercell. The smallest number can never be one (in a table with 2 or more cells)."
+    }
+   ],
+   "explain": [
+    "To mark supercells, go cell by cell and compare only with **direct neighbours**, not the whole table.",
+    "Maximum supercells in a row: alternate big–small–big … so every other cell wins."
+   ],
+   "example": {
+    "q": "Mark the supercells: 987 | 457 | 999 | 123 | 888 | 345 | 789. (Model paper Q27a)",
+    "steps": [
+     "987 > 457 (its only neighbour) → supercell.",
+     "999 > 457 and > 123 → supercell.",
+     "888 > 123 and > 345 → supercell.",
+     "789 > 345 (only neighbour) → supercell. 457, 123, 345 are smaller than a neighbour."
+    ],
+    "answer": "Supercells: 987, 999, 888, 789"
+   },
+   "mistakes": [
+    "Comparing with cells that are not neighbours.",
+    "Forgetting that end cells have only one neighbour.",
+    "Thinking only the biggest number can be a supercell."
+   ],
+   "tip": "Write a small ✓ or ✗ above each cell as you check – examiners like to see the comparison.",
+   "memory": "Supercell = local champion: beat your neighbours, not everyone.",
+   "examAsk": [
+    "Colour the supercells in a table.",
+    "Fill a table so that given cells are supercells.",
+    "Can the smallest number be a supercell? Why?"
+   ],
+   "cards": [
+    {
+     "q": "Supercell means…",
+     "a": "Greater than all its neighbours."
+    },
+    {
+     "q": "Is the largest number always a supercell?",
+     "a": "Yes."
+    },
+    {
+     "q": "Can an end child say 2?",
+     "a": "No – only one neighbour."
+    }
+   ],
+   "diagram": {
+    "type": "cells",
+    "row": [
+     987,
+     457,
+     999,
+     123,
+     888,
+     345,
+     789
+    ],
+    "caption": "Model paper Q27a row – find the supercells."
+   }
+  },
+  {
+   "topic": "digits",
+   "ref": "3.3–3.4",
+   "title": "Number line, digits and digit sums",
+   "time": "7 min",
+   "hook": "How many 3-digit numbers are there? Not 999! From 100 to 999 there are 900. Thinking carefully about **digits** avoids silly slips.",
+   "core": [
+    {
+     "term": "Counting numbers by digits",
+     "def": "1-digit: 9 · 2-digit: 90 · 3-digit: 900 · 4-digit: 9000 · 5-digit: 90,000."
+    },
+    {
+     "term": "Digit sum",
+     "def": "Add the digits: 68 → 6 + 8 = 14. Different numbers can have the same digit sum (68, 176, 545)."
+    },
+    {
+     "term": "Smallest with a digit sum",
+     "def": "Use few digits, largest digits at the end: digit sum 14 → 59."
+    },
+    {
+     "term": "Largest with a digit sum",
+     "def": "Largest digits first, then zeros: 5-digit, digit sum 14 → 95000."
+    },
+    {
+     "term": "Number line",
+     "def": "Place a number by its distance from the nearest marks: 2754 is between 2000 and 3000, nearer 3000."
+    }
+   ],
+   "explain": [
+    "Counting a digit: from 1 to 100 the digit 7 appears 10 times in the units place and 10 times in the tens place – 20 times.",
+    "Commas help reading large numbers: 36,109 (Indian system: 1,10,000)."
+   ],
+   "example": {
+    "q": "Find the smallest number and the largest 5-digit number whose digit sum is 14.",
+    "steps": [
+     "Smallest: as few digits as possible → 2 digits; smaller digit first: 5 and 9 → 59.",
+     "Largest 5-digit: put 9 first, then 14 − 9 = 5, then zeros → 95000."
+    ],
+    "answer": "59 and 95000"
+   },
+   "mistakes": [
+    "Saying there are 99 two-digit numbers.",
+    "Writing 95 instead of 59 for the smallest.",
+    "Forgetting zeros can be used to fill places."
+   ],
+   "tip": "For smallest/largest questions, write the place-value boxes (tth th h t u) and fill them one by one.",
+   "memory": "Smallest: few digits, small first. Largest: big digits first.",
+   "examAsk": [
+    "How many 3-digit numbers are there?",
+    "Smallest/largest number with a given digit sum.",
+    "How many times does a digit appear from 1 to 100?"
+   ],
+   "cards": [
+    {
+     "q": "How many 2-digit numbers?",
+     "a": "90"
+    },
+    {
+     "q": "Digit sum of 4567?",
+     "a": "22"
+    },
+    {
+     "q": "Smallest number with digit sum 10?",
+     "a": "19"
+    }
+   ]
+  },
+  {
+   "topic": "palin",
+   "ref": "3.5, 3.7",
+   "title": "Palindromes, clock and calendar numbers",
+   "time": "8 min",
+   "hook": "Read 12321 backwards – still 12321! Numbers that read the same both ways are **palindromes**, and they hide in clocks (11:11) and dates (11/02/2011) too.",
+   "core": [
+    {
+     "term": "Palindrome",
+     "def": "Reads the same from left to right and right to left: 66, 848, 575, 1111."
+    },
+    {
+     "term": "Smallest/largest 5-digit palindromes",
+     "def": "10001 and 99999."
+    },
+    {
+     "term": "Reverse-and-add",
+     "def": "Add a number to its reverse and repeat until you get a palindrome: 39 + 93 = 132, 132 + 231 = 363."
+    },
+    {
+     "term": "Palindromic times and dates",
+     "def": "Clock: 4:44, 10:01, 11:11, 12:21. Date: 11/02/2011."
+    }
+   ],
+   "explain": [
+    "A palindrome is decided by its outer digits pairing up: in a 5-digit palindrome, digit 1 = digit 5 and digit 2 = digit 4; the middle digit is free.",
+    "Mystery: starting with 196 and reversing-and-adding has never been shown to give a palindrome – nobody knows!"
+   ],
+   "example": {
+    "q": "What is the sum and difference of the smallest and largest 5-digit palindromes? (Model paper Q29, 3 marks)",
+    "steps": [
+     "Smallest 5-digit palindrome = 10001; largest = 99999.",
+     "Sum: 10001 + 99999 = 110000.",
+     "Difference: 99999 − 10001 = 89998."
+    ],
+    "answer": "Sum 110000, difference 89998"
+   },
+   "mistakes": [
+    "Writing 10000 as the smallest 5-digit palindrome (it is not a palindrome).",
+    "Subtracting in the wrong order.",
+    "Forgetting the middle digit can be anything."
+   ],
+   "tip": "In palindrome puzzles, draw 5 boxes (tth th h t u), mark equal pairs with arrows, then fill in the clues.",
+   "memory": "Mirror the digits: first = last, second = second-last.",
+   "examAsk": [
+    "Sum/difference of smallest and largest palindromes.",
+    "Palindrome riddle using place-value clues.",
+    "Next palindromic time on a clock."
+   ],
+   "cards": [
+    {
+     "q": "Smallest 5-digit palindrome?",
+     "a": "10001"
+    },
+    {
+     "q": "Is 12321 a palindrome?",
+     "a": "Yes"
+    },
+    {
+     "q": "Next palindromic time after 10:01?",
+     "a": "11:11"
+    }
+   ]
+  },
+  {
+   "topic": "kaprekar",
+   "ref": "3.6",
+   "title": "Kaprekar’s magic number 6174",
+   "time": "9 min",
+   "hook": "In 1949, **D. R. Kaprekar**, a mathematics teacher in Devlali, Maharashtra, found magic: take any 4-digit number (not all digits the same), repeat ‘largest minus smallest’, and you always land on **6174**.",
+   "core": [
+    {
+     "term": "The routine",
+     "def": "A = largest number from the digits, B = smallest number from the digits, C = A − B. Repeat with C."
+    },
+    {
+     "term": "Kaprekar constant",
+     "def": "6174 – because 7641 − 1467 = 6174 again."
+    },
+    {
+     "term": "Condition",
+     "def": "At least two different digits (3333 gives 0)."
+    },
+    {
+     "term": "Leading zeros",
+     "def": "Keep 4 digits: 378 is written 0378 → A = 8730, B = 0378."
+    },
+    {
+     "term": "3-digit version",
+     "def": "Reaches 495."
+    }
+   ],
+   "explain": [
+    "Count **rounds** = number of subtractions until you get 6174. It is never more than 7 for 4-digit numbers.",
+    "Neat working wins marks: one line per round, A − B = C."
+   ],
+   "example": {
+    "q": "How many rounds does 3524 take to reach 6174? (Model paper Q37a)",
+    "steps": [
+     "Round 1: 5432 − 2345 = 3087.",
+     "Round 2: 8730 − 0378 = 8352.",
+     "Round 3: 8532 − 2358 = 6174."
+    ],
+    "answer": "3 rounds"
+   },
+   "mistakes": [
+    "Dropping the zero: using 378 instead of 0378.",
+    "Subtraction slips – check by adding C + B = A.",
+    "Using a number with all digits the same."
+   ],
+   "tip": "Always check each subtraction by adding back: B + C should give A. It takes 10 seconds and saves marks.",
+   "memory": "Big − small, big − small … until 6174.",
+   "examAsk": [
+    "Number of rounds for a 4-digit number (or your birth year).",
+    "Carry out the routine for a 3-digit number.",
+    "Why must the digits not all be the same?"
+   ],
+   "cards": [
+    {
+     "q": "Kaprekar constant?",
+     "a": "6174"
+    },
+    {
+     "q": "Who was Kaprekar?",
+     "a": "A maths teacher from Devlali, Maharashtra."
+    },
+    {
+     "q": "3-digit numbers reach…",
+     "a": "495"
+    }
+   ]
+  },
+  {
+   "topic": "mental",
+   "ref": "3.8, 3.9, 3.11",
+   "title": "Mental maths, patterns and estimation",
+   "time": "7 min",
+   "hook": "You don’t always need an exact answer. Paromita’s class has sections of 32, 29 and 35 – ‘about 100’ is good enough to plan. **Estimation** and smart grouping make mental maths fast.",
+   "core": [
+    {
+     "term": "Grouping",
+     "def": "Add equal numbers by multiplying: 5 × 40 + 5 × 50 = 450."
+    },
+    {
+     "term": "Making numbers",
+     "def": "38,800 = 25,000 + 13,000 + 400 × 2."
+    },
+    {
+     "term": "Always / sometimes / never",
+     "def": "5-digit + 5-digit: sometimes 5-digit. 4-digit + 2-digit = 6-digit: never. 5-digit − 2-digit = 3-digit: never."
+    },
+    {
+     "term": "Estimation",
+     "def": "Round to friendly numbers, then calculate."
+    }
+   ],
+   "explain": [
+    "To decide ‘always/sometimes/never’, test the **extreme** cases – the smallest and largest possible numbers.",
+    "Estimate first, then calculate. If the two are far apart, re-check."
+   ],
+   "example": {
+    "q": "Is ‘5-digit number − 2-digit number = 3-digit number’ always, sometimes or never true?",
+    "steps": [
+     "Try the smallest 5-digit number and the largest 2-digit number: 10,000 − 99 = 9901.",
+     "Even the smallest possible result has 4 digits."
+    ],
+    "answer": "Never true"
+   },
+   "mistakes": [
+    "Testing only one easy example and saying ‘always’.",
+    "Adding numbers one by one instead of grouping.",
+    "Treating an estimate as the exact answer."
+   ],
+   "tip": "In ‘always/sometimes/never’, give one example (or the extreme case) as proof – that is what earns the mark.",
+   "memory": "Test the edges: smallest and largest possible numbers.",
+   "examAsk": [
+    "Always/sometimes/never statements with digits.",
+    "Estimate a total quickly.",
+    "Find a quick way to add a pattern of numbers."
+   ],
+   "cards": [
+    {
+     "q": "4-digit + 2-digit = 6-digit?",
+     "a": "Never (max 10,098)."
+    },
+    {
+     "q": "32 + 29 + 35 ≈ ?",
+     "a": "About 100"
+    },
+    {
+     "q": "38,800 − 38,000 = ?",
+     "a": "800"
+    }
+   ]
+  },
+  {
+   "topic": "collatz",
+   "ref": "3.10, 3.12",
+   "title": "Collatz conjecture and number games",
+   "time": "8 min",
+   "hook": "Pick any number. If even, halve it; if odd, multiply by 3 and add 1. Keep going … you always seem to reach **1**. Nobody in the world has proved it always happens – it is the famous unsolved **Collatz conjecture** (1937).",
+   "core": [
+    {
+     "term": "Collatz rule",
+     "def": "Even → ÷ 2. Odd → × 3 + 1. Repeat until 1."
+    },
+    {
+     "term": "Conjecture",
+     "def": "A statement believed to be true but not yet proved."
+    },
+    {
+     "term": "Powers of 2",
+     "def": "Always reach 1 by halving (64 → 32 → … → 1)."
+    },
+    {
+     "term": "Game of 21",
+     "def": "Add 1, 2 or 3 each turn; first to 21 wins. Winning numbers: 1, 5, 9, 13, 17, 21 (4 apart)."
+    }
+   ],
+   "explain": [
+    "Collatz sequences can climb high before falling: 7 → 22 → 11 → 34 → 17 → 52 → 26 → 13 → 40 → 20 → 10 → 5 → 16 → 8 → 4 → 2 → 1.",
+    "Winning strategy games work backwards from the target: if you can say 17, you can always reach 21."
+   ],
+   "example": {
+    "q": "Check whether the Collatz conjecture holds for 21. (Model paper Q35, 4 marks)",
+    "steps": [
+     "21 is odd: 21 × 3 + 1 = 64.",
+     "64 → 32 → 16 → 8 → 4 → 2 → 1 (all even, keep halving).",
+     "The sequence reaches 1."
+    ],
+    "answer": "21 → 64 → 32 → 16 → 8 → 4 → 2 → 1; the conjecture holds for 21."
+   },
+   "mistakes": [
+    "Halving an odd number (giving a fraction).",
+    "Writing 3 × n − 1 instead of 3 × n + 1.",
+    "Stopping before reaching 1."
+   ],
+   "tip": "Write the rule at the top of your answer, then each step as ‘number → next’ with the operation. End with a conclusion sentence.",
+   "memory": "Even → half. Odd → triple plus one.",
+   "examAsk": [
+    "Write the Collatz sequence for a number and state if it reaches 1.",
+    "Why does the conjecture hold for powers of 2?",
+    "Find the winning strategy in a number game."
+   ],
+   "cards": [
+    {
+     "q": "Collatz next after 13?",
+     "a": "40"
+    },
+    {
+     "q": "Next after 40?",
+     "a": "20"
+    },
+    {
+     "q": "Is the Collatz conjecture proved?",
+     "a": "No – still unsolved."
+    }
+   ]
+  }
+ ],
+ "formulas": [
+  {
+   "name": "Supercell",
+   "f": "greater than all neighbours",
+   "unit": "999 between 457 and 123",
+   "when": "Tables of numbers"
+  },
+  {
+   "name": "Digit counts",
+   "f": "9, 90, 900, 9000, 90,000",
+   "unit": "3-digit: 100–999",
+   "when": "‘How many n-digit numbers?’"
+  },
+  {
+   "name": "Palindrome",
+   "f": "same both ways",
+   "unit": "10001, 99999",
+   "when": "Puzzles, clocks, dates"
+  },
+  {
+   "name": "Kaprekar",
+   "f": "largest − smallest, repeat",
+   "unit": "→ 6174 (3-digit → 495)",
+   "when": "4-digit routine"
+  },
+  {
+   "name": "Collatz",
+   "f": "even ÷ 2, odd × 3 + 1",
+   "unit": "21 → 64 → … → 1",
+   "when": "Sequence questions"
+  },
+  {
+   "name": "Game of 21",
+   "f": "say 1, 5, 9, 13, 17, 21",
+   "unit": "4 apart",
+   "when": "Winning strategy"
+  },
+  {
+   "name": "Always/sometimes/never",
+   "f": "test extreme cases",
+   "unit": "10,000 − 99 = 9901",
+   "when": "Digit statements"
+  }
+ ],
+ "revision": [
+  "Supercell: a number greater than all its neighbouring cells; the largest number always is one.",
+  "There are 9 one-digit, 90 two-digit, 900 three-digit, 9000 four-digit numbers.",
+  "Digit sum: add the digits. Smallest with digit sum 14 is 59; largest 5-digit is 95000.",
+  "Palindromes read the same both ways; smallest 5-digit 10001, largest 99999 (sum 110000, difference 89998).",
+  "Reverse-and-add usually produces a palindrome (196 is a mystery).",
+  "Kaprekar routine: largest − smallest, repeat; 4-digit numbers reach 6174, 3-digit reach 495.",
+  "Keep 4 digits in Kaprekar (0378) and check each subtraction by adding back.",
+  "Collatz: even → half, odd → × 3 + 1; conjecture: always reaches 1 (unproved since 1937).",
+  "Powers of 2 reach 1 just by halving.",
+  "Game of 21: say 1, 5, 9, 13, 17, 21.",
+  "Estimate by rounding; test ‘always/sometimes/never’ with extreme cases."
+ ],
+ "exam": {
+  "paper": [
+   {
+    "q": "Q27a",
+    "marks": "part of 3",
+    "what": "Mark the supercells in a row"
+   },
+   {
+    "q": "Q29",
+    "marks": 3,
+    "what": "Sum and difference of smallest and largest 5-digit palindromes"
+   },
+   {
+    "q": "Q35",
+    "marks": 4,
+    "what": "Collatz sequence starting with 21"
+   },
+   {
+    "q": "Q37a",
+    "marks": "part of 4",
+    "what": "Kaprekar rounds for 3524"
+   }
+  ],
+  "sections": [
+   {
+    "title": "Routine questions (Kaprekar, Collatz)",
+    "kind": "steps",
+    "items": [
+     "Write the rule first.",
+     "One line per step: show A, B and A − B (or the Collatz operation).",
+     "Check each subtraction by adding back.",
+     "Finish with a sentence: ‘It takes 3 rounds’ / ‘The sequence reaches 1’."
+    ]
+   },
+   {
+    "title": "Digit puzzles",
+    "kind": "note",
+    "items": [
+     "Draw place-value boxes (tth th h t u).",
+     "Mark which digits must be equal (palindromes).",
+     "Fill in clue by clue and check every clue at the end."
+    ]
+   },
+   {
+    "title": "Answer writing",
+    "kind": "mem",
+    "items": [
+     "Write the rule or definition in one line first, then apply it – rule lines earn marks even if the arithmetic slips.",
+     "Show every step on its own line (for example each division in a prime factorisation or each Kaprekar round).",
+     "Underline or box the final answer and write the unit (°, students, books) where there is one.",
+     "For ‘Give reason / Justify’ questions: state the rule, then show that the number or figure fits (or does not fit) it."
+    ]
+   }
+  ],
+  "checklist": [
+   "I can mark supercells in a row or grid.",
+   "I know how many n-digit numbers there are.",
+   "I can find smallest/largest numbers with a given digit sum.",
+   "I can solve palindrome puzzles and sums/differences.",
+   "I can run the Kaprekar routine and count rounds.",
+   "I can write a Collatz sequence and explain the conjecture.",
+   "I can decide always/sometimes/never with examples."
+  ]
+ },
+ "method": "Built on proven learning methods: see it as a picture first, understand why it works, learn from worked examples, then test yourself (active recall) and revisit after 1, 3 and 7 days (spaced revision).",
+ "sheetTitle": "Key facts sheet",
+ "sheetCols": [
+  "Idea",
+  "Rule or fact",
+  "Example",
+  "Use it when"
+ ]
+}

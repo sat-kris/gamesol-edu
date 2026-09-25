@@ -1,0 +1,517 @@
+{
+ "id": "class6-maths-ch2-tutor",
+ "chapter": "Chapter 2 · Lines and Angles",
+ "source": "NCERT Ganita Prakash | Grade 6, Chapter 2",
+ "overview": {
+  "bigIdea": "Geometry is built from a few simple ideas: **points, lines, rays and angles**. An angle is really an **amount of turning** – and we measure that turn in degrees with a protractor.",
+  "ladderTitle": "Building blocks of geometry",
+  "ladder": [
+   {
+    "step": "Point",
+    "q": "Where?",
+    "a": "A location, named with a capital letter"
+   },
+   {
+    "step": "Segment · Line · Ray",
+    "q": "How does it extend?",
+    "a": "Two ends · no ends · one end"
+   },
+   {
+    "step": "Angle",
+    "q": "What do two rays make?",
+    "a": "Vertex + two arms; size = amount of turn"
+   },
+   {
+    "step": "Degrees",
+    "q": "How big is the turn?",
+    "a": "Full turn 360°, straight 180°, right 90°"
+   }
+  ],
+  "languagesTitle": "Three things to do with an angle",
+  "languages": [
+   {
+    "name": "Name it",
+    "text": "∠PQR – vertex letter always in the middle."
+   },
+   {
+    "name": "Classify it",
+    "text": "Acute, right, obtuse, straight, reflex."
+   },
+   {
+    "name": "Measure / draw it",
+    "text": "Protractor: centre on vertex, count from 0° on one arm."
+   }
+  ],
+  "plan": [
+   {
+    "pass": "Words first",
+    "time": "10 min",
+    "text": "Lesson 1 and 2: definitions and naming – these are quick 1- and 2-mark answers."
+   },
+   {
+    "pass": "Turns and types",
+    "time": "10 min",
+    "text": "Lesson 3: learn the five angle types with their degree ranges."
+   },
+   {
+    "pass": "Protractor practice",
+    "time": "20 min",
+    "text": "Lesson 4 with a real protractor: measure 5 angles and draw 80°, 160° and 135°."
+   },
+   {
+    "pass": "Test and revise",
+    "time": "10 min",
+    "text": "Check knowledge quiz (protractor reading questions), revise after 1, 3, 7 days."
+   }
+  ]
+ },
+ "lessons": [
+  {
+   "topic": "basics",
+   "ref": "2.1–2.4",
+   "title": "Point, line segment, line and ray",
+   "time": "7 min",
+   "hook": "Stretch a string tightly between two pins – that is a **line segment**, the shortest path between two points. Now imagine a torch beam starting at the torch and going on forever – that is a **ray**.",
+   "core": [
+    {
+     "term": "Point",
+     "def": "Shows an exact location. Named with a capital letter, e.g. P."
+    },
+    {
+     "term": "Line segment ST",
+     "def": "The shortest distance between points S and T. It has **two end points** and a fixed length."
+    },
+    {
+     "term": "Line ST",
+     "def": "A line segment extended **indefinitely on both sides**. No end points. Can also be named with one small letter, e.g. line m."
+    },
+    {
+     "term": "Ray DP",
+     "def": "Starts at D and goes on **indefinitely in one direction** through P. The starting point is written first."
+    }
+   ],
+   "explain": [
+    "Only a line segment can be measured with a ruler – a line and a ray go on forever.",
+    "Through one point you can draw countless lines; through two points there is **exactly one** line."
+   ],
+   "example": {
+    "q": "Name all the line segments, lines and rays: points A, B, C are on a straight line, with arrows at both ends of the line, and a ray starts at B going through C.",
+    "steps": [
+     "Line segments: AB, BC, AC (each has two end points).",
+     "Line: AC (or AB, BC – the same line), extended both ways.",
+     "Ray: BC (starts at B, goes through C)."
+    ],
+    "answer": "Segments AB, BC, AC; line AC; ray BC."
+   },
+   "mistakes": [
+    "Writing ray DP as ray PD – the starting point must come first.",
+    "Saying a line has two end points.",
+    "Measuring a ray’s ‘length’."
+   ],
+   "tip": "Use the right symbol-words: ‘line segment AB’, ‘ray AB’, ‘line AB’. Mixing them up loses the 1-mark answers.",
+   "memory": "Segment: 2 ends · Ray: 1 end · Line: 0 ends.",
+   "examAsk": [
+    "The shortest distance between two points is a …",
+    "How many lines pass through two points?",
+    "Name the rays/segments in a figure."
+   ],
+   "cards": [
+    {
+     "q": "How many end points does a ray have?",
+     "a": "One (its starting point)."
+    },
+    {
+     "q": "Can you measure a line?",
+     "a": "No – it goes on forever both ways."
+    },
+    {
+     "q": "Lines through two points?",
+     "a": "Exactly one."
+    }
+   ]
+  },
+  {
+   "topic": "angles",
+   "ref": "2.5–2.7",
+   "title": "Angles: naming and comparing",
+   "time": "8 min",
+   "hook": "Open a door, turn a key, move the hands of a clock – each is a **turn**. When two rays start from the same point, the turn from one ray to the other is an **angle**.",
+   "core": [
+    {
+     "term": "Angle",
+     "def": "Formed by two rays with a common starting point."
+    },
+    {
+     "term": "Vertex",
+     "def": "The common starting point of the two rays."
+    },
+    {
+     "term": "Arms",
+     "def": "The two rays that form the angle."
+    },
+    {
+     "term": "Naming",
+     "def": "∠POM or ∠MOP – the **vertex letter is always in the middle**."
+    },
+    {
+     "term": "Size of an angle",
+     "def": "The **amount of rotation** about the vertex needed to turn one arm onto the other. It does NOT depend on the length of the arms."
+    }
+   ],
+   "explain": [
+    "To compare two angles, place one on top of the other with the vertices and one arm matching (superimposing) – the one whose other arm is further out is bigger.",
+    "A figure can hide several angles at one vertex: with rays TP, TQ, TR from T, the angles are ∠PTQ, ∠QTR and ∠PTR."
+   ],
+   "example": {
+    "q": "In the figure, rays TP, TQ and TR start at T. Name the two marked angles that both have arm TR. (Model paper Q24, 2 marks)",
+    "steps": [
+     "The vertex is T, so T goes in the middle.",
+     "The angle between TR and TQ is ∠RTQ (or ∠QTR).",
+     "The angle between TR and TP is ∠RTP (or ∠PTR)."
+    ],
+    "answer": "∠RTQ and ∠RTP"
+   },
+   "mistakes": [
+    "Putting the vertex letter first or last (∠TRQ instead of ∠RTQ).",
+    "Thinking longer arms make a bigger angle.",
+    "Missing angles that overlap (∠PTR contains ∠QTR)."
+   ],
+   "tip": "When a figure has three rays from one vertex, list every pair of rays – that gives all the angles (3 rays → 3 angles).",
+   "memory": "Vertex in the middle! Size = turn, not arm length.",
+   "examAsk": [
+    "Name the marked angles in a figure.",
+    "Identify the vertex and arms of ∠ABC.",
+    "Does the size change if the arms are extended?"
+   ],
+   "cards": [
+    {
+     "q": "In ∠XYZ, which is the vertex?",
+     "a": "Y"
+    },
+    {
+     "q": "Another name for ∠ABC?",
+     "a": "∠CBA"
+    },
+    {
+     "q": "Size of an angle means…",
+     "a": "Amount of turn between its arms."
+    }
+   ],
+   "diagram": {
+    "type": "angle",
+    "deg": 60,
+    "labels": [
+     "R",
+     "T",
+     "Q"
+    ],
+    "caption": "∠RTQ: vertex T, arms TR and TQ."
+   }
+  },
+  {
+   "topic": "types",
+   "ref": "2.8, 2.11",
+   "title": "Special types of angles",
+   "time": "8 min",
+   "hook": "Stand facing the board and turn right round to face it again – a **full turn**, 360°. Turn to face the back of the class – a **half turn**, 180°, a straight angle. Turn to face the side wall – a **quarter turn**, 90°, a right angle.",
+   "core": [
+    {
+     "term": "Full turn",
+     "def": "360°"
+    },
+    {
+     "term": "Straight angle",
+     "def": "Half turn = 180° (the arms make a straight line)"
+    },
+    {
+     "term": "Right angle",
+     "def": "Quarter turn = 90°. Lines meeting at right angles are **perpendicular**."
+    },
+    {
+     "term": "Acute angle",
+     "def": "More than 0° and less than 90°"
+    },
+    {
+     "term": "Obtuse angle",
+     "def": "More than 90° and less than 180°"
+    },
+    {
+     "term": "Reflex angle",
+     "def": "More than 180° and less than 360°"
+    }
+   ],
+   "explain": [
+    "Why 360? A full turn was divided into 360 equal parts long ago; 360 divides evenly by 2, 3, 4, 5, 6, 8, 9, 10, 12 … which makes many angles whole numbers.",
+    "Clock angles: 12 hour marks share 360°, so each hour mark is 30°. At 3 o’clock the hands make 90°; at 6 o’clock, 180°."
+   ],
+   "example": {
+    "q": "Classify: (i) 180° (ii) 50° (iii) 90° (iv) 130°. (Model paper Q36b)",
+    "steps": [
+     "180° is half a turn → straight angle.",
+     "50° is less than 90° → acute angle.",
+     "90° is a quarter turn → right angle.",
+     "130° is between 90° and 180° → obtuse angle."
+    ],
+    "answer": "Straight, acute, right, obtuse."
+   },
+   "mistakes": [
+    "Calling 90° acute or 180° obtuse – they are exactly right and straight.",
+    "Forgetting reflex angles (between 180° and 360°).",
+    "Saying ‘perpendicular’ for any two crossing lines."
+   ],
+   "tip": "Draw a quick number line 0 – 90 – 180 – 360 in the margin and place the angle on it. The type is instant.",
+   "memory": "A-R-O-S-R: Acute < Right (90) < Obtuse < Straight (180) < Reflex < Full (360).",
+   "examAsk": [
+    "Classify given angles.",
+    "Angle between clock hands at a given hour.",
+    "How many right angles make a straight angle / full turn?"
+   ],
+   "cards": [
+    {
+     "q": "Straight angle = ?",
+     "a": "180°"
+    },
+    {
+     "q": "An angle of 250° is…",
+     "a": "Reflex"
+    },
+    {
+     "q": "Lines meeting at 90° are called…",
+     "a": "Perpendicular lines"
+    }
+   ],
+   "diagram": {
+    "type": "angle",
+    "deg": 130,
+    "labels": [
+     "",
+     "O",
+     ""
+    ],
+    "caption": "An obtuse angle of 130° – more than a right angle, less than a straight angle."
+   }
+  },
+  {
+   "topic": "measure",
+   "ref": "2.9–2.10",
+   "title": "Measuring and drawing angles",
+   "time": "10 min",
+   "hook": "A protractor is simply a half-turn (180°) marked into degrees. The two number scales let you start counting from **either** arm – the whole skill is choosing the scale that starts at 0° on your arm.",
+   "core": [
+    {
+     "term": "Protractor",
+     "def": "Instrument to measure and draw angles in degrees."
+    },
+    {
+     "term": "Placing it",
+     "def": "Centre point on the **vertex**, base line along **one arm**."
+    },
+    {
+     "term": "Which scale?",
+     "def": "Use the scale that reads **0°** on the arm lying on the base line."
+    },
+    {
+     "term": "Reading between rays",
+     "def": "If two rays read 65° and 115° on the same scale, the angle between them is 115° − 65° = 50°."
+    },
+    {
+     "term": "Drawing an angle",
+     "def": "Draw a ray, put the centre on its end point, mark the degree from the 0° side, join."
+    }
+   ],
+   "explain": [
+    "**Sense check:** decide first if the angle is acute or obtuse. If it looks acute but you read 150°, you used the wrong scale.",
+    "Angles on a straight line add up to 180°: if ∠AXB = 65°, then ∠BXE = 180° − 65° = 115°."
+   ],
+   "example": {
+    "q": "On the straight line AXE, rays XB and XC read 65° and 95° from A. Find ∠AXB, ∠BXC, ∠CXE and ∠BXE. (Model paper Q33, 3 marks)",
+    "steps": [
+     "∠AXB = 65° (read directly from 0° at A).",
+     "∠BXC = 95° − 65° = 30°.",
+     "∠CXE = 180° − 95° = 85°.",
+     "∠BXE = 180° − 65° = 115°."
+    ],
+    "answer": "65°, 30°, 85°, 115°"
+   },
+   "mistakes": [
+    "Starting from the wrong scale (reading 115° for a 65° angle).",
+    "Not placing the centre exactly on the vertex.",
+    "Forgetting to subtract when the angle is between two rays."
+   ],
+   "tip": "In drawing questions (e.g. draw 80° and 160°), label the vertex, the arms and the degree clearly. Keep the protractor mark as a small dot before joining.",
+   "memory": "Centre on vertex · base on arm · count from zero.",
+   "examAsk": [
+    "Read angles from a protractor diagram.",
+    "Draw angles of given measures (e.g. 80°, 160°).",
+    "Find the missing angle on a straight line."
+   ],
+   "cards": [
+    {
+     "q": "Where does the protractor centre go?",
+     "a": "On the vertex."
+    },
+    {
+     "q": "Rays read 40° and 110°: angle between?",
+     "a": "70°"
+    },
+    {
+     "q": "On a straight line, one angle is 65°. The other?",
+     "a": "115°"
+    }
+   ],
+   "diagram": {
+    "type": "protractor",
+    "rays": [
+     {
+      "deg": 65,
+      "label": "B"
+     },
+     {
+      "deg": 95,
+      "label": "C"
+     }
+    ],
+    "caption": "Model paper Q33 style: read both rays from 0° at A."
+   }
+  }
+ ],
+ "formulas": [
+  {
+   "name": "Line segment",
+   "f": "2 end points, fixed length",
+   "unit": "AB",
+   "when": "Shortest path between two points"
+  },
+  {
+   "name": "Ray",
+   "f": "1 end point, goes on in one direction",
+   "unit": "ray DP (start D)",
+   "when": "Naming rays – start point first"
+  },
+  {
+   "name": "Line",
+   "f": "no end points",
+   "unit": "line AB or line m",
+   "when": "Extends both ways"
+  },
+  {
+   "name": "Naming angles",
+   "f": "vertex in the middle",
+   "unit": "∠PQR = ∠RQP",
+   "when": "Every angle question"
+  },
+  {
+   "name": "Full / straight / right",
+   "f": "360° / 180° / 90°",
+   "unit": "4 right angles = 360°",
+   "when": "Turns, clocks"
+  },
+  {
+   "name": "Acute · Obtuse · Reflex",
+   "f": "< 90° · 90°–180° · 180°–360°",
+   "unit": "50° · 130° · 200°",
+   "when": "Classifying angles"
+  },
+  {
+   "name": "Straight line",
+   "f": "angles on a line add to 180°",
+   "unit": "65° + 115°",
+   "when": "Missing angle"
+  },
+  {
+   "name": "Clock",
+   "f": "each hour mark = 30°",
+   "unit": "3 o’clock = 90°",
+   "when": "Clock angle questions"
+  }
+ ],
+ "revision": [
+  "A point marks a location; name it with a capital letter.",
+  "Line segment: shortest distance between two points, two end points. Line: no end points. Ray: one starting point.",
+  "Name rays with the starting point first (ray DP starts at D).",
+  "An angle = two rays from a common point; vertex = common point; arms = the rays.",
+  "Name an angle with the vertex in the middle: ∠POM = ∠MOP.",
+  "Size of an angle = amount of rotation; arm length does not matter.",
+  "Full turn 360°, straight angle 180°, right angle 90°.",
+  "Acute < 90° < obtuse < 180° < reflex < 360°.",
+  "Perpendicular lines meet at right angles.",
+  "Protractor: centre on vertex, base line on one arm, read from the 0° on that arm.",
+  "Angle between two rays = difference of their readings; angles on a straight line add to 180°."
+ ],
+ "exam": {
+  "paper": [
+   {
+    "q": "Q2, Q3, Q5, Q14, Q17",
+    "marks": "1 each",
+    "what": "MCQs: reflex angle, line segment, angle, protractor, 360°"
+   },
+   {
+    "q": "Q24",
+    "marks": 2,
+    "what": "Name the marked angles in a figure"
+   },
+   {
+    "q": "Q33",
+    "marks": 3,
+    "what": "Read angles on a protractor diagram"
+   },
+   {
+    "q": "Q36b",
+    "marks": "part of 4",
+    "what": "Classify angles 180°, 50°, 90°, 130°"
+   },
+   {
+    "q": "Q38a",
+    "marks": "part of 4",
+    "what": "Draw 80° and 160° using a protractor"
+   }
+  ],
+  "sections": [
+   {
+    "title": "Protractor questions · 4 checks",
+    "kind": "steps",
+    "items": [
+     "Centre exactly on the vertex.",
+     "Base line along one arm.",
+     "Read from the scale that shows 0° on that arm.",
+     "Sense check: acute or obtuse? Does the number match?"
+    ]
+   },
+   {
+    "title": "Naming and classifying",
+    "kind": "note",
+    "items": [
+     "Vertex letter in the middle every time.",
+     "List every pair of rays at a vertex to find all angles.",
+     "Classify using 90°, 180°, 360° as fence posts."
+    ]
+   },
+   {
+    "title": "Answer writing",
+    "kind": "mem",
+    "items": [
+     "Write the rule or definition in one line first, then apply it – rule lines earn marks even if the arithmetic slips.",
+     "Show every step on its own line (for example each division in a prime factorisation or each Kaprekar round).",
+     "Underline or box the final answer and write the unit (°, students, books) where there is one.",
+     "For ‘Give reason / Justify’ questions: state the rule, then show that the number or figure fits (or does not fit) it."
+    ]
+   }
+  ],
+  "checklist": [
+   "I can tell a line, line segment and ray apart and name them correctly.",
+   "I can name angles with the vertex in the middle.",
+   "I know the five angle types and their ranges.",
+   "I can find clock-hand angles at whole hours.",
+   "I can read two rays on a protractor and subtract.",
+   "I can draw any angle up to 180° accurately."
+  ]
+ },
+ "method": "Built on proven learning methods: see it as a picture first, understand why it works, learn from worked examples, then test yourself (active recall) and revisit after 1, 3 and 7 days (spaced revision).",
+ "sheetTitle": "Key facts sheet",
+ "sheetCols": [
+  "Idea",
+  "Rule or fact",
+  "Example",
+  "Use it when"
+ ]
+}

@@ -1,0 +1,379 @@
+{
+ "id": "class6-maths-ch4",
+ "class": "6",
+ "subject": "maths",
+ "chapter": "Chapter 4 · Data Handling and Presentation",
+ "source": "NCERT Ganita Prakash | Grade 6, Chapter 4 + BHPS midterm model paper (2026-27)",
+ "topics": [
+  {
+   "id": "collect",
+   "name": "Collecting and organising data",
+   "ref": "4.1"
+  },
+  {
+   "id": "picto",
+   "name": "Pictographs",
+   "ref": "4.2"
+  },
+  {
+   "id": "bars",
+   "name": "Reading bar graphs",
+   "ref": "4.3"
+  },
+  {
+   "id": "draw",
+   "name": "Drawing bar graphs and choosing a scale",
+   "ref": "4.4–4.5"
+  }
+ ],
+ "questions": [
+  {
+   "topic": "collect",
+   "level": "easy",
+   "q": "Facts, numbers, measures and observations that give information are called…",
+   "a": "data",
+   "w": [
+    "a graph",
+    "a tally",
+    "a scale"
+   ],
+   "e": "Data can be organised in tables using tally marks."
+  },
+  {
+   "topic": "collect",
+   "level": "easy",
+   "q": "Frequency means…",
+   "a": "the number of times a value occurs",
+   "w": [
+    "the largest value",
+    "the total of all values",
+    "the scale of a graph"
+   ],
+   "e": "Frequency = count of occurrences."
+  },
+  {
+   "topic": "collect",
+   "level": "easy",
+   "q": "How is the number 5 shown with tally marks?",
+   "a": "Four lines with a fifth line across them",
+   "w": [
+    "Five separate lines",
+    "A circle",
+    "The number 5"
+   ],
+   "e": "Bundling in fives makes counting quick."
+  },
+  {
+   "topic": "collect",
+   "level": "hard",
+   "q": "Why do we organise raw data in a frequency table?",
+   "a": "So it is easy to read, compare and interpret",
+   "w": [
+    "To make the data longer",
+    "To change the values",
+    "To avoid counting"
+   ],
+   "e": "A tally/frequency table summarises the data at a glance. (Model paper Q34.)"
+  },
+  {
+   "topic": "collect",
+   "level": "easy",
+   "type": "fn",
+   "fn": "tallyFreq"
+  },
+  {
+   "topic": "collect",
+   "level": "easy",
+   "type": "fn",
+   "fn": "tallyFreq"
+  },
+  {
+   "topic": "collect",
+   "level": "easy",
+   "type": "fn",
+   "fn": "tallyFreq"
+  },
+  {
+   "topic": "collect",
+   "level": "hard",
+   "type": "fn",
+   "fn": "freqCount"
+  },
+  {
+   "topic": "collect",
+   "level": "hard",
+   "type": "fn",
+   "fn": "freqCount"
+  },
+  {
+   "topic": "collect",
+   "level": "hard",
+   "type": "fn",
+   "fn": "freqCount"
+  },
+  {
+   "topic": "picto",
+   "level": "easy",
+   "q": "In a pictograph, the key (scale) tells us…",
+   "a": "how many items each picture stands for",
+   "w": [
+    "the title of the graph",
+    "the colour of the pictures",
+    "the number of rows"
+   ],
+   "e": "Always read the key before counting."
+  },
+  {
+   "topic": "picto",
+   "level": "easy",
+   "q": "Key: one symbol = 5 students. How many students do 5 symbols show?",
+   "a": "25",
+   "w": [
+    "5",
+    "10",
+    "55"
+   ],
+   "e": "5 × 5 = 25. (Model paper Q30a.)"
+  },
+  {
+   "topic": "picto",
+   "level": "hard",
+   "q": "Key: one symbol = 4 books. How is 10 books shown?",
+   "a": "2 full symbols and half a symbol",
+   "w": [
+    "10 symbols",
+    "2 symbols",
+    "3 symbols"
+   ],
+   "e": "10 ÷ 4 = 2½ symbols."
+  },
+  {
+   "topic": "picto",
+   "level": "hard",
+   "q": "Key: one symbol = 2 books. Anu read 16 books. How many symbols should be drawn for Anu?",
+   "a": "8",
+   "w": [
+    "16",
+    "4",
+    "32"
+   ],
+   "e": "16 ÷ 2 = 8 symbols. (Model paper Q32.)"
+  },
+  {
+   "topic": "picto",
+   "level": "easy",
+   "type": "fn",
+   "fn": "pictoRead"
+  },
+  {
+   "topic": "picto",
+   "level": "easy",
+   "type": "fn",
+   "fn": "pictoRead"
+  },
+  {
+   "topic": "picto",
+   "level": "easy",
+   "type": "fn",
+   "fn": "pictoRead"
+  },
+  {
+   "topic": "picto",
+   "level": "easy",
+   "type": "fn",
+   "fn": "pictoRead"
+  },
+  {
+   "topic": "picto",
+   "level": "hard",
+   "type": "fn",
+   "fn": "pictoRead"
+  },
+  {
+   "topic": "picto",
+   "level": "hard",
+   "type": "fn",
+   "fn": "pictoRead"
+  },
+  {
+   "topic": "picto",
+   "level": "hard",
+   "type": "fn",
+   "fn": "pictoRead"
+  },
+  {
+   "topic": "bars",
+   "level": "easy",
+   "q": "A graph that uses bars of equal width to show data is a…",
+   "a": "bar graph",
+   "w": [
+    "pictograph",
+    "tally chart",
+    "line segment"
+   ],
+   "e": "(Model paper Q4.)"
+  },
+  {
+   "topic": "bars",
+   "level": "easy",
+   "q": "Bars in a bar graph can be drawn vertically or…",
+   "a": "horizontally",
+   "w": [
+    "diagonally",
+    "in a circle",
+    "only upwards"
+   ],
+   "e": "(Model paper Q6.)"
+  },
+  {
+   "topic": "bars",
+   "level": "easy",
+   "q": "In a bar graph, the length (or height) of a bar shows the…",
+   "a": "value (frequency)",
+   "w": [
+    "colour",
+    "width",
+    "name of the item"
+   ],
+   "e": "Longer bar → larger value."
+  },
+  {
+   "topic": "bars",
+   "level": "hard",
+   "q": "In a bar graph, all bars should have…",
+   "a": "the same width and equal gaps between them",
+   "w": [
+    "different widths",
+    "different colours only",
+    "no gaps at all"
+   ],
+   "e": "Only the length should change, so the comparison is fair."
+  },
+  {
+   "topic": "bars",
+   "level": "easy",
+   "type": "fn",
+   "fn": "barRead"
+  },
+  {
+   "topic": "bars",
+   "level": "easy",
+   "type": "fn",
+   "fn": "barRead"
+  },
+  {
+   "topic": "bars",
+   "level": "easy",
+   "type": "fn",
+   "fn": "barRead"
+  },
+  {
+   "topic": "bars",
+   "level": "easy",
+   "type": "fn",
+   "fn": "barRead"
+  },
+  {
+   "topic": "bars",
+   "level": "hard",
+   "type": "fn",
+   "fn": "barRead"
+  },
+  {
+   "topic": "bars",
+   "level": "hard",
+   "type": "fn",
+   "fn": "barRead"
+  },
+  {
+   "topic": "bars",
+   "level": "hard",
+   "type": "fn",
+   "fn": "barRead"
+  },
+  {
+   "topic": "draw",
+   "level": "easy",
+   "q": "The first step when drawing a bar graph is to…",
+   "a": "choose a scale and draw and label the axes",
+   "w": [
+    "colour the bars",
+    "write the answer",
+    "draw the tallest bar"
+   ],
+   "e": "Axes, labels and scale come first."
+  },
+  {
+   "topic": "draw",
+   "level": "hard",
+   "q": "Values 12, 16, 20, 24 and 20 are to be drawn as bars. Which scale is best?",
+   "a": "1 unit = 4",
+   "w": [
+    "1 unit = 1",
+    "1 unit = 3",
+    "1 unit = 50"
+   ],
+   "e": "All values are multiples of 4, and the bars stay a sensible length. (Model paper Q28.)"
+  },
+  {
+   "topic": "draw",
+   "level": "hard",
+   "q": "For very large numbers (like thousands of people), which is usually better?",
+   "a": "A bar graph with a suitable scale",
+   "w": [
+    "A pictograph with 1 symbol = 1 person",
+    "A tally chart",
+    "Listing every value"
+   ],
+   "e": "Drawing thousands of symbols is impractical; a bar graph with a scale works well."
+  },
+  {
+   "topic": "draw",
+   "level": "hard",
+   "q": "Assertion (A): The scale must be written on every bar graph.\nReason (R): Without the scale, a reader cannot convert bar lengths into values.",
+   "a": "Both A and R are true, and R is the correct explanation of A.",
+   "w": [
+    "Both A and R are true, but R is not the correct explanation of A.",
+    "A is true, but R is false.",
+    "A is false, but R is true."
+   ],
+   "e": "Both true; R explains why the scale is necessary."
+  },
+  {
+   "topic": "draw",
+   "level": "easy",
+   "type": "fn",
+   "fn": "barScale"
+  },
+  {
+   "topic": "draw",
+   "level": "easy",
+   "type": "fn",
+   "fn": "barScale"
+  },
+  {
+   "topic": "draw",
+   "level": "easy",
+   "type": "fn",
+   "fn": "barScale"
+  },
+  {
+   "topic": "draw",
+   "level": "hard",
+   "type": "fn",
+   "fn": "chooseScale"
+  },
+  {
+   "topic": "draw",
+   "level": "hard",
+   "type": "fn",
+   "fn": "chooseScale"
+  },
+  {
+   "topic": "draw",
+   "level": "hard",
+   "type": "fn",
+   "fn": "chooseScale"
+  }
+ ]
+}

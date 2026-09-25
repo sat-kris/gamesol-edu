@@ -1,0 +1,514 @@
+{
+ "id": "class6-maths-ch4-tutor",
+ "chapter": "Chapter 4 · Data Handling and Presentation",
+ "source": "NCERT Ganita Prakash | Grade 6, Chapter 4",
+ "overview": {
+  "bigIdea": "Data is information – facts, numbers and observations. The skill is to **collect → organise → present → read** it so that anyone can understand it at a glance.",
+  "ladderTitle": "The data journey",
+  "ladder": [
+   {
+    "step": "Collect",
+    "q": "What is the information?",
+    "a": "Ask, count, measure"
+   },
+   {
+    "step": "Organise",
+    "q": "How many of each?",
+    "a": "Tally marks → frequency table"
+   },
+   {
+    "step": "Present",
+    "q": "How to show it?",
+    "a": "Pictograph (with key) or bar graph (with scale)"
+   },
+   {
+    "step": "Interpret",
+    "q": "What does it tell us?",
+    "a": "Most, least, differences, totals"
+   }
+  ],
+  "languagesTitle": "Three ways to show the same data",
+  "languages": [
+   {
+    "name": "Table",
+    "text": "Tally marks and frequencies – exact counts."
+   },
+   {
+    "name": "Pictograph",
+    "text": "Pictures with a key (1 picture = 5 students)."
+   },
+   {
+    "name": "Bar graph",
+    "text": "Bars of equal width; length shows value using a scale."
+   }
+  ],
+  "plan": [
+   {
+    "pass": "Tables",
+    "time": "10 min",
+    "text": "Lesson 1: make one tally table from a list of 20 marks (a 3-mark question)."
+   },
+   {
+    "pass": "Pictographs",
+    "time": "15 min",
+    "text": "Lesson 2: read and draw a pictograph with a key, including half symbols."
+   },
+   {
+    "pass": "Bar graphs",
+    "time": "20 min",
+    "text": "Lessons 3–4: read bar graphs, then draw one on graph paper with a scale."
+   },
+   {
+    "pass": "Test and revise",
+    "time": "10 min",
+    "text": "Check knowledge quiz; revisit after 1, 3, 7 days."
+   }
+  ]
+ },
+ "lessons": [
+  {
+   "topic": "collect",
+   "ref": "4.1",
+   "title": "Collecting and organising data",
+   "time": "8 min",
+   "hook": "Your teacher asks 30 students their favourite sweet. A messy list of 30 answers tells you nothing at a glance – but a table with **tally marks** instantly shows which sweet wins.",
+   "core": [
+    {
+     "term": "Data",
+     "def": "Facts, numbers, measures, observations and other descriptions that convey information."
+    },
+    {
+     "term": "Tally marks",
+     "def": "One line per item; every 5th line is drawn **across** the previous four to make a bundle of 5."
+    },
+    {
+     "term": "Frequency",
+     "def": "The number of times a value occurs (the count)."
+    },
+    {
+     "term": "Frequency table",
+     "def": "A table with the values, tally marks and frequencies."
+    }
+   ],
+   "explain": [
+    "Go through the list **once**, making a tally mark for each item – do not count each value separately, you may miss some.",
+    "Check: the total of all frequencies must equal the number of items in the list."
+   ],
+   "example": {
+    "q": "Marks of 20 students: 5, 8, 7, 5, 6, 8, 9, 5, 7, 10, 8, 5, 6, 7, 8, 5, 10, 7, 8, 5. Make a frequency table. (Model paper Q34 style)",
+    "steps": [
+     "Values: 5, 6, 7, 8, 9, 10.",
+     "Tally while reading the list once: 5 → 6 marks, 6 → 2, 7 → 4, 8 → 5, 9 → 1, 10 → 2.",
+     "Check: 6 + 2 + 4 + 5 + 1 + 2 = 20 ✓"
+    ],
+    "answer": "5: 6 · 6: 2 · 7: 4 · 8: 5 · 9: 1 · 10: 2"
+   },
+   "mistakes": [
+    "Drawing the 5th tally as a separate line instead of across the four.",
+    "Skipping or double-counting items.",
+    "Not checking that the frequencies add up to the total."
+   ],
+   "tip": "Always write the check ‘Total = …’ under your table – it shows the examiner you verified your counts.",
+   "memory": "Four standing, one lying across = 5.",
+   "examAsk": [
+    "Make a tally/frequency table from raw data.",
+    "Which value has the highest frequency?",
+    "What is frequency?"
+   ],
+   "cards": [
+    {
+     "q": "Tally bundle stands for…",
+     "a": "5"
+    },
+    {
+     "q": "Frequency means…",
+     "a": "How many times a value occurs."
+    },
+    {
+     "q": "Frequencies must add up to…",
+     "a": "The total number of items."
+    }
+   ],
+   "diagram": {
+    "type": "tally",
+    "n": 13,
+    "caption": "Tally for 13: two bundles of 5 and 3 more."
+   }
+  },
+  {
+   "topic": "picto",
+   "ref": "4.2",
+   "title": "Pictographs",
+   "time": "8 min",
+   "hook": "Instead of numbers, draw pictures! A **pictograph** uses symbols – but each symbol can stand for more than one thing. The **key** is the secret code you must read first.",
+   "core": [
+    {
+     "term": "Pictograph",
+     "def": "Shows data using pictures or symbols."
+    },
+    {
+     "term": "Key / scale",
+     "def": "Says what one symbol stands for, e.g. one book symbol = 2 books. It **must** be given."
+    },
+    {
+     "term": "Reading",
+     "def": "Number of symbols × key value."
+    },
+    {
+     "term": "Half symbols",
+     "def": "Half a symbol = half the key value (key 4 → half = 2)."
+    },
+    {
+     "term": "Drawing",
+     "def": "Value ÷ key = number of symbols to draw."
+    }
+   ],
+   "explain": [
+    "Choose a key that divides the values nicely so you don’t need awkward parts of symbols.",
+    "Always give a title, category names and the key."
+   ],
+   "example": {
+    "q": "Key: 1 symbol = 5 students. The Mathematics Club has 5 symbols, Sports Club 7, Art Club 3. (a) Students in the Mathematics Club? (b) Which club is largest? (Model paper Q30)",
+    "steps": [
+     "(a) 5 symbols × 5 = 25 students.",
+     "(b) Sports Club has the most symbols (7) → 35 students."
+    ],
+    "answer": "(a) 25 students (b) Sports Club"
+   },
+   "mistakes": [
+    "Counting symbols but forgetting to multiply by the key.",
+    "Ignoring half symbols.",
+    "Drawing a pictograph without a key."
+   ],
+   "tip": "Write the calculation next to each row (5 × 5 = 25) – it earns method marks.",
+   "memory": "Symbols × key = value. Value ÷ key = symbols.",
+   "examAsk": [
+    "Read values from a pictograph.",
+    "Draw a pictograph with a given key (Model paper Q32: 1 symbol = 2 books).",
+    "Find totals and differences."
+   ],
+   "cards": [
+    {
+     "q": "Key 1 symbol = 10. 4½ symbols = ?",
+     "a": "45"
+    },
+    {
+     "q": "Key 2 books. 16 books → symbols?",
+     "a": "8"
+    },
+    {
+     "q": "What must every pictograph have?",
+     "a": "A key (scale)."
+    }
+   ],
+   "diagram": {
+    "type": "picto",
+    "key": 5,
+    "unit": "students",
+    "rows": [
+     [
+      "Maths Club",
+      5
+     ],
+     [
+      "Sports Club",
+      7
+     ],
+     [
+      "Art Club",
+      3
+     ]
+    ],
+    "caption": "Pictograph with key 1 symbol = 5 students."
+   }
+  },
+  {
+   "topic": "bars",
+   "ref": "4.3",
+   "title": "Reading bar graphs",
+   "time": "7 min",
+   "hook": "Drawing 500 little pictures is tiring. A **bar graph** replaces pictures with bars – the longer the bar, the bigger the value. With a good scale it can show even very large numbers.",
+   "core": [
+    {
+     "term": "Bar graph",
+     "def": "Bars of **uniform width** with equal gaps; the length/height shows the value."
+    },
+    {
+     "term": "Orientation",
+     "def": "Bars can be vertical or **horizontal**."
+    },
+    {
+     "term": "Scale",
+     "def": "Tells what one unit of length stands for (1 unit = 4 saplings)."
+    },
+    {
+     "term": "Reading",
+     "def": "Read the top of the bar against the axis; compare lengths to find most/least."
+    }
+   ],
+   "explain": [
+    "Before answering, read the **title, axis labels and scale** – they tell you what the bars mean.",
+    "Difference = subtract the two values; total = add all values."
+   ],
+   "example": {
+    "q": "A bar graph shows saplings planted: VI A 12, VI B 16, VI C 20, VI D 24, VI E 20. Which class planted the most? How many more than VI A?",
+    "steps": [
+     "Tallest bar: VI D with 24.",
+     "24 − 12 = 12 more than VI A."
+    ],
+    "answer": "VI D; 12 more"
+   },
+   "mistakes": [
+    "Reading the bar against the wrong gridline.",
+    "Ignoring the scale (counting units instead of values).",
+    "Adding instead of subtracting for ‘how many more’."
+   ],
+   "tip": "Put a ruler across from the top of the bar to the axis to read the value exactly.",
+   "memory": "Title → axes → scale → then read.",
+   "examAsk": [
+    "Which is the highest/lowest?",
+    "How many more/less?",
+    "Total of all bars."
+   ],
+   "cards": [
+    {
+     "q": "Bars in a bar graph have…",
+     "a": "Equal width and equal gaps."
+    },
+    {
+     "q": "Can bars be horizontal?",
+     "a": "Yes."
+    },
+    {
+     "q": "The length of a bar shows…",
+     "a": "The value (frequency)."
+    }
+   ],
+   "diagram": {
+    "type": "bars",
+    "title": "Saplings planted by class",
+    "x": "Class",
+    "y": "Saplings",
+    "bars": [
+     [
+      "VI A",
+      12
+     ],
+     [
+      "VI B",
+      16
+     ],
+     [
+      "VI C",
+      20
+     ],
+     [
+      "VI D",
+      24
+     ],
+     [
+      "VI E",
+      20
+     ]
+    ],
+    "step": 4,
+    "caption": "Model paper Q28 data with scale 1 unit = 4 saplings."
+   }
+  },
+  {
+   "topic": "draw",
+   "ref": "4.4–4.5",
+   "title": "Drawing bar graphs and choosing a scale",
+   "time": "9 min",
+   "hook": "A good graph is **accurate, clear and pleasing to look at**. The single most important choice is the **scale** – too small and bars run off the page, too big and they are too short to compare.",
+   "core": [
+    {
+     "term": "Steps",
+     "def": "1) Draw and label the axes. 2) Choose a scale. 3) Mark values on the axis. 4) Draw bars of equal width with equal gaps. 5) Title."
+    },
+    {
+     "term": "Choosing the scale",
+     "def": "Pick a number that divides the values neatly and keeps the tallest bar on the page (values 12–24 → 1 unit = 4)."
+    },
+    {
+     "term": "Write the scale",
+     "def": "Always write it, e.g. ‘Scale: 1 unit = 4 saplings’."
+    },
+    {
+     "term": "Aesthetics",
+     "def": "Neat labels, sensible colours and a clear title make the graph effective."
+    }
+   ],
+   "explain": [
+    "Divide each value by the scale to get the bar length: 20 ÷ 4 = 5 units.",
+    "Start the value axis at 0 – starting elsewhere makes differences look bigger than they are."
+   ],
+   "example": {
+    "q": "Draw a bar graph for saplings: VI A 12, VI B 16, VI C 20, VI D 24, VI E 20. (Model paper Q28, 3 marks)",
+    "steps": [
+     "Scale: all values are multiples of 4 → 1 unit = 4 saplings.",
+     "Bar lengths: 3, 4, 5, 6, 5 units.",
+     "Label axes (Class, Number of saplings), draw equal-width bars with equal gaps, write the title and scale."
+    ],
+    "answer": "Bars of 3, 4, 5, 6 and 5 units with scale 1 unit = 4."
+   },
+   "mistakes": [
+    "Forgetting to write the scale.",
+    "Unequal bar widths or gaps.",
+    "Not labelling the axes."
+   ],
+   "tip": "Marks in a graph question are for: title, labelled axes, scale, correct bar heights, equal widths. Tick each one before moving on.",
+   "memory": "T-A-S-B: Title, Axes, Scale, Bars.",
+   "examAsk": [
+    "Draw a bar graph with a suitable scale.",
+    "Choose a scale for given data.",
+    "Why must a scale be written?"
+   ],
+   "cards": [
+    {
+     "q": "Values 20, 35, 50: good scale?",
+     "a": "1 unit = 5"
+    },
+    {
+     "q": "Bar length for 24 at 1 unit = 4?",
+     "a": "6 units"
+    },
+    {
+     "q": "First thing to draw?",
+     "a": "The axes with labels."
+    }
+   ]
+  }
+ ],
+ "formulas": [
+  {
+   "name": "Tally",
+   "f": "bundle of 5 = four lines + one across",
+   "unit": "13 = two bundles + 3",
+   "when": "Organising raw data"
+  },
+  {
+   "name": "Frequency",
+   "f": "count of a value",
+   "unit": "mark 5 occurs 6 times",
+   "when": "Tables"
+  },
+  {
+   "name": "Pictograph reading",
+   "f": "symbols × key",
+   "unit": "5 × 5 = 25",
+   "when": "Reading pictographs"
+  },
+  {
+   "name": "Pictograph drawing",
+   "f": "value ÷ key = symbols",
+   "unit": "16 ÷ 2 = 8",
+   "when": "Drawing pictographs"
+  },
+  {
+   "name": "Bar length",
+   "f": "value ÷ scale",
+   "unit": "20 ÷ 4 = 5 units",
+   "when": "Drawing bar graphs"
+  },
+  {
+   "name": "Bar value",
+   "f": "length × scale",
+   "unit": "6 units × 4 = 24",
+   "when": "Reading bar graphs"
+  },
+  {
+   "name": "Graph checklist",
+   "f": "Title, Axes, Scale, Bars",
+   "unit": "",
+   "when": "Every graph"
+  }
+ ],
+ "revision": [
+  "Data = facts, numbers, measures, observations that give information.",
+  "Tally marks: bundle every 5; frequency = count of each value; frequencies add to the total.",
+  "Pictograph: pictures with a key; value = symbols × key; half symbol = half the key.",
+  "Every pictograph and bar graph needs a key/scale.",
+  "Bar graph: equal widths, equal gaps; length shows value; bars may be vertical or horizontal.",
+  "Choose a scale that divides the values neatly and fits the page; start the axis at 0.",
+  "Bar length = value ÷ scale; value = length × scale.",
+  "Read title, axes and scale before answering questions on a graph.",
+  "‘How many more’ → subtract; ‘altogether’ → add."
+ ],
+ "exam": {
+  "paper": [
+   {
+    "q": "Q4, Q6",
+    "marks": "1 each",
+    "what": "MCQs: bar graph; bars can be horizontal"
+   },
+   {
+    "q": "Q28",
+    "marks": 3,
+    "what": "Draw a bar graph (scale 1 unit = 4 saplings)"
+   },
+   {
+    "q": "Q30",
+    "marks": 3,
+    "what": "Read a pictograph (key 1 symbol = 5 students)"
+   },
+   {
+    "q": "Q32",
+    "marks": 3,
+    "what": "Draw a pictograph (key 1 symbol = 2 books)"
+   },
+   {
+    "q": "Q34",
+    "marks": 3,
+    "what": "Tally marks and frequency table"
+   }
+  ],
+  "sections": [
+   {
+    "title": "Drawing a graph · marks checklist",
+    "kind": "steps",
+    "items": [
+     "Title at the top.",
+     "Both axes drawn and labelled.",
+     "Scale / key written clearly.",
+     "Bars or symbols of the correct size, equal widths and gaps.",
+     "Values checked against the table."
+    ]
+   },
+   {
+    "title": "Reading a graph",
+    "kind": "note",
+    "items": [
+     "Read the key or scale first.",
+     "Write the calculation for each value (symbols × key).",
+     "Use subtraction for ‘more/less’, addition for ‘total’."
+    ]
+   },
+   {
+    "title": "Answer writing",
+    "kind": "mem",
+    "items": [
+     "Write the rule or definition in one line first, then apply it – rule lines earn marks even if the arithmetic slips.",
+     "Show every step on its own line (for example each division in a prime factorisation or each Kaprekar round).",
+     "Underline or box the final answer and write the unit (°, students, books) where there is one.",
+     "For ‘Give reason / Justify’ questions: state the rule, then show that the number or figure fits (or does not fit) it."
+    ]
+   }
+  ],
+  "checklist": [
+   "I can make a tally and frequency table from raw data.",
+   "I can read a pictograph using its key, including half symbols.",
+   "I can draw a pictograph with a given key.",
+   "I can read values, differences and totals from a bar graph.",
+   "I can choose a suitable scale and draw a bar graph with all labels."
+  ]
+ },
+ "method": "Built on proven learning methods: see it as a picture first, understand why it works, learn from worked examples, then test yourself (active recall) and revisit after 1, 3 and 7 days (spaced revision).",
+ "sheetTitle": "Key facts sheet",
+ "sheetCols": [
+  "Idea",
+  "Rule or fact",
+  "Example",
+  "Use it when"
+ ]
+}

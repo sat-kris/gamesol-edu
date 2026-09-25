@@ -1,0 +1,588 @@
+{
+ "id": "class6-maths-ch5",
+ "class": "6",
+ "subject": "maths",
+ "chapter": "Chapter 5 · Prime Time",
+ "source": "NCERT Ganita Prakash | Grade 6, Chapter 5 + BHPS midterm model paper (2026-27)",
+ "topics": [
+  {
+   "id": "common",
+   "name": "Common multiples and common factors",
+   "ref": "5.1"
+  },
+  {
+   "id": "primes",
+   "name": "Prime and composite numbers",
+   "ref": "5.2"
+  },
+  {
+   "id": "coprime",
+   "name": "Co-prime numbers",
+   "ref": "5.3"
+  },
+  {
+   "id": "factorise",
+   "name": "Prime factorisation",
+   "ref": "5.4"
+  },
+  {
+   "id": "divis",
+   "name": "Divisibility tests",
+   "ref": "5.5"
+  }
+ ],
+ "questions": [
+  {
+   "topic": "common",
+   "level": "easy",
+   "q": "In the idli-vada game (idli: multiples of 3, vada: multiples of 5), what is the first number for which children say ‘idli-vada’?",
+   "a": "15",
+   "w": [
+    "8",
+    "3",
+    "30"
+   ],
+   "e": "15 is the first common multiple of 3 and 5."
+  },
+  {
+   "topic": "common",
+   "level": "easy",
+   "q": "Numbers that are multiples of both 3 and 5 are called…",
+   "a": "common multiples of 3 and 5",
+   "w": [
+    "common factors of 3 and 5",
+    "prime numbers",
+    "co-prime numbers"
+   ],
+   "e": "15, 30, 45, … are common multiples."
+  },
+  {
+   "topic": "common",
+   "level": "easy",
+   "q": "What are the common factors of 20 and 28?",
+   "a": "1, 2, 4",
+   "w": [
+    "1, 2, 4, 7",
+    "1, 4, 5",
+    "2, 4, 10"
+   ],
+   "e": "Factors of 20: 1, 2, 4, 5, 10, 20. Factors of 28: 1, 2, 4, 7, 14, 28. (Model paper Q23.)"
+  },
+  {
+   "topic": "common",
+   "level": "hard",
+   "q": "A number whose factors (other than itself) add up to the number is called a perfect number. Which is a perfect number?",
+   "a": "6",
+   "w": [
+    "8",
+    "10",
+    "12"
+   ],
+   "e": "1 + 2 + 3 = 6. (28 is another: 1+2+4+7+14 = 28.)"
+  },
+  {
+   "topic": "common",
+   "level": "hard",
+   "q": "If the idli-vada game is played from 1 to 90, how many times is ‘idli-vada’ said?",
+   "a": "6",
+   "w": [
+    "5",
+    "18",
+    "30"
+   ],
+   "e": "Common multiples of 3 and 5 up to 90: 15, 30, 45, 60, 75, 90 → 6."
+  },
+  {
+   "topic": "common",
+   "level": "easy",
+   "type": "fn",
+   "fn": "commonFactors"
+  },
+  {
+   "topic": "common",
+   "level": "easy",
+   "type": "fn",
+   "fn": "commonFactors"
+  },
+  {
+   "topic": "common",
+   "level": "easy",
+   "type": "fn",
+   "fn": "commonFactors"
+  },
+  {
+   "topic": "common",
+   "level": "hard",
+   "type": "fn",
+   "fn": "idliVada"
+  },
+  {
+   "topic": "common",
+   "level": "hard",
+   "type": "fn",
+   "fn": "idliVada"
+  },
+  {
+   "topic": "common",
+   "level": "hard",
+   "type": "fn",
+   "fn": "idliVada"
+  },
+  {
+   "topic": "primes",
+   "level": "easy",
+   "q": "Numbers that have exactly two factors are called…",
+   "a": "prime numbers",
+   "w": [
+    "composite numbers",
+    "even numbers",
+    "co-prime numbers"
+   ],
+   "e": "The two factors are 1 and the number itself."
+  },
+  {
+   "topic": "primes",
+   "level": "easy",
+   "q": "The number 1 is…",
+   "a": "neither prime nor composite",
+   "w": [
+    "prime",
+    "composite",
+    "both prime and composite"
+   ],
+   "e": "1 has only one factor."
+  },
+  {
+   "topic": "primes",
+   "level": "easy",
+   "q": "The only even prime number is…",
+   "a": "2",
+   "w": [
+    "4",
+    "0",
+    "6"
+   ],
+   "e": "Every other even number has 2 as a factor."
+  },
+  {
+   "topic": "primes",
+   "level": "easy",
+   "q": "The smallest composite number is…",
+   "a": "4",
+   "w": [
+    "1",
+    "2",
+    "9"
+   ],
+   "e": "4 has factors 1, 2, 4."
+  },
+  {
+   "topic": "primes",
+   "level": "easy",
+   "q": "Which pair are twin primes?",
+   "a": "17 and 19",
+   "w": [
+    "13 and 15",
+    "21 and 23",
+    "9 and 11"
+   ],
+   "e": "Twin primes are primes that differ by 2."
+  },
+  {
+   "topic": "primes",
+   "level": "easy",
+   "q": "The Sieve of Eratosthenes is a method to…",
+   "a": "find prime numbers",
+   "w": [
+    "find the largest number",
+    "add large numbers",
+    "draw angles"
+   ],
+   "e": "Cross out multiples of each prime; the circled numbers left are primes."
+  },
+  {
+   "topic": "primes",
+   "level": "hard",
+   "q": "Which are seven consecutive composite numbers between 1 and 100?",
+   "a": "90 to 96",
+   "w": [
+    "20 to 26",
+    "70 to 76",
+    "50 to 56"
+   ],
+   "e": "90, 91 (7×13), 92, 93 (3×31), 94, 95, 96 are all composite; 89 and 97 are prime."
+  },
+  {
+   "topic": "primes",
+   "level": "hard",
+   "q": "Which statement is true?",
+   "a": "There is no prime number whose units digit is 4",
+   "w": [
+    "All even numbers are composite",
+    "A product of two primes can be prime",
+    "Prime numbers have no factors"
+   ],
+   "e": "Any number ending in 4 is even and bigger than 2, so it is composite."
+  },
+  {
+   "topic": "primes",
+   "level": "hard",
+   "q": "Assertion (A): 2 is a prime number.\nReason (R): All prime numbers are odd.",
+   "a": "A is true, but R is false.",
+   "w": [
+    "Both A and R are true, and R is the correct explanation of A.",
+    "Both A and R are true, but R is not the correct explanation of A.",
+    "A is false, but R is true."
+   ],
+   "e": "A is true, but R is false because 2 itself is an even prime."
+  },
+  {
+   "topic": "primes",
+   "level": "easy",
+   "type": "fn",
+   "fn": "primeInList"
+  },
+  {
+   "topic": "primes",
+   "level": "easy",
+   "type": "fn",
+   "fn": "primeInList"
+  },
+  {
+   "topic": "primes",
+   "level": "easy",
+   "type": "fn",
+   "fn": "primeInList"
+  },
+  {
+   "topic": "primes",
+   "level": "hard",
+   "type": "fn",
+   "fn": "primesCount"
+  },
+  {
+   "topic": "primes",
+   "level": "hard",
+   "type": "fn",
+   "fn": "primesCount"
+  },
+  {
+   "topic": "primes",
+   "level": "hard",
+   "type": "fn",
+   "fn": "composites"
+  },
+  {
+   "topic": "primes",
+   "level": "hard",
+   "type": "fn",
+   "fn": "composites"
+  },
+  {
+   "topic": "coprime",
+   "level": "easy",
+   "q": "Two numbers are co-prime if…",
+   "a": "their only common factor is 1",
+   "w": [
+    "both are prime",
+    "both are even",
+    "one divides the other"
+   ],
+   "e": "Example: 4 and 9 are co-prime. (Model paper Q11.)"
+  },
+  {
+   "topic": "coprime",
+   "level": "easy",
+   "q": "Are 15 and 39 co-prime?",
+   "a": "No, 3 is a common factor",
+   "w": [
+    "Yes, both are odd",
+    "Yes, 15 is not prime",
+    "No, 5 is a common factor"
+   ],
+   "e": "15 = 3 × 5 and 39 = 3 × 13 share 3."
+  },
+  {
+   "topic": "coprime",
+   "level": "hard",
+   "q": "Are two different prime numbers always co-prime?",
+   "a": "Yes",
+   "w": [
+    "No",
+    "Only if both are odd",
+    "Only if they are twin primes"
+   ],
+   "e": "Each prime's only factors are 1 and itself, so the only common factor is 1."
+  },
+  {
+   "topic": "coprime",
+   "level": "hard",
+   "q": "Are two consecutive numbers (like 14 and 15) always co-prime?",
+   "a": "Yes",
+   "w": [
+    "No",
+    "Only if one is prime",
+    "Only if both are odd"
+   ],
+   "e": "Any common factor would also have to divide their difference, 1."
+  },
+  {
+   "topic": "coprime",
+   "level": "hard",
+   "q": "Are 22 and 44 co-prime?",
+   "a": "No – common prime factors 2 and 11",
+   "w": [
+    "Yes – 22 is not prime",
+    "Yes – 44 is even",
+    "No – common factor 4"
+   ],
+   "e": "22 = 2 × 11, 44 = 2 × 2 × 11. (Model paper Q31b.)"
+  },
+  {
+   "topic": "coprime",
+   "level": "easy",
+   "type": "fn",
+   "fn": "coprimePair"
+  },
+  {
+   "topic": "coprime",
+   "level": "easy",
+   "type": "fn",
+   "fn": "coprimePair"
+  },
+  {
+   "topic": "coprime",
+   "level": "easy",
+   "type": "fn",
+   "fn": "coprimePair"
+  },
+  {
+   "topic": "coprime",
+   "level": "easy",
+   "type": "fn",
+   "fn": "coprimePair"
+  },
+  {
+   "topic": "factorise",
+   "level": "easy",
+   "q": "Writing a number as a product of prime numbers is called…",
+   "a": "prime factorisation",
+   "w": [
+    "listing multiples",
+    "the sieve method",
+    "estimation"
+   ],
+   "e": "Example: 56 = 2 × 2 × 2 × 7."
+  },
+  {
+   "topic": "factorise",
+   "level": "easy",
+   "q": "What is the prime factorisation of 456?",
+   "a": "2 × 2 × 2 × 3 × 19",
+   "w": [
+    "2 × 2 × 114",
+    "4 × 2 × 57",
+    "2 × 2 × 3 × 38"
+   ],
+   "e": "456 ÷ 2 = 228, ÷ 2 = 114, ÷ 2 = 57, ÷ 3 = 19. (Model paper Q25.)"
+  },
+  {
+   "topic": "factorise",
+   "level": "hard",
+   "q": "Which number has no prime factorisation?",
+   "a": "1",
+   "w": [
+    "2",
+    "4",
+    "17"
+   ],
+   "e": "1 is not divisible by any prime."
+  },
+  {
+   "topic": "factorise",
+   "level": "hard",
+   "q": "What is the smallest number whose prime factorisation has three different prime numbers?",
+   "a": "30",
+   "w": [
+    "6",
+    "60",
+    "105"
+   ],
+   "e": "2 × 3 × 5 = 30."
+  },
+  {
+   "topic": "factorise",
+   "level": "hard",
+   "q": "The prime factorisation of a number is unique. This means…",
+   "a": "every number has only one set of prime factors (order doesn't matter)",
+   "w": [
+    "every number is prime",
+    "the factors must be written biggest first",
+    "a number can have many different sets of prime factors"
+   ],
+   "e": "36 = 2 × 2 × 3 × 3 however you start."
+  },
+  {
+   "topic": "factorise",
+   "level": "easy",
+   "type": "fn",
+   "fn": "primeFactorise"
+  },
+  {
+   "topic": "factorise",
+   "level": "easy",
+   "type": "fn",
+   "fn": "primeFactorise"
+  },
+  {
+   "topic": "factorise",
+   "level": "easy",
+   "type": "fn",
+   "fn": "primeFactorise"
+  },
+  {
+   "topic": "factorise",
+   "level": "easy",
+   "type": "fn",
+   "fn": "primeFactorise"
+  },
+  {
+   "topic": "factorise",
+   "level": "hard",
+   "type": "fn",
+   "fn": "divByPF"
+  },
+  {
+   "topic": "factorise",
+   "level": "hard",
+   "type": "fn",
+   "fn": "divByPF"
+  },
+  {
+   "topic": "factorise",
+   "level": "hard",
+   "type": "fn",
+   "fn": "divByPF"
+  },
+  {
+   "topic": "divis",
+   "level": "easy",
+   "q": "A number is divisible by 10 if…",
+   "a": "its last digit is 0",
+   "w": [
+    "its last digit is 0 or 5",
+    "it is even",
+    "its digit sum is 10"
+   ],
+   "e": "Multiples of 10 end in 0."
+  },
+  {
+   "topic": "divis",
+   "level": "easy",
+   "q": "A number is divisible by 5 if…",
+   "a": "its last digit is 0 or 5",
+   "w": [
+    "its last digit is 5 only",
+    "its digit sum is 5",
+    "it is odd"
+   ],
+   "e": "Multiples of 5 end in 0 or 5."
+  },
+  {
+   "topic": "divis",
+   "level": "easy",
+   "q": "A number is divisible by 4 if…",
+   "a": "the number formed by its last two digits is divisible by 4",
+   "w": [
+    "its last digit is 4",
+    "it is even",
+    "its digit sum is divisible by 4"
+   ],
+   "e": "Only the last two digits matter. (Model paper Q37b: 3366 → 66 is not divisible by 4.)"
+  },
+  {
+   "topic": "divis",
+   "level": "easy",
+   "q": "A number is divisible by 8 if…",
+   "a": "the number formed by its last three digits is divisible by 8",
+   "w": [
+    "its last digit is 8",
+    "its last two digits are divisible by 8",
+    "it is divisible by 2"
+   ],
+   "e": "Only the last three digits matter. (Model paper Q21.)"
+  },
+  {
+   "topic": "divis",
+   "level": "hard",
+   "q": "Assertion (A): 546840 is divisible by 8.\nReason (R): 840 is divisible by 8.",
+   "a": "Both A and R are true, and R is the correct explanation of A.",
+   "w": [
+    "Both A and R are true, but R is not the correct explanation of A.",
+    "A is true, but R is false.",
+    "A is false, but R is true."
+   ],
+   "e": "840 ÷ 8 = 105, and the last three digits decide divisibility by 8. R explains A. (Model paper Q21 style.)"
+  },
+  {
+   "topic": "divis",
+   "level": "hard",
+   "q": "Assertion (A): 3366 is divisible by 4.\nReason (R): 3366 is an even number.",
+   "a": "A is false, but R is true.",
+   "w": [
+    "Both A and R are true, and R is the correct explanation of A.",
+    "Both A and R are true, but R is not the correct explanation of A.",
+    "A is true, but R is false."
+   ],
+   "e": "A is false: 66 is not divisible by 4. R is true but being even is not enough for 4."
+  },
+  {
+   "topic": "divis",
+   "level": "easy",
+   "type": "fn",
+   "fn": "divisible"
+  },
+  {
+   "topic": "divis",
+   "level": "easy",
+   "type": "fn",
+   "fn": "divisible"
+  },
+  {
+   "topic": "divis",
+   "level": "easy",
+   "type": "fn",
+   "fn": "divisible"
+  },
+  {
+   "topic": "divis",
+   "level": "easy",
+   "type": "fn",
+   "fn": "divisible"
+  },
+  {
+   "topic": "divis",
+   "level": "hard",
+   "type": "fn",
+   "fn": "lastDigitsTest"
+  },
+  {
+   "topic": "divis",
+   "level": "hard",
+   "type": "fn",
+   "fn": "lastDigitsTest"
+  },
+  {
+   "topic": "divis",
+   "level": "hard",
+   "type": "fn",
+   "fn": "lastDigitsTest"
+  },
+  {
+   "topic": "divis",
+   "level": "hard",
+   "type": "fn",
+   "fn": "lastDigitsTest"
+  }
+ ]
+}

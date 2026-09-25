@@ -1,0 +1,556 @@
+{
+ "id": "class6-maths-ch1-tutor",
+ "chapter": "Chapter 1 · Patterns in Mathematics",
+ "source": "NCERT Ganita Prakash | Grade 6, Chapter 1",
+ "overview": {
+  "bigIdea": "Mathematics is the **search for patterns – and for the reasons why they happen**. In this chapter you learn the famous number sequences, draw them as dot pictures, and use the pictures to explain surprising links between them.",
+  "ladderTitle": "How this chapter builds",
+  "ladder": [
+   {
+    "step": "Spot",
+    "q": "What is the rule?",
+    "a": "Name the sequence and find the next terms"
+   },
+   {
+    "step": "Draw",
+    "q": "What does it look like?",
+    "a": "Dots in triangles, squares, hexagons"
+   },
+   {
+    "step": "Link",
+    "q": "How are sequences related?",
+    "a": "Adding odd numbers gives squares, …"
+   },
+   {
+    "step": "Shapes",
+    "q": "Which numbers hide in shapes?",
+    "a": "Polygons, complete graphs, stacked squares"
+   }
+  ],
+  "languagesTitle": "Three ways to show a pattern",
+  "languages": [
+   {
+    "name": "Numbers",
+    "text": "1, 3, 6, 10, 15, … and a rule in words."
+   },
+   {
+    "name": "Pictures",
+    "text": "Dots arranged in a triangle show *why* the rule works."
+   },
+   {
+    "name": "Links",
+    "text": "1 + 3 + 5 + 7 = 16: one sequence built from another."
+   }
+  ],
+  "plan": [
+   {
+    "pass": "Learn the 10 sequences",
+    "time": "15 min",
+    "text": "Lesson 1. Say each rule aloud and write the next three terms."
+   },
+   {
+    "pass": "Draw them",
+    "time": "15 min",
+    "text": "Lesson 2. Draw triangular, square and hexagonal dot pictures yourself."
+   },
+   {
+    "pass": "Connect",
+    "time": "20 min",
+    "text": "Lessons 3–4. Learn the relations with their pictures – these are 2- and 3-mark questions."
+   },
+   {
+    "pass": "Test and revise",
+    "time": "10 min",
+    "text": "Check knowledge quiz, then the revision sheet after 1, 3 and 7 days."
+   }
+  ]
+ },
+ "lessons": [
+  {
+   "topic": "seq",
+   "ref": "1.1–1.2",
+   "title": "Number sequences",
+   "time": "8 min",
+   "hook": "Your class roll numbers, the days on a calendar, the steps of a staircase – all follow a rule. A **number sequence** is a list of numbers that follows a rule, and spotting that rule is the first skill of a mathematician.",
+   "core": [
+    {
+     "term": "Number theory",
+     "def": "The branch of mathematics that studies patterns in whole numbers."
+    },
+    {
+     "term": "Number sequence",
+     "def": "Numbers written in order following a rule, e.g. 2, 4, 6, 8, …"
+    },
+    {
+     "term": "Triangular numbers",
+     "def": "1, 3, 6, 10, 15, 21, … (add 2, then 3, then 4 …)"
+    },
+    {
+     "term": "Squares and cubes",
+     "def": "Squares 1, 4, 9, 16, 25 (n × n). Cubes 1, 8, 27, 64, 125 (n × n × n)."
+    },
+    {
+     "term": "Virahānka numbers",
+     "def": "1, 2, 3, 5, 8, 13, 21, … each is the **sum of the two before it**."
+    },
+    {
+     "term": "Powers of 2 and 3",
+     "def": "1, 2, 4, 8, 16, … (×2 each time); 1, 3, 9, 27, 81, … (×3 each time)."
+    }
+   ],
+   "explain": [
+    "To find the rule, look at the **gaps** between terms. Constant gap → add the same number (odd, even). Growing gaps → triangular, square. Multiplying → powers.",
+    "Virahānka numbers are named after the Indian scholar Virahānka, who found them while studying rhythms in poetry – long before they became famous in Europe."
+   ],
+   "example": {
+    "q": "Write the next three numbers: (a) 1, 3, 6, 10, 15, … (b) 1, 2, 3, 5, 8, …",
+    "steps": [
+     "(a) Gaps are 2, 3, 4, 5 – the next gaps are 6, 7, 8: 15 + 6 = 21, 21 + 7 = 28, 28 + 8 = 36.",
+     "(b) Each term = sum of the two before: 5 + 8 = 13, 8 + 13 = 21, 13 + 21 = 34."
+    ],
+    "answer": "(a) 21, 28, 36   (b) 13, 21, 34"
+   },
+   "mistakes": [
+    "Calling 1, 3, 6, 10 ‘square numbers’ – they are triangular.",
+    "Adding a fixed number to Virahānka numbers instead of adding the previous two.",
+    "Forgetting that the powers of 2 start at 1 (2⁰ = 1)."
+   ],
+   "tip": "When asked ‘write the rule’, write it in words AND show one example (e.g. ‘add the two previous numbers: 5 + 8 = 13’).",
+   "memory": "Gaps constant → add. Gaps growing → triangular/squares. Terms multiplying → powers.",
+   "examAsk": [
+    "Name the sequence and write the next 3 terms.",
+    "Which number is both a square and a cube? (64)",
+    "Write the rule of a sequence in your own words."
+   ],
+   "cards": [
+    {
+     "q": "Name the sequence 1, 8, 27, 64 …",
+     "a": "Cubes."
+    },
+    {
+     "q": "Next Virahānka number after 13, 21?",
+     "a": "34"
+    },
+    {
+     "q": "What does number theory study?",
+     "a": "Patterns in whole numbers."
+    }
+   ],
+   "table": {
+    "title": "Table 1 – the ten key sequences (learn these)",
+    "head": [
+     "Sequence",
+     "First terms"
+    ],
+    "rows": [
+     [
+      "All 1’s",
+      "1, 1, 1, 1, 1"
+     ],
+     [
+      "Counting numbers",
+      "1, 2, 3, 4, 5"
+     ],
+     [
+      "Odd numbers",
+      "1, 3, 5, 7, 9"
+     ],
+     [
+      "Even numbers",
+      "2, 4, 6, 8, 10"
+     ],
+     [
+      "Triangular",
+      "1, 3, 6, 10, 15"
+     ],
+     [
+      "Squares",
+      "1, 4, 9, 16, 25"
+     ],
+     [
+      "Cubes",
+      "1, 8, 27, 64, 125"
+     ],
+     [
+      "Virahānka",
+      "1, 2, 3, 5, 8, 13"
+     ],
+     [
+      "Powers of 2",
+      "1, 2, 4, 8, 16, 32"
+     ],
+     [
+      "Powers of 3",
+      "1, 3, 9, 27, 81"
+     ]
+    ]
+   }
+  },
+  {
+   "topic": "visual",
+   "ref": "1.3",
+   "title": "Visualising number sequences",
+   "time": "7 min",
+   "hook": "Why are 1, 4, 9, 16 called **square** numbers? Because that many dots make a perfect square! Drawing a sequence turns a list of numbers into a picture you can *see* and *explain*.",
+   "core": [
+    {
+     "term": "Triangular numbers",
+     "def": "Dots arranged in a triangle: rows of 1, 2, 3, … dots."
+    },
+    {
+     "term": "Square numbers",
+     "def": "Dots arranged in an n × n square."
+    },
+    {
+     "term": "Cube numbers",
+     "def": "Small cubes stacked into a bigger n × n × n cube."
+    },
+    {
+     "term": "Hexagonal numbers",
+     "def": "1, 7, 19, 37, 61, … – dots in a hexagon around a centre dot. Gaps: 6, 12, 18, 24 …"
+    }
+   ],
+   "explain": [
+    "The 5th triangular number is 1 + 2 + 3 + 4 + 5 = 15. A quick way: n × (n + 1) ÷ 2, so the 10th is 10 × 11 ÷ 2 = 55.",
+    "Hexagonal numbers grow by adding a ring of 6, 12, 18, … dots around the previous hexagon."
+   ],
+   "example": {
+    "q": "The dot pictures show 1, 7, 19, 37. Name the sequence and find the next number.",
+    "steps": [
+     "They are arranged as hexagons, so these are **hexagonal numbers**.",
+     "Gaps: 6, 12, 18 → next gap 24.",
+     "37 + 24 = 61."
+    ],
+    "answer": "Hexagonal numbers; next is 61. (Model paper Q27b asks to name 1, 7, 19, 37.)"
+   },
+   "mistakes": [
+    "Mixing up hexagonal (1, 7, 19) with triangular (1, 3, 6).",
+    "Counting the dots in only the outer ring.",
+    "Drawing uneven rows so the picture no longer shows the pattern."
+   ],
+   "tip": "In a picture question, label each shape with its number of dots underneath – the examiner can see your count.",
+   "memory": "Triangle rows 1, 2, 3 … · Square n × n · Hexagon rings of 6, 12, 18 …",
+   "examAsk": [
+    "Draw the next picture in the sequence.",
+    "Name the sequence shown by the dots (triangular / square / hexagonal).",
+    "How many dots in the 6th square picture?"
+   ],
+   "cards": [
+    {
+     "q": "Dots in the 4th triangular picture?",
+     "a": "10"
+    },
+    {
+     "q": "Hexagonal numbers start…",
+     "a": "1, 7, 19, 37, 61"
+    },
+    {
+     "q": "Why ‘square’ numbers?",
+     "a": "Their dots form a square."
+    }
+   ],
+   "diagram": {
+    "type": "dots",
+    "shape": "tri",
+    "n": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "caption": "Triangular numbers 1, 3, 6, 10 – each new row adds one more dot."
+   }
+  },
+  {
+   "topic": "relations",
+   "ref": "1.4",
+   "title": "Relations among number sequences",
+   "time": "10 min",
+   "hook": "Add odd numbers: 1 = 1, 1 + 3 = 4, 1 + 3 + 5 = 9, 1 + 3 + 5 + 7 = 16. **Square numbers appear!** Mathematicians don't stop at the surprise – they ask *why*, and a picture answers it.",
+   "core": [
+    {
+     "term": "Adding odd numbers",
+     "def": "1 + 3 + 5 + … (first n odd numbers) = n × n (a square)."
+    },
+    {
+     "term": "Adding counting numbers",
+     "def": "1, 1+2, 1+2+3, … gives the **triangular numbers**."
+    },
+    {
+     "term": "Up and down",
+     "def": "1 + 2 + … + n + … + 2 + 1 = n × n."
+    },
+    {
+     "term": "Consecutive triangular numbers",
+     "def": "1+3, 3+6, 6+10, … give the square numbers 4, 9, 16 …"
+    },
+    {
+     "term": "More links",
+     "def": "(1, 1+2, 1+2+4, …) + 1 = powers of 2 · 6 × triangular + 1 = hexagonal · adding hexagonal numbers gives cubes."
+    }
+   ],
+   "explain": [
+    "**The picture proof:** split a square of dots into L-shapes. The L-shapes have 1, 3, 5, 7, … dots. So adding odd numbers must give a square – for any size of square.",
+    "Using this, the sum of the first 10 odd numbers is 10 × 10 = 100, and the first 100 odd numbers add to 100 × 100 = 10,000 – no long addition needed."
+   ],
+   "example": {
+    "q": "Show that adding counting numbers gives triangular numbers. (Model paper Q22, 2 marks)",
+    "steps": [
+     "1 = 1, 1 + 2 = 3, 1 + 2 + 3 = 6, 1 + 2 + 3 + 4 = 10, 1 + 2 + 3 + 4 + 5 = 15, …",
+     "These are 1, 3, 6, 10, 15 – the triangular numbers.",
+     "Picture: rows of 1, 2, 3, 4, 5 dots stacked make triangles."
+    ],
+    "answer": "Adding counting numbers gives the triangular numbers 1, 3, 6, 10, 15, …"
+   },
+   "mistakes": [
+    "Writing 1 + 3 + 5 + 7 = 16 but calling it ‘triangular’.",
+    "Counting how many odd numbers wrongly: 1 + 3 + … + 19 has 10 terms, not 19.",
+    "Stopping at the pattern without the picture/explanation when the question says ‘explain’."
+   ],
+   "tip": "For ‘explain why’ questions, draw the dot picture (L-shapes in a square or rows in a triangle). A clear picture can earn the full marks.",
+   "memory": "Odd numbers add to SQUARES. Counting numbers add to TRIANGLES.",
+   "examAsk": [
+    "Sum of the first 10 (or 100) odd numbers.",
+    "What do you get when you add consecutive triangular numbers? Explain with a picture.",
+    "Evaluate 1 + 2 + … + 99 + 100 + 99 + … + 1 (= 10,000)."
+   ],
+   "cards": [
+    {
+     "q": "1 + 3 + 5 + 7 + 9 = ?",
+     "a": "25 (5 × 5)"
+    },
+    {
+     "q": "1 + 2 + 3 + 4 + 3 + 2 + 1 = ?",
+     "a": "16"
+    },
+    {
+     "q": "Adding counting numbers gives…",
+     "a": "Triangular numbers"
+    }
+   ],
+   "diagram": {
+    "type": "dots",
+    "shape": "oddsq",
+    "n": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "caption": "Each coloured L-shape adds the next odd number (1, 3, 5, 7) – together they make a square."
+   }
+  },
+  {
+   "topic": "shapes",
+   "ref": "1.5–1.6",
+   "title": "Patterns in shapes",
+   "time": "8 min",
+   "hook": "Shapes have patterns too – and hidden inside them are the same number sequences! Count the little squares in a growing square and you get 1, 4, 9, 16 … the square numbers again. **Geometry** is the study of patterns in shapes.",
+   "core": [
+    {
+     "term": "Regular polygons",
+     "def": "Equal sides and equal angles. Sides: 3, 4, 5, 6, … (triangle, square, pentagon, hexagon …). Corners = sides."
+    },
+    {
+     "term": "Complete graphs",
+     "def": "Every point joined to every other point. Lines: K2 = 1, K3 = 3, K4 = 6, K5 = 10 → **triangular numbers**."
+    },
+    {
+     "term": "Stacked squares",
+     "def": "Little squares: 1, 4, 9, 16 → **square numbers**."
+    },
+    {
+     "term": "Stacked triangles",
+     "def": "Little triangles: 1, 4, 9, 16 (rows 1, 3, 5, 7) → **square numbers**."
+    },
+    {
+     "term": "Koch snowflake",
+     "def": "Each segment becomes 4: 3, 12, 48, 192, … (3 × powers of 4)."
+    }
+   ],
+   "explain": [
+    "To link a shape to a sequence, **count one thing** in each shape (sides, lines, little squares) and write the numbers in order. Then match the list to Table 1.",
+    "For stacked triangles, count row by row: 1, 3, 5, 7 – you are adding odd numbers, which you already know gives squares."
+   ],
+   "example": {
+    "q": "The number of squares in the Stacked Squares sequence is 1, 4, 9, 16, … (a) Find the number in the 5th shape. (b) Which sequence is this? (Model paper Q26, 2 marks)",
+    "steps": [
+     "The nth shape is an n × n square.",
+     "5th shape: 5 × 5 = 25 little squares.",
+     "1, 4, 9, 16, 25 … are the square numbers."
+    ],
+    "answer": "(a) 25 (b) Square numbers"
+   },
+   "mistakes": [
+    "Counting only the outline squares instead of all little squares.",
+    "Saying complete graph lines are square numbers (they are triangular).",
+    "Thinking a regular polygon means ‘any polygon with 4 sides’."
+   ],
+   "tip": "Case-study questions (4 marks) often give a garden, tiles or chairs in a pattern. First write the numbers as a list, name the sequence, then answer each part.",
+   "memory": "Polygons → counting numbers from 3 · Complete graphs → triangular · Stacked squares/triangles → squares.",
+   "examAsk": [
+    "How many little squares in the nth shape of Stacked Squares?",
+    "Count lines in complete graphs; which sequence?",
+    "Case study: flowers/tiles arranged in square patterns."
+   ],
+   "cards": [
+    {
+     "q": "Lines in K4?",
+     "a": "6"
+    },
+    {
+     "q": "Little triangles in the 3rd stacked triangle?",
+     "a": "9"
+    },
+    {
+     "q": "What does ‘regular’ mean?",
+     "a": "Equal sides and equal angles."
+    }
+   ],
+   "diagram": {
+    "type": "dots",
+    "shape": "sq",
+    "n": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "caption": "Stacked squares: 1, 4, 9, 16 – the square numbers."
+   }
+  }
+ ],
+ "formulas": [
+  {
+   "name": "Triangular numbers",
+   "f": "1, 3, 6, 10, 15, … nth = n × (n + 1) ÷ 2",
+   "unit": "10th = 55",
+   "when": "Rows of dots, adding counting numbers"
+  },
+  {
+   "name": "Square numbers",
+   "f": "n × n",
+   "unit": "1, 4, 9, 16, 25",
+   "when": "Dot squares, stacked squares/triangles"
+  },
+  {
+   "name": "Cube numbers",
+   "f": "n × n × n",
+   "unit": "1, 8, 27, 64, 125",
+   "when": "Stacked cubes; adding hexagonal numbers"
+  },
+  {
+   "name": "Hexagonal numbers",
+   "f": "1, 7, 19, 37, 61 (gaps 6, 12, 18, …)",
+   "unit": "6 × 6 + 1 = 37",
+   "when": "Hexagon dot pictures"
+  },
+  {
+   "name": "Virahānka numbers",
+   "f": "each = sum of previous two",
+   "unit": "5 + 8 = 13",
+   "when": "1, 2, 3, 5, 8, 13, …"
+  },
+  {
+   "name": "Sum of odd numbers",
+   "f": "1 + 3 + … (n terms) = n × n",
+   "unit": "first 10 → 100",
+   "when": "‘Add odd numbers’ questions"
+  },
+  {
+   "name": "Up and down",
+   "f": "1 + 2 + … + n + … + 1 = n × n",
+   "unit": "up to 4 → 16",
+   "when": "Symmetric sums"
+  },
+  {
+   "name": "Complete graphs",
+   "f": "lines = triangular numbers",
+   "unit": "K5 = 10",
+   "when": "Joining every pair of points"
+  }
+ ],
+ "revision": [
+  "Mathematics is the search for patterns and the reasons why they happen.",
+  "Number theory = patterns in whole numbers; geometry = patterns in shapes.",
+  "Learn Table 1: all 1’s, counting, odd, even, triangular, squares, cubes, Virahānka, powers of 2 and 3.",
+  "Triangular: 1, 3, 6, 10, 15, 21, 28, 36 · Squares: 1, 4, 9, 16, 25, 36, 49 · Cubes: 1, 8, 27, 64, 125.",
+  "Virahānka: each number is the sum of the previous two (1, 2, 3, 5, 8, 13, 21, 34).",
+  "Hexagonal: 1, 7, 19, 37, 61 – gaps grow by 6.",
+  "Adding odd numbers from 1 gives squares; adding counting numbers gives triangular numbers.",
+  "Up-and-down sums give squares; consecutive triangular numbers add to squares.",
+  "(1 + 2 + 4 + …) + 1 gives powers of 2; 6 × triangular + 1 gives hexagonal; adding hexagonal numbers gives cubes.",
+  "Regular polygon: equal sides and equal angles; sides 3, 4, 5, … Complete graph lines are triangular numbers.",
+  "Stacked squares and stacked triangles both give square numbers; Koch snowflake 3, 12, 48, 192."
+ ],
+ "exam": {
+  "paper": [
+   {
+    "q": "Q22",
+    "marks": 2,
+    "what": "Adding counting numbers gives triangular numbers – with a picture"
+   },
+   {
+    "q": "Q26",
+    "marks": 2,
+    "what": "Stacked squares: count squares and name the sequence"
+   },
+   {
+    "q": "Q27b",
+    "marks": "part of 3",
+    "what": "Name the sequence 1, 7, 19, 37 (hexagonal numbers)"
+   },
+   {
+    "q": "Q39",
+    "marks": 4,
+    "what": "Case study: flowers in a square number pattern"
+   }
+  ],
+  "sections": [
+   {
+    "title": "Sequence questions · 3 steps",
+    "kind": "steps",
+    "items": [
+     "Write the gaps between terms under the sequence.",
+     "Name the sequence (triangular, square, Virahānka …) and state its rule in words.",
+     "Use the rule to find the missing or next terms – show one line of working for each."
+    ]
+   },
+   {
+    "title": "Picture questions",
+    "kind": "note",
+    "items": [
+     "Draw neat dots or squares in rows; do not squeeze them.",
+     "Write the number of dots under each picture.",
+     "For ‘explain why’, colour or outline the L-shapes / rows that make the pattern."
+    ]
+   },
+   {
+    "title": "Answer writing",
+    "kind": "mem",
+    "items": [
+     "Write the rule or definition in one line first, then apply it – rule lines earn marks even if the arithmetic slips.",
+     "Show every step on its own line (for example each division in a prime factorisation or each Kaprekar round).",
+     "Underline or box the final answer and write the unit (°, students, books) where there is one.",
+     "For ‘Give reason / Justify’ questions: state the rule, then show that the number or figure fits (or does not fit) it."
+    ]
+   }
+  ],
+  "checklist": [
+   "I can name all ten sequences in Table 1 and continue each.",
+   "I can draw triangular, square and hexagonal dot pictures.",
+   "I can find the nth triangular or square number.",
+   "I can explain with a picture why adding odd numbers gives squares.",
+   "I know which sequence complete graphs, stacked squares and stacked triangles give.",
+   "I can solve a pattern case study step by step."
+  ]
+ },
+ "method": "Built on proven learning methods: see it as a picture first, understand why it works, learn from worked examples, then test yourself (active recall) and revisit after 1, 3 and 7 days (spaced revision).",
+ "sheetTitle": "Key facts sheet",
+ "sheetCols": [
+  "Idea",
+  "Rule or fact",
+  "Example",
+  "Use it when"
+ ]
+}

@@ -1,0 +1,544 @@
+{
+ "id": "class6-maths-ch1",
+ "class": "6",
+ "subject": "maths",
+ "chapter": "Chapter 1 · Patterns in Mathematics",
+ "source": "NCERT Ganita Prakash | Grade 6, Chapter 1 + BHPS midterm model paper (2026-27)",
+ "topics": [
+  {
+   "id": "seq",
+   "name": "Number sequences",
+   "ref": "1.1–1.2"
+  },
+  {
+   "id": "visual",
+   "name": "Visualising number sequences",
+   "ref": "1.3"
+  },
+  {
+   "id": "relations",
+   "name": "Relations among number sequences",
+   "ref": "1.4"
+  },
+  {
+   "id": "shapes",
+   "name": "Patterns in shapes",
+   "ref": "1.5–1.6"
+  }
+ ],
+ "questions": [
+  {
+   "topic": "seq",
+   "level": "easy",
+   "q": "Which sequence is 1, 3, 6, 10, 15, 21, …?",
+   "a": "Triangular numbers",
+   "w": [
+    "Square numbers",
+    "Odd numbers",
+    "Virahānka numbers"
+   ],
+   "e": "Each term adds the next counting number: 1, 1+2, 1+2+3, … These are triangular numbers."
+  },
+  {
+   "topic": "seq",
+   "level": "easy",
+   "q": "The numbers 1, 8, 27, 64, 125, … are called…",
+   "a": "cubes",
+   "w": [
+    "squares",
+    "triangular numbers",
+    "powers of 2"
+   ],
+   "e": "1 = 1×1×1, 8 = 2×2×2, 27 = 3×3×3 … they are cube numbers."
+  },
+  {
+   "topic": "seq",
+   "level": "easy",
+   "q": "The branch of mathematics that studies patterns in whole numbers is called…",
+   "a": "number theory",
+   "w": [
+    "geometry",
+    "statistics",
+    "algebra"
+   ],
+   "e": "Number theory studies patterns in whole numbers; geometry studies patterns in shapes."
+  },
+  {
+   "topic": "seq",
+   "level": "easy",
+   "q": "The branch of mathematics that studies patterns in shapes is called…",
+   "a": "geometry",
+   "w": [
+    "number theory",
+    "arithmetic",
+    "data handling"
+   ],
+   "e": "Patterns of shapes (1D, 2D, 3D) are studied in geometry."
+  },
+  {
+   "topic": "seq",
+   "level": "easy",
+   "q": "What is the rule for the Virahānka numbers 1, 2, 3, 5, 8, 13, …?",
+   "a": "Each number is the sum of the two numbers before it",
+   "w": [
+    "Each number is double the one before it",
+    "Add 2 each time",
+    "Multiply the position by itself"
+   ],
+   "e": "3 = 1 + 2, 5 = 2 + 3, 8 = 3 + 5, 13 = 5 + 8 …"
+  },
+  {
+   "topic": "seq",
+   "level": "hard",
+   "q": "Which number is both a square number and a cube number?",
+   "a": "64",
+   "w": [
+    "16",
+    "27",
+    "36"
+   ],
+   "e": "64 = 8 × 8 (a square) and 64 = 4 × 4 × 4 (a cube)."
+  },
+  {
+   "topic": "seq",
+   "level": "hard",
+   "q": "Which of these is NOT a triangular number?",
+   "a": "30",
+   "w": [
+    "21",
+    "28",
+    "36"
+   ],
+   "e": "Triangular numbers: 1, 3, 6, 10, 15, 21, 28, 36, 45 … 30 is not in the list."
+  },
+  {
+   "topic": "seq",
+   "level": "hard",
+   "q": "In 2, 4, 8, 16, 32, … (powers of 2), what is the 10th number if the 1st is 2?",
+   "a": "1024",
+   "w": [
+    "512",
+    "20",
+    "2048"
+   ],
+   "e": "The nth term is 2 multiplied by itself n times: 2¹⁰ = 1024."
+  },
+  {
+   "topic": "seq",
+   "level": "hard",
+   "q": "Assertion (A): 1, 4, 9, 16, 25 are square numbers.\nReason (R): A square number can be shown as dots arranged in a square grid.",
+   "a": "Both A and R are true, and R is the correct explanation of A.",
+   "w": [
+    "Both A and R are true, but R is not the correct explanation of A.",
+    "A is true, but R is false.",
+    "A is false, but R is true."
+   ],
+   "e": "Both are true and the dot-square picture is exactly why they are called square numbers."
+  },
+  {
+   "topic": "seq",
+   "level": "easy",
+   "type": "fn",
+   "fn": "seqNext"
+  },
+  {
+   "topic": "seq",
+   "level": "easy",
+   "type": "fn",
+   "fn": "seqNext"
+  },
+  {
+   "topic": "seq",
+   "level": "easy",
+   "type": "fn",
+   "fn": "seqNext"
+  },
+  {
+   "topic": "seq",
+   "level": "hard",
+   "type": "fn",
+   "fn": "viraNext"
+  },
+  {
+   "topic": "seq",
+   "level": "hard",
+   "type": "fn",
+   "fn": "viraNext"
+  },
+  {
+   "topic": "visual",
+   "level": "easy",
+   "q": "Why are 1, 4, 9, 16, … called square numbers?",
+   "a": "Their dots can be arranged to form squares",
+   "w": [
+    "They are all even",
+    "They end in 1, 4, 9 or 6",
+    "They are made by adding 3 each time"
+   ],
+   "e": "Visualising with dots: 4 dots make a 2×2 square, 9 dots make a 3×3 square …"
+  },
+  {
+   "topic": "visual",
+   "level": "easy",
+   "q": "How many dots are there in the 5th triangular number picture?",
+   "a": "15",
+   "w": [
+    "10",
+    "21",
+    "25"
+   ],
+   "e": "Rows of 1, 2, 3, 4, 5 dots: 1+2+3+4+5 = 15."
+  },
+  {
+   "topic": "visual",
+   "level": "hard",
+   "q": "Hexagonal numbers are 1, 7, 19, 37, … Which number comes next?",
+   "a": "61",
+   "w": [
+    "55",
+    "56",
+    "74"
+   ],
+   "e": "Gaps: 6, 12, 18, so the next gap is 24: 37 + 24 = 61. (Model paper Q27b asks you to name 1, 7, 19, 37 as hexagonal numbers.)",
+   "graph": {
+    "type": "dots",
+    "shape": "hex",
+    "n": [
+     1,
+     2,
+     3,
+     4
+    ]
+   }
+  },
+  {
+   "topic": "visual",
+   "level": "easy",
+   "q": "The dots below show a number sequence. What are these numbers called?",
+   "a": "Hexagonal numbers",
+   "w": [
+    "Triangular numbers",
+    "Square numbers",
+    "Cube numbers"
+   ],
+   "e": "The dots are arranged in hexagons: 1, 7, 19, 37 …",
+   "graph": {
+    "type": "dots",
+    "shape": "hex",
+    "n": [
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "topic": "visual",
+   "level": "easy",
+   "q": "The dots below show which sequence?",
+   "a": "Triangular numbers",
+   "w": [
+    "Square numbers",
+    "Odd numbers",
+    "Hexagonal numbers"
+   ],
+   "e": "Dots arranged in triangles: 1, 3, 6, 10 …",
+   "graph": {
+    "type": "dots",
+    "shape": "tri",
+    "n": [
+     1,
+     2,
+     3,
+     4
+    ]
+   }
+  },
+  {
+   "topic": "visual",
+   "level": "easy",
+   "type": "fn",
+   "fn": "triNth"
+  },
+  {
+   "topic": "visual",
+   "level": "easy",
+   "type": "fn",
+   "fn": "triNth"
+  },
+  {
+   "topic": "visual",
+   "level": "hard",
+   "type": "fn",
+   "fn": "hexNext"
+  },
+  {
+   "topic": "visual",
+   "level": "hard",
+   "type": "fn",
+   "fn": "hexNext"
+  },
+  {
+   "topic": "relations",
+   "level": "easy",
+   "q": "What sequence do you get when you add up the counting numbers: 1, 1+2, 1+2+3, 1+2+3+4, …?",
+   "a": "Triangular numbers",
+   "w": [
+    "Square numbers",
+    "Odd numbers",
+    "Powers of 2"
+   ],
+   "e": "1, 3, 6, 10, 15 … are the triangular numbers. (Model paper Q22.)"
+  },
+  {
+   "topic": "relations",
+   "level": "easy",
+   "q": "What do you get when you add up odd numbers starting from 1: 1, 1+3, 1+3+5, …?",
+   "a": "Square numbers",
+   "w": [
+    "Triangular numbers",
+    "Even numbers",
+    "Cube numbers"
+   ],
+   "e": "1, 4, 9, 16, 25 … Each L-shaped layer of a dot square has an odd number of dots.",
+   "graph": {
+    "type": "dots",
+    "shape": "oddsq",
+    "n": [
+     1,
+     2,
+     3,
+     4
+    ]
+   }
+  },
+  {
+   "topic": "relations",
+   "level": "easy",
+   "q": "1 + 2 + 3 + 4 + 3 + 2 + 1 = ?",
+   "a": "16",
+   "w": [
+    "20",
+    "12",
+    "10"
+   ],
+   "e": "Adding up and down to 4 gives 4 × 4 = 16."
+  },
+  {
+   "topic": "relations",
+   "level": "easy",
+   "q": "What do you get when you add up the ‘All 1’s’ sequence: 1, 1+1, 1+1+1, …?",
+   "a": "Counting numbers",
+   "w": [
+    "Even numbers",
+    "Square numbers",
+    "Powers of 2"
+   ],
+   "e": "1, 2, 3, 4, … the counting numbers."
+  },
+  {
+   "topic": "relations",
+   "level": "hard",
+   "q": "Add pairs of consecutive triangular numbers: 1+3, 3+6, 6+10, … Which sequence do you get?",
+   "a": "Square numbers",
+   "w": [
+    "Triangular numbers",
+    "Even numbers",
+    "Cube numbers"
+   ],
+   "e": "4, 9, 16, 25 … Two triangles of dots fit together to make a square."
+  },
+  {
+   "topic": "relations",
+   "level": "hard",
+   "q": "Take 1, 1+2, 1+2+4, 1+2+4+8, … and add 1 to each. What numbers do you get?",
+   "a": "Powers of 2",
+   "w": [
+    "Odd numbers",
+    "Square numbers",
+    "Triangular numbers"
+   ],
+   "e": "1+1 = 2, 3+1 = 4, 7+1 = 8, 15+1 = 16 … powers of 2."
+  },
+  {
+   "topic": "relations",
+   "level": "hard",
+   "q": "Multiply each triangular number by 6 and add 1 (starting with 0, 1, 3, 6). Which sequence do you get?",
+   "a": "Hexagonal numbers",
+   "w": [
+    "Square numbers",
+    "Cube numbers",
+    "Odd numbers"
+   ],
+   "e": "6×0+1 = 1, 6×1+1 = 7, 6×3+1 = 19, 6×6+1 = 37 … hexagonal numbers."
+  },
+  {
+   "topic": "relations",
+   "level": "hard",
+   "q": "Add up hexagonal numbers: 1, 1+7, 1+7+19, 1+7+19+37, … Which sequence do you get?",
+   "a": "Cube numbers",
+   "w": [
+    "Square numbers",
+    "Powers of 2",
+    "Triangular numbers"
+   ],
+   "e": "1, 8, 27, 64 … the cubes. A cube can be built from hexagonal layers."
+  },
+  {
+   "topic": "relations",
+   "level": "hard",
+   "q": "Assertion (A): 1 + 3 + 5 + 7 + 9 = 25.\nReason (R): The sum of the first n odd numbers is n × n.",
+   "a": "Both A and R are true, and R is the correct explanation of A.",
+   "w": [
+    "Both A and R are true, but R is not the correct explanation of A.",
+    "A is true, but R is false.",
+    "A is false, but R is true."
+   ],
+   "e": "There are 5 odd numbers, so the sum is 5 × 5 = 25. R explains A."
+  },
+  {
+   "topic": "relations",
+   "level": "hard",
+   "q": "Assertion (A): Every square number is also a triangular number.\nReason (R): 36 is both a square number and a triangular number.",
+   "a": "A is false, but R is true.",
+   "w": [
+    "Both A and R are true, and R is the correct explanation of A.",
+    "Both A and R are true, but R is not the correct explanation of A.",
+    "A is true, but R is false."
+   ],
+   "e": "A is false (4 and 9 are squares but not triangular). R is true: 36 = 6 × 6 and 36 = 1+2+…+8."
+  },
+  {
+   "topic": "relations",
+   "level": "easy",
+   "type": "fn",
+   "fn": "oddSum"
+  },
+  {
+   "topic": "relations",
+   "level": "easy",
+   "type": "fn",
+   "fn": "oddSum"
+  },
+  {
+   "topic": "relations",
+   "level": "hard",
+   "type": "fn",
+   "fn": "upDown"
+  },
+  {
+   "topic": "relations",
+   "level": "hard",
+   "type": "fn",
+   "fn": "upDown"
+  },
+  {
+   "topic": "shapes",
+   "level": "easy",
+   "q": "The number of sides in the Regular Polygons sequence (triangle, quadrilateral, pentagon, …) gives…",
+   "a": "3, 4, 5, 6, … (counting numbers from 3)",
+   "w": [
+    "1, 3, 6, 10, … (triangular numbers)",
+    "1, 4, 9, 16, … (squares)",
+    "2, 4, 6, 8, … (even numbers)"
+   ],
+   "e": "Triangle 3, quadrilateral 4, pentagon 5, hexagon 6, …"
+  },
+  {
+   "topic": "shapes",
+   "level": "easy",
+   "q": "The word ‘regular’ in regular polygon means…",
+   "a": "all sides are equal and all angles are equal",
+   "w": [
+    "it has exactly 4 sides",
+    "it is drawn neatly",
+    "its sides are all different"
+   ],
+   "e": "Regular: equal-length sides and equal angles."
+  },
+  {
+   "topic": "shapes",
+   "level": "hard",
+   "q": "The number of lines in complete graphs K2, K3, K4, K5, … gives which sequence?",
+   "a": "Triangular numbers (1, 3, 6, 10, …)",
+   "w": [
+    "Square numbers",
+    "Counting numbers",
+    "Powers of 2"
+   ],
+   "e": "Every point joins every other point: 1, 3, 6, 10 lines …"
+  },
+  {
+   "topic": "shapes",
+   "level": "hard",
+   "q": "How many little triangles are there in each shape of Stacked Triangles (1, 4, 9, …)?",
+   "a": "Square numbers",
+   "w": [
+    "Triangular numbers",
+    "Odd numbers",
+    "Powers of 3"
+   ],
+   "e": "Rows have 1, 3, 5, 7 … triangles; adding odd numbers gives squares."
+  },
+  {
+   "topic": "shapes",
+   "level": "hard",
+   "q": "The Koch Snowflake has 3, 12, 48, … line segments. How many in the next shape?",
+   "a": "192",
+   "w": [
+    "96",
+    "144",
+    "60"
+   ],
+   "e": "Each segment becomes 4 segments: 48 × 4 = 192."
+  },
+  {
+   "topic": "shapes",
+   "level": "hard",
+   "q": "Case study: A gardener plants flowers in square patterns – 1, 4, 9, 16, … flowers. Which two numbers of flowers in this pattern lie between 30 and 50?",
+   "a": "36 and 49",
+   "w": [
+    "32 and 48",
+    "35 and 45",
+    "36 and 42"
+   ],
+   "e": "Square numbers between 30 and 50: 6×6 = 36 and 7×7 = 49. (Model paper Q39 style.)"
+  },
+  {
+   "topic": "shapes",
+   "level": "easy",
+   "q": "A regular hexagon has how many corners?",
+   "a": "6",
+   "w": [
+    "5",
+    "8",
+    "12"
+   ],
+   "e": "A polygon has as many corners as sides: a hexagon has 6."
+  },
+  {
+   "topic": "shapes",
+   "level": "easy",
+   "type": "fn",
+   "fn": "stackedSquares"
+  },
+  {
+   "topic": "shapes",
+   "level": "easy",
+   "type": "fn",
+   "fn": "stackedSquares"
+  },
+  {
+   "topic": "shapes",
+   "level": "hard",
+   "type": "fn",
+   "fn": "completeGraph"
+  },
+  {
+   "topic": "shapes",
+   "level": "hard",
+   "type": "fn",
+   "fn": "completeGraph"
+  }
+ ]
+}
