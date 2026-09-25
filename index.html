@@ -150,6 +150,115 @@ h2{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-
   .topic .ref{order:-1}
   .cat{grid-template-columns:1fr 3em}.cat .bar{grid-column:1/-1;order:3}
 }
+
+/* ---------- chapter tutor ---------- */
+:root{--series3:#0F7B6C;--note:#FFF6DB;--note-ink:#6B4E00}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--series3:#4FD1BD;--note:#3A3217;--note-ink:#F3D98B}}
+:root[data-theme="dark"]{--series3:#4FD1BD;--note:#3A3217;--note-ink:#F3D98B}
+.graph .l2{stroke:var(--series3);stroke-width:2.5;fill:none}
+.graph .lbl2{fill:var(--series3)}
+.choice.chap>span{position:relative;padding-right:92px;min-height:64px;justify-content:center}
+.tutorIcon{position:absolute;top:50%;right:10px;transform:translateY(-50%);display:flex;flex-direction:column;align-items:center;gap:2px;font:inherit;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--accent);background:var(--sheet);border:1.5px solid var(--accent);border-radius:10px;padding:6px 10px;cursor:pointer}
+.tutorIcon:hover{background:var(--accent);color:var(--sheet)}
+.tutorIcon svg{width:22px;height:22px}
+.modes .big svg{width:22px;height:22px;vertical-align:-3px;margin-right:4px;color:var(--accent)}
+.lessonList{display:flex;flex-direction:column;border:1px solid var(--line-strong);border-radius:10px;overflow:hidden}
+.lessonList button{font:inherit;text-align:left;display:grid;grid-template-columns:2em 4.6em 1fr auto;gap:10px;align-items:center;padding:10px 14px;border:0;border-bottom:1px solid var(--line);background:var(--sheet);color:var(--ink);cursor:pointer}
+.lessonList button:last-child{border-bottom:0}
+.lessonList button:hover{background:var(--accent-soft)}
+.lessonList .ok{color:var(--good);font-weight:700}
+.lessonList .ref{font-size:13px;color:var(--ink-soft)}
+.lessonList .t{font-size:12.5px;color:var(--ink-soft)}
+.meter{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--ink-soft)}
+.meter .bar{flex:1;height:8px}
+.meter .bar i{background:var(--good)}
+#tutorArea{display:flex;flex-direction:column;gap:14px}
+.tnav{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;scrollbar-width:thin}
+.tnav button{font:inherit;font-size:13px;font-weight:700;white-space:nowrap;padding:7px 12px;border-radius:999px;border:1px solid var(--line-strong);background:var(--sheet);color:var(--ink);cursor:pointer;flex:none}
+.tnav button[aria-current="page"]{background:var(--accent);border-color:var(--accent);color:var(--sheet)}
+.tnav button .d{color:var(--good)}
+.tnav button[aria-current="page"] .d{color:var(--sheet)}
+.lesson{display:flex;flex-direction:column;gap:18px}
+.lesson h2.t{font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:clamp(24px,4.4vw,32px);line-height:1.2;text-transform:none;letter-spacing:0;color:var(--ink);margin:6px 0 0;text-wrap:balance}
+.lesson h3{font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-soft);margin:0 0 8px}
+.lesson p{margin:0 0 10px;max-width:68ch}
+.lesson p:last-child{margin-bottom:0}
+.hook{font-family:"Young Serif",Georgia,serif;font-size:18px;line-height:1.55;padding:16px 18px;border-radius:10px;background:var(--accent-soft);border-left:4px solid var(--accent)}
+.defs{display:flex;flex-direction:column;gap:0;border:1px solid var(--line-strong);border-radius:10px;overflow:hidden;background:var(--sheet)}
+.defs div{display:grid;grid-template-columns:minmax(0,13em) 1fr;gap:14px;padding:11px 14px;border-bottom:1px solid var(--line)}
+.defs div:last-child{border-bottom:0}
+.defs dt{font-weight:700}
+.defs dd{margin:0}
+.figure{display:flex;flex-direction:column;gap:6px}
+.figure .graph{margin:0}
+.figure figcaption,.caption{font-size:13.5px;color:var(--ink-soft)}
+.nl{background:var(--sheet);border:1px solid var(--line-strong);border-radius:8px;padding:8px;overflow-x:auto}
+.nl svg{display:block;width:100%;min-width:560px;height:auto}
+.nl text{fill:var(--ink-soft);font-size:12px;font-family:"Atkinson Hyperlegible",system-ui,sans-serif}
+.nl .axis{stroke:var(--ink);stroke-width:1.5}
+.nl .tick{stroke:var(--ink-soft)}
+.nl .pt{fill:var(--accent)}
+.nl .pl{fill:var(--ink);font-weight:700;font-size:14px}
+.nl .ar{stroke:var(--series2);stroke-width:2;fill:none}
+.nl .ar.hl{stroke:var(--accent);stroke-width:3}
+.nl .al{fill:var(--ink);font-size:12.5px}
+.tbl{overflow-x:auto}
+.tbl table{border-collapse:collapse;font-size:14.5px;font-variant-numeric:tabular-nums;background:var(--sheet)}
+.tbl th,.tbl td{border:1px solid var(--line-strong);padding:7px 12px;text-align:center}
+.tbl th{background:var(--accent-soft);font-weight:700}
+.tbl td:first-child,.tbl th:first-child{text-align:left}
+.worked{border:1.5px solid var(--line-strong);border-radius:10px;padding:16px;background:var(--sheet);display:flex;flex-direction:column;gap:10px}
+.worked .wq{font-weight:700}
+.worked ol{margin:0;padding-left:1.4em;display:flex;flex-direction:column;gap:6px}
+.worked .ans{padding:8px 12px;border-radius:6px;background:var(--good-soft);font-weight:700}
+.traps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.traps li{padding:9px 12px 9px 36px;border-radius:8px;background:var(--bad-soft);position:relative}
+.traps li::before{content:"✕";position:absolute;left:13px;top:8px;color:var(--bad);font-weight:700}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.note-card{padding:14px 16px;border-radius:10px;background:var(--note);color:var(--note-ink)}
+.note-card h3{color:var(--note-ink)}
+.note-card.mem{background:var(--good-soft);color:var(--ink)}
+.note-card.mem h3{color:var(--good)}
+.asks{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:4px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px}
+.fc{font:inherit;text-align:left;min-height:110px;padding:14px;border-radius:10px;border:1.5px dashed var(--line-strong);background:var(--sheet);color:var(--ink);cursor:pointer;display:flex;flex-direction:column;gap:8px}
+.fc:hover{border-color:var(--accent)}
+.fc .fq{font-weight:700}
+.fc .fa{color:var(--good)}
+.fc small{color:var(--ink-soft);font-size:12px;margin-top:auto}
+.fc[aria-expanded="true"]{border-style:solid;border-color:var(--good);background:var(--good-soft)}
+.lfoot{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding-top:14px;border-top:1px solid var(--line)}
+.lfoot .spacer{flex:1}
+.btn.done{background:var(--good-soft);border-color:var(--good);color:var(--good)}
+.ladder{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px;position:relative}
+.rung{position:relative;padding:12px;border-radius:10px;border:1.5px solid var(--accent);background:var(--sheet);display:flex;flex-direction:column;gap:4px}
+.rung b{font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:18px;color:var(--accent)}
+.rung i{font-style:normal;font-weight:700;font-size:14px}
+.rung small{font-size:13px;color:var(--ink-soft)}
+.rung:not(:last-child)::after{content:"→";position:absolute;right:-18px;top:50%;transform:translateY(-50%);color:var(--accent);font-weight:700;font-size:18px}
+.langs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.langs div{padding:12px;border-radius:10px;background:var(--accent-soft)}
+.langs b{display:block;margin-bottom:2px}
+.plan{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px;counter-reset:p}
+.plan li{display:grid;grid-template-columns:2.2em 1fr;gap:10px;padding:10px 12px;border:1px solid var(--line-strong);border-radius:10px;background:var(--sheet);counter-increment:p}
+.plan li::before{content:counter(p);font-family:"Young Serif",Georgia,serif;font-size:20px;color:var(--margin);text-align:center}
+.plan b{display:block}
+.plan small{color:var(--ink-soft)}
+.fsheet table{width:100%}
+.fsheet td:nth-child(2){font-family:"Young Serif",Georgia,serif;font-size:16px;text-align:left}
+.fsheet td{text-align:left}
+.rev{margin:0;padding-left:1.4em;display:flex;flex-direction:column;gap:7px;max-width:72ch}
+.steps{margin:0;padding-left:1.4em;display:flex;flex-direction:column;gap:6px}
+.check{display:flex;flex-direction:column;gap:6px}
+.check label{display:flex;gap:10px;align-items:flex-start;padding:9px 12px;border:1px solid var(--line);border-radius:8px;background:var(--sheet);cursor:pointer}
+.check input{width:18px;height:18px;margin-top:2px;accent-color:var(--good);flex:none}
+.method{font-size:13.5px;color:var(--ink-soft);padding:10px 12px;border-radius:8px;border:1px dashed var(--line-strong)}
+@media (max-width:640px){
+  .ladder{grid-template-columns:1fr 1fr}.rung:nth-child(2)::after{content:none}
+  .langs,.duo{grid-template-columns:1fr}
+  .defs div{grid-template-columns:1fr;gap:2px}
+  .lessonList button{grid-template-columns:2em 1fr;row-gap:0}.lessonList .ref{display:none}
+}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
@@ -166,6 +275,8 @@ h2{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-
   <section class="panel" id="home">
     <p class="muted" id="loading">Loading classes…</p>
   </section>
+
+  <div id="tutorArea" hidden></div>
 
   <div id="quizArea" hidden>
     <div class="meta"><span id="progressTxt"></span><span id="scoreTxt"></span></div>
@@ -186,7 +297,7 @@ const LVL={easy:"Easy",hard:"Hard"};
 
 let CONFIG=null, API="", ONLINE=false;
 let player=Object.assign({name:"",section:""},store.get("gamesol-player")||{});
-let sel=Object.assign({cls:null,subject:null,chapter:null,topics:null,level:null,count:15},store.get("gamesol-sel")||{});
+let sel=Object.assign({cls:null,subject:null,chapter:null,topics:null,level:null,count:15,mode:null},store.get("gamesol-sel")||{});
 let BANK=null;
 const bankCache={};
 
@@ -240,15 +351,27 @@ function renderHome(){
     h+='<div class="step"><h2>'+esc(subj.name)+'</h2><p class="muted">'+esc(subj.note||"")+'</p><div class="row"><a class="btn primary" href="'+esc(subj.link)+'">Open '+esc(subj.name)+' game →</a></div></div>';
   }else if(subj){
     h+='<div class="step"><h2>Chapter</h2><div class="grid two">'+
-      chapters.map(c=>'<label class="choice"><input type="radio" name="chapter" value="'+esc(c.id)+'"'+(c.id===sel.chapter?" checked":"")+'><span><strong>'+esc(c.name)+'</strong></span></label>').join("")+
+      chapters.map(c=>'<label class="choice chap"><input type="radio" name="chapter" value="'+esc(c.id)+'"'+(c.id===sel.chapter?" checked":"")+'><span><strong>'+esc(c.name)+'</strong>'+
+        (c.tutor?'<small>'+tutorProgressText(c)+'</small><button type="button" class="tutorIcon" data-tutor="'+esc(c.id)+'" title="Open the chapter tutor" aria-label="Open the chapter tutor for '+esc(c.name)+'">'+ICON_BOOK+'<span>Tutor</span></button>':'')+
+        '</span></label>').join("")+
       '</div>'+soonLine(notOngoing(subj.chapters))+'</div>';
+    if(chap&&chap.tutor){
+      if(sel.mode!=="tutor"&&sel.mode!=="quiz")sel.mode="tutor";
+      h+='<div class="step"><h2>What do you want to do?</h2><div class="grid two modes">'+
+        '<label class="choice"><input type="radio" name="mode" value="tutor"'+(sel.mode==="tutor"?" checked":"")+'><span><span class="big">'+ICON_BOOK+' Chapter tutor</span><small>Learn each topic simply, see worked examples, then revise smart and get exam-ready.</small></span></label>'+
+        '<label class="choice"><input type="radio" name="mode" value="quiz"'+(sel.mode==="quiz"?" checked":"")+'><span><span class="big">'+ICON_CHECK+' Check knowledge</span><small>Quiz yourself on chosen topics at Easy or Hard level and see your rank.</small></span></label>'+
+        '</div></div>';
+    }else sel.mode="quiz";
     h+='<div class="step" id="topicStep"><h2>Topics</h2><p class="muted">Loading topics…</p></div>';
   }
   $("home").innerHTML=h;
   $("home").querySelectorAll('input[name="cls"]').forEach(i=>i.addEventListener("change",()=>{sel.cls=i.value;sel.subject=null;keepNames();renderHome()}));
   $("home").querySelectorAll('input[name="subject"]').forEach(i=>i.addEventListener("change",()=>{sel.subject=i.value;sel.chapter=null;sel.topics=null;keepNames();renderHome()}));
   $("home").querySelectorAll('input[name="chapter"]').forEach(i=>i.addEventListener("change",()=>{sel.chapter=i.value;sel.topics=null;keepNames();renderHome()}));
-  if(chap) loadBank(chap).then(b=>renderTopics(b,cls,subj,chap)).catch(()=>{$("topicStep").innerHTML='<h2>Topics</h2><p class="warn">Could not load the question bank "'+esc(chap.bank)+'". Check the path in edu-kids-config.json.</p>'});
+  $("home").querySelectorAll('input[name="mode"]').forEach(i=>i.addEventListener("change",()=>{sel.mode=i.value;store.set("gamesol-sel",sel);keepNames();renderHome()}));
+  $("home").querySelectorAll('.tutorIcon').forEach(b=>b.addEventListener("click",e=>{e.preventDefault();e.stopPropagation();const c=chapters.find(x=>x.id===b.dataset.tutor);sel.chapter=c.id;keepNames();openTutor(cls,subj,c,"overview")}));
+  if(chap&&chap.tutor&&sel.mode==="tutor") loadTutor(chap).then(t=>renderTutorSummary(t,cls,subj,chap)).catch(()=>{$("topicStep").innerHTML='<h2>Chapter tutor</h2><p class="warn">Could not load the tutor file "'+esc(chap.tutor)+'". Check the path in edu-kids-config.json.</p>'});
+  else if(chap) loadBank(chap).then(b=>renderTopics(b,cls,subj,chap)).catch(()=>{$("topicStep").innerHTML='<h2>Topics</h2><p class="warn">Could not load the question bank "'+esc(chap.bank)+'". Check the path in edu-kids-config.json.</p>'});
 }
 function soonLine(list){return list.length?'<p class="soon">Coming soon: '+list.map(x=>'<b>'+esc(x.name)+'</b>').join(", ")+'</p>':""}
 function keepNames(){if($("pName")){player.name=$("pName").value.replace(/\s+/g," ").trim();player.section=$("pSection").value.replace(/\s+/g,"").toUpperCase()}}
@@ -347,8 +470,8 @@ function graphSVG(g){
   if(g.fill&&g.lines[0]){const p=g.lines[0].pts;s+='<path class="fillA" d="M'+X(p[0][0])+' '+Y(0)+p.map(q=>'L'+X(q[0])+' '+Y(q[1])).join("")+'L'+X(p[p.length-1][0])+' '+Y(0)+'Z"/>'}
   s+='<line class="ax" x1="'+L+'" y1="'+T+'" x2="'+L+'" y2="'+(H-B)+'"/><line class="ax" x1="'+L+'" y1="'+(H-B)+'" x2="'+(W-R)+'" y2="'+(H-B)+'"/>';
   g.lines.forEach((l,i)=>{
-    s+='<polyline class="l'+(i%2)+'" points="'+l.pts.map(p=>X(p[0])+","+Y(p[1])).join(" ")+'"/>';
-    if(l.label){const p=l.pts[l.pts.length-1];s+='<text class="lbl lbl'+(i%2)+'" x="'+(X(p[0])-8)+'" y="'+(Y(p[1])-8)+'" text-anchor="end">'+esc(l.label)+'</text>'}
+    s+='<polyline class="l'+(i%3)+'" points="'+l.pts.map(p=>X(p[0])+","+Y(p[1])).join(" ")+'"/>';
+    if(l.label){const p=l.pts[l.pts.length-1];s+='<text class="lbl lbl'+(i%3)+'" x="'+(X(p[0])-8)+'" y="'+(Y(p[1])-8)+'" text-anchor="end">'+esc(l.label)+'</text>'}
   });
   if(g.mark){g.lines[0].pts.forEach(p=>{if(p[0]===0&&p[1]===0)return;
     s+='<line class="guide" x1="'+X(p[0])+'" y1="'+Y(p[1])+'" x2="'+X(p[0])+'" y2="'+(H-B)+'"/><line class="guide" x1="'+L+'" y1="'+Y(p[1])+'" x2="'+X(p[0])+'" y2="'+Y(p[1])+'"/><circle class="pt" cx="'+X(p[0])+'" cy="'+Y(p[1])+'" r="5"/>'+
@@ -377,7 +500,7 @@ function build(){
     if(q){seen.add(q.q);q.topicObj=tmap[t];q.picked=null;quiz.push(q)}
   });
   idx=0;score=0;answered=false;submitted=false;startedAt=Date.now();attemptId=Date.now().toString(36)+Math.random().toString(36).slice(2,10);
-  $("home").hidden=true;$("quizArea").hidden=false;$("homeBtn").hidden=false;
+  $("home").hidden=true;$("tutorArea").hidden=true;$("quizArea").hidden=false;$("homeBtn").hidden=false;
   render();window.scrollTo({top:0});
 }
 function render(){
@@ -421,7 +544,7 @@ function renderResults(){
   if($("upBtn"))$("upBtn").addEventListener("click",()=>{sel.level="hard";store.set("gamesol-sel",sel);build()});
   if(ONLINE&&!submitted)submitResult($("rankBox"));
 }
-function goHome(){$("quizArea").hidden=true;$("home").hidden=false;$("homeBtn").hidden=true;renderHome();window.scrollTo({top:0})}
+function goHome(){$("quizArea").hidden=true;$("tutorArea").hidden=true;$("home").hidden=false;$("homeBtn").hidden=true;renderHome();window.scrollTo({top:0})}
 $("homeBtn").addEventListener("click",goHome);
 
 /* ---------- leaderboard ---------- */
@@ -462,6 +585,147 @@ async function showBoard(el,cls,subj,level){
   }catch(e){$("sbBody").innerHTML='<p class="warn">Could not load the leaderboard. Check your internet connection.</p>'}
 }
 
+
+/* ---------- chapter tutor ---------- */
+const ICON_BOOK='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 5.5C4.5 4 8 4 12 6c4-2 7.5-2 10-.5V19c-2.5-1.5-6-1.5-10 .5-4-2-7.5-2-10-.5z"/><path d="M12 6v13.5"/></svg>';
+const ICON_CHECK='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7.5 12.5l3 3 6-7"/></svg>';
+const tutorCache={};
+async function loadTutor(chap){
+  if(tutorCache[chap.tutor])return tutorCache[chap.tutor];
+  const r=await fetch(chap.tutor,{cache:"no-store"});if(!r.ok)throw new Error(r.status);
+  return tutorCache[chap.tutor]=await r.json();
+}
+const tprogKey=chap=>"gamesol-tutor-"+chap.tutor;
+const tprog=chap=>Object.assign({done:[],check:[]},store.get(tprogKey(chap))||{});
+function tutorProgressText(chap){const p=tprog(chap);const n=tutorCache[chap.tutor]?tutorCache[chap.tutor].lessons.length:0;
+  return p.done.length?("Tutor: "+p.done.length+(n?" of "+n:"")+" lessons understood"):"Tutor available – tap the book to learn";}
+function md(t){return esc(t).replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>").replace(/\*(.+?)\*/g,"<em>$1</em>")}
+
+function renderTutorSummary(T,cls,subj,chap){
+  const p=tprog(chap);const n=T.lessons.length;
+  let h='<h2>Chapter tutor · '+n+' lessons</h2>'+
+    '<div class="meter"><span>'+p.done.length+' of '+n+' understood</span><span class="bar"><i style="width:'+(100*p.done.length/n)+'%"></i></span></div>'+
+    '<div class="lessonList">'+
+    '<button data-go="overview"><span>★</span><span class="ref">Start</span><span>Overview and study plan</span><span class="t">3 min</span></button>'+
+    T.lessons.map((l,i)=>'<button data-go="L'+i+'"><span class="'+(p.done.includes(l.topic)?"ok":"")+'">'+(p.done.includes(l.topic)?"✓":(i+1))+'</span><span class="ref">'+esc(l.ref)+'</span><span>'+esc(l.title)+'</span><span class="t">'+esc(l.time)+'</span></button>').join("")+
+    '<button data-go="formulas"><span>∑</span><span class="ref">Sheet</span><span>Formula sheet</span><span class="t">1 page</span></button>'+
+    '<button data-go="revision"><span>↻</span><span class="ref">Revise</span><span>Smart revision – last-minute sheet</span><span class="t">5 min</span></button>'+
+    '<button data-go="exam"><span>🎯</span><span class="ref">Exam</span><span>Exam readiness</span><span class="t">5 min</span></button>'+
+    '</div><div class="row"><button class="btn primary" id="openTutor">'+(p.done.length?"Continue learning →":"Start the chapter tutor →")+'</button></div>';
+  $("topicStep").innerHTML=h;
+  $("topicStep").querySelectorAll("[data-go]").forEach(b=>b.addEventListener("click",()=>{keepNames();openTutor(cls,subj,chap,b.dataset.go)}));
+  $("openTutor").addEventListener("click",()=>{keepNames();const next=T.lessons.findIndex(l=>!p.done.includes(l.topic));openTutor(cls,subj,chap,p.done.length?(next<0?"revision":"L"+next):"overview")});
+}
+
+let TUT=null,TCTX=null,tpage="overview";
+async function openTutor(cls,subj,chap,page){
+  store.set("gamesol-sel",sel);store.set("gamesol-player",player);
+  try{TUT=await loadTutor(chap)}catch(e){alertBox("Could not load the tutor file.");return}
+  TCTX={cls,subj,chap};tpage=page||"overview";
+  $("home").hidden=true;$("quizArea").hidden=true;$("tutorArea").hidden=false;$("homeBtn").hidden=true;
+  renderTutor();window.scrollTo({top:0});
+}
+function alertBox(m){$("tutorArea").hidden=false;$("tutorArea").innerHTML='<div class="error">'+esc(m)+'</div>'}
+function tutorPages(){return ["overview",...TUT.lessons.map((_,i)=>"L"+i),"formulas","revision","exam"]}
+function renderTutor(){
+  const p=tprog(TCTX.chap);
+  const pages=tutorPages();
+  const label=k=>k==="overview"?"Overview":k==="formulas"?"Formula sheet":k==="revision"?"Smart revision":k==="exam"?"Exam readiness":(()=>{const i=+k.slice(1);const l=TUT.lessons[i];return (p.done.includes(l.topic)?'<span class="d">✓</span> ':'')+(i+1)+". "+esc(shortTitle(l.title))})();
+  let h='<div class="row" style="justify-content:space-between"><button class="btn" id="tBack">← '+esc(TCTX.subj.name)+' home</button>'+
+    '<div class="meter" style="min-width:200px"><span>'+p.done.length+'/'+TUT.lessons.length+' understood</span><span class="bar"><i style="width:'+(100*p.done.length/TUT.lessons.length)+'%"></i></span></div></div>'+
+    '<nav class="tnav" aria-label="Chapter tutor sections">'+pages.map(k=>'<button data-p="'+k+'"'+(k===tpage?' aria-current="page"':'')+'>'+label(k)+'</button>').join("")+'</nav>'+
+    '<article class="sheet"><div class="lesson">'+tutorPage(tpage,p)+'</div></article>';
+  $("tutorArea").innerHTML=h;
+  const cur=$("tutorArea").querySelector('.tnav [aria-current="page"]');if(cur)cur.scrollIntoView({block:"nearest",inline:"center"});
+  $("tBack").addEventListener("click",()=>{sel.mode="tutor";goHome()});
+  $("tutorArea").querySelectorAll("[data-p]").forEach(b=>b.addEventListener("click",()=>{tpage=b.dataset.p;renderTutor();window.scrollTo({top:0})}));
+  $("tutorArea").querySelectorAll(".fc").forEach(b=>b.addEventListener("click",()=>{const open=b.getAttribute("aria-expanded")!=="true";b.setAttribute("aria-expanded",open);b.querySelector(".fa").hidden=!open;b.querySelector("small").textContent=open?"Tap to hide":"Say your answer, then tap to check"}));
+  $("tutorArea").querySelectorAll("[data-reveal]").forEach(b=>b.addEventListener("click",()=>{const box=b.closest(".worked");box.querySelector(".sol").hidden=false;b.remove()}));
+  $("tutorArea").querySelectorAll("[data-done]").forEach(b=>b.addEventListener("click",()=>{const q=tprog(TCTX.chap);const t=b.dataset.done;q.done=q.done.includes(t)?q.done.filter(x=>x!==t):[...q.done,t];store.set(tprogKey(TCTX.chap),q);renderTutor()}));
+  $("tutorArea").querySelectorAll("[data-practise]").forEach(b=>b.addEventListener("click",()=>practise(b.dataset.practise.split(","),b.dataset.level||"easy")));
+  $("tutorArea").querySelectorAll("[data-check]").forEach(c=>c.addEventListener("change",()=>{const q=tprog(TCTX.chap);const i=+c.dataset.check;q.check=c.checked?[...new Set([...q.check,i])]:q.check.filter(x=>x!==i);store.set(tprogKey(TCTX.chap),q);const m=$("readyMeter");if(m)m.innerHTML=readyMeter(q)}));
+}
+const SHORT={"Describing position and motion":"Position & motion","Distance travelled and displacement":"Distance & displacement","Average speed and average velocity":"Speed & velocity","Motion in a plane and uniform circular motion":"Circular motion"};
+const shortTitle=t=>SHORT[t]||t;
+function nextBtn(k){const pages=tutorPages();const i=pages.indexOf(k);if(i<0||i===pages.length-1)return "";const n=pages[i+1];
+  const name=n==="formulas"?"Formula sheet":n==="revision"?"Smart revision":n==="exam"?"Exam readiness":TUT.lessons[+n.slice(1)].title;
+  return '<button class="btn primary" data-p="'+n+'">Next: '+esc(name)+' →</button>'}
+function figureHTML(d,cap){
+  if(!d)return "";
+  const svg=d.type==="numberline"?'<div class="nl">'+numberlineSVG(d)+'</div>':'<div class="graph">'+graphSVG(d)+'</div>';
+  return '<figure class="figure" style="margin:0">'+svg+(cap||d.caption?'<figcaption>'+md(cap||d.caption)+'</figcaption>':'')+'</figure>';
+}
+function tableHTML(t){return '<div><h3>'+md(t.title)+'</h3><div class="tbl"><table><thead><tr>'+t.head.map(x=>'<th>'+esc(x)+'</th>').join("")+'</tr></thead><tbody>'+t.rows.map(r=>'<tr>'+r.map(x=>'<td>'+esc(x)+'</td>').join("")+'</tr>').join("")+'</tbody></table></div></div>'}
+function cardsHTML(cards){return '<div class="cards">'+cards.map(c=>'<button class="fc" aria-expanded="false"><span class="fq">'+md(c.q)+'</span><span class="fa" hidden>'+md(c.a)+'</span><small>Say your answer, then tap to check</small></button>').join("")+'</div>'}
+function tutorPage(k,p){
+  if(k==="overview"){const o=TUT.overview;
+    return '<span class="tag">Start here · '+esc(TUT.source)+'</span><h2 class="t">'+esc(TUT.chapter)+'</h2>'+
+      '<div class="hook">'+md(o.bigIdea)+'</div>'+
+      '<div><h3>The ladder of motion</h3><div class="ladder">'+o.ladder.map(r=>'<div class="rung"><b>'+esc(r.step)+'</b><i>'+esc(r.q)+'</i><small>'+esc(r.a)+'</small></div>').join("")+'</div></div>'+
+      '<div><h3>Three ways to describe the same motion</h3><div class="langs">'+o.languages.map(l=>'<div><b>'+esc(l.name)+'</b>'+md(l.text)+'</div>').join("")+'</div></div>'+
+      '<div><h3>Your study plan</h3><ol class="plan">'+o.plan.map(x=>'<li><span><b>'+esc(x.pass)+' <span class="muted" style="font-weight:400">· '+esc(x.time)+'</span></b><small>'+md(x.text)+'</small></span></li>').join("")+'</ol></div>'+
+      '<p class="method">'+md(TUT.method)+'</p>'+
+      '<div class="lfoot"><span class="spacer"></span>'+nextBtn(k)+'</div>';
+  }
+  if(k==="formulas"){
+    return '<span class="tag">One-page formula sheet</span><h2 class="t">Formula sheet</h2><p>Revise this page the night before and again 10 minutes before the exam. Cover the middle column and try to write each formula from memory.</p>'+
+      '<div class="tbl fsheet"><table><thead><tr><th>Quantity</th><th>Formula</th><th>Unit</th><th>Use it when</th></tr></thead><tbody>'+
+      TUT.formulas.map(f=>'<tr><td>'+esc(f.name)+'</td><td>'+esc(f.f)+'</td><td>'+esc(f.unit)+'</td><td>'+esc(f.when)+'</td></tr>').join("")+'</tbody></table></div>'+
+      '<div class="lfoot"><button class="btn" data-practise="'+TUT.lessons.map(l=>l.topic).join(",")+'" data-level="easy">Quick mixed quiz (Easy) →</button><span class="spacer"></span>'+nextBtn(k)+'</div>';
+  }
+  if(k==="revision"){
+    return '<span class="tag">Smart revision · 5 minutes</span><h2 class="t">Last-minute revision sheet</h2>'+
+      '<p>Read each line, look away, and say it back in your own words. Revisit after <strong>1 day, 3 days and 7 days</strong> – spacing makes it stick.</p>'+
+      '<ol class="rev">'+TUT.revision.map(r=>'<li>'+md(r)+'</li>').join("")+'</ol>'+
+      '<div><h3>Rapid recall – all topics mixed</h3>'+cardsHTML(shuffle(TUT.lessons.flatMap(l=>l.cards)).slice(0,8))+'</div>'+
+      '<div class="lfoot"><button class="btn primary" data-practise="'+TUT.lessons.map(l=>l.topic).join(",")+'" data-level="hard">Mixed exam-level quiz →</button><span class="spacer"></span>'+nextBtn(k)+'</div>';
+  }
+  if(k==="exam"){const e=TUT.exam;
+    return '<span class="tag">Exam readiness</span><h2 class="t">Score full marks: how to answer</h2>'+
+      '<div><h3>Numericals · the GUFS method</h3><ol class="steps">'+e.numerical.map(x=>'<li>'+md(x)+'</li>').join("")+'</ol></div>'+
+      '<div class="duo"><div class="note-card"><h3>Graph questions</h3><ol class="steps">'+e.graph.map(x=>'<li>'+md(x)+'</li>').join("")+'</ol></div>'+
+      '<div class="note-card mem"><h3>Answer writing</h3><ul class="steps">'+e.writing.map(x=>'<li>'+md(x)+'</li>').join("")+'</ul></div></div>'+
+      '<div><h3>Am I ready? Tick what you can do without the book</h3><div class="meter" id="readyMeter">'+readyMeter(p)+'</div><div class="check" style="margin-top:8px">'+
+      e.checklist.map((c,i)=>'<label><input type="checkbox" data-check="'+i+'"'+(p.check.includes(i)?" checked":"")+'><span>'+md(c)+'</span></label>').join("")+'</div></div>'+
+      '<div class="lfoot"><button class="btn primary" data-practise="'+TUT.lessons.map(l=>l.topic).join(",")+'" data-level="hard">Take the exam-level quiz →</button></div>';
+  }
+  const i=+k.slice(1),L=TUT.lessons[i],done=p.done.includes(L.topic);
+  return '<span class="tag">'+esc(L.ref)+' · '+esc(L.time)+' read</span><h2 class="t">'+esc(L.title)+'</h2>'+
+    '<div class="hook">'+md(L.hook)+'</div>'+
+    '<div><h3>Core ideas – learn these exactly</h3><dl class="defs" style="margin:0">'+L.core.map(c=>'<div><dt>'+md(c.term)+'</dt><dd>'+md(c.def)+'</dd></div>').join("")+'</dl></div>'+
+    (L.graph?figureHTML(L.graph,L.graphCaption):"")+(L.diagram?figureHTML(L.diagram):"")+
+    '<div><h3>Understand it</h3>'+L.explain.map(x=>'<p>'+md(x)+'</p>').join("")+'</div>'+
+    (L.table?tableHTML(L.table):"")+
+    '<div class="worked"><h3 style="margin:0">Worked example – try it first</h3><div class="wq">'+md(L.example.q)+'</div>'+
+      '<button class="btn" data-reveal style="align-self:flex-start">Show the solution</button>'+
+      '<div class="sol" hidden><ol>'+L.example.steps.map(s=>'<li>'+md(s)+'</li>').join("")+'</ol>'+(L.example.graph?figureHTML(L.example.graph):"")+'<div class="ans" style="margin-top:8px">Answer: '+md(L.example.answer)+'</div></div></div>'+
+    '<div><h3>Exam traps – don\'t lose marks here</h3><ul class="traps">'+L.mistakes.map(m=>'<li>'+md(m)+'</li>').join("")+'</ul></div>'+
+    '<div class="duo"><div class="note-card"><h3>Exam tip</h3>'+md(L.tip)+'</div><div class="note-card mem"><h3>Memory hook</h3>'+md(L.memory)+'</div></div>'+
+    '<div><h3>Examiners often ask</h3><ul class="asks">'+L.examAsk.map(a=>'<li>'+md(a)+'</li>').join("")+'</ul></div>'+
+    '<div><h3>Recall check – answer before you tap</h3>'+cardsHTML(L.cards)+'</div>'+
+    '<div class="lfoot"><button class="btn '+(done?"done":"")+'" data-done="'+esc(L.topic)+'">'+(done?"✓ Understood":"Mark as understood")+'</button>'+
+    '<button class="btn" data-practise="'+esc(L.topic)+'">Practise this topic →</button><span class="spacer"></span>'+nextBtn(k)+'</div>';
+}
+function readyMeter(p){const n=TUT.exam.checklist.length,c=p.check.length;
+  return '<span>'+c+' of '+n+' ready</span><span class="bar"><i style="width:'+(100*c/n)+'%"></i></span><span>'+(c===n?"Exam ready!":c>=n*0.7?"Nearly there":"Keep going")+'</span>'}
+async function practise(topics,level){
+  try{BANK=await loadBank(TCTX.chap)}catch(e){return}
+  CTX=TCTX;sel.topics=topics;sel.level=level;sel.count=topics.length>1?15:10;sel.mode="quiz";store.set("gamesol-sel",sel);
+  if(ONLINE&&player.name.length<2){sel.mode="quiz";goHome();const w=$("pName");if(w){w.focus();}return}
+  build();
+}
+function numberlineSVG(d){
+  const W=600,L=30,R=30,rows=Math.max(0,...(d.arrows||[]).map(a=>a.row||1));
+  const top=16+rows*30,axisY=top+34,H=axisY+ (d.points.some(p=>p.sub)?56:40);
+  const X=v=>L+(W-L-R)*(v-d.min)/(d.max-d.min);
+  let s='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Number line diagram"><defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="context-stroke"/></marker></defs>';
+  s+='<line class="axis" x1="'+(L-12)+'" y1="'+axisY+'" x2="'+(W-R+12)+'" y2="'+axisY+'"/>';
+  for(let v=d.min;v<=d.max+1e-9;v+=d.step)s+='<line class="tick" x1="'+X(v)+'" x2="'+X(v)+'" y1="'+(axisY-5)+'" y2="'+(axisY+5)+'"/><text x="'+X(v)+'" y="'+(axisY+20)+'" text-anchor="middle">'+(v>0?"+":"")+fmt(v,1)+' '+esc(d.unit||"")+'</text>';
+  (d.points||[]).forEach(p=>{s+='<circle class="pt" cx="'+X(p.x)+'" cy="'+axisY+'" r="5"/><text class="pl" x="'+X(p.x)+'" y="'+(axisY-11)+'" text-anchor="middle">'+esc(p.label)+'</text>'+(p.sub?'<text x="'+X(p.x)+'" y="'+(axisY+38)+'" text-anchor="middle">'+esc(p.sub)+'</text>':'')});
+  (d.arrows||[]).forEach(a=>{const y=16+((a.row||1)-1)*30+14;const x1=X(a.from),x2=X(a.to);
+    s+='<line class="ar'+(a.hl?" hl":"")+'" x1="'+x1+'" y1="'+y+'" x2="'+x2+'" y2="'+y+'" marker-end="url(#ah)"/><text class="al" x="'+((x1+x2)/2)+'" y="'+(y-5)+'" text-anchor="middle">'+esc(a.label)+'</text>'});
+  return s+'</svg>';
+}
 document.addEventListener("keydown",e=>{
   if(e.target.matches("input,textarea")||$("quizArea").hidden)return;
   if(!answered&&/^[1-4]$/.test(e.key)&&idx<quiz.length){const b=$("stage").querySelector('.opt[data-i="'+(+e.key-1)+'"]');if(b)b.click()}

@@ -19,7 +19,8 @@
               "id": "ch4",
               "name": "Chapter 4 · Describing Motion Around Us",
               "status": "ongoing",
-              "bank": "banks/class9-science-ch4.json"
+              "bank": "banks/class9-science-ch4.json",
+              "tutor": "tutor/class9-science-ch4.json"
             }
           ]
         },

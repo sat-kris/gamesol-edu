@@ -47,6 +47,25 @@ Edit the file on GitHub with the ✏️ pencil icon and commit. The site updates
 
 There are 83 question templates: concept MCQs taken from the chapter, drawn graphs, and numerical problems (km h⁻¹ conversion, v = u + at, s = ut + ½at², v² = u² + 2as, braking and reaction distance, areas under v–t graphs, circular motion). The numerical questions get new numbers every time.
 
+## Chapter tutor
+
+When a chapter has a `"tutor"` file in the config, a **Tutor** book icon appears on its chapter card. Students also get a choice: **Chapter tutor** (learn) or **Check knowledge** (quiz).
+
+The tutor for Chapter 4 (`tutor/class9-science-ch4.json`) follows the NCERT textbook and includes:
+- **Overview:** the "ladder of motion" (position → displacement → velocity → acceleration), the three ways to describe motion, and a 3-pass study plan.
+- **8 lessons**, each with:
+  - a hook and the core definitions;
+  - a diagram or graph;
+  - a worked example to try before revealing the solution;
+  - exam traps, an exam tip and a memory hook;
+  - typical exam questions and tap-to-reveal recall cards;
+  - "Mark as understood" and "Practise this topic" buttons.
+- **Formula sheet**, a **smart revision** sheet for spaced revision, and an **exam readiness** page with the GUFS method for numericals, graph and answer-writing strategy, and an "Am I ready?" checklist.
+
+Progress is saved in the student's own browser.
+
+To add a tutor for another chapter, copy the tutor JSON, rewrite the content, and add `"tutor": "tutor/<file>.json"` to that chapter in `edu-kids-config.json`.
+
 ### Adding a chapter or subject
 1. Copy `banks/class9-science-ch4.json` to a new file, e.g. `banks/class9-science-ch5.json`, and replace the topics and questions.
 2. Add the chapter to `edu-kids-config.json` with `"status": "ongoing"` and `"bank": "banks/class9-science-ch5.json"`.

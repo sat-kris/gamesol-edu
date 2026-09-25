@@ -1,0 +1,976 @@
+{
+ "id": "class9-science-ch4-tutor",
+ "chapter": "Chapter 4 · Describing Motion Around Us",
+ "source": "NCERT Exploration | Grade 9, Chapter 4",
+ "method": "Built on proven learning methods: explain it simply first (Feynman technique), see it as a picture (dual coding), learn from worked examples, then test yourself (active recall), mix topics and revisit after 1, 3 and 7 days (spaced revision).",
+ "overview": {
+  "bigIdea": "Motion is simply **change of position with time**. This whole chapter is one ladder: each step asks “how fast is the previous thing changing?”",
+  "ladder": [
+   {
+    "step": "Position",
+    "q": "Where is it?",
+    "a": "Distance + direction from a reference point"
+   },
+   {
+    "step": "Displacement",
+    "q": "How much did position change?",
+    "a": "Final position − initial position"
+   },
+   {
+    "step": "Velocity",
+    "q": "How fast does position change?",
+    "a": "Displacement ÷ time"
+   },
+   {
+    "step": "Acceleration",
+    "q": "How fast does velocity change?",
+    "a": "Change in velocity ÷ time"
+   }
+  ],
+  "languages": [
+   {
+    "name": "Words",
+    "text": "Define it exactly: distance, displacement, speed, velocity, acceleration."
+   },
+   {
+    "name": "Graphs",
+    "text": "Slope gives a rate. Area under a velocity–time graph gives displacement."
+   },
+   {
+    "name": "Equations",
+    "text": "v = u + at, s = ut + ½at², v² = u² + 2as (constant acceleration only)."
+   }
+  ],
+  "plan": [
+   {
+    "pass": "Pass 1 · Understand",
+    "time": "25 min",
+    "text": "Lessons 1–4. Read the hook, learn the core ideas, cover the answer and redo each worked example."
+   },
+   {
+    "pass": "Pass 2 · See it",
+    "time": "20 min",
+    "text": "Lessons 5–6. Sketch every graph yourself before reading about it."
+   },
+   {
+    "pass": "Pass 3 · Use it",
+    "time": "30 min",
+    "text": "Lessons 7–8. Solve the worked examples with the GUFS method, then take a Check knowledge quiz."
+   },
+   {
+    "pass": "Revise",
+    "time": "10 min each",
+    "text": "Smart revision sheet after 1 day, 3 days and 7 days. Mixed quiz (all topics) before the exam."
+   }
+  ]
+ },
+ "lessons": [
+  {
+   "topic": "position",
+   "ref": "4.1.1",
+   "title": "Describing position and motion",
+   "time": "6 min",
+   "hook": "A friend phones: “Where are you?” You say “200 metres.” That answer is useless — 200 m **from where**, and **in which direction**? Physics needs exactly those two things to describe position.",
+   "core": [
+    {
+     "term": "Reference point (origin O)",
+     "def": "A fixed point from which we measure positions."
+    },
+    {
+     "term": "Position",
+     "def": "The **distance and direction** of an object from the reference point at an instant of time."
+    },
+    {
+     "term": "Motion",
+     "def": "An object is in motion if its position with respect to the reference point **changes with time**."
+    },
+    {
+     "term": "Rest",
+     "def": "An object is at rest if its position with respect to the reference point **does not change** with time."
+    },
+    {
+     "term": "Instant vs time interval",
+     "def": "An instant is a single clock reading (t = 4 s). A time interval is the duration between two readings (from 4 s to 10 s = 6 s)."
+    }
+   ],
+   "explain": [
+    "On a straight line we use **signs for direction**: positions to the right of O are positive (+), to the left are negative (−). So −20 m means 20 m from O on the left.",
+    "**Rest and motion are relative.** A bag on a train seat is at rest for the passenger but moving for someone on the platform. A book on your table is at rest relative to the Earth, but the Earth moves around the Sun — so relative to the Sun the book is moving. Always ask: *relative to what?*"
+   ],
+   "diagram": {
+    "type": "numberline",
+    "min": -40,
+    "max": 100,
+    "step": 20,
+    "unit": "m",
+    "points": [
+     {
+      "x": 0,
+      "label": "O"
+     },
+     {
+      "x": 40,
+      "label": "B"
+     },
+     {
+      "x": 100,
+      "label": "A"
+     },
+     {
+      "x": -20,
+      "label": "C"
+     }
+    ],
+    "caption": "Positions on a straight line: A is +100 m, B is +40 m, C is −20 m from the origin O."
+   },
+   "example": {
+    "q": "The school gate is the origin. A shop is at +300 m and the bus stop is at −200 m. Describe the bus stop's position and find the distance between the shop and the bus stop.",
+    "steps": [
+     "Bus stop: the number 200 gives distance, the minus sign gives direction → 200 m from the gate, on the side **opposite** to the shop.",
+     "Distance between them = 300 − (−200) = 300 + 200 = 500 m."
+    ],
+    "answer": "200 m from the gate, opposite side to the shop; 500 m apart."
+   },
+   "mistakes": [
+    "Giving position without direction (“40 m” instead of “+40 m” or “40 m east”).",
+    "Saying an object is “at rest” without saying relative to what.",
+    "Mixing up an instant (t = 5 s) with a time interval (5 s long)."
+   ],
+   "tip": "In any “is it at rest?” question, name the reference point in your first line. That line alone often earns the mark.",
+   "memory": "Position = HOW FAR + WHICH WAY + FROM WHERE.",
+   "examAsk": [
+    "Define motion and rest.",
+    "Can an object on the Earth be at rest? Explain (Revise, Reflect, Refine Q11).",
+    "Differentiate instant and time interval."
+   ],
+   "cards": [
+    {
+     "q": "Which two things describe the position of an object?",
+     "a": "Its distance and direction from a reference point, at an instant of time."
+    },
+    {
+     "q": "A book lies on a table. Is it at rest?",
+     "a": "At rest relative to the Earth, but in motion relative to the Sun (the Earth moves). Rest and motion depend on the reference point."
+    },
+    {
+     "q": "What does a negative position mean on a straight line?",
+     "a": "The object is on the negative side (usually left) of the origin."
+    }
+   ]
+  },
+  {
+   "topic": "displacement",
+   "ref": "4.1.2",
+   "title": "Distance travelled and displacement",
+   "time": "7 min",
+   "hook": "Walk 5 steps forward and 5 steps back. Your legs did 10 steps of work (**distance**), but you are exactly where you started (**displacement = 0**). The fuel a scooter burns depends on distance; where it ends up depends on displacement.",
+   "core": [
+    {
+     "term": "Distance travelled",
+     "def": "The **total length of the path** covered. Only a numerical value (with unit), no direction. SI unit: metre (m)."
+    },
+    {
+     "term": "Displacement",
+     "def": "The **net change in position** between two instants. Needs magnitude **and direction** — from the first position towards the second. SI unit: metre (m)."
+    },
+    {
+     "term": "Magnitude",
+     "def": "The numerical value (with units) of a quantity that also has a direction."
+    },
+    {
+     "term": "Key rule",
+     "def": "|Displacement| ≤ distance travelled. They are **equal only when the object moves in one direction without turning back**."
+    }
+   ],
+   "explain": [
+    "Displacement ignores the path and looks only at start and end. That is why it can be **zero** even when a lot of distance is covered (a ball thrown up and caught, a round trip home–shop–home).",
+    "Quantities that need only a number (distance, speed, time) are called *scalars*; quantities that need a number **and** a direction (displacement, velocity, acceleration) are called *vectors*. You will study these names in higher classes — for now just remember which ones need a direction."
+   ],
+   "diagram": {
+    "type": "numberline",
+    "min": 0,
+    "max": 100,
+    "step": 20,
+    "unit": "m",
+    "points": [
+     {
+      "x": 0,
+      "label": "O",
+      "sub": "t = 0 s"
+     },
+     {
+      "x": 40,
+      "label": "B",
+      "sub": "t = 4 s, 16 s"
+     },
+     {
+      "x": 100,
+      "label": "A",
+      "sub": "t = 10 s"
+     }
+    ],
+    "arrows": [
+     {
+      "from": 0,
+      "to": 100,
+      "label": "O → A: 100 m",
+      "row": 1
+     },
+     {
+      "from": 100,
+      "to": 40,
+      "label": "A → B: 60 m",
+      "row": 2
+     },
+     {
+      "from": 0,
+      "to": 40,
+      "label": "Displacement: 40 m (+)",
+      "row": 3,
+      "hl": true
+     }
+    ],
+    "caption": "The athlete in Fig. 4.4: distance = 100 m + 60 m = 160 m, but displacement = 40 m in the positive direction."
+   },
+   "example": {
+    "q": "A student runs from the ground floor to the 4th floor of a school, then comes down to the 2nd floor. Each floor is 3 m high. Find the total vertical distance and the displacement. (Revise, Reflect, Refine Q2)",
+    "steps": [
+     "Draw a vertical line: ground = 0 m, 4th floor = 4 × 3 = 12 m, 2nd floor = 2 × 3 = 6 m.",
+     "Distance = up 12 m + down (12 − 6) = 6 m → 12 + 6 = **18 m**.",
+     "Displacement = final − initial = 6 m − 0 m = **6 m upwards** (direction included!)."
+    ],
+    "answer": "Distance 18 m; displacement 6 m upwards."
+   },
+   "mistakes": [
+    "Writing displacement without direction — you lose the mark.",
+    "Thinking displacement can never be zero, or can be bigger than distance.",
+    "Adding distances for displacement: displacement is final position minus initial position, not a sum of paths."
+   ],
+   "tip": "Draw a quick number line for every distance/displacement question. It takes 10 seconds and prevents most errors.",
+   "memory": "Distance = what the LEGS feel. Displacement = what the MAP shows (start → end arrow).",
+   "examAsk": [
+    "Can displacement be zero when distance is not? Give an example.",
+    "Father goes home → shop → home → shop → home (Q1): distance and displacement.",
+    "Fuel used depends on distance or displacement? Justify."
+   ],
+   "cards": [
+    {
+     "q": "A ball is thrown up and caught at the same point. Displacement?",
+     "a": "Zero — it ends where it started."
+    },
+    {
+     "q": "When are distance and |displacement| equal?",
+     "a": "When the object moves in a straight line in one direction without turning back."
+    },
+    {
+     "q": "Can |displacement| be greater than distance?",
+     "a": "Never. It can only be less than or equal to the distance."
+    }
+   ]
+  },
+  {
+   "topic": "speed",
+   "ref": "4.1.3",
+   "title": "Average speed and average velocity",
+   "time": "8 min",
+   "hook": "Sarang swims to the far end of a 25 m pool and back in 50 s. He is exhausted, his average speed is 1 m s⁻¹ — yet his average velocity is **zero**. Understanding why is the whole lesson.",
+   "core": [
+    {
+     "term": "Average speed",
+     "def": "**Total distance travelled ÷ time interval.** Only a numerical value, no direction."
+    },
+    {
+     "term": "Average velocity",
+     "def": "**Displacement (change in position) ÷ time interval.** Has magnitude and direction (+ or − on a straight line). vₐᵥ = s/t"
+    },
+    {
+     "term": "Units",
+     "def": "SI unit of both: m s⁻¹ (m/s). Also km h⁻¹."
+    },
+    {
+     "term": "Uniform motion",
+     "def": "Equal distances in equal intervals of time (constant speed). Unequal distances → non-uniform motion."
+    },
+    {
+     "term": "Rate of change",
+     "def": "Change in a quantity ÷ time taken. Average velocity is the average rate of change of position."
+    }
+   ],
+   "explain": [
+    "Speed tells you **how fast**; velocity tells you **how fast and which way**. For motion in one direction on a straight line, average speed = magnitude of average velocity.",
+    "The speedometer of a vehicle shows (nearly) the speed at an instant; the direction the tyres point gives the direction of velocity at that instant."
+   ],
+   "table": {
+    "title": "Memorise: km h⁻¹ → m s⁻¹ (multiply by 5/18)",
+    "head": [
+     "km h⁻¹",
+     "18",
+     "36",
+     "54",
+     "72",
+     "90",
+     "108"
+    ],
+    "rows": [
+     [
+      "m s⁻¹",
+      "5",
+      "10",
+      "15",
+      "20",
+      "25",
+      "30"
+     ]
+    ]
+   },
+   "example": {
+    "q": "On a road trip you drive 200 km north in 3 hours and then 200 km south in 2 hours. Find the average speed and average velocity for the whole trip. (Pause and Ponder 4)",
+    "steps": [
+     "Given: distance = 200 + 200 = 400 km; time = 3 + 2 = 5 h; you end where you started, so displacement = 0.",
+     "Average speed = 400 km ÷ 5 h = **80 km h⁻¹**.",
+     "Average velocity = 0 km ÷ 5 h = **0 km h⁻¹**."
+    ],
+    "answer": "80 km h⁻¹ and 0 km h⁻¹."
+   },
+   "mistakes": [
+    "Averaging the two speeds: (66.7 + 100)/2 = 83.3 km h⁻¹ is WRONG here. Always use total distance ÷ total time (= 80 km h⁻¹).",
+    "Using displacement for speed or distance for velocity.",
+    "Forgetting to convert km h⁻¹ to m s⁻¹ before using other SI values."
+   ],
+   "tip": "Read the question word: “speed” → use distance; “velocity” → use displacement and state the direction.",
+   "memory": "km/h → m/s: × 5/18. m/s → km/h: × 18/5. (36 km/h = 10 m/s is the easiest anchor.)",
+   "examAsk": [
+    "When is average velocity zero but average speed not zero? (Pause and Ponder 5)",
+    "Two postmen problem (Example 4.1).",
+    "Convert 54 km h⁻¹ to m s⁻¹."
+   ],
+   "cards": [
+    {
+     "q": "Average speed formula?",
+     "a": "Total distance travelled ÷ time interval."
+    },
+    {
+     "q": "Average velocity formula?",
+     "a": "Displacement ÷ time interval (with direction)."
+    },
+    {
+     "q": "When does |average velocity| equal average speed?",
+     "a": "When the object moves in one direction along a straight line."
+    },
+    {
+     "q": "72 km h⁻¹ in m s⁻¹?",
+     "a": "72 × 5/18 = 20 m s⁻¹."
+    }
+   ]
+  },
+  {
+   "topic": "accel",
+   "ref": "4.1.4",
+   "title": "Average acceleration",
+   "time": "8 min",
+   "hook": "That jolt you feel when a bus starts suddenly or brakes hard? That is your body sensing **acceleration** — a change in velocity. A bus cruising smoothly at 80 km h⁻¹ gives no jolt: fast, but **zero acceleration**.",
+   "core": [
+    {
+     "term": "Average acceleration",
+     "def": "**Change in velocity ÷ time interval.**  a = (v − u) / (t₂ − t₁)"
+    },
+    {
+     "term": "Unit",
+     "def": "m s⁻² (m/s²)."
+    },
+    {
+     "term": "Direction",
+     "def": "Speeding up → acceleration in the **same** direction as velocity (+). Slowing down → **opposite** to velocity (−)."
+    },
+    {
+     "term": "Causes",
+     "def": "A change in the **magnitude** of velocity, its **direction**, or both."
+    },
+    {
+     "term": "Free fall",
+     "def": "An object dropped from a height gains 9.8 m s⁻¹ every second: constant acceleration g = 9.8 m s⁻², downwards."
+    }
+   ],
+   "explain": [
+    "Acceleration does not depend on how fast you move, but on **how quickly your velocity changes**. A bus at a high constant velocity has zero acceleration.",
+    "Constant acceleration: velocity changes by **equal amounts in equal intervals of time**. In this chapter we only deal with constant acceleration."
+   ],
+   "example": {
+    "q": "A bus at 36 km h⁻¹ speeds up to 54 km h⁻¹ in 10 s. Later it brakes from 54 km h⁻¹ and stops in 5 s. Find the average acceleration in both cases. (Example 4.3)",
+    "steps": [
+     "Convert: 36 km h⁻¹ = 10 m s⁻¹, 54 km h⁻¹ = 15 m s⁻¹.",
+     "Speeding up: a = (15 − 10) / 10 = **0.5 m s⁻²** (in the direction of velocity).",
+     "Braking: a = (0 − 15) / 5 = **−3 m s⁻²**. The minus sign means acceleration is opposite to velocity."
+    ],
+    "answer": "0.5 m s⁻² and −3 m s⁻²."
+   },
+   "mistakes": [
+    "Not converting km h⁻¹ to m s⁻¹ — the answer comes out 3.6 times too big.",
+    "Dropping the minus sign when the object slows down.",
+    "Believing “high speed = high acceleration”."
+   ],
+   "tip": "Always write u and v first, both in m s⁻¹. Then a = (v − u)/t. Keep the sign in the final answer and say what it means.",
+   "memory": "Velocity is to position what acceleration is to velocity: each one is “how fast the previous one changes”.",
+   "examAsk": [
+    "Can a scooter with constant speedometer reading accelerate? (Q3)",
+    "Car from rest to 24 m s⁻¹ in 6 s: find acceleration (Q4).",
+    "Direction of acceleration when slowing down."
+   ],
+   "cards": [
+    {
+     "q": "SI unit of acceleration?",
+     "a": "m s⁻²"
+    },
+    {
+     "q": "A car moves at a constant 20 m s⁻¹ on a straight road. Acceleration?",
+     "a": "Zero — velocity is not changing."
+    },
+    {
+     "q": "Can there be acceleration at constant speed?",
+     "a": "Yes, if the direction of motion changes (e.g. turning, circular motion)."
+    }
+   ]
+  },
+  {
+   "topic": "ptgraph",
+   "ref": "4.2.1–4.2.2",
+   "title": "Position–time graphs",
+   "time": "8 min",
+   "hook": "A graph is a story told in a picture. A position–time graph is **not a map** of the road — it shows how far from the origin the object is at every instant.",
+   "core": [
+    {
+     "term": "Axes",
+     "def": "Time on the X-axis, position on the Y-axis. Choose a scale that uses most of the graph paper."
+    },
+    {
+     "term": "Straight sloping line",
+     "def": "Equal displacements in equal times → **constant velocity**."
+    },
+    {
+     "term": "Line parallel to time axis",
+     "def": "Position does not change → object **at rest**."
+    },
+    {
+     "term": "Curve getting steeper",
+     "def": "Velocity increasing → **accelerated motion**."
+    },
+    {
+     "term": "Slope",
+     "def": "Slope = BC/CA = (s₂ − s₁)/(t₂ − t₁) = **velocity**. A steeper line means a higher velocity."
+    }
+   ],
+   "graph": {
+    "x": "Time (s)",
+    "y": "Position (m)",
+    "lines": [
+     {
+      "label": "Rest",
+      "pts": [
+       [
+        0,
+        40
+       ],
+       [
+        6,
+        40
+       ]
+      ]
+     },
+     {
+      "label": "Constant velocity",
+      "pts": [
+       [
+        0,
+        0
+       ],
+       [
+        6,
+        120
+       ]
+      ]
+     },
+     {
+      "label": "Speeding up",
+      "pts": [
+       [
+        0,
+        0
+       ],
+       [
+        1,
+        2.5
+       ],
+       [
+        2,
+        10
+       ],
+       [
+        3,
+        22.5
+       ],
+       [
+        4,
+        40
+       ],
+       [
+        5,
+        62.5
+       ],
+       [
+        6,
+        90
+       ]
+      ]
+     }
+    ]
+   },
+   "graphCaption": "Three motions on one position–time graph: flat = at rest, straight = steady, curving up = speeding up.",
+   "explain": [
+    "To find velocity from the graph, pick two points A and B on the line, draw a right-angled triangle ABC, and divide the rise BC by the run CA. Read the values carefully off the axes.",
+    "If two objects are plotted on the same axes, the one with the **steeper** line covers more displacement in the same time interval, so it has the higher velocity."
+   ],
+   "example": {
+    "q": "On a position–time graph, the vehicle is at 40 m at t = 2 s and at 80 m at t = 4 s (Fig. 4.14). Find its velocity.",
+    "steps": [
+     "Change in position BC = 80 m − 40 m = 40 m.",
+     "Change in time CA = 4 s − 2 s = 2 s.",
+     "Velocity = slope = 40 m ÷ 2 s = **20 m s⁻¹**."
+    ],
+    "answer": "20 m s⁻¹"
+   },
+   "mistakes": [
+    "Reading the graph as the path of the object.",
+    "Dividing a single position by a single time on a curve — always use a change between two points.",
+    "Missing labels and units on the axes when plotting (easy marks lost)."
+   ],
+   "tip": "When plotting, write a scale in the corner (e.g. X-axis: 5 divisions = 1 s; Y-axis: 5 divisions = 20 m), label both axes with quantity and unit, and join points smoothly.",
+   "memory": "Flat = sat (at rest). Straight = steady. Curving up = speeding up. Slope = speed of change.",
+   "examAsk": [
+    "Plot a position–time graph from a table and find velocity.",
+    "Compare two objects A and B from their graphs (Fig. 4.16, Q6).",
+    "What does a line parallel to the time axis mean?"
+   ],
+   "cards": [
+    {
+     "q": "Slope of a position–time graph gives?",
+     "a": "Velocity."
+    },
+    {
+     "q": "Position–time graph parallel to the time axis?",
+     "a": "Object at rest."
+    },
+    {
+     "q": "Curved position–time graph getting steeper?",
+     "a": "Velocity increasing — accelerated motion."
+    }
+   ]
+  },
+  {
+   "topic": "vtgraph",
+   "ref": "4.2.3",
+   "title": "Velocity–time graphs",
+   "time": "9 min",
+   "hook": "Same idea, one level up. On a velocity–time graph the **slope** tells you acceleration and the **area** under the line tells you displacement. Two readings from one picture — examiners love this.",
+   "core": [
+    {
+     "term": "Line parallel to time axis",
+     "def": "Constant velocity, **zero acceleration**."
+    },
+    {
+     "term": "Straight line going up",
+     "def": "Velocity increasing with **constant acceleration** (same direction as velocity)."
+    },
+    {
+     "term": "Straight line going down",
+     "def": "Velocity decreasing with **constant acceleration opposite** to velocity (negative)."
+    },
+    {
+     "term": "Slope",
+     "def": "Slope = (v − u)/(t₂ − t₁) = **acceleration**."
+    },
+    {
+     "term": "Area",
+     "def": "Area between the line and the time axis = **displacement** in that time interval."
+    }
+   ],
+   "graph": {
+    "x": "Time (s)",
+    "y": "Velocity (m s⁻¹)",
+    "lines": [
+     {
+      "pts": [
+       [
+        0,
+        0
+       ],
+       [
+        30,
+        15
+       ]
+      ]
+     }
+    ],
+    "fill": true
+   },
+   "graphCaption": "Car starting from rest (Table 4.5). Slope = 0.5 m s⁻²; shaded area = displacement.",
+   "explain": [
+    "Why is area = displacement? For constant velocity, the area is a rectangle: velocity × time = displacement. For changing velocity, split the area into a rectangle and a triangle (or use the trapezium formula).",
+    "Units check: (m s⁻¹) × (s) = m. If your area does not come out in metres, something is wrong."
+   ],
+   "example": {
+    "q": "A car starts from rest and speeds up uniformly to 20 m s⁻¹ in 5 s, travels at 20 m s⁻¹ for 10 s, then brakes uniformly and stops in 6 s. Find the total distance travelled. (Revise, Reflect, Refine Q9)",
+    "steps": [
+     "Sketch the v–t graph: a triangle (0–5 s), a rectangle (5–15 s), a triangle (15–21 s).",
+     "Area 1 = ½ × 5 × 20 = 50 m. Area 2 = 10 × 20 = 200 m. Area 3 = ½ × 6 × 20 = 60 m.",
+     "Total distance = 50 + 200 + 60 = **310 m**."
+    ],
+    "answer": "310 m",
+    "graph": {
+     "x": "Time (s)",
+     "y": "Velocity (m s⁻¹)",
+     "lines": [
+      {
+       "pts": [
+        [
+         0,
+         0
+        ],
+        [
+         5,
+         20
+        ],
+        [
+         15,
+         20
+        ],
+        [
+         21,
+         0
+        ]
+       ]
+      }
+     ],
+     "fill": true
+    }
+   },
+   "mistakes": [
+    "Using the slope for displacement or the area for acceleration.",
+    "Finding area on a position–time graph (it means nothing there).",
+    "Forgetting the ½ in the triangle area."
+   ],
+   "tip": "For multi-stage motion, always sketch the v–t graph first, split it into rectangles and triangles, and label each area with its value. Examiners give step marks for this.",
+   "memory": "Slope → RATE (acceleration). Area → ACCUMULATE (displacement).",
+   "examAsk": [
+    "Find acceleration and displacement from a v–t graph (Fig. 4.17, 4.18).",
+    "Cyclist graph: shade areas and find displacement (Q12).",
+    "Two cars from rest: plot v–t graphs and compare (Q15)."
+   ],
+   "cards": [
+    {
+     "q": "Slope of a velocity–time graph gives?",
+     "a": "Acceleration."
+    },
+    {
+     "q": "Area under a velocity–time graph gives?",
+     "a": "Displacement."
+    },
+    {
+     "q": "A v–t graph sloping downwards in a straight line means?",
+     "a": "Velocity decreasing with constant acceleration opposite to velocity."
+    }
+   ]
+  },
+  {
+   "topic": "kinematics",
+   "ref": "4.3",
+   "title": "Kinematic equations",
+   "time": "10 min",
+   "hook": "When acceleration is constant, just five quantities describe the motion: **s, u, v, a, t**. Know any three and the equations give you the other two. This is where most numerical marks are.",
+   "core": [
+    {
+     "term": "v = u + at",
+     "def": "Velocity after time t (from the definition of acceleration)."
+    },
+    {
+     "term": "s = ut + ½at²",
+     "def": "Displacement in time t (area under the v–t graph)."
+    },
+    {
+     "term": "v² = u² + 2as",
+     "def": "Links velocity and displacement **without time**."
+    },
+    {
+     "term": "Also useful",
+     "def": "s = ½(u + v)t and s = vt − ½at² (from The Journey Beyond)."
+    },
+    {
+     "term": "Condition",
+     "def": "Valid only for **constant acceleration** in a straight line. Signs of u, v, a, s show direction."
+    }
+   ],
+   "table": {
+    "title": "Pick the equation by the quantity you DON'T have",
+    "head": [
+     "Missing",
+     "Use"
+    ],
+    "rows": [
+     [
+      "s (displacement)",
+      "v = u + at"
+     ],
+     [
+      "v (final velocity)",
+      "s = ut + ½at²"
+     ],
+     [
+      "t (time)",
+      "v² = u² + 2as"
+     ],
+     [
+      "a (acceleration)",
+      "s = ½(u + v)t"
+     ]
+    ]
+   },
+   "explain": [
+    "**Decode the hidden information** in the question: “starts from rest” → u = 0; “comes to rest / stops” → v = 0; “uniform velocity” → a = 0; “dropped” → u = 0 and a = g = 9.8 m s⁻².",
+    "Use the **GUFS method** for every numerical: **G**iven (convert to SI), **U**nknown, **F**ormula, **S**ubstitute and solve — then write the answer with unit and direction."
+   ],
+   "example": {
+    "q": "A bus travels at 36 km h⁻¹. The driver sees an obstacle 30 m ahead and takes 0.5 s to react before braking. The brakes give a constant acceleration of −2.5 m s⁻². Will the bus stop before the obstacle? (Revise, Reflect, Refine Q10)",
+    "steps": [
+     "Given: u = 36 km h⁻¹ = 10 m s⁻¹, reaction time = 0.5 s, a = −2.5 m s⁻², v = 0.",
+     "Reaction distance (no braking yet, constant velocity) = 10 × 0.5 = 5 m.",
+     "Braking distance: v² = u² + 2as → 0 = 10² + 2(−2.5)s → s = 100/5 = 20 m.",
+     "Total stopping distance = 5 + 20 = **25 m**, which is less than 30 m."
+    ],
+    "answer": "Yes — it stops after 25 m, 5 m before the obstacle."
+   },
+   "mistakes": [
+    "Using these equations when acceleration is not constant.",
+    "Forgetting the minus sign for braking (a is negative).",
+    "Forgetting reaction distance in stopping-distance questions.",
+    "Not converting km h⁻¹ to m s⁻¹."
+   ],
+   "tip": "Braking distance ∝ u² (from v² = u² + 2as). Double the speed → four times the braking distance (Example 4.8: 28.1 m at 54 km h⁻¹, 112.5 m at 108 km h⁻¹). Use this to check answers and in “safe distance” reasoning questions.",
+   "memory": "“Rest → u = 0. Stop → v = 0. Steady → a = 0. Drop → a = g.”",
+   "examAsk": [
+    "Derive v² = u² + 2as or s = ½(u + v)t (trapezium area).",
+    "Motorbike at 28 m s⁻¹ stops in 98 m: find a and t (Q5).",
+    "Truck slows from 54 to 36 km h⁻¹ in 36 s: find distance (Q8)."
+   ],
+   "cards": [
+    {
+     "q": "Which equation has no t?",
+     "a": "v² = u² + 2as"
+    },
+    {
+     "q": "“Starts from rest” means?",
+     "a": "u = 0"
+    },
+    {
+     "q": "Speed doubles, same braking. Braking distance?",
+     "a": "Becomes 4 times (s ∝ u²)."
+    },
+    {
+     "q": "Condition for using kinematic equations?",
+     "a": "Constant acceleration, straight-line motion."
+    }
+   ]
+  },
+  {
+   "topic": "circular",
+   "ref": "4.4",
+   "title": "Motion in a plane and uniform circular motion",
+   "time": "7 min",
+   "hook": "Spin a marble around the inside of a ring, then lift the ring. The marble does **not** keep circling — it shoots off in a straight line. It was being forced to turn all along. That turning is a change of velocity: **acceleration**.",
+   "core": [
+    {
+     "term": "Motion in a plane",
+     "def": "Motion in two dimensions, e.g. a vehicle overtaking, a kicked ball, a satellite."
+    },
+    {
+     "term": "One revolution",
+     "def": "Distance = circumference = **2πR**; displacement = **0** (back to the start)."
+    },
+    {
+     "term": "Average speed",
+     "def": "vₐᵥ = 2πR / T, where T is the time for one revolution. Average velocity over one revolution = 0."
+    },
+    {
+     "term": "Uniform circular motion",
+     "def": "Motion on a circular path with **constant speed**."
+    },
+    {
+     "term": "Why accelerated?",
+     "def": "The **direction** of velocity changes continuously (it is along the tangent), so velocity changes → acceleration, even at constant speed."
+    }
+   ],
+   "explain": [
+    "Think of an athlete on a rectangular track: 4 turns per round. A hexagonal track: 6 turns. Keep adding sides and the track becomes a circle — now the athlete is turning **all the time**, so the direction of velocity changes continuously.",
+    "Uniform circular motion is an idealised model. Real motions (planets around the Sun, a car on a circular turn) are close to it, which is why it is so useful."
+   ],
+   "example": {
+    "q": "Rohan studies from 6 PM to 7:30 PM. The minute hand of the clock is 7 cm long. For its tip, find the distance travelled and the displacement. (Take π = 22/7) (Revise, Reflect, Refine Q16)",
+    "steps": [
+     "In 90 minutes the minute hand makes 1½ revolutions.",
+     "Distance = 1.5 × 2πR = 1.5 × 2 × 22/7 × 7 = **66 cm**.",
+     "After 1½ turns the tip goes from “12” to “6” — opposite ends of a diameter. Displacement = 2R = **14 cm** (from 12 towards 6).",
+     "Average speed = 66 cm ÷ 90 min ≈ 0.73 cm per minute."
+    ],
+    "answer": "Distance 66 cm; displacement 14 cm."
+   },
+   "mistakes": [
+    "Saying “constant speed, so no acceleration” in circular motion.",
+    "Writing displacement after one full circle as 2πR (it is 0).",
+    "Using 2πR for half a revolution (it is πR; displacement 2R)."
+   ],
+   "tip": "For clock or merry-go-round questions, first count how many revolutions happen, then use: full turn → displacement 0; half turn → displacement 2R.",
+   "memory": "Same speed, changing direction → STILL accelerating.",
+   "examAsk": [
+    "Why is uniform circular motion called accelerated motion?",
+    "Distance and displacement for a clock hand (Q16).",
+    "Marble and ring activity (Activity 4.5)."
+   ],
+   "cards": [
+    {
+     "q": "Distance in one revolution of radius R?",
+     "a": "2πR"
+    },
+    {
+     "q": "Displacement after one full revolution?",
+     "a": "Zero."
+    },
+    {
+     "q": "Is uniform circular motion accelerated? Why?",
+     "a": "Yes — the direction of velocity changes continuously."
+    },
+    {
+     "q": "Direction of velocity at a point on the circle?",
+     "a": "Along the tangent at that point, in the direction of motion."
+    }
+   ]
+  }
+ ],
+ "formulas": [
+  {
+   "name": "Average speed",
+   "f": "total distance ÷ time interval",
+   "unit": "m s⁻¹",
+   "when": "Speed questions; round trips"
+  },
+  {
+   "name": "Average velocity",
+   "f": "vₐᵥ = s / t  (displacement ÷ time)",
+   "unit": "m s⁻¹",
+   "when": "Always state direction"
+  },
+  {
+   "name": "Average acceleration",
+   "f": "a = (v − u) / (t₂ − t₁)",
+   "unit": "m s⁻²",
+   "when": "Negative when slowing down"
+  },
+  {
+   "name": "First equation",
+   "f": "v = u + at",
+   "unit": "",
+   "when": "No s in the question"
+  },
+  {
+   "name": "Second equation",
+   "f": "s = ut + ½at²",
+   "unit": "",
+   "when": "No v in the question"
+  },
+  {
+   "name": "Third equation",
+   "f": "v² = u² + 2as",
+   "unit": "",
+   "when": "No t — braking distance"
+  },
+  {
+   "name": "Average-velocity form",
+   "f": "s = ½(u + v)t",
+   "unit": "",
+   "when": "No a in the question"
+  },
+  {
+   "name": "Circular motion",
+   "f": "vₐᵥ = 2πR / T",
+   "unit": "m s⁻¹",
+   "when": "One revolution in time T"
+  },
+  {
+   "name": "Unit conversion",
+   "f": "1 km h⁻¹ = 5/18 m s⁻¹",
+   "unit": "",
+   "when": "Convert before substituting"
+  },
+  {
+   "name": "Free fall",
+   "f": "g = 9.8 m s⁻² (downwards)",
+   "unit": "",
+   "when": "Dropped objects"
+  },
+  {
+   "name": "Graph rules",
+   "f": "p–t slope = v;  v–t slope = a;  v–t area = s",
+   "unit": "",
+   "when": "Graph questions"
+  }
+ ],
+ "revision": [
+  "Position = distance + direction from a reference point. Rest and motion are relative.",
+  "Distance = total path (no direction). Displacement = final − initial position (with direction).",
+  "|Displacement| ≤ distance. Equal only for one-direction straight-line motion.",
+  "Average speed = distance/time. Average velocity = displacement/time. Round trip → average velocity 0.",
+  "km h⁻¹ × 5/18 = m s⁻¹. Anchors: 18→5, 36→10, 54→15, 72→20, 108→30.",
+  "Acceleration = (v − u)/t, unit m s⁻². Slowing down → negative (opposite to velocity).",
+  "Constant velocity → zero acceleration, however fast. Change in direction alone → acceleration.",
+  "Free fall: velocity increases by 9.8 m s⁻¹ every second → g = 9.8 m s⁻².",
+  "p–t graph: flat = rest, straight = constant velocity, curve = acceleration; slope = velocity.",
+  "v–t graph: flat = constant velocity; slope = acceleration; area = displacement.",
+  "v = u + at;  s = ut + ½at²;  v² = u² + 2as — constant acceleration only.",
+  "Rest → u = 0; stop → v = 0; steady → a = 0; dropped → a = g.",
+  "Stopping distance = reaction distance (u × reaction time) + braking distance (u²/2|a|).",
+  "Braking distance ∝ u²: double speed → 4× distance.",
+  "Circle: one revolution → distance 2πR, displacement 0; half → πR and 2R. Average speed 2πR/T.",
+  "Uniform circular motion is accelerated: velocity direction changes continuously (along the tangent)."
+ ],
+ "exam": {
+  "numerical": [
+   "**G**iven: list every value with its symbol and convert to SI units (km h⁻¹ → m s⁻¹, minutes → s).",
+   "**U**nknown: write what is asked, e.g. “s = ?”. Decode hidden values (rest, stop, dropped).",
+   "**F**ormula: write the equation in symbols before numbers. Pick it by the missing quantity.",
+   "**S**ubstitute and solve: show one clean substitution line — this line earns step marks.",
+   "Box the answer with **unit and direction** (and sign meaning, e.g. “− means opposite to velocity”).",
+   "**Sense check**: braking distance should grow with speed; a car's acceleration of 50 m s⁻² is suspicious."
+  ],
+  "graph": [
+   "Read the axes first: position–time or velocity–time? This decides whether the slope means velocity or acceleration.",
+   "For slope: choose two points far apart on the line, draw the triangle, write rise ÷ run with units.",
+   "For area: split into rectangles and triangles, label each area, add them.",
+   "When plotting: title, labelled axes with units, a stated scale, points marked clearly, smooth line."
+  ],
+  "writing": [
+   "Definitions: use the exact textbook words (“net change in position”, “change in velocity divided by time interval”).",
+   "“Give reason” answers: state the rule, then apply it to the case in one line.",
+   "Differences (distance vs displacement, speed vs velocity): make a 3-row table — definition, direction needed?, can it be zero?",
+   "Use a small labelled diagram (number line, triangle on a graph) whenever it helps — it is quick and scores."
+  ],
+  "checklist": [
+   "I can define position, displacement, average speed, average velocity and average acceleration.",
+   "I can explain why rest and motion are relative.",
+   "I can find distance and displacement for round trips and stair/floor problems.",
+   "I can convert km h⁻¹ ↔ m s⁻¹ quickly.",
+   "I can find acceleration with the correct sign and explain the sign.",
+   "I can read velocity from a position–time graph (slope).",
+   "I can read acceleration (slope) and displacement (area) from a velocity–time graph.",
+   "I can choose the right kinematic equation and solve with GUFS.",
+   "I can calculate stopping distance including reaction time.",
+   "I can find distance, displacement and average speed for circular motion and explain why it is accelerated."
+  ]
+ }
+}
