@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Quiz de grammaire française – Classe IX">
-<style>html,body{margin:0} img{max-width:100%} [hidden]{display:none!important}</style>
-<title>Cahier de Grammaire</title>
+<meta name="description" content="Exam practice quiz games by class and subject">
+<title>Gamesol Edu</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Caveat:wght@600&display=swap">
@@ -13,7 +12,7 @@
 :root{
   --paper:#F8F9FD; --sheet:#FFFFFF; --ink:#1D2340; --ink-soft:#5A6082;
   --line:#E3E6F6; --line-strong:#C3C9EE; --margin:#D8454F;
-  --accent:#2446C8; --accent-soft:#E6EBFC;
+  --accent:#2446C8; --accent-soft:#E6EBFC; --series2:#C2410C;
   --good:#1D7F55; --good-soft:#E3F4EC; --bad:#BF3440; --bad-soft:#FBE7E9;
   --shadow:0 1px 2px rgba(29,35,64,.06),0 8px 28px rgba(29,35,64,.07);
 }
@@ -21,7 +20,7 @@
   color-scheme:dark;
   --paper:#12152A; --sheet:#1A1E38; --ink:#E7E9F7; --ink-soft:#A3A8C8;
   --line:#242A4C; --line-strong:#353D6E; --margin:#E8656E;
-  --accent:#8EA6FF; --accent-soft:#252E5C;
+  --accent:#8EA6FF; --accent-soft:#252E5C; --series2:#FB923C;
   --good:#5FD19C; --good-soft:#18362C; --bad:#FF8A93; --bad-soft:#3E1C25;
   --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 28px rgba(0,0,0,.3);
 }}
@@ -29,111 +28,127 @@
   color-scheme:dark;
   --paper:#12152A; --sheet:#1A1E38; --ink:#E7E9F7; --ink-soft:#A3A8C8;
   --line:#242A4C; --line-strong:#353D6E; --margin:#E8656E;
-  --accent:#8EA6FF; --accent-soft:#252E5C;
+  --accent:#8EA6FF; --accent-soft:#252E5C; --series2:#FB923C;
   --good:#5FD19C; --good-soft:#18362C; --bad:#FF8A93; --bad-soft:#3E1C25;
   --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 28px rgba(0,0,0,.3);
 }
 *{box-sizing:border-box}
-body{background:var(--paper);color:var(--ink);font-family:"Atkinson Hyperlegible",system-ui,sans-serif;font-size:16px;line-height:1.5;
-  padding-inline:16px;padding-block:20px 48px}
-.wrap{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
+[hidden]{display:none!important}
+html,body{margin:0}
+body{background:var(--paper);color:var(--ink);font-family:"Atkinson Hyperlegible",system-ui,sans-serif;font-size:16px;line-height:1.5;padding-inline:16px;padding-block:20px 48px}
+.wrap{max-width:780px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
 header{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;flex-wrap:wrap}
-h1{font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:clamp(26px,5vw,34px);line-height:1.1;margin:0;text-wrap:balance}
+h1{font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:clamp(26px,5vw,34px);line-height:1.1;margin:0}
 .sub{margin:4px 0 0;color:var(--ink-soft);font-size:14px}
-.btn{font:inherit;font-weight:700;font-size:14px;border-radius:8px;border:1px solid var(--line-strong);background:var(--sheet);color:var(--ink);padding:9px 14px;cursor:pointer}
+h2{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);margin:0}
+.btn{font:inherit;font-weight:700;font-size:14px;border-radius:8px;border:1px solid var(--line-strong);background:var(--sheet);color:var(--ink);padding:9px 14px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:6px}
 .btn:hover{border-color:var(--accent);color:var(--accent)}
 .btn.primary{background:var(--accent);border-color:var(--accent);color:var(--sheet)}
 .btn.primary:hover{filter:brightness(1.08);color:var(--sheet)}
-.btn:focus-visible,.opt:focus-visible,.chip input:focus-visible+span,.count input:focus-visible+span{outline:2px solid var(--accent);outline-offset:2px}
-
-/* settings */
-#settings{background:var(--sheet);border:1px solid var(--line-strong);border-radius:12px;padding:18px;display:flex;flex-direction:column;gap:14px}
-#settings h2{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);margin:0}
-.chips,.counts{display:flex;flex-wrap:wrap;gap:8px}
-.chip,.count{position:relative}
-.chip input,.count input{position:absolute;opacity:0;pointer-events:none}
-.chip span,.count span{display:inline-flex;gap:6px;align-items:baseline;padding:7px 12px;border-radius:999px;border:1px solid var(--line-strong);cursor:pointer;font-size:14px;user-select:none}
-.chip span b{font-size:11px;color:var(--ink-soft);font-weight:700}
-.chip input:checked+span,.count input:checked+span{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
-.chip input:checked+span b{color:var(--accent)}
+.btn.small{padding:5px 10px;font-size:13px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
-#quizArea{display:flex;flex-direction:column;gap:18px}
-#quizArea[hidden]{display:none}
-.levels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-.level{position:relative;display:flex}
-.level input{position:absolute;opacity:0;pointer-events:none}
-.level span{flex:1;display:flex;flex-direction:column;gap:4px;padding:16px;border:1.5px solid var(--line-strong);border-radius:10px;cursor:pointer;background:var(--sheet)}
-.level strong{font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:24px;line-height:1.2}
-.level em{font-style:normal;font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-soft)}
-.level small{font-size:13.5px;color:var(--ink-soft);line-height:1.45;margin-top:4px}
-.level span:hover{border-color:var(--accent)}
-.level input:checked+span{border-color:var(--accent);background:var(--accent-soft);box-shadow:inset 0 0 0 1px var(--accent)}
-.level input:checked+span em{color:var(--accent)}
-.level input:focus-visible+span{outline:2px solid var(--accent);outline-offset:2px}
-.lvl{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:3px 8px;border-radius:4px;margin-left:6px;border:1px solid var(--line-strong);color:var(--ink-soft)}
-@media (max-width:520px){.levels{grid-template-columns:1fr}}
+.panel{background:var(--sheet);border:1px solid var(--line-strong);border-radius:12px;padding:18px;display:flex;flex-direction:column;gap:14px}
+.step{display:flex;flex-direction:column;gap:10px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.step:last-of-type{border-bottom:0;padding-bottom:0}
+.fields{display:grid;grid-template-columns:2fr 1fr;gap:10px}
+.field{display:flex;flex-direction:column;gap:5px;font-size:14px;font-weight:700}
+.field input{font:inherit;font-weight:400;font-size:16px;padding:9px 11px;border-radius:8px;border:1px solid var(--line-strong);background:var(--paper);color:var(--ink)}
+.note,.muted{margin:0;font-size:13.5px;color:var(--ink-soft)}
+.choice{position:relative;display:flex}
+.choice input{position:absolute;opacity:0;pointer-events:none}
+.choice>span{flex:1;display:flex;flex-direction:column;gap:2px;padding:12px 14px;border:1.5px solid var(--line-strong);border-radius:10px;cursor:pointer;background:var(--sheet)}
+.choice>span:hover{border-color:var(--accent)}
+.choice input:checked+span{border-color:var(--accent);background:var(--accent-soft);box-shadow:inset 0 0 0 1px var(--accent)}
+.choice input:focus-visible+span{outline:2px solid var(--accent);outline-offset:2px}
+.choice strong{font-size:16px}
+.choice small{font-size:13px;color:var(--ink-soft)}
+.choice .big{font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:22px;line-height:1.2}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}
+.grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pill{position:relative}
+.pill input{position:absolute;opacity:0;pointer-events:none}
+.pill span{display:inline-block;padding:7px 14px;border-radius:999px;border:1px solid var(--line-strong);cursor:pointer;font-size:14px}
+.pill input:checked+span{background:var(--accent-soft);border-color:var(--accent);color:var(--accent);font-weight:700}
+.pill input:focus-visible+span{outline:2px solid var(--accent);outline-offset:2px}
+.soon{font-size:13px;color:var(--ink-soft)}
+.soon b{font-weight:700}
+.topics{display:flex;flex-direction:column;border:1px solid var(--line-strong);border-radius:10px;overflow:hidden}
+.topic{display:grid;grid-template-columns:auto 4.2em 1fr auto;gap:10px;align-items:center;padding:10px 14px;border-bottom:1px solid var(--line);cursor:pointer;font-size:15px}
+.topic:last-child{border-bottom:0}
+.topic:hover{background:var(--accent-soft)}
+.topic input{width:18px;height:18px;accent-color:var(--accent);margin:0}
+.topic .ref{font-variant-numeric:tabular-nums;color:var(--ink-soft);font-size:13px}
+.topic .cnt{font-size:12.5px;color:var(--ink-soft);white-space:nowrap}
 .warn{color:var(--bad);font-size:14px;margin:0}
-
-/* progress */
 .meta{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:14px;color:var(--ink-soft);font-variant-numeric:tabular-nums}
+.meta b{color:var(--ink)}
 .bar{height:6px;border-radius:3px;background:var(--line);overflow:hidden}
 .bar i{display:block;height:100%;background:var(--accent);transition:width .3s}
-.score b{color:var(--ink)}
-
-/* notebook sheet */
-.sheet{position:relative;background:var(--sheet);border-radius:4px 12px 12px 4px;box-shadow:var(--shadow);
-  padding:26px 22px 22px 58px;overflow:hidden;
-  background-image:
-    repeating-linear-gradient(to bottom,transparent 0 31px,var(--line-strong) 31px 32px),
-    repeating-linear-gradient(to bottom,transparent 0 7px,var(--line) 7px 8px);
-  background-position:0 14px;}
+.tagl{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:3px 8px;border-radius:4px;margin-left:6px;border:1px solid var(--line-strong);color:var(--ink-soft)}
+#quizArea{display:flex;flex-direction:column;gap:18px}
+.sheet{position:relative;background:var(--sheet);border-radius:4px 12px 12px 4px;box-shadow:var(--shadow);padding:26px 22px 22px 58px;overflow:hidden;
+  background-image:repeating-linear-gradient(to bottom,transparent 0 31px,var(--line-strong) 31px 32px),repeating-linear-gradient(to bottom,transparent 0 7px,var(--line) 7px 8px);background-position:0 14px}
 .sheet::before{content:"";position:absolute;top:0;bottom:0;left:40px;width:2px;background:var(--margin);opacity:.75}
 .qnum{position:absolute;left:0;width:40px;top:28px;text-align:center;font-family:"Young Serif",Georgia,serif;color:var(--margin);font-size:15px}
 .tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);padding:3px 8px;border-radius:4px}
-.instr{margin:10px 0 0;font-weight:700;font-size:15px}
-.sentence{font-family:"Young Serif",Georgia,serif;font-size:clamp(20px,3.6vw,25px);line-height:1.5;margin:18px 0 6px;text-wrap:pretty}
-.sentence u{text-decoration-color:var(--margin);text-decoration-thickness:2px;text-underline-offset:4px}
-.hint{color:var(--ink-soft);font-size:14px;font-style:italic;margin:0}
-.blank{display:inline-block;min-width:5.5em;border-bottom:2px dashed var(--ink-soft);text-align:center;padding:0 4px;line-height:1.2}
-.blank.filled{border-bottom-style:solid;border-color:var(--good);font-family:"Caveat",cursive;font-size:1.35em;color:var(--accent);min-width:0}
-.opts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:20px}
+.qtext{font-family:"Young Serif",Georgia,serif;font-size:clamp(19px,3.3vw,23px);line-height:1.5;margin:14px 0 6px;text-wrap:pretty}
+.graph{background:var(--sheet);border:1px solid var(--line-strong);border-radius:8px;padding:8px;margin:12px 0 4px;max-width:480px}
+.graph svg{display:block;width:100%;height:auto}
+.graph text{fill:var(--ink-soft);font-size:12px;font-family:"Atkinson Hyperlegible",system-ui,sans-serif}
+.graph .ax{stroke:var(--ink-soft);stroke-width:1.2}
+.graph .gl{stroke:var(--line);stroke-width:1}
+.graph .l0{stroke:var(--accent);stroke-width:2.5;fill:none}
+.graph .l1{stroke:var(--series2);stroke-width:2.5;fill:none}
+.graph .fillA{fill:var(--accent-soft)}
+.graph .guide{stroke:var(--ink-soft);stroke-dasharray:4 3;stroke-width:1}
+.graph .pt{fill:var(--accent);stroke:var(--sheet);stroke-width:2}
+.graph .lbl{font-weight:700;font-size:14px}
+.graph .lbl0{fill:var(--accent)} .graph .lbl1{fill:var(--series2)}
+.opts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:18px}
 .opts.long{grid-template-columns:1fr}
 .opt{font:inherit;text-align:left;display:flex;gap:10px;align-items:flex-start;padding:12px 14px;border-radius:8px;border:1px solid var(--line-strong);background:var(--sheet);color:var(--ink);cursor:pointer;min-height:48px}
 .opt:hover:not(:disabled){border-color:var(--accent);background:var(--accent-soft)}
 .opt kbd{font-family:inherit;font-size:12px;font-weight:700;color:var(--ink-soft);border:1px solid var(--line-strong);border-radius:4px;min-width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;flex:none;margin-top:1px}
 .opt:disabled{cursor:default}
-.opt.ok{border-color:var(--good);background:var(--good-soft);color:var(--ink)}
-.opt.ok kbd{border-color:var(--good);color:var(--good)}
-.opt.bad{border-color:var(--bad);background:var(--bad-soft)}
-.opt.bad kbd{border-color:var(--bad);color:var(--bad)}
+.opt.ok{border-color:var(--good);background:var(--good-soft)} .opt.ok kbd{border-color:var(--good);color:var(--good)}
+.opt.bad{border-color:var(--bad);background:var(--bad-soft)} .opt.bad kbd{border-color:var(--bad);color:var(--bad)}
 .opt.dim{opacity:.55}
 .fb{margin-top:18px;padding:14px 16px;border-radius:8px;border-left:4px solid var(--good);background:var(--good-soft);display:flex;flex-direction:column;gap:4px}
 .fb.no{border-left-color:var(--bad);background:var(--bad-soft)}
-.fb strong{font-size:15px}
 .fb p{margin:0;font-size:15px}
 .next{display:flex;justify-content:flex-end;margin-top:16px}
-
-/* results */
-.big{font-family:"Young Serif",Georgia,serif;font-size:52px;line-height:1;margin:6px 0 4px;font-variant-numeric:tabular-nums}
-.big small{font-size:24px;color:var(--ink-soft)}
-.cats{display:flex;flex-direction:column;gap:10px;margin:20px 0}
-.cat{display:grid;grid-template-columns:minmax(0,11em) 1fr 3.5em;gap:10px;align-items:center;font-size:14px}
+.score{font-family:"Young Serif",Georgia,serif;font-size:52px;line-height:1;margin:6px 0 4px;font-variant-numeric:tabular-nums}
+.score small{font-size:24px;color:var(--ink-soft)}
+.cats{display:flex;flex-direction:column;gap:10px;margin:18px 0}
+.cat{display:grid;grid-template-columns:minmax(0,14em) 1fr 3.5em;gap:10px;align-items:center;font-size:14px}
 .cat .bar{height:8px}
 .cat .bar i.low{background:var(--bad)}
 .cat span:last-child{text-align:right;font-variant-numeric:tabular-nums}
 .review{display:flex;flex-direction:column;gap:12px;margin-top:8px}
-.review h3{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);margin:14px 0 0}
+.review h3,.board h3{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);margin:14px 0 0}
 .rv{padding:12px 14px;border:1px solid var(--line-strong);border-radius:8px;background:var(--sheet);font-size:15px;display:flex;flex-direction:column;gap:4px}
-.rv .q{font-family:"Young Serif",Georgia,serif}
 .rv .y{color:var(--bad)} .rv .c{color:var(--good)}
+.board{display:flex;flex-direction:column;gap:10px;margin-top:6px}
+.rank{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;padding:14px 16px;border-radius:8px;background:var(--accent-soft);border:1px solid var(--accent)}
+.rank b{font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:34px;line-height:1;color:var(--accent)}
+.lb{width:100%;border-collapse:collapse;font-size:14.5px;font-variant-numeric:tabular-nums}
+.lb th{text-align:left;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);padding:6px 8px;border-bottom:1px solid var(--line-strong)}
+.lb td{padding:8px;border-bottom:1px solid var(--line)}
+.lb .num{text-align:right}
+.lb tr.me td{background:var(--accent-soft);font-weight:700}
+.tabs{display:flex;gap:6px}
+.tabs button[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
 .foot{font-size:13px;color:var(--ink-soft);text-align:center}
-@media (max-width:520px){
+.error{padding:16px;border-radius:10px;background:var(--bad-soft);color:var(--ink)}
+@media (max-width:560px){
+  .fields,.grid.two{grid-template-columns:1fr}
   .opts{grid-template-columns:1fr}
-  .sheet{padding:22px 16px 18px 46px}
-  .sheet::before{left:30px}
-  .qnum{width:30px;font-size:13px}
-  .cat{grid-template-columns:1fr 3em}
-  .cat .bar{grid-column:1/-1;order:3}
+  .sheet{padding:22px 16px 18px 46px}.sheet::before{left:30px}.qnum{width:30px;font-size:13px}
+  .topic{grid-template-columns:auto 1fr;row-gap:2px}.topic .ref{grid-column:2}.topic .cnt{grid-column:2}
+  .topic .ref{order:-1}
+  .cat{grid-template-columns:1fr 3em}.cat .bar{grid-column:1/-1;order:3}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
@@ -142,401 +157,317 @@ h1{font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:clamp(26px,
 <div class="wrap">
   <header>
     <div>
-      <h1>Cahier de Grammaire</h1>
-      <p class="sub">Classe IX · Français (018) · Section C du modèle de mi-trimestre</p>
+      <h1 id="appName">Gamesol Edu</h1>
+      <p class="sub" id="tagline">Exam practice games</p>
     </div>
-    <button class="btn" id="toggleSettings" hidden>Changer de niveau</button>
+    <button class="btn" id="homeBtn" hidden>← Change topics</button>
   </header>
 
-  <section id="settings">
-    <h2>Choisissez votre niveau</h2>
-    <div class="levels" id="levels">
-      <label class="level"><input type="radio" name="level" id="level-easy" value="easy"><span>
-        <strong>Facile</strong>
-        <em>Pour commencer</em>
-        <small>Présent, passé composé avec avoir, futur et impératif · ne … pas / jamais / rien · questions simples (Où, Quand, Qui…) · un seul pronom · noms sans piège</small>
-      </span></label>
-      <label class="level"><input type="radio" name="level" id="level-hard" value="hard"><span>
-        <strong>Difficile</strong>
-        <em>Pour l'examen</em>
-        <small>Tous les temps + imparfait, verbes avec être et accord · négation au passé composé, personne ne…, pas de · -t-, Qu'est-ce qui, Depuis quand · deux pronoms, impératif · h muet, mon amie, leur / leurs</small>
-      </span></label>
-    </div>
-    <h2>Sections à réviser</h2>
-    <div class="chips" id="chips"></div>
-    <h2>Nombre de questions</h2>
-    <div class="counts" id="counts"></div>
-    <p class="warn" id="warn" hidden></p>
-    <div class="row"><button class="btn primary" id="startBtn">Commencer le quiz</button></div>
+  <section class="panel" id="home">
+    <p class="muted" id="loading">Loading classes…</p>
   </section>
 
   <div id="quizArea" hidden>
-    <div class="meta"><span id="progressTxt"></span><span class="score" id="scoreTxt"></span></div>
+    <div class="meta"><span id="progressTxt"></span><span id="scoreTxt"></span></div>
     <div class="bar" aria-hidden="true"><i id="progressBar" style="width:0"></i></div>
     <main id="stage"></main>
   </div>
-  <p class="foot">Les questions sont tirées au hasard à chaque nouveau quiz. Touches 1–4 pour répondre, Entrée pour continuer.</p>
+  <p class="foot">New questions every time: numbers change and answers are shuffled. Press 1–4 to answer and Enter to continue.</p>
 </div>
 
 <script>
 /* ---------- helpers ---------- */
+const $=id=>document.getElementById(id);
 const rnd=a=>a[Math.floor(Math.random()*a.length)];
 const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
-const VOW=/^[aeiouhéèêàâîôûœ]/i;
-const cap=s=>s.charAt(0).toUpperCase()+s.slice(1);
-const esc=s=>String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
-const mark=s=>esc(s).replace(/\*\*(.+?)\*\*/g,"<u>$1</u>");
+const esc=s=>String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+const store={get(k){try{return JSON.parse(localStorage.getItem(k)||"null")}catch(e){return null}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+const LVL={easy:"Easy",hard:"Hard"};
 
-/* ---------- Q4 : conjugaison ---------- */
-const VERBS={
-  regarder:{c:["un film","la télévision"]},
-  jouer:{c:["au football","aux échecs"]},
-  visiter:{c:["le musée","le château de Versailles"]},
-  organiser:{c:["une fête","un concours de dessin"]},
-  préparer:{c:["le dîner","un gâteau au chocolat"]},
-  écouter:{c:["de la musique"]},
-  arriver:{c:["à l'école en avance"],aux:1},
-  rester:{c:["à la maison"],aux:1},
-  finir:{g:"ir",c:["les devoirs"]},
-  choisir:{g:"ir",c:["un cadeau"]},
-  faire:{pr:["fais","fais","fait","faisons","faites","font"],pp:"fait",fut:"fer",c:["une promenade","du vélo"]},
-  lire:{pr:["lis","lis","lit","lisons","lisez","lisent"],pp:"lu",c:["un roman","des bandes dessinées"]},
-  écrire:{pr:["écris","écris","écrit","écrivons","écrivez","écrivent"],pp:"écrit",c:["une lettre","un poème"]},
-  prendre:{pr:["prends","prends","prend","prenons","prenez","prennent"],pp:"pris",c:["le bus","le train"]},
-  aller:{pr:["vais","vas","va","allons","allez","vont"],pp:"allé",fut:"ir",aux:1,imp:"va",c:["au marché","à la plage"]},
-  venir:{pr:["viens","viens","vient","venons","venez","viennent"],pp:"venu",fut:"viendr",aux:1,c:["à la fête"]},
-  sortir:{pr:["sors","sors","sort","sortons","sortez","sortent"],pp:"sorti",aux:1,c:["avec des amis"]},
-  partir:{pr:["pars","pars","part","partons","partez","partent"],pp:"parti",aux:1,c:["en vacances"]},
-  voir:{pr:["vois","vois","voit","voyons","voyez","voient"],pp:"vu",fut:"verr",c:["un film au cinéma"]}
-};
-const ETRE=["suis","es","est","sommes","êtes","sont"], AVOIR=["ai","as","a","avons","avez","ont"];
-const pres=(inf,p)=>{const v=VERBS[inf];if(v.pr)return v.pr[p];
-  if(v.g==="ir")return inf.slice(0,-2)+["is","is","it","issons","issez","issent"][p];
-  return inf.slice(0,-2)+["e","es","e","ons","ez","ent"][p]};
-const part=inf=>{const v=VERBS[inf];if(v.pp)return v.pp;return v.g==="ir"?inf.slice(0,-1):inf.slice(0,-2)+"é"};
-const CONJ={
-  pres:(inf,p)=>pres(inf,p),
-  imp:(inf,p)=>pres(inf,3).replace(/ons$/,"")+["ais","ais","ait","ions","iez","aient"][p],
-  fs:(inf,p)=>{const v=VERBS[inf];const st=v.fut||(inf.endsWith("re")?inf.slice(0,-1):inf);return st+["ai","as","a","ons","ez","ont"][p]},
-  fp:(inf,p)=>VERBS.aller.pr[p]+" "+inf,
-  pc:(inf,p,g)=>{const v=VERBS[inf];let pp=part(inf);if(v.aux){if(g==="f")pp+="e";if(p>=3)pp+="s"}return (v.aux?ETRE[p]:AVOIR[p])+" "+pp}
-};
-const imper=(inf,p)=>{const v=VERBS[inf];if(p===1){if(v.imp)return v.imp;if(v.pr||v.g==="ir")return pres(inf,1);return pres(inf,1).slice(0,-1)}return pres(inf,p)};
-const TENSES={
-  pres:{name:"présent",m:["D'habitude,","Chaque samedi,","Tous les jours,","En général,"],why:"Habitude ou action actuelle → présent."},
-  pc:{name:"passé composé",m:["Hier,","Dimanche dernier,","L'été dernier,","La semaine dernière,"],why:"Action terminée dans le passé → passé composé (avoir / être + participe passé)."},
-  imp:{name:"imparfait",m:["Autrefois,","À cette époque-là,","Quand j'étais enfant,"],why:"Habitude dans le passé → imparfait : radical de « nous » au présent + -ais, -ais, -ait, -ions, -iez, -aient."},
-  fs:{name:"futur simple",m:["L'année prochaine,","Dans dix ans,","Le mois prochain,","Un jour,"],why:"Action future → futur simple : infinitif + -ai, -as, -a, -ons, -ez, -ont."},
-  fp:{name:"futur proche",m:["Ce soir,","Dans cinq minutes,","Tout à l'heure,"],why:"Futur immédiat → futur proche : aller au présent + infinitif."}
-};
-const SUBJ=[{s:"je",p:0},{s:"tu",p:1},{s:"Nadia",p:2,g:"f"},{s:"Paul",p:2,g:"m"},{s:"ma sœur",p:2,g:"f"},{s:"mon frère",p:2,g:"m"},{s:"nous",p:3},{s:"vous",p:4},{s:"mes amis",p:5,g:"m"},{s:"mes cousines",p:5,g:"f"}];
-const withJe=f=>(VOW.test(f)?"j'":"je ")+f;
-const IMPER=[["finir",4,"vos devoirs avant le dîner !"],["regarder",1,"le tableau, s'il te plaît !"],["prendre",3,"le bus ce matin !"],["écrire",1,"une lettre à ta grand-mère !"],["faire",4,"attention en classe !"],["aller",3,"au parc cet après-midi !"],["lire",4,"le texte à haute voix !"],["choisir",1,"un livre pour le voyage !"],["écouter",4,"bien le professeur !"],["rester",4,"attentifs pendant l'activité !"],["préparer",1,"ton sac pour demain !"],["venir",1,"ici tout de suite !"]];
-const PRON=["je","tu","il","nous","vous","ils"];
+let CONFIG=null, API="", ONLINE=false;
+let player=Object.assign({name:"",section:""},store.get("gamesol-player")||{});
+let sel=Object.assign({cls:null,subject:null,chapter:null,topics:null,level:null,count:15},store.get("gamesol-sel")||{});
+let BANK=null;
+const bankCache={};
 
-function genTemps(lvl){
-  const easy=lvl==="easy";
-  if(Math.random()<(easy?0.2:0.25)){
-    const list=easy?IMPER.filter(x=>x[0]!=="rester"&&x[0]!=="venir"):IMPER;
-    const [inf,p,rest]=rnd(list);
-    const ans=cap(imper(inf,p));
-    const wrong=[cap(PRON[p]+" "+pres(inf,p)),cap(CONJ.fs(inf,p)),cap(CONJ.imp(inf,p)),cap(imper(inf,p===1?4:1))];
-    return {sentence:"___ "+rest,hint:"("+inf+")",ans,opts:pick(ans,wrong),
-      expl:"Ordre ou conseil → impératif, sans sujet."+(p===1&&!VERBS[inf].pr&&VERBS[inf].g!=="ir"?" Avec « tu », les verbes en -er perdent le -s.":"")+" "+cap(imper(inf,p))+" "+rest};
+/* ---------- load config ---------- */
+async function boot(){
+  try{
+    const r=await fetch("edu-kids-config.json",{cache:"no-store"});
+    if(!r.ok) throw new Error(r.status);
+    CONFIG=await r.json();
+  }catch(e){
+    $("home").innerHTML='<div class="error"><strong>Could not load edu-kids-config.json.</strong><br>Open this page from GitHub Pages (or a local web server). Opening the file directly from your computer does not allow it to read the config file.</div>';
+    return;
   }
-  // Facile : présent, passé composé (avoir), futurs ; Difficile : + imparfait, verbes avec être, irréguliers plus souvent
-  const tkeys=easy?["pres","pc","fs","fp"]:["pres","pc","pc","imp","imp","fs","fp"];
-  const tk=rnd(tkeys), T=TENSES[tk];
-  const allV=Object.keys(VERBS);
-  const hardV=allV.filter(k=>VERBS[k].aux||VERBS[k].pr);
-  const inf=easy?rnd(allV.filter(k=>!VERBS[k].aux)):rnd(Math.random()<.7?hardV:allV), v=VERBS[inf];
-  let pool=SUBJ; if(v.aux) pool=SUBJ.filter(s=>s.g);
-  const S=rnd(pool);
-  const f=k=>{const x=CONJ[k](inf,S.p,S.g);return S.p===0?withJe(x):x};
-  const ans=f(tk);
-  const others=(easy?["pres","pc","fs","fp"]:Object.keys(TENSES)).filter(k=>k!==tk&&!(tk==="fs"&&k==="fp")&&!(tk==="fp"&&k==="fs"));
-  // Difficile : ajoute un piège d'accord / d'auxiliaire
-  let trap=null;
-  if(!easy&&tk==="pc"){const pp=part(inf);const J=x=>S.p===0?withJe(x):x;
-    trap=v.aux?[AVOIR[S.p]+" "+pp,ETRE[S.p]+" "+(S.g==="f"?pp:pp+"e")+(S.p>=3?"s":""),f("imp")].map(J)
-              :[ETRE[S.p]+" "+pp,f("imp"),f("fs")].map(x=>x.startsWith("j'")||x.startsWith("je ")?x:J(x));}
-  const wrong=trap||others.map(f);
-  if(new Set(wrong.filter(x=>x!==ans)).size<3) wrong.push(S.p===0?"je "+inf:inf, CONJ.imp(inf,S.p));
-  let marker=rnd(T.m);
-  const comp=rnd(v.c);
-  const sentence=marker+" "+(S.p===0?"___":S.s+" ___")+" "+comp+".";
-  const full=marker+" "+(S.p===0?ans:S.s+" "+ans)+" "+comp+".";
-  let extra="";
-  if(tk==="pc"&&v.aux) extra=" « "+inf+" » se conjugue avec être : le participe s'accorde avec le sujet.";
-  return {sentence,hint:"("+inf+")",ans,opts:pick(ans,wrong),expl:T.why+extra+" → "+full};
+  if(CONFIG.appName){$("appName").textContent=CONFIG.appName;document.title=CONFIG.appName}
+  if(CONFIG.tagline)$("tagline").textContent=CONFIG.tagline;
+  API=String(CONFIG.leaderboard&&CONFIG.leaderboard.scriptUrl||"").trim();
+  ONLINE=/^https:\/\/script\.google(usercontent)?\.com\//.test(API);
+  renderHome();
 }
-function pick(ans,wrong){const w=shuffle([...new Set(wrong)].filter(x=>x!==ans)).slice(0,3);return shuffle([ans,...w])}
+const ongoing=list=>(list||[]).filter(x=>String(x.status||"").toLowerCase()==="ongoing");
+const notOngoing=list=>(list||[]).filter(x=>String(x.status||"").toLowerCase()!=="ongoing");
 
-/* ---------- Q5 : adjectifs démonstratifs ---------- */
-const DEMO=[
- ["J'aime beaucoup ___ veste grise.","f"],["___ garçons jouent près de la fenêtre.","p"],["Nous allons acheter ___ ordinateur demain.","mv"],
- ["Regarde ___ oiseaux dans le ciel !","p"],["___ histoire est très amusante.","f"],["Elle veut visiter ___ château ancien.","m"],
- ["___ chaussures sont trop grandes pour moi.","p"],["___ arbre est très vieux.","mv"],["___ hôtel est près de la plage.","mv"],
- ["___ homme est mon professeur de français.","mv"],["Je n'aime pas ___ film.","m"],["___ école a une grande bibliothèque.","f"],
- ["Tu connais ___ fille ?","f"],["___ livre est très intéressant.","m"],["___ enfants sont très sages.","p"],
- ["___ hiver, nous allons à la montagne.","mv"],["___ été, il fait très chaud à Doha.","mv"],["___ saison est ma préférée.","f"],
- ["___ année, je suis en classe de neuvième.","f"],["___ appartement est moderne.","mv"],["___ matin, je prends le bus.","m"],
- ["___ croissants sont délicieux.","p"],["Qui a écrit ___ lettre ?","f"],["___ ami s'appelle Karim.","mv"],
- ["___ héros est très courageux.","h"],["Je voudrais ___ affiche pour ma chambre.","f"],["___ vélo est à mon frère.","m"],
- ["___ oranges viennent d'Espagne.","p"],["___ automne, les feuilles tombent.","mv"],["___ voyage en train était long.","m"],
- ["___ maison est très grande.","f"],["___ voiture est rouge.","f"],["___ stylo ne marche pas.","m"],
- ["___ hôpital est très moderne.","mv"],["___ habitude est excellente.","f"],["___ hibou chante la nuit.","h"],["___ horloge est ancienne.","f"]
-];
-// Difficile : noms qui commencent par une voyelle ou un h (h muet / h aspiré)
-DEMO.forEach(it=>{const n=it[0].replace(/^.*___ /,"");it.L=(VOW.test(n)&&!["ordinateur","arbre","ami","enfants","oiseaux","oranges","école"].some(w=>n.startsWith(w)))||it[1]==="h"?"hard":"easy"});
-const DEMO_A={m:"ce",mv:"cet",f:"cette",p:"ces",h:"ce"};
-const DEMO_E={m:"ce + nom masculin singulier (consonne).",mv:"cet + nom masculin singulier qui commence par une voyelle ou un h muet.",f:"cette + nom féminin singulier (même devant une voyelle ou un h muet).",p:"ces + nom pluriel (masculin ou féminin).",h:"Ce nom commence par un h aspiré : pas d'élision, donc ce (et non cet)."};
-function genDemo(item,lvl){const [s,t]=item;const ans=DEMO_A[t];const cs=s.startsWith("___");
-  const f=x=>cs?cap(x):x;
-  return {sentence:s,ans:f(ans),opts:shuffle(["ce","cet","cette","ces"].map(f)),expl:DEMO_E[t]+" → "+s.replace("___",f(ans))}}
+/* ---------- home / selection ---------- */
+function renderHome(){
+  const classes=ongoing(CONFIG.classes);
+  if(!classes.find(c=>c.id===sel.cls)) sel.cls=classes.length===1?classes[0].id:null;
+  const cls=classes.find(c=>c.id===sel.cls);
+  const subjects=cls?ongoing(cls.subjects):[];
+  if(!subjects.find(s=>s.id===sel.subject)) sel.subject=subjects.length===1?subjects[0].id:null;
+  const subj=subjects.find(s=>s.id===sel.subject);
+  const chapters=subj&&!subj.link?ongoing(subj.chapters):[];
+  if(!chapters.find(c=>c.id===sel.chapter)) sel.chapter=chapters.length?chapters[0].id:null;
+  const chap=chapters.find(c=>c.id===sel.chapter);
 
-/* ---------- Q9 : adjectifs possessifs ---------- */
-const POSS=[["mon","ma","mes"],["ton","ta","tes"],["son","sa","ses"],["notre","notre","nos"],["votre","votre","vos"],["leur","leur","leurs"]];
-const NEIGH=[["ton"],["mon"],["leur","leurs"],["vos","votre"],["nos","notre"],["son","ses"]];
-const OWNERS=[{s:"Je",p:0},{s:"Tu",p:1},{s:"Claire",p:2},{s:"Rohan",p:2},{s:"Nous",p:3},{s:"Vous",p:4},{s:"Les enfants",p:5},{s:"Mes cousins",p:5}];
-const OBJ=[["parapluie","m"],["lunettes","p"],["activité","f",1],["trousse","f"],["cahier","m"],["dictionnaires","p"],["clés","p"],["montre","f"],["sac","m"],["écharpe","f",1],["ordinateur","m",1],["affiche","f",1],["présentation","f"],["photos","p"],["histoire","f",1]];
-const PEOPLE=[["grands-parents","p"],["tante","f"],["oncle","m",1],["amie","f",1],["cousins","p"],["mère","f"],["père","m"],["amis","p"]];
-const OBJ_V=[["chercher",""],["ranger",""],["oublier"," à la maison"],["apporter"," à l'école"]];
-const PPL_V=[["aimer beaucoup",""],["inviter"," à la fête"],["écouter",""],["aider"," le week-end"]];
-const erConj=(inf,p)=>{const [verb,...adv]=inf.split(" ");let st=verb.slice(0,-2);if(verb==="ranger"&&p===3)st+="e";
-  const f=st+["e","es","e","ons","ez","ent"][p];return [f,...adv].join(" ")};
-function genPoss(lvl){
-  const easy=lvl==="easy";
-  // Facile : pas de piège « mon amie » ; Difficile : pièges voyelle + leur / leurs, notre / nos plus souvent
-  const O=easy?rnd(OWNERS):rnd(Math.random()<.5?OWNERS.filter(o=>o.p>=3):OWNERS.filter(o=>o.p<3));
-  const people=Math.random()<.4;
-  let list=people?PEOPLE:OBJ;
-  if(easy) list=list.filter(x=>!(x[1]==="f"&&x[2]));
-  else if(O.p<3&&Math.random()<.6) list=list.filter(x=>x[1]==="f"&&x[2]);
-  const [n,g,v]=rnd(list); const [inf,tail]=rnd(people?PPL_V:OBJ_V);
-  const row=POSS[O.p]; let ans; let why;
-  if(g==="p"){ans=row[2];why="nom pluriel"}
-  else if(g==="f"&&v&&O.p<3){ans=row[0];why="nom féminin qui commence par une voyelle : on dit "+row[0]+" (et non "+row[1]+") pour éviter le hiatus"}
-  else {ans=g==="m"?row[0]:row[1];why=g==="m"?"nom masculin singulier":"nom féminin singulier"}
-  let verb=erConj(inf,O.p); let subj=O.s;
-  if(O.p===0&&VOW.test(verb)){subj="J'";verb=verb}else subj=O.s+" ";
-  const sentence=subj+verb+" ___ "+n+tail+".";
-  const wrong=[...row,...NEIGH[O.p]];
-  if(ans===row[0]&&g==="f") wrong.unshift(row[1]);
-  const opts=[...new Set(wrong)].filter(x=>x!==ans);
-  const w=(g==="f"&&v&&O.p<3)?[row[1],...shuffle(opts.filter(x=>x!==row[1]))].slice(0,3):shuffle(opts).slice(0,3);
-  const owner=["je","tu","il / elle","nous","vous","ils / elles"][O.p];
-  return {sentence,ans,opts:shuffle([ans,...w]),expl:"Possesseur : « "+owner+" » ; "+why+". → "+sentence.replace("___",ans)};
+  let h="";
+  if(ONLINE){
+    h+='<div class="step"><h2>Who is playing?</h2><div class="fields">'+
+      '<label class="field" for="pName">Name<input id="pName" type="text" maxlength="40" autocomplete="name" placeholder="e.g. Aisha Khan" value="'+esc(player.name)+'"></label>'+
+      '<label class="field" for="pSection">Section<input id="pSection" type="text" maxlength="12" placeholder="e.g. B" value="'+esc(player.section)+'"></label></div>'+
+      '<p class="note">Your best score appears on the class leaderboard. Use the same name every time.</p></div>';
+  }
+  h+='<div class="step"><h2>Class</h2><div class="pills">'+
+    (classes.length?classes.map(c=>'<label class="pill"><input type="radio" name="cls" value="'+esc(c.id)+'"'+(c.id===sel.cls?" checked":"")+'><span>'+esc(c.name)+'</span></label>').join(""):'<p class="muted">No class is marked as ongoing in the config file.</p>')+
+    '</div>'+soonLine(notOngoing(CONFIG.classes))+'</div>';
+  if(cls){
+    h+='<div class="step"><h2>Subject</h2><div class="grid">'+
+      (subjects.length?subjects.map(s=>'<label class="choice"><input type="radio" name="subject" value="'+esc(s.id)+'"'+(s.id===sel.subject?" checked":"")+'><span><strong>'+esc(s.name)+'</strong><small>'+esc(s.link?(s.note||"Opens its own game"):(ongoing(s.chapters).length+" chapter"+(ongoing(s.chapters).length===1?"":"s")+" open"))+'</small></span></label>').join(""):'<p class="muted">No subject is ongoing for this class yet.</p>')+
+      '</div>'+soonLine(notOngoing(cls.subjects))+'</div>';
+  }
+  if(subj&&subj.link){
+    h+='<div class="step"><h2>'+esc(subj.name)+'</h2><p class="muted">'+esc(subj.note||"")+'</p><div class="row"><a class="btn primary" href="'+esc(subj.link)+'">Open '+esc(subj.name)+' game →</a></div></div>';
+  }else if(subj){
+    h+='<div class="step"><h2>Chapter</h2><div class="grid two">'+
+      chapters.map(c=>'<label class="choice"><input type="radio" name="chapter" value="'+esc(c.id)+'"'+(c.id===sel.chapter?" checked":"")+'><span><strong>'+esc(c.name)+'</strong></span></label>').join("")+
+      '</div>'+soonLine(notOngoing(subj.chapters))+'</div>';
+    h+='<div class="step" id="topicStep"><h2>Topics</h2><p class="muted">Loading topics…</p></div>';
+  }
+  $("home").innerHTML=h;
+  $("home").querySelectorAll('input[name="cls"]').forEach(i=>i.addEventListener("change",()=>{sel.cls=i.value;sel.subject=null;keepNames();renderHome()}));
+  $("home").querySelectorAll('input[name="subject"]').forEach(i=>i.addEventListener("change",()=>{sel.subject=i.value;sel.chapter=null;sel.topics=null;keepNames();renderHome()}));
+  $("home").querySelectorAll('input[name="chapter"]').forEach(i=>i.addEventListener("change",()=>{sel.chapter=i.value;sel.topics=null;keepNames();renderHome()}));
+  if(chap) loadBank(chap).then(b=>renderTopics(b,cls,subj,chap)).catch(()=>{$("topicStep").innerHTML='<h2>Topics</h2><p class="warn">Could not load the question bank "'+esc(chap.bank)+'". Check the path in edu-kids-config.json.</p>'});
+}
+function soonLine(list){return list.length?'<p class="soon">Coming soon: '+list.map(x=>'<b>'+esc(x.name)+'</b>').join(", ")+'</p>':""}
+function keepNames(){if($("pName")){player.name=$("pName").value.replace(/\s+/g," ").trim();player.section=$("pSection").value.replace(/\s+/g,"").toUpperCase()}}
+async function loadBank(chap){
+  if(bankCache[chap.bank]) return bankCache[chap.bank];
+  const r=await fetch(chap.bank,{cache:"no-store"});if(!r.ok)throw new Error(r.status);
+  return bankCache[chap.bank]=await r.json();
+}
+function renderTopics(bank,cls,subj,chap){
+  BANK=bank;
+  const ids=bank.topics.map(t=>t.id);
+  if(!Array.isArray(sel.topics)||!sel.topics.some(t=>ids.includes(t))) sel.topics=ids.slice();
+  const cnt=(t,l)=>bank.questions.filter(q=>q.topic===t&&q.level===l).length;
+  let h='<div class="row" style="justify-content:space-between"><h2>Topics ('+bank.topics.length+')</h2><div class="row"><button class="btn small" id="allT">Select all</button><button class="btn small" id="noneT">Clear</button></div></div>'+
+    '<div class="topics">'+bank.topics.map(t=>'<label class="topic" for="t-'+esc(t.id)+'"><input type="checkbox" id="t-'+esc(t.id)+'" value="'+esc(t.id)+'"'+(sel.topics.includes(t.id)?" checked":"")+'><span class="ref">'+esc(t.ref||"")+'</span><span>'+esc(t.name)+'</span><span class="cnt">'+cnt(t.id,"easy")+' easy · '+cnt(t.id,"hard")+' hard</span></label>').join("")+'</div>'+
+    '<p class="note">Source: '+esc(bank.source||bank.chapter)+'. Numerical questions use new numbers every time.</p>';
+  h+='</div><div class="step"><h2>Level</h2><div class="grid two">'+
+    '<label class="choice"><input type="radio" name="level" value="easy"'+(sel.level==="easy"?" checked":"")+'><span><span class="big">Easy</span><small>Definitions, units, reading simple graphs and one-step calculations.</small></span></label>'+
+    '<label class="choice"><input type="radio" name="level" value="hard"'+(sel.level==="hard"?" checked":"")+'><span><span class="big">Hard</span><small>Exam-style reasoning, unit conversion, multi-step problems and graph analysis.</small></span></label>'+
+    '</div></div><div class="step"><h2>Number of questions</h2><div class="pills">'+
+    [10,15,20,30].map(n=>'<label class="pill"><input type="radio" name="count" value="'+n+'"'+(sel.count===n?" checked":"")+'><span>'+n+'</span></label>').join("")+
+    '</div><p class="warn" id="warn" hidden></p><div class="row"><button class="btn primary" id="startBtn">Start quiz</button>'+(ONLINE?'<button class="btn" id="boardBtn">Leaderboard</button>':'')+'</div><div id="startBoard" hidden></div>';
+  const step=$("topicStep");step.innerHTML=h;
+  const boxes=()=>[...step.querySelectorAll('.topics input')];
+  $("allT").addEventListener("click",()=>boxes().forEach(b=>b.checked=true));
+  $("noneT").addEventListener("click",()=>boxes().forEach(b=>b.checked=false));
+  $("startBtn").addEventListener("click",()=>start(cls,subj,chap,boxes()));
+  if(ONLINE)$("boardBtn").addEventListener("click",()=>{const sb=$("startBoard");if(!sb.hidden){sb.hidden=true;return}keepNames();const l=document.querySelector('input[name="level"]:checked');showBoard(sb,cls,subj,l?l.value:"easy")});
+}
+function start(cls,subj,chap,boxes){
+  const warn=$("warn");const say=m=>{warn.textContent=m;warn.hidden=false};
+  keepNames();
+  if(ONLINE&&player.name.length<2){say("Please enter your name.");$("pName").focus();return}
+  const topics=boxes.filter(b=>b.checked).map(b=>b.value);
+  if(!topics.length){say("Please choose at least one topic.");return}
+  const lv=document.querySelector('input[name="level"]:checked');
+  if(!lv){say("Please choose a level: Easy or Hard.");return}
+  warn.hidden=true;
+  sel.topics=topics;sel.level=lv.value;sel.count=+document.querySelector('input[name="count"]:checked').value;
+  store.set("gamesol-sel",sel);store.set("gamesol-player",player);
+  CTX={cls,subj,chap};
+  build();
 }
 
-/* ---------- Q6 : négation ---------- */
-const NEG=[
- {s:"J'ai quelque chose dans mon sac.",c:"Je n'ai rien dans mon sac.",w:["Je n'ai pas quelque chose dans mon sac.","Je ai rien dans mon sac.","Je n'ai personne dans mon sac."],e:"quelque chose → ne … rien."},
- {s:"Elle rencontre quelqu'un devant le cinéma.",c:"Elle ne rencontre personne devant le cinéma.",w:["Elle ne rencontre pas quelqu'un devant le cinéma.","Elle ne rencontre rien devant le cinéma.","Elle rencontre personne devant le cinéma."],e:"quelqu'un → ne … personne."},
- {s:"Nous sortons souvent après les cours.",c:"Nous ne sortons jamais après les cours.",w:["Nous sortons jamais après les cours.","Nous ne sortons rien après les cours.","Nous ne jamais sortons après les cours."],e:"souvent / toujours → ne … jamais."},
- {s:"Ils ont encore beaucoup de travail.",c:"Ils n'ont plus de travail.",w:["Ils n'ont pas encore beaucoup de travail.","Ils n'ont jamais du travail.","Ils ont plus de travail."],e:"encore → ne … plus ; après une négation, beaucoup de / du → de."},
- {s:"Tu as déjà lu ce roman.",c:"Tu n'as pas encore lu ce roman.",w:["Tu n'as déjà pas lu ce roman.","Tu n'as lu pas encore ce roman.","Tu as ne pas encore lu ce roman."],e:"déjà → ne … pas encore. Au passé composé, la négation entoure l'auxiliaire."},
- {s:"Tout le monde participe à cette activité.",c:"Personne ne participe à cette activité.",w:["Personne participe pas à cette activité.","Rien ne participe à cette activité.","Ne personne participe à cette activité."],e:"tout le monde (sujet) → personne ne …"},
- {s:"Mon frère mange toujours des fruits au petit-déjeuner.",c:"Mon frère ne mange jamais de fruits au petit-déjeuner.",w:["Mon frère ne mange jamais des fruits au petit-déjeuner.","Mon frère mange jamais de fruits au petit-déjeuner.","Mon frère ne mange rien de fruits au petit-déjeuner."],e:"toujours → ne … jamais ; des → de après la négation."},
- {s:"Il y a quelqu'un dans la classe.",c:"Il n'y a personne dans la classe.",w:["Il n'y a pas quelqu'un dans la classe.","Il y a personne dans la classe.","Il n'y a rien quelqu'un dans la classe."],e:"quelqu'un → ne … personne ; « n'y a »."},
- {s:"Nous avons vu quelque chose.",c:"Nous n'avons rien vu.",w:["Nous n'avons vu rien.","Nous n'avons pas vu quelque chose.","Nous avons rien vu."],e:"Au passé composé, « rien » se place entre l'auxiliaire et le participe."},
- {s:"J'ai rencontré quelqu'un au parc.",c:"Je n'ai rencontré personne au parc.",w:["Je n'ai personne rencontré au parc.","Je n'ai pas rencontré quelqu'un au parc.","J'ai rencontré personne au parc."],e:"Au passé composé, « personne » se place après le participe."},
- {s:"Elle aime le chocolat.",c:"Elle n'aime pas le chocolat.",w:["Elle n'aime pas de chocolat.","Elle aime pas le chocolat.","Elle ne pas aime le chocolat."],e:"Avec aimer / adorer / détester, l'article défini reste : pas le chocolat."},
- {s:"Nous avons un chien.",c:"Nous n'avons pas de chien.",w:["Nous n'avons pas un chien.","Nous avons pas de chien.","Nous n'avons un chien pas."],e:"un / une / des → de après ne … pas."},
- {s:"Il boit du lait le matin.",c:"Il ne boit pas de lait le matin.",w:["Il ne boit pas du lait le matin.","Il boit pas de lait le matin.","Il ne pas boit de lait le matin."],e:"du / de la → de après ne … pas."},
- {s:"Ils sont allés au cinéma.",c:"Ils ne sont pas allés au cinéma.",w:["Ils ne sont allés pas au cinéma.","Ils ne pas sont allés au cinéma.","Ils sont ne pas allés au cinéma."],e:"Au passé composé : ne + auxiliaire + pas + participe."},
- {s:"Je travaille encore à la bibliothèque.",c:"Je ne travaille plus à la bibliothèque.",w:["Je ne travaille pas encore à la bibliothèque.","Je travaille plus à la bibliothèque.","Je ne travaille jamais encore à la bibliothèque."],e:"encore (= toujours) → ne … plus."},
- {s:"Quelque chose tombe du toit.",c:"Rien ne tombe du toit.",w:["Rien tombe pas du toit.","Personne ne tombe du toit.","Ne rien tombe du toit."],e:"quelque chose (sujet) → rien ne …"},
- {s:"Elle fait toujours ses devoirs.",c:"Elle ne fait jamais ses devoirs.",w:["Elle fait jamais ses devoirs.","Elle ne fait rien ses devoirs.","Elle ne jamais fait ses devoirs."],e:"toujours → ne … jamais."},
- {s:"Tu parles à quelqu'un.",c:"Tu ne parles à personne.",w:["Tu ne parles personne.","Tu ne parles pas à quelqu'un.","Tu parles à personne ne."],e:"à quelqu'un → à personne ; la préposition reste avant « personne »."},
- {s:"Il va partir demain.",c:"Il ne va pas partir demain.",w:["Il ne va partir pas demain.","Il va partir pas demain.","Il va ne partir pas demain."],e:"Futur proche : ne + aller + pas + infinitif."},
- {s:"Nous mangeons quelque chose.",c:"Nous ne mangeons rien.",w:["Nous ne mangeons pas quelque chose.","Nous mangeons rien.","Nous ne rien mangeons."],e:"quelque chose → ne … rien."},
- {s:"Regarde la télévision !",c:"Ne regarde pas la télévision !",w:["Regarde pas la télévision !","Ne pas regarde la télévision !","Regarde ne pas la télévision !"],e:"Impératif négatif : ne + verbe + pas."},
- {s:"Vous avez déjà visité Paris.",c:"Vous n'avez pas encore visité Paris.",w:["Vous n'avez déjà pas visité Paris.","Vous avez pas encore visité Paris.","Vous n'avez visité pas encore Paris."],e:"déjà → ne … pas encore."},
- {s:"Il parle français.",c:"Il ne parle pas français.",w:["Il parle pas français.","Il ne pas parle français.","Il parle ne pas français."],e:"ne + verbe + pas."},
- {s:"Je suis fatigué.",c:"Je ne suis pas fatigué.",w:["Je suis pas fatigué.","Je ne pas suis fatigué.","Je n'suis pas fatigué."],e:"ne + verbe + pas ; pas d'élision devant une consonne."},
- {s:"Nous regardons la télévision.",c:"Nous ne regardons pas la télévision.",w:["Nous regardons ne pas la télévision.","Nous ne regardons la télévision pas.","Nous pas regardons la télévision."],e:"ne + verbe + pas."},
- {s:"Elle habite à Doha.",c:"Elle n'habite pas à Doha.",w:["Elle ne habite pas à Doha.","Elle habite pas à Doha.","Elle n'habite à Doha pas."],e:"ne → n' devant une voyelle ou un h muet."}
-];
-NEG.forEach((it,i)=>it.L=[0,1,2,7,11,12,14,16,19,22,23,24,25].includes(i)?"easy":"hard");
-const genNeg=it=>({sentence:it.s,ans:it.c,opts:shuffle([it.c,...it.w]),long:1,expl:it.e+" → "+it.c});
-
-/* ---------- Q7 : trouvez la question ---------- */
-const QST=[
- {s:"Ma sœur prépare **un gâteau au chocolat**.",c:"Qu'est-ce que ta sœur prépare ?",w:["Qui prépare un gâteau au chocolat ?","Où ta sœur prépare-t-elle un gâteau ?","Qu'est-ce qui ta sœur prépare ?"],e:"Une chose (COD) → Qu'est-ce que … ? « ma » devient « ta »."},
- {s:"Nous allons au club **le vendredi après-midi**.",c:"Quand allez-vous au club ?",w:["Où allez-vous le vendredi après-midi ?","Quand allons-nous au club ?","Comment allez-vous au club ?"],e:"Un moment → Quand ? « nous » devient « vous »."},
- {s:"**Mes voisins** organisent une réunion.",c:"Qui organise une réunion ?",w:["Qui organisent une réunion ?","Qu'est-ce que tes voisins organisent ?","Que organise une réunion ?"],e:"Une personne sujet → Qui + verbe au singulier."},
- {s:"Il achète ce cadeau **pour sa mère**.",c:"Pour qui achète-t-il ce cadeau ?",w:["Pourquoi achète-t-il ce cadeau ?","Pour qui achète-il ce cadeau ?","Qui achète ce cadeau ?"],e:"pour + personne → Pour qui ? On ajoute -t- entre deux voyelles : achète-t-il."},
- {s:"Amira vient **en métro**.",c:"Comment Amira vient-elle ?",w:["Où Amira vient-elle ?","Quand Amira vient-elle ?","Comment vient Amira-t-elle ?"],e:"Un moyen de transport → Comment ?"},
- {s:"Ils habitent **dans un appartement moderne**.",c:"Où habitent-ils ?",w:["Qu'est-ce qu'ils habitent ?","Où habite-t-ils ?","Comment habitent-ils ?"],e:"Un lieu → Où ?"},
- {s:"Paul apprend l'espagnol **depuis deux ans**.",c:"Depuis quand Paul apprend-il l'espagnol ?",w:["Quand Paul apprend-il l'espagnol ?","Depuis quand Paul apprend-t-il l'espagnol ?","Qu'est-ce que Paul apprend depuis ?"],e:"depuis + durée → Depuis quand / Depuis combien de temps ? Pas de -t- après « apprend » (finit par d)."},
- {s:"Elle est absente **parce qu'elle est malade**.",c:"Pourquoi est-elle absente ?",w:["Pourquoi est-t-elle absente ?","Comment est-elle absente ?","Quand est-elle absente ?"],e:"parce que → Pourquoi ?"},
- {s:"Le film commence **à huit heures**.",c:"À quelle heure le film commence-t-il ?",w:["Où le film commence-t-il ?","À quelle heure le film commence-il ?","Quel heure le film commence-t-il ?"],e:"Une heure précise → À quelle heure ? (heure est féminin)."},
- {s:"J'ai **quinze** ans.",c:"Quel âge as-tu ?",w:["Combien ans as-tu ?","Quel âge ai-je ?","Quelle âge as-tu ?"],e:"L'âge → Quel âge ? (âge est masculin) ; « je » devient « tu »."},
- {s:"Ce livre coûte **dix euros**.",c:"Combien coûte ce livre ?",w:["Combien de coûte ce livre ?","Quel coûte ce livre ?","Comment coûte ce livre ?"],e:"Un prix → Combien ?"},
- {s:"Mon père travaille **à la banque**.",c:"Où ton père travaille-t-il ?",w:["Où ton père travaille-il ?","Où mon père travaille-t-il ?","Qu'est-ce que ton père travaille ?"],e:"Un lieu → Où ? « mon » devient « ton »."},
- {s:"**La pluie** a abîmé le jardin.",c:"Qu'est-ce qui a abîmé le jardin ?",w:["Qu'est-ce que a abîmé le jardin ?","Qui est-ce que a abîmé le jardin ?","Quoi a abîmé le jardin ?"],e:"Une chose sujet → Qu'est-ce qui ?"},
- {s:"Nous regardons **un documentaire**.",c:"Que regardez-vous ?",w:["Que regardons-nous ?","Qui regardez-vous ?","Que vous regardez ?"],e:"Une chose (COD) → Que + inversion ; « nous » devient « vous »."},
- {s:"Ils ont **trois** enfants.",c:"Combien d'enfants ont-ils ?",w:["Combien enfants ont-ils ?","Combien de enfants ont-ils ?","Quels enfants ont-ils ?"],e:"Une quantité → Combien de (d') + nom ?"},
- {s:"Elle préfère **la robe bleue**.",c:"Quelle robe préfère-t-elle ?",w:["Quel robe préfère-t-elle ?","Quelle robe préfère-elle ?","Qui préfère la robe bleue ?"],e:"Un choix → Quel / Quelle + nom (robe est féminin)."},
- {s:"Je vais **à Paris** cet été.",c:"Où vas-tu cet été ?",w:["Où vais-je cet été ?","Quand vas-tu à Paris ?","Où vas-t-tu cet été ?"],e:"Un lieu → Où ? « je » devient « tu »."},
- {s:"Les enfants jouent **dans le jardin**.",c:"Où les enfants jouent-ils ?",w:["Où les enfants jouent-t-ils ?","Qu'est-ce que les enfants jouent ?","Comment les enfants jouent-ils ?"],e:"Un lieu → Où ? Avec un nom sujet, on reprend par un pronom : jouent-ils."},
- {s:"**Karim** arrive en retard.",c:"Qui arrive en retard ?",w:["Qu'est-ce qui arrive en retard ?","Qui est-ce que arrive en retard ?","Quand Karim arrive-t-il ?"],e:"Une personne sujet → Qui ?"},
- {s:"Je prends **le train** pour aller à Doha.",c:"Qu'est-ce que tu prends pour aller à Doha ?",w:["Qu'est-ce que je prends pour aller à Doha ?","Qui prends-tu pour aller à Doha ?","Qu'est-ce qui tu prends pour aller à Doha ?"],e:"Une chose (COD) → Qu'est-ce que ? « je » devient « tu »."}
-];
-QST.forEach((it,i)=>it.L=[1,2,4,5,7,9,10,13,16,18].includes(i)?"easy":"hard");
-const genQst=it=>({sentence:it.s,ans:it.c,opts:shuffle([it.c,...it.w]),long:1,expl:it.e+" → "+it.c});
-
-/* ---------- Q8 : pronoms COD / COI ---------- */
-const PRN=[
- {s:"Nous regardons **un documentaire** après le dîner.",c:"Nous le regardons après le dîner.",w:["Nous lui regardons après le dîner.","Nous regardons le après le dîner.","Nous la regardons après le dîner."],e:"COD masculin singulier → le, placé avant le verbe."},
- {s:"Elle invite **ses camarades** à son anniversaire.",c:"Elle les invite à son anniversaire.",w:["Elle leur invite à son anniversaire.","Elle invite les à son anniversaire.","Elle la invite à son anniversaire."],e:"COD pluriel → les (inviter quelqu'un)."},
- {s:"Je téléphone **à ma tante** chaque dimanche.",c:"Je lui téléphone chaque dimanche.",w:["Je la téléphone chaque dimanche.","Je leur téléphone chaque dimanche.","Je téléphone lui chaque dimanche."],e:"téléphoner à quelqu'un → COI singulier : lui."},
- {s:"Vous écrivez **à votre professeur**.",c:"Vous lui écrivez.",w:["Vous l'écrivez.","Vous leur écrivez.","Vous écrivez lui."],e:"écrire à quelqu'un → COI singulier : lui."},
- {s:"Rohan apporte **les documents** à son père.",c:"Rohan les apporte à son père.",w:["Rohan leur apporte à son père.","Rohan apporte les à son père.","Rohan le apporte à son père."],e:"COD pluriel → les."},
- {s:"La mère raconte une histoire **aux enfants**.",c:"La mère leur raconte une histoire.",w:["La mère les raconte une histoire.","La mère lui raconte une histoire.","La mère raconte leur une histoire."],e:"à + personnes au pluriel → COI : leur (sans -s)."},
- {s:"Tu montres ta nouvelle bicyclette **à ton ami**.",c:"Tu lui montres ta nouvelle bicyclette.",w:["Tu le montres ta nouvelle bicyclette.","Tu leur montres ta nouvelle bicyclette.","Tu montres lui ta nouvelle bicyclette."],e:"montrer à quelqu'un → COI singulier : lui."},
- {s:"J'aime **cette chanson**.",c:"Je l'aime.",w:["Je la aime.","Je lui aime.","J'aime la."],e:"COD féminin → la, qui devient l' devant une voyelle."},
- {s:"Il parle **à ses parents**.",c:"Il leur parle.",w:["Il les parle.","Il leurs parle.","Il lui parle."],e:"parler à + pluriel → leur (jamais « leurs » comme pronom)."},
- {s:"Nous avons vu **le film**.",c:"Nous l'avons vu.",w:["Nous avons le vu.","Nous lui avons vu.","Nous le avons vu."],e:"Au passé composé, le pronom se place avant l'auxiliaire ; le → l' devant avons."},
- {s:"Elle répond **au directeur**.",c:"Elle lui répond.",w:["Elle le répond.","Elle répond lui.","Elle leur répond."],e:"répondre à quelqu'un → COI singulier : lui."},
- {s:"Je vais acheter **les billets**.",c:"Je vais les acheter.",w:["Je les vais acheter.","Je vais leur acheter.","Je vais acheter les."],e:"Avec aller + infinitif, le pronom se place devant l'infinitif."},
- {s:"Tu écoutes **la radio**.",c:"Tu l'écoutes.",w:["Tu la écoutes.","Tu lui écoutes.","Tu écoutes la."],e:"COD féminin → la → l' devant une voyelle."},
- {s:"Ils obéissent **à leurs professeurs**.",c:"Ils leur obéissent.",w:["Ils les obéissent.","Ils leurs obéissent.","Ils lui obéissent."],e:"obéir à + pluriel → COI : leur."},
- {s:"Rohan apporte **les documents à son père**.",c:"Rohan les lui apporte.",w:["Rohan lui les apporte.","Rohan les leur apporte.","Rohan leur les apporte."],e:"Deux pronoms : COD (le, la, les) avant COI (lui, leur)."},
- {s:"Elle donne **le livre à ses amies**.",c:"Elle le leur donne.",w:["Elle leur le donne.","Elle le lui donne.","Elle les leur donne."],e:"Deux pronoms : le (COD) puis leur (COI pluriel)."},
- {s:"Mange **ta soupe** !",c:"Mange-la !",w:["La mange !","Mange-lui !","Mange-le !"],e:"À l'impératif affirmatif, le pronom se place après le verbe avec un trait d'union."},
- {s:"Nous cherchons **nos clés**.",c:"Nous les cherchons.",w:["Nous leur cherchons.","Nous cherchons les.","Nous la cherchons."],e:"COD pluriel → les."},
- {s:"Le professeur explique la leçon **aux élèves**.",c:"Le professeur leur explique la leçon.",w:["Le professeur les explique la leçon.","Le professeur lui explique la leçon.","Le professeur explique leur la leçon."],e:"expliquer à + pluriel → leur."},
- {s:"Je connais **Marie**.",c:"Je la connais.",w:["Je lui connais.","Je le connais.","Je connais la."],e:"connaître quelqu'un (sans « à ») → COD : la."},
- {s:"Ne regarde pas **ces photos** !",c:"Ne les regarde pas !",w:["Ne regarde-les pas !","Ne leur regarde pas !","Regarde-les pas !"],e:"À l'impératif négatif, le pronom reste avant le verbe."},
- {s:"Elle a téléphoné **à ses grands-parents**.",c:"Elle leur a téléphoné.",w:["Elle les a téléphoné.","Elle a leur téléphoné.","Elle leurs a téléphoné."],e:"COI pluriel → leur, placé avant l'auxiliaire au passé composé."},
- {s:"Nous allons inviter **Sophie**.",c:"Nous allons l'inviter.",w:["Nous l'allons inviter.","Nous allons la inviter.","Nous allons lui inviter."],e:"Aller + infinitif : pronom devant l'infinitif ; la → l' devant une voyelle."}
-];
-PRN.forEach((it,i)=>it.L=[0,1,2,3,4,5,6,8,10,13,17,18,19].includes(i)?"easy":"hard");
-const genPrn=it=>({sentence:it.s,ans:it.c,opts:shuffle([it.c,...it.w]),long:1,expl:it.e+" → "+it.c});
-
-/* ---------- catégories ---------- */
-const CATS=[
- {id:"temps",q:"Q4",name:"Les temps",instr:"Mettez le verbe au temps convenable.",gen:genTemps},
- {id:"demo",q:"Q5",name:"Démonstratifs",instr:"Complétez avec l'adjectif démonstratif.",pool:DEMO,gen:genDemo},
- {id:"neg",q:"Q6",name:"La négation",instr:"Choisissez la phrase correcte au négatif.",pool:NEG,gen:genNeg},
- {id:"quest",q:"Q7",name:"Trouvez la question",instr:"Trouvez la question qui porte sur les mots soulignés.",pool:QST,gen:genQst},
- {id:"pron",q:"Q8",name:"Pronoms COD / COI",instr:"Remplacez les mots soulignés par un pronom.",pool:PRN,gen:genPrn},
- {id:"poss",q:"Q9",name:"Possessifs",instr:"Complétez avec l'adjectif possessif.",gen:genPoss}
-];
-
-/* ---------- état ---------- */
-const LVL={easy:"Facile",hard:"Difficile"};
-let settings={cats:CATS.map(c=>c.id),count:15,level:null};
-try{const s=JSON.parse(localStorage.getItem("cahier-settings")||"null");if(s&&Array.isArray(s.cats)&&s.cats.length)settings=Object.assign(settings,s)}catch(e){}
-let quiz=[],idx=0,score=0,answered=false;
-
-function build(){
-  const lvl=settings.level;
-  const chosen=CATS.filter(c=>settings.cats.includes(c.id));
-  const poolOf=c=>c.pool.filter(it=>it.L===lvl);
-  const decks={};chosen.forEach(c=>{if(c.pool)decks[c.id]=shuffle(poolOf(c))});
-  const order=[];for(let i=0;i<settings.count;i++)order.push(chosen[i%chosen.length]);
-  const seen=new Set();
-  quiz=shuffle(order).map(c=>{
-    let q,tries=0;
-    do{ if(c.pool){if(!decks[c.id].length)decks[c.id]=shuffle(poolOf(c));q=c.gen(decks[c.id].pop(),lvl)}else q=c.gen(lvl); tries++ }
-    while(seen.has(q.sentence)&&tries<25);
-    seen.add(q.sentence);
-    return Object.assign(q,{cat:c,picked:null});
+/* ---------- question generation ---------- */
+function evalIn(expr,env){const k=Object.keys(env);return Function(...k,'"use strict";return ('+expr+');')(...k.map(x=>env[x]))}
+function pickVar(spec){
+  if(Array.isArray(spec)){const [a,b,s]=spec;const n=Math.floor((b-a)/(s||1));return +(a+(s||1)*Math.floor(Math.random()*(n+1))).toFixed(6)}
+  if(spec&&spec.of)return rnd(spec.of);
+  return spec;
+}
+function fmt(x,dp){
+  if(typeof x!=="number")return String(x);
+  const r=Math.round(x*Math.pow(10,dp))/Math.pow(10,dp);
+  return (Object.is(r,-0)?0:r).toString().replace(/^-/,"−");
+}
+function fill(t,env,ansStr){return String(t).replace(/\{(\w+)\}/g,(m,k)=>k==="ans"?ansStr:(k in env?fmt(env[k],2):m))}
+function instantiate(item){
+  if(item.type!=="calc"){
+    return {topic:item.topic,q:item.q,ans:item.a,opts:shuffle([item.a,...item.w]),expl:item.e,graph:item.graph?resolveGraph(item.graph,{}):null,long:[item.a,...item.w].some(o=>o.length>34)};
+  }
+  const dp=item.dp??2;
+  for(let tries=0;tries<60;tries++){
+    const env={};
+    for(const k in item.vars) env[k]=pickVar(item.vars[k]);
+    try{
+      for(const k in (item.derive||{})) env[k]=evalIn(item.derive[k],env);
+      if(item.where&&!evalIn(item.where,env)) continue;
+      const a=evalIn(item.answer,env); if(!isFinite(a)) continue;
+      const u=item.unit?" "+item.unit:"";
+      const ans=fmt(a,dp)+u;
+      let wrong=[...new Set(item.wrong.map(w=>{try{const v=evalIn(w,env);return isFinite(v)?fmt(v,dp)+u:null}catch(e){return null}}).filter(w=>w&&w!==ans))];
+      const extra=[a*2,a/2,a*10,a+ (Math.abs(a)>=1?1:0.5),a*1.5];let i=0;
+      while(wrong.length<3&&i<extra.length){const w=fmt(extra[i++],dp)+u;if(w!==ans&&!wrong.includes(w))wrong.push(w)}
+      wrong=shuffle(wrong).slice(0,3);
+      return {topic:item.topic,q:fill(item.q,env,fmt(a,dp)),ans,opts:shuffle([ans,...wrong]),expl:fill(item.e,env,fmt(a,dp)),graph:item.graph?resolveGraph(item.graph,env):null,calc:true};
+    }catch(e){continue}
+  }
+  return null;
+}
+function resolveGraph(g,env){
+  const val=v=>typeof v==="string"?evalIn(v,env):v;
+  return Object.assign({},g,{lines:g.lines.map(l=>Object.assign({},l,{pts:l.pts.map(p=>[val(p[0]),val(p[1])])}))});
+}
+function niceStep(max,target){const raw=max/(target||5);const p=Math.pow(10,Math.floor(Math.log10(raw||1)));const n=raw/p;return (n<=1?1:n<=2?2:n<=2.5?2.5:n<=5?5:10)*p}
+function graphSVG(g){
+  const W=460,H=250,L=52,R=18,T=16,B=44;
+  const all=g.lines.flatMap(l=>l.pts);
+  const xmax0=Math.max(...all.map(p=>p[0]));let ymax0=g.ymax||Math.max(...all.map(p=>p[1]));
+  const xs=niceStep(xmax0,6),ys=niceStep(ymax0,5);
+  const xmax=Math.ceil(xmax0/xs)*xs, ymax=Math.max(ys,Math.ceil(ymax0*1.08/ys)*ys);
+  const X=x=>L+(W-L-R)*x/xmax, Y=y=>T+(H-T-B)*(1-y/ymax);
+  let s='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="'+esc(g.y+" against "+g.x)+' graph">';
+  for(let y=0;y<=ymax+1e-9;y+=ys)s+='<line class="gl" x1="'+L+'" x2="'+(W-R)+'" y1="'+Y(y)+'" y2="'+Y(y)+'"/><text x="'+(L-7)+'" y="'+(Y(y)+4)+'" text-anchor="end">'+fmt(y,2)+'</text>';
+  for(let x=0;x<=xmax+1e-9;x+=xs)s+='<text x="'+X(x)+'" y="'+(H-B+16)+'" text-anchor="middle">'+fmt(x,2)+'</text>';
+  if(g.fill&&g.lines[0]){const p=g.lines[0].pts;s+='<path class="fillA" d="M'+X(p[0][0])+' '+Y(0)+p.map(q=>'L'+X(q[0])+' '+Y(q[1])).join("")+'L'+X(p[p.length-1][0])+' '+Y(0)+'Z"/>'}
+  s+='<line class="ax" x1="'+L+'" y1="'+T+'" x2="'+L+'" y2="'+(H-B)+'"/><line class="ax" x1="'+L+'" y1="'+(H-B)+'" x2="'+(W-R)+'" y2="'+(H-B)+'"/>';
+  g.lines.forEach((l,i)=>{
+    s+='<polyline class="l'+(i%2)+'" points="'+l.pts.map(p=>X(p[0])+","+Y(p[1])).join(" ")+'"/>';
+    if(l.label){const p=l.pts[l.pts.length-1];s+='<text class="lbl lbl'+(i%2)+'" x="'+(X(p[0])-8)+'" y="'+(Y(p[1])-8)+'" text-anchor="end">'+esc(l.label)+'</text>'}
   });
-  idx=0;score=0;answered=false;render();
+  if(g.mark){g.lines[0].pts.forEach(p=>{if(p[0]===0&&p[1]===0)return;
+    s+='<line class="guide" x1="'+X(p[0])+'" y1="'+Y(p[1])+'" x2="'+X(p[0])+'" y2="'+(H-B)+'"/><line class="guide" x1="'+L+'" y1="'+Y(p[1])+'" x2="'+X(p[0])+'" y2="'+Y(p[1])+'"/><circle class="pt" cx="'+X(p[0])+'" cy="'+Y(p[1])+'" r="5"/>'+
+      '<text x="'+(X(p[0])+8)+'" y="'+(Y(p[1])-8)+'">('+fmt(p[0],2)+', '+fmt(p[1],2)+')</text>'})}
+  s+='<text x="'+((L+W-R)/2)+'" y="'+(H-6)+'" text-anchor="middle">'+esc(g.x)+'</text>';
+  s+='<text transform="translate(14,'+((T+H-B)/2)+') rotate(-90)" text-anchor="middle">'+esc(g.y)+'</text>';
+  return s+'</svg>';
 }
 
-const stage=document.getElementById("stage");
-function renderSentence(q){
-  let html=mark(q.sentence);
-  if(html.includes("___")) html=html.replace("___",answered?'<span class="blank filled">'+esc(q.ans)+'</span>':'<span class="blank" aria-label="blanc">&nbsp;</span>');
-  return html;
+/* ---------- quiz ---------- */
+let CTX=null, quiz=[], idx=0, score=0, answered=false, startedAt=0, attemptId="", submitted=false;
+function build(){
+  const tmap=Object.fromEntries(BANK.topics.map(t=>[t.id,t]));
+  const pools={};
+  sel.topics.forEach(t=>{let p=BANK.questions.filter(q=>q.topic===t&&q.level===sel.level);if(!p.length)p=BANK.questions.filter(q=>q.topic===t);pools[t]={all:p,deck:shuffle(p)}});
+  const order=[];const tl=shuffle(sel.topics);for(let i=0;i<sel.count;i++)order.push(tl[i%tl.length]);
+  const seen=new Set();quiz=[];
+  shuffle(order).forEach(t=>{
+    let q=null;
+    for(let tries=0;tries<30;tries++){
+      const P=pools[t];if(!P.deck.length)P.deck=shuffle(P.all);
+      const cand=instantiate(P.deck.pop());
+      if(cand&&!seen.has(cand.q)){q=cand;break}
+      if(cand&&tries>20){q=cand;break}
+    }
+    if(q){seen.add(q.q);q.topicObj=tmap[t];q.picked=null;quiz.push(q)}
+  });
+  idx=0;score=0;answered=false;submitted=false;startedAt=Date.now();attemptId=Date.now().toString(36)+Math.random().toString(36).slice(2,10);
+  $("home").hidden=true;$("quizArea").hidden=false;$("homeBtn").hidden=false;
+  render();window.scrollTo({top:0});
 }
 function render(){
-  const total=quiz.length;
-  document.getElementById("progressTxt").innerHTML=(idx<total?"Question "+(idx+1)+" sur "+total:"Terminé")+'<span class="lvl">'+LVL[settings.level]+'</span>';
-  document.getElementById("scoreTxt").innerHTML="Score <b>"+score+"</b> / "+Math.min(idx+(answered?1:0),total);
-  document.getElementById("progressBar").style.width=(100*(idx+(answered?1:0))/total)+"%";
+  const total=quiz.length, done=idx+(answered?1:0);
+  $("progressTxt").innerHTML=(idx<total?"Question "+(idx+1)+" of "+total:"Finished")+'<span class="tagl">'+esc(CTX.subj.name)+' · '+LVL[sel.level]+'</span>';
+  $("scoreTxt").innerHTML="Score <b>"+score+"</b> / "+Math.min(done,total);
+  $("progressBar").style.width=(100*done/total)+"%";
   if(idx>=total){renderResults();return}
   const q=quiz[idx];
-  let h='<article class="sheet"><span class="qnum">'+(idx+1)+'.</span>'+
-    '<span class="tag">'+q.cat.q+' · '+q.cat.name+'</span>'+
-    '<p class="instr">'+esc(q.cat.instr)+'</p>'+
-    '<p class="sentence">'+renderSentence(q)+'</p>'+
-    (q.hint?'<p class="hint">'+esc(q.hint)+'</p>':'')+
-    '<div class="opts'+(q.long?' long':'')+'" role="group" aria-label="Réponses">';
-  q.opts.forEach((o,i)=>{
-    let cls="opt";
-    if(answered){if(o===q.ans)cls+=" ok";else if(o===q.picked)cls+=" bad";else cls+=" dim"}
-    h+='<button class="'+cls+'" data-i="'+i+'" '+(answered?"disabled":"")+'><kbd>'+(i+1)+'</kbd><span>'+esc(o)+'</span></button>';
-  });
+  let h='<article class="sheet"><span class="qnum">'+(idx+1)+'.</span><span class="tag">'+esc((q.topicObj.ref?q.topicObj.ref+" · ":"")+q.topicObj.name)+'</span>'+
+    '<p class="qtext">'+esc(q.q)+'</p>'+(q.graph?'<div class="graph">'+graphSVG(q.graph)+'</div>':'')+
+    '<div class="opts'+(q.long?' long':'')+'" role="group" aria-label="Answers">';
+  q.opts.forEach((o,i)=>{let c="opt";if(answered){c+=o===q.ans?" ok":o===q.picked?" bad":" dim"}
+    h+='<button class="'+c+'" data-i="'+i+'"'+(answered?" disabled":"")+'><kbd>'+(i+1)+'</kbd><span>'+esc(o)+'</span></button>'});
   h+='</div>';
-  if(answered){
-    const ok=q.picked===q.ans;
-    h+='<div class="fb'+(ok?"":" no")+'" role="status"><strong>'+(ok?"Bravo, c'est juste !":"Pas tout à fait. Réponse : "+esc(q.ans))+'</strong><p>'+esc(q.expl)+'</p></div>'+
-       '<div class="next"><button class="btn primary" id="nextBtn">'+(idx+1<total?"Question suivante →":"Voir mes résultats")+'</button></div>';
-  }
-  h+='</article>';
-  stage.innerHTML=h;
-  stage.querySelectorAll(".opt").forEach(b=>b.addEventListener("click",()=>choose(+b.dataset.i)));
-  const nb=document.getElementById("nextBtn");if(nb){nb.addEventListener("click",next);nb.focus({preventScroll:true})}
+  if(answered){const ok=q.picked===q.ans;
+    h+='<div class="fb'+(ok?"":" no")+'" role="status"><strong>'+(ok?"Correct!":"Not quite. Answer: "+esc(q.ans))+'</strong><p>'+esc(q.expl)+'</p></div>'+
+      '<div class="next"><button class="btn primary" id="nextBtn">'+(idx+1<total?"Next question →":"See my results")+'</button></div>'}
+  $("stage").innerHTML=h+'</article>';
+  $("stage").querySelectorAll(".opt").forEach(b=>b.addEventListener("click",()=>choose(+b.dataset.i)));
+  const nb=$("nextBtn");if(nb){nb.addEventListener("click",next);nb.focus({preventScroll:true})}
 }
 function choose(i){if(answered)return;const q=quiz[idx];q.picked=q.opts[i];if(q.picked===q.ans)score++;answered=true;render()}
 function next(){if(!answered)return;answered=false;idx++;render();window.scrollTo({top:0,behavior:"smooth"})}
-
+function topicStats(){const m={};quiz.forEach(q=>{const k=q.topicObj.name;const s=m[k]||(m[k]={ok:0,n:0,ref:q.topicObj.ref});s.n++;if(q.picked===q.ans)s.ok++});return m}
 function renderResults(){
-  const total=quiz.length, pct=Math.round(100*score/total), easy=settings.level==="easy";
-  const msg=pct>=90?(easy?"Excellent ! Essayez maintenant le niveau Difficile.":"Excellent travail, vous êtes prêt(e) pour l'examen !"):pct>=70?"Très bien. Revoyez les erreurs ci-dessous.":pct>=50?"Pas mal. Encore un peu de pratique.":"Continuez à réviser, vous allez progresser.";
-  let h='<article class="sheet"><span class="qnum">✓</span><span class="tag">Résultats · '+LVL[settings.level]+'</span>'+
-    '<p class="big">'+score+' <small>/ '+total+'</small></p><p class="instr">'+msg+'</p><div class="cats">';
-  CATS.forEach(c=>{const qs=quiz.filter(q=>q.cat===c);if(!qs.length)return;const ok=qs.filter(q=>q.picked===q.ans).length;const p=ok/qs.length;
-    h+='<div class="cat"><span>'+c.q+' · '+c.name+'</span><span class="bar"><i class="'+(p<.6?"low":"")+'" style="width:'+(p*100)+'%"></i></span><span>'+ok+' / '+qs.length+'</span></div>'});
-  h+='</div><div class="row"><button class="btn primary" id="againBtn">Nouveau quiz ('+LVL[settings.level]+')</button>'+
-     (easy&&pct>=70?'<button class="btn" id="upBtn">Passer au niveau Difficile</button>':'')+
-     '<button class="btn" id="setBtn">Changer de niveau</button></div>';
+  const total=quiz.length,pct=Math.round(100*score/total),easy=sel.level==="easy";
+  const msg=pct>=90?(easy?"Excellent! Try the Hard level next.":"Excellent – you are exam ready!"):pct>=70?"Well done. Go through the mistakes below.":pct>=50?"Good effort. A little more practice will help.":"Keep practising – review the explanations below.";
+  const ts=topicStats();
+  let h='<article class="sheet"><span class="qnum">✓</span><span class="tag">Results · '+esc(CTX.subj.name)+' · '+LVL[sel.level]+'</span>'+
+    '<p class="score">'+score+' <small>/ '+total+'</small></p><p style="margin:0;font-weight:700">'+msg+'</p><div class="cats">';
+  Object.entries(ts).sort((a,b)=>String(a[1].ref).localeCompare(String(b[1].ref),undefined,{numeric:true})).forEach(([k,s])=>{const p=s.ok/s.n;
+    h+='<div class="cat"><span>'+esc(k)+'</span><span class="bar"><i class="'+(p<.6?"low":"")+'" style="width:'+(p*100)+'%"></i></span><span>'+s.ok+' / '+s.n+'</span></div>'});
+  h+='</div><div class="row"><button class="btn primary" id="againBtn">New quiz</button>'+(easy&&pct>=70?'<button class="btn" id="upBtn">Try Hard level</button>':'')+'<button class="btn" id="backBtn">Change topics</button></div>';
   const wrong=quiz.filter(q=>q.picked!==q.ans);
-  if(wrong.length){
-    h+='<div class="review"><h3>À revoir ('+wrong.length+')</h3>';
-    wrong.forEach(q=>{
-      h+='<div class="rv"><span class="tag">'+q.cat.q+' · '+q.cat.name+'</span><span class="q">'+mark(q.sentence)+(q.hint?' <em>'+esc(q.hint)+'</em>':'')+'</span>'+
-         '<span class="y">Votre réponse : '+esc(q.picked)+'</span><span class="c">Bonne réponse : '+esc(q.ans)+'</span><span>'+esc(q.expl)+'</span></div>';
-    });
-    h+='</div>';
+  if(wrong.length){h+='<div class="review"><h3>To review ('+wrong.length+')</h3>'+wrong.map(q=>'<div class="rv"><span class="tag">'+esc(q.topicObj.name)+'</span><span>'+esc(q.q)+'</span><span class="y">Your answer: '+esc(q.picked)+'</span><span class="c">Correct answer: '+esc(q.ans)+'</span><span>'+esc(q.expl)+'</span></div>').join("")+'</div>'}
+  h+=(ONLINE?'<div class="board" id="rankBox"></div>':'')+'</article>';
+  $("stage").innerHTML=h;
+  $("againBtn").addEventListener("click",build);
+  $("backBtn").addEventListener("click",goHome);
+  if($("upBtn"))$("upBtn").addEventListener("click",()=>{sel.level="hard";store.set("gamesol-sel",sel);build()});
+  if(ONLINE&&!submitted)submitResult($("rankBox"));
+}
+function goHome(){$("quizArea").hidden=true;$("home").hidden=false;$("homeBtn").hidden=true;renderHome();window.scrollTo({top:0})}
+$("homeBtn").addEventListener("click",goHome);
+
+/* ---------- leaderboard ---------- */
+const keyOf=(n,s)=>String(n||"").trim().toLowerCase()+"|"+String(s||"").trim().toLowerCase();
+const fmtTime=s=>{s=Math.round(+s||0);return Math.floor(s/60)+" min "+String(s%60).padStart(2,"0")};
+function boardHTML(d,cls,subj){
+  if(!d||!d.ok)return '<p class="muted">Leaderboard unavailable right now.</p>';
+  let h="";
+  if(d.me)h+='<div class="rank"><b>#'+d.me.rank+'</b><span>Your rank out of <strong>'+d.players+'</strong> student'+(d.players>1?"s":"")+' · '+esc(cls.name)+' '+esc(subj.name)+' · '+LVL[d.level]+'<br><span class="muted">Your best score: '+d.me.percent+'%</span></span></div>';
+  if(!d.top.length)return h+'<p class="muted">No scores yet at this level. Be the first!</p>';
+  const me=keyOf(player.name,player.section);let shown=false;
+  h+='<div style="overflow-x:auto"><table class="lb"><thead><tr><th>#</th><th>Name</th><th>Section</th><th class="num">Score</th><th class="num">Time</th></tr></thead><tbody>';
+  d.top.forEach(r=>{const m=keyOf(r.name,r.section)===me;if(m)shown=true;
+    h+='<tr'+(m?' class="me"':'')+'><td>'+r.rank+'</td><td>'+esc(r.name)+(m?" (you)":"")+'</td><td>'+esc(r.section)+'</td><td class="num">'+r.percent+'% <span class="muted">('+r.score+'/'+r.total+')</span></td><td class="num">'+fmtTime(r.seconds)+'</td></tr>'});
+  if(d.me&&!shown)h+='<tr><td colspan="5" class="muted">…</td></tr><tr class="me"><td>'+d.me.rank+'</td><td>'+esc(player.name)+' (you)</td><td>'+esc(player.section)+'</td><td class="num">'+d.me.percent+'%</td><td></td></tr>';
+  return h+'</tbody></table></div><p class="muted">Best score per student. Ties go to the faster time.</p>';
+}
+async function submitResult(el){
+  el.innerHTML='<p class="muted">Saving your score…</p>';
+  const topics={};Object.entries(topicStats()).forEach(([k,s])=>topics[k]={ok:s.ok,n:s.n});
+  const payload={name:player.name,section:player.section,cls:CTX.cls.id,subject:CTX.subj.id,chapter:CTX.chap.id,level:sel.level,score,total:quiz.length,seconds:Math.round((Date.now()-startedAt)/1000),topics,attemptId};
+  try{
+    const r=await fetch(API,{method:"POST",body:JSON.stringify(payload)});const d=await r.json();
+    if(!d.ok)throw new Error(d.error);submitted=true;
+    el.innerHTML='<h3>Leaderboard</h3>'+boardHTML(d,CTX.cls,CTX.subj);
+  }catch(e){
+    el.innerHTML='<p class="warn">Your score could not be saved. Check your internet connection and try again.</p><div class="row"><button class="btn" id="retrySave">Try again</button></div>';
+    $("retrySave").addEventListener("click",()=>submitResult(el));
   }
-  h+='</article>';
-  stage.innerHTML=h;
-  document.getElementById("againBtn").addEventListener("click",build);
-  document.getElementById("setBtn").addEventListener("click",showStart);
-  const up=document.getElementById("upBtn");if(up)up.addEventListener("click",()=>{settings.level="hard";save();document.getElementById("level-hard").checked=true;build()});
+}
+async function showBoard(el,cls,subj,level){
+  el.hidden=false;
+  el.innerHTML='<div class="board"><div class="tabs"><button class="btn small" data-l="easy" aria-pressed="'+(level==="easy")+'">Easy</button><button class="btn small" data-l="hard" aria-pressed="'+(level==="hard")+'">Hard</button></div><div id="sbBody"><p class="muted">Loading…</p></div></div>';
+  el.querySelectorAll("[data-l]").forEach(b=>b.addEventListener("click",()=>showBoard(el,cls,subj,b.dataset.l)));
+  try{
+    const u=API+(API.includes("?")?"&":"?")+"action=leaderboard&cls="+encodeURIComponent(cls.id)+"&subject="+encodeURIComponent(subj.id)+"&level="+level+"&name="+encodeURIComponent(player.name)+"&section="+encodeURIComponent(player.section);
+    $("sbBody").innerHTML=boardHTML(await (await fetch(u)).json(),cls,subj);
+  }catch(e){$("sbBody").innerHTML='<p class="warn">Could not load the leaderboard. Check your internet connection.</p>'}
 }
 
-/* ---------- écran de départ ---------- */
-const chipsEl=document.getElementById("chips"),countsEl=document.getElementById("counts"),setEl=document.getElementById("settings"),tog=document.getElementById("toggleSettings"),area=document.getElementById("quizArea");
-CATS.forEach(c=>{chipsEl.insertAdjacentHTML("beforeend",'<label class="chip"><input type="checkbox" id="cat-'+c.id+'" value="'+c.id+'" '+(settings.cats.includes(c.id)?"checked":"")+'><span><b>'+c.q+'</b>'+c.name+'</span></label>')});
-[10,15,20,30].forEach(n=>{countsEl.insertAdjacentHTML("beforeend",'<label class="count"><input type="radio" name="count" id="count-'+n+'" value="'+n+'" '+(settings.count===n?"checked":"")+'><span>'+n+'</span></label>')});
-if(settings.level){const r=document.getElementById("level-"+settings.level);if(r)r.checked=true}
-const save=()=>{try{localStorage.setItem("cahier-settings",JSON.stringify(settings))}catch(e){}};
-function showStart(){setEl.hidden=false;area.hidden=true;tog.hidden=true;window.scrollTo({top:0,behavior:"smooth"})}
-function showQuiz(){setEl.hidden=true;area.hidden=false;tog.hidden=false}
-tog.addEventListener("click",showStart);
-document.getElementById("startBtn").addEventListener("click",()=>{
-  const warn=document.getElementById("warn");
-  const lv=document.querySelector('input[name="level"]:checked');
-  const cats=[...chipsEl.querySelectorAll("input:checked")].map(i=>i.value);
-  if(!lv){warn.textContent="Choisissez d'abord un niveau : Facile ou Difficile.";warn.hidden=false;return}
-  if(!cats.length){warn.textContent="Choisissez au moins une section.";warn.hidden=false;return}
-  warn.hidden=true;
-  settings={cats,count:+countsEl.querySelector("input:checked").value,level:lv.value};
-  save();showQuiz();build();window.scrollTo({top:0});
-});
 document.addEventListener("keydown",e=>{
-  if(e.target.matches("input")||area.hidden)return;
-  if(!answered&&/^[1-4]$/.test(e.key)&&idx<quiz.length){const b=stage.querySelector('.opt[data-i="'+(+e.key-1)+'"]');if(b)b.click()}
+  if(e.target.matches("input,textarea")||$("quizArea").hidden)return;
+  if(!answered&&/^[1-4]$/.test(e.key)&&idx<quiz.length){const b=$("stage").querySelector('.opt[data-i="'+(+e.key-1)+'"]');if(b)b.click()}
   else if(answered&&(e.key==="Enter"||e.key==="ArrowRight")&&document.activeElement.id!=="nextBtn"){e.preventDefault();next()}
 });
+boot();
 </script>
 </body>
 </html>

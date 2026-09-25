@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Gamesol Edu Cockpit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<style>
+:root{
+  --paper:#F8F9FD; --sheet:#FFFFFF; --ink:#1D2340; --ink-soft:#5A6082; --ink-mute:#8A8FAD;
+  --line:#E3E6F6; --line-strong:#C3C9EE; --margin:#D8454F;
+  --accent:#2446C8; --accent-soft:#E6EBFC;
+  --good:#1D7F55; --bad:#BF3440; --bad-soft:#FBE7E9;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  color-scheme:dark;
+  --paper:#12152A; --sheet:#1A1E38; --ink:#E7E9F7; --ink-soft:#A3A8C8; --ink-mute:#7C82A6;
+  --line:#242A4C; --line-strong:#353D6E; --margin:#E8656E;
+  --accent:#8EA6FF; --accent-soft:#252E5C; --good:#5FD19C; --bad:#FF8A93; --bad-soft:#3E1C25;
+}}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --paper:#12152A; --sheet:#1A1E38; --ink:#E7E9F7; --ink-soft:#A3A8C8; --ink-mute:#7C82A6;
+  --line:#242A4C; --line-strong:#353D6E; --margin:#E8656E;
+  --accent:#8EA6FF; --accent-soft:#252E5C; --good:#5FD19C; --bad:#FF8A93; --bad-soft:#3E1C25;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{margin:0}
+body{background:var(--paper);color:var(--ink);font-family:"Atkinson Hyperlegible",system-ui,sans-serif;font-size:15px;line-height:1.5;padding-inline:16px;padding-block:20px 48px}
+.wrap{max-width:1080px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
+header{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap}
+h1{font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:clamp(24px,4vw,32px);margin:0;line-height:1.15}
+.sub{margin:2px 0 0;color:var(--ink-soft);font-size:14px}
+h2{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);margin:0 0 12px}
+.btn,select,input{font:inherit;font-size:14px;border-radius:8px;border:1px solid var(--line-strong);background:var(--sheet);color:var(--ink);padding:8px 12px}
+.btn{font-weight:700;cursor:pointer}
+.btn:hover{border-color:var(--accent);color:var(--accent)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--sheet)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.panel{background:var(--sheet);border:1px solid var(--line);border-radius:12px;padding:18px}
+.filters{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.filters label{display:flex;gap:6px;align-items:center;font-size:13px;color:var(--ink-soft);font-weight:700}
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.kpi{background:var(--sheet);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.kpi span{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);font-weight:700}
+.kpi b{display:block;font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:32px;line-height:1.15;margin-top:4px;font-variant-numeric:tabular-nums}
+.kpi small{color:var(--ink-soft);font-size:13px}
+.grid2{display:grid;grid-template-columns:3fr 2fr;gap:12px}
+svg text{fill:var(--ink-soft);font-size:11px;font-family:"Atkinson Hyperlegible",system-ui,sans-serif}
+.gridline{stroke:var(--line);stroke-width:1}
+.barv{fill:var(--accent)}
+.barv:hover,.hit:hover+.barv{opacity:.8}
+.acc{display:flex;flex-direction:column;gap:12px}
+.accrow{display:grid;grid-template-columns:minmax(0,10.5em) 1fr 4.5em;gap:10px;align-items:center;font-size:14px}
+.acctrack{height:10px;border-radius:5px;background:var(--line);position:relative;overflow:hidden}
+.acctrack i{position:absolute;left:0;top:0;bottom:0;border-radius:0 5px 5px 0;background:var(--accent)}
+.acctrack i.low{background:var(--bad)}
+.accrow .v{text-align:right;font-variant-numeric:tabular-nums}
+.flag{display:inline-block;font-size:11px;font-weight:700;color:var(--bad);background:var(--bad-soft);border-radius:4px;padding:1px 6px;margin-left:6px;white-space:nowrap}
+.tablewrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:14px;font-variant-numeric:tabular-nums}
+th{text-align:left;font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-soft);padding:8px;border-bottom:1px solid var(--line-strong);white-space:nowrap}
+th.sortable{cursor:pointer;user-select:none}
+th.sortable:hover{color:var(--accent)}
+td{padding:8px;border-bottom:1px solid var(--line);white-space:nowrap}
+td.num,th.num{text-align:right}
+.pill{display:inline-block;font-size:12px;font-weight:700;padding:1px 8px;border-radius:999px;border:1px solid var(--line-strong);color:var(--ink-soft)}
+.pill.hard{border-color:var(--accent);color:var(--accent)}
+.low{color:var(--bad);font-weight:700}
+.muted{color:var(--ink-soft)}
+#tip{position:fixed;pointer-events:none;background:var(--ink);color:var(--paper);font-size:13px;padding:6px 9px;border-radius:6px;white-space:nowrap;z-index:5}
+.login{max-width:440px}
+.login form{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.login input{flex:1;min-width:180px}
+.err{color:var(--bad);font-size:14px;margin:8px 0 0}
+.empty{padding:30px;text-align:center;color:var(--ink-soft)}
+@media (max-width:820px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.grid2{grid-template-columns:1fr}}
+@media (max-width:460px){.accrow{grid-template-columns:1fr 4em}.accrow .acctrack{grid-column:1/-1;order:3}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Gamesol Edu Cockpit</h1>
+      <p class="sub">Teacher view · all classes and subjects · <a href="index.html" style="color:inherit">open the games</a></p>
+    </div>
+    <div class="filters" id="topActions" hidden>
+      <span class="muted" id="updated"></span>
+      <button class="btn" id="refresh">Refresh</button>
+      <button class="btn" id="logout">Sign out</button>
+    </div>
+  </header>
+
+  <section class="panel login" id="login">
+    <h2>Teacher sign-in</h2>
+    <p class="muted" id="loginMsg">Enter the teacher password you set in the Google Apps Script (TEACHER_KEY).</p>
+    <form id="loginForm">
+      <input type="password" id="key" placeholder="Teacher password" autocomplete="current-password" aria-label="Teacher password">
+      <button class="btn primary" type="submit">Open cockpit</button>
+    </form>
+    <p class="err" id="loginErr" hidden></p>
+  </section>
+
+  <div id="app" hidden style="display:flex;flex-direction:column;gap:18px">
+    <div class="filters">
+      <label for="fPeriod">Period
+        <select id="fPeriod"><option value="7">Last 7 days</option><option value="30" selected>Last 30 days</option><option value="0">All time</option></select></label>
+      <label for="fClass">Class
+        <select id="fClass"><option value="">All classes</option></select></label>
+      <label for="fSubject">Subject
+        <select id="fSubject"><option value="">All subjects</option></select></label>
+      <label for="fSection">Section
+        <select id="fSection"><option value="">All sections</option></select></label>
+      <label for="fLevel">Level
+        <select id="fLevel"><option value="">Both levels</option><option value="easy">Easy</option><option value="hard">Hard</option></select></label>
+    </div>
+
+    <div class="kpis" id="kpis"></div>
+
+    <div class="grid2">
+      <section class="panel"><h2 id="dayTitle">Quizzes taken per day</h2><div id="dayChart"></div></section>
+      <section class="panel"><h2 id="accTitle">Accuracy by topic</h2><div class="acc" id="accChart"></div></section>
+    </div>
+
+    <section class="panel">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px">
+        <h2 style="margin:0">Students</h2>
+        <input type="search" id="search" placeholder="Search a name" aria-label="Search students">
+      </div>
+      <div class="tablewrap"><table id="students"></table></div>
+    </section>
+
+    <section class="panel">
+      <h2>Latest attempts</h2>
+      <div class="tablewrap"><table id="recent"></table></div>
+    </section>
+  </div>
+</div>
+<div id="tip" hidden></div>
+
+<script>
+let API="", CONFIG={classes:[]};
+const cfgReady=fetch("edu-kids-config.json",{cache:"no-store"}).then(r=>r.json()).then(c=>{CONFIG=c;API=String(c.leaderboard&&c.leaderboard.scriptUrl||"").trim()}).catch(()=>{});
+const className=id=>{const c=(CONFIG.classes||[]).find(c=>String(c.id)===String(id));return c?c.name:"Class "+id};
+const subjectName=(cid,sid)=>{for(const c of CONFIG.classes||[])for(const s of c.subjects||[])if(s.id===sid&&(!cid||String(c.id)===String(cid)))return s.name;return sid};
+const esc=s=>String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+const $=id=>document.getElementById(id);
+let ROWS=[],sortKey="last",sortDir=-1;
+
+function ss(k,v){try{if(v===undefined)return sessionStorage.getItem(k);if(v===null)sessionStorage.removeItem(k);else sessionStorage.setItem(k,v)}catch(e){return null}}
+
+async function load(key){
+  $("loginErr").hidden=true;
+  await cfgReady;
+  if(!/^https:\/\/script\.google(usercontent)?\.com\//.test(API)){showErr("The Google Apps Script link is missing. Add it to edu-kids-config.json → leaderboard.scriptUrl (see README).");return}
+  try{
+    const r=await fetch(API+(API.includes("?")?"&":"?")+"action=stats&key="+encodeURIComponent(key));
+    const d=await r.json();
+    if(!d.ok){showErr(d.error==="wrong_key"?"That password is not correct.":"The backend returned an error.");ss("cockpit-key",null);return}
+    ss("cockpit-key",key);
+    ROWS=d.rows.map(r=>Object.assign(r,{t:new Date(r.timestamp)})).filter(r=>!isNaN(r.t));
+    $("login").hidden=true;$("app").hidden=false;$("topActions").hidden=false;
+    $("updated").textContent="Updated "+new Date().toLocaleTimeString([], {hour:"2-digit",minute:"2-digit"});
+    const opts=(id,all,vals,label)=>{const cur=$(id).value;$(id).innerHTML='<option value="">'+all+'</option>'+vals.map(v=>'<option value="'+esc(v)+'"'+(v===cur?" selected":"")+'>'+esc(label(v))+'</option>').join("")};
+    const uniq=f=>[...new Set(ROWS.map(f).filter(Boolean))].sort((a,b)=>String(a).localeCompare(String(b),undefined,{numeric:true}));
+    opts("fClass","All classes",uniq(r=>String(r.class)),className);
+    opts("fSubject","All subjects",uniq(r=>r.subject),v=>subjectName("",v));
+    opts("fSection","All sections",uniq(r=>String(r.section||"").toUpperCase()),v=>v);
+    render();
+  }catch(e){showErr("Could not reach the backend. Check your internet connection and the link in edu-kids-config.json.")}
+}
+function showErr(m){$("loginErr").textContent=m;$("loginErr").hidden=false}
+
+function filtered(){
+  const days=+$("fPeriod").value, sec=$("fSection").value, lvl=$("fLevel").value, cls=$("fClass").value, sub=$("fSubject").value;
+  const from=days?Date.now()-days*864e5:0;
+  return ROWS.filter(r=>r.t.getTime()>=from&&(!cls||String(r.class)===cls)&&(!sub||r.subject===sub)&&(!sec||String(r.section).toUpperCase()===sec)&&(!lvl||r.level===lvl));
+}
+const who=r=>String(r.name).trim().toLowerCase()+"|"+String(r.class)+"|"+String(r.section).trim().toUpperCase();
+const avg=a=>a.length?a.reduce((s,x)=>s+x,0)/a.length:0;
+const dkey=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
+
+function render(){
+  const rows=filtered();
+  const today=dkey(new Date());
+  const students=new Set(rows.map(who));
+  const easyN=rows.filter(r=>r.level==="easy").length, hardN=rows.length-easyN;
+  $("kpis").innerHTML=[
+    ["Quizzes taken",rows.length,easyN+" easy · "+hardN+" hard"],
+    ["Students",students.size,"different names"],
+    ["Average score",rows.length?Math.round(avg(rows.map(r=>r.percent)))+"%":"–","across all attempts"],
+    ["Today",rows.filter(r=>dkey(r.t)===today).length,"quizzes taken today"]
+  ].map(k=>'<div class="kpi"><span>'+k[0]+'</span><b>'+k[1]+'</b><small>'+k[2]+'</small></div>').join("");
+  if(!rows.length){
+    $("dayChart").innerHTML='<p class="empty">No quizzes in this period yet.</p>';$("accChart").innerHTML='<p class="empty">No data yet.</p>';
+  }else{dayChart(rows);accChart(rows)}
+  studentTable(rows);recentTable(rows);
+}
+
+function dayChart(rows){
+  const days=+$("fPeriod").value||Math.min(60,Math.max(7,Math.ceil((Date.now()-Math.min(...rows.map(r=>r.t)))/864e5)+1));
+  $("dayTitle").textContent="Quizzes taken per day · last "+days+" days";
+  const list=[];for(let i=days-1;i>=0;i--){const d=new Date();d.setHours(12,0,0,0);d.setDate(d.getDate()-i);list.push({k:dkey(d),d,n:0})}
+  const map=Object.fromEntries(list.map(x=>[x.k,x]));rows.forEach(r=>{const x=map[dkey(r.t)];if(x)x.n++});
+  const W=620,H=220,L=30,R=8,T=10,B=26,max=Math.max(1,...list.map(x=>x.n));
+  const step=niceStep(max),top=Math.ceil(max/step)*step;
+  const bw=(W-L-R)/list.length, y=v=>T+(H-T-B)*(1-v/top);
+  let s='<svg viewBox="0 0 '+W+' '+H+'" width="100%" role="img" aria-label="Quizzes taken per day">';
+  for(let v=0;v<=top;v+=step)s+='<line class="gridline" x1="'+L+'" x2="'+(W-R)+'" y1="'+y(v)+'" y2="'+y(v)+'"/><text x="'+(L-6)+'" y="'+(y(v)+4)+'" text-anchor="end">'+v+'</text>';
+  const every=Math.ceil(list.length/8);
+  list.forEach((x,i)=>{
+    const bx=L+i*bw+Math.max(1,bw*0.12), w=Math.max(2,bw*0.76), h=(H-T-B)-(y(x.n)-T);
+    const label=x.d.toLocaleDateString([], {day:"numeric",month:"short"});
+    if(x.n>0)s+='<path class="barv" d="M'+bx+' '+(H-B)+'V'+(y(x.n)+Math.min(4,h))+'q0 -4 4 -4h'+(w-8>0?w-8:0)+'q4 0 4 4V'+(H-B)+'Z"/>';
+    s+='<rect class="hit" x="'+(L+i*bw)+'" y="'+T+'" width="'+bw+'" height="'+(H-T-B)+'" fill="transparent" data-tip="'+esc(label+": "+x.n+" quiz"+(x.n===1?"":"zes"))+'"/>';
+    if(i%every===0||i===list.length-1&&list.length<=8)s+='<text x="'+(L+i*bw+bw/2)+'" y="'+(H-8)+'" text-anchor="middle">'+esc(label)+'</text>';
+  });
+  $("dayChart").innerHTML=s+'</svg>';
+}
+function niceStep(max){const raw=max/4;const p=Math.pow(10,Math.floor(Math.log10(raw||1)));const n=raw/p;return Math.max(1,(n<=1?1:n<=2?2:n<=5?5:10)*p)}
+
+function accChart(rows){
+  const multi=new Set(rows.map(r=>r.class+"|"+r.subject)).size>1;
+  $("accTitle").textContent=multi?"Accuracy by topic · all subjects (pick a subject to focus)":"Accuracy by topic · "+className(rows[0].class)+" "+subjectName(rows[0].class,rows[0].subject);
+  const agg={};
+  rows.forEach(r=>Object.entries(r.topics||{}).forEach(([k,v])=>{const m=String(v).match(/^(\d+)\/(\d+)$/);if(!m)return;
+    const name=(multi?subjectName(r.class,r.subject)+" · ":"")+k;const a=agg[name]||(agg[name]={name,ok:0,n:0});a.ok+=+m[1];a.n+=+m[2]}));
+  let data=Object.values(agg).filter(x=>x.n).map(x=>Object.assign(x,{p:x.ok/x.n}));
+  data.sort((a,b)=>a.p-b.p);
+  const more=data.length>12?data.length-12:0;data=data.slice(0,12);
+  $("accChart").innerHTML=data.map(x=>{const pct=Math.round(x.p*100),low=pct<60;
+    return '<div class="accrow" data-tip="'+esc(x.name+": "+x.ok+" of "+x.n+" answers correct")+'"><span>'+esc(x.name)+(low?'<span class="flag">⚠ Needs work</span>':'')+'</span><span class="acctrack"><i class="'+(low?"low":"")+'" style="width:'+pct+'%"></i></span><span class="v">'+pct+'%</span></div>'}).join("")+
+    '<p class="muted" style="margin:0;font-size:13px">Weakest first. Below 60% is flagged.'+(more?' '+more+' stronger topics not shown.':'')+'</p>';
+}
+
+function studentTable(rows){
+  const q=$("search").value.trim().toLowerCase();
+  const m={};
+  rows.forEach(r=>{const k=who(r);const s=m[k]||(m[k]={name:r.name,cls:className(r.class),section:String(r.section).toUpperCase(),n:0,sum:0,easy:null,hard:null,last:r.t});
+    s.n++;s.sum+=r.percent;if(r.t>s.last)s.last=r.t;
+    if(r.level==="hard")s.hard=Math.max(s.hard??0,r.percent);else s.easy=Math.max(s.easy??0,r.percent)});
+  let list=Object.values(m).map(s=>Object.assign(s,{avg:s.sum/s.n})).filter(s=>!q||String(s.name).toLowerCase().includes(q));
+  const val=s=>sortKey==="name"||sortKey==="section"||sortKey==="cls"?String(s[sortKey]).toLowerCase():sortKey==="last"?s.last.getTime():(s[sortKey]??-1);
+  list.sort((a,b)=>val(a)<val(b)?-sortDir:val(a)>val(b)?sortDir:0);
+  const cols=[["name","Name"],["cls","Class"],["section","Section"],["n","Quizzes",1],["avg","Average",1],["easy","Best easy",1],["hard","Best hard",1],["last","Last active",1]];
+  const pc=v=>v==null?'<span class="muted">–</span>':'<span class="'+(v<60?"low":"")+'">'+Math.round(v)+'%</span>';
+  $("students").innerHTML='<thead><tr>'+cols.map(c=>'<th class="sortable'+(c[2]?" num":"")+'" data-k="'+c[0]+'" aria-sort="'+(sortKey===c[0]?(sortDir>0?"ascending":"descending"):"none")+'">'+c[1]+(sortKey===c[0]?(sortDir>0?" ▲":" ▼"):"")+'</th>').join("")+'</tr></thead><tbody>'+
+    (list.length?list.map(s=>'<tr><td>'+esc(s.name)+'</td><td>'+esc(s.cls)+'</td><td>'+esc(s.section)+'</td><td class="num">'+s.n+'</td><td class="num">'+pc(s.avg)+'</td><td class="num">'+pc(s.easy)+'</td><td class="num">'+pc(s.hard)+'</td><td class="num">'+s.last.toLocaleDateString([], {day:"numeric",month:"short"})+'</td></tr>').join(""):'<tr><td colspan="8" class="empty">No students match.</td></tr>')+'</tbody>';
+  $("students").querySelectorAll("th[data-k]").forEach(th=>th.addEventListener("click",()=>{const k=th.dataset.k;if(sortKey===k)sortDir=-sortDir;else{sortKey=k;sortDir=(k==="name"||k==="section"||k==="cls")?1:-1}studentTable(filtered())}));
+}
+
+function recentTable(rows){
+  const list=rows.slice().sort((a,b)=>b.t-a.t).slice(0,25);
+  const fmt=s=>Math.floor(s/60)+"m "+String(Math.round(s%60)).padStart(2,"0")+"s";
+  $("recent").innerHTML='<thead><tr><th>When</th><th>Name</th><th>Class</th><th>Subject</th><th>Level</th><th class="num">Score</th><th class="num">Time</th></tr></thead><tbody>'+
+    (list.length?list.map(r=>'<tr><td>'+r.t.toLocaleString([], {day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"})+'</td><td>'+esc(r.name)+'</td><td>'+esc(className(r.class)+(r.section?" – "+String(r.section).toUpperCase():""))+'</td><td>'+esc(subjectName(r.class,r.subject))+'</td><td><span class="pill '+(r.level==="hard"?"hard":"")+'">'+(r.level==="hard"?"Hard":"Easy")+'</span></td><td class="num"><span class="'+(r.percent<60?"low":"")+'">'+r.score+'/'+r.total+'</span> <span class="muted">('+Math.round(r.percent)+'%)</span></td><td class="num">'+fmt(r.seconds)+'</td></tr>').join(""):'<tr><td colspan="7" class="empty">No attempts yet.</td></tr>')+'</tbody>';
+}
+
+/* tooltip */
+const tip=$("tip");
+document.addEventListener("mousemove",e=>{const t=e.target.closest&&e.target.closest("[data-tip]");if(!t){tip.hidden=true;return}
+  tip.textContent=t.dataset.tip;tip.hidden=false;const x=Math.min(e.clientX+12,window.innerWidth-tip.offsetWidth-8);tip.style.left=x+"px";tip.style.top=(e.clientY-36)+"px"});
+
+$("loginForm").addEventListener("submit",e=>{e.preventDefault();load($("key").value)});
+["fPeriod","fClass","fSubject","fSection","fLevel"].forEach(id=>$(id).addEventListener("change",render));
+$("search").addEventListener("input",()=>studentTable(filtered()));
+$("refresh").addEventListener("click",()=>load(ss("cockpit-key")||""));
+$("logout").addEventListener("click",()=>{ss("cockpit-key",null);location.reload()});
+const saved=ss("cockpit-key");if(saved)load(saved);
+setInterval(()=>{const k=ss("cockpit-key");if(k&&!document.hidden)load(k)},120000);
+</script>
+</body>
+</html>

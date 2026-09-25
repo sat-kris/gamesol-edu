@@ -1,0 +1,1869 @@
+{
+ "id": "class9-science-ch4",
+ "class": "9",
+ "subject": "science",
+ "chapter": "Chapter 4 · Describing Motion Around Us",
+ "source": "Exploration | Grade 9, Chapter 4 (science c4.pdf)",
+ "topics": [
+  {
+   "id": "position",
+   "name": "Describing position and motion",
+   "ref": "4.1.1"
+  },
+  {
+   "id": "displacement",
+   "name": "Distance travelled and displacement",
+   "ref": "4.1.2"
+  },
+  {
+   "id": "speed",
+   "name": "Average speed and average velocity",
+   "ref": "4.1.3"
+  },
+  {
+   "id": "accel",
+   "name": "Average acceleration",
+   "ref": "4.1.4"
+  },
+  {
+   "id": "ptgraph",
+   "name": "Position–time graphs",
+   "ref": "4.2.1–4.2.2"
+  },
+  {
+   "id": "vtgraph",
+   "name": "Velocity–time graphs",
+   "ref": "4.2.3"
+  },
+  {
+   "id": "kinematics",
+   "name": "Kinematic equations",
+   "ref": "4.3"
+  },
+  {
+   "id": "circular",
+   "name": "Motion in a plane and uniform circular motion",
+   "ref": "4.4"
+  }
+ ],
+ "questions": [
+  {
+   "topic": "position",
+   "level": "easy",
+   "q": "To describe the position of an object, we need a reference point and…",
+   "a": "the distance and direction of the object from the reference point",
+   "w": [
+    "only the distance from the reference point",
+    "only the time at that instant",
+    "the speed of the object"
+   ],
+   "e": "Position = distance and direction from a fixed reference point at an instant of time."
+  },
+  {
+   "topic": "position",
+   "level": "easy",
+   "q": "An object is said to be in motion when…",
+   "a": "its position with respect to a reference point changes with time",
+   "w": [
+    "it is far away from the reference point",
+    "it has a large mass",
+    "its position with respect to a reference point stays the same"
+   ],
+   "e": "If the position changes with time, the object is in motion; if it does not change, the object is at rest."
+  },
+  {
+   "topic": "position",
+   "level": "easy",
+   "q": "On a straight line, positions to the left of the origin O are generally taken as…",
+   "a": "negative",
+   "w": [
+    "positive",
+    "zero",
+    "equal to the distance from O"
+   ],
+   "e": "Positions to the right of O are taken as positive (+) and to the left as negative (–)."
+  },
+  {
+   "topic": "position",
+   "level": "easy",
+   "q": "Which of these is an example of motion in a straight line?",
+   "a": "A ball falling vertically downwards",
+   "w": [
+    "A child on a merry-go-round",
+    "The tip of a clock's minute hand",
+    "A satellite going around the Earth"
+   ],
+   "e": "A vertically falling ball moves along a straight line – linear motion."
+  },
+  {
+   "topic": "position",
+   "level": "hard",
+   "q": "What is the difference between an instant of time and a time interval?",
+   "a": "An instant is a single clock reading; a time interval is the duration between two clock readings",
+   "w": [
+    "A time interval is a single clock reading; an instant is the duration between two readings",
+    "They mean exactly the same thing",
+    "An instant is always exactly one second long"
+   ],
+   "e": "An instant is one reading of the clock, a time interval is the duration between two instants."
+  },
+  {
+   "topic": "position",
+   "level": "hard",
+   "q": "A bag lies on the seat of a moving train. For a passenger sitting in the train, the bag is…",
+   "a": "at rest, because its position relative to the passenger does not change",
+   "w": [
+    "in motion, because the train is moving",
+    "accelerating along with the train",
+    "moving backwards"
+   ],
+   "e": "Rest and motion depend on the reference point. Relative to the passenger, the bag's position does not change."
+  },
+  {
+   "topic": "position",
+   "level": "hard",
+   "q": "“The Earth moves around the Sun.” Can a book kept on a table on the Earth be called at rest?",
+   "a": "Yes, with respect to the Earth; but it is in motion with respect to the Sun",
+   "w": [
+    "No, nothing on the Earth can ever be at rest",
+    "Yes, it is at rest with respect to every reference point",
+    "No, because the book has mass"
+   ],
+   "e": "Whether an object is at rest or in motion depends on the chosen reference point."
+  },
+  {
+   "topic": "position",
+   "level": "hard",
+   "q": "A girl's position on a straight track is –30 m. This means she is…",
+   "a": "30 m from the origin, on the negative side",
+   "w": [
+    "moving at 30 m s⁻¹ backwards",
+    "30 m from the origin, on the positive side",
+    "at the origin after 30 s"
+   ],
+   "e": "The number gives the distance from the origin and the sign gives the direction."
+  },
+  {
+   "topic": "displacement",
+   "level": "easy",
+   "q": "Displacement is…",
+   "a": "the net change in position of an object between two instants of time",
+   "w": [
+    "the total length of the path travelled",
+    "always equal to speed × time",
+    "the distance of the object from the Earth"
+   ],
+   "e": "Displacement = net change in position, with both magnitude and direction."
+  },
+  {
+   "topic": "displacement",
+   "level": "easy",
+   "q": "What is the SI unit of distance travelled and displacement?",
+   "a": "metre (m)",
+   "w": [
+    "metre per second (m s⁻¹)",
+    "second (s)",
+    "metre per second squared (m s⁻²)"
+   ],
+   "e": "Both distance travelled and displacement are measured in metres."
+  },
+  {
+   "topic": "displacement",
+   "level": "easy",
+   "q": "A ball is thrown vertically upwards and caught back at the same point. Its displacement is…",
+   "a": "zero",
+   "w": [
+    "twice the maximum height",
+    "equal to the maximum height",
+    "half the maximum height"
+   ],
+   "e": "It comes back to its starting position, so the net change in position is zero."
+  },
+  {
+   "topic": "displacement",
+   "level": "hard",
+   "q": "Which statement about displacement is ALWAYS true?",
+   "a": "Its magnitude is less than or equal to the total distance travelled",
+   "w": [
+    "It is never zero",
+    "Its magnitude can be greater than the total distance travelled",
+    "Its magnitude is less than the distance travelled in all cases"
+   ],
+   "e": "Displacement can be zero, or equal to the distance (one direction), but never more than the distance."
+  },
+  {
+   "topic": "displacement",
+   "level": "easy",
+   "q": "Total distance travelled and magnitude of displacement are equal when the object…",
+   "a": "moves in a straight line in one direction without turning back",
+   "w": [
+    "moves in a circle",
+    "returns to its starting point",
+    "moves with changing speed and turns back"
+   ],
+   "e": "If the object never turns back, the path length equals the straight-line change in position."
+  },
+  {
+   "topic": "displacement",
+   "level": "hard",
+   "q": "The fuel used up by a vehicle depends on…",
+   "a": "the total distance travelled",
+   "w": [
+    "the displacement",
+    "only the final position",
+    "only the direction of motion"
+   ],
+   "e": "The engine works for the whole path covered, so fuel depends on distance, not displacement."
+  },
+  {
+   "topic": "displacement",
+   "level": "hard",
+   "q": "An athlete runs from O to A (100 m) on a straight track and then runs back to B, which is 40 m from O. Her total distance and displacement are…",
+   "a": "160 m and 40 m",
+   "w": [
+    "40 m and 160 m",
+    "140 m and 60 m",
+    "160 m and 0 m"
+   ],
+   "e": "Distance = OA + AB = 100 m + 60 m = 160 m; displacement = OB = 40 m in the positive direction."
+  },
+  {
+   "topic": "displacement",
+   "level": "hard",
+   "q": "A student runs from the ground floor to the 4th floor, then comes down to the 2nd floor. Each floor is 3 m high. Total vertical distance and displacement?",
+   "a": "18 m; 6 m upwards",
+   "w": [
+    "12 m; 6 m upwards",
+    "18 m; 12 m upwards",
+    "6 m; 18 m upwards"
+   ],
+   "e": "Up 4 floors = 12 m, down 2 floors = 6 m, so distance = 18 m. Final position is 2 floors = 6 m above the start."
+  },
+  {
+   "topic": "displacement",
+   "level": "easy",
+   "type": "calc",
+   "q": "Father walks to a shop {d} m away on a straight road, comes back home for a bag, walks to the shop again and then returns home. What is the total distance he travelled?",
+   "vars": {
+    "d": {
+     "of": [
+      150,
+      200,
+      250,
+      300,
+      400,
+      500
+     ]
+    }
+   },
+   "answer": "4*d",
+   "wrong": [
+    "2*d",
+    "3*d",
+    "0"
+   ],
+   "unit": "m",
+   "e": "He covers the home–shop distance 4 times: 4 × {d} m = {ans} m. His displacement is 0 m because he ends at home.",
+   "dp": 0
+  },
+  {
+   "topic": "displacement",
+   "level": "hard",
+   "type": "calc",
+   "q": "Father walks to a shop {d} m away on a straight road, comes back home for a bag, walks to the shop again and then returns home. What is his displacement from home?",
+   "vars": {
+    "d": {
+     "of": [
+      150,
+      200,
+      250,
+      300,
+      400,
+      500
+     ]
+    }
+   },
+   "answer": "0",
+   "wrong": [
+    "4*d",
+    "2*d",
+    "d"
+   ],
+   "unit": "m",
+   "e": "He ends where he started, so the net change in position is 0 m (even though he walked 4 × {d} m).",
+   "dp": 0
+  },
+  {
+   "topic": "speed",
+   "level": "easy",
+   "q": "Average speed is equal to…",
+   "a": "total distance travelled ÷ time interval",
+   "w": [
+    "displacement ÷ time interval",
+    "time interval ÷ distance travelled",
+    "distance travelled × time interval"
+   ],
+   "e": "Average speed = total distance travelled / time interval (Eq. 4.1)."
+  },
+  {
+   "topic": "speed",
+   "level": "easy",
+   "q": "Average velocity is equal to…",
+   "a": "displacement ÷ time interval",
+   "w": [
+    "total distance travelled ÷ time interval",
+    "change in velocity ÷ time interval",
+    "speed × time interval"
+   ],
+   "e": "Average velocity = change in position (displacement) / time interval (Eq. 4.2a)."
+  },
+  {
+   "topic": "speed",
+   "level": "easy",
+   "q": "The SI unit of average velocity is…",
+   "a": "m s⁻¹",
+   "w": [
+    "m s⁻²",
+    "km",
+    "s m⁻¹"
+   ],
+   "e": "Velocity = metres ÷ seconds, so its SI unit is m s⁻¹ (m/s)."
+  },
+  {
+   "topic": "speed",
+   "level": "easy",
+   "q": "Which of these quantities needs a direction to be described completely?",
+   "a": "Velocity",
+   "w": [
+    "Speed",
+    "Distance travelled",
+    "Time interval"
+   ],
+   "e": "Velocity has magnitude and direction; speed, distance and time have only numerical values."
+  },
+  {
+   "topic": "speed",
+   "level": "easy",
+   "q": "An object moving in a straight line covers equal distances in equal intervals of time. Its motion is…",
+   "a": "uniform motion",
+   "w": [
+    "non-uniform motion",
+    "accelerated motion",
+    "circular motion"
+   ],
+   "e": "Equal distances in equal time intervals means constant speed – uniform motion."
+  },
+  {
+   "topic": "speed",
+   "level": "hard",
+   "q": "Sarang swims from one end of a 25 m pool to the other end and back in 50 s. His average speed and average velocity are…",
+   "a": "1 m s⁻¹ and 0 m s⁻¹",
+   "w": [
+    "0 m s⁻¹ and 1 m s⁻¹",
+    "0.5 m s⁻¹ and 0 m s⁻¹",
+    "1 m s⁻¹ and 1 m s⁻¹"
+   ],
+   "e": "Distance = 50 m, so speed = 50/50 = 1 m s⁻¹. He returns to the start, so displacement and average velocity are 0."
+  },
+  {
+   "topic": "speed",
+   "level": "hard",
+   "q": "When can the average velocity of an object be zero while its average speed is not zero?",
+   "a": "When the object returns to its starting point",
+   "w": [
+    "When it moves in one direction only",
+    "When it is at rest",
+    "When its speed is constant in a straight line"
+   ],
+   "e": "Returning to the start gives zero displacement (zero average velocity) though distance is not zero."
+  },
+  {
+   "topic": "speed",
+   "level": "hard",
+   "q": "The magnitude of average velocity equals the average speed when the object…",
+   "a": "moves along a straight line in one direction",
+   "w": [
+    "moves in a circle",
+    "comes back to its starting point",
+    "changes direction many times"
+   ],
+   "e": "Only then are distance travelled and magnitude of displacement equal."
+  },
+  {
+   "topic": "speed",
+   "level": "hard",
+   "q": "The reading of a vehicle's speedometer is nearly equal to…",
+   "a": "the magnitude of its velocity at that instant",
+   "w": [
+    "its average velocity for the whole trip",
+    "the total distance travelled",
+    "its acceleration"
+   ],
+   "e": "A speedometer shows the speed at an instant; the direction of the tyres gives the direction of velocity."
+  },
+  {
+   "topic": "speed",
+   "level": "easy",
+   "type": "calc",
+   "q": "Convert {k} km h⁻¹ into m s⁻¹.",
+   "vars": {
+    "k": {
+     "of": [
+      18,
+      36,
+      54,
+      72,
+      90,
+      108,
+      126,
+      144
+     ]
+    }
+   },
+   "answer": "k*5/18",
+   "wrong": [
+    "k*18/5",
+    "k/60",
+    "k*1000/60"
+   ],
+   "unit": "m s⁻¹",
+   "e": "1 km h⁻¹ = 1000 m / 3600 s = 5/18 m s⁻¹, so {k} × 5/18 = {ans} m s⁻¹.",
+   "dp": 1
+  },
+  {
+   "topic": "speed",
+   "level": "hard",
+   "type": "calc",
+   "q": "During a road trip you drive {d} km north in {t1} h and then {d} km south in {t2} h. What is your average speed for the whole trip?",
+   "vars": {
+    "d": {
+     "of": [
+      100,
+      150,
+      200,
+      240,
+      300
+     ]
+    },
+    "t1": [
+     2,
+     4,
+     1
+    ],
+    "t2": [
+     1,
+     3,
+     1
+    ]
+   },
+   "answer": "2*d/(t1+t2)",
+   "wrong": [
+    "0",
+    "d/(t1+t2)",
+    "2*d/t1"
+   ],
+   "unit": "km h⁻¹",
+   "e": "Total distance = 2 × {d} = {dd} km; time = {t1} + {t2} = {tt} h. Average speed = {dd}/{tt} = {ans} km h⁻¹. (Average velocity is 0 – you are back at the start.)",
+   "dp": 1,
+   "derive": {
+    "dd": "2*d",
+    "tt": "t1+t2"
+   }
+  },
+  {
+   "topic": "speed",
+   "level": "hard",
+   "type": "calc",
+   "q": "Two postmen start {D} yojanas apart and walk towards each other. One walks {a} yojanas per day and the other {b} yojanas per day. After how many days will they meet?",
+   "vars": {
+    "a": [
+     6,
+     10,
+     1
+    ],
+    "b": [
+     3,
+     5,
+     1
+    ],
+    "n": [
+     8,
+     20,
+     1
+    ]
+   },
+   "answer": "n",
+   "wrong": [
+    "D/a",
+    "D/b",
+    "D/(a-b)"
+   ],
+   "unit": "days",
+   "e": "Together they cover {a} + {b} = {s} yojanas per day, so time = {D} ÷ {s} = {ans} days. (Ganitakaumudi, 14th century CE.)",
+   "dp": 0,
+   "derive": {
+    "s": "a+b",
+    "D": "(a+b)*n"
+   }
+  },
+  {
+   "topic": "speed",
+   "level": "easy",
+   "type": "calc",
+   "q": "A cyclist covers {s} m in {t} s. What is the average speed?",
+   "vars": {
+    "v": [
+     2,
+     8,
+     1
+    ],
+    "t": [
+     20,
+     60,
+     10
+    ]
+   },
+   "answer": "v",
+   "wrong": [
+    "v*2",
+    "t/s",
+    "s*t/100"
+   ],
+   "unit": "m s⁻¹",
+   "e": "Average speed = distance ÷ time = {s} m ÷ {t} s = {ans} m s⁻¹.",
+   "dp": 1,
+   "derive": {
+    "s": "v*t"
+   }
+  },
+  {
+   "topic": "accel",
+   "level": "easy",
+   "q": "Average acceleration is equal to…",
+   "a": "change in velocity ÷ time interval",
+   "w": [
+    "change in position ÷ time interval",
+    "velocity × time interval",
+    "distance ÷ time interval"
+   ],
+   "e": "a = (v − u) / (t₂ − t₁) (Eq. 4.3c)."
+  },
+  {
+   "topic": "accel",
+   "level": "easy",
+   "q": "The SI unit of acceleration is…",
+   "a": "m s⁻²",
+   "w": [
+    "m s⁻¹",
+    "m² s⁻¹",
+    "s m⁻²"
+   ],
+   "e": "Change in velocity (m s⁻¹) ÷ time (s) = m s⁻²."
+  },
+  {
+   "topic": "accel",
+   "level": "easy",
+   "q": "A bus moves on a straight highway at a constant velocity of 20 m s⁻¹. Its acceleration is…",
+   "a": "zero",
+   "w": [
+    "20 m s⁻²",
+    "–20 m s⁻²",
+    "cannot be found"
+   ],
+   "e": "Acceleration depends on how quickly velocity changes, not on how fast the object moves. Constant velocity → zero acceleration."
+  },
+  {
+   "topic": "accel",
+   "level": "hard",
+   "q": "A car moving forward on a straight road slows down. The direction of its acceleration is…",
+   "a": "opposite to the direction of its velocity",
+   "w": [
+    "the same as the direction of its velocity",
+    "zero, because it is still moving forward",
+    "at right angles to its velocity"
+   ],
+   "e": "When the magnitude of velocity decreases, acceleration acts opposite to velocity (it is negative)."
+  },
+  {
+   "topic": "accel",
+   "level": "hard",
+   "q": "An object dropped from a height gains 9.8 m s⁻¹ of velocity every second. Its acceleration is…",
+   "a": "constant, 9.8 m s⁻² downwards",
+   "w": [
+    "increasing every second",
+    "zero",
+    "9.8 m s⁻¹ upwards"
+   ],
+   "e": "Equal change in velocity in equal intervals = constant acceleration; this is g, acting downwards."
+  },
+  {
+   "topic": "accel",
+   "level": "hard",
+   "q": "A girl's scooter speedometer shows a constant reading. Can the scooter be accelerating?",
+   "a": "Yes, if its direction of motion is changing, for example on a turn",
+   "w": [
+    "No, constant speed always means zero acceleration",
+    "Only if it is going uphill",
+    "Only when the speedometer reads zero"
+   ],
+   "e": "Velocity changes if its magnitude OR direction changes, so a turning scooter accelerates even at constant speed."
+  },
+  {
+   "topic": "accel",
+   "level": "easy",
+   "q": "The acceleration of an object can be caused by a change in…",
+   "a": "the magnitude of velocity, its direction, or both",
+   "w": [
+    "only the magnitude of velocity",
+    "only the position of the object",
+    "only the mass of the object"
+   ],
+   "e": "Acceleration comes from any change in velocity – magnitude, direction or both."
+  },
+  {
+   "topic": "accel",
+   "level": "easy",
+   "type": "calc",
+   "q": "A car starts from rest and reaches a velocity of {v} m s⁻¹ in {t} s. What is its average acceleration?",
+   "vars": {
+    "a": {
+     "of": [
+      1,
+      1.5,
+      2,
+      2.5,
+      3,
+      4,
+      5
+     ]
+    },
+    "t": [
+     2,
+     10,
+     1
+    ]
+   },
+   "answer": "a",
+   "wrong": [
+    "v*t",
+    "v/(2*t)",
+    "t/v"
+   ],
+   "unit": "m s⁻²",
+   "e": "a = (v − u)/t = ({v} − 0)/{t} = {ans} m s⁻².",
+   "dp": 2,
+   "derive": {
+    "v": "a*t"
+   }
+  },
+  {
+   "topic": "accel",
+   "level": "hard",
+   "type": "calc",
+   "q": "A bus moving at {u} km h⁻¹ speeds up to {v} km h⁻¹ in {t} s. What is its average acceleration?",
+   "vars": {
+    "u": {
+     "of": [
+      18,
+      36,
+      54
+     ]
+    },
+    "dv": {
+     "of": [
+      18,
+      36
+     ]
+    },
+    "t": {
+     "of": [
+      5,
+      10,
+      20
+     ]
+    }
+   },
+   "answer": "(v-u)*5/18/t",
+   "wrong": [
+    "(v-u)/t",
+    "(v+u)*5/18/t",
+    "(v-u)*18/5/t"
+   ],
+   "unit": "m s⁻²",
+   "e": "u = {u} km h⁻¹ = {um} m s⁻¹, v = {v} km h⁻¹ = {vm} m s⁻¹. a = ({vm} − {um}) / {t} = {ans} m s⁻².",
+   "dp": 2,
+   "derive": {
+    "v": "u+dv",
+    "um": "u*5/18",
+    "vm": "(u+dv)*5/18"
+   }
+  },
+  {
+   "topic": "accel",
+   "level": "hard",
+   "type": "calc",
+   "q": "A bus moving at {u} km h⁻¹ applies brakes and stops in {t} s. What is its average acceleration?",
+   "vars": {
+    "u": {
+     "of": [
+      36,
+      54,
+      72,
+      90
+     ]
+    },
+    "t": {
+     "of": [
+      2,
+      4,
+      5,
+      10
+     ]
+    }
+   },
+   "answer": "-u*5/18/t",
+   "wrong": [
+    "u*5/18/t",
+    "-u/t",
+    "-u*18/5/t"
+   ],
+   "unit": "m s⁻²",
+   "e": "u = {u} km h⁻¹ = {um} m s⁻¹, v = 0. a = (0 − {um}) / {t} = {ans} m s⁻². The minus sign means acceleration is opposite to velocity.",
+   "dp": 2,
+   "derive": {
+    "um": "u*5/18"
+   }
+  },
+  {
+   "topic": "ptgraph",
+   "level": "easy",
+   "q": "A straight sloping line on a position–time graph shows that the object is moving with…",
+   "a": "constant velocity",
+   "w": [
+    "constant acceleration",
+    "increasing velocity",
+    "zero velocity"
+   ],
+   "e": "Equal displacements in equal time intervals give a straight line: constant velocity."
+  },
+  {
+   "topic": "ptgraph",
+   "level": "easy",
+   "q": "What does the slope of a position–time graph give?",
+   "a": "Velocity",
+   "w": [
+    "Acceleration",
+    "Displacement",
+    "Time"
+   ],
+   "e": "Slope = change in position ÷ change in time = velocity."
+  },
+  {
+   "topic": "ptgraph",
+   "level": "easy",
+   "q": "What does this position–time graph tell you about the vehicle?",
+   "a": "It is at rest, 40 m from the origin",
+   "w": [
+    "It is moving at 40 m s⁻¹",
+    "It is moving with constant acceleration",
+    "It is at rest at the origin"
+   ],
+   "e": "A line parallel to the time axis means the position does not change: the object is stationary at 40 m.",
+   "graph": {
+    "x": "Time (s)",
+    "y": "Position (m)",
+    "lines": [
+     {
+      "pts": [
+       [
+        0,
+        40
+       ],
+       [
+        3,
+        40
+       ]
+      ]
+     }
+    ],
+    "ymax": 60
+   }
+  },
+  {
+   "topic": "ptgraph",
+   "level": "hard",
+   "q": "The position–time graph of a car is a curve that gets steeper with time. This shows…",
+   "a": "its velocity is increasing – it is accelerating",
+   "w": [
+    "it is moving with constant velocity",
+    "it is at rest",
+    "its velocity is decreasing"
+   ],
+   "e": "Increasing displacement in equal time intervals means increasing velocity (accelerated motion).",
+   "graph": {
+    "x": "Time (s)",
+    "y": "Position (m)",
+    "lines": [
+     {
+      "pts": [
+       [
+        0,
+        0
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        4,
+        4
+       ],
+       [
+        6,
+        9
+       ],
+       [
+        8,
+        16
+       ],
+       [
+        10,
+        25
+       ],
+       [
+        12,
+        36
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "topic": "ptgraph",
+   "level": "hard",
+   "q": "Look at the position–time graphs of objects A and B. Which one has the greater velocity?",
+   "a": "B, because its line is steeper",
+   "w": [
+    "A, because its line is lower",
+    "Both, because they start from the origin",
+    "It cannot be found without a table"
+   ],
+   "e": "In the same time interval B's displacement is larger, so the slope (velocity) of B is greater.",
+   "graph": {
+    "x": "Time (s)",
+    "y": "Position (m)",
+    "lines": [
+     {
+      "label": "A",
+      "pts": [
+       [
+        0,
+        0
+       ],
+       [
+        10,
+        30
+       ]
+      ]
+     },
+     {
+      "label": "B",
+      "pts": [
+       [
+        0,
+        0
+       ],
+       [
+        10,
+        60
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "topic": "ptgraph",
+   "level": "easy",
+   "q": "A position–time graph shows…",
+   "a": "how the position of an object changes with time",
+   "w": [
+    "the actual route followed by the object",
+    "the shape of the road",
+    "the direction of the wind"
+   ],
+   "e": "A graph is not a route map: it shows position with respect to the origin at each instant."
+  },
+  {
+   "topic": "ptgraph",
+   "level": "hard",
+   "q": "Objects A and B move along a straight line (see graph). Which statement is correct for the 10 s interval?",
+   "a": "Their average velocities are equal, but B has the greater average speed",
+   "w": [
+    "Their average speeds are equal",
+    "A has the greater average velocity",
+    "Both have zero average velocity"
+   ],
+   "e": "Same start and end positions → same displacement → equal average velocity. B goes to 50 m and comes back to 40 m, so it travels 60 m (more distance).",
+   "graph": {
+    "x": "Time (s)",
+    "y": "Position (m)",
+    "lines": [
+     {
+      "label": "A",
+      "pts": [
+       [
+        0,
+        0
+       ],
+       [
+        10,
+        40
+       ]
+      ]
+     },
+     {
+      "label": "B",
+      "pts": [
+       [
+        0,
+        0
+       ],
+       [
+        6,
+        50
+       ],
+       [
+        10,
+        40
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "topic": "ptgraph",
+   "level": "easy",
+   "type": "calc",
+   "q": "Using the position–time graph, find the velocity of the vehicle.",
+   "vars": {
+    "v": {
+     "of": [
+      5,
+      10,
+      15,
+      20,
+      25
+     ]
+    },
+    "t": [
+     4,
+     8,
+     1
+    ]
+   },
+   "answer": "v",
+   "wrong": [
+    "s",
+    "t",
+    "s*t"
+   ],
+   "unit": "m s⁻¹",
+   "e": "Slope = change in position ÷ change in time = {s} m ÷ {t} s = {ans} m s⁻¹.",
+   "dp": 1,
+   "derive": {
+    "s": "v*t"
+   },
+   "graph": {
+    "x": "Time (s)",
+    "y": "Position (m)",
+    "lines": [
+     {
+      "pts": [
+       [
+        0,
+        0
+       ],
+       [
+        "t",
+        "s"
+       ]
+      ]
+     }
+    ],
+    "mark": true
+   }
+  },
+  {
+   "topic": "vtgraph",
+   "level": "easy",
+   "q": "What does the slope of a velocity–time graph give?",
+   "a": "Acceleration",
+   "w": [
+    "Displacement",
+    "Velocity",
+    "Distance"
+   ],
+   "e": "Slope = change in velocity ÷ change in time = acceleration."
+  },
+  {
+   "topic": "vtgraph",
+   "level": "easy",
+   "q": "The area enclosed between a velocity–time graph and the time axis gives…",
+   "a": "displacement",
+   "w": [
+    "acceleration",
+    "velocity",
+    "time"
+   ],
+   "e": "Area = velocity × time = displacement."
+  },
+  {
+   "topic": "vtgraph",
+   "level": "easy",
+   "q": "A velocity–time graph that is a straight line parallel to the time axis shows…",
+   "a": "constant velocity and zero acceleration",
+   "w": [
+    "the object is at rest",
+    "constant non-zero acceleration",
+    "decreasing velocity"
+   ],
+   "e": "No change in height → zero slope → acceleration is zero; velocity stays constant."
+  },
+  {
+   "topic": "vtgraph",
+   "level": "hard",
+   "q": "What does this velocity–time graph show?",
+   "a": "Velocity decreasing with constant acceleration opposite to the velocity",
+   "w": [
+    "Velocity increasing with constant acceleration",
+    "Constant velocity",
+    "The object is moving backwards"
+   ],
+   "e": "A straight line sloping down: velocity decreases by equal amounts in equal times (negative, constant acceleration).",
+   "graph": {
+    "x": "Time (s)",
+    "y": "Velocity (m s⁻¹)",
+    "lines": [
+     {
+      "pts": [
+       [
+        0,
+        15
+       ],
+       [
+        30,
+        0
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "topic": "vtgraph",
+   "level": "easy",
+   "type": "calc",
+   "q": "The velocity–time graph of a car is shown. What is its displacement in the time shown?",
+   "vars": {
+    "v": {
+     "of": [
+      5,
+      10,
+      15,
+      20,
+      25
+     ]
+    },
+    "t": [
+     3,
+     8,
+     1
+    ]
+   },
+   "answer": "v*t",
+   "wrong": [
+    "v",
+    "v*t/2",
+    "v+t"
+   ],
+   "unit": "m",
+   "e": "Displacement = area of the rectangle = {v} m s⁻¹ × {t} s = {ans} m.",
+   "dp": 0,
+   "graph": {
+    "x": "Time (s)",
+    "y": "Velocity (m s⁻¹)",
+    "lines": [
+     {
+      "pts": [
+       [
+        0,
+        "v"
+       ],
+       [
+        "t",
+        "v"
+       ]
+      ]
+     }
+    ],
+    "fill": true,
+    "ymin0": true
+   }
+  },
+  {
+   "topic": "vtgraph",
+   "level": "easy",
+   "type": "calc",
+   "q": "A car starts from rest. Using the velocity–time graph, find its acceleration.",
+   "vars": {
+    "a": {
+     "of": [
+      0.5,
+      1,
+      2,
+      2.5,
+      4,
+      5
+     ]
+    },
+    "t": {
+     "of": [
+      4,
+      6,
+      8,
+      10,
+      12
+     ]
+    }
+   },
+   "answer": "a",
+   "wrong": [
+    "v*t",
+    "v*t/2",
+    "t/v"
+   ],
+   "unit": "m s⁻²",
+   "e": "Slope = change in velocity ÷ time = ({v} − 0) ÷ {t} = {ans} m s⁻².",
+   "dp": 2,
+   "derive": {
+    "v": "a*t"
+   },
+   "graph": {
+    "x": "Time (s)",
+    "y": "Velocity (m s⁻¹)",
+    "lines": [
+     {
+      "pts": [
+       [
+        0,
+        0
+       ],
+       [
+        "t",
+        "v"
+       ]
+      ]
+     }
+    ],
+    "mark": true
+   }
+  },
+  {
+   "topic": "vtgraph",
+   "level": "hard",
+   "type": "calc",
+   "q": "A car starts from rest. Using the velocity–time graph, find its displacement in the time shown.",
+   "vars": {
+    "v": {
+     "of": [
+      10,
+      12,
+      15,
+      20,
+      30
+     ]
+    },
+    "t": {
+     "of": [
+      4,
+      6,
+      8,
+      10
+     ]
+    }
+   },
+   "answer": "v*t/2",
+   "wrong": [
+    "v*t",
+    "v/t",
+    "v*t*2"
+   ],
+   "unit": "m",
+   "e": "Displacement = area of the triangle = ½ × {t} s × {v} m s⁻¹ = {ans} m.",
+   "dp": 1,
+   "graph": {
+    "x": "Time (s)",
+    "y": "Velocity (m s⁻¹)",
+    "lines": [
+     {
+      "pts": [
+       [
+        0,
+        0
+       ],
+       [
+        "t",
+        "v"
+       ]
+      ]
+     }
+    ],
+    "fill": true,
+    "mark": true
+   }
+  },
+  {
+   "topic": "vtgraph",
+   "level": "hard",
+   "type": "calc",
+   "q": "Using the velocity–time graph, find the displacement of the object between 0 s and {t} s.",
+   "vars": {
+    "u": {
+     "of": [
+      2,
+      4,
+      5,
+      6,
+      10
+     ]
+    },
+    "dv": {
+     "of": [
+      4,
+      5,
+      6,
+      10
+     ]
+    },
+    "t": {
+     "of": [
+      4,
+      5,
+      8,
+      10
+     ]
+    }
+   },
+   "answer": "(u+v)*t/2",
+   "wrong": [
+    "v*t",
+    "u*t",
+    "(v-u)*t/2"
+   ],
+   "unit": "m",
+   "e": "Area = rectangle + triangle = ({u} × {t}) + ½ × {t} × ({v} − {u}) = {ans} m.",
+   "dp": 1,
+   "derive": {
+    "v": "u+dv"
+   },
+   "graph": {
+    "x": "Time (s)",
+    "y": "Velocity (m s⁻¹)",
+    "lines": [
+     {
+      "pts": [
+       [
+        0,
+        "u"
+       ],
+       [
+        "t",
+        "v"
+       ]
+      ]
+     }
+    ],
+    "fill": true,
+    "mark": true,
+    "ymin0": true
+   }
+  },
+  {
+   "topic": "vtgraph",
+   "level": "hard",
+   "type": "calc",
+   "q": "A car starts from rest and speeds up uniformly to {v} m s⁻¹ in {t1} s, moves at this velocity for {t2} s, then brakes uniformly and stops in {t3} s. Find the total distance travelled.",
+   "vars": {
+    "v": {
+     "of": [
+      10,
+      12,
+      20,
+      30
+     ]
+    },
+    "t1": {
+     "of": [
+      4,
+      5,
+      6
+     ]
+    },
+    "t2": {
+     "of": [
+      10,
+      15,
+      20
+     ]
+    },
+    "t3": {
+     "of": [
+      4,
+      6,
+      8
+     ]
+    }
+   },
+   "answer": "v*t1/2+v*t2+v*t3/2",
+   "wrong": [
+    "v*(t1+t2+t3)",
+    "v*t2",
+    "v*(t1+t3)/2"
+   ],
+   "unit": "m",
+   "e": "Area under the v–t graph = ½×{t1}×{v} + {t2}×{v} + ½×{t3}×{v} = {ans} m.",
+   "dp": 0,
+   "graph": {
+    "x": "Time (s)",
+    "y": "Velocity (m s⁻¹)",
+    "lines": [
+     {
+      "pts": [
+       [
+        0,
+        0
+       ],
+       [
+        "t1",
+        "v"
+       ],
+       [
+        "t1+t2",
+        "v"
+       ],
+       [
+        "t1+t2+t3",
+        0
+       ]
+      ]
+     }
+    ],
+    "fill": true
+   }
+  },
+  {
+   "topic": "kinematics",
+   "level": "easy",
+   "q": "Which kinematic equation gives the final velocity v?",
+   "a": "v = u + at",
+   "w": [
+    "v = u − at²",
+    "s = ut + ½at²",
+    "v = at − u"
+   ],
+   "e": "From a = (v − u)/t we get v = u + at (Eq. 4.4a)."
+  },
+  {
+   "topic": "kinematics",
+   "level": "easy",
+   "q": "The kinematic equations can be used only when…",
+   "a": "the acceleration is constant",
+   "w": [
+    "the velocity is constant",
+    "the object is at rest",
+    "the motion is circular"
+   ],
+   "e": "They were derived for motion in a straight line with constant acceleration."
+  },
+  {
+   "topic": "kinematics",
+   "level": "hard",
+   "q": "Which equation relates v, u, a and s without using time t?",
+   "a": "v² = u² + 2as",
+   "w": [
+    "v = u + at",
+    "s = ut + ½at²",
+    "v² = u² − 2at"
+   ],
+   "e": "Eliminating t from Eq. 4.4a and 4.4b gives v² = u² + 2as."
+  },
+  {
+   "topic": "kinematics",
+   "level": "hard",
+   "q": "The equation s = ½(u + v)t can be derived using the area of a…",
+   "a": "trapezium under the velocity–time graph",
+   "w": [
+    "triangle under the position–time graph",
+    "circle",
+    "rectangle on the position–time graph"
+   ],
+   "e": "The area under a straight v–t line from u to v is a trapezium: ½(u + v) × t."
+  },
+  {
+   "topic": "kinematics",
+   "level": "easy",
+   "q": "The stopping distance of a vehicle after brakes are applied depends on…",
+   "a": "its speed, the road surface, the braking capacity and the driver's reaction time",
+   "w": [
+    "only the colour of the vehicle",
+    "only the driver's age",
+    "only the size of the engine"
+   ],
+   "e": "That is why a safe distance from the vehicle ahead must be increased at higher speeds."
+  },
+  {
+   "topic": "kinematics",
+   "level": "hard",
+   "q": "With the same braking acceleration, if a car's speed doubles, its braking distance becomes…",
+   "a": "four times",
+   "w": [
+    "two times",
+    "half",
+    "the same"
+   ],
+   "e": "From v² = u² + 2as with v = 0, s = u²/2|a|. Doubling u makes s four times (e.g. 28.1 m → 112.5 m)."
+  },
+  {
+   "topic": "kinematics",
+   "level": "easy",
+   "type": "calc",
+   "q": "A body starts with a velocity of {u} m s⁻¹ and accelerates at {a} m s⁻² for {t} s. What is its final velocity?",
+   "vars": {
+    "u": [
+     0,
+     10,
+     2
+    ],
+    "a": {
+     "of": [
+      1,
+      2,
+      3,
+      0.5
+     ]
+    },
+    "t": [
+     2,
+     10,
+     1
+    ]
+   },
+   "answer": "u+a*t",
+   "wrong": [
+    "u-a*t",
+    "a*t",
+    "u+a*t*t"
+   ],
+   "unit": "m s⁻¹",
+   "e": "v = u + at = {u} + {a} × {t} = {ans} m s⁻¹.",
+   "dp": 1
+  },
+  {
+   "topic": "kinematics",
+   "level": "easy",
+   "type": "calc",
+   "q": "A car starts from rest with a constant acceleration of {a} m s⁻². How far does it travel in {t} s?",
+   "vars": {
+    "a": {
+     "of": [
+      1,
+      2,
+      4,
+      0.5
+     ]
+    },
+    "t": [
+     2,
+     10,
+     2
+    ]
+   },
+   "answer": "a*t*t/2",
+   "wrong": [
+    "a*t",
+    "a*t*t",
+    "a*t/2"
+   ],
+   "unit": "m",
+   "e": "s = ut + ½at² = 0 + ½ × {a} × {t}² = {ans} m.",
+   "dp": 1
+  },
+  {
+   "topic": "kinematics",
+   "level": "hard",
+   "type": "calc",
+   "q": "A car starts from rest and its velocity reaches {v} m s⁻¹ in {t} s. What distance does it cover in this time?",
+   "vars": {
+    "a": {
+     "of": [
+      2,
+      3,
+      4
+     ]
+    },
+    "t": {
+     "of": [
+      4,
+      5,
+      6
+     ]
+    }
+   },
+   "answer": "v*t/2",
+   "wrong": [
+    "v*t",
+    "a*t",
+    "v*v/a"
+   ],
+   "unit": "m",
+   "e": "a = {v}/{t} = {a} m s⁻². s = ½at² = ½ × {a} × {t}² = {ans} m.",
+   "dp": 1,
+   "derive": {
+    "v": "a*t"
+   }
+  },
+  {
+   "topic": "kinematics",
+   "level": "hard",
+   "type": "calc",
+   "q": "A car moving at {u} km h⁻¹ brakes with an acceleration of –{a} m s⁻². How far does it travel before stopping?",
+   "vars": {
+    "u": {
+     "of": [
+      36,
+      54,
+      72,
+      108
+     ]
+    },
+    "a": {
+     "of": [
+      2.5,
+      4,
+      5
+     ]
+    }
+   },
+   "answer": "(u*5/18)**2/(2*a)",
+   "wrong": [
+    "u*5/18/a",
+    "(u*5/18)**2/a",
+    "u*u/(2*a)"
+   ],
+   "unit": "m",
+   "e": "u = {u} km h⁻¹ = {um} m s⁻¹, v = 0. From v² = u² + 2as: s = u²/2a = {um}² ÷ (2 × {a}) = {ans} m.",
+   "dp": 1,
+   "derive": {
+    "um": "u*5/18"
+   }
+  },
+  {
+   "topic": "kinematics",
+   "level": "hard",
+   "type": "calc",
+   "q": "A motorbike moving at {u} m s⁻¹ with constant acceleration stops after travelling {s} m. What is its acceleration?",
+   "vars": {
+    "u": {
+     "of": [
+      10,
+      14,
+      20,
+      28
+     ]
+    },
+    "a": {
+     "of": [
+      2,
+      4,
+      5
+     ]
+    }
+   },
+   "answer": "-a",
+   "wrong": [
+    "a",
+    "-u/s",
+    "-u*u/s"
+   ],
+   "unit": "m s⁻²",
+   "e": "0 = u² + 2as → a = −u²/2s = −{u}² ÷ (2 × {s}) = {ans} m s⁻².",
+   "dp": 2,
+   "derive": {
+    "s": "u*u/(2*a)"
+   }
+  },
+  {
+   "topic": "kinematics",
+   "level": "hard",
+   "type": "calc",
+   "q": "A truck slows down uniformly from {u} km h⁻¹ to {v} km h⁻¹ in {t} s. How far does it travel in this time?",
+   "vars": {
+    "u": {
+     "of": [
+      54,
+      72
+     ]
+    },
+    "dv": {
+     "of": [
+      18,
+      36
+     ]
+    },
+    "t": {
+     "of": [
+      20,
+      30,
+      36
+     ]
+    }
+   },
+   "answer": "((u*5/18)+(v*5/18))/2*t",
+   "wrong": [
+    "(u-v)*5/18*t",
+    "(u+v)/2*t",
+    "v*5/18*t"
+   ],
+   "unit": "m",
+   "e": "u = {um} m s⁻¹, v = {vm} m s⁻¹. s = ½(u + v)t = ½ × ({um} + {vm}) × {t} = {ans} m.",
+   "dp": 0,
+   "derive": {
+    "v": "u-dv",
+    "um": "u*5/18",
+    "vm": "(u-dv)*5/18"
+   }
+  },
+  {
+   "topic": "kinematics",
+   "level": "hard",
+   "type": "calc",
+   "q": "A bus at {u} km h⁻¹: the driver takes {tr} s to react, then brakes at –{a} m s⁻². What is the total distance covered before it stops?",
+   "vars": {
+    "u": {
+     "of": [
+      36,
+      54,
+      72
+     ]
+    },
+    "tr": {
+     "of": [
+      0.5,
+      1
+     ]
+    },
+    "a": {
+     "of": [
+      2.5,
+      5
+     ]
+    }
+   },
+   "answer": "u*5/18*tr+(u*5/18)**2/(2*a)",
+   "wrong": [
+    "(u*5/18)**2/(2*a)",
+    "u*5/18*tr",
+    "u*tr+(u*u)/(2*a)"
+   ],
+   "unit": "m",
+   "e": "Reaction distance = {um} × {tr} = {rd} m. Braking distance = {um}² ÷ (2 × {a}) = {bd} m. Total = {ans} m.",
+   "dp": 1,
+   "derive": {
+    "um": "u*5/18",
+    "rd": "u*5/18*tr",
+    "bd": "(u*5/18)**2/(2*a)"
+   }
+  },
+  {
+   "topic": "circular",
+   "level": "easy",
+   "q": "When an object moves in a circular path with constant speed, its motion is called…",
+   "a": "uniform circular motion",
+   "w": [
+    "uniform linear motion",
+    "oscillatory motion",
+    "non-uniform motion"
+   ],
+   "e": "Circular path + constant (uniform) speed = uniform circular motion."
+  },
+  {
+   "topic": "circular",
+   "level": "easy",
+   "q": "In uniform circular motion, what changes continuously?",
+   "a": "The direction of velocity",
+   "w": [
+    "The speed",
+    "The radius of the circle",
+    "Nothing changes"
+   ],
+   "e": "Speed is constant; only the direction of velocity keeps changing."
+  },
+  {
+   "topic": "circular",
+   "level": "hard",
+   "q": "Is uniform circular motion an accelerated motion?",
+   "a": "Yes, because the direction of velocity changes continuously",
+   "w": [
+    "No, because the speed is constant",
+    "Only when the object speeds up",
+    "Only for planets"
+   ],
+   "e": "Any change in velocity – even only in direction – means acceleration."
+  },
+  {
+   "topic": "circular",
+   "level": "easy",
+   "q": "After one complete revolution on a circle of radius R, the displacement of a child on a merry-go-round is…",
+   "a": "zero",
+   "w": [
+    "2πR",
+    "πR",
+    "2R"
+   ],
+   "e": "The child comes back to the starting position."
+  },
+  {
+   "topic": "circular",
+   "level": "easy",
+   "q": "The distance travelled in one complete revolution on a circle of radius R is…",
+   "a": "2πR",
+   "w": [
+    "πR",
+    "R²",
+    "zero"
+   ],
+   "e": "One revolution = circumference = 2πR."
+  },
+  {
+   "topic": "circular",
+   "level": "hard",
+   "q": "A marble moves around the inside of a ring on a table. When the ring is lifted, the marble…",
+   "a": "moves in a straight line in the direction it was moving at that instant",
+   "w": [
+    "continues moving in the circle",
+    "stops immediately",
+    "moves towards the centre of the ring"
+   ],
+   "e": "Without the ring, it keeps moving in the direction of its velocity at that instant – along the tangent."
+  },
+  {
+   "topic": "circular",
+   "level": "hard",
+   "q": "In circular motion, the velocity of the object at any point is along…",
+   "a": "the tangent to the circle at that point",
+   "w": [
+    "the radius, towards the centre",
+    "the radius, away from the centre",
+    "the diameter"
+   ],
+   "e": "The tangent touches the circle at only that point, in the direction of motion."
+  },
+  {
+   "topic": "circular",
+   "level": "easy",
+   "q": "Which of these is an example of motion in a plane (two dimensions)?",
+   "a": "The path of a kicked football",
+   "w": [
+    "A ball falling vertically",
+    "A train on a straight track",
+    "A swimmer in a straight lane"
+   ],
+   "e": "A kicked ball moves forward and up/down at the same time – motion in two dimensions."
+  },
+  {
+   "topic": "circular",
+   "level": "hard",
+   "q": "A child goes half a revolution on a merry-go-round of radius R. The displacement is…",
+   "a": "2R (the diameter)",
+   "w": [
+    "πR",
+    "zero",
+    "2πR"
+   ],
+   "e": "After half a circle the child is at the opposite end of a diameter: 2R."
+  },
+  {
+   "topic": "circular",
+   "level": "hard",
+   "q": "Rohan studies from 6 PM to 7:30 PM. The minute hand of the clock is 7 cm long. What is the displacement of its tip?",
+   "a": "14 cm",
+   "w": [
+    "66 cm",
+    "0 cm",
+    "7 cm"
+   ],
+   "e": "In 90 min the tip goes 1½ rounds: from 12 to 6, i.e., across a diameter = 2 × 7 = 14 cm. (Distance = 1.5 × 2π × 7 = 66 cm.)"
+  },
+  {
+   "topic": "circular",
+   "level": "easy",
+   "type": "calc",
+   "q": "A child on a merry-go-round of radius {R} m completes one revolution in {T} s. What is the average speed? (Take π = 22/7)",
+   "vars": {
+    "R": {
+     "of": [
+      7,
+      14,
+      21,
+      35
+     ]
+    },
+    "T": {
+     "of": [
+      11,
+      22,
+      44
+     ]
+    }
+   },
+   "answer": "2*22/7*R/T",
+   "wrong": [
+    "0",
+    "22/7*R/T",
+    "R/T"
+   ],
+   "unit": "m s⁻¹",
+   "e": "v = 2πR/T = 2 × 22/7 × {R} ÷ {T} = {ans} m s⁻¹. Average velocity for one full revolution is 0.",
+   "dp": 2
+  },
+  {
+   "topic": "circular",
+   "level": "hard",
+   "type": "calc",
+   "q": "The tip of a 7 cm long minute hand moves for {m} minutes. What distance does it travel? (Take π = 22/7)",
+   "vars": {
+    "m": {
+     "of": [
+      15,
+      30,
+      45,
+      90,
+      120
+     ]
+    }
+   },
+   "answer": "m/60*2*22/7*7",
+   "wrong": [
+    "m/60*22/7*7",
+    "2*7",
+    "m*7"
+   ],
+   "unit": "cm",
+   "e": "In {m} min the hand turns {m}/60 of a circle: distance = ({m}/60) × 2 × 22/7 × 7 = {ans} cm.",
+   "dp": 0
+  }
+ ]
+}

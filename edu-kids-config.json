@@ -1,0 +1,47 @@
+{
+  "appName": "Gamesol Edu",
+  "tagline": "Exam practice games",
+  "leaderboard": {
+    "scriptUrl": ""
+  },
+  "classes": [
+    {
+      "id": "9",
+      "name": "Class IX",
+      "status": "ongoing",
+      "subjects": [
+        {
+          "id": "science",
+          "name": "Science",
+          "status": "ongoing",
+          "chapters": [
+            {
+              "id": "ch4",
+              "name": "Chapter 4 · Describing Motion Around Us",
+              "status": "ongoing",
+              "bank": "banks/class9-science-ch4.json"
+            }
+          ]
+        },
+        {
+          "id": "french",
+          "name": "French (018)",
+          "status": "ongoing",
+          "link": "french/index.html",
+          "note": "Midterm grammar: tenses, demonstratives, negation, questions, COD/COI, possessives"
+        },
+        {
+          "id": "maths",
+          "name": "Mathematics",
+          "status": "upcoming"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Class X",
+      "status": "upcoming",
+      "subjects": []
+    }
+  ]
+}
