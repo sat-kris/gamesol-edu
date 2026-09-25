@@ -133,7 +133,14 @@
     "type": "tally",
     "n": 13,
     "caption": "Tally for 13: two bundles of 5 and 3 more."
-   }
+   },
+   "play": [
+    {
+     "type": "tally",
+     "title": "Tally tapper",
+     "say": "A basket of 20 fruits! Tap the name of each fruit as it appears and watch the tally marks bundle into fives."
+    }
+   ]
   },
   {
    "topic": "picto",
@@ -220,7 +227,15 @@
      ]
     ],
     "caption": "Pictograph with key 1 symbol = 5 students."
-   }
+   },
+   "play": [
+    {
+     "type": "picto",
+     "title": "Pictograph builder",
+     "say": "Add book symbols for each child. One symbol stands for more than one book – read the key!",
+     "key": 2
+    }
+   ]
   },
   {
    "topic": "bars",
@@ -313,7 +328,15 @@
     ],
     "step": 4,
     "caption": "Model paper Q28 data with scale 1 unit = 4 saplings."
-   }
+   },
+   "play": [
+    {
+     "type": "barReader",
+     "title": "Bar graph reader",
+     "say": "Tap a bar to see a guide line to the scale, then answer the question.",
+     "step": 4
+    }
+   ]
   },
   {
    "topic": "draw",
@@ -376,6 +399,13 @@
     {
      "q": "First thing to draw?",
      "a": "The axes with labels."
+    }
+   ],
+   "play": [
+    {
+     "type": "barBuilder",
+     "title": "Bar graph builder",
+     "say": "Choose a sensible scale, then drag each bar to the right height."
     }
    ]
   }

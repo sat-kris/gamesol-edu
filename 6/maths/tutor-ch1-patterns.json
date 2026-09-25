@@ -184,7 +184,14 @@
       "1, 3, 9, 27, 81"
      ]
     ]
-   }
+   },
+   "play": [
+    {
+     "type": "seqGuess",
+     "title": "Pattern detective",
+     "say": "Look at the gaps between the numbers. Can you guess what comes next? Try the mystery sequence!"
+    }
+   ]
   },
   {
    "topic": "visual",
@@ -259,7 +266,14 @@
      4
     ],
     "caption": "Triangular numbers 1, 3, 6, 10 – each new row adds one more dot."
-   }
+   },
+   "play": [
+    {
+     "type": "dots",
+     "title": "Dot builder",
+     "say": "Slide to grow the shape. The orange dots show what each new step adds."
+    }
+   ]
   },
   {
    "topic": "relations",
@@ -338,7 +352,14 @@
      4
     ],
     "caption": "Each coloured L-shape adds the next odd number (1, 3, 5, 7) – together they make a square."
-   }
+   },
+   "play": [
+    {
+     "type": "oddLayers",
+     "title": "Odd numbers build squares",
+     "say": "Add the odd numbers 1, 3, 5, 7 … one at a time as L-shapes and watch a square appear."
+    }
+   ]
   },
   {
    "topic": "shapes",
@@ -417,7 +438,14 @@
      4
     ],
     "caption": "Stacked squares: 1, 4, 9, 16 – the square numbers."
-   }
+   },
+   "play": [
+    {
+     "type": "kgraph",
+     "title": "Join every dot",
+     "say": "Add points and join each one to every other point. Count the lines – do you know this sequence?"
+    }
+   ]
   }
  ],
  "formulas": [

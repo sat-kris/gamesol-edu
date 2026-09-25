@@ -128,6 +128,13 @@
      "q": "Lines through two points?",
      "a": "Exactly one."
     }
+   ],
+   "play": [
+    {
+     "type": "lineKinds",
+     "title": "Segment, ray or line?",
+     "say": "Drag points A and B, then switch between segment, ray and line. How many end points does each have?"
+    }
    ]
   },
   {
@@ -206,7 +213,21 @@
      "Q"
     ],
     "caption": "∠RTQ: vertex T, arms TR and TQ."
-   }
+   },
+   "play": [
+    {
+     "type": "angleMaker",
+     "title": "Angle maker",
+     "say": "Drag the blue dot to turn arm OB. The angle is the amount of turn from OA to OB. Complete the challenges!",
+     "targets": [
+      90,
+      45,
+      180,
+      135,
+      270
+     ]
+    }
+   ]
   },
   {
    "topic": "types",
@@ -289,7 +310,14 @@
      ""
     ],
     "caption": "An obtuse angle of 130° – more than a right angle, less than a straight angle."
-   }
+   },
+   "play": [
+    {
+     "type": "angleSort",
+     "title": "Name that angle",
+     "say": "Look at the angle and tap its type. How long a streak can you make?"
+    }
+   ]
   },
   {
    "topic": "measure",
@@ -372,7 +400,14 @@
      }
     ],
     "caption": "Model paper Q33 style: read both rays from 0° at A."
-   }
+   },
+   "play": [
+    {
+     "type": "protractorDraw",
+     "title": "Protractor practice",
+     "say": "Draw angles by dragging arm OB, or switch to Read mode. The secret: use the scale that starts at 0 on your arm."
+    }
+   ]
   }
  ],
  "formulas": [

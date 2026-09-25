@@ -132,6 +132,13 @@
      "q": "Is 6 a perfect number?",
      "a": "Yes: 1 + 2 + 3 = 6."
     }
+   ],
+   "play": [
+    {
+     "type": "idliVada",
+     "title": "Idli-vada game",
+     "say": "Say ‘idli’ for multiples of 3, ‘vada’ for multiples of 5 and ‘idli-vada’ for both. You have 3 lives!"
+    }
    ]
   },
   {
@@ -203,6 +210,18 @@
      "q": "Twin primes between 40 and 50?",
      "a": "41 and 43"
     }
+   ],
+   "play": [
+    {
+     "type": "arrays",
+     "title": "Rectangle maker",
+     "say": "Slide to choose how many counters. How many rectangles can you make? A prime makes only ONE – a single row."
+    },
+    {
+     "type": "sieve",
+     "title": "Sieve of Eratosthenes",
+     "say": "Step through the famous sieve: cross out multiples, and the numbers left are primes."
+    }
    ]
   },
   {
@@ -266,6 +285,13 @@
     {
      "q": "Two consecutive numbers are…",
      "a": "Always co-prime."
+    }
+   ],
+   "play": [
+    {
+     "type": "coprime",
+     "title": "Co-prime checker",
+     "say": "Type two numbers and compare their factors. Co-prime means the only shared factor is 1."
     }
    ]
   },
@@ -369,7 +395,15 @@
       "1"
      ]
     ]
-   }
+   },
+   "play": [
+    {
+     "type": "factorLadder",
+     "title": "Factor ladder",
+     "say": "Divide by a prime again and again until you reach 1. Start with the smallest prime that works.",
+     "start": 456
+    }
+   ]
   },
   {
    "topic": "divis",
@@ -435,6 +469,13 @@
     {
      "q": "Divisible by 5 if…",
      "a": "Last digit is 0 or 5."
+    }
+   ],
+   "play": [
+    {
+     "type": "divisDetective",
+     "title": "Divisibility detective",
+     "say": "Look only at the orange digits and decide: is the number divisible?"
     }
    ]
   }

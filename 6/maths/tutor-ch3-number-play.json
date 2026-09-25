@@ -142,7 +142,14 @@
      789
     ],
     "caption": "Model paper Q27a row – find the supercells."
-   }
+   },
+   "play": [
+    {
+     "type": "supercells",
+     "title": "Supercell spotter",
+     "say": "Tap the numbers that are bigger than both their neighbours, then check."
+    }
+   ]
   },
   {
    "topic": "digits",
@@ -209,6 +216,13 @@
      "q": "Smallest number with digit sum 10?",
      "a": "19"
     }
+   ],
+   "play": [
+    {
+     "type": "digitSum",
+     "title": "Digit sum builder",
+     "say": "Tap digits to build a number with the target digit sum. Can you make the smallest (or largest) one?"
+    }
    ]
   },
   {
@@ -272,6 +286,13 @@
     {
      "q": "Next palindromic time after 10:01?",
      "a": "11:11"
+    }
+   ],
+   "play": [
+    {
+     "type": "reverseAdd",
+     "title": "Palindrome maker",
+     "say": "Reverse the number and add. Keep going until the answer reads the same both ways."
     }
    ]
   },
@@ -341,6 +362,14 @@
      "q": "3-digit numbers reach…",
      "a": "495"
     }
+   ],
+   "play": [
+    {
+     "type": "kaprekar",
+     "title": "Kaprekar machine",
+     "say": "Sort the digit cards biggest-first, then smallest-first, and subtract. Repeat until the magic number appears!",
+     "start": 3524
+    }
    ]
   },
   {
@@ -403,6 +432,13 @@
     {
      "q": "38,800 − 38,000 = ?",
      "a": "800"
+    }
+   ],
+   "play": [
+    {
+     "type": "estimate",
+     "title": "Quick estimate",
+     "say": "Round each number to a friendly number and choose the best estimate."
     }
    ]
   },
@@ -467,6 +503,14 @@
     {
      "q": "Is the Collatz conjecture proved?",
      "a": "No – still unsolved."
+    }
+   ],
+   "play": [
+    {
+     "type": "collatz",
+     "title": "Collatz hailstones",
+     "say": "Even → halve it. Odd → ×3 + 1. Watch the hailstone bounce up and down before it falls to 1.",
+     "start": 21
     }
    ]
   }
