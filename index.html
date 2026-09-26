@@ -538,7 +538,6 @@ async function loadBank(chap){
   for(const x of await loadExtras(chap)){
     (x.topics||[]).forEach(t=>{if(!bank.topics.some(b=>b.id===t.id))bank.topics.push(t)});
     (x.questions||[]).forEach(q=>bank.questions.push(Object.assign({src:x.label||"Extra practice"},q)));
-    (bank.extraSources=bank.extraSources||[]).push(x.source||x.label);
   }
   return bankCache[chap.bank]=bank;
 }
@@ -557,7 +556,7 @@ function renderTopics(bank,cls,subj,chap){
   const cnt=(t,l)=>bank.questions.filter(q=>q.topic===t&&q.level===l).length;const hasAdv=bank.questions.some(q=>q.level==="advanced");
   let h='<div class="row" style="justify-content:space-between"><h2>Topics ('+bank.topics.length+')</h2><div class="row"><button class="btn small" id="allT">Select all</button><button class="btn small" id="noneT">Clear</button></div></div>'+
     '<div class="topics">'+bank.topics.map(t=>'<label class="topic" for="t-'+esc(t.id)+'"><input type="checkbox" id="t-'+esc(t.id)+'" value="'+esc(t.id)+'"'+(sel.topics.includes(t.id)?" checked":"")+'><span class="ref">'+esc(t.ref||"")+'</span><span>'+esc(t.name)+'</span><span class="cnt">'+cnt(t.id,"easy")+' easy · '+cnt(t.id,"hard")+' hard'+(hasAdv?' · '+cnt(t.id,"advanced")+' adv.':'')+'</span></label>').join("")+'</div>'+
-    '<p class="note">Source: '+esc(bank.source||bank.chapter)+'.'+(bank.extraSources?' Also includes: '+esc(bank.extraSources.join("; "))+' (tagged in the quiz).':'')+' Numerical questions use new numbers every time.</p>';
+    '<p class="note">Source: '+esc(bank.source||bank.chapter)+'. Numerical questions use new numbers every time.</p>';
   h+='</div><div class="step"><h2>Level</h2><div class="grid three">'+
     ['easy','hard','advanced'].map(l=>'<label class="choice"><input type="radio" name="level" value="'+l+'"'+(sel.level===l?" checked":"")+'><span><span class="big">'+LVL[l]+'</span><small>'+esc((bank.levelNotes||{})[l]||LEVEL_NOTE[l])+'</small></span></label>').join("")+
     '</div></div><div class="step"><h2>Number of questions</h2><div class="pills">'+
