@@ -59,7 +59,7 @@ h1{font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:clamp(26px,
 .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 #quizArea{display:flex;flex-direction:column;gap:18px}
 #quizArea[hidden]{display:none}
-.levels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.levels{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
 .level{position:relative;display:flex}
 .level input{position:absolute;opacity:0;pointer-events:none}
 .level>span{flex:1;display:flex;flex-direction:column;gap:4px;padding:16px;border:1.5px solid var(--line-strong);border-radius:10px;cursor:pointer;background:var(--sheet)}
@@ -71,7 +71,7 @@ h1{font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:clamp(26px,
 .level input:checked+span em{color:var(--accent)}
 .level input:focus-visible+span{outline:2px solid var(--accent);outline-offset:2px}
 .lvl{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:3px 8px;border-radius:4px;margin-left:6px;border:1px solid var(--line-strong);color:var(--ink-soft)}
-@media (max-width:520px){.levels{grid-template-columns:1fr}}
+@media (max-width:720px){.levels{grid-template-columns:1fr}}
 .warn{color:var(--bad);font-size:14px;margin:0}
 
 /* progress */
@@ -193,6 +193,11 @@ h2 .en{text-transform:none;letter-spacing:0;font-size:13px;margin-left:6px}
         <em>Pour l'examen · Exam level</em>
         <small>All tenses + imparfait, être verbs with agreement · negation in passé composé, personne ne…, pas de · -t-, Qu'est-ce qui, Depuis quand · two pronouns, imperative · silent h, mon amie, leur / leurs</small>
       </span></label>
+      <label class="level"><input type="radio" name="level" id="level-advanced" value="advanced"><span>
+        <strong>Avancé <span class="en">Advanced</span></strong>
+        <em>Défi · Challenge</em>
+        <small>Same syllabus, toughest mix: être and reflexive verbs in every tense · Personne ne / Rien ne as subject, negation of reflexive verbs · inversion with nouns, À qui, Qu'est-ce qui · two pronouns, agreement of the past participle, imperative with two pronouns · trickiest possessives</small>
+      </span></label>
     </div>
     <h2>Sections à réviser <span class="en">Sections to practise</span></h2>
     <div class="chips" id="chips"></div>
@@ -268,7 +273,7 @@ const IMPER=[["finir",4,"vos devoirs avant le dîner !"],["regarder",1,"le table
 const PRON=["je","tu","il","nous","vous","ils"];
 
 function genTemps(lvl){
-  const easy=lvl==="easy";
+  const easy=lvl==="easy",adv=lvl==="advanced";
   if(Math.random()<(easy?0.2:0.25)){
     const list=easy?IMPER.filter(x=>x[0]!=="rester"&&x[0]!=="venir"):IMPER;
     const [inf,p,rest]=rnd(list);
@@ -278,11 +283,11 @@ function genTemps(lvl){
       expl:"Ordre ou conseil → impératif, sans sujet."+(p===1&&!VERBS[inf].pr&&VERBS[inf].g!=="ir"?" Avec « tu », les verbes en -er perdent le -s.":"")+" "+cap(imper(inf,p))+" "+rest};
   }
   // Facile : présent, passé composé (avoir), futurs ; Difficile : + imparfait, verbes avec être, irréguliers plus souvent
-  const tkeys=easy?["pres","pc","fs","fp"]:["pres","pc","pc","imp","imp","fs","fp"];
+  const tkeys=easy?["pres","pc","fs","fp"]:adv?["pres","pc","pc","pc","imp","imp","fs"]:["pres","pc","pc","imp","imp","fs","fp"];
   const tk=rnd(tkeys), T=TENSES[tk];
   const allV=Object.keys(VERBS);
   const hardV=allV.filter(k=>VERBS[k].aux||VERBS[k].pr);
-  const inf=easy?rnd(allV.filter(k=>!VERBS[k].aux)):rnd(Math.random()<.7?hardV:allV), v=VERBS[inf];
+  const inf=easy?rnd(allV.filter(k=>!VERBS[k].aux)):rnd(adv||Math.random()<.7?hardV:allV), v=VERBS[inf];
   let pool=SUBJ; if(v.aux) pool=SUBJ.filter(s=>s.g);
   const S=rnd(pool);
   const f=k=>{const x=CONJ[k](inf,S.p,S.g);return S.p===0?withJe(x):x};
@@ -345,7 +350,7 @@ function genPoss(lvl){
   const people=Math.random()<.4;
   let list=people?PEOPLE:OBJ;
   if(easy) list=list.filter(x=>!(x[1]==="f"&&x[2]));
-  else if(O.p<3&&Math.random()<.6) list=list.filter(x=>x[1]==="f"&&x[2]);
+  else if(O.p<3&&Math.random()<(lvl==="advanced"?.9:.6)) list=list.filter(x=>x[1]==="f"&&x[2]);
   const [n,g,v]=rnd(list); const [inf,tail]=rnd(people?PPL_V:OBJ_V);
   const row=POSS[O.p]; let ans; let why;
   if(g==="p"){ans=row[2];why="nom pluriel"}
@@ -447,6 +452,30 @@ const PRN=[
  {s:"Nous allons inviter **Sophie**.",c:"Nous allons l'inviter.",w:["Nous l'allons inviter.","Nous allons la inviter.","Nous allons lui inviter."],e:"Aller + infinitif : pronom devant l'infinitif ; la → l' devant une voyelle."}
 ];
 PRN.forEach((it,i)=>it.L=[0,1,2,3,4,5,6,8,10,13,17,18,19].includes(i)?"easy":"hard");
+/* Niveau Avancé : même programme, combinaisons plus difficiles */
+NEG.push(
+ {L:"advanced",s:"Quelqu'un a téléphoné ce matin.",c:"Personne n'a téléphoné ce matin.",w:["Personne a téléphoné ce matin.","Quelqu'un n'a pas téléphoné ce matin.","Personne n'a pas téléphoné ce matin."],e:"quelqu'un (sujet) → Personne ne … ; jamais « pas » avec personne."},
+ {L:"advanced",s:"Quelque chose est tombé de la table.",c:"Rien n'est tombé de la table.",w:["Rien est tombé de la table.","Rien n'est pas tombé de la table.","Quelque chose n'est pas tombé de la table."],e:"quelque chose (sujet) → Rien ne … ; jamais « pas » avec rien."},
+ {L:"advanced",s:"Ils sont déjà partis en vacances.",c:"Ils ne sont pas encore partis en vacances.",w:["Ils ne sont déjà pas partis en vacances.","Ils ne sont pas partis encore déjà en vacances.","Ils sont pas encore partis en vacances."],e:"déjà → ne … pas encore ; au passé composé, la négation entoure l'auxiliaire."},
+ {L:"advanced",s:"J'ai vu quelqu'un au parc.",c:"Je n'ai vu personne au parc.",w:["Je n'ai personne vu au parc.","Je n'ai pas vu quelqu'un au parc.","Je n'ai rien vu au parc."],e:"Au passé composé, « personne » se place APRÈS le participe : n'ai vu personne."},
+ {L:"advanced",s:"Elle mange toujours de la viande.",c:"Elle ne mange jamais de viande.",w:["Elle ne mange jamais de la viande.","Elle ne mange toujours pas de la viande.","Elle mange jamais de viande."],e:"toujours → ne … jamais ; de la → de après une négation."},
+ {L:"advanced",s:"Nous nous sommes souvent promenés au bord de la mer.",c:"Nous ne nous sommes jamais promenés au bord de la mer.",w:["Nous nous ne sommes jamais promenés au bord de la mer.","Nous ne sommes jamais nous promenés au bord de la mer.","Nous ne nous jamais sommes promenés au bord de la mer."],e:"Verbe pronominal au passé composé : ne + pronom réfléchi + auxiliaire + jamais + participe."},
+ {L:"advanced",s:"Il y a encore du lait dans le frigo.",c:"Il n'y a plus de lait dans le frigo.",w:["Il n'y a plus du lait dans le frigo.","Il n'y a pas encore du lait dans le frigo.","Il y a plus de lait dans le frigo."],e:"encore → ne … plus ; du → de après une négation."});
+QST.push(
+ {L:"advanced",s:"**Le bruit** a réveillé le bébé.",c:"Qu'est-ce qui a réveillé le bébé ?",w:["Qui a réveillé le bébé ?","Qu'est-ce que le bruit a réveillé ?","Que a réveillé le bébé ?"],e:"Une chose sujet → Qu'est-ce qui … ?"},
+ {L:"advanced",s:"Elle apprend le français **depuis 2022**.",c:"Depuis quand apprend-elle le français ?",w:["Quand apprend-elle le français ?","Depuis quand elle apprend-t-elle le français ?","Pourquoi apprend-elle le français ?"],e:"Un point de départ → Depuis quand … ? avec inversion."},
+ {L:"advanced",s:"Il a acheté ce livre **parce qu'il aime l'histoire**.",c:"Pourquoi a-t-il acheté ce livre ?",w:["Pourquoi il a-t-il acheté ce livre ?","Comment a-t-il acheté ce livre ?","Pourquoi a-il acheté ce livre ?"],e:"Une cause → Pourquoi ; au passé composé, l'inversion se fait avec l'auxiliaire : a-t-il."},
+ {L:"advanced",s:"Mes parents parlent **à mon professeur**.",c:"À qui tes parents parlent-ils ?",w:["Qui tes parents parlent-ils ?","À quoi tes parents parlent-ils ?","À qui mes parents parlent-ils ?"],e:"parler à quelqu'un → À qui … ? ; mes → tes ; nom sujet + verbe + -ils."},
+ {L:"advanced",s:"Nous partons **en train**.",c:"Comment partez-vous ?",w:["Comment partons-nous ?","Où partez-vous ?","Quand partez-vous ?"],e:"Un moyen de transport → Comment … ? ; nous → vous."},
+ {L:"advanced",s:"Rohan va **au stade** avec ses amis.",c:"Où Rohan va-t-il avec ses amis ?",w:["Où va-t-il Rohan avec ses amis ?","Où Rohan va-il avec ses amis ?","Quand Rohan va-t-il avec ses amis ?"],e:"Un lieu → Où ; nom sujet + verbe + -t-il (voyelle + il → -t-)."});
+PRN.push(
+ {L:"advanced",s:"J'ai rencontré **Julie** au marché.",c:"Je l'ai rencontrée au marché.",w:["Je l'ai rencontré au marché.","Je lui ai rencontrée au marché.","J'ai la rencontrée au marché."],e:"COD féminin placé avant avoir → accord du participe : rencontrée."},
+ {L:"advanced",s:"Il a écrit **ces lettres** hier.",c:"Il les a écrites hier.",w:["Il les a écrit hier.","Il leur a écrites hier.","Il a les écrites hier."],e:"COD féminin pluriel placé avant avoir → écrites."},
+ {L:"advanced",s:"Donne **le cahier à ton frère** !",c:"Donne-le-lui !",w:["Donne-lui-le !","Le lui donne !","Donne-le-leur !"],e:"Impératif affirmatif : verbe + COD + COI → donne-le-lui."},
+ {L:"advanced",s:"Je montre **les photos à mes cousins**.",c:"Je les leur montre.",w:["Je leur les montre.","Je les lui montre.","Je montre les leur."],e:"Deux pronoms : le / la / les se placent avant lui / leur."},
+ {L:"advanced",s:"Ne parle pas **à tes voisins** !",c:"Ne leur parle pas !",w:["Ne parle-leur pas !","Ne les parle pas !","Parle-leur pas !"],e:"Impératif négatif : ne + pronom + verbe + pas."},
+ {L:"advanced",s:"Elle a offert **ce bracelet à sa mère**.",c:"Elle le lui a offert.",w:["Elle lui l'a offert.","Elle le leur a offert.","Elle l'a lui offert."],e:"le avant lui ; les deux pronoms avant l'auxiliaire."},
+ {L:"advanced",s:"Tu as vu **tes amies** au concert.",c:"Tu les as vues au concert.",w:["Tu les as vu au concert.","Tu leur as vues au concert.","Tu as les vues au concert."],e:"COD féminin pluriel avant avoir → vues."});
 const genPrn=it=>({sentence:it.s,ans:it.c,opts:shuffle([it.c,...it.w]),long:1,expl:it.e+" → "+it.c});
 
 /* ---------- catégories ---------- */
@@ -460,7 +489,7 @@ const CATS=[
 ];
 
 /* ---------- état ---------- */
-const LVL={easy:"Facile",hard:"Difficile"};
+const LVL={easy:"Facile",hard:"Difficile",advanced:"Avancé"};
 let settings={cats:CATS.map(c=>c.id),count:15,level:null};
 try{const s=JSON.parse(localStorage.getItem("cahier-settings")||"null");if(s&&Array.isArray(s.cats)&&s.cats.length)settings=Object.assign(settings,s)}catch(e){}
 let quiz=[],idx=0,score=0,answered=false;
@@ -510,7 +539,7 @@ async function submitResult(el){
 function build(){
   const lvl=settings.level;
   const chosen=CATS.filter(c=>settings.cats.includes(c.id));
-  const poolOf=c=>c.pool.filter(it=>it.L===lvl);
+  const poolOf=c=>{const p=c.pool.filter(it=>it.L===lvl);return p.length?p:c.pool.filter(it=>it.L===(lvl==="advanced"?"hard":lvl))};
   const decks={};chosen.forEach(c=>{if(c.pool)decks[c.id]=shuffle(poolOf(c))});
   const order=[];for(let i=0;i<settings.count;i++)order.push(chosen[i%chosen.length]);
   const seen=new Set();
@@ -563,14 +592,14 @@ function choose(i){if(answered)return;const q=quiz[idx];q.picked=q.opts[i];if(q.
 function next(){if(!answered)return;answered=false;idx++;render();window.scrollTo({top:0,behavior:"smooth"})}
 
 function renderResults(){
-  const total=quiz.length, pct=Math.round(100*score/total), easy=settings.level==="easy";
-  const msg=pct>=90?(easy?"Excellent ! Essayez maintenant le niveau Difficile.":"Excellent travail, vous êtes prêt(e) pour l'examen !"):pct>=70?"Très bien. Revoyez les erreurs ci-dessous.":pct>=50?"Pas mal. Encore un peu de pratique.":"Continuez à réviser, vous allez progresser.";
+  const total=quiz.length, pct=Math.round(100*score/total), easy=settings.level==="easy", up=settings.level==="easy"?"hard":settings.level==="hard"?"advanced":null;
+  const msg=pct>=90?(up?"Excellent ! Essayez maintenant le niveau "+LVL[up]+".":"Bravo ! Vous maîtrisez même les questions les plus difficiles."):pct>=70?"Très bien. Revoyez les erreurs ci-dessous.":pct>=50?"Pas mal. Encore un peu de pratique.":"Continuez à réviser, vous allez progresser.";
   let h='<article class="sheet"><span class="qnum">✓</span><span class="tag">Résultats · '+LVL[settings.level]+'</span>'+
     '<p class="big">'+score+' <small>/ '+total+'</small></p><p class="instr">'+msg+'</p><div class="cats">';
   CATS.forEach(c=>{const qs=quiz.filter(q=>q.cat===c);if(!qs.length)return;const ok=qs.filter(q=>q.picked===q.ans).length;const p=ok/qs.length;
     h+='<div class="cat"><span>'+c.q+' · '+c.name+'</span><span class="bar"><i class="'+(p<.6?"low":"")+'" style="width:'+(p*100)+'%"></i></span><span>'+ok+' / '+qs.length+'</span></div>'});
   h+='</div><div class="row"><button class="btn primary" id="againBtn">Nouveau quiz ('+LVL[settings.level]+')</button>'+
-     (easy&&pct>=70?'<button class="btn" id="upBtn">Passer au niveau Difficile</button>':'')+
+     (up&&pct>=70?'<button class="btn" id="upBtn" data-up="'+up+'">Passer au niveau '+LVL[up]+'</button>':'')+
      '<button class="btn" id="setBtn">Changer de niveau</button></div>';
   const wrong=quiz.filter(q=>q.picked!==q.ans);
   if(wrong.length){
@@ -586,7 +615,7 @@ function renderResults(){
   if(ONLINE&&!submitted) submitResult(document.getElementById("rankBox"));
   document.getElementById("againBtn").addEventListener("click",build);
   document.getElementById("setBtn").addEventListener("click",showStart);
-  const up=document.getElementById("upBtn");if(up)up.addEventListener("click",()=>{settings.level="hard";save();document.getElementById("level-hard").checked=true;build()});
+  const upB=document.getElementById("upBtn");if(upB)upB.addEventListener("click",()=>{settings.level=upB.dataset.up;save();document.getElementById("level-"+settings.level).checked=true;build()});
 }
 
 /* ---------- écran de départ ---------- */
@@ -604,7 +633,7 @@ const sb=document.getElementById("startBoard");
 async function showStartBoard(level){
   player.name=document.getElementById("pName").value.trim()||player.name;player.section=document.getElementById("pSection").value.trim().toUpperCase()||player.section;
   sb.hidden=false;
-  sb.innerHTML='<div class="board"><div class="tabs"><button class="btn" data-l="easy" aria-pressed="'+(level==="easy")+'">Facile · Easy</button><button class="btn" data-l="hard" aria-pressed="'+(level==="hard")+'">Difficile · Hard</button></div><div id="sbBody"><p class="muted">Chargement… · Loading…</p></div></div>';
+  sb.innerHTML='<div class="board"><div class="tabs"><button class="btn" data-l="easy" aria-pressed="'+(level==="easy")+'">Facile · Easy</button><button class="btn" data-l="hard" aria-pressed="'+(level==="hard")+'">Difficile · Hard</button><button class="btn" data-l="advanced" aria-pressed="'+(level==="advanced")+'">Avancé · Advanced</button></div><div id="sbBody"><p class="muted">Chargement… · Loading…</p></div></div>';
   sb.querySelectorAll("[data-l]").forEach(b=>b.addEventListener("click",()=>showStartBoard(b.dataset.l)));
   try{document.getElementById("sbBody").innerHTML=boardHTML(await getBoard(level))}
   catch(e){document.getElementById("sbBody").innerHTML='<p class="warn">Impossible de charger le classement. · Could not load the leaderboard. Check your internet connection.</p>'}
@@ -622,7 +651,7 @@ document.getElementById("startBtn").addEventListener("click",()=>{
     if(player.name.length<2){warn.textContent="Écrivez votre nom. · Please enter your name.";warn.hidden=false;document.getElementById("pName").focus();return}
     try{localStorage.setItem("gamesol-player",JSON.stringify(player))}catch(e){}
   }
-  if(!lv){warn.textContent="Choisissez d'abord un niveau. · Please choose a level first: Easy or Hard.";warn.hidden=false;return}
+  if(!lv){warn.textContent="Choisissez d'abord un niveau. · Please choose a level first: Easy, Hard or Advanced.";warn.hidden=false;return}
   if(!cats.length){warn.textContent="Choisissez au moins une section. · Please choose at least one section.";warn.hidden=false;return}
   warn.hidden=true;
   settings={cats,count:+countsEl.querySelector("input:checked").value,level:lv.value};
