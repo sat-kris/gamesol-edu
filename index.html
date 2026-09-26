@@ -54,6 +54,7 @@ h2{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-
 .step{display:flex;flex-direction:column;gap:10px;padding-bottom:14px;border-bottom:1px solid var(--line)}
 .step:last-of-type{border-bottom:0;padding-bottom:0}
 .fields{display:grid;grid-template-columns:2fr 1fr;gap:10px}
+.nick{font:inherit;font-size:16px;padding:9px 11px;border-radius:8px;border:1px solid var(--line-strong);background:var(--paper);color:var(--ink);flex:1 1 13em;min-width:0;max-width:22em}
 .field{display:flex;flex-direction:column;gap:5px;font-size:14px;font-weight:700}
 .field input{font:inherit;font-weight:400;font-size:16px;padding:9px 11px;border-radius:8px;border:1px solid var(--line-strong);background:var(--paper);color:var(--ink)}
 .note,.muted{margin:0;font-size:13.5px;color:var(--ink-soft)}
@@ -442,7 +443,12 @@ const store={get(k){try{return JSON.parse(localStorage.getItem(k)||"null")}catch
 const LVL={easy:"Easy",hard:"Hard",advanced:"Advanced"};
 
 let CONFIG=null, API="", ONLINE=false;
-let player=Object.assign({name:"",section:""},store.get("gamesol-player")||{});
+const NICK_A=["NoCap","Lowkey","BigBrain","MainCharacter","Certified","Vibey","Slay","Chill","Turbo","Sneaky","Mega","Goated","Epic","Galaxy","Glowup","Speedy","Cosmic","Hyper"];
+const NICK_B=["Panda","Mango","Ninja","Comet","Otter","Pixel","Tiger","Falcon","Nova","Koala","Rocket","Dragon","Samosa","Boba","Llama","Penguin","Wizard","Legend"];
+const nick=()=>NICK_A[Math.floor(Math.random()*NICK_A.length)]+NICK_B[Math.floor(Math.random()*NICK_B.length)]+(10+Math.floor(Math.random()*90));
+let player=Object.assign({name:"",auto:""},store.get("gamesol-player")||{});player.section="";
+if(!player.auto){player.auto=nick();store.set("gamesol-player",player)}
+const pname=()=>player.name||player.auto;
 let sel=Object.assign({cls:null,subject:null,chapter:null,topics:null,level:null,count:15,mode:null},store.get("gamesol-sel")||{});
 let BANK=null;
 const bankCache={};
@@ -480,10 +486,10 @@ function renderHome(){
 
   let h="";
   if(ONLINE){
-    h+='<div class="step"><h2>Who is playing?</h2><div class="fields">'+
-      '<label class="field" for="pName">Name<input id="pName" type="text" maxlength="40" autocomplete="name" placeholder="e.g. Aisha Khan" value="'+esc(player.name)+'"></label>'+
-      '<label class="field" for="pSection">Section<input id="pSection" type="text" maxlength="12" placeholder="e.g. B" value="'+esc(player.section)+'"></label></div>'+
-      '<p class="note">Your best score appears on the class leaderboard. Use the same name every time.</p></div>';
+    h+='<div class="step"><h2>Your game name <span class="muted" style="text-transform:none;letter-spacing:0;font-weight:400">(optional)</span></h2><div class="row">'+
+      '<input id="pName" class="nick" type="text" maxlength="30" autocomplete="off" aria-label="Your game name" placeholder="'+esc(player.auto)+'" value="'+esc(player.name)+'">'+
+      '<button type="button" class="btn small" id="nickBtn" title="Pick a new random name">🎲 New name</button></div>'+
+      '<p class="note">You’ll play as <b id="nickShow">'+esc(pname())+'</b> on the leaderboard. Type your own if you like – keep it the same so your scores count together.</p></div>';
   }
   h+='<div class="step"><h2>Class</h2><div class="pills">'+
     (classes.length?classes.map(c=>'<label class="pill"><input type="radio" name="cls" value="'+esc(c.id)+'"'+(c.id===sel.cls?" checked":"")+'><span>'+esc(c.name)+'</span></label>').join(""):'<p class="muted">No class is marked as ongoing in the config file.</p>')+
@@ -516,13 +522,15 @@ function renderHome(){
   $("home").querySelectorAll('input[name="subject"]').forEach(i=>i.addEventListener("change",()=>{sel.subject=i.value;sel.chapter=null;sel.topics=null;keepNames();renderHome()}));
   $("home").querySelectorAll('input[name="chapter"]').forEach(i=>i.addEventListener("change",()=>{sel.chapter=i.value;sel.topics=null;keepNames();renderHome()}));
   $("home").querySelectorAll('input[name="mode"]').forEach(i=>i.addEventListener("change",()=>{sel.mode=i.value;store.set("gamesol-sel",sel);keepNames();renderHome()}));
+  if($("nickBtn")){$("nickBtn").addEventListener("click",()=>{player.auto=nick();player.name="";$("pName").value="";$("pName").placeholder=player.auto;$("nickShow").textContent=pname();store.set("gamesol-player",player)});
+    $("pName").addEventListener("input",()=>{player.name=$("pName").value.replace(/\s+/g," ").trim();$("nickShow").textContent=pname();store.set("gamesol-player",player)})}
   $("home").querySelectorAll('.tutorIcon').forEach(b=>b.addEventListener("click",e=>{e.preventDefault();e.stopPropagation();const c=chapters.find(x=>x.id===b.dataset.tutor);sel.chapter=c.id;keepNames();openTutor(cls,subj,c,"overview")}));
   if(chap&&chap.tutor&&sel.mode==="play") loadTutor(chap).then(t=>renderPlaySummary(t,cls,subj,chap)).catch(()=>{$("topicStep").innerHTML='<p class="warn">Could not load the tutor file "'+esc(chap.tutor)+'".</p>'});
   else if(chap&&chap.tutor&&sel.mode==="tutor") loadTutor(chap).then(t=>renderTutorSummary(t,cls,subj,chap)).catch(()=>{$("topicStep").innerHTML='<h2>Chapter tutor</h2><p class="warn">Could not load the tutor file "'+esc(chap.tutor)+'". Check the path in edu-kids-config.json.</p>'});
   else if(chap) loadBank(chap).then(b=>renderTopics(b,cls,subj,chap)).catch(()=>{$("topicStep").innerHTML='<h2>Topics</h2><p class="warn">Could not load the question bank "'+esc(chap.bank)+'". Check the path in edu-kids-config.json.</p>'});
 }
 function soonLine(list){return list.length?'<p class="soon">Coming soon: '+list.map(x=>'<b>'+esc(x.name)+'</b>').join(", ")+'</p>':""}
-function keepNames(){if($("pName")){player.name=$("pName").value.replace(/\s+/g," ").trim();player.section=$("pSection").value.replace(/\s+/g,"").toUpperCase()}}
+function keepNames(){if($("pName")){player.name=$("pName").value.replace(/\s+/g," ").trim();store.set("gamesol-player",player)}}
 async function loadBank(chap){
   if(bankCache[chap.bank]) return bankCache[chap.bank];
   const r=await fetch(chap.bank,{cache:"no-store"});if(!r.ok)throw new Error(r.status);
@@ -565,7 +573,6 @@ function renderTopics(bank,cls,subj,chap){
 function start(cls,subj,chap,boxes){
   const warn=$("warn");const say=m=>{warn.textContent=m;warn.hidden=false};
   keepNames();
-  if(ONLINE&&player.name.length<2){say("Please enter your name.");$("pName").focus();return}
   const topics=boxes.filter(b=>b.checked).map(b=>b.value);
   if(!topics.length){say("Please choose at least one topic.");return}
   const lv=document.querySelector('input[name="level"]:checked');
@@ -729,17 +736,17 @@ function boardHTML(d,cls,subj){
   let h="";
   if(d.me)h+='<div class="rank"><b>#'+d.me.rank+'</b><span>Your rank out of <strong>'+d.players+'</strong> student'+(d.players>1?"s":"")+' · '+esc(cls.name)+' '+esc(subj.name)+' · '+LVL[d.level]+'<br><span class="muted">Your best score: '+d.me.percent+'%</span></span></div>';
   if(!d.top.length)return h+'<p class="muted">No scores yet at this level. Be the first!</p>';
-  const me=keyOf(player.name,player.section);let shown=false;
-  h+='<div style="overflow-x:auto"><table class="lb"><thead><tr><th>#</th><th>Name</th><th>Section</th><th class="num">Score</th><th class="num">Time</th></tr></thead><tbody>';
-  d.top.forEach(r=>{const m=keyOf(r.name,r.section)===me;if(m)shown=true;
-    h+='<tr'+(m?' class="me"':'')+'><td>'+r.rank+'</td><td>'+esc(r.name)+(m?" (you)":"")+'</td><td>'+esc(r.section)+'</td><td class="num">'+r.percent+'% <span class="muted">('+r.score+'/'+r.total+')</span></td><td class="num">'+fmtTime(r.seconds)+'</td></tr>'});
-  if(d.me&&!shown)h+='<tr><td colspan="5" class="muted">…</td></tr><tr class="me"><td>'+d.me.rank+'</td><td>'+esc(player.name)+' (you)</td><td>'+esc(player.section)+'</td><td class="num">'+d.me.percent+'%</td><td></td></tr>';
+  const me=keyOf(pname(),"");let shown=false;
+  h+='<div style="overflow-x:auto"><table class="lb"><thead><tr><th>#</th><th>Name</th><th class="num">Score</th><th class="num">Time</th></tr></thead><tbody>';
+  d.top.forEach(r=>{const m=keyOf(r.name,"")===me;if(m)shown=true;
+    h+='<tr'+(m?' class="me"':'')+'><td>'+r.rank+'</td><td>'+esc(r.name)+(m?" (you)":"")+'</td><td class="num">'+r.percent+'% <span class="muted">('+r.score+'/'+r.total+')</span></td><td class="num">'+fmtTime(r.seconds)+'</td></tr>'});
+  if(d.me&&!shown)h+='<tr><td colspan="4" class="muted">…</td></tr><tr class="me"><td>'+d.me.rank+'</td><td>'+esc(pname())+' (you)</td><td class="num">'+d.me.percent+'%</td><td></td></tr>';
   return h+'</tbody></table></div><p class="muted">Best score per student. Ties go to the faster time.</p>';
 }
 async function submitResult(el){
   el.innerHTML='<p class="muted">Saving your score…</p>';
   const topics={};Object.entries(topicStats()).forEach(([k,s])=>topics[k]={ok:s.ok,n:s.n});
-  const payload={name:player.name,section:player.section,cls:CTX.cls.id,subject:CTX.subj.id,chapter:CTX.chap.id,level:sel.level,score,total:quiz.length,seconds:Math.round((Date.now()-startedAt)/1000),topics,attemptId};
+  const payload={name:pname(),section:"",cls:CTX.cls.id,subject:CTX.subj.id,chapter:CTX.chap.id,level:sel.level,score,total:quiz.length,seconds:Math.round((Date.now()-startedAt)/1000),topics,attemptId};
   try{
     const r=await fetch(API,{method:"POST",body:JSON.stringify(payload)});const d=await r.json();
     if(!d.ok)throw new Error(d.error);submitted=true;
@@ -754,7 +761,7 @@ async function showBoard(el,cls,subj,level){
   el.innerHTML='<div class="board"><div class="tabs">'+['easy','hard','advanced'].map(l=>'<button class="btn small" data-l="'+l+'" aria-pressed="'+(level===l)+'">'+LVL[l]+'</button>').join("")+'</div><div id="sbBody"><p class="muted">Loading…</p></div></div>';
   el.querySelectorAll("[data-l]").forEach(b=>b.addEventListener("click",()=>showBoard(el,cls,subj,b.dataset.l)));
   try{
-    const u=API+(API.includes("?")?"&":"?")+"action=leaderboard&cls="+encodeURIComponent(cls.id)+"&subject="+encodeURIComponent(subj.id)+"&level="+level+"&name="+encodeURIComponent(player.name)+"&section="+encodeURIComponent(player.section);
+    const u=API+(API.includes("?")?"&":"?")+"action=leaderboard&cls="+encodeURIComponent(cls.id)+"&subject="+encodeURIComponent(subj.id)+"&level="+level+"&name="+encodeURIComponent(pname())+"&section=";
     $("sbBody").innerHTML=boardHTML(await (await fetch(u)).json(),cls,subj);
   }catch(e){$("sbBody").innerHTML='<p class="warn">Could not load the leaderboard. Check your internet connection.</p>'}
 }
@@ -917,7 +924,6 @@ function readyMeter(p){const n=TUT.exam.checklist.length,c=p.check.length;
 async function practise(topics,level){
   try{BANK=await loadBank(TCTX.chap)}catch(e){return}
   CTX=TCTX;sel.topics=topics;sel.level=level;sel.count=topics.length>1?15:10;sel.mode="quiz";store.set("gamesol-sel",sel);
-  if(ONLINE&&player.name.length<2){sel.mode="quiz";goHome();const w=$("pName");if(w){w.focus();}return}
   build();
 }
 function numberlineSVG(d){

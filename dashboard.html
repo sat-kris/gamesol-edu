@@ -170,7 +170,7 @@ async function load(key){
     const uniq=f=>[...new Set(ROWS.map(f).filter(Boolean))].sort((a,b)=>String(a).localeCompare(String(b),undefined,{numeric:true}));
     opts("fClass","All classes",uniq(r=>String(r.class)),className);
     opts("fSubject","All subjects",uniq(r=>r.subject),v=>subjectName("",v));
-    opts("fSection","All sections",uniq(r=>String(r.section||"").toUpperCase()),v=>v);
+    opts("fSection","All sections",uniq(r=>String(r.section||"").toUpperCase()),v=>v);$("fSection").closest("label").hidden=!ROWS.some(r=>String(r.section||"").trim());
     render();
   }catch(e){showErr("Could not reach the backend. Check your internet connection and the link in edu-kids-config.json.")}
 }
@@ -247,10 +247,10 @@ function studentTable(rows){
   let list=Object.values(m).map(s=>Object.assign(s,{avg:s.sum/s.n})).filter(s=>!q||String(s.name).toLowerCase().includes(q));
   const val=s=>sortKey==="name"||sortKey==="section"||sortKey==="cls"?String(s[sortKey]).toLowerCase():sortKey==="last"?s.last.getTime():(s[sortKey]??-1);
   list.sort((a,b)=>val(a)<val(b)?-sortDir:val(a)>val(b)?sortDir:0);
-  const cols=[["name","Name"],["cls","Class"],["section","Section"],["n","Quizzes",1],["avg","Average",1],["easy","Best easy",1],["hard","Best hard",1],["adv","Best adv.",1],["last","Last active",1]];
+  const cols=[["name","Name"],["cls","Class"],["n","Quizzes",1],["avg","Average",1],["easy","Best easy",1],["hard","Best hard",1],["adv","Best adv.",1],["last","Last active",1]];
   const pc=v=>v==null?'<span class="muted">–</span>':'<span class="'+(v<60?"low":"")+'">'+Math.round(v)+'%</span>';
   $("students").innerHTML='<thead><tr>'+cols.map(c=>'<th class="sortable'+(c[2]?" num":"")+'" data-k="'+c[0]+'" aria-sort="'+(sortKey===c[0]?(sortDir>0?"ascending":"descending"):"none")+'">'+c[1]+(sortKey===c[0]?(sortDir>0?" ▲":" ▼"):"")+'</th>').join("")+'</tr></thead><tbody>'+
-    (list.length?list.map(s=>'<tr><td>'+esc(s.name)+'</td><td>'+esc(s.cls)+'</td><td>'+esc(s.section)+'</td><td class="num">'+s.n+'</td><td class="num">'+pc(s.avg)+'</td><td class="num">'+pc(s.easy)+'</td><td class="num">'+pc(s.hard)+'</td><td class="num">'+pc(s.adv)+'</td><td class="num">'+s.last.toLocaleDateString([], {day:"numeric",month:"short"})+'</td></tr>').join(""):'<tr><td colspan="9" class="empty">No students match.</td></tr>')+'</tbody>';
+    (list.length?list.map(s=>'<tr><td>'+esc(s.name)+'</td><td>'+esc(s.cls)+'</td><td class="num">'+s.n+'</td><td class="num">'+pc(s.avg)+'</td><td class="num">'+pc(s.easy)+'</td><td class="num">'+pc(s.hard)+'</td><td class="num">'+pc(s.adv)+'</td><td class="num">'+s.last.toLocaleDateString([], {day:"numeric",month:"short"})+'</td></tr>').join(""):'<tr><td colspan="8" class="empty">No students match.</td></tr>')+'</tbody>';
   $("students").querySelectorAll("th[data-k]").forEach(th=>th.addEventListener("click",()=>{const k=th.dataset.k;if(sortKey===k)sortDir=-sortDir;else{sortKey=k;sortDir=(k==="name"||k==="section"||k==="cls")?1:-1}studentTable(filtered())}));
 }
 

@@ -158,7 +158,8 @@ A multiple-choice question in a bank looks like this:
    ```json
    "leaderboard": { "scriptUrl": "https://script.google.com/macros/s/AKfy…/exec" }
    ```
-5. Commit. Students now see a name box, the leaderboard and their rank. The French game uses the same link automatically.
+5. Commit. Students now see the leaderboard and their rank. The French game uses the same link automatically.
+   Names are optional: each student is given a random fun game name (e.g. *NoCapNinja45*) that is remembered on their device. They can tap **🎲 New name** or type their own. There is no section field.
 
 - Dashboard: `https://<username>.github.io/<repo>/dashboard.html`. Enter your teacher password. You can filter by period, class, subject, section and level, and see weak topics, students and the latest attempts.
 - Raw data: the **Attempts** tab of your Google Sheet.
