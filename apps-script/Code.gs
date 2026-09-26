@@ -69,10 +69,13 @@ function leaderboard_(cls, subject, level, name, section) {
   };
 }
 
+// Accepted quiz levels; anything else is stored as 'easy'.
+function level_(x) { return ['easy', 'hard', 'advanced'].indexOf(x) !== -1 ? x : 'easy'; }
+
 function doPost(e) {
   let d;
   try { d = JSON.parse(e.postData.contents); } catch (err) { return json_({ ok: false, error: 'bad_json' }); }
-  const level = d.level === 'hard' ? 'hard' : 'easy';
+  const level = level_(d.level);
   const name = clean_(d.name, 40);
   const section = clean_(d.section, 12).toUpperCase();
   const cls = clean_(d.cls, 12);
@@ -108,7 +111,7 @@ function doPost(e) {
 function doGet(e) {
   const p = e.parameter || {};
   if (p.action === 'leaderboard') {
-    return json_(leaderboard_(p.cls, p.subject, p.level === 'hard' ? 'hard' : 'easy', p.name, p.section));
+    return json_(leaderboard_(p.cls, p.subject, level_(p.level), p.name, p.section));
   }
   if (p.action === 'stats') {
     if (p.key !== TEACHER_KEY) return json_({ ok: false, error: 'wrong_key' });
