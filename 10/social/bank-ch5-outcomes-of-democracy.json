@@ -483,6 +483,102 @@
    ],
    "e": "Non-democracies are quicker but lack transparency.",
    "passage": "Democracy is based on the idea of deliberation and negotiation. So, some delay is bound to take place. But because it has followed procedures, its decisions may be both more acceptable to the people and more effective. If you want to know if a decision was taken through the correct procedures, you can find this out. You have the right and the means to examine the process of decision making. This is known as transparency. This factor is often missing from a non-democratic government."
+  },
+  {
+   "topic": "govt",
+   "level": "advanced",
+   "q": "In which respect is democracy clearly better than any alternative?",
+   "a": "In producing a legitimate government – it is the people’s own government",
+   "w": [
+    "In quick decision-making",
+    "In always reducing poverty",
+    "In avoiding all corruption"
+   ],
+   "e": "Democracy may be slow, but it is legitimate."
+  },
+  {
+   "topic": "govt",
+   "level": "advanced",
+   "q": "What is a good test of whether a democracy is accountable?",
+   "a": "Regular, free and fair elections, open public debate and citizens’ right to information",
+   "w": [
+    "How fast laws are passed",
+    "How few parties there are",
+    "How strong the army is"
+   ],
+   "e": "Accountability means people can examine and influence decisions."
+  },
+  {
+   "topic": "govt",
+   "level": "advanced",
+   "q": "Assertion (A): Democratic government is a legitimate government.\nReason (R): It may be slow and less efficient, but it is the people’s own government.",
+   "a": "Both A and R are true and R is the correct explanation of A.",
+   "w": [
+    "Both A and R are true but R is not the correct explanation of A.",
+    "A is true but R is false.",
+    "A is false but R is true."
+   ],
+   "e": "Legitimacy is democracy’s strongest claim."
+  },
+  {
+   "topic": "economy",
+   "level": "advanced",
+   "q": "Growth rates 1950–2000: dictatorships 4.42%, democracies 3.95%. What should we conclude?",
+   "a": "The small difference is not a strong reason to reject democracy",
+   "w": [
+    "Dictatorship is always better for development",
+    "Democracy has no economic effect",
+    "Democracies grow twice as fast"
+   ],
+   "e": "Economic development depends on many factors; democracy’s other outcomes matter too."
+  },
+  {
+   "topic": "economy",
+   "level": "advanced",
+   "q": "In South Africa the top 20% take 64.8% of national income and the bottom 20% get 2.9%. What does this show?",
+   "a": "Democracies do not always reduce economic inequality",
+   "w": [
+    "Income is equally shared in democracies",
+    "The poor are the majority of earners",
+    "Dictatorships are equal"
+   ],
+   "e": "Growing inequality is a big challenge for democracies."
+  },
+  {
+   "topic": "dignity",
+   "level": "advanced",
+   "q": "Why is democracy ‘not simply rule by majority opinion’?",
+   "a": "The majority must work with the minority, and who is the majority keeps changing",
+   "w": [
+    "The minority always rules",
+    "The majority never changes",
+    "Opinions are not counted"
+   ],
+   "e": "A group should not be permanently excluded from power."
+  },
+  {
+   "topic": "dignity",
+   "level": "advanced",
+   "q": "Assertion (A): Complaints about democracy are a testimony to its success.\nReason (R): People have developed awareness and the ability to look critically at those in power.",
+   "a": "Both A and R are true and R is the correct explanation of A.",
+   "w": [
+    "Both A and R are true but R is not the correct explanation of A.",
+    "A is true but R is false.",
+    "A is false but R is true."
+   ],
+   "e": "Being able to complain shows people are no longer subjects but citizens."
+  },
+  {
+   "topic": "dignity",
+   "level": "advanced",
+   "q": "Why is the struggle of women and dalits for dignity easier in a democracy?",
+   "a": "Democracy accepts equality in principle, so unequal treatment has no legal or moral basis",
+   "w": [
+    "Democracy has already ended all discrimination",
+    "Democracies have no laws",
+    "Only men vote in democracies"
+   ],
+   "e": "Recognition of equality in principle gives strength to their struggles."
   }
  ]
 }

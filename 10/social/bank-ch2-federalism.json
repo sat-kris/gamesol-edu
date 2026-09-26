@@ -894,6 +894,138 @@
    ],
    "e": "Hindi + 21 others = 22 Scheduled Languages.",
    "passage": "Our Constitution did not give the status of national language to any one language. Hindi was identified as the official language. But Hindi is the mother tongue of only about 40 per cent of Indians. Therefore, there were many safeguards to protect other languages. Besides Hindi, there are 21 other languages recognised as Scheduled Languages by the Constitution. A candidate in an examination conducted for the Central Government positions may opt to take the examination in any of these languages."
+  },
+  {
+   "topic": "what",
+   "level": "advanced",
+   "q": "Which is NOT a feature of federalism?",
+   "a": "The Union government can change the powers of the States on its own",
+   "w": [
+    "There are two or more levels of government",
+    "Each level has its own jurisdiction set by the Constitution",
+    "Courts interpret the Constitution and the powers of each level"
+   ],
+   "e": "Fundamental provisions cannot be changed by one level alone."
+  },
+  {
+   "topic": "what",
+   "level": "advanced",
+   "q": "Which of these is an example of a ‘holding together’ federation?",
+   "a": "India",
+   "w": [
+    "USA",
+    "Switzerland",
+    "Australia"
+   ],
+   "e": "Holding together: India, Spain, Belgium. Coming together: USA, Switzerland, Australia."
+  },
+  {
+   "topic": "what",
+   "level": "advanced",
+   "q": "What is the dual objective of a federal system?",
+   "a": "To safeguard the unity of the country and accommodate regional diversity",
+   "w": [
+    "To give all power to the Centre",
+    "To abolish State governments",
+    "To make one language official everywhere"
+   ],
+   "e": "Mutual trust and agreement to live together are needed for both."
+  },
+  {
+   "topic": "india",
+   "level": "advanced",
+   "q": "Education, forests, trade unions, marriage, adoption and succession are on which list?",
+   "a": "Concurrent List",
+   "w": [
+    "Union List",
+    "State List",
+    "Residuary subjects"
+   ],
+   "e": "Both Union and State can make laws on them."
+  },
+  {
+   "topic": "india",
+   "level": "advanced",
+   "q": "If a State law and a Union law on a Concurrent List subject conflict, which prevails?",
+   "a": "The Union law",
+   "w": [
+    "The State law",
+    "Whichever is newer",
+    "Neither – the courts decide a new law"
+   ],
+   "e": "On Concurrent subjects, the law made by the Union Government prevails."
+  },
+  {
+   "topic": "india",
+   "level": "advanced",
+   "q": "How can the power-sharing arrangement between the Union and the States be changed?",
+   "a": "By a two-thirds majority in both Houses of Parliament, ratified by at least half of the State legislatures",
+   "w": [
+    "By an order of the Prime Minister",
+    "By a simple majority in the Lok Sabha",
+    "By the Supreme Court alone"
+   ],
+   "e": "This makes the arrangement very hard to change."
+  },
+  {
+   "topic": "practice",
+   "level": "advanced",
+   "q": "What did the experience of forming linguistic States show?",
+   "a": "It made the country more united and administration easier",
+   "w": [
+    "It broke the country",
+    "It weakened the Centre completely",
+    "It ended the use of Hindi"
+   ],
+   "e": "Fears that language States would divide India proved wrong."
+  },
+  {
+   "topic": "practice",
+   "level": "advanced",
+   "q": "Why did the relationship between the Centre and the States change after 1990?",
+   "a": "Regional parties rose, coalition governments were formed and the Supreme Court made it hard to dismiss State governments arbitrarily",
+   "w": [
+    "The Constitution abolished the State List",
+    "All States came under one party",
+    "Local governments replaced the States"
+   ],
+   "e": "This brought a new culture of power sharing."
+  },
+  {
+   "topic": "local",
+   "level": "advanced",
+   "q": "What does the Gram Sabha do?",
+   "a": "All village voters meet at least twice or thrice a year to approve the gram panchayat’s budget and review its performance",
+   "w": [
+    "It elects the Chief Minister",
+    "It runs the district administration",
+    "It collects income tax"
+   ],
+   "e": "The panchayat works under the overall supervision of the gram sabha."
+  },
+  {
+   "topic": "local",
+   "level": "advanced",
+   "q": "Who elects the members of a panchayat samiti (block/mandal)?",
+   "a": "All the panchayat members in that area",
+   "w": [
+    "All adult voters of the district",
+    "MLAs of the State",
+    "The zilla parishad chairperson"
+   ],
+   "e": "Gram panchayats are directly elected; the samiti is elected by the panchayat members."
+  },
+  {
+   "topic": "local",
+   "level": "advanced",
+   "q": "Assertion (A): Local government is a step towards deepening democracy.\nReason (R): It allows people to directly participate in decision-making on local issues.",
+   "a": "Both A and R are true and R is the correct explanation of A.",
+   "w": [
+    "Both A and R are true but R is not the correct explanation of A.",
+    "A is true but R is false.",
+    "A is false but R is true."
+   ],
+   "e": "Local self-government brings decisions closer to the people."
   }
  ]
 }

@@ -803,6 +803,138 @@
    ],
    "e": "6% votes in Lok Sabha or in Assembly elections in four States + at least 4 Lok Sabha seats.",
    "passage": "Every party in the country has to register with the Election Commission. While the Commission treats all parties equally, it offers some special facilities to large and established parties. These parties are given a unique symbol – only the official candidates of that party can use that election symbol. A party that secures at least six per cent of the total votes in an election to the Legislative Assembly of a State and wins at least two seats is recognised as a State party. A party that secures at least six per cent of the total votes in Lok Sabha elections or Assembly elections in four States and wins at least four seats in the Lok Sabha is recognised as a national party."
+  },
+  {
+   "topic": "need",
+   "level": "advanced",
+   "q": "What would happen if there were no political parties?",
+   "a": "Every candidate would be independent; no one could promise major policy changes and government would be unstable",
+   "w": [
+    "Elections would become cheaper and better",
+    "The President would choose all MPs",
+    "Courts would make all laws"
+   ],
+   "e": "That is why modern democracies cannot exist without parties."
+  },
+  {
+   "topic": "need",
+   "level": "advanced",
+   "q": "What does ‘partisanship’ mean?",
+   "a": "A tendency to take a side and an inability to take a balanced view",
+   "w": [
+    "Joining many parties",
+    "Sharing power",
+    "Supporting independents"
+   ],
+   "e": "A party is a part of society, so it involves partisanship."
+  },
+  {
+   "topic": "need",
+   "level": "advanced",
+   "q": "Assertion (A): The rise of political parties is linked to the emergence of representative democracies.\nReason (R): Large societies need representative democracy, and parties gather different views and present them to government.",
+   "a": "Both A and R are true and R is the correct explanation of A.",
+   "w": [
+    "Both A and R are true but R is not the correct explanation of A.",
+    "A is true but R is false.",
+    "A is false but R is true."
+   ],
+   "e": "Parties became necessary as societies became large and complex."
+  },
+  {
+   "topic": "systems",
+   "level": "advanced",
+   "q": "Why is a one-party system not considered a good democratic option?",
+   "a": "Voters have no real choice and there is no free competition for power",
+   "w": [
+    "It is too expensive",
+    "It has too many parties",
+    "It needs coalition governments"
+   ],
+   "e": "Democracy requires at least two parties competing fairly."
+  },
+  {
+   "topic": "systems",
+   "level": "advanced",
+   "q": "What is an ‘alliance’ or ‘front’?",
+   "a": "Several parties in a multiparty system joining hands to contest elections and win power",
+   "w": [
+    "A party with only one leader",
+    "A party banned by the Election Commission",
+    "A group of independent candidates"
+   ],
+   "e": "Examples in India: NDA, UPA and the Left Front."
+  },
+  {
+   "topic": "systems",
+   "level": "advanced",
+   "q": "Why is the party system of a country not a matter of choice?",
+   "a": "It evolves over a long time depending on society, social and regional divisions, history and the electoral system",
+   "w": [
+    "The Election Commission decides it",
+    "The Constitution fixes the number of parties",
+    "Voters choose it in a referendum"
+   ],
+   "e": "India’s multiparty system reflects its social and regional diversity."
+  },
+  {
+   "topic": "parties",
+   "level": "advanced",
+   "q": "Which party was the first from North-East India to become a national party?",
+   "a": "National People’s Party",
+   "w": [
+    "Bahujan Samaj Party",
+    "Aam Aadmi Party",
+    "Communist Party of India (Marxist)"
+   ],
+   "e": "The NPP was formed in July 2013 under P.A. Sangma."
+  },
+  {
+   "topic": "parties",
+   "level": "advanced",
+   "q": "Which party was formed by reviving the Bharatiya Jana Sangh founded by Syama Prasad Mukherjee?",
+   "a": "Bharatiya Janata Party",
+   "w": [
+    "Indian National Congress",
+    "National People’s Party",
+    "Bahujan Samaj Party"
+   ],
+   "e": "The BJP was founded in 1980."
+  },
+  {
+   "topic": "reform",
+   "level": "advanced",
+   "q": "What unintended effect has the anti-defection law had?",
+   "a": "Dissent has become more difficult – MPs and MLAs must accept whatever party leaders decide",
+   "w": [
+    "Defections increased",
+    "Parties stopped contesting elections",
+    "MLAs became independent"
+   ],
+   "e": "The law made party leaders more powerful."
+  },
+  {
+   "topic": "reform",
+   "level": "advanced",
+   "q": "Why has state funding of elections been suggested?",
+   "a": "To reduce the influence of money in politics",
+   "w": [
+    "To increase the number of parties",
+    "To stop voting",
+    "To pay MLAs a salary"
+   ],
+   "e": "Support could be given in kind (petrol, paper, telephone) or in cash based on votes secured."
+  },
+  {
+   "topic": "reform",
+   "level": "advanced",
+   "q": "Assertion (A): Legal reforms of political parties must be made carefully.\nReason (R): Over-regulation of parties can be counter-productive and push them to find ways to cheat the law.",
+   "a": "Both A and R are true and R is the correct explanation of A.",
+   "w": [
+    "Both A and R are true but R is not the correct explanation of A.",
+    "A is true but R is false.",
+    "A is false but R is true."
+   ],
+   "e": "People’s pressure and participation are other important ways to reform parties."
   }
  ]
 }

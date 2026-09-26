@@ -767,6 +767,114 @@
    ],
    "e": "Read the last line of the passage.",
    "passage": "Between 1970 and 1993, Belgian leaders amended their constitution four times. Apart from the Central and the State Government, there is a third kind of government. This ‘community government’ is elected by people belonging to one language community – Dutch, French and German-speaking – no matter where they live. This government has the power regarding cultural, educational and language-related issues."
+  },
+  {
+   "topic": "stories",
+   "level": "advanced",
+   "q": "Which statement about the Belgian model is NOT correct?",
+   "a": "The Dutch-speaking majority was given power to overrule the French-speaking minority",
+   "w": [
+    "The number of Dutch- and French-speaking ministers in the central government is equal",
+    "Brussels has a separate government with equal representation of both communities",
+    "State governments are not subordinate to the Central Government"
+   ],
+   "e": "The Belgian constitution prescribes equality – no community can decide alone."
+  },
+  {
+   "topic": "stories",
+   "level": "advanced",
+   "q": "Which was NOT a demand of the Sri Lankan Tamil parties?",
+   "a": "Making Sinhala the only official language",
+   "w": [
+    "Recognition of Tamil as an official language",
+    "Regional autonomy",
+    "Equality of opportunity in education and jobs"
+   ],
+   "e": "The 1956 Act making Sinhala the only official language was what Tamils opposed."
+  },
+  {
+   "topic": "stories",
+   "level": "advanced",
+   "q": "Assertion (A): The Belgian model helped to avoid civic strife and a division of the country on linguistic lines.\nReason (R): Belgian leaders recognised regional differences and cultural diversities and worked out arrangements to share power.",
+   "a": "Both A and R are true and R is the correct explanation of A.",
+   "w": [
+    "Both A and R are true but R is not the correct explanation of A.",
+    "A is true but R is false.",
+    "A is false but R is true."
+   ],
+   "e": "Accommodation (R) produced peace and unity (A)."
+  },
+  {
+   "topic": "why",
+   "level": "advanced",
+   "q": "Which situation best shows the PRUDENTIAL reason for power sharing?",
+   "a": "Sharing power reduced conflict between language groups in Belgium",
+   "w": [
+    "People have a right to be consulted on how they are governed",
+    "Citizens must have a stake in the system",
+    "Power sharing is the very spirit of democracy"
+   ],
+   "e": "Prudential = better outcomes (less conflict, stability); the others are moral reasons."
+  },
+  {
+   "topic": "why",
+   "level": "advanced",
+   "q": "Assertion (A): Majoritarianism can undermine the unity of a country.\nReason (R): In Sri Lanka, measures to establish Sinhala supremacy led to distrust and civil war.",
+   "a": "Both A and R are true and R is the correct explanation of A.",
+   "w": [
+    "Both A and R are true but R is not the correct explanation of A.",
+    "A is true but R is false.",
+    "A is false but R is true."
+   ],
+   "e": "Sri Lanka is the textbook example of how majoritarian policies divide a country."
+  },
+  {
+   "topic": "why",
+   "level": "advanced",
+   "q": "What common lesson do the Belgium and Sri Lanka stories teach?",
+   "a": "Accommodating all groups keeps a country united, while majoritarianism can break it",
+   "w": [
+    "Federal systems always fail",
+    "Language should not be used in politics",
+    "Minorities should form separate countries"
+   ],
+   "e": "This is why power sharing is desirable."
+  },
+  {
+   "topic": "forms",
+   "level": "advanced",
+   "q": "Why is horizontal power sharing called a system of ‘checks and balances’?",
+   "a": "Each organ checks the others, so no organ can exercise unlimited power",
+   "w": [
+    "Because governments check bank balances",
+    "Because states check the Centre",
+    "Because courts appoint ministers"
+   ],
+   "e": "Legislature, executive and judiciary keep each other in balance."
+  },
+  {
+   "topic": "forms",
+   "level": "advanced",
+   "q": "Traders, industrialists, farmers and workers influence government decisions through their associations. This shows power sharing among…",
+   "a": "pressure groups and movements",
+   "w": [
+    "organs of government",
+    "levels of government",
+    "language communities"
+   ],
+   "e": "Interest groups share power by influencing decisions."
+  },
+  {
+   "topic": "forms",
+   "level": "advanced",
+   "q": "Which is an example of vertical power sharing?",
+   "a": "Powers divided among Union, State and local governments",
+   "w": [
+    "Judges checking the executive",
+    "A coalition of two parties",
+    "Reserved seats for minorities"
+   ],
+   "e": "Vertical = among levels of government."
   }
  ]
 }

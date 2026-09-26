@@ -679,6 +679,114 @@
    ],
    "e": "Sri Lanka – Buddhism; Pakistan – Islam; England – Christianity.",
    "passage": "There is no official religion for the Indian state. Unlike the status of Buddhism in Sri Lanka, that of Islam in Pakistan and that of Christianity in England, our Constitution does not give a special status to any religion. The Constitution provides to all individuals and communities freedom to profess, practice and propagate any religion, or not to follow any. The Constitution prohibits discrimination on grounds of religion. At the same time, the Constitution allows the state to intervene in the matters of religion in order to ensure equality within religious communities. For example, it bans untouchability."
+  },
+  {
+   "topic": "gender",
+   "level": "advanced",
+   "q": "Why is much of women’s work ‘not valued’?",
+   "a": "It is household work that is unpaid",
+   "w": [
+    "Women do less work than men",
+    "Women work only in factories",
+    "The law forbids paying women"
+   ],
+   "e": "Women work about one hour more than men daily, but much of it is unpaid household work."
+  },
+  {
+   "topic": "gender",
+   "level": "advanced",
+   "q": "What did feminist movements demand?",
+   "a": "Equality in personal and family life and a better political and legal status for women",
+   "w": [
+    "Separate States for women",
+    "Abolition of elections",
+    "Only reserved jobs in the army"
+   ],
+   "e": "They also demanded voting rights and better educational and career opportunities."
+  },
+  {
+   "topic": "gender",
+   "level": "advanced",
+   "q": "What does a fall in the child sex ratio (to 919 girls per 1000 boys) show?",
+   "a": "Preference for sons and sex-selective abortion",
+   "w": [
+    "Better health care for girls",
+    "More girls than boys are born",
+    "Girls live longer than boys"
+   ],
+   "e": "It reflects discrimination against girls before and after birth."
+  },
+  {
+   "topic": "religion",
+   "level": "advanced",
+   "q": "Which is an example of political mobilisation on religious lines?",
+   "a": "Using sacred symbols, religious leaders and emotional appeals to bring followers of one religion together in politics",
+   "w": [
+    "Visiting a place of worship privately",
+    "Following one’s own family laws",
+    "Believing in one’s religion"
+   ],
+   "e": "This is one of the forms communalism takes in politics."
+  },
+  {
+   "topic": "religion",
+   "level": "advanced",
+   "q": "When Gandhiji said religion can never be separated from politics, what did he mean by religion?",
+   "a": "Moral values that inform all religions, not any particular religion",
+   "w": [
+    "Hinduism only",
+    "The rituals of every religion",
+    "The religion of the majority"
+   ],
+   "e": "He meant ethics, not Hinduism or Islam."
+  },
+  {
+   "topic": "religion",
+   "level": "advanced",
+   "q": "Assertion (A): Communalism is a threat to Indian democracy.\nReason (R): Communal politics treats religion as the principal basis of social community and one religion as superior.",
+   "a": "Both A and R are true and R is the correct explanation of A.",
+   "w": [
+    "Both A and R are true but R is not the correct explanation of A.",
+    "A is true but R is false.",
+    "A is false but R is true."
+   ],
+   "e": "Such politics divides citizens and can lead to violence."
+  },
+  {
+   "topic": "caste",
+   "level": "advanced",
+   "q": "Which is NOT a reason for the weakening of the caste system in India?",
+   "a": "Occupation is still inherited from one’s caste",
+   "w": [
+    "Urbanisation",
+    "Growth of literacy and education",
+    "Occupational mobility"
+   ],
+   "e": "Economic development, urbanisation, education and weakening of landlords have weakened caste hierarchy."
+  },
+  {
+   "topic": "caste",
+   "level": "advanced",
+   "q": "Why can’t elections in India be won by appealing to one caste alone?",
+   "a": "No constituency has a clear majority of one caste, and voters have many other loyalties",
+   "w": [
+    "Caste appeals are always illegal",
+    "Only one caste votes",
+    "Parties never consider caste"
+   ],
+   "e": "Parties need the support of more than one caste or community."
+  },
+  {
+   "topic": "caste",
+   "level": "advanced",
+   "q": "Rural poverty (1999–2000): Scheduled Tribes 45.8%, Hindu upper castes 11.7%. What is the gap?",
+   "a": "34.1 percentage points",
+   "w": [
+    "57.5 percentage points",
+    "11.7 percentage points",
+    "4 times exactly"
+   ],
+   "e": "45.8 − 11.7 = 34.1. Caste inequality still shows up in economic status."
   }
  ]
 }
