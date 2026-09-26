@@ -583,6 +583,332 @@
    "level": "hard",
    "type": "fn",
    "fn": "lastDigitsTest"
+  },
+  {
+   "topic": "common",
+   "level": "advanced",
+   "type": "calc",
+   "q": "Two lights blink every {a} and every {b} seconds. They blink together now. After how many seconds will they next blink together?",
+   "vars": {
+    "a": [
+     4,
+     12,
+     1
+    ],
+    "b": [
+     6,
+     15,
+     1
+    ]
+   },
+   "answer": "a*b/(()=>{const g=(x,y)=>y?g(y,x%y):x;return g(a,b)})()",
+   "wrong": [
+    "a*b",
+    "a+b",
+    "(()=>{const g=(x,y)=>y?g(y,x%y):x;return g(a,b)})()"
+   ],
+   "e": "Find the smallest common multiple of {a} and {b}: {ans} seconds.",
+   "dp": 0,
+   "where": "a!==b&&a*b/(()=>{const g=(x,y)=>y?g(y,x%y):x;return g(a,b)})()!==a*b"
+  },
+  {
+   "topic": "common",
+   "level": "advanced",
+   "type": "calc",
+   "q": "What is the largest number that divides both {a} and {b} exactly?",
+   "vars": {
+    "g": [
+     2,
+     12,
+     1
+    ],
+    "x": [
+     2,
+     9,
+     1
+    ],
+    "y": [
+     2,
+     9,
+     1
+    ]
+   },
+   "answer": "g",
+   "wrong": [
+    "g*2",
+    "x*y",
+    "g+1"
+   ],
+   "e": "{a} = {g} × {x} and {b} = {g} × {y}; {x} and {y} share no factor, so the answer is {ans}.",
+   "dp": 0,
+   "derive": {
+    "a": "g*x",
+    "b": "g*y"
+   },
+   "where": "x!==y&&(()=>{const g=(x,y)=>y?g(y,x%y):x;return g(x,y)})()===1"
+  },
+  {
+   "topic": "common",
+   "level": "advanced",
+   "type": "calc",
+   "q": "Idli-vada game from 1 to {N}: say ‘idli-vada’ for multiples of both {p} and {q}. How many times do you say it?",
+   "vars": {
+    "p": {
+     "of": [
+      2,
+      3,
+      4
+     ]
+    },
+    "q": {
+     "of": [
+      5,
+      7
+     ]
+    },
+    "N": [
+     60,
+     150,
+     10
+    ]
+   },
+   "answer": "Math.floor(N/(p*q/(()=>{const g=(x,y)=>y?g(y,x%y):x;return g(p,q)})()))",
+   "wrong": [
+    "Math.floor(N/p)",
+    "Math.floor(N/q)",
+    "Math.floor(N/(p*q/(()=>{const g=(x,y)=>y?g(y,x%y):x;return g(p,q)})()))+1"
+   ],
+   "e": "Common multiples of {p} and {q} are multiples of their LCM. Count them up to {N}: {ans}.",
+   "dp": 0
+  },
+  {
+   "topic": "primes",
+   "level": "advanced",
+   "q": "The sum of two prime numbers is 25. What are they?",
+   "a": "2 and 23",
+   "w": [
+    "5 and 20",
+    "11 and 14",
+    "3 and 22"
+   ],
+   "e": "An odd sum needs one even prime – the only even prime is 2."
+  },
+  {
+   "topic": "primes",
+   "level": "advanced",
+   "q": "Is 91 a prime number?",
+   "a": "No – 91 = 7 × 13",
+   "w": [
+    "Yes",
+    "No – 91 = 3 × 31",
+    "No – it is even"
+   ],
+   "e": "91 looks prime but 7 × 13 = 91."
+  },
+  {
+   "topic": "primes",
+   "level": "advanced",
+   "type": "calc",
+   "q": "How many prime numbers are there between {a} and {b}?",
+   "vars": {
+    "a": [
+     20,
+     80,
+     10
+    ]
+   },
+   "answer": "(()=>{let c=0;for(let n=a+1;n<b;n++){let p=n>1;for(let i=2;i*i<=n;i++)if(n%i===0){p=false;break}if(p)c++}return c})()",
+   "wrong": [
+    "(()=>{let c=0;for(let n=a+1;n<b;n++){let p=n>1;for(let i=2;i*i<=n;i++)if(n%i===0){p=false;break}if(p)c++}return c})()+1",
+    "(()=>{let c=0;for(let n=a+1;n<b;n++){let p=n>1;for(let i=2;i*i<=n;i++)if(n%i===0){p=false;break}if(p)c++}return c})()-1",
+    "(()=>{let c=0;for(let n=a+1;n<b;n++){let p=n>1;for(let i=2;i*i<=n;i++)if(n%i===0){p=false;break}if(p)c++}return c})()+2"
+   ],
+   "e": "Test each number from {a} to {b} for factors: there are {ans} primes.",
+   "dp": 0,
+   "derive": {
+    "b": "a+20"
+   }
+  },
+  {
+   "topic": "primes",
+   "level": "advanced",
+   "q": "How many prime numbers are there from 1 to 100?",
+   "a": "25",
+   "w": [
+    "20",
+    "30",
+    "50"
+   ],
+   "e": "2, 3, 5, 7, 11, … 97 – exactly 25."
+  },
+  {
+   "topic": "coprime",
+   "level": "advanced",
+   "q": "Which pair is NOT co-prime?",
+   "a": "21 and 49",
+   "w": [
+    "16 and 25",
+    "18 and 35",
+    "8 and 15"
+   ],
+   "e": "21 = 3 × 7 and 49 = 7 × 7 share the factor 7."
+  },
+  {
+   "topic": "coprime",
+   "level": "advanced",
+   "q": "Two consecutive numbers (like 14 and 15) are always…",
+   "a": "co-prime",
+   "w": [
+    "both prime",
+    "both even",
+    "multiples of each other"
+   ],
+   "e": "Any common factor would have to divide their difference, 1."
+  },
+  {
+   "topic": "coprime",
+   "level": "advanced",
+   "q": "Are 35 and 39 co-prime?",
+   "a": "Yes – 35 = 5 × 7 and 39 = 3 × 13 share no factor",
+   "w": [
+    "No – both are odd",
+    "No – both have 3 as a factor",
+    "No – both are composite"
+   ],
+   "e": "Composite numbers can still be co-prime."
+  },
+  {
+   "topic": "factorise",
+   "level": "advanced",
+   "type": "calc",
+   "q": "What is the largest prime factor of {n}?",
+   "vars": {
+    "n": [
+     100,
+     999,
+     1
+    ]
+   },
+   "answer": "(()=>{let m=n,f=1;for(let p=2;p*p<=m;p++)while(m%p===0){f=p;m/=p}return m>1?m:f})()",
+   "wrong": [
+    "(()=>{let p=2;while(n%p)p++;return p})()",
+    "Math.floor(n/2)",
+    "n"
+   ],
+   "e": "Break {n} into primes; the biggest one is {ans}.",
+   "dp": 0,
+   "where": "(()=>{let m=n,f=1;for(let p=2;p*p<=m;p++)while(m%p===0){f=p;m/=p}return m>1?m:f})()!==n&&(()=>{let p=2;while(n%p)p++;return p})()!==(()=>{let m=n,f=1;for(let p=2;p*p<=m;p++)while(m%p===0){f=p;m/=p}return m>1?m:f})()"
+  },
+  {
+   "topic": "factorise",
+   "level": "advanced",
+   "q": "How many different prime factors does 210 have?",
+   "a": "4 (2, 3, 5 and 7)",
+   "w": [
+    "3",
+    "5",
+    "2"
+   ],
+   "e": "210 = 2 × 3 × 5 × 7."
+  },
+  {
+   "topic": "factorise",
+   "level": "advanced",
+   "q": "What is the smallest number with three different prime factors?",
+   "a": "30",
+   "w": [
+    "12",
+    "60",
+    "105"
+   ],
+   "e": "2 × 3 × 5 = 30."
+  },
+  {
+   "topic": "factorise",
+   "level": "advanced",
+   "type": "calc",
+   "q": "A number’s prime factorisation is 2 × 2 × 3 × {p}. What is the number?",
+   "vars": {
+    "p": {
+     "of": [
+      5,
+      7,
+      11,
+      13
+     ]
+    }
+   },
+   "answer": "12*p",
+   "wrong": [
+    "7*p",
+    "6*p",
+    "12+p"
+   ],
+   "e": "2 × 2 × 3 = 12; 12 × {p} = {ans}.",
+   "dp": 0
+  },
+  {
+   "topic": "divis",
+   "level": "advanced",
+   "type": "calc",
+   "q": "Which digit goes in the box so that {a}□{b} is divisible by 9?",
+   "vars": {
+    "a": [
+     1,
+     9,
+     1
+    ],
+    "b": [
+     0,
+     9,
+     1
+    ]
+   },
+   "answer": "(9-(a+b)%9)%9",
+   "wrong": [
+    "((9-(a+b)%9)%9+3)%10",
+    "((9-(a+b)%9)%9+1)%10",
+    "9-(9-(a+b)%9)%9"
+   ],
+   "e": "Digit sum must be a multiple of 9: {a} + □ + {b} → □ = {ans}.",
+   "dp": 0,
+   "where": "(a+b)%9!==0"
+  },
+  {
+   "topic": "divis",
+   "level": "advanced",
+   "q": "Is 1,23,456 divisible by 8?",
+   "a": "Yes – its last three digits, 456, are divisible by 8",
+   "w": [
+    "No – it is not even",
+    "No – 6 is not divisible by 8",
+    "Yes – its digit sum is 21"
+   ],
+   "e": "456 = 8 × 57, so the whole number is divisible by 8."
+  },
+  {
+   "topic": "divis",
+   "level": "advanced",
+   "q": "A number is divisible by both 4 and 6. It must be divisible by…",
+   "a": "12",
+   "w": [
+    "24",
+    "10",
+    "8"
+   ],
+   "e": "It must be a multiple of the LCM of 4 and 6, which is 12 (not 24: e.g. 12 itself)."
+  },
+  {
+   "topic": "divis",
+   "level": "advanced",
+   "q": "If a number is divisible by 9, it must also be divisible by…",
+   "a": "3",
+   "w": [
+    "6",
+    "18",
+    "27"
+   ],
+   "e": "9 = 3 × 3, so every multiple of 9 is a multiple of 3."
   }
  ]
 }

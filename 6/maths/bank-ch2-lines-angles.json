@@ -458,6 +458,344 @@
    "level": "hard",
    "type": "fn",
    "fn": "straightPair"
+  },
+  {
+   "topic": "basics",
+   "level": "advanced",
+   "type": "calc",
+   "q": "{n} points are marked so that no three lie on one line. How many line segments join them in pairs?",
+   "vars": {
+    "n": [
+     4,
+     8,
+     1
+    ]
+   },
+   "answer": "n*(n-1)/2",
+   "wrong": [
+    "n*(n-1)",
+    "n",
+    "n+1"
+   ],
+   "e": "Each point joins {nm} others; each segment is counted twice: {n} × {nm} ÷ 2 = {ans}.",
+   "dp": 0,
+   "derive": {
+    "nm": "n-1"
+   }
+  },
+  {
+   "topic": "basics",
+   "level": "advanced",
+   "q": "Points A, B and C lie on a line in that order. How many different line segments can be named using them?",
+   "a": "3",
+   "w": [
+    "2",
+    "4",
+    "6"
+   ],
+   "e": "AB, BC and AC."
+  },
+  {
+   "topic": "basics",
+   "level": "advanced",
+   "q": "Ray AB and ray BA are…",
+   "a": "different rays – they start at different points and go in opposite directions",
+   "w": [
+    "the same ray",
+    "the same line segment",
+    "always of equal length"
+   ],
+   "e": "A ray is named from its starting point; AB starts at A, BA starts at B."
+  },
+  {
+   "topic": "basics",
+   "level": "advanced",
+   "q": "How many lines can pass through a single point, and through two different points?",
+   "a": "Infinitely many through one point; exactly one through two points",
+   "w": [
+    "One and one",
+    "Two and one",
+    "Infinitely many through both"
+   ],
+   "e": "Two points fix exactly one line."
+  },
+  {
+   "topic": "angles",
+   "level": "advanced",
+   "type": "calc",
+   "q": "How many degrees does the minute hand turn in {m} minutes?",
+   "vars": {
+    "m": [
+     5,
+     55,
+     5
+    ]
+   },
+   "answer": "6*m",
+   "wrong": [
+    "30*m",
+    "360-6*m",
+    "m"
+   ],
+   "e": "60 minutes = 360°, so each minute = 6°: {m} × 6° = {ans}°.",
+   "dp": 0,
+   "unit": "°"
+  },
+  {
+   "topic": "angles",
+   "level": "advanced",
+   "type": "calc",
+   "q": "How many right angles make {d}°?",
+   "vars": {
+    "d": {
+     "of": [
+      180,
+      270,
+      360,
+      450,
+      540,
+      630,
+      720
+     ]
+    }
+   },
+   "answer": "d/90",
+   "wrong": [
+    "d/45",
+    "d/180",
+    "d/90+1"
+   ],
+   "e": "{d}° ÷ 90° = {ans} right angles.",
+   "dp": 0
+  },
+  {
+   "topic": "angles",
+   "level": "advanced",
+   "q": "Anil faces North and turns clockwise through three right angles. Which way does he face now?",
+   "a": "West",
+   "w": [
+    "East",
+    "South",
+    "North"
+   ],
+   "e": "N → E (1) → S (2) → W (3)."
+  },
+  {
+   "topic": "angles",
+   "level": "advanced",
+   "q": "Facing East, Riya turns anticlockwise through 270°. Which way does she face?",
+   "a": "South",
+   "w": [
+    "North",
+    "West",
+    "East"
+   ],
+   "e": "Anticlockwise from East: N (90°), W (180°), S (270°)."
+  },
+  {
+   "topic": "types",
+   "level": "advanced",
+   "type": "calc",
+   "q": "An angle measures {a}°. What is the measure of its reflex angle?",
+   "vars": {
+    "a": [
+     20,
+     170,
+     10
+    ]
+   },
+   "answer": "360-a",
+   "wrong": [
+    "180-a",
+    "360+a",
+    "a+180"
+   ],
+   "e": "Reflex angle = 360° − {a}° = {ans}°.",
+   "dp": 0,
+   "unit": "°"
+  },
+  {
+   "topic": "types",
+   "level": "advanced",
+   "type": "pairs",
+   "q": "An angle is double of {x}. What type of angle is it?",
+   "pairs": [
+    [
+     "30°",
+     "Acute angle (60°)"
+    ],
+    [
+     "45°",
+     "Right angle (90°)"
+    ],
+    [
+     "60°",
+     "Obtuse angle (120°)"
+    ],
+    [
+     "90°",
+     "Straight angle (180°)"
+    ],
+    [
+     "120°",
+     "Reflex angle (240°)"
+    ],
+    [
+     "70°",
+     "Obtuse angle (140°)"
+    ]
+   ],
+   "e": "Double the angle first, then classify: {ans}."
+  },
+  {
+   "topic": "types",
+   "level": "advanced",
+   "type": "pairs",
+   "q": "An angle is double of {x}. What type of angle is it?",
+   "pairs": [
+    [
+     "30°",
+     "Acute angle (60°)"
+    ],
+    [
+     "45°",
+     "Right angle (90°)"
+    ],
+    [
+     "60°",
+     "Obtuse angle (120°)"
+    ],
+    [
+     "90°",
+     "Straight angle (180°)"
+    ],
+    [
+     "120°",
+     "Reflex angle (240°)"
+    ],
+    [
+     "70°",
+     "Obtuse angle (140°)"
+    ]
+   ],
+   "e": "Double the angle first, then classify: {ans}."
+  },
+  {
+   "topic": "types",
+   "level": "advanced",
+   "q": "At 4:00, what is the reflex angle between the hands of a clock?",
+   "a": "240°",
+   "w": [
+    "120°",
+    "60°",
+    "300°"
+   ],
+   "e": "The smaller angle is 4 × 30° = 120°; reflex = 360° − 120° = 240°."
+  },
+  {
+   "topic": "types",
+   "level": "advanced",
+   "q": "At which whole-hour time do the clock hands make a straight angle?",
+   "a": "6:00",
+   "w": [
+    "3:00",
+    "9:00",
+    "12:00"
+   ],
+   "e": "At 6:00 the hands point in opposite directions: 180°."
+  },
+  {
+   "topic": "measure",
+   "level": "advanced",
+   "type": "calc",
+   "q": "A student measures an acute angle but reads {r}° from the wrong scale. What is the true measure?",
+   "vars": {
+    "a": [
+     20,
+     80,
+     5
+    ]
+   },
+   "answer": "180-r",
+   "wrong": [
+    "r",
+    "r-90",
+    "90-a"
+   ],
+   "e": "The two scales add to 180°: 180° − {r}° = {ans}°.",
+   "dp": 0,
+   "unit": "°",
+   "derive": {
+    "r": "180-a"
+   }
+  },
+  {
+   "topic": "measure",
+   "level": "advanced",
+   "q": "How can you draw an angle of 250° with a 180° protractor?",
+   "a": "Draw 110° and mark the reflex angle outside it",
+   "w": [
+    "Draw 250° directly on the outer scale",
+    "Draw 70° and double it",
+    "It cannot be drawn"
+   ],
+   "e": "360° − 250° = 110°; the outside (reflex) angle of 110° is 250°."
+  },
+  {
+   "topic": "measure",
+   "level": "advanced",
+   "type": "calc",
+   "q": "Two angles together make a straight angle. One is {a}°. What is the other?",
+   "vars": {
+    "a": [
+     25,
+     155,
+     5
+    ]
+   },
+   "answer": "180-a",
+   "wrong": [
+    "360-a",
+    "90-a+90",
+    "a"
+   ],
+   "e": "A straight angle is 180°: 180° − {a}° = {ans}°.",
+   "dp": 0,
+   "unit": "°",
+   "where": "a!==90"
+  },
+  {
+   "topic": "measure",
+   "level": "advanced",
+   "type": "calc",
+   "q": "Four angles meet at a point. Three of them are {a}°, {b}° and {c}°. Find the fourth.",
+   "vars": {
+    "a": [
+     40,
+     100,
+     10
+    ],
+    "b": [
+     40,
+     100,
+     10
+    ],
+    "c": [
+     40,
+     100,
+     10
+    ]
+   },
+   "answer": "360-a-b-c",
+   "wrong": [
+    "180-a-b-c+180-10",
+    "a+b+c",
+    "360-a-b"
+   ],
+   "e": "Angles around a point add to 360°: 360° − {a}° − {b}° − {c}° = {ans}°.",
+   "dp": 0,
+   "unit": "°",
+   "where": "a+b+c<330"
   }
  ]
 }

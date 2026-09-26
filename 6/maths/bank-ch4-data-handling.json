@@ -374,6 +374,226 @@
    "level": "hard",
    "type": "fn",
    "fn": "chooseScale"
+  },
+  {
+   "topic": "picto",
+   "level": "advanced",
+   "type": "calc",
+   "q": "Pictograph key: one symbol = {k} children. The ‘Art Club’ row has {s} full symbols and one half symbol. How many children?",
+   "vars": {
+    "k": {
+     "of": [
+      2,
+      4,
+      6,
+      10
+     ]
+    },
+    "s": [
+     2,
+     8,
+     1
+    ]
+   },
+   "answer": "(s+0.5)*k",
+   "wrong": [
+    "s*k",
+    "(s+1)*k",
+    "s*k+1"
+   ],
+   "e": "{s} × {k} + half of {k} = {ans}.",
+   "dp": 0,
+   "graph": {
+    "type": "picto",
+    "rows": [
+     [
+      "Art Club",
+      "=s+0.5"
+     ]
+    ],
+    "key": "=k",
+    "unit": "children"
+   }
+  },
+  {
+   "topic": "picto",
+   "level": "advanced",
+   "type": "calc",
+   "q": "In a pictograph one symbol stands for {k} books. How many symbols are needed to show {v} books?",
+   "vars": {
+    "k": {
+     "of": [
+      2,
+      4,
+      10
+     ]
+    },
+    "m": [
+     3,
+     9,
+     1
+    ]
+   },
+   "answer": "m+0.5",
+   "wrong": [
+    "m",
+    "m+1",
+    "v/2"
+   ],
+   "e": "{v} ÷ {k} = {ans} symbols – draw {m} full symbols and a half.",
+   "dp": 1,
+   "derive": {
+    "v": "k*m+k/2"
+   }
+  },
+  {
+   "topic": "picto",
+   "level": "advanced",
+   "q": "Why is ‘1 symbol = 3 fish’ a poor key when the data are 10, 20 and 25?",
+   "a": "None of the values divides exactly by 3, so you need awkward part-symbols",
+   "w": [
+    "Symbols must always stand for 1",
+    "3 is too big",
+    "Fish cannot be drawn"
+   ],
+   "e": "Choose a key that divides the data neatly – here 5 works."
+  },
+  {
+   "topic": "draw",
+   "level": "advanced",
+   "type": "calc",
+   "q": "The largest value in your data is {v}. The graph paper has 10 squares. Which is the smallest sensible scale from 5, 10, 20, 50 and 100?",
+   "vars": {
+    "v": [
+     120,
+     900,
+     10
+    ]
+   },
+   "answer": "[5,10,20,50,100].find(s=>s*10>=v)",
+   "wrong": [
+    "[5,10,20,50,100].find(s=>s*10>=v)*2",
+    "[5,10,20,50,100].find(s=>s*10>=v)/2",
+    "v/10+1"
+   ],
+   "e": "The top of the axis (10 × scale) must reach {v}: 1 square = {ans}.",
+   "dp": 0,
+   "where": "[5,10,20,50,100].find(s=>s*10>=v)/2>=5"
+  },
+  {
+   "topic": "draw",
+   "level": "advanced",
+   "q": "Which of these is NOT needed when drawing a bar graph?",
+   "a": "A different colour for every bar",
+   "w": [
+    "A title",
+    "A suitable scale",
+    "Bars of equal width with equal gaps"
+   ],
+   "e": "Colours are optional; title, scale and equal widths are essential."
+  },
+  {
+   "topic": "bars",
+   "level": "advanced",
+   "q": "A bar graph’s vertical axis starts at 50 instead of 0. Why can this mislead?",
+   "a": "Small differences look much bigger than they are",
+   "w": [
+    "The bars become wider",
+    "It changes the data",
+    "Nothing – it is always better"
+   ],
+   "e": "Always check where the scale starts before comparing bar heights."
+  },
+  {
+   "topic": "collect",
+   "level": "advanced",
+   "type": "calc",
+   "q": "A tally shows {b} bundles of five and {r} single marks. What number does it show?",
+   "vars": {
+    "b": [
+     2,
+     9,
+     1
+    ],
+    "r": [
+     1,
+     4,
+     1
+    ]
+   },
+   "answer": "5*b+r",
+   "wrong": [
+    "4*b+r",
+    "b+r",
+    "5*b+r+1"
+   ],
+   "e": "{b} × 5 + {r} = {ans}.",
+   "dp": 0
+  },
+  {
+   "topic": "collect",
+   "level": "advanced",
+   "type": "calc",
+   "q": "{t} students chose one fruit each: {a} chose mango and {c} chose banana; the rest chose apple. How many chose apple?",
+   "vars": {
+    "t": [
+     30,
+     45,
+     1
+    ],
+    "a": [
+     8,
+     15,
+     1
+    ],
+    "c": [
+     5,
+     12,
+     1
+    ]
+   },
+   "answer": "t-a-c",
+   "wrong": [
+    "a+c",
+    "t-a",
+    "t-c"
+   ],
+   "e": "{t} − {a} − {c} = {ans}.",
+   "dp": 0
+  },
+  {
+   "topic": "bars",
+   "level": "advanced",
+   "type": "calc",
+   "q": "A bar graph uses 1 square = {s}. The bar for Monday is {m} squares tall and Tuesday is {u} squares. How many more on Monday?",
+   "vars": {
+    "s": {
+     "of": [
+      5,
+      10,
+      20,
+      50
+     ]
+    },
+    "m": [
+     6,
+     10,
+     1
+    ],
+    "u": [
+     2,
+     5,
+     1
+    ]
+   },
+   "answer": "(m-u)*s",
+   "wrong": [
+    "m-u",
+    "(m+u)*s",
+    "m*s"
+   ],
+   "e": "({m} − {u}) squares × {s} = {ans}.",
+   "dp": 0
   }
  ]
 }
