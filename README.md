@@ -72,6 +72,24 @@ Note: `6/maths/model/CLASS_6_MIDTERM_EXAM_MODEL_PAPER_2026.pdf` on GitHub is emp
 
 Activities are attached in each tutor file as `"play": [{"type": "…", "title": "…", "say": "…"}]`.
 
+## Class X Social Science – Political Science (NCERT Democratic Politics II, Chapters 1–5)
+
+Files live flat in `10/social/` next to the chapter PDFs (`c1.pdf` … `c5.pdf`):
+
+| Chapter | Question bank | Tutor | Topics |
+|---|---|---|---|
+| 1 · Power-sharing | `bank-ch1-power-sharing.json` | `tutor-ch1-power-sharing.json` | Belgium & Sri Lanka · Why power sharing · Forms |
+| 2 · Federalism | `bank-ch2-federalism.json` | `tutor-ch2-federalism.json` | What is federalism · India's federation · How it is practised · Decentralisation |
+| 3 · Gender, Religion and Caste | `bank-ch3-gender-religion-caste.json` | `tutor-ch3-gender-religion-caste.json` | Gender · Religion · Caste |
+| 4 · Political Parties | `bank-ch4-political-parties.json` | `tutor-ch4-political-parties.json` | Why parties · Party systems · National & State parties · Challenges & reforms |
+| 5 · Outcomes of Democracy | `bank-ch5-outcomes-of-democracy.json` | `tutor-ch5-outcomes-of-democracy.json` | Government · Economy · Dignity & freedom |
+
+Questions follow the CBSE pattern: one-mark MCQs, assertion–reason, case/source-based passages and "which one?" classification items
+that draw a random fact each time. Each tutor has the big idea, lessons with exam tips, a key-facts sheet, a revision sheet and an
+exam page (marks pattern, 3- and 5-mark answer frames, checklist). Play & learn uses four generic activities built into `play.js`:
+**sort** (tap a card into its bin), **match** (pair left with right), **order** (build a sequence) and **dataBars** (read the textbook's
+data tables as bar charts and answer). Any future text subject can reuse them just by adding `play` blocks to a tutor lesson.
+
 ## Chapter tutor
 
 When a chapter has a `"tutor"` file in the config, a **Tutor** book icon appears on its chapter card. Students also get a choice: **Chapter tutor** (learn) or **Check knowledge** (quiz).

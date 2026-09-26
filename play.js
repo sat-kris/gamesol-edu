@@ -310,5 +310,53 @@ divisDetective(host,cfg){const F=frame(host,cfg);let n,d,done;
   F.stage.append(task,num,row(btn("Yes",ans(true),"primary"),btn("No",ans(false),"primary"),btn("Next number →",fresh,"light")));fresh();
 }
 };
+/* ================= Generic (any subject) ================= */
+/* sort: cfg.buckets=["A","B"], cfg.items=[[text, bucketIndex, why?], …] */
+PLAY.sort=function(host,cfg){const F=frame(host,cfg);let items,i,score,wrongs;
+  const card=el("div",{class:"sortcard"}),st=el("p",{class:"ptask"}),bins=el("div",{class:"bins"}),btns=el("div",{class:"chips sortbtns"});
+  function fresh(){items=shuf(cfg.items);i=0;score=0;wrongs=0;bins.innerHTML="";cfg.buckets.forEach((b,k)=>bins.append(el("div",{class:"bin","data-k":k},el("b",{},b),el("div",{class:"bincards"}))));show();F.say("")}
+  function show(){st.textContent=i<items.length?"Card "+(i+1)+" of "+items.length+" · Score "+score:"Finished! "+score+" / "+items.length+" right first time";
+    card.textContent=i<items.length?items[i][0]:(score===items.length?"Perfect sort! 🎉":"Done – tap ‘Play again’ to beat your score.");card.className="sortcard"+(i>=items.length?" done":"")}
+  cfg.buckets.forEach((b,k)=>btns.append(btn(b,()=>{if(i>=items.length)return;const it=items[i];
+    if(it[1]===k){if(!wrongs)score++;bins.querySelector('[data-k="'+k+'"] .bincards').append(el("span",{class:"mini"},it[0].length>60?it[0].slice(0,57)+"…":it[0]));F.say((wrongs?"Now it’s right. ":F.praise()+" ")+(it[2]||""),!wrongs);i++;wrongs=0;show()}
+    else{wrongs++;card.classList.remove("shake");void card.offsetWidth;card.classList.add("shake");F.say("Not "+b+". "+(wrongs>1&&it[2]?"Hint: "+it[2]:"Think again."),false)}},"light")));
+  F.stage.append(st,card,btns,bins,row(btn("Play again",fresh,"primary")));fresh();
+};
+/* match: cfg.pairs=[[left,right],…] */
+PLAY.match=function(host,cfg){const F=frame(host,cfg);let sel=null,done,tries;
+  const L=el("div",{class:"mcol"}),R=el("div",{class:"mcol"}),grid=el("div",{class:"mgrid"},L,R),st=el("p",{class:"ptask"});
+  function fresh(){done=new Set();tries=0;sel=null;L.innerHTML="";R.innerHTML="";const idx=cfg.pairs.map((_,k)=>k);
+    shuf(idx).forEach(k=>L.append(el("button",{type:"button",class:"mitem","data-k":k,onclick:e=>{if(done.has(k))return;L.querySelectorAll(".mitem").forEach(b=>b.classList.remove("on"));e.currentTarget.classList.add("on");sel=k}},cfg.pairs[k][0])));
+    shuf(idx).forEach(k=>R.append(el("button",{type:"button",class:"mitem r","data-k":k,onclick:e=>pickR(k,e.currentTarget)},cfg.pairs[k][1])));upd();F.say("Tap an item on the left, then its partner on the right.")}
+  function upd(){st.textContent="Matched "+done.size+" / "+cfg.pairs.length+" · Tries "+tries}
+  function pickR(k,b){if(sel==null){F.say("First tap an item on the left.",false);return}if(done.has(k))return;tries++;
+    if(k===sel){done.add(k);[L,R].forEach(c=>c.querySelector('[data-k="'+k+'"]').classList.add("ok"));L.querySelector('[data-k="'+k+'"]').classList.remove("on");sel=null;
+      F.say(done.size===cfg.pairs.length?"All matched in "+tries+" tries! "+(tries===cfg.pairs.length?"Perfect!":""):F.praise(),true)}
+    else{b.classList.remove("shake");void b.offsetWidth;b.classList.add("shake");F.say("Not a pair – try another.",false)}upd()}
+  F.stage.append(st,grid,row(btn("Shuffle and play again",fresh,"primary")));fresh();
+};
+/* order: cfg.items=[first,…,last] in correct order; cfg.first / cfg.last labels */
+PLAY.order=function(host,cfg){const F=frame(host,cfg);let next,pool;
+  const box=el("div",{class:"obox"}),built=el("ol",{class:"obuilt"}),st=el("p",{class:"ptask"});
+  function fresh(){next=0;built.innerHTML="";pool=shuf(cfg.items.map((t,k)=>[t,k]));box.innerHTML="";
+    pool.forEach(([t,k])=>box.append(el("button",{type:"button",class:"oitem",onclick:e=>tap(k,e.currentTarget)},t)));st.textContent="Tap them in order: "+(cfg.first||"first")+" → "+(cfg.last||"last");F.say("")}
+  function tap(k,b){if(k===next){built.append(el("li",{},cfg.items[k]));b.remove();next++;if(next===cfg.items.length)F.say("Perfect order! "+(cfg.done||""),true);else F.say(F.praise())}
+    else{b.classList.remove("shake");void b.offsetWidth;b.classList.add("shake");F.say("Not yet – which comes "+(next===0?"first":"next")+"?",false)}}
+  F.stage.append(st,built,box,row(btn("Start again",fresh,"primary")));fresh();
+};
+/* dataBars: cfg.labels=[…], cfg.series=[{name,values}], cfg.unit, cfg.source, cfg.qs=[{q,a,opts,e}] */
+PLAY.dataBars=function(host,cfg){const F=frame(host,cfg);let qi=0;
+  const svg=S("svg",{viewBox:"0 0 420 250",class:"psvg wide",role:"img","aria-label":cfg.title}),qp=el("p",{class:"pbig"}),ch=el("div",{class:"chips"}),legend=el("div",{class:"legend"}),src=el("p",{class:"phint"},cfg.source?"Source: "+cfg.source:"");
+  const sers=cfg.series,n=cfg.labels.length,max=Math.max(...sers.flatMap(s=>s.values));const top=Math.ceil(max*1.12/(cfg.step||5))*(cfg.step||5);
+  const L=40,B=200,H=175,W=370,gw=W/n,bw=Math.min(34,gw*0.8/sers.length);const Y=v=>B-H*v/top;
+  function draw(hi){svg.innerHTML="";const st=cfg.step||5;for(let v=0;v<=top+1e-9;v+=st)svg.append(S("line",{x1:L,x2:L+W,y1:Y(v),y2:Y(v),class:"pgrid"}),S("text",{x:L-5,y:Y(v)+4,"text-anchor":"end",class:"pax",text:String(+v.toFixed(2))}));
+    cfg.labels.forEach((lab,i)=>{const x0=L+i*gw+(gw-bw*sers.length)/2;sers.forEach((s,j)=>{const v=s.values[i];const r=S("rect",{x:x0+j*bw,y:Y(v),width:bw-2,height:B-Y(v),rx:2,class:(j?"pbar2":"pbar")+(hi===i?" on":""),tabindex:0,role:"button","aria-label":lab+" "+s.name+" "+v});
+        r.addEventListener("click",()=>{draw(i);F.say(lab+" – "+sers.map(t=>t.name+": "+t.values[i]+(cfg.unit||"")).join(" · "))});svg.append(r)});
+      const words=String(lab).split(" ");svg.append(S("text",{x:L+i*gw+gw/2,y:B+14,"text-anchor":"middle",class:"pax",text:words.slice(0,2).join(" ")}));if(words.length>2)svg.append(S("text",{x:L+i*gw+gw/2,y:B+27,"text-anchor":"middle",class:"pax",text:words.slice(2).join(" ")}))})}
+  if(sers.length>1)sers.forEach((s,j)=>legend.append(el("span",{},el("i",{class:j?"lg2":"lg1"}),s.name)));
+  function ask(){ch.innerHTML="";if(!cfg.qs||!cfg.qs.length)return;const q=cfg.qs[qi%cfg.qs.length];qp.textContent=q.q;let answered=false;
+    shuf(q.opts).forEach(o=>ch.append(btn(o,()=>{if(answered)return;answered=true;const ok=o===q.a;F.say((ok?F.praise()+" ":"Not quite – it is "+q.a+". ")+(q.e||""),ok)},"light")))}
+  F.stage.append(el("p",{class:"ptask"},el("b",{},cfg.chart||"")),legend,svg,src,qp,ch,row(btn("Next question →",()=>{qi++;F.say("");ask()},"primary")),el("p",{class:"phint"},"Tap a bar to read its exact value."));draw();ask();
+};
 window.PLAY=PLAY;
 })();

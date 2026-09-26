@@ -91,8 +91,52 @@
     {
       "id": "10",
       "name": "Class X",
-      "status": "upcoming",
-      "subjects": []
+      "status": "ongoing",
+      "subjects": [
+        {
+          "id": "social",
+          "name": "Social Science – Political Science",
+          "status": "ongoing",
+          "note": "Democratic Politics II · Chapters 1–5",
+          "chapters": [
+            {
+              "id": "ch1",
+              "name": "Chapter 1 · Power-sharing",
+              "status": "ongoing",
+              "bank": "10/social/bank-ch1-power-sharing.json",
+              "tutor": "10/social/tutor-ch1-power-sharing.json"
+            },
+            {
+              "id": "ch2",
+              "name": "Chapter 2 · Federalism",
+              "status": "ongoing",
+              "bank": "10/social/bank-ch2-federalism.json",
+              "tutor": "10/social/tutor-ch2-federalism.json"
+            },
+            {
+              "id": "ch3",
+              "name": "Chapter 3 · Gender, Religion and Caste",
+              "status": "ongoing",
+              "bank": "10/social/bank-ch3-gender-religion-caste.json",
+              "tutor": "10/social/tutor-ch3-gender-religion-caste.json"
+            },
+            {
+              "id": "ch4",
+              "name": "Chapter 4 · Political Parties",
+              "status": "ongoing",
+              "bank": "10/social/bank-ch4-political-parties.json",
+              "tutor": "10/social/tutor-ch4-political-parties.json"
+            },
+            {
+              "id": "ch5",
+              "name": "Chapter 5 · Outcomes of Democracy",
+              "status": "ongoing",
+              "bank": "10/social/bank-ch5-outcomes-of-democracy.json",
+              "tutor": "10/social/tutor-ch5-outcomes-of-democracy.json"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

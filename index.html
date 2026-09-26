@@ -378,6 +378,32 @@ h2{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-
 .playsec{display:flex;flex-direction:column;gap:10px;padding-top:6px}
 @media (max-width:640px){.grid.three{grid-template-columns:1fr}.trow{grid-template-columns:6.5em 1fr 4em}.prowi{grid-template-columns:1fr auto}.prowi .icons{grid-column:1/-1;order:3}.dcard{width:46px;height:58px;font-size:28px}}
 @media (prefers-reduced-motion:reduce){.pop,.pline{animation:none;opacity:.85}}
+
+.sortcard{font-size:18px;font-weight:700;padding:18px;border-radius:14px;background:var(--note);color:var(--note-ink);text-align:center;min-height:84px;display:flex;align-items:center;justify-content:center;line-height:1.4}
+.sortcard.done{background:var(--good-soft);color:var(--good)}
+.shake{animation:shake .35s}
+@keyframes shake{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+.sortbtns .pbtn{flex:1 1 140px;min-height:48px}
+.bins{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px}
+.bin{border:1.5px dashed var(--line-strong);border-radius:10px;padding:8px;display:flex;flex-direction:column;gap:6px;min-height:60px}
+.bin b{font-size:13px;color:var(--accent)}
+.bincards{display:flex;flex-direction:column;gap:4px}
+.bincards .mini{font-size:12.5px;padding:4px 7px;border-radius:6px;background:var(--good-soft);line-height:1.35}
+.mgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.mcol{display:flex;flex-direction:column;gap:6px}
+.mitem{font:inherit;font-size:14.5px;text-align:left;padding:10px 12px;border-radius:10px;border:1.5px solid var(--line-strong);background:var(--sheet);color:var(--ink);cursor:pointer;min-height:48px}
+.mitem.on{border-color:var(--accent);background:var(--accent-soft)}
+.mitem.ok{border-color:var(--good);background:var(--good-soft);cursor:default}
+.mitem.r{background:var(--paper)}
+.obuilt{margin:0;padding-left:1.6em;display:flex;flex-direction:column;gap:5px;min-height:10px}
+.obuilt li{padding:7px 10px;border-radius:8px;background:var(--good-soft);font-weight:700}
+.obox{display:flex;flex-wrap:wrap;gap:8px}
+.oitem{font:inherit;font-size:14.5px;padding:10px 12px;border-radius:10px;border:1.5px solid var(--line-strong);background:var(--note);color:var(--note-ink);cursor:pointer;text-align:left;max-width:100%}
+.legend{display:flex;gap:14px;font-size:13px}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+.legend .lg1{background:var(--accent)} .legend .lg2{background:var(--series2)}
+.passage{margin:10px 0 4px;padding:12px 14px;border-left:4px solid var(--series2);background:var(--paper);border-radius:6px;font-size:15px;line-height:1.55;white-space:pre-line}
+@media (max-width:560px){.mgrid{gap:6px}.mitem{font-size:13.5px;padding:8px}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
@@ -556,8 +582,14 @@ function instantiate(item){
     for(let t=0;t<20;t++){const r=G(item.args||{});if(r){const opts=shuffle([r.ans,...r.wrong]);return {topic:item.topic,q:r.q,ans:r.ans,opts,expl:r.expl,graph:r.fig||null,long:opts.some(o=>String(o).length>34)}}}
     return null;
   }
+  if(item.type==="pairs"){
+    const P=item.pairs,k=Math.floor(Math.random()*P.length),[x,ans]=P[k];
+    let w=[...new Set(P.map(p=>p[1]).concat(item.extra||[]))].filter(v=>v!==ans);w=shuffle(w).slice(0,3);if(w.length<2)return null;
+    const opts=shuffle([ans,...w]);
+    return {topic:item.topic,q:item.q.replace("{x}",x),ans,opts,expl:(item.e||"").replace("{x}",x).replace("{ans}",ans),passage:item.passage||null,graph:null,long:opts.some(o=>o.length>34)};
+  }
   if(item.type!=="calc"){
-    return {topic:item.topic,q:item.q,ans:item.a,opts:shuffle([item.a,...item.w]),expl:item.e,graph:item.graph?resolveGraph(item.graph,{}):null,long:[item.a,...item.w].some(o=>o.length>34)};
+    return {passage:item.passage||null,topic:item.topic,q:item.q,ans:item.a,opts:shuffle([item.a,...item.w]),expl:item.e,graph:item.graph?resolveGraph(item.graph,{}):null,long:[item.a,...item.w].some(o=>o.length>34)};
   }
   const dp=item.dp??2;
   for(let tries=0;tries<60;tries++){
@@ -638,7 +670,7 @@ function render(){
   if(idx>=total){renderResults();return}
   const q=quiz[idx];
   let h='<article class="sheet"><span class="qnum">'+(idx+1)+'.</span><span class="tag">'+esc((q.topicObj.ref?q.topicObj.ref+" · ":"")+q.topicObj.name)+'</span>'+
-    '<p class="qtext">'+esc(q.q)+'</p>'+(q.graph?figBox(q.graph):'')+
+    (q.passage?'<div class="passage">'+esc(q.passage)+'</div>':'')+'<p class="qtext">'+esc(q.q)+'</p>'+(q.graph?figBox(q.graph):'')+
     '<div class="opts'+(q.long?' long':'')+'" role="group" aria-label="Answers">';
   q.opts.forEach((o,i)=>{let c="opt";if(answered){c+=o===q.ans?" ok":o===q.picked?" bad":" dim"}
     h+='<button class="'+c+'" data-i="'+i+'"'+(answered?" disabled":"")+'><kbd>'+(i+1)+'</kbd><span>'+esc(o)+'</span></button>'});
@@ -837,7 +869,7 @@ function tutorPage(k,p){
     const list=(x,o)=>'<'+(o?'ol':'ul')+' class="steps">'+x.items.map(i=>'<li>'+md(i)+'</li>').join("")+'</'+(o?'ol':'ul')+'>';
     const main=secs.filter(x=>x.kind==="steps"),side=secs.filter(x=>x.kind!=="steps");
     return '<span class="tag">Exam readiness</span><h2 class="t">Score full marks: how to answer</h2>'+
-      (e.paper?'<div><h3>This chapter in the model paper</h3><div class="tbl"><table class="paper"><thead><tr><th>Question</th><th>Marks</th><th>What was asked</th></tr></thead><tbody>'+e.paper.map(r=>'<tr><td>'+esc(r.q)+'</td><td>'+esc(r.marks)+'</td><td>'+esc(r.what)+'</td></tr>').join("")+'</tbody></table></div><p class="caption" style="margin-top:6px">BHPS Class VI midterm model paper 2026-27 answer key. Practise these question types first.</p></div>':'')+
+      (e.paper?'<div><h3>'+esc(e.paperTitle||"This chapter in the model paper")+'</h3><div class="tbl"><table class="paper"><thead><tr>'+(e.paperCols||["Question","Marks","What was asked"]).map(c=>'<th>'+esc(c)+'</th>').join("")+'</tr></thead><tbody>'+e.paper.map(r=>'<tr><td>'+esc(r.q)+'</td><td>'+esc(r.marks)+'</td><td>'+esc(r.what)+'</td></tr>').join("")+'</tbody></table></div><p class="caption" style="margin-top:6px">'+md(e.paperNote||"BHPS Class VI midterm model paper 2026-27 answer key. Practise these question types first.")+'</p></div>':'')+
       main.map(x=>'<div><h3>'+esc(x.title)+'</h3>'+list(x,true)+'</div>').join("")+
       '<div class="duo">'+side.map(x=>'<div class="note-card'+(x.kind==="mem"?" mem":"")+'"><h3>'+esc(x.title)+'</h3>'+list(x,x.kind!=="mem")+'</div>').join("")+'</div>'+
       '<div><h3>Am I ready? Tick what you can do without the book</h3><div class="meter" id="readyMeter">'+readyMeter(p)+'</div><div class="check" style="margin-top:8px">'+
