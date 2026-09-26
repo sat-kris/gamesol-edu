@@ -141,6 +141,7 @@ h2 .en{text-transform:none;letter-spacing:0;font-size:13px;margin-left:6px}
 .chip span i{font-style:italic;color:var(--ink-soft);font-size:12.5px}
 #who{display:flex;flex-direction:column;gap:10px;padding-bottom:14px;border-bottom:1px solid var(--line)}
 .fields{display:grid;grid-template-columns:2fr 1fr;gap:10px}
+.nick{font:inherit;font-size:16px;padding:9px 11px;border-radius:8px;border:1px solid var(--line-strong);background:var(--paper);color:var(--ink);flex:1 1 13em;min-width:0;max-width:22em}
 .field{display:flex;flex-direction:column;gap:5px;font-size:14px;font-weight:700}
 .field input{font:inherit;font-weight:400;font-size:16px;padding:9px 11px;border-radius:8px;border:1px solid var(--line-strong);background:var(--paper);color:var(--ink)}
 .field input:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
@@ -174,12 +175,12 @@ h2 .en{text-transform:none;letter-spacing:0;font-size:13px;margin-left:6px}
 
   <section id="settings">
     <div id="who" hidden>
-      <h2>Qui êtes-vous ? <span class="en">Your details</span></h2>
-      <div class="fields">
-        <label class="field" for="pName"><span>Nom · <span class="en">Name</span></span><input id="pName" type="text" maxlength="40" autocomplete="name" placeholder="ex. Aisha Khan"></label>
-        <label class="field" for="pSection"><span>Section · <span class="en">Section</span></span><input id="pSection" type="text" maxlength="12" placeholder="ex. B"></label>
+      <h2>Votre pseudo <span class="en">Your game name (optional)</span></h2>
+      <div class="row">
+        <input id="pName" class="nick" type="text" maxlength="30" autocomplete="off" aria-label="Your game name">
+        <button type="button" class="btn" id="nickBtn" title="Pick a new random name">🎲 Nouveau · New name</button>
       </div>
-      <p class="note">Your best score for each level is shown on the class leaderboard. Use the same name each time so your attempts count together.</p>
+      <p class="note">Vous jouez en tant que <b id="nickShow"></b> · You’ll play under this name on the leaderboard. Type your own if you like – keep it the same so your scores count together.</p>
     </div>
     <h2>Choisissez votre niveau <span class="en">Choose your level</span></h2>
     <div class="levels" id="levels">
@@ -497,8 +498,15 @@ let quiz=[],idx=0,score=0,answered=false;
 // Le lien du classement vient de ../edu-kids-config.json (leaderboard.scriptUrl)
 let API="", ONLINE=false;
 const CLASS_ID="9", SUBJECT_ID="french";
-let player={name:"",section:""};
+const NICK_A=["NoCap","Lowkey","BigBrain","MainCharacter","Certified","Vibey","Slay","Chill","Turbo","Sneaky","Mega","Goated","Epic","Galaxy","Glowup","Speedy","Cosmic","Hyper"];
+const NICK_B=["Panda","Mango","Ninja","Comet","Otter","Pixel","Tiger","Falcon","Nova","Koala","Rocket","Dragon","Samosa","Boba","Llama","Penguin","Wizard","Legend"];
+const nick=()=>NICK_A[Math.floor(Math.random()*NICK_A.length)]+NICK_B[Math.floor(Math.random()*NICK_B.length)]+(10+Math.floor(Math.random()*90));
+let player={name:"",auto:""};
 try{const pl=JSON.parse(localStorage.getItem("gamesol-player")||"null");if(pl)player=Object.assign(player,pl)}catch(e){}
+player.section="";
+const savePlayer=()=>{try{localStorage.setItem("gamesol-player",JSON.stringify(player))}catch(e){}};
+if(!player.auto){player.auto=nick();savePlayer()}
+const pname=()=>player.name||player.auto;
 let startedAt=0,attemptId="",submitted=false;
 const keyOf=(n,s)=>String(n||"").trim().toLowerCase()+"|"+String(s||"").trim().toLowerCase();
 function boardHTML(d){
@@ -506,24 +514,24 @@ function boardHTML(d){
   let h="";
   if(d.me) h+='<div class="rank"><b>#'+d.me.rank+'</b><span>Votre classement sur <strong>'+d.players+'</strong> élève'+(d.players>1?"s":"")+' · niveau '+LVL[d.level]+'<br><span class="en">Your rank out of '+d.players+' student'+(d.players>1?"s":"")+' · best score '+d.me.percent+'%</span></span></div>';
   if(!d.top.length) return h+'<p class="muted">Personne n\'a encore joué à ce niveau. · No scores yet at this level.</p>';
-  const me=keyOf(player.name,player.section);
-  h+='<div style="overflow-x:auto"><table class="lb"><thead><tr><th>#</th><th>Nom</th><th>Classe</th><th class="num">Score</th><th class="num">Temps</th></tr></thead><tbody>';
+  const me=keyOf(pname(),"");
+  h+='<div style="overflow-x:auto"><table class="lb"><thead><tr><th>#</th><th>Nom</th><th class="num">Score</th><th class="num">Temps</th></tr></thead><tbody>';
   let meShown=false;
-  d.top.forEach(r=>{const isMe=keyOf(r.name,r.section)===me;if(isMe)meShown=true;
-    h+='<tr'+(isMe?' class="me"':'')+'><td class="pos">'+r.rank+'</td><td>'+esc(r.name)+(isMe?' (vous)':'')+'</td><td>'+esc(r.section)+'</td><td class="num">'+r.percent+'% <span class="muted">('+r.score+'/'+r.total+')</span></td><td class="num">'+fmtTime(r.seconds)+'</td></tr>'});
-  if(d.me&&!meShown) h+='<tr><td colspan="5" class="muted">…</td></tr><tr class="me"><td class="pos">'+d.me.rank+'</td><td>'+esc(player.name)+' (vous)</td><td>'+esc(player.section)+'</td><td class="num">'+d.me.percent+'%</td><td class="num"></td></tr>';
+  d.top.forEach(r=>{const isMe=keyOf(r.name,"")===me;if(isMe)meShown=true;
+    h+='<tr'+(isMe?' class="me"':'')+'><td class="pos">'+r.rank+'</td><td>'+esc(r.name)+(isMe?' (vous)':'')+'</td><td class="num">'+r.percent+'% <span class="muted">('+r.score+'/'+r.total+')</span></td><td class="num">'+fmtTime(r.seconds)+'</td></tr>'});
+  if(d.me&&!meShown) h+='<tr><td colspan="4" class="muted">…</td></tr><tr class="me"><td class="pos">'+d.me.rank+'</td><td>'+esc(pname())+' (vous)</td><td class="num">'+d.me.percent+'%</td><td class="num"></td></tr>';
   return h+'</tbody></table></div><p class="muted">Meilleur score par élève. À égalité, le plus rapide passe devant. · Best score per student; ties go to the faster time.</p>';
 }
 const fmtTime=s=>{s=Math.round(+s||0);return Math.floor(s/60)+" min "+String(s%60).padStart(2,"0")};
 async function getBoard(level){
-  const u=API+(API.includes("?")?"&":"?")+"action=leaderboard&cls="+CLASS_ID+"&subject="+SUBJECT_ID+"&level="+level+"&name="+encodeURIComponent(player.name)+"&section="+encodeURIComponent(player.section);
+  const u=API+(API.includes("?")?"&":"?")+"action=leaderboard&cls="+CLASS_ID+"&subject="+SUBJECT_ID+"&level="+level+"&name="+encodeURIComponent(pname())+"&section=";
   const r=await fetch(u);return r.json();
 }
 async function submitResult(el){
   el.innerHTML='<p class="muted">Enregistrement du score… · Saving your score…</p>';
   const cats={};CATS.forEach(c=>{const qs=quiz.filter(q=>q.cat===c);if(qs.length)cats[c.id]={ok:qs.filter(q=>q.picked===q.ans).length,n:qs.length}});
   const topics={};CATS.forEach(c=>{if(cats[c.id])topics[c.q+" · "+c.en]=cats[c.id]});
-  const payload={name:player.name,section:player.section,cls:CLASS_ID,subject:SUBJECT_ID,chapter:"midterm",level:settings.level,score,total:quiz.length,seconds:Math.round((Date.now()-startedAt)/1000),topics,attemptId};
+  const payload={name:pname(),section:"",cls:CLASS_ID,subject:SUBJECT_ID,chapter:"midterm",level:settings.level,score,total:quiz.length,seconds:Math.round((Date.now()-startedAt)/1000),topics,attemptId};
   try{
     const r=await fetch(API,{method:"POST",body:JSON.stringify(payload)});
     const d=await r.json();
@@ -627,11 +635,13 @@ const save=()=>{try{localStorage.setItem("cahier-settings",JSON.stringify(settin
 function initOnline(){
   if(!ONLINE)return;
   document.getElementById("who").hidden=false;document.getElementById("boardBtn").hidden=false;
-  document.getElementById("pName").value=player.name;document.getElementById("pSection").value=player.section;
+  const inp=document.getElementById("pName"),show=document.getElementById("nickShow");
+  inp.value=player.name;inp.placeholder=player.auto;show.textContent=pname();
+  inp.addEventListener("input",()=>{player.name=inp.value.replace(/\s+/g," ").trim();show.textContent=pname();savePlayer()});
+  document.getElementById("nickBtn").addEventListener("click",()=>{player.auto=nick();player.name="";inp.value="";inp.placeholder=player.auto;show.textContent=pname();savePlayer()});
 }
 const sb=document.getElementById("startBoard");
 async function showStartBoard(level){
-  player.name=document.getElementById("pName").value.trim()||player.name;player.section=document.getElementById("pSection").value.trim().toUpperCase()||player.section;
   sb.hidden=false;
   sb.innerHTML='<div class="board"><div class="tabs"><button class="btn" data-l="easy" aria-pressed="'+(level==="easy")+'">Facile · Easy</button><button class="btn" data-l="hard" aria-pressed="'+(level==="hard")+'">Difficile · Hard</button><button class="btn" data-l="advanced" aria-pressed="'+(level==="advanced")+'">Avancé · Advanced</button></div><div id="sbBody"><p class="muted">Chargement… · Loading…</p></div></div>';
   sb.querySelectorAll("[data-l]").forEach(b=>b.addEventListener("click",()=>showStartBoard(b.dataset.l)));
@@ -647,9 +657,7 @@ document.getElementById("startBtn").addEventListener("click",()=>{
   const lv=document.querySelector('input[name="level"]:checked');
   const cats=[...chipsEl.querySelectorAll("input:checked")].map(i=>i.value);
   if(ONLINE){
-    player={name:document.getElementById("pName").value.replace(/\s+/g," ").trim(),section:document.getElementById("pSection").value.replace(/\s+/g,"").toUpperCase()};
-    if(player.name.length<2){warn.textContent="Écrivez votre nom. · Please enter your name.";warn.hidden=false;document.getElementById("pName").focus();return}
-    try{localStorage.setItem("gamesol-player",JSON.stringify(player))}catch(e){}
+    player.name=document.getElementById("pName").value.replace(/\s+/g," ").trim();savePlayer();
   }
   if(!lv){warn.textContent="Choisissez d'abord un niveau. · Please choose a level first: Easy, Hard or Advanced.";warn.hidden=false;return}
   if(!cats.length){warn.textContent="Choisissez au moins une section. · Please choose at least one section.";warn.hidden=false;return}
