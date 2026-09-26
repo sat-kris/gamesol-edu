@@ -1,0 +1,715 @@
+{
+ "id": "class10-social-ch2-tutor",
+ "chapter": "Chapter 2 · Federalism",
+ "source": "NCERT Democratic Politics II (Class X Political Science), Chapter 2",
+ "overview": {
+  "bigIdea": "Federalism is **vertical power sharing**: a government for the whole country and governments for the states (and in India, a third tier for villages and towns) – each with its own powers guaranteed by the constitution. India wrote it in the Constitution and made it work through **democratic politics**.",
+  "ladderTitle": "From idea to your village",
+  "ladder": [
+   {
+    "step": "Idea",
+    "q": "What is federalism?",
+    "a": "Two or more tiers, each with constitutional powers"
+   },
+   {
+    "step": "Constitution",
+    "q": "How is India federal?",
+    "a": "Three lists, special status, courts, amendment rules"
+   },
+   {
+    "step": "Practice",
+    "q": "How did it succeed?",
+    "a": "Linguistic states, language policy, Centre-State relations"
+   },
+   {
+    "step": "Local",
+    "q": "The third tier",
+    "a": "1992 amendment, panchayats and municipalities"
+   }
+  ],
+  "languagesTitle": "Three things examiners always ask",
+  "languages": [
+   {
+    "name": "Features",
+    "text": "The seven features of federalism."
+   },
+   {
+    "name": "Lists",
+    "text": "Put any subject in the right list."
+   },
+   {
+    "name": "1992",
+    "text": "Five changes made by the 1992 amendment."
+   }
+  ],
+  "plan": [
+   {
+    "pass": "Theory",
+    "time": "15 min",
+    "text": "Lesson 1: learn the features and the two routes (coming together / holding together)."
+   },
+   {
+    "pass": "India",
+    "time": "15 min",
+    "text": "Lesson 2: play the three-lists sort until you get every card right."
+   },
+   {
+    "pass": "Practice & local",
+    "time": "20 min",
+    "text": "Lessons 3–4: linguistic states, language policy, Centre-State relations, panchayati raj ladder."
+   },
+   {
+    "pass": "Test and revise",
+    "time": "10 min",
+    "text": "Check knowledge quiz; revise after 1, 3 and 7 days."
+   }
+  ]
+ },
+ "lessons": [
+  {
+   "topic": "what",
+   "ref": "2.1",
+   "title": "What is federalism?",
+   "time": "9 min",
+   "hook": "Picture two cooks sharing one kitchen: each has their own shelves, and neither can throw out the other’s ingredients. In a **federation**, the central government and the state governments each have their own powers – and neither can take them away from the other on its own.",
+   "core": [
+    {
+     "term": "Federalism",
+     "def": "A system of government in which power is divided between a central authority and various constituent units of the country."
+    },
+    {
+     "term": "Unitary system",
+     "def": "Only one level of government, or sub-units subordinate to the central government, which can pass orders to them."
+    },
+    {
+     "term": "Coming together",
+     "def": "Independent states join to form a bigger unit – USA, Switzerland, Australia. States usually have equal power and are strong."
+    },
+    {
+     "term": "Holding together",
+     "def": "A large country divides power between states and the national government – India, Spain, Belgium. The Centre tends to be more powerful; units may have unequal powers."
+    },
+    {
+     "term": "Dual objectives",
+     "def": "Safeguard the unity of the country while accommodating regional diversity – needs mutual trust and agreement to live together."
+    }
+   ],
+   "explain": [
+    "**Seven features:** (1) two or more tiers; (2) each tier governs the same citizens but has its own jurisdiction in legislation, taxation and administration; (3) jurisdictions specified in the constitution; (4) fundamental provisions cannot be changed by one level alone; (5) courts interpret the constitution and act as umpire; (6) sources of revenue clearly specified for financial autonomy; (7) dual objectives of unity and accommodating diversity.",
+    "Only 25 of the world’s 193 countries are federal, but they hold 40% of the world’s population. Belgium became federal in 1993; Sri Lanka remains, for all practical purposes, unitary."
+   ],
+   "example": {
+    "q": "What is the main difference between a federal and a unitary form of government? Explain with an example. (3 marks)",
+    "steps": [
+     "**Federal:** power is divided between two or more levels, each with its own constitutional powers; the Centre cannot order a state to do something – e.g. India.",
+     "**Unitary:** there is one level of government, or sub-units are subordinate and receive orders from the Centre – e.g. Sri Lanka.",
+     "In a federation both levels are separately answerable to the people."
+    ],
+    "answer": "Federal = constitutional powers for each level (India); unitary = sub-units subordinate (Sri Lanka)."
+   },
+   "mistakes": [
+    "Putting India in ‘coming together’ – India is ‘holding together’.",
+    "Saying federalism needs a big country – Belgium is small but federal.",
+    "Forgetting the courts as umpire."
+   ],
+   "tip": "In a 5-mark ‘features of federalism’ answer, write five of the seven features and add ‘e.g. India’ to at least two of them.",
+   "memory": "Coming together = USA (States strong). Holding together = India (Centre strong).",
+   "examAsk": [
+    "Features of federalism.",
+    "Coming together vs holding together federations.",
+    "Difference between federal and unitary systems."
+   ],
+   "cards": [
+    {
+     "q": "Name two ‘coming together’ federations.",
+     "a": "USA, Switzerland (also Australia)."
+    },
+    {
+     "q": "Who is the umpire in disputes between levels?",
+     "a": "The highest court."
+    },
+    {
+     "q": "What are the two objectives of federalism?",
+     "a": "Unity of the country and accommodation of regional diversity."
+    }
+   ],
+   "play": [
+    {
+     "type": "sort",
+     "title": "Coming together or holding together?",
+     "say": "Sort countries and features into the right kind of federation.",
+     "buckets": [
+      "Coming together",
+      "Holding together"
+     ],
+     "items": [
+      [
+       "USA",
+       0,
+       "Independent states came together."
+      ],
+      [
+       "Switzerland",
+       0,
+       "Independent states came together."
+      ],
+      [
+       "Australia",
+       0,
+       "Independent states came together."
+      ],
+      [
+       "India",
+       1,
+       "A large country divided its power."
+      ],
+      [
+       "Spain",
+       1,
+       "A large country divided its power."
+      ],
+      [
+       "Belgium",
+       1,
+       "Shifted from unitary to federal in 1993."
+      ],
+      [
+       "Constituent states usually have equal power",
+       0,
+       "They joined as equals."
+      ],
+      [
+       "The Central Government tends to be more powerful",
+       1,
+       "Power was divided from the top."
+      ],
+      [
+       "Some units are granted special powers",
+       1,
+       "e.g. Article 371 states in India."
+      ],
+      [
+       "States are strong vis-à-vis the federal government",
+       0,
+       "They pooled sovereignty but kept identity."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "topic": "india",
+   "ref": "2.2",
+   "title": "What makes India a federal country?",
+   "time": "10 min",
+   "hook": "The Constitution never uses the word ‘federation’ – it calls India a **Union of States**. Yet every feature of federalism is there, starting with a neat idea: **three lists** that say who makes laws on what.",
+   "core": [
+    {
+     "term": "Union List",
+     "def": "Subjects of national importance needing a uniform policy: defence, foreign affairs, banking, communications, currency. Only the Union makes laws."
+    },
+    {
+     "term": "State List",
+     "def": "Subjects of State and local importance: police, trade, commerce, agriculture, irrigation. Only the States make laws."
+    },
+    {
+     "term": "Concurrent List",
+     "def": "Common interest: education, forest, trade unions, marriage, adoption, succession. Both make laws; if they conflict, the Union law prevails."
+    },
+    {
+     "term": "Residuary subjects",
+     "def": "Subjects in no list (e.g. computer software) – the Union Government legislates."
+    },
+    {
+     "term": "Special status and UTs",
+     "def": "Assam, Nagaland, Arunachal Pradesh, Mizoram have special powers (Article 371). Union Territories (Chandigarh, Lakshadweep, Delhi) have little power; the Centre runs them."
+    }
+   ],
+   "explain": [
+    "Changing the power-sharing arrangement is hard: both Houses of Parliament must pass it with at least **two-thirds majority**, then legislatures of at least **half of the States** must ratify it.",
+    "The High Courts and Supreme Court settle disputes about the division of powers. Both Union and State governments can raise money through taxes."
+   ],
+   "example": {
+    "q": "Why is India called a federal country? Give three reasons. (3 marks)",
+    "steps": [
+     "**Tiers:** there are three tiers – Union, State and local governments – each with its own jurisdiction.",
+     "**Three lists:** the Constitution divides legislative powers into the Union, State and Concurrent Lists; residuary powers are with the Union.",
+     "**Protected arrangement:** changes need a two-thirds majority in both Houses and ratification by half the States; courts settle disputes between levels."
+    ],
+    "answer": "Tiers + lists + protected arrangement/judiciary."
+   },
+   "mistakes": [
+    "Putting education on the State List – it is Concurrent.",
+    "Saying the State law wins in a conflict on the Concurrent List.",
+    "Giving residuary powers to the States."
+   ],
+   "tip": "Learn one ‘anchor’ subject per list: Defence (Union), Police (State), Education (Concurrent), Software (Residuary).",
+   "memory": "D-P-E-S: Defence, Police, Education, Software.",
+   "examAsk": [
+    "Explain the three-fold distribution of legislative powers.",
+    "How can the power-sharing arrangement be changed?",
+    "Group subjects under the three lists (NCERT exercise 9)."
+   ],
+   "cards": [
+    {
+     "q": "Which list has ‘police’?",
+     "a": "State List"
+    },
+    {
+     "q": "Who legislates on residuary subjects?",
+     "a": "The Union Government"
+    },
+    {
+     "q": "Name a Union Territory.",
+     "a": "Chandigarh / Lakshadweep / Delhi"
+    }
+   ],
+   "play": [
+    {
+     "type": "sort",
+     "title": "Union, State or Concurrent?",
+     "say": "Sort each subject into the right list. Watch out for the residuary one!",
+     "buckets": [
+      "Union List",
+      "State List",
+      "Concurrent List",
+      "Residuary"
+     ],
+     "items": [
+      [
+       "Defence",
+       0,
+       "National importance."
+      ],
+      [
+       "Foreign affairs",
+       0,
+       "National importance."
+      ],
+      [
+       "Banking",
+       0,
+       "Uniform policy needed."
+      ],
+      [
+       "Currency",
+       0,
+       "Uniform policy needed."
+      ],
+      [
+       "Communications",
+       0,
+       "National importance."
+      ],
+      [
+       "Police",
+       1,
+       "State and local importance."
+      ],
+      [
+       "Agriculture",
+       1,
+       "State subject."
+      ],
+      [
+       "Irrigation",
+       1,
+       "State subject."
+      ],
+      [
+       "Trade and commerce",
+       1,
+       "State subject."
+      ],
+      [
+       "Education",
+       2,
+       "Common interest."
+      ],
+      [
+       "Forest",
+       2,
+       "Common interest."
+      ],
+      [
+       "Trade unions",
+       2,
+       "Common interest."
+      ],
+      [
+       "Marriage, adoption and succession",
+       2,
+       "Common interest."
+      ],
+      [
+       "Computer software",
+       3,
+       "Came up after the Constitution – residuary, with the Union."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "topic": "practice",
+   "ref": "2.3",
+   "title": "How is federalism practised?",
+   "time": "9 min",
+   "hook": "Rules on paper are not enough. Indian federalism succeeded because of **democratic politics**: the spirit of respecting diversity and the desire to live together. Three big tests show how.",
+   "core": [
+    {
+     "term": "Test 1 · Linguistic States",
+     "def": "Boundaries redrawn so that people speaking the same language live in one State. Feared to cause disintegration; actually made India more united and administration easier. Some States (Nagaland, Uttarakhand, Jharkhand) were created on culture, ethnicity or geography."
+    },
+    {
+     "term": "Test 2 · Language policy",
+     "def": "No national language. Hindi is the official language (mother tongue of only about 40–44%). 21 other Scheduled Languages (22 in all). English was to stop in 1965 but continued with Hindi after protests, violent in Tamil Nadu."
+    },
+    {
+     "term": "Test 3 · Centre-State relations",
+     "def": "Earlier the same party ruled Centre and most States; the Centre often dismissed rival State governments. After 1990: rise of regional parties and coalition governments → new culture of respect for State autonomy."
+    },
+    {
+     "term": "Supreme Court",
+     "def": "A major judgement made it difficult for the Centre to dismiss State governments arbitrarily."
+    }
+   ],
+   "explain": [
+    "Unlike Sri Lanka, Indian leaders took a **cautious attitude** in spreading Hindi. Promotion of Hindi is official policy, but it cannot be imposed on States that speak other languages.",
+    "The 2011 Census recorded more than 1300 mother tongues grouped into 121 major languages; 22 are Scheduled Languages."
+   ],
+   "example": {
+    "q": "How has federalism been strengthened in practice in India? (5 marks)",
+    "steps": [
+     "**Linguistic States:** reorganising States by language made the country more united and administration easier.",
+     "**Other bases:** States like Nagaland, Uttarakhand and Jharkhand recognise differences of culture, ethnicity or geography.",
+     "**Language policy:** no national language; 22 Scheduled Languages; exams in any of them; English continued with Hindi after 1965 – avoiding a Sri Lanka-like conflict.",
+     "**Centre-State relations after 1990:** regional parties and coalition governments created respect for State autonomy.",
+     "**Judiciary:** a Supreme Court judgement made arbitrary dismissal of State governments difficult."
+    ],
+    "answer": "Linguistic States + language policy + Centre-State relations + Supreme Court."
+   },
+   "mistakes": [
+    "Calling Hindi the national language.",
+    "Saying linguistic States weakened unity.",
+    "Forgetting the role of coalition governments after 1990."
+   ],
+   "tip": "Always contrast India with Sri Lanka in language questions – examiners reward the comparison.",
+   "memory": "L-L-C: Linguistic States, Language policy, Centre-State relations.",
+   "examAsk": [
+    "Describe India’s language policy.",
+    "How did linguistic States strengthen unity?",
+    "How did Centre-State relations change after 1990?"
+   ],
+   "cards": [
+    {
+     "q": "Does India have a national language?",
+     "a": "No – Hindi is the official language."
+    },
+    {
+     "q": "How many Scheduled Languages?",
+     "a": "22"
+    },
+    {
+     "q": "What changed after 1990?",
+     "a": "Rise of regional parties and coalition governments; more respect for State autonomy."
+    }
+   ],
+   "play": [
+    {
+     "type": "match",
+     "title": "Three tests of Indian federalism",
+     "say": "Match each test or event with what it led to.",
+     "pairs": [
+      [
+       "Creation of linguistic States",
+       "Country became more united; administration easier"
+      ],
+      [
+       "Hindi as official language",
+       "No national language; 22 Scheduled Languages"
+      ],
+      [
+       "Protests in non-Hindi States (1965)",
+       "English continued along with Hindi"
+      ],
+      [
+       "Rise of regional parties after 1990",
+       "Coalition governments and respect for State autonomy"
+      ],
+      [
+       "Supreme Court judgement",
+       "Arbitrary dismissal of State governments made difficult"
+      ],
+      [
+       "Nagaland, Uttarakhand, Jharkhand",
+       "States created on culture, ethnicity or geography"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "topic": "local",
+   "ref": "2.4",
+   "title": "Decentralisation in India",
+   "time": "10 min",
+   "hook": "Uttar Pradesh has more people than Russia! A State that big cannot be run only from its capital. So India added a **third tier**: panchayats and municipalities, where people solve local problems themselves.",
+   "core": [
+    {
+     "term": "Decentralisation",
+     "def": "Taking power away from the Central and State governments and giving it to local government."
+    },
+    {
+     "term": "Why?",
+     "def": "Many problems are best settled locally; people know local problems and where to spend money; direct participation builds a habit of democratic participation – local self-government."
+    },
+    {
+     "term": "1992 amendment",
+     "def": "Regular elections compulsory · seats reserved for SC, ST and OBC · at least one-third for women · State Election Commission · States must share some powers and revenue."
+    },
+    {
+     "term": "Rural structure",
+     "def": "Gram sabha (all voters) supervises the gram panchayat (panch + sarpanch) → panchayat samiti (block/mandal) → zilla parishad (chairperson)."
+    },
+    {
+     "term": "Urban structure",
+     "def": "Municipalities (chairperson) in towns; municipal corporations (mayor) in big cities."
+    }
+   ],
+   "explain": [
+    "This is the **largest experiment in democracy** in the world: about 36 lakh elected representatives, and more than 10 lakh women representatives.",
+    "Problems remain: gram sabhas are not held regularly, and most States have not transferred significant powers or adequate resources."
+   ],
+   "example": {
+    "q": "State any two differences between local government before and after the 1992 amendment. (3 marks)",
+    "steps": [
+     "**Elections:** before 1992 elections were not held regularly; now regular elections are constitutionally mandatory, conducted by the State Election Commission.",
+     "**Reservation:** now seats are reserved for SC, ST and OBC, and at least one-third for women.",
+     "**Powers:** earlier local bodies had no powers or resources of their own; now States must share some powers and revenue with them."
+    ],
+    "answer": "Regular elections · reservations · powers and revenue."
+   },
+   "mistakes": [
+    "Saying one-half of seats are reserved for women (it is at least one-third).",
+    "Confusing gram sabha (all voters) with gram panchayat (elected council).",
+    "Calling the municipal corporation head the ‘chairperson’ (it is the mayor)."
+   ],
+   "tip": "Draw the panchayati raj ladder in your answer – a diagram earns marks and saves words.",
+   "memory": "Sabha → Panchayat → Samiti → Parishad (village to district).",
+   "examAsk": [
+    "Why is decentralisation needed?",
+    "Changes made by the 1992 amendment.",
+    "Describe the structure of rural local government."
+   ],
+   "cards": [
+    {
+     "q": "Who supervises the gram panchayat?",
+     "a": "The gram sabha (all voters of the village)."
+    },
+    {
+     "q": "Head of a municipal corporation?",
+     "a": "Mayor"
+    },
+    {
+     "q": "Seats for women in local bodies?",
+     "a": "At least one-third."
+    }
+   ],
+   "play": [
+    {
+     "type": "order",
+     "title": "Build the panchayati raj ladder",
+     "say": "Tap the rural local government bodies from the village level up to the district.",
+     "first": "village",
+     "last": "district",
+     "items": [
+      "Gram sabha – all the voters of the village",
+      "Gram panchayat – panch and sarpanch",
+      "Panchayat samiti – block or mandal",
+      "Zilla parishad – whole district"
+     ],
+     "done": "Village → block → district. Most zilla parishad members are elected; its chairperson is the political head."
+    },
+    {
+     "type": "match",
+     "title": "Who heads it?",
+     "say": "Match each body with its head.",
+     "pairs": [
+      [
+       "Union of India",
+       "Prime Minister"
+      ],
+      [
+       "State",
+       "Chief Minister"
+      ],
+      [
+       "Municipal corporation",
+       "Mayor"
+      ],
+      [
+       "Municipality",
+       "Municipal chairperson"
+      ],
+      [
+       "Gram panchayat",
+       "Sarpanch"
+      ],
+      [
+       "Zilla parishad",
+       "Zilla parishad chairperson"
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "formulas": [
+  {
+   "name": "Federalism",
+   "f": "power divided between central authority and constituent units",
+   "unit": "India, USA",
+   "when": "Definitions"
+  },
+  {
+   "name": "Coming together",
+   "f": "independent states join; states equal and strong",
+   "unit": "USA, Switzerland, Australia",
+   "when": "Types"
+  },
+  {
+   "name": "Holding together",
+   "f": "large country divides power; Centre stronger",
+   "unit": "India, Spain, Belgium",
+   "when": "Types"
+  },
+  {
+   "name": "Three lists",
+   "f": "Union · State · Concurrent; residuary with Union",
+   "unit": "Defence · Police · Education · Software",
+   "when": "Distribution of powers"
+  },
+  {
+   "name": "Changing the arrangement",
+   "f": "2/3 majority in both Houses + half of States ratify",
+   "unit": "",
+   "when": "Why hard to change"
+  },
+  {
+   "name": "Language",
+   "f": "no national language; Hindi official; 22 Scheduled",
+   "unit": "English continued after 1965",
+   "when": "Language policy"
+  },
+  {
+   "name": "After 1990",
+   "f": "regional parties + coalitions → State autonomy respected",
+   "unit": "SC judgement on dismissals",
+   "when": "Centre-State relations"
+  },
+  {
+   "name": "1992 amendment",
+   "f": "regular elections; SC/ST/OBC & 1/3 women reserved; SEC; share powers/revenue",
+   "unit": "36 lakh representatives",
+   "when": "Decentralisation"
+  },
+  {
+   "name": "Local bodies",
+   "f": "gram sabha → panchayat → samiti → zilla parishad; municipality/corporation",
+   "unit": "Sarpanch · Mayor",
+   "when": "Structure"
+  }
+ ],
+ "revision": [
+  "Federalism: power divided between a central authority and constituent units; both levels separately answerable to the people.",
+  "Unitary: one level, or sub-units subordinate to the Centre (e.g. Sri Lanka). Belgium became federal in 1993.",
+  "Seven features: tiers, own jurisdiction, constitutional guarantee, joint consent for changes, courts as umpire, specified revenue, unity + diversity.",
+  "Coming together (USA, Switzerland, Australia) vs holding together (India, Spain, Belgium).",
+  "Union List (defence, foreign affairs, banking, communications, currency); State List (police, trade, commerce, agriculture, irrigation); Concurrent List (education, forest, trade unions, marriage, adoption, succession); residuary → Union.",
+  "Special status (Article 371): Assam, Nagaland, Arunachal Pradesh, Mizoram. UTs: Chandigarh, Lakshadweep, Delhi.",
+  "Change needs two-thirds majority in both Houses + ratification by half the States.",
+  "Linguistic States made India more united; language policy: no national language, 22 Scheduled Languages, English continued.",
+  "After 1990: regional parties, coalitions, respect for State autonomy; Supreme Court limited arbitrary dismissals.",
+  "1992: regular elections, reservations (SC/ST/OBC, 1/3 women), State Election Commission, sharing powers and revenue."
+ ],
+ "exam": {
+  "paper": [
+   {
+    "q": "1 mark",
+    "marks": "MCQ / A-R",
+    "what": "List of a subject, types of federation, 1992, head of a local body"
+   },
+   {
+    "q": "3 marks",
+    "marks": "Short answer",
+    "what": "Federal vs unitary; changes of 1992; why decentralisation"
+   },
+   {
+    "q": "5 marks",
+    "marks": "Long answer",
+    "what": "Features of federalism; three lists; how federalism is practised in India"
+   },
+   {
+    "q": "Map / case",
+    "marks": "",
+    "what": "States like Manipur, Sikkim, Chhattisgarh, Goa; a passage on local government"
+   }
+  ],
+  "sections": [
+   {
+    "title": "Federalism answers · 4 steps",
+    "kind": "steps",
+    "items": [
+     "Define federalism in one line.",
+     "Name the feature or change (e.g. ‘Three lists’).",
+     "Give the Indian detail (subjects, 1992, Article 371).",
+     "Close with the purpose: unity with diversity / local self-government."
+    ]
+   },
+   {
+    "title": "Answer writing that scores",
+    "kind": "mem",
+    "items": [
+     "Start with a one-line definition or introduction using textbook keywords (e.g. ‘Majoritarianism is …’).",
+     "Write in points – one idea per point, with the key term in the first few words. A 3-mark answer needs 3 clear points; a 5-mark answer needs 5.",
+     "Add a real example from the chapter to each point (Belgium, Sri Lanka, Panchayati Raj, a party, a survey figure).",
+     "Use the exact numbers the textbook gives only when you are sure (59%, 1956, 1992, one-third, 1976).",
+     "For ‘Explain / Analyse’ questions use PEE: Point → Explain → Example. For ‘Distinguish’ questions draw a small two-column table.",
+     "Case-based questions: underline the key line in the passage first; the answer is usually hidden in it."
+    ]
+   },
+   {
+    "title": "Before the exam",
+    "kind": "note",
+    "items": [
+     "Revise the key facts sheet and the revision list the night before.",
+     "Redo the Play & learn sorts – if you can sort every card first time, you know the chapter.",
+     "Practise one 5-mark answer in 8–10 minutes with a timer."
+    ]
+   }
+  ],
+  "checklist": [
+   "I can list five features of federalism.",
+   "I can explain coming together vs holding together with examples.",
+   "I can place any subject in the right list.",
+   "I can describe language policy and Centre-State relations after 1990.",
+   "I can list the changes of the 1992 amendment and draw the panchayati raj structure."
+  ],
+  "paperTitle": "How this chapter is examined",
+  "paperCols": [
+   "Marks",
+   "Question type",
+   "Likely asks"
+  ],
+  "paperNote": "Based on the CBSE Class X Social Science pattern (MCQ, assertion–reason, 3-mark short, 4-mark case/source-based and 5-mark long answers). Practise these types first."
+ },
+ "method": "Built on proven learning methods: understand the story first, sort and match ideas with your hands (active learning), write model answers point by point, test yourself (active recall) and revisit after 1, 3 and 7 days (spaced revision).",
+ "sheetTitle": "Key facts sheet",
+ "sheetCols": [
+  "Topic",
+  "Key fact",
+  "Example",
+  "Use it for"
+ ]
+}

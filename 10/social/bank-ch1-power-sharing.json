@@ -1,0 +1,772 @@
+{
+ "id": "class10-social-ch1",
+ "class": "10",
+ "subject": "social",
+ "chapter": "Chapter 1 · Power-sharing",
+ "source": "NCERT Democratic Politics II (Class X Political Science), Chapter 1",
+ "topics": [
+  {
+   "id": "stories",
+   "name": "Belgium and Sri Lanka",
+   "ref": "1.1"
+  },
+  {
+   "id": "why",
+   "name": "Why power sharing is desirable",
+   "ref": "1.2"
+  },
+  {
+   "id": "forms",
+   "name": "Forms of power sharing",
+   "ref": "1.3"
+  }
+ ],
+ "questions": [
+  {
+   "topic": "stories",
+   "level": "easy",
+   "q": "What percentage of Belgium’s population lives in the Flemish region and speaks Dutch?",
+   "a": "59 per cent",
+   "w": [
+    "40 per cent",
+    "80 per cent",
+    "1 per cent"
+   ],
+   "e": "59% Dutch (Flemish region), 40% French (Wallonia), 1% German."
+  },
+  {
+   "topic": "stories",
+   "level": "easy",
+   "q": "In Brussels, the capital of Belgium, the majority of people speak…",
+   "a": "French (80 per cent)",
+   "w": [
+    "Dutch (80 per cent)",
+    "German",
+    "Flemish and German equally"
+   ],
+   "e": "In Brussels 80% speak French and 20% Dutch – the Dutch were a majority in the country but a minority in the capital."
+  },
+  {
+   "topic": "stories",
+   "level": "easy",
+   "q": "In which year was the Act passed that recognised Sinhala as the only official language of Sri Lanka?",
+   "a": "1956",
+   "w": [
+    "1948",
+    "1971",
+    "2009"
+   ],
+   "e": "The 1956 Act disregarded Tamil – a major majoritarian measure."
+  },
+  {
+   "topic": "stories",
+   "level": "easy",
+   "q": "Sri Lanka became independent in…",
+   "a": "1948",
+   "w": [
+    "1947",
+    "1956",
+    "1965"
+   ],
+   "e": "Sri Lanka emerged as an independent country in 1948."
+  },
+  {
+   "topic": "stories",
+   "level": "easy",
+   "q": "A belief that the majority community should rule a country in whichever way it wants, disregarding the wishes and needs of the minority, is called…",
+   "a": "majoritarianism",
+   "w": [
+    "federalism",
+    "secularism",
+    "communalism"
+   ],
+   "e": "Definition from the chapter: majoritarianism."
+  },
+  {
+   "topic": "stories",
+   "level": "easy",
+   "q": "Which religion did the new Sri Lankan constitution say the state shall protect and foster?",
+   "a": "Buddhism",
+   "w": [
+    "Hinduism",
+    "Christianity",
+    "Islam"
+   ],
+   "e": "Most Sinhala speakers are Buddhists; this measure increased Tamil alienation."
+  },
+  {
+   "topic": "stories",
+   "level": "easy",
+   "q": "Belgium amended its constitution four times between…",
+   "a": "1970 and 1993",
+   "w": [
+    "1950 and 1960",
+    "1948 and 1956",
+    "1993 and 2009"
+   ],
+   "e": "Between 1970 and 1993 Belgium worked out its innovative power-sharing model."
+  },
+  {
+   "topic": "stories",
+   "level": "hard",
+   "q": "Which is NOT a feature of the Belgian model of power sharing?",
+   "a": "The majority Dutch community appoints all central ministers",
+   "w": [
+    "Equal number of Dutch and French-speaking ministers in the central government",
+    "A community government elected by each language group",
+    "Brussels has a separate government with equal representation of both communities"
+   ],
+   "e": "The constitution requires EQUAL numbers of Dutch and French-speaking ministers – no single community decides alone."
+  },
+  {
+   "topic": "stories",
+   "level": "hard",
+   "q": "The ‘community government’ in Belgium has powers regarding…",
+   "a": "cultural, educational and language-related issues",
+   "w": [
+    "defence and foreign affairs",
+    "currency and banking",
+    "police and army"
+   ],
+   "e": "It is elected by people of one language community – Dutch, French or German-speaking – wherever they live."
+  },
+  {
+   "topic": "stories",
+   "level": "hard",
+   "q": "What was the main result of majoritarian policies in Sri Lanka?",
+   "a": "Distrust grew into a civil war that ended in 2009",
+   "w": [
+    "Tamil was made the only official language",
+    "Belgium-style community governments were set up",
+    "Sri Lanka became a federation"
+   ],
+   "e": "Alienation of Sri Lankan Tamils led to demands for Tamil Eelam and a civil war."
+  },
+  {
+   "topic": "stories",
+   "level": "hard",
+   "q": "Which city was chosen as the headquarters of the European Union?",
+   "a": "Brussels",
+   "w": [
+    "Colombo",
+    "Paris",
+    "Geneva"
+   ],
+   "e": "Belgium’s successful accommodation made Brussels a fitting headquarters of the EU."
+  },
+  {
+   "topic": "stories",
+   "level": "hard",
+   "q": "Assertion (A): The Belgian model helped avoid a possible division of the country on linguistic lines.\nReason (R): Belgian leaders recognised regional differences and cultural diversities and shared power among communities.",
+   "a": "Both A and R are true, and R is the correct explanation of A.",
+   "w": [
+    "Both A and R are true, but R is not the correct explanation of A.",
+    "A is true, but R is false.",
+    "A is false, but R is true."
+   ],
+   "e": "Accommodation, not domination, kept Belgium united; R explains A."
+  },
+  {
+   "topic": "stories",
+   "level": "hard",
+   "q": "Assertion (A): Sri Lanka adopted a series of majoritarian measures after independence.\nReason (R): The Sinhala-speaking community formed about 74 per cent of the population.",
+   "a": "Both A and R are true, but R is not the correct explanation of A.",
+   "w": [
+    "Both A and R are true, and R is the correct explanation of A.",
+    "A is true, but R is false.",
+    "A is false, but R is true."
+   ],
+   "e": "Both are true, but being a majority does not explain why leaders chose majoritarianism – that was a political choice to secure dominance."
+  },
+  {
+   "topic": "stories",
+   "level": "hard",
+   "q": "Read the passage and answer: Why did the Sri Lankan Tamils feel alienated?",
+   "a": "Government policies denied them equal political rights and discriminated against them in jobs and opportunities",
+   "w": [
+    "They were a majority in Colombo",
+    "The government gave them a separate state",
+    "They wanted French protection"
+   ],
+   "e": "The passage lists the measures that made Tamils feel their interests were ignored.",
+   "passage": "In 1956, an Act was passed to recognise Sinhala as the only official language, thus disregarding Tamil. The governments followed preferential policies that favoured Sinhala applicants for university positions and government jobs. A new constitution stipulated that the state shall protect and foster Buddhism."
+  },
+  {
+   "topic": "stories",
+   "level": "easy",
+   "type": "pairs",
+   "q": "‘{x}’ – this is true of which country?",
+   "pairs": [
+    [
+     "Constitution amended four times between 1970 and 1993",
+     "Belgium"
+    ],
+    [
+     "Sinhala made the only official language in 1956",
+     "Sri Lanka"
+    ],
+    [
+     "Community government for each language group",
+     "Belgium"
+    ],
+    [
+     "Demand for an independent Tamil Eelam",
+     "Sri Lanka"
+    ],
+    [
+     "Equal Dutch and French-speaking ministers",
+     "Belgium"
+    ],
+    [
+     "Civil war that ended in 2009",
+     "Sri Lanka"
+    ],
+    [
+     "State shall protect and foster Buddhism",
+     "Sri Lanka"
+    ],
+    [
+     "Brussels has equal representation of both communities",
+     "Belgium"
+    ]
+   ],
+   "e": "{x} → {ans}.",
+   "extra": [
+    "India",
+    "Lebanon"
+   ]
+  },
+  {
+   "topic": "stories",
+   "level": "easy",
+   "type": "pairs",
+   "q": "‘{x}’ – this is true of which country?",
+   "pairs": [
+    [
+     "Constitution amended four times between 1970 and 1993",
+     "Belgium"
+    ],
+    [
+     "Sinhala made the only official language in 1956",
+     "Sri Lanka"
+    ],
+    [
+     "Community government for each language group",
+     "Belgium"
+    ],
+    [
+     "Demand for an independent Tamil Eelam",
+     "Sri Lanka"
+    ],
+    [
+     "Equal Dutch and French-speaking ministers",
+     "Belgium"
+    ],
+    [
+     "Civil war that ended in 2009",
+     "Sri Lanka"
+    ],
+    [
+     "State shall protect and foster Buddhism",
+     "Sri Lanka"
+    ],
+    [
+     "Brussels has equal representation of both communities",
+     "Belgium"
+    ]
+   ],
+   "e": "{x} → {ans}.",
+   "extra": [
+    "India",
+    "Lebanon"
+   ]
+  },
+  {
+   "topic": "stories",
+   "level": "easy",
+   "type": "pairs",
+   "q": "‘{x}’ – this is true of which country?",
+   "pairs": [
+    [
+     "Constitution amended four times between 1970 and 1993",
+     "Belgium"
+    ],
+    [
+     "Sinhala made the only official language in 1956",
+     "Sri Lanka"
+    ],
+    [
+     "Community government for each language group",
+     "Belgium"
+    ],
+    [
+     "Demand for an independent Tamil Eelam",
+     "Sri Lanka"
+    ],
+    [
+     "Equal Dutch and French-speaking ministers",
+     "Belgium"
+    ],
+    [
+     "Civil war that ended in 2009",
+     "Sri Lanka"
+    ],
+    [
+     "State shall protect and foster Buddhism",
+     "Sri Lanka"
+    ],
+    [
+     "Brussels has equal representation of both communities",
+     "Belgium"
+    ]
+   ],
+   "e": "{x} → {ans}.",
+   "extra": [
+    "India",
+    "Lebanon"
+   ]
+  },
+  {
+   "topic": "why",
+   "level": "easy",
+   "q": "Power sharing reduces the possibility of conflict between social groups. This is a…",
+   "a": "prudential reason",
+   "w": [
+    "moral reason",
+    "religious reason",
+    "legal reason"
+   ],
+   "e": "Prudential reasons stress better outcomes (stability, less conflict)."
+  },
+  {
+   "topic": "why",
+   "level": "easy",
+   "q": "‘Power sharing is the very spirit of democracy.’ This is a…",
+   "a": "moral reason",
+   "w": [
+    "prudential reason",
+    "economic reason",
+    "military reason"
+   ],
+   "e": "Moral reasons value the act of power sharing itself – people have a right to be consulted."
+  },
+  {
+   "topic": "why",
+   "level": "easy",
+   "q": "The word ‘prudential’ means based on…",
+   "a": "careful calculation of gains and losses",
+   "w": [
+    "religious belief",
+    "majority opinion",
+    "court orders"
+   ],
+   "e": "Prudential decisions are contrasted with decisions based purely on moral considerations."
+  },
+  {
+   "topic": "why",
+   "level": "hard",
+   "q": "A legitimate government is one where…",
+   "a": "citizens, through participation, acquire a stake in the system",
+   "w": [
+    "the majority community rules alone",
+    "the army supports the ruler",
+    "decisions are always quick"
+   ],
+   "e": "This is the moral argument for power sharing."
+  },
+  {
+   "topic": "why",
+   "level": "hard",
+   "q": "According to the chapter, the ‘tyranny of the majority’…",
+   "a": "is oppressive for the minority and often affects the majority adversely too",
+   "w": [
+    "helps the majority in the long run",
+    "is the spirit of democracy",
+    "prevents civil war"
+   ],
+   "e": "Imposing the majority’s will looks attractive in the short run but undermines national unity."
+  },
+  {
+   "topic": "why",
+   "level": "hard",
+   "q": "Which set of statements are arguments IN FAVOUR of power sharing? A. reduces conflict  B. decreases arbitrariness  C. delays decisions  D. accommodates diversities  E. increases instability  F. promotes participation",
+   "a": "A, B, D and F",
+   "w": [
+    "A, C, E and F",
+    "A, B, D and G",
+    "B, C, D and G"
+   ],
+   "e": "C and E are arguments against it; the favourable ones are A, B, D, F (NCERT exercise 6)."
+  },
+  {
+   "topic": "why",
+   "level": "hard",
+   "q": "Assertion (A): Power sharing is good for democracy.\nReason (R): It helps to reduce the possibility of conflict between social groups.",
+   "a": "Both A and R are true, and R is the correct explanation of A.",
+   "w": [
+    "Both A and R are true, but R is not the correct explanation of A.",
+    "A is true, but R is false.",
+    "A is false, but R is true."
+   ],
+   "e": "Both true; reducing conflict (a prudential reason) explains why it is good."
+  },
+  {
+   "topic": "why",
+   "level": "easy",
+   "type": "pairs",
+   "q": "‘{x}’ – prudential or moral reason?",
+   "pairs": [
+    [
+     "It reduces conflict between social groups",
+     "Prudential"
+    ],
+    [
+     "It ensures political stability",
+     "Prudential"
+    ],
+    [
+     "People have a right to be consulted on how they are governed",
+     "Moral"
+    ],
+    [
+     "It is the very spirit of democracy",
+     "Moral"
+    ],
+    [
+     "Imposing the majority’s will undermines unity in the long run",
+     "Prudential"
+    ],
+    [
+     "Citizens acquire a stake in the system through participation",
+     "Moral"
+    ]
+   ],
+   "e": "{x} → {ans} reason.",
+   "extra": [
+    "Legal",
+    "Economic"
+   ]
+  },
+  {
+   "topic": "why",
+   "level": "easy",
+   "type": "pairs",
+   "q": "‘{x}’ – prudential or moral reason?",
+   "pairs": [
+    [
+     "It reduces conflict between social groups",
+     "Prudential"
+    ],
+    [
+     "It ensures political stability",
+     "Prudential"
+    ],
+    [
+     "People have a right to be consulted on how they are governed",
+     "Moral"
+    ],
+    [
+     "It is the very spirit of democracy",
+     "Moral"
+    ],
+    [
+     "Imposing the majority’s will undermines unity in the long run",
+     "Prudential"
+    ],
+    [
+     "Citizens acquire a stake in the system through participation",
+     "Moral"
+    ]
+   ],
+   "e": "{x} → {ans} reason.",
+   "extra": [
+    "Legal",
+    "Economic"
+   ]
+  },
+  {
+   "topic": "why",
+   "level": "easy",
+   "type": "pairs",
+   "q": "‘{x}’ – prudential or moral reason?",
+   "pairs": [
+    [
+     "It reduces conflict between social groups",
+     "Prudential"
+    ],
+    [
+     "It ensures political stability",
+     "Prudential"
+    ],
+    [
+     "People have a right to be consulted on how they are governed",
+     "Moral"
+    ],
+    [
+     "It is the very spirit of democracy",
+     "Moral"
+    ],
+    [
+     "Imposing the majority’s will undermines unity in the long run",
+     "Prudential"
+    ],
+    [
+     "Citizens acquire a stake in the system through participation",
+     "Moral"
+    ]
+   ],
+   "e": "{x} → {ans} reason.",
+   "extra": [
+    "Legal",
+    "Economic"
+   ]
+  },
+  {
+   "topic": "forms",
+   "level": "easy",
+   "q": "Power shared among legislature, executive and judiciary is called…",
+   "a": "horizontal distribution of power",
+   "w": [
+    "vertical distribution of power",
+    "federal division of power",
+    "community government"
+   ],
+   "e": "Organs at the same level exercise different powers – horizontal."
+  },
+  {
+   "topic": "forms",
+   "level": "easy",
+   "q": "Power shared among governments at different levels (Union, State, local) is called…",
+   "a": "vertical division of power",
+   "w": [
+    "horizontal distribution of power",
+    "checks and balances",
+    "coalition government"
+   ],
+   "e": "Higher and lower levels of government – vertical."
+  },
+  {
+   "topic": "forms",
+   "level": "easy",
+   "q": "A system where each organ of government checks the others is called…",
+   "a": "checks and balances",
+   "w": [
+    "majoritarianism",
+    "coalition",
+    "decentralisation"
+   ],
+   "e": "E.g. judges are appointed by the executive but can check the executive and laws made by legislatures."
+  },
+  {
+   "topic": "forms",
+   "level": "easy",
+   "q": "A government formed by two or more parties together is called a…",
+   "a": "coalition government",
+   "w": [
+    "community government",
+    "unitary government",
+    "federal government"
+   ],
+   "e": "When parties form an alliance and win, they share power in a coalition."
+  },
+  {
+   "topic": "forms",
+   "level": "hard",
+   "q": "Reserved constituencies for weaker sections are an example of power sharing among…",
+   "a": "different social groups",
+   "w": [
+    "different organs of government",
+    "different levels of government",
+    "political parties"
+   ],
+   "e": "They give space to diverse social groups who might otherwise feel alienated."
+  },
+  {
+   "topic": "forms",
+   "level": "hard",
+   "q": "Interest groups of traders, farmers and industrial workers share power by…",
+   "a": "participating in governmental committees or influencing decision making",
+   "w": [
+    "forming the judiciary",
+    "running state governments",
+    "writing the constitution"
+   ],
+   "e": "This is power sharing through parties, pressure groups and movements."
+  },
+  {
+   "topic": "forms",
+   "level": "hard",
+   "q": "Match: 1. Organs of government 2. Different levels 3. Social groups 4. Two or more parties with A. Community government B. Separation of powers C. Coalition government D. Federal government",
+   "a": "1-B, 2-D, 3-A, 4-C",
+   "w": [
+    "1-D, 2-A, 3-B, 4-C",
+    "1-B, 2-C, 3-D, 4-A",
+    "1-C, 2-D, 3-A, 4-B"
+   ],
+   "e": "Separation of powers, federal government, community government, coalition (NCERT exercise 8)."
+  },
+  {
+   "topic": "forms",
+   "level": "hard",
+   "q": "In Lebanon’s power-sharing pact, the President must belong to the…",
+   "a": "Maronite sect of Catholic Christians",
+   "w": [
+    "Sunni Muslim community",
+    "Shi’a Muslim community",
+    "Orthodox Christian sect"
+   ],
+   "e": "PM – Sunni Muslim; Deputy PM – Orthodox Christian; Speaker – Shi’a Muslim (Khalil’s dilemma)."
+  },
+  {
+   "topic": "forms",
+   "level": "hard",
+   "type": "pairs",
+   "q": "‘{x}’ – which form of power sharing is this?",
+   "pairs": [
+    [
+     "The Bombay High Court orders the Maharashtra Government to improve children’s homes",
+     "Among organs of government"
+    ],
+    [
+     "Nigeria’s state finance ministers question the federal government’s revenue formula",
+     "Among levels of government"
+    ],
+    [
+     "Ontario agrees a land claim settlement with the aboriginal community",
+     "Among social groups"
+    ],
+    [
+     "Two Russian parties agree to a common list of candidates",
+     "Among political parties"
+    ],
+    [
+     "Seats reserved for women in panchayats",
+     "Among social groups"
+    ],
+    [
+     "Ministers are responsible to Parliament",
+     "Among organs of government"
+    ]
+   ],
+   "e": "{x} → power shared {ans}."
+  },
+  {
+   "topic": "forms",
+   "level": "hard",
+   "type": "pairs",
+   "q": "‘{x}’ – which form of power sharing is this?",
+   "pairs": [
+    [
+     "The Bombay High Court orders the Maharashtra Government to improve children’s homes",
+     "Among organs of government"
+    ],
+    [
+     "Nigeria’s state finance ministers question the federal government’s revenue formula",
+     "Among levels of government"
+    ],
+    [
+     "Ontario agrees a land claim settlement with the aboriginal community",
+     "Among social groups"
+    ],
+    [
+     "Two Russian parties agree to a common list of candidates",
+     "Among political parties"
+    ],
+    [
+     "Seats reserved for women in panchayats",
+     "Among social groups"
+    ],
+    [
+     "Ministers are responsible to Parliament",
+     "Among organs of government"
+    ]
+   ],
+   "e": "{x} → power shared {ans}."
+  },
+  {
+   "topic": "forms",
+   "level": "hard",
+   "type": "pairs",
+   "q": "‘{x}’ – which form of power sharing is this?",
+   "pairs": [
+    [
+     "The Bombay High Court orders the Maharashtra Government to improve children’s homes",
+     "Among organs of government"
+    ],
+    [
+     "Nigeria’s state finance ministers question the federal government’s revenue formula",
+     "Among levels of government"
+    ],
+    [
+     "Ontario agrees a land claim settlement with the aboriginal community",
+     "Among social groups"
+    ],
+    [
+     "Two Russian parties agree to a common list of candidates",
+     "Among political parties"
+    ],
+    [
+     "Seats reserved for women in panchayats",
+     "Among social groups"
+    ],
+    [
+     "Ministers are responsible to Parliament",
+     "Among organs of government"
+    ]
+   ],
+   "e": "{x} → power shared {ans}."
+  },
+  {
+   "topic": "stories",
+   "level": "hard",
+   "q": "Which community in Belgium was a minority in the country but a majority in Brussels?",
+   "a": "French-speaking",
+   "w": [
+    "Dutch-speaking",
+    "German-speaking",
+    "Sinhala-speaking"
+   ],
+   "e": "French speakers are 40% of Belgium but 80% of Brussels.",
+   "passage": "Belgium is a small country in Europe. Of its total population, 59 per cent lives in the Flemish region and speaks Dutch. Another 40 per cent lives in the Wallonia region and speaks French. The remaining one per cent speak German. In the capital city Brussels, 80 per cent speak French while 20 per cent are Dutch-speaking. The minority French-speaking community was relatively rich and powerful. This was resented by the Dutch-speaking community who got the benefit of economic development and education much later."
+  },
+  {
+   "topic": "stories",
+   "level": "hard",
+   "q": "Why did the Dutch-speaking community resent the French-speaking community?",
+   "a": "The French-speakers were richer and more powerful; the Dutch got the benefits of development and education later",
+   "w": [
+    "The Dutch were a minority in the country",
+    "The French-speakers wanted to join France",
+    "The Dutch were denied voting rights by the Constitution"
+   ],
+   "e": "The passage says the minority French community was rich and powerful.",
+   "passage": "Belgium is a small country in Europe. Of its total population, 59 per cent lives in the Flemish region and speaks Dutch. Another 40 per cent lives in the Wallonia region and speaks French. The remaining one per cent speak German. In the capital city Brussels, 80 per cent speak French while 20 per cent are Dutch-speaking. The minority French-speaking community was relatively rich and powerful. This was resented by the Dutch-speaking community who got the benefit of economic development and education much later."
+  },
+  {
+   "topic": "forms",
+   "level": "hard",
+   "q": "The ‘community government’ described in the passage is an example of power sharing among –",
+   "a": "Different social groups (language communities)",
+   "w": [
+    "Different organs of government",
+    "Governments at different levels only",
+    "Political parties and pressure groups"
+   ],
+   "e": "It is elected by each language community, wherever its members live.",
+   "passage": "Between 1970 and 1993, Belgian leaders amended their constitution four times. Apart from the Central and the State Government, there is a third kind of government. This ‘community government’ is elected by people belonging to one language community – Dutch, French and German-speaking – no matter where they live. This government has the power regarding cultural, educational and language-related issues."
+  },
+  {
+   "topic": "forms",
+   "level": "easy",
+   "q": "Which subjects are handled by the community government of Belgium?",
+   "a": "Cultural, educational and language-related issues",
+   "w": [
+    "Defence and foreign affairs",
+    "Currency and banking",
+    "Railways and ports"
+   ],
+   "e": "Read the last line of the passage.",
+   "passage": "Between 1970 and 1993, Belgian leaders amended their constitution four times. Apart from the Central and the State Government, there is a third kind of government. This ‘community government’ is elected by people belonging to one language community – Dutch, French and German-speaking – no matter where they live. This government has the power regarding cultural, educational and language-related issues."
+  }
+ ]
+}

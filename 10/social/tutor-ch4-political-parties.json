@@ -1,0 +1,697 @@
+{
+ "id": "class10-social-ch4-tutor",
+ "chapter": "Chapter 4 · Political Parties",
+ "source": "NCERT Democratic Politics II (Class X Political Science), Chapter 4",
+ "overview": {
+  "bigIdea": "For most people, **democracy = political parties**. Parties contest elections, make policies, form governments and oppose them. They are not always trusted – but modern democracy cannot work without them. The chapter asks: why parties, how many, which ones, and how to fix them?",
+  "ladderTitle": "Four questions",
+  "ladder": [
+   {
+    "step": "Why?",
+    "q": "What do parties do?",
+    "a": "Seven functions; necessary for representative democracy"
+   },
+   {
+    "step": "How many?",
+    "q": "Party systems",
+    "a": "One-party, two-party, multiparty"
+   },
+   {
+    "step": "Which?",
+    "q": "National & State parties",
+    "a": "Six national parties (2023)"
+   },
+   {
+    "step": "Fix?",
+    "q": "Challenges and reforms",
+    "a": "Four challenges; reforms made and suggested"
+   }
+  ],
+  "languagesTitle": "Three lists to master",
+  "languages": [
+   {
+    "name": "7 functions",
+    "text": "Contest, policies, laws, govern, oppose, opinion, access."
+   },
+   {
+    "name": "4 challenges",
+    "text": "Internal democracy, dynasty, money & muscle, no real choice."
+   },
+   {
+    "name": "Reforms",
+    "text": "Anti-defection, affidavits, EC orders + suggestions."
+   }
+  ],
+  "plan": [
+   {
+    "pass": "Functions",
+    "time": "15 min",
+    "text": "Lesson 1 – learn the seven functions with the match game."
+   },
+   {
+    "pass": "Systems and parties",
+    "time": "20 min",
+    "text": "Lessons 2–3 – party systems; one fact per national party."
+   },
+   {
+    "pass": "Challenges",
+    "time": "15 min",
+    "text": "Lesson 4 – sort challenges, reforms made and suggestions."
+   },
+   {
+    "pass": "Test and revise",
+    "time": "10 min",
+    "text": "Check knowledge quiz; revise after 1, 3 and 7 days."
+   }
+  ]
+ },
+ "lessons": [
+  {
+   "topic": "need",
+   "ref": "4.1",
+   "title": "Why do we need political parties?",
+   "time": "10 min",
+   "hook": "Imagine an election where every candidate is independent. Each promises to fix the local road – but **no one can promise how the country will be run**. That missing piece is exactly what political parties provide.",
+   "core": [
+    {
+     "term": "Political party",
+     "def": "A group of people who come together to contest elections and hold power in the government, agreeing on policies and programmes to promote the collective good."
+    },
+    {
+     "term": "Three components",
+     "def": "The leaders, the active members and the followers."
+    },
+    {
+     "term": "Partisanship",
+     "def": "Parties are about a part of society; a partisan is strongly committed to a party and unable to take a balanced view."
+    },
+    {
+     "term": "Seven functions",
+     "def": "1 Contest elections · 2 Put forward policies and programmes · 3 Make laws · 4 Form and run governments · 5 Play opposition · 6 Shape public opinion · 7 Provide access to government machinery and welfare schemes."
+    },
+    {
+     "term": "Necessity",
+     "def": "Parties are linked to representative democracy: large societies need an agency to gather views, support or restrain the government, and make responsible government possible."
+    }
+   ],
+   "explain": [
+    "Candidates: in the USA, members and supporters choose them; in India, top party leaders choose them.",
+    "Even ‘non-party’ panchayat elections split villages into factions that put up panels – which is what parties do. That is why almost every country has parties."
+   ],
+   "example": {
+    "q": "State the various functions political parties perform in a democracy. (5 marks)",
+    "steps": [
+     "**Contest elections** – put up candidates (chosen by top leaders in India).",
+     "**Put forward policies and programmes** – reduce many opinions into a few basic positions for voters to choose from.",
+     "**Make laws** – members in the legislature follow the party leadership.",
+     "**Form and run governments / act as opposition** – recruit and train leaders; losing parties criticise and mobilise opposition.",
+     "**Shape public opinion and provide access** – raise issues, launch movements, help citizens reach government schemes."
+    ],
+    "answer": "Seven functions grouped into five points."
+   },
+   "mistakes": [
+    "Listing only ‘contest elections’ and ‘form government’.",
+    "Confusing parties with pressure groups (pressure groups do not contest elections).",
+    "Saying parties choose candidates the same way everywhere."
+   ],
+   "tip": "Use the memory hook to write all seven functions in order – examiners count them.",
+   "memory": "C-P-L-G-O-O-A: Contest, Policies, Laws, Govern, Oppose, Opinion, Access.",
+   "examAsk": [
+    "What is a political party? Its components?",
+    "Functions of political parties.",
+    "Why are political parties necessary?"
+   ],
+   "cards": [
+    {
+     "q": "Three components of a party?",
+     "a": "Leaders, active members, followers."
+    },
+    {
+     "q": "Who chooses candidates in India?",
+     "a": "Top party leaders."
+    },
+    {
+     "q": "Why can’t democracy work without parties?",
+     "a": "No one could promise policies or be responsible for running the country."
+    }
+   ],
+   "play": [
+    {
+     "type": "match",
+     "title": "Functions of parties",
+     "say": "Match each example with the function of a political party it shows.",
+     "pairs": [
+      [
+       "Putting up candidates in every constituency",
+       "Contesting elections"
+      ],
+      [
+       "Releasing a manifesto with a clear economic plan",
+       "Putting forward policies"
+      ],
+      [
+       "Members voting on a Bill as the party directs",
+       "Making laws"
+      ],
+      [
+       "Training leaders who become ministers",
+       "Forming and running governments"
+      ],
+      [
+       "Criticising the government’s failures in Parliament",
+       "Playing the opposition"
+      ],
+      [
+       "Launching a movement against price rise",
+       "Shaping public opinion"
+      ],
+      [
+       "A local leader helping a family get a ration card",
+       "Access to government machinery"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "topic": "systems",
+   "ref": "4.2",
+   "title": "How many parties should we have?",
+   "time": "8 min",
+   "hook": "China has one party, the USA mostly two, India hundreds. Which is best? The chapter’s surprising answer: **it is not a very good question** – a party system grows out of a country’s society and history.",
+   "core": [
+    {
+     "term": "One-party system",
+     "def": "Only one party is allowed to control and run the government, e.g. China (Communist Party). Not a democratic option."
+    },
+    {
+     "term": "Two-party system",
+     "def": "Power usually changes between two main parties, e.g. USA and UK."
+    },
+    {
+     "term": "Multiparty system",
+     "def": "Several parties have a reasonable chance of coming to power, alone or in alliance, e.g. India."
+    },
+    {
+     "term": "Alliance / front",
+     "def": "Parties join hands to contest elections and win power – in 2004: NDA, UPA and Left Front."
+    },
+    {
+     "term": "Popular participation",
+     "def": "Trust in parties is low all over the world, but in India party membership (higher than Canada, Japan, Spain, South Korea) and closeness to parties have gone up."
+    }
+   ],
+   "explain": [
+    "More than 750 parties are registered with the Election Commission of India, but only a handful are serious contenders.",
+    "A multiparty system can look messy and unstable, but it lets a variety of interests and opinions be represented – which suits India’s social and geographical diversity."
+   ],
+   "example": {
+    "q": "‘Party system is not something any country can choose.’ Explain. (3 marks)",
+    "steps": [
+     "A party system evolves over a long time depending on the nature of society, its social and regional divisions, its history of politics and its system of elections.",
+     "These cannot be changed very quickly; each country develops a system conditioned by its special circumstances.",
+     "India has a multiparty system because its social and geographical diversity is not easily absorbed by two or three parties. No system is ideal for all countries."
+    ],
+    "answer": "Evolves with society · cannot change quickly · India’s diversity → multiparty."
+   },
+   "mistakes": [
+    "Calling India a two-party system.",
+    "Saying a one-party system can be democratic.",
+    "Forgetting the 2004 alliances as examples."
+   ],
+   "tip": "For party-system answers: define it, give one country example, and one advantage or problem.",
+   "memory": "1 = China · 2 = USA/UK · Many = India.",
+   "examAsk": [
+    "Types of party systems with examples.",
+    "Why has India a multiparty system?",
+    "What does the survey say about popular participation in parties?"
+   ],
+   "cards": [
+    {
+     "q": "Example of a two-party system?",
+     "a": "USA or UK."
+    },
+    {
+     "q": "Three alliances in 2004?",
+     "a": "NDA, UPA, Left Front."
+    },
+    {
+     "q": "Is a one-party system democratic?",
+     "a": "No."
+    }
+   ],
+   "play": [
+    {
+     "type": "sort",
+     "title": "Which party system?",
+     "say": "Sort each country or statement into the right party system.",
+     "buckets": [
+      "One-party",
+      "Two-party",
+      "Multiparty"
+     ],
+     "items": [
+      [
+       "China",
+       0,
+       "Only the Communist Party rules."
+      ],
+      [
+       "United States of America",
+       1,
+       "Two main parties."
+      ],
+      [
+       "United Kingdom",
+       1,
+       "Two main parties."
+      ],
+      [
+       "India",
+       2,
+       "Many parties; alliances."
+      ],
+      [
+       "Only one party is allowed to control and run the government",
+       0,
+       "Not democratic."
+      ],
+      [
+       "Power usually changes between two main parties",
+       1,
+       "Others win only a few seats."
+      ],
+      [
+       "Governments are often formed by alliances or fronts",
+       2,
+       "e.g. NDA, UPA, Left Front."
+      ],
+      [
+       "Allows a variety of interests and opinions to be represented",
+       2,
+       "But can look messy."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "topic": "parties",
+   "ref": "4.3",
+   "title": "National and State parties",
+   "time": "10 min",
+   "hook": "Every party must register with the Election Commission, but only big, established parties get a **unique symbol** that only their official candidates can use. Getting that recognition needs a minimum share of votes and seats.",
+   "core": [
+    {
+     "term": "Recognition (as in the chapter)",
+     "def": "State party: at least 6% of votes in a State assembly election and at least 2 seats. National party: at least 6% of votes in Lok Sabha or assembly elections in four States and at least 4 Lok Sabha seats."
+    },
+    {
+     "term": "Six national parties (2023)",
+     "def": "Aam Aadmi Party, Bharatiya Janata Party, Bahujan Samaj Party, CPI(M), Indian National Congress, National People’s Party."
+    },
+    {
+     "term": "INC · BJP",
+     "def": "INC: 1885, centrist, dominant for decades after Independence. BJP: 1980 (reviving the Bharatiya Jana Sangh of 1951, Syama Prasad Mukherjee); integral humanism and Antyodaya (Deendayal Upadhyaya); 303 seats in 2019."
+    },
+    {
+     "term": "BSP · CPI(M)",
+     "def": "BSP: 1984, Kanshi Ram, bahujan samaj; inspired by Sahu Maharaj, Phule, Periyar, Ambedkar; base in Uttar Pradesh. CPI(M): 1964, Marxism-Leninism; strong in West Bengal (34 years in power), Kerala, Tripura."
+    },
+    {
+     "term": "AAP · NPP",
+     "def": "AAP: 26 November 2012, after the 2011 anti-corruption movement; governments in Delhi and Punjab. NPP: July 2013, P.A. Sangma; first North-East party to become national; government in Meghalaya."
+    }
+   ],
+   "explain": [
+    "**State parties** (commonly called regional parties) need not be regional in outlook: e.g. Samajwadi Party, Rashtriya Janata Dal; others like Biju Janata Dal, Sikkim Democratic Front, Mizo National Front are conscious of State identity.",
+    "Since 1996, nearly every State party has been part of a national coalition government – strengthening federalism and democracy."
+   ],
+   "example": {
+    "q": "Describe any three national parties of India. (3 marks)",
+    "steps": [
+     "**Indian National Congress:** founded 1885; one of the oldest parties in the world; centrist; secularism and welfare of weaker sections.",
+     "**Bharatiya Janata Party:** founded 1980 reviving the Bharatiya Jana Sangh; inspired by integral humanism and Antyodaya; won 303 seats in 2019.",
+     "**Bahujan Samaj Party:** formed 1984 under Kanshi Ram; represents dalits, adivasis, OBCs and religious minorities; main base Uttar Pradesh."
+    ],
+    "answer": "Three parties, each with year + leader/idea + one fact."
+   },
+   "mistakes": [
+    "Mixing up BSP’s founder (Kanshi Ram) with its inspirations (Ambedkar, Phule).",
+    "Saying there are seven national parties – the 2023 list has six.",
+    "Thinking all State parties have a regional ideology."
+   ],
+   "tip": "Learn one ‘year + idea’ tag per national party – that is enough for most 1- and 3-mark questions.",
+   "memory": "1885 INC · 1964 CPI(M) · 1980 BJP · 1984 BSP · 2012 AAP · 2013 NPP.",
+   "examAsk": [
+    "Criteria for recognition as State and national party.",
+    "Describe any national party.",
+    "How have State parties strengthened federalism?"
+   ],
+   "cards": [
+    {
+     "q": "Founder of BSP?",
+     "a": "Kanshi Ram"
+    },
+    {
+     "q": "First NE party to be national?",
+     "a": "National People’s Party"
+    },
+    {
+     "q": "Guiding philosophy of BJP?",
+     "a": "Integral humanism"
+    }
+   ],
+   "play": [
+    {
+     "type": "match",
+     "title": "National parties",
+     "say": "Match each national party with its key fact.",
+     "pairs": [
+      [
+       "Indian National Congress",
+       "Founded in 1885; centrist"
+      ],
+      [
+       "Bharatiya Janata Party",
+       "1980; integral humanism"
+      ],
+      [
+       "Bahujan Samaj Party",
+       "1984; Kanshi Ram"
+      ],
+      [
+       "CPI(M)",
+       "1964; Marxism-Leninism"
+      ],
+      [
+       "Aam Aadmi Party",
+       "2012; after anti-corruption movement"
+      ],
+      [
+       "National People’s Party",
+       "2013; first NE national party"
+      ]
+     ]
+    },
+    {
+     "type": "order",
+     "title": "Oldest to newest",
+     "say": "Tap the national parties in the order they were founded.",
+     "first": "oldest",
+     "last": "newest",
+     "items": [
+      "Indian National Congress (1885)",
+      "CPI(M) (1964)",
+      "Bharatiya Janata Party (1980)",
+      "Bahujan Samaj Party (1984)",
+      "Aam Aadmi Party (2012)",
+      "National People’s Party (2013)"
+     ],
+     "done": "1885 → 1964 → 1980 → 1984 → 2012 → 2013."
+    }
+   ]
+  },
+  {
+   "topic": "reform",
+   "ref": "4.4",
+   "title": "Challenges and reforms",
+   "time": "10 min",
+   "hook": "People blame parties for whatever goes wrong in democracy. The chapter narrows the criticism to **four problems** – and shows what has been done, what is suggested, and why citizens themselves matter.",
+   "core": [
+    {
+     "term": "1 · Lack of internal democracy",
+     "def": "Power concentrated in one or a few leaders; no membership registers, meetings or internal elections; personal loyalty to the leader matters more."
+    },
+    {
+     "term": "2 · Dynastic succession",
+     "def": "Few ways for ordinary workers to rise; top posts controlled by one family – unfair and bad for democracy."
+    },
+    {
+     "term": "3 · Money and muscle power",
+     "def": "Parties nominate candidates who can raise money; rich people and companies influence policies; sometimes criminals are supported."
+    },
+    {
+     "term": "4 · No meaningful choice",
+     "def": "Declining ideological differences (e.g. Labour and Conservative in Britain); the same leaders shift between parties."
+    },
+    {
+     "term": "Reforms made",
+     "def": "Anti-defection law (constitutional amendment) · Supreme Court: affidavit of property and criminal cases · Election Commission: organisational elections and income tax returns."
+    }
+   ],
+   "explain": [
+    "**Suggestions not yet accepted:** a law to regulate internal affairs (member registers, own constitution, independent authority, open elections); one-third of tickets to women and a quota in decision-making bodies; state funding of elections.",
+    "**Be careful with legal solutions:** over-regulation can make parties cheat the law. Two other ways: **people’s pressure** (petitions, publicity, agitations, media) and **more people joining parties** – ‘bad politics can be solved by more and better politics’."
+   ],
+   "example": {
+    "q": "Suggest some reforms to strengthen political parties so that they perform their functions well. (5 marks)",
+    "steps": [
+     "**Anti-defection law:** MLAs and MPs who change parties lose their seats – this has reduced defection.",
+     "**Affidavits:** candidates must declare property and criminal cases – making information public.",
+     "**Internal democracy:** the Election Commission requires organisational elections and tax returns; a law could require member registers and open elections.",
+     "**Women and money:** one-third of tickets for women; state funding of elections to reduce the role of money.",
+     "**Citizens:** public pressure through petitions, media and agitations, and more people joining parties."
+    ],
+    "answer": "Laws already made + suggestions + role of citizens."
+   },
+   "mistakes": [
+    "Confusing a challenge with a reform.",
+    "Forgetting the downside of the anti-defection law (dissent harder).",
+    "Writing only legal solutions without people’s pressure."
+   ],
+   "tip": "Structure reform answers as: Made → Suggested → Citizens. Three blocks, five points.",
+   "memory": "Challenges: I-D-M-C (Internal democracy, Dynasty, Money & muscle, Choice).",
+   "examAsk": [
+    "Challenges faced by political parties.",
+    "Reforms to strengthen parties.",
+    "What is defection? Effect of the anti-defection law."
+   ],
+   "cards": [
+    {
+     "q": "What is defection?",
+     "a": "Changing party allegiance from the party one was elected on to another party."
+    },
+    {
+     "q": "What must candidates declare in an affidavit?",
+     "a": "Property and criminal cases pending."
+    },
+    {
+     "q": "Name one suggested reform not yet accepted.",
+     "a": "State funding of elections / one-third tickets to women / law on internal affairs."
+    }
+   ],
+   "play": [
+    {
+     "type": "sort",
+     "title": "Challenge, reform made or suggestion?",
+     "say": "Sort each card: is it a challenge, a reform already made, or a reform only suggested?",
+     "buckets": [
+      "Challenge",
+      "Reform made",
+      "Suggested reform"
+     ],
+     "items": [
+      [
+       "Power concentrated in one or a few leaders at the top",
+       0,
+       "Lack of internal democracy."
+      ],
+      [
+       "Top positions always held by one family",
+       0,
+       "Dynastic succession."
+      ],
+      [
+       "Candidates chosen because they can raise lots of money",
+       0,
+       "Money and muscle power."
+      ],
+      [
+       "Parties offer little real difference in policies",
+       0,
+       "No meaningful choice."
+      ],
+      [
+       "An MLA who changes parties loses the seat",
+       1,
+       "Anti-defection law."
+      ],
+      [
+       "Candidates file affidavits on property and criminal cases",
+       1,
+       "Supreme Court order."
+      ],
+      [
+       "Parties must hold organisational elections and file tax returns",
+       1,
+       "Election Commission order."
+      ],
+      [
+       "One-third of party tickets for women",
+       2,
+       "Not yet accepted."
+      ],
+      [
+       "State funding of elections",
+       2,
+       "Not yet accepted."
+      ],
+      [
+       "A law to regulate the internal affairs of parties",
+       2,
+       "Not yet accepted."
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "formulas": [
+  {
+   "name": "Political party",
+   "f": "group that contests elections and holds power",
+   "unit": "Leaders · active members · followers",
+   "when": "Definitions"
+  },
+  {
+   "name": "Functions",
+   "f": "contest, policies, laws, govern, oppose, opinion, access",
+   "unit": "7 functions",
+   "when": "Why parties?"
+  },
+  {
+   "name": "Party systems",
+   "f": "one (China) · two (USA, UK) · multi (India)",
+   "unit": "Alliances 2004: NDA, UPA, Left Front",
+   "when": "How many parties?"
+  },
+  {
+   "name": "Registered parties",
+   "f": "more than 750",
+   "unit": "Six national parties (2023)",
+   "when": "Facts"
+  },
+  {
+   "name": "Recognition",
+   "f": "State: 6% votes + 2 seats; National: 6% in LS/4 States + 4 LS seats",
+   "unit": "Unique symbol",
+   "when": "Recognised parties"
+  },
+  {
+   "name": "National parties",
+   "f": "INC 1885 · CPI(M) 1964 · BJP 1980 · BSP 1984 · AAP 2012 · NPP 2013",
+   "unit": "",
+   "when": "Describe a party"
+  },
+  {
+   "name": "Challenges",
+   "f": "internal democracy · dynasty · money & muscle · no real choice",
+   "unit": "",
+   "when": "Challenges"
+  },
+  {
+   "name": "Reforms made",
+   "f": "anti-defection · affidavits · EC organisational elections",
+   "unit": "",
+   "when": "Reforms"
+  },
+  {
+   "name": "Suggestions",
+   "f": "law on internal affairs · 1/3 tickets to women · state funding",
+   "unit": "People’s pressure; joining parties",
+   "when": "Reforms"
+  }
+ ],
+ "revision": [
+  "A political party contests elections and holds power; components: leaders, active members, followers.",
+  "Seven functions: contest elections, policies, laws, form and run governments, opposition, public opinion, access to government.",
+  "Parties are necessary for representative democracy; without them no one is responsible for running the country.",
+  "One-party (China), two-party (USA, UK), multiparty (India); alliances: NDA, UPA, Left Front (2004).",
+  "A party system evolves with society; India’s diversity produced a multiparty system.",
+  "Trust in parties is low, but party membership in India is high and rising.",
+  "Recognition: State party 6% votes + 2 assembly seats; national party 6% in Lok Sabha or 4 States + 4 Lok Sabha seats.",
+  "Six national parties (2023): AAP, BJP, BSP, CPI(M), INC, NPP.",
+  "Four challenges: lack of internal democracy, dynastic succession, money and muscle power, no meaningful choice.",
+  "Reforms: anti-defection law, affidavits, EC orders; suggestions: internal affairs law, 1/3 tickets to women, state funding; people’s pressure."
+ ],
+ "exam": {
+  "paper": [
+   {
+    "q": "1 mark",
+    "marks": "MCQ / A-R",
+    "what": "Party systems, founders, founding years, recognition criteria, defection"
+   },
+   {
+    "q": "3 marks",
+    "marks": "Short answer",
+    "what": "Components of a party; describe a national party; necessity of parties"
+   },
+   {
+    "q": "5 marks",
+    "marks": "Long answer",
+    "what": "Functions of parties; challenges; reforms"
+   },
+   {
+    "q": "Case-based",
+    "marks": "4 marks",
+    "what": "Passage on a new party (e.g. Muhammad Yunus) or a cartoon on money power"
+   }
+  ],
+  "sections": [
+   {
+    "title": "Party answers · 4 steps",
+    "kind": "steps",
+    "items": [
+     "Define the term (party / defection / alliance).",
+     "List the functions, challenges or reforms as numbered points.",
+     "Add one Indian example per point (NDA, anti-defection, affidavit).",
+     "Close with a judgement (parties are necessary but need reform)."
+    ]
+   },
+   {
+    "title": "Answer writing that scores",
+    "kind": "mem",
+    "items": [
+     "Start with a one-line definition or introduction using textbook keywords (e.g. ‘Majoritarianism is …’).",
+     "Write in points – one idea per point, with the key term in the first few words. A 3-mark answer needs 3 clear points; a 5-mark answer needs 5.",
+     "Add a real example from the chapter to each point (Belgium, Sri Lanka, Panchayati Raj, a party, a survey figure).",
+     "Use the exact numbers the textbook gives only when you are sure (59%, 1956, 1992, one-third, 1976).",
+     "For ‘Explain / Analyse’ questions use PEE: Point → Explain → Example. For ‘Distinguish’ questions draw a small two-column table.",
+     "Case-based questions: underline the key line in the passage first; the answer is usually hidden in it."
+    ]
+   },
+   {
+    "title": "Before the exam",
+    "kind": "note",
+    "items": [
+     "Revise the key facts sheet and the revision list the night before.",
+     "Redo the Play & learn sorts – if you can sort every card first time, you know the chapter.",
+     "Practise one 5-mark answer in 8–10 minutes with a timer."
+    ]
+   }
+  ],
+  "checklist": [
+   "I can define a political party and name its three components.",
+   "I can write all seven functions.",
+   "I can explain the three party systems with examples.",
+   "I can describe three national parties with facts.",
+   "I can list four challenges, three reforms made and three suggestions."
+  ],
+  "paperTitle": "How this chapter is examined",
+  "paperCols": [
+   "Marks",
+   "Question type",
+   "Likely asks"
+  ],
+  "paperNote": "Based on the CBSE Class X Social Science pattern (MCQ, assertion–reason, 3-mark short, 4-mark case/source-based and 5-mark long answers). Practise these types first."
+ },
+ "method": "Built on proven learning methods: understand the story first, sort and match ideas with your hands (active learning), write model answers point by point, test yourself (active recall) and revisit after 1, 3 and 7 days (spaced revision).",
+ "sheetTitle": "Key facts sheet",
+ "sheetCols": [
+  "Topic",
+  "Key fact",
+  "Example",
+  "Use it for"
+ ]
+}

@@ -1,0 +1,644 @@
+{
+ "id": "class10-social-ch3-tutor",
+ "chapter": "Chapter 3 · Gender, Religion and Caste",
+ "source": "NCERT Democratic Politics II (Class X Political Science), Chapter 3",
+ "overview": {
+  "bigIdea": "Social differences need not threaten democracy. **Gender** shows a division that *should* be raised in politics; **religion** shows how politics can turn dangerous (communalism); **caste** shows both good and bad sides.",
+  "ladderTitle": "Three social divisions",
+  "ladder": [
+   {
+    "step": "Gender",
+    "q": "Mostly positive in politics",
+    "a": "Women’s movements won rights and reservation"
+   },
+   {
+    "step": "Religion",
+    "q": "Mostly negative when communal",
+    "a": "Secular state is the answer"
+   },
+   {
+    "step": "Caste",
+    "q": "Both positive and negative",
+    "a": "Caste in politics & politics in caste"
+   }
+  ],
+  "languagesTitle": "How to answer",
+  "languages": [
+   {
+    "name": "Facts",
+    "text": "54% vs 76% literacy, 14.36% women MPs, 919 child sex ratio."
+   },
+   {
+    "name": "Forms",
+    "text": "Four forms of communalism; forms of caste in politics."
+   },
+   {
+    "name": "Balance",
+    "text": "Always give both the positive and the negative side of caste politics."
+   }
+  ],
+  "plan": [
+   {
+    "pass": "Gender",
+    "time": "15 min",
+    "text": "Lesson 1 – learn the discrimination facts and the time-use data."
+   },
+   {
+    "pass": "Religion",
+    "time": "15 min",
+    "text": "Lesson 2 – forms of communalism; secular provisions (sort game)."
+   },
+   {
+    "pass": "Caste",
+    "time": "15 min",
+    "text": "Lesson 3 – caste in politics vs politics in caste (sort game)."
+   },
+   {
+    "pass": "Test and revise",
+    "time": "10 min",
+    "text": "Check knowledge quiz; revise after 1, 3 and 7 days."
+   }
+  ]
+ },
+ "lessons": [
+  {
+   "topic": "gender",
+   "ref": "3.1",
+   "title": "Gender and politics",
+   "time": "10 min",
+   "hook": "‘My mother says she doesn’t work – she is a housewife. But she works non-stop!’ This is the **sexual division of labour**: women’s work at home is unpaid, unseen and not counted – and it keeps women out of public life.",
+   "core": [
+    {
+     "term": "Gender division",
+     "def": "A hierarchical social division based not on biology but on social expectations and stereotypes."
+    },
+    {
+     "term": "Sexual division of labour",
+     "def": "All work inside the home is done or organised by women; men work outside. When paid, men do these jobs too (tailors, cooks)."
+    },
+    {
+     "term": "Feminist movements",
+     "def": "Women’s movements for equality in voting rights, education, careers and even personal and family life."
+    },
+    {
+     "term": "Patriarchy",
+     "def": "Literally rule by father – a system that values men more and gives them power over women."
+    },
+    {
+     "term": "Discrimination in India",
+     "def": "Literacy 54% (women) vs 76% (men) · lower pay despite the Equal Remuneration Act, 1976 · child sex ratio 919 · violence and harassment."
+    }
+   ],
+   "explain": [
+    "**Representation:** women in the Lok Sabha touched 14.36% for the first time in 2019; less than 5% in State assemblies. One-third of seats in panchayats and municipalities are reserved – more than 10 lakh women representatives. The **Nari Shakti Vandan Adhiniyam, 2023** will give 33% reservation in the Lok Sabha, State Assemblies and Delhi Assembly.",
+    "**Why it matters:** unless women control power, their problems will not get adequate attention. Gender division is an example that some social divisions *need* to be expressed in politics."
+   ],
+   "example": {
+    "q": "Mention different aspects of life in which women are discriminated against or disadvantaged in India. (5 marks)",
+    "steps": [
+     "**Education:** female literacy is 54% compared with 76% for men; fewer girls go for higher studies.",
+     "**Work and pay:** women’s household work is unpaid; they are paid less than men for the same work despite the Equal Remuneration Act, 1976.",
+     "**Jobs:** a very small proportion of women hold highly paid and valued jobs.",
+     "**Sex ratio:** sex-selective abortion has lowered the child sex ratio to 919 girls per 1000 boys.",
+     "**Safety:** harassment, exploitation, domestic violence; urban areas are particularly unsafe."
+    ],
+    "answer": "Education, pay, jobs, sex ratio, safety – five points with data."
+   },
+   "mistakes": [
+    "Saying gender division is biological.",
+    "Writing that one-third reservation already applies to the Lok Sabha as current practice (it is in local bodies; the 2023 Act provides for the legislatures).",
+    "Mixing up 54% and 76%."
+   ],
+   "tip": "In any women’s-representation answer, write BOTH the problem (14.36%, <5%) and the solution (1/3 in local bodies, 2023 Act).",
+   "memory": "Literacy 54–76 · Lok Sabha 14.36 · Sex ratio 919 · Law 1976 · Act 2023.",
+   "examAsk": [
+    "How are women discriminated against in India?",
+    "Status of women’s representation in legislative bodies.",
+    "What is the sexual division of labour?"
+   ],
+   "cards": [
+    {
+     "q": "Female literacy rate?",
+     "a": "54 per cent (men 76 per cent)."
+    },
+    {
+     "q": "Child sex ratio?",
+     "a": "919 girls per 1000 boys."
+    },
+    {
+     "q": "Women in Lok Sabha in 2019?",
+     "a": "14.36 per cent."
+    }
+   ],
+   "play": [
+    {
+     "type": "dataBars",
+     "title": "Time use detective",
+     "say": "The textbook’s time use survey: how do men and women spend a day? Tap bars and answer.",
+     "chart": "Daily time use (hours), Time Use Survey 1998–99",
+     "labels": [
+      "Income work",
+      "Household work",
+      "Talking",
+      "Leisure"
+     ],
+     "unit": " h",
+     "step": 1,
+     "series": [
+      {
+       "name": "Men",
+       "values": [
+        6.0,
+        0.5,
+        1.42,
+        3.67
+       ]
+      },
+      {
+       "name": "Women",
+       "values": [
+        2.67,
+        5.0,
+        1.33,
+        3.83
+       ]
+      }
+     ],
+     "source": "Government of India, Time Use Survey 1998–99 (NCERT Chapter 3)",
+     "qs": [
+      {
+       "q": "On which activity do women spend the most time?",
+       "a": "Household work",
+       "opts": [
+        "Household work",
+        "Income work",
+        "Talking",
+        "Leisure"
+       ],
+       "e": "5 hours a day of mostly unpaid, invisible work."
+      },
+      {
+       "q": "How much more household work do women do than men each day?",
+       "a": "4½ hours",
+       "opts": [
+        "4½ hours",
+        "30 minutes",
+        "2 hours",
+        "No difference"
+       ],
+       "e": "5:00 vs 0:30."
+      },
+      {
+       "q": "Why is men’s work more ‘visible’?",
+       "a": "Most of it earns income",
+       "opts": [
+        "Most of it earns income",
+        "They work more hours",
+        "They do no household work at all",
+        "It is done at night"
+       ],
+       "e": "Women work about an hour more each day, but much of it is unpaid."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "topic": "religion",
+   "ref": "3.2",
+   "title": "Religion, communalism and politics",
+   "time": "10 min",
+   "hook": "Religion in politics is not always wrong – Gandhiji said politics must be guided by the moral values of religion. The problem starts when **one religion is set against another** and state power is used for one group’s domination. That is **communalism**.",
+   "core": [
+    {
+     "term": "Acceptable role of religion",
+     "def": "People may express needs as members of a religious community; ideas from religions can guide politics; the state may regulate religion to stop discrimination – as long as every religion is treated equally."
+    },
+    {
+     "term": "Communal politics",
+     "def": "Based on the idea that religion is the principal basis of social community: followers of one religion form one community with the same interests, different from others."
+    },
+    {
+     "term": "Four forms of communalism",
+     "def": "1 Everyday beliefs: prejudices, stereotypes. 2 Quest for political dominance (majoritarian dominance or separate political unit). 3 Political mobilisation on religious lines. 4 Communal violence, riots, massacre."
+    },
+    {
+     "term": "Secular state",
+     "def": "No official religion · freedom to profess, practise and propagate any religion or none · no discrimination on grounds of religion · state can intervene to ensure equality (bans untouchability)."
+    }
+   ],
+   "explain": [
+    "Communalism is flawed because people of one religion do not have the same interests everywhere; everyone has many identities and there are many voices in every community.",
+    "A secular Constitution is **necessary but not sufficient**: communal prejudices must be countered in everyday life and religion-based mobilisation in politics."
+   ],
+   "example": {
+    "q": "State different forms of communal politics with one example each. (5 marks)",
+    "steps": [
+     "**Everyday beliefs:** religious prejudices, stereotypes and belief in the superiority of one’s religion – e.g. jokes stereotyping a community.",
+     "**Political dominance:** majoritarian dominance for the majority, or a desire for a separate political unit for a minority.",
+     "**Mobilisation on religious lines:** use of sacred symbols, religious leaders, emotional appeals and fear to win votes.",
+     "**Communal violence:** riots and massacres – e.g. at the time of Partition.",
+     "Conclusion: communalism threatens the very idea of India, so it must be combated."
+    ],
+    "answer": "Four forms, each with an example, plus a conclusion."
+   },
+   "mistakes": [
+    "Calling any mention of religion in politics ‘communal’.",
+    "Saying India’s Constitution keeps the state completely away from religion – it can intervene for equality.",
+    "Forgetting that communalism affects the majority too."
+   ],
+   "tip": "Learn the four forms in order of seriousness: Beliefs → Dominance → Mobilisation → Violence.",
+   "memory": "B-D-M-V: Beliefs, Dominance, Mobilisation, Violence.",
+   "examAsk": [
+    "Forms of communal politics.",
+    "Constitutional provisions that make India secular.",
+    "Why is communalism a threat to democracy?"
+   ],
+   "cards": [
+    {
+     "q": "Does India have an official religion?",
+     "a": "No."
+    },
+    {
+     "q": "Most common form of communalism?",
+     "a": "Everyday beliefs – prejudices and stereotypes."
+    },
+    {
+     "q": "Why can the state intervene in religion?",
+     "a": "To ensure equality, e.g. banning untouchability."
+    }
+   ],
+   "play": [
+    {
+     "type": "sort",
+     "title": "Communal or secular?",
+     "say": "Is each idea communal thinking or part of India’s secular Constitution?",
+     "buckets": [
+      "Communal",
+      "Secular"
+     ],
+     "items": [
+      [
+       "One religion is superior to all others",
+       0,
+       "A communal belief."
+      ],
+      [
+       "There is no official religion for the Indian state",
+       1,
+       "Secular provision."
+      ],
+      [
+       "Followers of a religion have the same interests in every context",
+       0,
+       "Communal – people have many identities."
+      ],
+      [
+       "Every person may profess, practise and propagate any religion, or none",
+       1,
+       "Freedom of religion."
+      ],
+      [
+       "Using sacred symbols and fear to win votes for one religion",
+       0,
+       "Mobilisation on religious lines."
+      ],
+      [
+       "Discrimination on grounds of religion is prohibited",
+       1,
+       "Secular provision."
+      ],
+      [
+       "People of different religions cannot live as equal citizens in one nation",
+       0,
+       "The extreme communal belief."
+      ],
+      [
+       "The state bans untouchability to ensure equality",
+       1,
+       "Intervention for equality."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "topic": "caste",
+   "ref": "3.3",
+   "title": "Caste and politics",
+   "time": "10 min",
+   "hook": "Caste is special to India: hereditary occupations sanctioned by rituals. It has changed hugely – yet it has not disappeared. In politics it works **both ways**: caste affects politics, and politics changes caste.",
+   "core": [
+    {
+     "term": "Caste system",
+     "def": "Hereditary occupational division sanctioned by rituals; members married within the group and excluded ‘outcaste’ groups (untouchability)."
+    },
+    {
+     "term": "Why it is changing",
+     "def": "Efforts of reformers (Jotiba Phule, Gandhiji, B.R. Ambedkar, Periyar), economic development, urbanisation, literacy, occupational mobility, weaker landlords; the Constitution prohibits caste discrimination."
+    },
+    {
+     "term": "Caste in politics",
+     "def": "Parties choose candidates by caste composition · governments include different castes · appeals to caste sentiment · universal adult franchise made leaders mobilise all castes."
+    },
+    {
+     "term": "Politics in caste",
+     "def": "Caste groups grow by incorporating sub-castes · form coalitions and negotiate · new groups like ‘backward’ and ‘forward’ castes."
+    },
+    {
+     "term": "Data",
+     "def": "SC 16.6% and ST 8.6% (Census 2011); OBC about 41% (NSS 2004–05). Poverty is highest among ST and SC and lowest among upper castes."
+    }
+   ],
+   "explain": [
+    "**Elections are not only about caste:** no constituency has a clear majority of one caste; no party gets all votes of a caste; several parties may field candidates of the same caste; ruling parties often lose; voters’ attachment to parties and assessment of performance matter.",
+    "**Both sides:** caste politics helped Dalits and OBCs gain access to decision making; but exclusive attention to caste can divert attention from poverty, development and corruption and cause tension."
+   ],
+   "example": {
+    "q": "State two reasons to say that caste alone cannot determine election results in India. (3 marks)",
+    "steps": [
+     "No parliamentary constituency has a clear majority of one single caste, so every candidate needs the support of more than one caste.",
+     "No party wins the votes of all voters of a caste; rich and poor, men and women of the same caste often vote differently.",
+     "The ruling party and sitting MPs/MLAs frequently lose – impossible if castes were frozen in their preferences; performance of governments matters."
+    ],
+    "answer": "Mixed constituencies · divided caste votes · performance matters."
+   },
+   "mistakes": [
+    "Mixing up caste in politics and politics in caste.",
+    "Writing only negatives – examiners want both sides.",
+    "Saying caste has disappeared."
+   ],
+   "tip": "‘Caste in politics’ = what caste DOES to politics. ‘Politics in caste’ = what politics DOES to caste.",
+   "memory": "Caste in politics → candidates, cabinets, campaigns. Politics in caste → grow, ally, new groups.",
+   "examAsk": [
+    "How are caste inequalities still continuing?",
+    "Forms of caste in politics.",
+    "Why caste alone cannot decide elections."
+   ],
+   "cards": [
+    {
+     "q": "SC share of population (2011)?",
+     "a": "16.6 per cent"
+    },
+    {
+     "q": "Name two anti-caste reformers.",
+     "a": "Jotiba Phule, B.R. Ambedkar (also Gandhiji, Periyar)."
+    },
+    {
+     "q": "Is ‘caste groups forming coalitions’ caste in politics or politics in caste?",
+     "a": "Politics in caste."
+    }
+   ],
+   "play": [
+    {
+     "type": "sort",
+     "title": "Caste in politics or politics in caste?",
+     "say": "Does caste shape politics here, or does politics reshape caste?",
+     "buckets": [
+      "Caste in politics",
+      "Politics in caste"
+     ],
+     "items": [
+      [
+       "Parties choose candidates keeping the caste composition of voters in mind",
+       0,
+       "Caste shapes candidate choice."
+      ],
+      [
+       "Governments include representatives of different castes",
+       0,
+       "Caste shapes cabinets."
+      ],
+      [
+       "Candidates appeal to caste sentiment in campaigns",
+       0,
+       "Caste shapes campaigns."
+      ],
+      [
+       "A caste group incorporates neighbouring sub-castes to become bigger",
+       1,
+       "Politics reshapes caste."
+      ],
+      [
+       "Caste groups enter coalitions and negotiate with others",
+       1,
+       "Politics reshapes caste."
+      ],
+      [
+       "New groups like ‘backward’ and ‘forward’ castes appear",
+       1,
+       "Politics creates new caste groups."
+      ],
+      [
+       "Some parties are seen as representatives of particular castes",
+       0,
+       "Caste shapes party support."
+      ],
+      [
+       "Lower castes gain new consciousness and demand their share",
+       1,
+       "Political mobilisation changes caste identity."
+      ]
+     ]
+    },
+    {
+     "type": "dataBars",
+     "title": "Caste and poverty data",
+     "say": "The NSS table from the textbook: rural people below the poverty line (%).",
+     "chart": "Rural population below the poverty line, 1999–2000 (%)",
+     "labels": [
+      "Scheduled Tribes",
+      "Scheduled Castes",
+      "OBC",
+      "Hindu upper castes"
+     ],
+     "unit": "%",
+     "step": 10,
+     "series": [
+      {
+       "name": "Rural",
+       "values": [
+        45.8,
+        35.9,
+        27.0,
+        11.7
+       ]
+      }
+     ],
+     "source": "NSSO 55th Round, 1999–2000 (NCERT Chapter 3)",
+     "qs": [
+      {
+       "q": "Which group had the highest share below the poverty line?",
+       "a": "Scheduled Tribes",
+       "opts": [
+        "Scheduled Tribes",
+        "Scheduled Castes",
+        "OBC",
+        "Hindu upper castes"
+       ],
+       "e": "45.8% of rural STs were poor."
+      },
+      {
+       "q": "What does this data show about caste today?",
+       "a": "Caste is still linked to economic status",
+       "opts": [
+        "Caste is still linked to economic status",
+        "Caste has no effect on income",
+        "Upper castes are the poorest",
+        "Poverty is equal in all groups"
+       ],
+       "e": "The old hierarchy still shows in poverty levels."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "formulas": [
+  {
+   "name": "Sexual division of labour",
+   "f": "home work by women, outside work by men",
+   "unit": "Women’s work unpaid",
+   "when": "Gender questions"
+  },
+  {
+   "name": "Discrimination data",
+   "f": "literacy 54% vs 76%; child sex ratio 919",
+   "unit": "Equal Remuneration Act 1976",
+   "when": "Women disadvantaged"
+  },
+  {
+   "name": "Representation",
+   "f": "Lok Sabha 14.36% (2019); assemblies <5%",
+   "unit": "1/3 in local bodies; 2023 Act 33%",
+   "when": "Women in politics"
+  },
+  {
+   "name": "Communalism",
+   "f": "religion as principal basis of community",
+   "unit": "4 forms: beliefs, dominance, mobilisation, violence",
+   "when": "Communal politics"
+  },
+  {
+   "name": "Secular state",
+   "f": "no official religion; freedom; no discrimination; intervention for equality",
+   "unit": "Bans untouchability",
+   "when": "Constitutional provisions"
+  },
+  {
+   "name": "Religions (2011)",
+   "f": "Hindu 79.8 · Muslim 14.2 · Christian 2.3 · Sikh 1.7",
+   "unit": "Buddhist 0.7 · Jain 0.4",
+   "when": "Data questions"
+  },
+  {
+   "name": "Caste data",
+   "f": "SC 16.6% · ST 8.6% (2011); OBC ~41%",
+   "unit": "ST poverty 45.8% rural",
+   "when": "Caste inequality"
+  },
+  {
+   "name": "Caste in politics",
+   "f": "candidates, cabinets, campaigns, franchise",
+   "unit": "",
+   "when": "Forms"
+  },
+  {
+   "name": "Politics in caste",
+   "f": "groups grow, form coalitions, new groups",
+   "unit": "Backward/forward",
+   "when": "Forms"
+  }
+ ],
+ "revision": [
+  "Gender division is social, not biological; sexual division of labour keeps women’s work unpaid and invisible.",
+  "Feminist movements demanded equal political, legal, educational, career and family rights.",
+  "Women’s literacy 54% vs men 76%; child sex ratio 919; Equal Remuneration Act 1976; women work 1 hour more daily.",
+  "Women in Lok Sabha 14.36% (2019), assemblies <5%; 1/3 seats in local bodies (10 lakh+ women); 2023 Act: 33% in Lok Sabha, Assemblies, Delhi.",
+  "Gandhiji: religion (moral values) cannot be separated from politics.",
+  "Communalism: religion as the principal basis of community; four forms – beliefs, dominance, mobilisation, violence.",
+  "Secular state: no official religion; freedom of religion; no discrimination; state intervenes for equality.",
+  "Caste: hereditary occupations sanctioned by rituals; weakened by reformers, urbanisation, literacy, mobility.",
+  "SC 16.6%, ST 8.6%, OBC ~41%; caste still linked to economic status.",
+  "Caste in politics (candidates, cabinets, appeals) vs politics in caste (grow, ally, new groups); both positive and negative effects."
+ ],
+ "exam": {
+  "paper": [
+   {
+    "q": "1 mark",
+    "marks": "MCQ / A-R",
+    "what": "Definitions (feminist, patriarchy), secular provisions, data (54%, 919, 14.36%)"
+   },
+   {
+    "q": "3 marks",
+    "marks": "Short answer",
+    "what": "Why caste alone cannot decide elections; secular provisions; women’s representation"
+   },
+   {
+    "q": "5 marks",
+    "marks": "Long answer",
+    "what": "Forms of communalism; discrimination against women; caste in politics and politics in caste"
+   },
+   {
+    "q": "Case-based",
+    "marks": "4 marks",
+    "what": "Time use survey, poverty table or religion pie chart"
+   }
+  ],
+  "sections": [
+   {
+    "title": "Social-division answers · 4 steps",
+    "kind": "steps",
+    "items": [
+     "Define the division (gender / communalism / casteism).",
+     "Give the forms or facts in points.",
+     "Add data from the chapter.",
+     "End with a balanced judgement (positive and negative in politics)."
+    ]
+   },
+   {
+    "title": "Answer writing that scores",
+    "kind": "mem",
+    "items": [
+     "Start with a one-line definition or introduction using textbook keywords (e.g. ‘Majoritarianism is …’).",
+     "Write in points – one idea per point, with the key term in the first few words. A 3-mark answer needs 3 clear points; a 5-mark answer needs 5.",
+     "Add a real example from the chapter to each point (Belgium, Sri Lanka, Panchayati Raj, a party, a survey figure).",
+     "Use the exact numbers the textbook gives only when you are sure (59%, 1956, 1992, one-third, 1976).",
+     "For ‘Explain / Analyse’ questions use PEE: Point → Explain → Example. For ‘Distinguish’ questions draw a small two-column table.",
+     "Case-based questions: underline the key line in the passage first; the answer is usually hidden in it."
+    ]
+   },
+   {
+    "title": "Before the exam",
+    "kind": "note",
+    "items": [
+     "Revise the key facts sheet and the revision list the night before.",
+     "Redo the Play & learn sorts – if you can sort every card first time, you know the chapter.",
+     "Practise one 5-mark answer in 8–10 minutes with a timer."
+    ]
+   }
+  ],
+  "checklist": [
+   "I can explain the sexual division of labour and feminist movements.",
+   "I can give five ways women are disadvantaged, with data.",
+   "I can state women’s representation and the reservation provisions.",
+   "I can list four forms of communalism and four secular provisions.",
+   "I can explain caste in politics and politics in caste with both effects."
+  ],
+  "paperTitle": "How this chapter is examined",
+  "paperCols": [
+   "Marks",
+   "Question type",
+   "Likely asks"
+  ],
+  "paperNote": "Based on the CBSE Class X Social Science pattern (MCQ, assertion–reason, 3-mark short, 4-mark case/source-based and 5-mark long answers). Practise these types first."
+ },
+ "method": "Built on proven learning methods: understand the story first, sort and match ideas with your hands (active learning), write model answers point by point, test yourself (active recall) and revisit after 1, 3 and 7 days (spaced revision).",
+ "sheetTitle": "Key facts sheet",
+ "sheetCols": [
+  "Topic",
+  "Key fact",
+  "Example",
+  "Use it for"
+ ]
+}

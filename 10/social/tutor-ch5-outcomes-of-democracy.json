@@ -1,0 +1,652 @@
+{
+ "id": "class10-social-ch5-tutor",
+ "chapter": "Chapter 5 · Outcomes of Democracy",
+ "source": "NCERT Democratic Politics II (Class X Political Science), Chapter 5",
+ "overview": {
+  "bigIdea": "Democracy is **just a form of government** – it creates conditions; citizens must use them. Judge it fairly: it is clearly better at **legitimacy, dignity and handling diversity**; its record on **growth, inequality and corruption** is mixed.",
+  "ladderTitle": "What can we expect from democracy?",
+  "ladder": [
+   {
+    "step": "Government",
+    "q": "Accountable, responsive, legitimate?",
+    "a": "Legitimate – yes; responsive and clean – mixed"
+   },
+   {
+    "step": "Economy",
+    "q": "Growth and equality?",
+    "a": "No guarantee; inequality persists"
+   },
+   {
+    "step": "Society",
+    "q": "Diversity, dignity, freedom?",
+    "a": "Much better than alternatives"
+   }
+  ],
+  "languagesTitle": "Judge with evidence",
+  "languages": [
+   {
+    "name": "Tables",
+    "text": "Growth rates 1950–2000; income shares of top and bottom 20%."
+   },
+   {
+    "name": "Surveys",
+    "text": "South Asia: support for democracy; ‘my vote matters’."
+   },
+   {
+    "name": "Balance",
+    "text": "Always give what democracy does well AND where it falls short."
+   }
+  ],
+  "plan": [
+   {
+    "pass": "Government",
+    "time": "15 min",
+    "text": "Lesson 1 – accountable, responsive, legitimate; transparency; RTI example."
+   },
+   {
+    "pass": "Economy",
+    "time": "15 min",
+    "text": "Lesson 2 – read Tables 1 and 2 with the data detective."
+   },
+   {
+    "pass": "Society",
+    "time": "10 min",
+    "text": "Lesson 3 – two conditions for accommodating diversity; dignity; ‘examination never gets over’."
+   },
+   {
+    "pass": "Test and revise",
+    "time": "10 min",
+    "text": "Check knowledge quiz; revise after 1, 3 and 7 days."
+   }
+  ]
+ },
+ "lessons": [
+  {
+   "topic": "govt",
+   "ref": "5.1",
+   "title": "Accountable, responsive and legitimate government",
+   "time": "10 min",
+   "hook": "Nannu, a daily-wage earner, waited three months for a duplicate ration card. Then he filed an application under the **Right to Information Act** – and within a week the officials came to him. That is what an **accountable** government looks like.",
+   "core": [
+    {
+     "term": "Expectations of democracy",
+     "def": "Promotes equality · enhances dignity · improves decision making · resolves conflicts · allows room to correct mistakes."
+    },
+    {
+     "term": "Accountable and responsive",
+     "def": "People choose and control their rulers; government answers to citizens and responds to their needs."
+    },
+    {
+     "term": "Transparency",
+     "def": "A citizen has the right and means to examine the process of decision making – often missing in non-democracies."
+    },
+    {
+     "term": "Legitimate government",
+     "def": "Democracy may be slow, less efficient, not always responsive or clean – but it is people’s own government."
+    },
+    {
+     "term": "Mixed record",
+     "def": "Good at regular free elections and open public debate; weak at sharing information, responsiveness and freedom from corruption."
+    }
+   ],
+   "explain": [
+    "Democracy is slower because it is based on **deliberation and negotiation** – but decisions that follow procedures are more acceptable and effective. ‘The cost of time that democracy pays is perhaps worth it.’",
+    "Surveys in South Asia show overwhelming support for democracy – even in countries without democratic regimes. Democracy’s ability to generate its own support is itself an outcome."
+   ],
+   "example": {
+    "q": "How does democracy produce an accountable, responsive and legitimate government? (5 marks)",
+    "steps": [
+     "**Elections:** regular, free and fair elections let people choose and change their rulers.",
+     "**Public debate:** open debate on major policies and laws lets citizens take part in decisions.",
+     "**Right to information / transparency:** citizens can examine how decisions are made – e.g. Nannu’s RTI application.",
+     "**Procedures:** decisions follow norms and procedures, so they are more acceptable even if slower.",
+     "**Legitimacy:** it is people’s own government, which is why support for democracy is overwhelming."
+    ],
+    "answer": "Elections · debate · transparency · procedures · legitimacy."
+   },
+   "mistakes": [
+    "Claiming democracies are free of corruption.",
+    "Saying slowness makes democracy worse without explaining the benefit.",
+    "Forgetting ‘legitimacy’ – the one area where democracy is certainly better."
+   ],
+   "tip": "In outcome answers, always add one sentence on the weakness too – examiners reward balanced answers.",
+   "memory": "A-R-L: Accountable, Responsive, Legitimate.",
+   "examAsk": [
+    "How does democracy produce accountable, responsive and legitimate government?",
+    "What is transparency?",
+    "What does Nannu’s example show?"
+   ],
+   "cards": [
+    {
+     "q": "What is transparency?",
+     "a": "Citizens’ right and means to examine the decision-making process."
+    },
+    {
+     "q": "In what is democracy certainly better?",
+     "a": "It is a legitimate government."
+    },
+    {
+     "q": "Which Act did Nannu use?",
+     "a": "Right to Information Act."
+    }
+   ],
+   "play": [
+    {
+     "type": "dataBars",
+     "title": "Does my vote make a difference?",
+     "say": "Survey from the chapter: share of people who say their vote makes a difference.",
+     "chart": "Those who say their vote makes a difference (%)",
+     "labels": [
+      "Bangladesh",
+      "India",
+      "Nepal",
+      "Pakistan",
+      "Sri Lanka"
+     ],
+     "unit": "%",
+     "step": 20,
+     "series": [
+      {
+       "name": "Vote matters",
+       "values": [
+        66,
+        67,
+        75,
+        50,
+        65
+       ]
+      }
+     ],
+     "source": "SDSA Team, State of Democracy in South Asia, 2007 (NCERT Chapter 5)",
+     "qs": [
+      {
+       "q": "Which country had the highest share?",
+       "a": "Nepal",
+       "opts": [
+        "Nepal",
+        "India",
+        "Pakistan",
+        "Sri Lanka"
+       ],
+       "e": "75% in Nepal."
+      },
+      {
+       "q": "What does this tell us about democracy?",
+       "a": "People believe their vote matters",
+       "opts": [
+        "People believe their vote matters",
+        "People have lost faith in voting",
+        "Only rich people vote",
+        "Elections are not held"
+       ],
+       "e": "Most individuals believe their vote makes a difference – they are citizens, not subjects."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "topic": "economy",
+   "ref": "5.2",
+   "title": "Economic growth, inequality and poverty",
+   "time": "10 min",
+   "hook": "If democracy produces good government, shouldn’t it also make countries richer and fairer? The evidence surprises many students: **dictatorships grew slightly faster**, and many democracies remain very unequal.",
+   "core": [
+    {
+     "term": "Growth 1950–2000",
+     "def": "All democracies 3.95% · all dictatorships 4.42% · poor countries under dictatorship 4.34% · poor countries under democracy 4.28%."
+    },
+    {
+     "term": "Conclusion on growth",
+     "def": "Democracy is not a guarantee of economic development – but we can expect it not to lag behind dictatorships; the difference in poor countries is negligible."
+    },
+    {
+     "term": "Why growth varies",
+     "def": "Depends on population size, global situation, cooperation from other countries, economic priorities, etc."
+    },
+    {
+     "term": "Inequality",
+     "def": "South Africa and Brazil: top 20% take more than 60% of income, bottom 20% less than 3%. Denmark and Hungary are much more equal."
+    },
+    {
+     "term": "Poverty",
+     "def": "The poor are a large share of voters, yet governments are not as keen on poverty as expected; in Bangladesh more than half live in poverty."
+    }
+   ],
+   "explain": [
+    "Democracies are based on **political equality** (one person, one vote), but economic inequality has grown: a small number of ultra-rich take a highly disproportionate share of wealth and income.",
+    "When the growth difference is so small, it is better to prefer democracy because it has several other positive outcomes."
+   ],
+   "example": {
+    "q": "‘Democracy cannot reduce inequality of incomes.’ Give arguments for and against. (5 marks)",
+    "steps": [
+     "**For:** in democracies like South Africa and Brazil the top 20% take over 60% of national income while the bottom 20% get under 3%.",
+     "**For:** the share of the ultra-rich has been increasing while incomes at the bottom decline; the poor struggle to meet basic needs.",
+     "**For:** elected governments are not as keen to address poverty as expected (e.g. Bangladesh).",
+     "**Against:** some democracies like Denmark and Hungary have much more equal distribution.",
+     "**Against:** political equality gives the poor a vote and voice to demand welfare; democracy is still preferred for its other outcomes."
+    ],
+    "answer": "Arguments on both sides with Table 2 evidence."
+   },
+   "mistakes": [
+    "Claiming democracies always grow faster.",
+    "Mixing up the table numbers (4.42 is dictatorships).",
+    "Forgetting that the difference among poor countries is negligible."
+   ],
+   "tip": "Quote ONE number per claim – ‘3.95% vs 4.42%’ or ‘top 20% take 64.8% in South Africa’ – it makes the answer authoritative.",
+   "memory": "Growth: dictatorship slightly ahead (4.42 vs 3.95). Poor countries: almost equal (4.34 vs 4.28).",
+   "examAsk": [
+    "Is democracy a guarantee of economic development?",
+    "Economic outcomes of democracy.",
+    "Arguments on democracy and inequality."
+   ],
+   "cards": [
+    {
+     "q": "Growth rate of all democracies 1950–2000?",
+     "a": "3.95%"
+    },
+    {
+     "q": "Which countries are most equal in Table 2?",
+     "a": "Denmark and Hungary."
+    },
+    {
+     "q": "Is democracy a guarantee of development?",
+     "a": "No, but it should not lag behind dictatorships."
+    }
+   ],
+   "play": [
+    {
+     "type": "dataBars",
+     "title": "Rich and poor: Table 2",
+     "say": "Share of national income of the top 20% and bottom 20%. Tap bars and answer.",
+     "chart": "Share of national income (%)",
+     "labels": [
+      "South Africa",
+      "Brazil",
+      "Russia",
+      "USA",
+      "UK",
+      "Denmark",
+      "Hungary"
+     ],
+     "unit": "%",
+     "step": 10,
+     "series": [
+      {
+       "name": "Top 20%",
+       "values": [
+        64.8,
+        63.0,
+        53.7,
+        50.0,
+        45.0,
+        34.5,
+        34.4
+       ]
+      },
+      {
+       "name": "Bottom 20%",
+       "values": [
+        2.9,
+        2.6,
+        4.4,
+        4.0,
+        6.0,
+        9.6,
+        10.0
+       ]
+      }
+     ],
+     "source": "NCERT Chapter 5, Table 2",
+     "qs": [
+      {
+       "q": "In which country does the top 20% take the largest share?",
+       "a": "South Africa",
+       "opts": [
+        "South Africa",
+        "Brazil",
+        "USA",
+        "Denmark"
+       ],
+       "e": "64.8% – leaving 2.9% for the bottom 20%."
+      },
+      {
+       "q": "Which country gives the bottom 20% the largest share?",
+       "a": "Hungary",
+       "opts": [
+        "Hungary",
+        "Denmark",
+        "UK",
+        "Russia"
+       ],
+       "e": "10.0% (Denmark 9.6%)."
+      },
+      {
+       "q": "What does the table show about democracies?",
+       "a": "Inequality can be very high in democracies",
+       "opts": [
+        "Inequality can be very high in democracies",
+        "All democracies are equal",
+        "Dictatorships have no inequality",
+        "Income is shared equally in the USA"
+       ],
+       "e": "Democracy does not automatically reduce economic inequality."
+      }
+     ]
+    },
+    {
+     "type": "dataBars",
+     "title": "Growth race: Table 1",
+     "say": "Average growth rates 1950–2000. Is the difference big?",
+     "chart": "Rate of economic growth, 1950–2000 (%)",
+     "labels": [
+      "All democracies",
+      "All dictatorships",
+      "Poor dictatorships",
+      "Poor democracies"
+     ],
+     "unit": "%",
+     "step": 1,
+     "series": [
+      {
+       "name": "Growth rate",
+       "values": [
+        3.95,
+        4.42,
+        4.34,
+        4.28
+       ]
+      }
+     ],
+     "source": "Przeworski et al., 2000 (NCERT Chapter 5, Table 1)",
+     "qs": [
+      {
+       "q": "Which group grew fastest on average?",
+       "a": "All dictatorships",
+       "opts": [
+        "All dictatorships",
+        "All democracies",
+        "Poor democracies",
+        "Poor dictatorships"
+       ],
+       "e": "4.42% – only slightly higher."
+      },
+      {
+       "q": "Among poor countries, how big is the difference?",
+       "a": "Very small (4.34 vs 4.28)",
+       "opts": [
+        "Very small (4.34 vs 4.28)",
+        "Huge",
+        "Democracies are twice as fast",
+        "No data"
+       ],
+       "e": "Virtually no difference – so it is better to prefer democracy for its other outcomes."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "topic": "dignity",
+   "ref": "5.3",
+   "title": "Social diversity, dignity and freedom",
+   "time": "9 min",
+   "hook": "Belgium negotiated its differences; Sri Lanka did not. Democracy cannot make conflicts vanish, but it gives a **peaceful way to handle them** – and it treats every person with dignity, at least in principle.",
+   "core": [
+    {
+     "term": "Accommodating diversity",
+     "def": "Democracies develop procedures to conduct competition, reducing the chance of explosive or violent tensions; non-democracies often suppress differences."
+    },
+    {
+     "term": "Condition 1",
+     "def": "Democracy is not simply rule by majority opinion: the majority must work with the minority; majority and minority opinions are not permanent."
+    },
+    {
+     "term": "Condition 2",
+     "def": "Rule by majority must not become rule by the majority community (religion, race, language). Every citizen must have a chance of being in the majority at some time."
+    },
+    {
+     "term": "Dignity and freedom",
+     "def": "Democracy is far superior in promoting individual dignity and freedom – e.g. women’s struggles for equal treatment, and claims of disadvantaged castes for equal status."
+    },
+    {
+     "term": "Never-ending examination",
+     "def": "As democracy passes one test, it faces another; complaints show people have become citizens, not subjects."
+    }
+   ],
+   "explain": [
+    "Once equality is recognised in principle, it becomes easier to fight discrimination: caste inequalities and atrocities still happen, but they **lack moral and legal foundations**.",
+    "‘The fact that people are complaining is itself a testimony to the success of democracy.’"
+   ],
+   "example": {
+    "q": "What are the conditions under which democracies accommodate social diversities? (3 marks)",
+    "steps": [
+     "Democracy is not simply rule by majority opinion – the majority must work with the minority so that governments represent the general view.",
+     "Rule by majority must not become rule by a majority community based on religion, race or language.",
+     "Every citizen must have a chance of being in the majority at some point; if someone is barred from it by birth, democracy stops being accommodative (e.g. Sri Lanka)."
+    ],
+    "answer": "Work with minority · not majority community · chance to be in majority."
+   },
+   "mistakes": [
+    "Saying democracy eliminates all conflicts.",
+    "Treating ‘majority rule’ as the essence of democracy.",
+    "Forgetting the Sri Lanka example."
+   ],
+   "tip": "End any outcomes answer with the line: ‘Democracy transforms people from subjects into citizens.’",
+   "memory": "Majority must be temporary, not a community.",
+   "examAsk": [
+    "Conditions for accommodating social diversity.",
+    "How does democracy promote dignity and freedom?",
+    "Why is complaining a sign of democracy’s success?"
+   ],
+   "cards": [
+    {
+     "q": "Is democracy simply majority rule?",
+     "a": "No – the majority must work with the minority."
+    },
+    {
+     "q": "What does complaining about democracy show?",
+     "a": "Its success – people are citizens, not subjects."
+    },
+    {
+     "q": "Has democracy eliminated economic inequality?",
+     "a": "No – only the idea of political inequality."
+    }
+   ],
+   "play": [
+    {
+     "type": "sort",
+     "title": "Democratic accommodation?",
+     "say": "Does each situation fit democracy’s way of handling diversity, or not?",
+     "buckets": [
+      "Fits democracy",
+      "Does not fit"
+     ],
+     "items": [
+      [
+       "The majority works with the minority so the government represents the general view",
+       0,
+       "Condition 1."
+      ],
+      [
+       "Different groups can form a majority in different elections",
+       0,
+       "Majority is not permanent."
+      ],
+      [
+       "A person is barred from ever being in the majority because of birth",
+       1,
+       "Democracy stops being accommodative."
+      ],
+      [
+       "The majority community by religion rules permanently",
+       1,
+       "Majority must not mean a religious majority community."
+      ],
+      [
+       "Differences are negotiated through procedures, not suppressed",
+       0,
+       "Democracy’s way."
+      ],
+      [
+       "Social differences are suppressed by force",
+       1,
+       "What non-democracies often do."
+      ],
+      [
+       "Women struggle legally against unequal treatment",
+       0,
+       "Dignity recognised in principle."
+      ],
+      [
+       "Citizens complain and demand more from democracy",
+       0,
+       "A sign of success."
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "formulas": [
+  {
+   "name": "Expectations",
+   "f": "equality, dignity, better decisions, resolve conflicts, correct mistakes",
+   "unit": "",
+   "when": "Introduction"
+  },
+  {
+   "name": "Transparency",
+   "f": "right and means to examine decision making",
+   "unit": "RTI – Nannu",
+   "when": "Accountability"
+  },
+  {
+   "name": "Legitimate",
+   "f": "people’s own government",
+   "unit": "South Asia surveys",
+   "when": "Where democracy wins"
+  },
+  {
+   "name": "Growth 1950–2000",
+   "f": "democracies 3.95 · dictatorships 4.42",
+   "unit": "Poor: 4.28 vs 4.34",
+   "when": "Economic outcomes"
+  },
+  {
+   "name": "Inequality",
+   "f": "SA top 20% 64.8, bottom 2.9",
+   "unit": "Denmark/Hungary more equal",
+   "when": "Inequality"
+  },
+  {
+   "name": "Diversity conditions",
+   "f": "work with minority; majority ≠ majority community",
+   "unit": "Sri Lanka lesson",
+   "when": "Social outcomes"
+  },
+  {
+   "name": "Dignity",
+   "f": "women and caste claims gain legal/moral force",
+   "unit": "",
+   "when": "Dignity and freedom"
+  },
+  {
+   "name": "Big idea",
+   "f": "examination never gets over; subject → citizen",
+   "unit": "",
+   "when": "Conclusions"
+  }
+ ],
+ "revision": [
+  "Democracy is just a form of government: it creates conditions; citizens must use them.",
+  "Expected: accountable, responsive, legitimate government; transparency; regular free elections, open debate, right to information.",
+  "Democracy is slower (deliberation) but decisions are more acceptable; it is certainly better at legitimacy.",
+  "Record is mixed on responsiveness, sharing information and corruption.",
+  "Growth 1950–2000: democracies 3.95%, dictatorships 4.42%; poor countries 4.28% vs 4.34% – negligible difference.",
+  "Inequality is high in some democracies (South Africa, Brazil: top 20% >60%); Denmark and Hungary more equal.",
+  "Poverty persists though the poor are a large share of voters; Bangladesh: more than half poor.",
+  "Accommodating diversity: majority works with minority; majority not a community of religion/race/language.",
+  "Democracy promotes dignity and freedom (women, disadvantaged castes).",
+  "Complaints show success: people move from subjects to citizens; ‘examination never gets over’."
+ ],
+ "exam": {
+  "paper": [
+   {
+    "q": "1 mark",
+    "marks": "MCQ / A-R",
+    "what": "Transparency, legitimacy, growth figures, odd-one-out on assessing democracy"
+   },
+   {
+    "q": "3 marks",
+    "marks": "Short answer",
+    "what": "Conditions for accommodating diversity; is democracy a guarantee of development?"
+   },
+   {
+    "q": "5 marks",
+    "marks": "Long answer",
+    "what": "Accountable, responsive, legitimate government; economic outcomes; dignity and freedom"
+   },
+   {
+    "q": "Case-based",
+    "marks": "4 marks",
+    "what": "Nannu’s RTI story, Table 1/Table 2, South Asia survey"
+   }
+  ],
+  "sections": [
+   {
+    "title": "Outcome answers · 4 steps",
+    "kind": "steps",
+    "items": [
+     "State the expectation (e.g. democracy should reduce inequality).",
+     "Give the evidence (table, survey, example).",
+     "Judge: does democracy do well or not?",
+     "Conclude with why democracy is still preferred."
+    ]
+   },
+   {
+    "title": "Answer writing that scores",
+    "kind": "mem",
+    "items": [
+     "Start with a one-line definition or introduction using textbook keywords (e.g. ‘Majoritarianism is …’).",
+     "Write in points – one idea per point, with the key term in the first few words. A 3-mark answer needs 3 clear points; a 5-mark answer needs 5.",
+     "Add a real example from the chapter to each point (Belgium, Sri Lanka, Panchayati Raj, a party, a survey figure).",
+     "Use the exact numbers the textbook gives only when you are sure (59%, 1956, 1992, one-third, 1976).",
+     "For ‘Explain / Analyse’ questions use PEE: Point → Explain → Example. For ‘Distinguish’ questions draw a small two-column table.",
+     "Case-based questions: underline the key line in the passage first; the answer is usually hidden in it."
+    ]
+   },
+   {
+    "title": "Before the exam",
+    "kind": "note",
+    "items": [
+     "Revise the key facts sheet and the revision list the night before.",
+     "Redo the Play & learn sorts – if you can sort every card first time, you know the chapter.",
+     "Practise one 5-mark answer in 8–10 minutes with a timer."
+    ]
+   }
+  ],
+  "checklist": [
+   "I can explain accountable, responsive and legitimate government with transparency and RTI.",
+   "I can quote Table 1 growth rates and explain the conclusion.",
+   "I can use Table 2 to discuss inequality.",
+   "I can state the two conditions for accommodating diversity.",
+   "I can explain how democracy promotes dignity and why complaints show success."
+  ],
+  "paperTitle": "How this chapter is examined",
+  "paperCols": [
+   "Marks",
+   "Question type",
+   "Likely asks"
+  ],
+  "paperNote": "Based on the CBSE Class X Social Science pattern (MCQ, assertion–reason, 3-mark short, 4-mark case/source-based and 5-mark long answers). Practise these types first."
+ },
+ "method": "Built on proven learning methods: understand the story first, sort and match ideas with your hands (active learning), write model answers point by point, test yourself (active recall) and revisit after 1, 3 and 7 days (spaced revision).",
+ "sheetTitle": "Key facts sheet",
+ "sheetCols": [
+  "Topic",
+  "Key fact",
+  "Example",
+  "Use it for"
+ ]
+}

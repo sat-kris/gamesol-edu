@@ -1,0 +1,684 @@
+{
+ "id": "class10-social-ch3",
+ "class": "10",
+ "subject": "social",
+ "chapter": "Chapter 3 · Gender, Religion and Caste",
+ "source": "NCERT Democratic Politics II (Class X Political Science), Chapter 3",
+ "topics": [
+  {
+   "id": "gender",
+   "name": "Gender and politics",
+   "ref": "3.1"
+  },
+  {
+   "id": "religion",
+   "name": "Religion, communalism and politics",
+   "ref": "3.2"
+  },
+  {
+   "id": "caste",
+   "name": "Caste and politics",
+   "ref": "3.3"
+  }
+ ],
+ "questions": [
+  {
+   "topic": "gender",
+   "level": "easy",
+   "q": "When we speak of gender divisions, we usually refer to…",
+   "a": "unequal roles assigned by society to men and women",
+   "w": [
+    "biological differences between men and women",
+    "unequal child sex ratio",
+    "absence of voting rights for women"
+   ],
+   "e": "Gender division is based on social expectations and stereotypes, not biology."
+  },
+  {
+   "topic": "gender",
+   "level": "easy",
+   "q": "A system in which all work inside the home is done or organised by the women of the family is called…",
+   "a": "sexual division of labour",
+   "w": [
+    "patriarchy",
+    "feminism",
+    "occupational mobility"
+   ],
+   "e": "Men do outside work; women’s household work is unpaid and unrecognised."
+  },
+  {
+   "topic": "gender",
+   "level": "easy",
+   "q": "A woman or man who believes in equal rights and opportunities for women and men is called a…",
+   "a": "feminist",
+   "w": [
+    "communalist",
+    "secularist",
+    "casteist"
+   ],
+   "e": "Radical women’s movements aiming at equality in personal and family life are feminist movements."
+  },
+  {
+   "topic": "gender",
+   "level": "easy",
+   "q": "Patriarchy literally means…",
+   "a": "rule by father – a system that values men more and gives them power over women",
+   "w": [
+    "rule by the majority",
+    "rule by elders of a caste",
+    "rule by women"
+   ],
+   "e": "India is still a male-dominated, patriarchal society."
+  },
+  {
+   "topic": "gender",
+   "level": "easy",
+   "q": "Which Act provides that equal wages should be paid for equal work?",
+   "a": "The Equal Remuneration Act, 1976",
+   "w": [
+    "The Right to Information Act",
+    "The Nari Shakti Vandan Adhiniyam, 2023",
+    "The 1992 Constitutional Amendment"
+   ],
+   "e": "Yet in many areas women are still paid less than men."
+  },
+  {
+   "topic": "gender",
+   "level": "easy",
+   "q": "In which countries is the participation of women in public life very high?",
+   "a": "Scandinavian countries such as Sweden, Norway and Finland",
+   "w": [
+    "Sri Lanka and Belgium",
+    "USA and UK",
+    "India and Pakistan"
+   ],
+   "e": "Nordic countries top women’s representation in parliaments."
+  },
+  {
+   "topic": "gender",
+   "level": "hard",
+   "q": "According to the chapter, the literacy rate among women is… compared with … among men.",
+   "a": "54 per cent; 76 per cent",
+   "w": [
+    "76 per cent; 54 per cent",
+    "40 per cent; 90 per cent",
+    "65 per cent; 65 per cent"
+   ],
+   "e": "Fewer girls go for higher studies because parents prefer to spend on boys’ education."
+  },
+  {
+   "topic": "gender",
+   "level": "hard",
+   "q": "The percentage of elected women members in the Lok Sabha touched … for the first time in 2019.",
+   "a": "14.36 per cent",
+   "w": [
+    "33 per cent",
+    "5 per cent",
+    "50 per cent"
+   ],
+   "e": "In State assemblies their share is less than 5 per cent."
+  },
+  {
+   "topic": "gender",
+   "level": "hard",
+   "q": "What does the Nari Shakti Vandan Adhiniyam (Women’s Reservation Act), 2023 provide?",
+   "a": "33 per cent reservation of seats for women in the Lok Sabha, State Legislative Assemblies and the Delhi Assembly",
+   "w": [
+    "50 per cent reservation in panchayats",
+    "Equal wages for equal work",
+    "Free education for girls"
+   ],
+   "e": "One-third of seats in panchayats and municipalities were already reserved."
+  },
+  {
+   "topic": "gender",
+   "level": "hard",
+   "q": "The child sex ratio (girls per thousand boys) in India fell to…",
+   "a": "919",
+   "w": [
+    "1000",
+    "850",
+    "990"
+   ],
+   "e": "Due to sex-selective abortion; in some States it fell below 850 or even 800."
+  },
+  {
+   "topic": "gender",
+   "level": "hard",
+   "q": "The time use survey shows that an average Indian woman…",
+   "a": "works one hour more than an average man each day, but much of her work is unpaid",
+   "w": [
+    "works less than a man",
+    "does only paid work",
+    "spends no time on household work"
+   ],
+   "e": "About 7½ hours for women vs 6½ hours for men."
+  },
+  {
+   "topic": "gender",
+   "level": "hard",
+   "q": "Assertion (A): Gender division should be expressed in politics.\nReason (R): Disadvantaged groups benefit when social divisions become a political issue.",
+   "a": "Both A and R are true, and R is the correct explanation of A.",
+   "w": [
+    "Both A and R are true, but R is not the correct explanation of A.",
+    "A is true, but R is false.",
+    "A is false, but R is true."
+   ],
+   "e": "Women’s gains (voting rights, reservation) came because their unequal treatment was raised politically."
+  },
+  {
+   "topic": "religion",
+   "level": "easy",
+   "q": "Who said that religion can never be separated from politics – meaning moral values that inform all religions?",
+   "a": "Mahatma Gandhi",
+   "w": [
+    "B.R. Ambedkar",
+    "Jawaharlal Nehru",
+    "Periyar"
+   ],
+   "e": "He believed politics must be guided by ethics drawn from religion."
+  },
+  {
+   "topic": "religion",
+   "level": "easy",
+   "q": "Politics based on the idea that religion is the principal basis of social community is called…",
+   "a": "communal politics",
+   "w": [
+    "secular politics",
+    "feminist politics",
+    "coalition politics"
+   ],
+   "e": "Communalism involves thinking that followers of one religion form one community with the same interests."
+  },
+  {
+   "topic": "religion",
+   "level": "easy",
+   "q": "Which is the most common expression of communalism?",
+   "a": "Everyday beliefs – religious prejudices and stereotypes",
+   "w": [
+    "Communal riots",
+    "Separate electorates",
+    "Coalition governments"
+   ],
+   "e": "Other forms: political dominance, mobilisation on religious lines, communal violence."
+  },
+  {
+   "topic": "religion",
+   "level": "easy",
+   "q": "Which statement about India’s Constitution is WRONG? It…",
+   "a": "gives official status to one religion",
+   "w": [
+    "prohibits discrimination on grounds of religion",
+    "gives freedom to profess any religion",
+    "allows the state to ensure equality within religious communities"
+   ],
+   "e": "India has no official religion (NCERT exercise 10)."
+  },
+  {
+   "topic": "religion",
+   "level": "hard",
+   "q": "Why does the Constitution allow the state to intervene in religious matters?",
+   "a": "To ensure equality within religious communities – for example, it bans untouchability",
+   "w": [
+    "To promote one religion",
+    "To stop people changing religion",
+    "To appoint religious leaders"
+   ],
+   "e": "This is part of India’s model of a secular state."
+  },
+  {
+   "topic": "religion",
+   "level": "hard",
+   "q": "Which statements describe communal politics? A. One religion is superior  B. People of different religions can live together as equal citizens  C. Followers of a religion form one community  D. State power cannot be used for one religion’s domination",
+   "a": "A and C",
+   "w": [
+    "A, B, C and D",
+    "A, B and D",
+    "B and D"
+   ],
+   "e": "B and D describe secular ideas (NCERT exercise 9)."
+  },
+  {
+   "topic": "religion",
+   "level": "hard",
+   "q": "Unlike India, which country gives a special status to Buddhism?",
+   "a": "Sri Lanka",
+   "w": [
+    "Pakistan",
+    "England",
+    "Belgium"
+   ],
+   "e": "Islam in Pakistan and Christianity in England also have special status; India has no official religion."
+  },
+  {
+   "topic": "religion",
+   "level": "hard",
+   "q": "According to the 2011 Census, Muslims form about what percentage of India’s population?",
+   "a": "14.2 per cent",
+   "w": [
+    "25 per cent",
+    "2.3 per cent",
+    "79.8 per cent"
+   ],
+   "e": "Hindus 79.8%, Muslims 14.2%, Christians 2.3%, Sikhs 1.7%."
+  },
+  {
+   "topic": "religion",
+   "level": "hard",
+   "q": "Assertion (A): Communalism threatens the very idea of India.\nReason (R): Secularism is one of the foundations of our country.",
+   "a": "Both A and R are true, and R is the correct explanation of A.",
+   "w": [
+    "Both A and R are true, but R is not the correct explanation of A.",
+    "A is true, but R is false.",
+    "A is false, but R is true."
+   ],
+   "e": "Because secularism is foundational, communalism attacks the idea of India itself – it is not a threat to only some people."
+  },
+  {
+   "topic": "religion",
+   "level": "easy",
+   "type": "pairs",
+   "q": "‘{x}’ – communal belief or secular constitutional provision?",
+   "pairs": [
+    [
+     "There is no official religion for the Indian state",
+     "Secular provision"
+    ],
+    [
+     "Freedom to profess, practise and propagate any religion",
+     "Secular provision"
+    ],
+    [
+     "Discrimination on grounds of religion is prohibited",
+     "Secular provision"
+    ],
+    [
+     "The state may ban untouchability",
+     "Secular provision"
+    ],
+    [
+     "One religion is superior to others",
+     "Communal belief"
+    ],
+    [
+     "Followers of one religion must form one community",
+     "Communal belief"
+    ],
+    [
+     "People of different religions cannot live as equal citizens",
+     "Communal belief"
+    ]
+   ],
+   "e": "{x} → {ans}.",
+   "extra": [
+    "Feminist idea",
+    "Casteist belief"
+   ]
+  },
+  {
+   "topic": "religion",
+   "level": "easy",
+   "type": "pairs",
+   "q": "‘{x}’ – communal belief or secular constitutional provision?",
+   "pairs": [
+    [
+     "There is no official religion for the Indian state",
+     "Secular provision"
+    ],
+    [
+     "Freedom to profess, practise and propagate any religion",
+     "Secular provision"
+    ],
+    [
+     "Discrimination on grounds of religion is prohibited",
+     "Secular provision"
+    ],
+    [
+     "The state may ban untouchability",
+     "Secular provision"
+    ],
+    [
+     "One religion is superior to others",
+     "Communal belief"
+    ],
+    [
+     "Followers of one religion must form one community",
+     "Communal belief"
+    ],
+    [
+     "People of different religions cannot live as equal citizens",
+     "Communal belief"
+    ]
+   ],
+   "e": "{x} → {ans}.",
+   "extra": [
+    "Feminist idea",
+    "Casteist belief"
+   ]
+  },
+  {
+   "topic": "religion",
+   "level": "easy",
+   "type": "pairs",
+   "q": "‘{x}’ – communal belief or secular constitutional provision?",
+   "pairs": [
+    [
+     "There is no official religion for the Indian state",
+     "Secular provision"
+    ],
+    [
+     "Freedom to profess, practise and propagate any religion",
+     "Secular provision"
+    ],
+    [
+     "Discrimination on grounds of religion is prohibited",
+     "Secular provision"
+    ],
+    [
+     "The state may ban untouchability",
+     "Secular provision"
+    ],
+    [
+     "One religion is superior to others",
+     "Communal belief"
+    ],
+    [
+     "Followers of one religion must form one community",
+     "Communal belief"
+    ],
+    [
+     "People of different religions cannot live as equal citizens",
+     "Communal belief"
+    ]
+   ],
+   "e": "{x} → {ans}.",
+   "extra": [
+    "Feminist idea",
+    "Casteist belief"
+   ]
+  },
+  {
+   "topic": "caste",
+   "level": "easy",
+   "q": "Social divisions based on … are peculiar to India.",
+   "a": "caste",
+   "w": [
+    "gender",
+    "religion",
+    "language"
+   ],
+   "e": "Hereditary occupational division sanctioned by rituals is special to India."
+  },
+  {
+   "topic": "caste",
+   "level": "easy",
+   "q": "Which reformers worked to establish a society without caste inequalities?",
+   "a": "Jotiba Phule, Gandhiji, B.R. Ambedkar and Periyar Ramaswami Naicker",
+   "w": [
+    "Kanshi Ram and Sahu Maharaj only",
+    "Nehru and Patel",
+    "Kaprekar and Collatz"
+   ],
+   "e": "Along with socio-economic changes, their efforts changed the caste system."
+  },
+  {
+   "topic": "caste",
+   "level": "easy",
+   "q": "Shift of population from rural areas to urban areas is called…",
+   "a": "urbanisation",
+   "w": [
+    "occupational mobility",
+    "decentralisation",
+    "majoritarianism"
+   ],
+   "e": "Along with literacy and occupational mobility it weakened old caste hierarchies."
+  },
+  {
+   "topic": "caste",
+   "level": "easy",
+   "q": "According to the 2011 Census, what percentage of India’s population are Scheduled Castes?",
+   "a": "16.6 per cent",
+   "w": [
+    "8.6 per cent",
+    "41 per cent",
+    "25 per cent"
+   ],
+   "e": "Scheduled Tribes 8.6%; OBCs about 41% (NSS 2004–05)."
+  },
+  {
+   "topic": "caste",
+   "level": "hard",
+   "q": "Which is a correct reason why caste alone cannot decide elections in India?",
+   "a": "No parliamentary constituency has a clear majority of one single caste",
+   "w": [
+    "All voters of a caste vote for one party",
+    "Ruling parties never lose",
+    "Parties never consider caste"
+   ],
+   "e": "Also: no party gets all votes of a caste, and voters judge performance."
+  },
+  {
+   "topic": "caste",
+   "level": "hard",
+   "q": "Which is an example of ‘politics in caste’ (politics influencing caste)?",
+   "a": "Caste groups incorporating neighbouring sub-castes to become bigger",
+   "w": [
+    "Parties choosing candidates by caste composition",
+    "Appeals to caste sentiment in campaigns",
+    "Some parties favouring certain castes"
+   ],
+   "e": "Politics changes caste: groups grow, form coalitions and new groups like ‘backward’ and ‘forward’ appear."
+  },
+  {
+   "topic": "caste",
+   "level": "hard",
+   "q": "According to the NSS 1999–2000 data, which group had the highest proportion of rural people below the poverty line?",
+   "a": "Scheduled Tribes (45.8%)",
+   "w": [
+    "Scheduled Castes (35.9%)",
+    "Hindu upper castes (11.7%)",
+    "OBCs (27.0%)"
+   ],
+   "e": "Caste is still strongly linked to economic status."
+  },
+  {
+   "topic": "caste",
+   "level": "hard",
+   "q": "What is a negative effect of politics based only on caste identity?",
+   "a": "It can divert attention from poverty, development and corruption and lead to tension",
+   "w": [
+    "It gives Dalits access to decision making",
+    "It brings new consciousness among lower castes",
+    "It forces caste groups to negotiate"
+   ],
+   "e": "Caste politics has both positive and negative sides."
+  },
+  {
+   "topic": "caste",
+   "level": "hard",
+   "q": "Match: 1. Believes in equal rights for women and men 2. Religion is the principal basis of community 3. Caste is the principal basis of community 4. Does not discriminate on the basis of religion  with A. Communalist B. Feminist C. Secularist D. Casteist",
+   "a": "1-B, 2-A, 3-D, 4-C",
+   "w": [
+    "1-B, 2-C, 3-A, 4-D",
+    "1-D, 2-C, 3-A, 4-B",
+    "1-C, 2-A, 3-B, 4-D"
+   ],
+   "e": "NCERT exercise 12."
+  },
+  {
+   "topic": "caste",
+   "level": "hard",
+   "q": "Assertion (A): Caste has not disappeared from contemporary India.\nReason (R): Most people still marry within their own caste and untouchability has not ended completely.",
+   "a": "Both A and R are true, and R is the correct explanation of A.",
+   "w": [
+    "Both A and R are true, but R is not the correct explanation of A.",
+    "A is true, but R is false.",
+    "A is false, but R is true."
+   ],
+   "e": "R gives the evidence for A."
+  },
+  {
+   "topic": "caste",
+   "level": "hard",
+   "type": "pairs",
+   "q": "‘{x}’ – caste in politics or politics in caste?",
+   "pairs": [
+    [
+     "Parties nominate candidates keeping in mind the caste composition of the electorate",
+     "Caste in politics"
+    ],
+    [
+     "Campaigns make appeals to caste sentiment",
+     "Caste in politics"
+    ],
+    [
+     "Governments include representatives of different castes",
+     "Caste in politics"
+    ],
+    [
+     "Caste groups become bigger by incorporating sub-castes",
+     "Politics in caste"
+    ],
+    [
+     "Caste groups form coalitions and negotiate with others",
+     "Politics in caste"
+    ],
+    [
+     "New groups like ‘backward’ and ‘forward’ castes appear",
+     "Politics in caste"
+    ]
+   ],
+   "e": "{x} → {ans}.",
+   "extra": [
+    "Communal politics",
+    "Gender politics"
+   ]
+  },
+  {
+   "topic": "caste",
+   "level": "hard",
+   "type": "pairs",
+   "q": "‘{x}’ – caste in politics or politics in caste?",
+   "pairs": [
+    [
+     "Parties nominate candidates keeping in mind the caste composition of the electorate",
+     "Caste in politics"
+    ],
+    [
+     "Campaigns make appeals to caste sentiment",
+     "Caste in politics"
+    ],
+    [
+     "Governments include representatives of different castes",
+     "Caste in politics"
+    ],
+    [
+     "Caste groups become bigger by incorporating sub-castes",
+     "Politics in caste"
+    ],
+    [
+     "Caste groups form coalitions and negotiate with others",
+     "Politics in caste"
+    ],
+    [
+     "New groups like ‘backward’ and ‘forward’ castes appear",
+     "Politics in caste"
+    ]
+   ],
+   "e": "{x} → {ans}.",
+   "extra": [
+    "Communal politics",
+    "Gender politics"
+   ]
+  },
+  {
+   "topic": "caste",
+   "level": "hard",
+   "type": "pairs",
+   "q": "‘{x}’ – caste in politics or politics in caste?",
+   "pairs": [
+    [
+     "Parties nominate candidates keeping in mind the caste composition of the electorate",
+     "Caste in politics"
+    ],
+    [
+     "Campaigns make appeals to caste sentiment",
+     "Caste in politics"
+    ],
+    [
+     "Governments include representatives of different castes",
+     "Caste in politics"
+    ],
+    [
+     "Caste groups become bigger by incorporating sub-castes",
+     "Politics in caste"
+    ],
+    [
+     "Caste groups form coalitions and negotiate with others",
+     "Politics in caste"
+    ],
+    [
+     "New groups like ‘backward’ and ‘forward’ castes appear",
+     "Politics in caste"
+    ]
+   ],
+   "e": "{x} → {ans}.",
+   "extra": [
+    "Communal politics",
+    "Gender politics"
+   ]
+  },
+  {
+   "topic": "gender",
+   "level": "hard",
+   "q": "What does the data in the passage show about women in Indian legislatures?",
+   "a": "Their share is very low – about 14% in Lok Sabha and less than 5% in state assemblies",
+   "w": [
+    "Women hold half the seats in Lok Sabha",
+    "Women have one-third reservation in Lok Sabha since 1992",
+    "Women are better represented in state assemblies than in Lok Sabha"
+   ],
+   "e": "Low representation is why a reservation law for legislatures was demanded.",
+   "passage": "In India, the proportion of women in legislature has been very low. The percentage of elected women members in Lok Sabha touched 14.36 per cent of its total strength for the first time in 2019. Their share in the state assemblies is less than 5 per cent. One-third of seats in local government bodies – panchayats and municipalities – are now reserved for women. Now there are more than 10 lakh elected women representatives in rural and urban local bodies."
+  },
+  {
+   "topic": "gender",
+   "level": "easy",
+   "q": "How many women representatives are there in rural and urban local bodies?",
+   "a": "More than 10 lakh",
+   "w": [
+    "About 1 lakh",
+    "Less than 50,000",
+    "Exactly 5 lakh"
+   ],
+   "e": "One-third reservation in panchayats and municipalities made this possible.",
+   "passage": "In India, the proportion of women in legislature has been very low. The percentage of elected women members in Lok Sabha touched 14.36 per cent of its total strength for the first time in 2019. Their share in the state assemblies is less than 5 per cent. One-third of seats in local government bodies – panchayats and municipalities – are now reserved for women. Now there are more than 10 lakh elected women representatives in rural and urban local bodies."
+  },
+  {
+   "topic": "religion",
+   "level": "hard",
+   "q": "Which provision in the passage allows the state to act inside religious communities?",
+   "a": "The state can intervene in religious matters to ensure equality, e.g. banning untouchability",
+   "w": [
+    "There is no official religion",
+    "Freedom to propagate any religion",
+    "Buddhism has a special status"
+   ],
+   "e": "Secularism in India is not total separation; the state can intervene for equality.",
+   "passage": "There is no official religion for the Indian state. Unlike the status of Buddhism in Sri Lanka, that of Islam in Pakistan and that of Christianity in England, our Constitution does not give a special status to any religion. The Constitution provides to all individuals and communities freedom to profess, practice and propagate any religion, or not to follow any. The Constitution prohibits discrimination on grounds of religion. At the same time, the Constitution allows the state to intervene in the matters of religion in order to ensure equality within religious communities. For example, it bans untouchability."
+  },
+  {
+   "topic": "religion",
+   "level": "easy",
+   "q": "According to the passage, which country gives a special status to Islam?",
+   "a": "Pakistan",
+   "w": [
+    "India",
+    "Sri Lanka",
+    "England"
+   ],
+   "e": "Sri Lanka – Buddhism; Pakistan – Islam; England – Christianity.",
+   "passage": "There is no official religion for the Indian state. Unlike the status of Buddhism in Sri Lanka, that of Islam in Pakistan and that of Christianity in England, our Constitution does not give a special status to any religion. The Constitution provides to all individuals and communities freedom to profess, practice and propagate any religion, or not to follow any. The Constitution prohibits discrimination on grounds of religion. At the same time, the Constitution allows the state to intervene in the matters of religion in order to ensure equality within religious communities. For example, it bans untouchability."
+  }
+ ]
+}

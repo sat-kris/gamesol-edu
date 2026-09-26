@@ -1,0 +1,488 @@
+{
+ "id": "class10-social-ch5",
+ "class": "10",
+ "subject": "social",
+ "chapter": "Chapter 5 · Outcomes of Democracy",
+ "source": "NCERT Democratic Politics II (Class X Political Science), Chapter 5",
+ "topics": [
+  {
+   "id": "govt",
+   "name": "Accountable, responsive and legitimate government",
+   "ref": "5.1"
+  },
+  {
+   "id": "economy",
+   "name": "Economic growth, inequality and poverty",
+   "ref": "5.2"
+  },
+  {
+   "id": "dignity",
+   "name": "Social diversity, dignity and freedom",
+   "ref": "5.3"
+  }
+ ],
+ "questions": [
+  {
+   "topic": "govt",
+   "level": "easy",
+   "q": "The most basic outcome of democracy should be a government that is…",
+   "a": "accountable and responsive to the citizens",
+   "w": [
+    "fast and secretive",
+    "run by one leader",
+    "free from all criticism"
+   ],
+   "e": "People have the right to choose their rulers and control over them."
+  },
+  {
+   "topic": "govt",
+   "level": "easy",
+   "q": "A citizen’s right and means to examine the process of decision making is called…",
+   "a": "transparency",
+   "w": [
+    "majoritarianism",
+    "legitimacy",
+    "partisanship"
+   ],
+   "e": "Transparency is often missing in non-democratic governments."
+  },
+  {
+   "topic": "govt",
+   "level": "easy",
+   "q": "In which respect is democratic government certainly better than its alternatives?",
+   "a": "It is a legitimate government – people’s own government",
+   "w": [
+    "It is always faster",
+    "It is always free of corruption",
+    "It always produces more economic growth"
+   ],
+   "e": "It may be slow and less efficient, but it is legitimate."
+  },
+  {
+   "topic": "govt",
+   "level": "hard",
+   "q": "Why may democratic decisions take longer yet be more effective?",
+   "a": "Because following procedures and deliberation make decisions more acceptable to the people",
+   "w": [
+    "Because democracies have fewer officials",
+    "Because courts take every decision",
+    "Because only the majority is consulted"
+   ],
+   "e": "The cost of time that democracy pays is perhaps worth it."
+  },
+  {
+   "topic": "govt",
+   "level": "hard",
+   "q": "On which count is the record of democracies NOT impressive, according to the chapter?",
+   "a": "Being attentive to people’s needs and largely free of corruption",
+   "w": [
+    "Holding regular and free elections",
+    "Setting up conditions for open public debate",
+    "Being legitimate governments"
+   ],
+   "e": "Democracies often frustrate people’s needs; but non-democracies are not less corrupt either."
+  },
+  {
+   "topic": "govt",
+   "level": "hard",
+   "q": "Which practice would you look for to measure accountability in a democracy?",
+   "a": "Regular, free and fair elections, open public debate and citizens’ right to information",
+   "w": [
+    "A single long-serving ruler",
+    "Secret decision making",
+    "Ban on opposition parties"
+   ],
+   "e": "These are the practices and institutions of an accountable government."
+  },
+  {
+   "topic": "govt",
+   "level": "hard",
+   "q": "Nannu got his ration card within a week after filing an application under the…",
+   "a": "Right to Information Act",
+   "w": [
+    "Equal Remuneration Act",
+    "Anti-defection law",
+    "1992 Constitutional Amendment"
+   ],
+   "e": "It shows how RTI makes officials accountable (NCERT exercise 8)."
+  },
+  {
+   "topic": "govt",
+   "level": "hard",
+   "q": "The survey of South Asia shows that…",
+   "a": "there is overwhelming support for democracy, even in countries without democratic regimes",
+   "w": [
+    "most people prefer dictatorship",
+    "nobody thinks their vote matters",
+    "democracy is supported only in India"
+   ],
+   "e": "Democracy’s ability to generate its own support is itself an outcome."
+  },
+  {
+   "topic": "govt",
+   "level": "hard",
+   "q": "Assertion (A): Democracy is based on deliberation and negotiation.\nReason (R): Some delay in decision making is bound to take place in a democracy.",
+   "a": "Both A and R are true, but R is not the correct explanation of A.",
+   "w": [
+    "Both A and R are true, and R is the correct explanation of A.",
+    "A is true, but R is false.",
+    "A is false, but R is true."
+   ],
+   "e": "Both true; R is a consequence of A, not its explanation."
+  },
+  {
+   "topic": "economy",
+   "level": "easy",
+   "q": "Considering all democracies and dictatorships from 1950 to 2000, which had a slightly higher rate of economic growth?",
+   "a": "Dictatorships",
+   "w": [
+    "Democracies",
+    "Both exactly equal",
+    "Monarchies only"
+   ],
+   "e": "Dictatorships 4.42% vs democracies 3.95% – but among poor countries the difference is negligible (4.34 vs 4.28)."
+  },
+  {
+   "topic": "economy",
+   "level": "easy",
+   "q": "Is democracy a guarantee of economic development?",
+   "a": "No – but we can expect it not to lag behind dictatorships",
+   "w": [
+    "Yes, always",
+    "Only in rich countries",
+    "Only if there is one party"
+   ],
+   "e": "Development depends on population size, global situation, cooperation, priorities and more."
+  },
+  {
+   "topic": "economy",
+   "level": "hard",
+   "q": "In South Africa and Brazil, what share of national income does the top 20% take?",
+   "a": "More than 60 per cent",
+   "w": [
+    "About 10 per cent",
+    "Exactly 20 per cent",
+    "Less than 3 per cent"
+   ],
+   "e": "South Africa top 20%: 64.8%, bottom 20%: 2.9%."
+  },
+  {
+   "topic": "economy",
+   "level": "hard",
+   "q": "Which countries are much better at income equality, according to Table 2?",
+   "a": "Denmark and Hungary",
+   "w": [
+    "South Africa and Brazil",
+    "Russia and USA",
+    "USA and UK"
+   ],
+   "e": "Top 20% get about 34% of income; bottom 20% about 10%."
+  },
+  {
+   "topic": "economy",
+   "level": "hard",
+   "q": "Why is it surprising that democracies do not reduce poverty much?",
+   "a": "The poor are a large proportion of voters and no party wants to lose their votes",
+   "w": [
+    "The poor cannot vote",
+    "There are no poor people in democracies",
+    "Only the rich are allowed to contest"
+   ],
+   "e": "Yet elected governments do not appear keen to address poverty."
+  },
+  {
+   "topic": "economy",
+   "level": "hard",
+   "q": "In Bangladesh, how much of the population lives in poverty, according to the chapter?",
+   "a": "More than half",
+   "w": [
+    "About one-tenth",
+    "None",
+    "About one-quarter"
+   ],
+   "e": "People in several poor countries depend on rich countries even for food."
+  },
+  {
+   "topic": "economy",
+   "level": "hard",
+   "q": "Assertion (A): We cannot say that democracy is a guarantee of economic development.\nReason (R): Economic development depends on several factors like population size, global situation and a country’s priorities.",
+   "a": "Both A and R are true, and R is the correct explanation of A.",
+   "w": [
+    "Both A and R are true, but R is not the correct explanation of A.",
+    "A is true, but R is false.",
+    "A is false, but R is true."
+   ],
+   "e": "R explains why regime type alone does not decide growth."
+  },
+  {
+   "topic": "dignity",
+   "level": "easy",
+   "q": "Democracy is best suited to produce which outcome?",
+   "a": "Learning to respect differences and evolving mechanisms to negotiate them",
+   "w": [
+    "Eliminating all conflicts forever",
+    "Ensuring one community always rules",
+    "Removing all economic inequality"
+   ],
+   "e": "No society can fully resolve conflicts, but democracy handles them best."
+  },
+  {
+   "topic": "dignity",
+   "level": "easy",
+   "q": "Which quality makes democracy far superior to other forms of government?",
+   "a": "Promoting the dignity and freedom of the individual",
+   "w": [
+    "Fastest decision making",
+    "Guaranteed economic growth",
+    "Absence of elections"
+   ],
+   "e": "Passion for respect and freedom is the basis of democracy."
+  },
+  {
+   "topic": "dignity",
+   "level": "hard",
+   "q": "Which is a condition for democracy to accommodate social diversity?",
+   "a": "The majority must work with the minority, and majority must not mean a religious, racial or linguistic majority community",
+   "w": [
+    "The majority community must always rule",
+    "Minorities must not vote",
+    "Only one language should be allowed"
+   ],
+   "e": "Every citizen must have a chance to be in the majority at some point."
+  },
+  {
+   "topic": "dignity",
+   "level": "hard",
+   "q": "According to the chapter, what does public expression of dissatisfaction with democracy show?",
+   "a": "The success of the democratic project – people have changed from subjects into citizens",
+   "w": [
+    "That democracy has failed",
+    "That people prefer dictatorship",
+    "That elections are unnecessary"
+   ],
+   "e": "‘The examination of democracy never gets over.’"
+  },
+  {
+   "topic": "dignity",
+   "level": "hard",
+   "q": "Democracies have successfully eliminated…",
+   "a": "the idea of political inequality",
+   "w": [
+    "conflicts among people",
+    "economic inequalities",
+    "differences of opinion on marginalised sections"
+   ],
+   "e": "NCERT exercise 5 – only political inequality (as an idea) has been eliminated."
+  },
+  {
+   "topic": "dignity",
+   "level": "hard",
+   "q": "In the context of assessing democracy, which is the odd one out? Democracies need to ensure:",
+   "a": "majority rule",
+   "w": [
+    "free and fair elections",
+    "dignity of the individual",
+    "equal treatment before law"
+   ],
+   "e": "Democracy is not simply majority rule (NCERT exercise 6)."
+  },
+  {
+   "topic": "dignity",
+   "level": "hard",
+   "q": "In the South Asia survey, which country had the LOWEST share of people saying their vote makes a difference?",
+   "a": "Pakistan (50%)",
+   "w": [
+    "Nepal (75%)",
+    "India (67%)",
+    "Bangladesh (66%)"
+   ],
+   "e": "Most individuals believe their vote makes a difference."
+  },
+  {
+   "topic": "dignity",
+   "level": "hard",
+   "q": "Assertion (A): Caste-based inequalities and atrocities in India lack moral and legal foundations today.\nReason (R): Democracy has strengthened the claims of disadvantaged castes for equal status and opportunity.",
+   "a": "Both A and R are true, and R is the correct explanation of A.",
+   "w": [
+    "Both A and R are true, but R is not the correct explanation of A.",
+    "A is true, but R is false.",
+    "A is false, but R is true."
+   ],
+   "e": "Once equality is recognised as a principle, discrimination loses its legal and moral basis."
+  },
+  {
+   "topic": "dignity",
+   "level": "easy",
+   "type": "pairs",
+   "q": "‘{x}’ – what is democracy’s record here?",
+   "pairs": [
+    [
+     "Being a legitimate government",
+     "Democracy does well"
+    ],
+    [
+     "Holding regular and free elections",
+     "Democracy does well"
+    ],
+    [
+     "Promoting dignity and freedom of individuals",
+     "Democracy does well"
+    ],
+    [
+     "Accommodating social diversity",
+     "Democracy does well"
+    ],
+    [
+     "Reducing economic inequality",
+     "Record is weak"
+    ],
+    [
+     "Being free of corruption",
+     "Record is weak"
+    ],
+    [
+     "Sharing information with citizens",
+     "Record is weak"
+    ],
+    [
+     "Achieving higher economic growth than dictatorships",
+     "Record is weak"
+    ]
+   ],
+   "e": "{x} → {ans}.",
+   "extra": [
+    "Not discussed",
+    "Only in Europe"
+   ]
+  },
+  {
+   "topic": "dignity",
+   "level": "easy",
+   "type": "pairs",
+   "q": "‘{x}’ – what is democracy’s record here?",
+   "pairs": [
+    [
+     "Being a legitimate government",
+     "Democracy does well"
+    ],
+    [
+     "Holding regular and free elections",
+     "Democracy does well"
+    ],
+    [
+     "Promoting dignity and freedom of individuals",
+     "Democracy does well"
+    ],
+    [
+     "Accommodating social diversity",
+     "Democracy does well"
+    ],
+    [
+     "Reducing economic inequality",
+     "Record is weak"
+    ],
+    [
+     "Being free of corruption",
+     "Record is weak"
+    ],
+    [
+     "Sharing information with citizens",
+     "Record is weak"
+    ],
+    [
+     "Achieving higher economic growth than dictatorships",
+     "Record is weak"
+    ]
+   ],
+   "e": "{x} → {ans}.",
+   "extra": [
+    "Not discussed",
+    "Only in Europe"
+   ]
+  },
+  {
+   "topic": "dignity",
+   "level": "easy",
+   "type": "pairs",
+   "q": "‘{x}’ – what is democracy’s record here?",
+   "pairs": [
+    [
+     "Being a legitimate government",
+     "Democracy does well"
+    ],
+    [
+     "Holding regular and free elections",
+     "Democracy does well"
+    ],
+    [
+     "Promoting dignity and freedom of individuals",
+     "Democracy does well"
+    ],
+    [
+     "Accommodating social diversity",
+     "Democracy does well"
+    ],
+    [
+     "Reducing economic inequality",
+     "Record is weak"
+    ],
+    [
+     "Being free of corruption",
+     "Record is weak"
+    ],
+    [
+     "Sharing information with citizens",
+     "Record is weak"
+    ],
+    [
+     "Achieving higher economic growth than dictatorships",
+     "Record is weak"
+    ]
+   ],
+   "e": "{x} → {ans}.",
+   "extra": [
+    "Not discussed",
+    "Only in Europe"
+   ]
+  },
+  {
+   "topic": "govt",
+   "level": "easy",
+   "q": "What does the passage call a citizen’s right and means to examine how decisions are taken?",
+   "a": "Transparency",
+   "w": [
+    "Legitimacy",
+    "Efficiency",
+    "Majoritarianism"
+   ],
+   "e": "Transparency is often missing in non-democratic governments.",
+   "passage": "Democracy is based on the idea of deliberation and negotiation. So, some delay is bound to take place. But because it has followed procedures, its decisions may be both more acceptable to the people and more effective. If you want to know if a decision was taken through the correct procedures, you can find this out. You have the right and the means to examine the process of decision making. This is known as transparency. This factor is often missing from a non-democratic government."
+  },
+  {
+   "topic": "govt",
+   "level": "hard",
+   "q": "Why may democratic decisions be more acceptable and effective even if they are slower?",
+   "a": "They follow procedures of deliberation and negotiation",
+   "w": [
+    "They are made by one strong leader",
+    "They ignore public opinion",
+    "They avoid elections"
+   ],
+   "e": "Delay is the cost; acceptability and effectiveness are the gain.",
+   "passage": "Democracy is based on the idea of deliberation and negotiation. So, some delay is bound to take place. But because it has followed procedures, its decisions may be both more acceptable to the people and more effective. If you want to know if a decision was taken through the correct procedures, you can find this out. You have the right and the means to examine the process of decision making. This is known as transparency. This factor is often missing from a non-democratic government."
+  },
+  {
+   "topic": "govt",
+   "level": "hard",
+   "q": "Which is the ‘cost’ of democracy mentioned in the passage?",
+   "a": "Some delay in decision making",
+   "w": [
+    "Lack of transparency",
+    "Corruption in every decision",
+    "No accountability"
+   ],
+   "e": "Non-democracies are quicker but lack transparency.",
+   "passage": "Democracy is based on the idea of deliberation and negotiation. So, some delay is bound to take place. But because it has followed procedures, its decisions may be both more acceptable to the people and more effective. If you want to know if a decision was taken through the correct procedures, you can find this out. You have the right and the means to examine the process of decision making. This is known as transparency. This factor is often missing from a non-democratic government."
+  }
+ ]
+}

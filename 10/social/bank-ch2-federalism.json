@@ -1,0 +1,899 @@
+{
+ "id": "class10-social-ch2",
+ "class": "10",
+ "subject": "social",
+ "chapter": "Chapter 2 · Federalism",
+ "source": "NCERT Democratic Politics II (Class X Political Science), Chapter 2",
+ "topics": [
+  {
+   "id": "what",
+   "name": "What is federalism?",
+   "ref": "2.1"
+  },
+  {
+   "id": "india",
+   "name": "What makes India a federal country?",
+   "ref": "2.2"
+  },
+  {
+   "id": "practice",
+   "name": "How is federalism practised?",
+   "ref": "2.3"
+  },
+  {
+   "id": "local",
+   "name": "Decentralisation in India",
+   "ref": "2.4"
+  }
+ ],
+ "questions": [
+  {
+   "topic": "what",
+   "level": "easy",
+   "q": "Federalism is a system of government in which power is divided between…",
+   "a": "a central authority and various constituent units",
+   "w": [
+    "the legislature and the judiciary",
+    "the majority and the minority",
+    "the President and the Prime Minister"
+   ],
+   "e": "Usually two levels – one for the whole country, the others for provinces/states."
+  },
+  {
+   "topic": "what",
+   "level": "easy",
+   "q": "The distinguishing feature of a federal government is that…",
+   "a": "governmental power is divided between different levels of government",
+   "w": [
+    "the national government gives some powers to provinces",
+    "power is divided among legislature, executive and judiciary",
+    "elected officials exercise supreme power"
+   ],
+   "e": "NCERT exercise 8: division between levels."
+  },
+  {
+   "topic": "what",
+   "level": "easy",
+   "q": "Which is an example of a ‘coming together’ federation?",
+   "a": "USA",
+   "w": [
+    "India",
+    "Spain",
+    "Belgium"
+   ],
+   "e": "USA, Switzerland and Australia were formed by independent states coming together."
+  },
+  {
+   "topic": "what",
+   "level": "easy",
+   "q": "Which is an example of a ‘holding together’ federation?",
+   "a": "India",
+   "w": [
+    "USA",
+    "Switzerland",
+    "Australia"
+   ],
+   "e": "India, Spain and Belgium – a large country divides power between states and the national government."
+  },
+  {
+   "topic": "what",
+   "level": "easy",
+   "q": "Under a unitary system…",
+   "a": "there is only one level of government, or sub-units are subordinate to the Centre",
+   "w": [
+    "states have powers of their own",
+    "two levels are separately answerable to the people",
+    "courts settle disputes between levels"
+   ],
+   "e": "In a federal system, the Centre cannot order a state government to do something."
+  },
+  {
+   "topic": "what",
+   "level": "hard",
+   "q": "In ‘holding together’ federations…",
+   "a": "the central government tends to be more powerful and units may have unequal powers",
+   "w": [
+    "all states have equal power and are strong",
+    "there is no central government",
+    "states can leave whenever they like"
+   ],
+   "e": "Some units may be granted special powers."
+  },
+  {
+   "topic": "what",
+   "level": "hard",
+   "q": "Who acts as an umpire if disputes arise between different levels of government in a federation?",
+   "a": "The highest court",
+   "w": [
+    "The President",
+    "The Election Commission",
+    "The largest state"
+   ],
+   "e": "Courts interpret the constitution and the powers of each level."
+  },
+  {
+   "topic": "what",
+   "level": "hard",
+   "q": "How many of the world’s 193 countries have federal political systems, according to the chapter?",
+   "a": "25",
+   "w": [
+    "75",
+    "100",
+    "193"
+   ],
+   "e": "Only 25 countries, but their citizens make up 40% of the world’s population."
+  },
+  {
+   "topic": "what",
+   "level": "hard",
+   "q": "In which year did Belgium shift from a unitary to a federal form of government?",
+   "a": "1993",
+   "w": [
+    "1948",
+    "1970",
+    "2009"
+   ],
+   "e": "In 1993 regional governments were given constitutional powers no longer dependent on the Centre."
+  },
+  {
+   "topic": "what",
+   "level": "hard",
+   "q": "Assertion (A): In a federation, the fundamental provisions of the constitution cannot be changed by one level of government alone.\nReason (R): The existence and authority of each tier is constitutionally guaranteed.",
+   "a": "Both A and R are true, and R is the correct explanation of A.",
+   "w": [
+    "Both A and R are true, but R is not the correct explanation of A.",
+    "A is true, but R is false.",
+    "A is false, but R is true."
+   ],
+   "e": "Changes need the consent of both levels because each tier’s authority is guaranteed."
+  },
+  {
+   "topic": "what",
+   "level": "hard",
+   "q": "Assertion (A): Sri Lanka is a federation.\nReason (R): Sri Lanka is divided into provinces.",
+   "a": "A is false, but R is true.",
+   "w": [
+    "Both A and R are true, and R is the correct explanation of A.",
+    "Both A and R are true, but R is not the correct explanation of A.",
+    "A is true, but R is false."
+   ],
+   "e": "A is false – Sri Lanka is, for all practical purposes, unitary; having provinces alone does not make it federal."
+  },
+  {
+   "topic": "india",
+   "level": "easy",
+   "q": "Which of these is on the Union List?",
+   "a": "Defence",
+   "w": [
+    "Police",
+    "Agriculture",
+    "Education"
+   ],
+   "e": "Union List: defence, foreign affairs, banking, communications, currency."
+  },
+  {
+   "topic": "india",
+   "level": "easy",
+   "q": "Which of these is on the State List?",
+   "a": "Police",
+   "w": [
+    "Banking",
+    "Currency",
+    "Marriage"
+   ],
+   "e": "State List: police, trade, commerce, agriculture, irrigation."
+  },
+  {
+   "topic": "india",
+   "level": "easy",
+   "q": "Which of these is on the Concurrent List?",
+   "a": "Education",
+   "w": [
+    "Defence",
+    "Police",
+    "Foreign affairs"
+   ],
+   "e": "Concurrent List: education, forest, trade unions, marriage, adoption, succession."
+  },
+  {
+   "topic": "india",
+   "level": "easy",
+   "q": "If a Union law and a State law on a Concurrent List subject conflict…",
+   "a": "the law made by the Union Government prevails",
+   "w": [
+    "the State law prevails",
+    "both are cancelled",
+    "the President decides"
+   ],
+   "e": "Union law prevails in case of conflict."
+  },
+  {
+   "topic": "india",
+   "level": "easy",
+   "q": "Subjects like computer software that are not in any list are called…",
+   "a": "residuary subjects, and the Union Government legislates on them",
+   "w": [
+    "state subjects",
+    "concurrent subjects",
+    "local subjects"
+   ],
+   "e": "The Union has power over residuary subjects."
+  },
+  {
+   "topic": "india",
+   "level": "hard",
+   "q": "How can the power-sharing arrangement between Union and States be changed?",
+   "a": "Passed by both Houses of Parliament with at least two-thirds majority and ratified by at least half of the State legislatures",
+   "w": [
+    "By a simple majority in the Lok Sabha",
+    "By an order of the Prime Minister",
+    "By the Supreme Court alone"
+   ],
+   "e": "Parliament cannot change it on its own."
+  },
+  {
+   "topic": "india",
+   "level": "hard",
+   "q": "Which states enjoy special powers under Article 371?",
+   "a": "Assam, Nagaland, Arunachal Pradesh and Mizoram",
+   "w": [
+    "Kerala, Tamil Nadu and Punjab",
+    "Uttar Pradesh and Bihar",
+    "Delhi and Chandigarh"
+   ],
+   "e": "Due to peculiar social and historical circumstances – protecting land rights, culture and preferential employment."
+  },
+  {
+   "topic": "india",
+   "level": "hard",
+   "q": "Chandigarh, Lakshadweep and Delhi are examples of…",
+   "a": "Union Territories",
+   "w": [
+    "states with special status",
+    "municipal corporations",
+    "residuary subjects"
+   ],
+   "e": "Too small to be States; the Central Government has special powers in running them."
+  },
+  {
+   "topic": "india",
+   "level": "hard",
+   "q": "Which pair is NOT correctly matched?",
+   "a": "Local governments – Residuary powers",
+   "w": [
+    "State government – State List",
+    "Central government – Union List",
+    "Central and State governments – Concurrent List"
+   ],
+   "e": "Residuary powers belong to the Union Government (NCERT exercise 10)."
+  },
+  {
+   "topic": "india",
+   "level": "easy",
+   "type": "pairs",
+   "q": "In which list is ‘{x}’?",
+   "pairs": [
+    [
+     "Defence",
+     "Union List"
+    ],
+    [
+     "Foreign affairs",
+     "Union List"
+    ],
+    [
+     "Banking",
+     "Union List"
+    ],
+    [
+     "Currency",
+     "Union List"
+    ],
+    [
+     "Communications",
+     "Union List"
+    ],
+    [
+     "Police",
+     "State List"
+    ],
+    [
+     "Agriculture",
+     "State List"
+    ],
+    [
+     "Irrigation",
+     "State List"
+    ],
+    [
+     "Trade and commerce",
+     "State List"
+    ],
+    [
+     "Education",
+     "Concurrent List"
+    ],
+    [
+     "Forest",
+     "Concurrent List"
+    ],
+    [
+     "Trade unions",
+     "Concurrent List"
+    ],
+    [
+     "Marriage and adoption",
+     "Concurrent List"
+    ],
+    [
+     "Computer software",
+     "Residuary subjects"
+    ]
+   ],
+   "e": "{x} → {ans}."
+  },
+  {
+   "topic": "india",
+   "level": "easy",
+   "type": "pairs",
+   "q": "In which list is ‘{x}’?",
+   "pairs": [
+    [
+     "Defence",
+     "Union List"
+    ],
+    [
+     "Foreign affairs",
+     "Union List"
+    ],
+    [
+     "Banking",
+     "Union List"
+    ],
+    [
+     "Currency",
+     "Union List"
+    ],
+    [
+     "Communications",
+     "Union List"
+    ],
+    [
+     "Police",
+     "State List"
+    ],
+    [
+     "Agriculture",
+     "State List"
+    ],
+    [
+     "Irrigation",
+     "State List"
+    ],
+    [
+     "Trade and commerce",
+     "State List"
+    ],
+    [
+     "Education",
+     "Concurrent List"
+    ],
+    [
+     "Forest",
+     "Concurrent List"
+    ],
+    [
+     "Trade unions",
+     "Concurrent List"
+    ],
+    [
+     "Marriage and adoption",
+     "Concurrent List"
+    ],
+    [
+     "Computer software",
+     "Residuary subjects"
+    ]
+   ],
+   "e": "{x} → {ans}."
+  },
+  {
+   "topic": "india",
+   "level": "easy",
+   "type": "pairs",
+   "q": "In which list is ‘{x}’?",
+   "pairs": [
+    [
+     "Defence",
+     "Union List"
+    ],
+    [
+     "Foreign affairs",
+     "Union List"
+    ],
+    [
+     "Banking",
+     "Union List"
+    ],
+    [
+     "Currency",
+     "Union List"
+    ],
+    [
+     "Communications",
+     "Union List"
+    ],
+    [
+     "Police",
+     "State List"
+    ],
+    [
+     "Agriculture",
+     "State List"
+    ],
+    [
+     "Irrigation",
+     "State List"
+    ],
+    [
+     "Trade and commerce",
+     "State List"
+    ],
+    [
+     "Education",
+     "Concurrent List"
+    ],
+    [
+     "Forest",
+     "Concurrent List"
+    ],
+    [
+     "Trade unions",
+     "Concurrent List"
+    ],
+    [
+     "Marriage and adoption",
+     "Concurrent List"
+    ],
+    [
+     "Computer software",
+     "Residuary subjects"
+    ]
+   ],
+   "e": "{x} → {ans}."
+  },
+  {
+   "topic": "india",
+   "level": "easy",
+   "type": "pairs",
+   "q": "In which list is ‘{x}’?",
+   "pairs": [
+    [
+     "Defence",
+     "Union List"
+    ],
+    [
+     "Foreign affairs",
+     "Union List"
+    ],
+    [
+     "Banking",
+     "Union List"
+    ],
+    [
+     "Currency",
+     "Union List"
+    ],
+    [
+     "Communications",
+     "Union List"
+    ],
+    [
+     "Police",
+     "State List"
+    ],
+    [
+     "Agriculture",
+     "State List"
+    ],
+    [
+     "Irrigation",
+     "State List"
+    ],
+    [
+     "Trade and commerce",
+     "State List"
+    ],
+    [
+     "Education",
+     "Concurrent List"
+    ],
+    [
+     "Forest",
+     "Concurrent List"
+    ],
+    [
+     "Trade unions",
+     "Concurrent List"
+    ],
+    [
+     "Marriage and adoption",
+     "Concurrent List"
+    ],
+    [
+     "Computer software",
+     "Residuary subjects"
+    ]
+   ],
+   "e": "{x} → {ans}."
+  },
+  {
+   "topic": "practice",
+   "level": "easy",
+   "q": "What was the first and major test for democratic politics in India?",
+   "a": "The creation of linguistic States",
+   "w": [
+    "The language policy",
+    "The 1992 amendment",
+    "The rise of coalition governments"
+   ],
+   "e": "It actually made the country more united and administration easier."
+  },
+  {
+   "topic": "practice",
+   "level": "easy",
+   "q": "Which of these States was created on the basis of culture, ethnicity or geography rather than language?",
+   "a": "Uttarakhand",
+   "w": [
+    "Andhra Pradesh",
+    "Gujarat",
+    "Tamil Nadu"
+   ],
+   "e": "Nagaland, Uttarakhand and Jharkhand."
+  },
+  {
+   "topic": "practice",
+   "level": "easy",
+   "q": "What is the status of Hindi according to the Constitution?",
+   "a": "The official language – India has no national language",
+   "w": [
+    "The national language",
+    "The only language for all official work",
+    "A Scheduled Language only in Delhi"
+   ],
+   "e": "Hindi was identified as the official language; no language was made the national language."
+  },
+  {
+   "topic": "practice",
+   "level": "easy",
+   "q": "How many languages are recognised as Scheduled Languages by the Constitution?",
+   "a": "22",
+   "w": [
+    "18",
+    "121",
+    "1300"
+   ],
+   "e": "Hindi plus 21 others are in the Eighth Schedule."
+  },
+  {
+   "topic": "practice",
+   "level": "hard",
+   "q": "Use of English for official purposes was to stop in 1965. What happened instead?",
+   "a": "After demands from non-Hindi states (violent in Tamil Nadu), English was continued along with Hindi",
+   "w": [
+    "English was banned",
+    "Hindi was imposed on all states",
+    "Tamil became the national language"
+   ],
+   "e": "The flexibility of leaders helped India avoid a situation like Sri Lanka’s."
+  },
+  {
+   "topic": "practice",
+   "level": "hard",
+   "q": "What changed in Centre-State relations after 1990?",
+   "a": "Regional parties rose and coalition governments began at the Centre, leading to more respect for state autonomy",
+   "w": [
+    "One party ruled the Centre and all States",
+    "The Centre began dismissing more state governments",
+    "States lost their powers"
+   ],
+   "e": "A Supreme Court judgement also made arbitrary dismissal of state governments difficult."
+  },
+  {
+   "topic": "practice",
+   "level": "hard",
+   "q": "According to the 2011 Census, Hindi is the mother tongue of about what share of Indians?",
+   "a": "About 44 per cent",
+   "w": [
+    "About 75 per cent",
+    "Over 90 per cent",
+    "About 10 per cent"
+   ],
+   "e": "No single language is the mother tongue of a majority of Indians."
+  },
+  {
+   "topic": "practice",
+   "level": "hard",
+   "q": "Assertion (A): The formation of linguistic States made India more united.\nReason (R): It ensured that people who spoke the same language lived in the same State and made administration easier.",
+   "a": "Both A and R are true, and R is the correct explanation of A.",
+   "w": [
+    "Both A and R are true, but R is not the correct explanation of A.",
+    "A is true, but R is false.",
+    "A is false, but R is true."
+   ],
+   "e": "Experience proved the fear of disintegration wrong; R explains why."
+  },
+  {
+   "topic": "local",
+   "level": "easy",
+   "q": "When power is taken away from the Central and State governments and given to local government, it is called…",
+   "a": "decentralisation",
+   "w": [
+    "centralisation",
+    "majoritarianism",
+    "coalition"
+   ],
+   "e": "The third tier of government."
+  },
+  {
+   "topic": "local",
+   "level": "easy",
+   "q": "In which year was the Constitution amended to make the third tier more powerful?",
+   "a": "1992",
+   "w": [
+    "1950",
+    "1976",
+    "2023"
+   ],
+   "e": "Regular elections, reservations, State Election Commission, sharing of powers and revenue."
+  },
+  {
+   "topic": "local",
+   "level": "easy",
+   "q": "What proportion of positions in local bodies are reserved for women?",
+   "a": "At least one-third",
+   "w": [
+    "One-half",
+    "One-fourth",
+    "None"
+   ],
+   "e": "There are now more than 10 lakh elected women representatives."
+  },
+  {
+   "topic": "local",
+   "level": "easy",
+   "q": "Who conducts panchayat and municipal elections?",
+   "a": "The State Election Commission",
+   "w": [
+    "The Election Commission of India",
+    "The Governor",
+    "The Zilla Parishad"
+   ],
+   "e": "An independent institution in each State."
+  },
+  {
+   "topic": "local",
+   "level": "easy",
+   "q": "The head of a municipal corporation is called the…",
+   "a": "mayor",
+   "w": [
+    "sarpanch",
+    "municipal chairperson",
+    "collector"
+   ],
+   "e": "Municipality → chairperson; municipal corporation → mayor."
+  },
+  {
+   "topic": "local",
+   "level": "hard",
+   "q": "The gram panchayat works under the overall supervision of the…",
+   "a": "gram sabha, made up of all the voters in the village",
+   "w": [
+    "zilla parishad",
+    "State Election Commission",
+    "panchayat samiti"
+   ],
+   "e": "The gram sabha meets at least twice or thrice a year to approve the budget and review performance."
+  },
+  {
+   "topic": "local",
+   "level": "hard",
+   "q": "A few gram panchayats grouped together form a…",
+   "a": "panchayat samiti (block or mandal)",
+   "w": [
+    "zilla parishad",
+    "gram sabha",
+    "municipal corporation"
+   ],
+   "e": "All panchayat samitis in a district form the zilla parishad."
+  },
+  {
+   "topic": "local",
+   "level": "hard",
+   "q": "Which city in Brazil combined decentralisation with participative budget-making?",
+   "a": "Porto Alegre",
+   "w": [
+    "Rio de Janeiro",
+    "Brasília",
+    "São Paulo"
+   ],
+   "e": "About 20,000 people take part every year; Kerala has tried something similar."
+  },
+  {
+   "topic": "local",
+   "level": "hard",
+   "q": "Which is a difficulty that still remains in local government in India?",
+   "a": "Gram sabhas are not held regularly and states have not transferred enough powers and resources",
+   "w": [
+    "Elections are never held",
+    "Women cannot contest",
+    "There are no reserved seats"
+   ],
+   "e": "We are still a long way from realising the ideal of self-government."
+  },
+  {
+   "topic": "local",
+   "level": "easy",
+   "type": "pairs",
+   "q": "Who is the head of the ‘{x}’?",
+   "pairs": [
+    [
+     "Union of India",
+     "Prime Minister"
+    ],
+    [
+     "State",
+     "Chief Minister"
+    ],
+    [
+     "Municipal Corporation",
+     "Mayor"
+    ],
+    [
+     "Gram Panchayat",
+     "Sarpanch"
+    ],
+    [
+     "Municipality",
+     "Municipal chairperson"
+    ],
+    [
+     "Zilla Parishad",
+     "Zilla parishad chairperson"
+    ]
+   ],
+   "e": "{x} → {ans}."
+  },
+  {
+   "topic": "local",
+   "level": "easy",
+   "type": "pairs",
+   "q": "Who is the head of the ‘{x}’?",
+   "pairs": [
+    [
+     "Union of India",
+     "Prime Minister"
+    ],
+    [
+     "State",
+     "Chief Minister"
+    ],
+    [
+     "Municipal Corporation",
+     "Mayor"
+    ],
+    [
+     "Gram Panchayat",
+     "Sarpanch"
+    ],
+    [
+     "Municipality",
+     "Municipal chairperson"
+    ],
+    [
+     "Zilla Parishad",
+     "Zilla parishad chairperson"
+    ]
+   ],
+   "e": "{x} → {ans}."
+  },
+  {
+   "topic": "local",
+   "level": "easy",
+   "type": "pairs",
+   "q": "Who is the head of the ‘{x}’?",
+   "pairs": [
+    [
+     "Union of India",
+     "Prime Minister"
+    ],
+    [
+     "State",
+     "Chief Minister"
+    ],
+    [
+     "Municipal Corporation",
+     "Mayor"
+    ],
+    [
+     "Gram Panchayat",
+     "Sarpanch"
+    ],
+    [
+     "Municipality",
+     "Municipal chairperson"
+    ],
+    [
+     "Zilla Parishad",
+     "Zilla parishad chairperson"
+    ]
+   ],
+   "e": "{x} → {ans}."
+  },
+  {
+   "topic": "local",
+   "level": "hard",
+   "q": "Who conducts panchayat and municipal elections according to the passage?",
+   "a": "The State Election Commission",
+   "w": [
+    "The Election Commission of India",
+    "The Gram Sabha",
+    "The Chief Minister"
+   ],
+   "e": "An independent State Election Commission was created in each State.",
+   "passage": "A major step towards decentralisation was taken in 1992. The Constitution was amended to make the third tier of democracy more powerful and effective. It is now constitutionally mandatory to hold regular elections to local government bodies. Seats are reserved in the elected bodies and the executive heads of these institutions for the Scheduled Castes, Scheduled Tribes and Other Backward Classes. At least one-third of all positions are reserved for women. An independent institution called the State Election Commission has been created in each State to conduct panchayat and municipal elections. The State governments are required to share some powers and revenue with local government bodies."
+  },
+  {
+   "topic": "local",
+   "level": "easy",
+   "q": "What share of positions in local bodies is reserved for women?",
+   "a": "At least one-third",
+   "w": [
+    "At least one-half",
+    "Exactly one-fourth",
+    "No fixed share"
+   ],
+   "e": "‘At least one-third of all positions are reserved for women.’",
+   "passage": "A major step towards decentralisation was taken in 1992. The Constitution was amended to make the third tier of democracy more powerful and effective. It is now constitutionally mandatory to hold regular elections to local government bodies. Seats are reserved in the elected bodies and the executive heads of these institutions for the Scheduled Castes, Scheduled Tribes and Other Backward Classes. At least one-third of all positions are reserved for women. An independent institution called the State Election Commission has been created in each State to conduct panchayat and municipal elections. The State governments are required to share some powers and revenue with local government bodies."
+  },
+  {
+   "topic": "local",
+   "level": "hard",
+   "q": "Which statement from the passage shows that local government got real resources?",
+   "a": "State governments must share some powers and revenue with local bodies",
+   "w": [
+    "Elections are held regularly",
+    "Seats are reserved for SC, ST and OBC",
+    "The Constitution was amended in 1992"
+   ],
+   "e": "Powers and money (revenue) make local government effective.",
+   "passage": "A major step towards decentralisation was taken in 1992. The Constitution was amended to make the third tier of democracy more powerful and effective. It is now constitutionally mandatory to hold regular elections to local government bodies. Seats are reserved in the elected bodies and the executive heads of these institutions for the Scheduled Castes, Scheduled Tribes and Other Backward Classes. At least one-third of all positions are reserved for women. An independent institution called the State Election Commission has been created in each State to conduct panchayat and municipal elections. The State governments are required to share some powers and revenue with local government bodies."
+  },
+  {
+   "topic": "practice",
+   "level": "hard",
+   "q": "Why were safeguards needed to protect languages other than Hindi?",
+   "a": "Hindi is the mother tongue of only about 40 per cent of Indians",
+   "w": [
+    "Hindi was declared the national language",
+    "English was abolished in 1950",
+    "States had no official languages"
+   ],
+   "e": "Imposing Hindi on the rest could have caused conflict (as in Sri Lanka).",
+   "passage": "Our Constitution did not give the status of national language to any one language. Hindi was identified as the official language. But Hindi is the mother tongue of only about 40 per cent of Indians. Therefore, there were many safeguards to protect other languages. Besides Hindi, there are 21 other languages recognised as Scheduled Languages by the Constitution. A candidate in an examination conducted for the Central Government positions may opt to take the examination in any of these languages."
+  },
+  {
+   "topic": "practice",
+   "level": "easy",
+   "q": "How many languages besides Hindi are recognised as Scheduled Languages?",
+   "a": "21",
+   "w": [
+    "14",
+    "22",
+    "18"
+   ],
+   "e": "Hindi + 21 others = 22 Scheduled Languages.",
+   "passage": "Our Constitution did not give the status of national language to any one language. Hindi was identified as the official language. But Hindi is the mother tongue of only about 40 per cent of Indians. Therefore, there were many safeguards to protect other languages. Besides Hindi, there are 21 other languages recognised as Scheduled Languages by the Constitution. A candidate in an examination conducted for the Central Government positions may opt to take the examination in any of these languages."
+  }
+ ]
+}
