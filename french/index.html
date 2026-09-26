@@ -141,7 +141,8 @@ h2 .en{text-transform:none;letter-spacing:0;font-size:13px;margin-left:6px}
 .chip span i{font-style:italic;color:var(--ink-soft);font-size:12.5px}
 #who{display:flex;flex-direction:column;gap:10px;padding-bottom:14px;border-bottom:1px solid var(--line)}
 .fields{display:grid;grid-template-columns:2fr 1fr;gap:10px}
-.nick{font:inherit;font-size:16px;padding:9px 11px;border-radius:8px;border:1px solid var(--line-strong);background:var(--paper);color:var(--ink);flex:1 1 13em;min-width:0;max-width:22em}
+.nick{font:inherit;font-size:16px;padding:9px 11px;border-radius:8px;border:1px solid var(--line-strong);background:var(--paper);color:var(--ink);flex:1 1 9em;min-width:0;max-width:14em}
+.nicknum{font-weight:700;font-size:17px;padding:0 4px;font-variant-numeric:tabular-nums}
 .field{display:flex;flex-direction:column;gap:5px;font-size:14px;font-weight:700}
 .field input{font:inherit;font-weight:400;font-size:16px;padding:9px 11px;border-radius:8px;border:1px solid var(--line-strong);background:var(--paper);color:var(--ink)}
 .field input:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
@@ -175,12 +176,9 @@ h2 .en{text-transform:none;letter-spacing:0;font-size:13px;margin-left:6px}
 
   <section id="settings">
     <div id="who" hidden>
-      <h2>Votre pseudo <span class="en">Your game name (optional)</span></h2>
-      <div class="row">
-        <input id="pName" class="nick" type="text" maxlength="30" autocomplete="off" aria-label="Your game name">
-        <button type="button" class="btn" id="nickBtn" title="Pick a new random name">🎲 Nouveau · New name</button>
-      </div>
-      <p class="note">Vous jouez en tant que <b id="nickShow"></b> · You’ll play under this name on the leaderboard. Type your own if you like – keep it the same so your scores count together.</p>
+      <h2>Votre pseudo <span class="en">Your game name</span></h2>
+      <div id="nickHost"></div>
+      <p class="note">Vous jouez en tant que <b id="nickShow"></b> · Pick the words you like or tap 🎲. No real names here – keep the same game name so your scores add up.</p>
     </div>
     <h2>Choisissez votre niveau <span class="en">Choose your level</span></h2>
     <div class="levels" id="levels">
@@ -498,15 +496,26 @@ let quiz=[],idx=0,score=0,answered=false;
 // Le lien du classement vient de ../edu-kids-config.json (leaderboard.scriptUrl)
 let API="", ONLINE=false;
 const CLASS_ID="9", SUBJECT_ID="french";
-const NICK_A=["NoCap","Lowkey","BigBrain","MainCharacter","Certified","Vibey","Slay","Chill","Turbo","Sneaky","Mega","Goated","Epic","Galaxy","Glowup","Speedy","Cosmic","Hyper"];
-const NICK_B=["Panda","Mango","Ninja","Comet","Otter","Pixel","Tiger","Falcon","Nova","Koala","Rocket","Dragon","Samosa","Boba","Llama","Penguin","Wizard","Legend"];
-const nick=()=>NICK_A[Math.floor(Math.random()*NICK_A.length)]+NICK_B[Math.floor(Math.random()*NICK_B.length)]+(10+Math.floor(Math.random()*90));
-let player={name:"",auto:""};
-try{const pl=JSON.parse(localStorage.getItem("gamesol-player")||"null");if(pl)player=Object.assign(player,pl)}catch(e){}
-player.section="";
+/* Game names are built only from these word lists (no free typing), so real names never reach the leaderboard. */
+const NICK_A=["NoCap","Lowkey","Highkey","BigBrain","MainCharacter","Goated","Slay","Bussin","Vibey","Glowup","Aura","Cracked","Iconic","Legendary","Chill","Hype","Epic","Cosmic","Turbo","Mega","Ultra","Sparkly","Zoomy","Sneaky","Speedy","Galaxy","Neon","Fire","Yeet","Snacky","Pixel","Frosty"];
+const NICK_B=["Panda","Mango","Ninja","Comet","Otter","Axolotl","Capybara","Boba","Samosa","Taco","Llama","Penguin","Wizard","Legend","Dragon","Falcon","Tiger","Koala","Rocket","Nova","Unicorn","Dino","Bot","Noodle","Waffle","Pickle","Froggo","Doggo","Bunny","Yeti","Shark","Cactus","Cookie","Meteor"];
+const rndOf=a=>a[Math.floor(Math.random()*a.length)];
+const freshNick=()=>({a:rndOf(NICK_A),b:rndOf(NICK_B),n:10+Math.floor(Math.random()*90)});
+const validNick=k=>k&&NICK_A.includes(k.a)&&NICK_B.includes(k.b)&&k.n>=10&&k.n<=99;
+const nickPicker=()=>'<div class="row nickrow"><select id="nickA" class="nick" aria-label="First word">'+NICK_A.map(w=>'<option'+(w===player.nick.a?' selected':'')+'>'+w+'</option>').join("")+'</select>'+
+  '<select id="nickB" class="nick" aria-label="Second word">'+NICK_B.map(w=>'<option'+(w===player.nick.b?' selected':'')+'>'+w+'</option>').join("")+'</select>'+
+  '<span class="nicknum" id="nickN">'+player.nick.n+'</span><button type="button" class="btn small" id="nickBtn" title="Pick a new random name">🎲 Shuffle</button></div>';
+function bindNick(save){const A=document.getElementById("nickA"),B=document.getElementById("nickB"),N=document.getElementById("nickN"),show=document.getElementById("nickShow");if(!A)return;
+  const upd=()=>{player.nick.a=A.value;player.nick.b=B.value;N.textContent=player.nick.n;show.textContent=pname();save()};
+  A.addEventListener("change",upd);B.addEventListener("change",upd);
+  document.getElementById("nickBtn").addEventListener("click",()=>{player.nick=freshNick();A.value=player.nick.a;B.value=player.nick.b;upd()});}
+let player={};
+try{player=JSON.parse(localStorage.getItem("gamesol-player")||"null")||{}}catch(e){}
+if(!validNick(player.nick))player={nick:freshNick()};
+player={nick:player.nick};
 const savePlayer=()=>{try{localStorage.setItem("gamesol-player",JSON.stringify(player))}catch(e){}};
-if(!player.auto){player.auto=nick();savePlayer()}
-const pname=()=>player.name||player.auto;
+savePlayer();
+const pname=()=>player.nick.a+player.nick.b+player.nick.n;
 let startedAt=0,attemptId="",submitted=false;
 const keyOf=(n,s)=>String(n||"").trim().toLowerCase()+"|"+String(s||"").trim().toLowerCase();
 function boardHTML(d){
@@ -635,10 +644,8 @@ const save=()=>{try{localStorage.setItem("cahier-settings",JSON.stringify(settin
 function initOnline(){
   if(!ONLINE)return;
   document.getElementById("who").hidden=false;document.getElementById("boardBtn").hidden=false;
-  const inp=document.getElementById("pName"),show=document.getElementById("nickShow");
-  inp.value=player.name;inp.placeholder=player.auto;show.textContent=pname();
-  inp.addEventListener("input",()=>{player.name=inp.value.replace(/\s+/g," ").trim();show.textContent=pname();savePlayer()});
-  document.getElementById("nickBtn").addEventListener("click",()=>{player.auto=nick();player.name="";inp.value="";inp.placeholder=player.auto;show.textContent=pname();savePlayer()});
+  document.getElementById("nickHost").innerHTML=nickPicker();document.getElementById("nickShow").textContent=pname();
+  bindNick(savePlayer);
 }
 const sb=document.getElementById("startBoard");
 async function showStartBoard(level){
@@ -657,7 +664,7 @@ document.getElementById("startBtn").addEventListener("click",()=>{
   const lv=document.querySelector('input[name="level"]:checked');
   const cats=[...chipsEl.querySelectorAll("input:checked")].map(i=>i.value);
   if(ONLINE){
-    player.name=document.getElementById("pName").value.replace(/\s+/g," ").trim();savePlayer();
+    savePlayer();
   }
   if(!lv){warn.textContent="Choisissez d'abord un niveau. · Please choose a level first: Easy, Hard or Advanced.";warn.hidden=false;return}
   if(!cats.length){warn.textContent="Choisissez au moins une section. · Please choose at least one section.";warn.hidden=false;return}
