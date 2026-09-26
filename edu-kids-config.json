@@ -4,7 +4,7 @@
   "exclude": [],
   "_exclude_help": "Folder names to switch off. Put \"adds\" in the list to drop every extra question and activity stored in any adds/ folder.",
   "leaderboard": {
-    "scriptUrl": ""
+    "scriptUrl": "https://script.google.com/macros/s/AKfycbxOCokHnpdz_BDBiS5q72Bng7x-9Fa25Cwbogje1GmgUpmKCIuGOzrwCN1cB18Kkoo5/exec"
   },
   "classes": [
     {
