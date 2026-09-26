@@ -69,6 +69,19 @@ function leaderboard_(cls, subject, level, name, section) {
   };
 }
 
+// Game names must be built from the site's word lists (e.g. NoCapPanda42) – real names are never stored.
+const NICK_A = ["NoCap","Lowkey","Highkey","BigBrain","MainCharacter","Goated","Slay","Bussin","Vibey","Glowup","Aura","Cracked","Iconic","Legendary","Chill","Hype","Epic","Cosmic","Turbo","Mega","Ultra","Sparkly","Zoomy","Sneaky","Speedy","Galaxy","Neon","Fire","Yeet","Snacky","Pixel","Frosty"];
+const NICK_B = ["Panda","Mango","Ninja","Comet","Otter","Axolotl","Capybara","Boba","Samosa","Taco","Llama","Penguin","Wizard","Legend","Dragon","Falcon","Tiger","Koala","Rocket","Nova","Unicorn","Dino","Bot","Noodle","Waffle","Pickle","Froggo","Doggo","Bunny","Yeti","Shark","Cactus","Cookie","Meteor"];
+function nick_(s) {
+  const m = String(s || '').match(/^([A-Za-z]+?)([A-Z][A-Za-z]*)(\d{2})$/);
+  if (m && NICK_A.indexOf(m[1]) !== -1 && NICK_B.indexOf(m[2]) !== -1) return m[0];
+  for (let i = 1; i < String(s).length; i++) { // fallback split for words with inner capitals (e.g. BigBrain)
+    const a = String(s).slice(0, i), rest = String(s).slice(i).match(/^([A-Za-z]+)(\d{2})$/);
+    if (rest && NICK_A.indexOf(a) !== -1 && NICK_B.indexOf(rest[1]) !== -1) return String(s);
+  }
+  return '';
+}
+
 // Accepted quiz levels; anything else is stored as 'easy'.
 function level_(x) { return ['easy', 'hard', 'advanced'].indexOf(x) !== -1 ? x : 'easy'; }
 
@@ -76,7 +89,7 @@ function doPost(e) {
   let d;
   try { d = JSON.parse(e.postData.contents); } catch (err) { return json_({ ok: false, error: 'bad_json' }); }
   const level = level_(d.level);
-  const name = clean_(d.name, 40);
+  const name = nick_(clean_(d.name, 40));
   const section = clean_(d.section, 12).toUpperCase();
   const cls = clean_(d.cls, 12);
   const subject = clean_(d.subject, 30);
