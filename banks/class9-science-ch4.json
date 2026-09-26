@@ -1864,6 +1864,585 @@
    "unit": "cm",
    "e": "In {m} min the hand turns {m}/60 of a circle: distance = ({m}/60) × 2 × 22/7 × 7 = {ans} cm.",
    "dp": 0
+  },
+  {
+   "topic": "position",
+   "level": "advanced",
+   "type": "calc",
+   "q": "A car moves along a straight road from x = +{p} m to x = −{n} m. What is its displacement?",
+   "vars": {
+    "p": [
+     10,
+     60,
+     5
+    ],
+    "n": [
+     5,
+     50,
+     5
+    ]
+   },
+   "answer": "-(p+n)",
+   "wrong": [
+    "p+n",
+    "p-n",
+    "n-p"
+   ],
+   "e": "Displacement = final − initial = (−{n}) − (+{p}) = {ans} m (towards negative x).",
+   "dp": 0,
+   "unit": "m"
+  },
+  {
+   "topic": "position",
+   "level": "advanced",
+   "q": "If you change the reference point (origin) for a moving car, what stays the same?",
+   "a": "Its displacement over a time interval",
+   "w": [
+    "Its position values",
+    "Its initial position",
+    "The sign of every position"
+   ],
+   "e": "Positions shift with the origin, but the change in position does not."
+  },
+  {
+   "topic": "displacement",
+   "level": "advanced",
+   "type": "calc",
+   "q": "A runner completes one and a half rounds of a circular track of radius {r} m. What is the magnitude of her displacement?",
+   "vars": {
+    "r": [
+     20,
+     70,
+     5
+    ]
+   },
+   "answer": "2*r",
+   "wrong": [
+    "3*3.14*r",
+    "0",
+    "r"
+   ],
+   "e": "After 1½ rounds she is diametrically opposite the start: displacement = 2r = {ans} m (distance = 3πr).",
+   "dp": 0,
+   "unit": "m"
+  },
+  {
+   "topic": "displacement",
+   "level": "advanced",
+   "type": "calc",
+   "q": "A boy walks {a} m east, {b} m west and then {c} m east along a straight road. What is his displacement?",
+   "vars": {
+    "a": [
+     40,
+     90,
+     10
+    ],
+    "b": [
+     60,
+     120,
+     10
+    ],
+    "c": [
+     20,
+     80,
+     10
+    ]
+   },
+   "answer": "a-b+c",
+   "wrong": [
+    "a+b+c",
+    "a-b-c",
+    "b-a+c"
+   ],
+   "e": "Take east as +: {a} − {b} + {c} = {ans} m (distance = {a} + {b} + {c} m).",
+   "dp": 0,
+   "unit": "m",
+   "where": "a-b+c!==0"
+  },
+  {
+   "topic": "speed",
+   "level": "advanced",
+   "type": "calc",
+   "q": "A car covers the first half of a trip at {v1} km h⁻¹ and the second half (same distance) at {v2} km h⁻¹. What is its average speed?",
+   "vars": {
+    "v1": {
+     "of": [
+      20,
+      30,
+      40,
+      60
+     ]
+    },
+    "v2": {
+     "of": [
+      40,
+      60,
+      90,
+      120
+     ]
+    }
+   },
+   "answer": "2*v1*v2/(v1+v2)",
+   "wrong": [
+    "(v1+v2)/2",
+    "v1+v2",
+    "v2-v1"
+   ],
+   "e": "Average speed = total distance ÷ total time = 2 × {v1} × {v2} ÷ ({v1} + {v2}) = {ans} km h⁻¹ (not the simple average!).",
+   "dp": 1,
+   "unit": "km h⁻¹",
+   "where": "v1<v2"
+  },
+  {
+   "topic": "speed",
+   "level": "advanced",
+   "type": "calc",
+   "q": "A train {L} m long moves at {v} km h⁻¹. How long does it take to pass a pole?",
+   "vars": {
+    "L": [
+     100,
+     400,
+     50
+    ],
+    "v": {
+     "of": [
+      36,
+      54,
+      72,
+      90
+     ]
+    }
+   },
+   "answer": "L/(v*5/18)",
+   "wrong": [
+    "L/v",
+    "L*v*5/18",
+    "L/(v*18/5)"
+   ],
+   "e": "{v} km h⁻¹ = {ms} m s⁻¹; time = {L} ÷ {ms} = {ans} s.",
+   "dp": 1,
+   "unit": "s",
+   "derive": {
+    "ms": "v*5/18"
+   }
+  },
+  {
+   "topic": "speed",
+   "level": "advanced",
+   "type": "calc",
+   "q": "A bus travels {d} km out and {d} km back in a total of {t} h, ending at the start. What is its average velocity for the whole trip?",
+   "vars": {
+    "d": [
+     20,
+     80,
+     10
+    ],
+    "t": [
+     2,
+     5,
+     1
+    ]
+   },
+   "answer": "0",
+   "wrong": [
+    "2*d/t",
+    "d/t",
+    "d*t"
+   ],
+   "e": "Displacement is 0, so average velocity is 0 km h⁻¹ – even though average speed is 2 × {d} ÷ {t} km h⁻¹.",
+   "dp": 0,
+   "unit": "km h⁻¹"
+  },
+  {
+   "topic": "accel",
+   "level": "advanced",
+   "type": "calc",
+   "q": "A car’s speed rises from {u} km h⁻¹ to {v} km h⁻¹ in {t} s. What is its average acceleration?",
+   "vars": {
+    "u": {
+     "of": [
+      18,
+      36
+     ]
+    },
+    "v": {
+     "of": [
+      54,
+      72,
+      90
+     ]
+    },
+    "t": [
+     5,
+     20,
+     1
+    ]
+   },
+   "answer": "(v-u)*5/18/t",
+   "wrong": [
+    "(v-u)/t",
+    "(v+u)*5/18/t",
+    "(v-u)*18/5/t"
+   ],
+   "e": "Convert: ({v} − {u}) km h⁻¹ = {dv} m s⁻¹; a = {dv} ÷ {t} = {ans} m s⁻².",
+   "dp": 2,
+   "unit": "m s⁻²",
+   "derive": {
+    "dv": "(v-u)*5/18"
+   }
+  },
+  {
+   "topic": "accel",
+   "level": "advanced",
+   "type": "calc",
+   "q": "A scooter moving at {u} m s⁻¹ brakes and stops in {t} s. What is its acceleration?",
+   "vars": {
+    "u": [
+     10,
+     30,
+     2
+    ],
+    "t": [
+     2,
+     8,
+     1
+    ]
+   },
+   "answer": "-u/t",
+   "wrong": [
+    "u/t",
+    "u*t",
+    "-u*t"
+   ],
+   "e": "a = (0 − {u}) ÷ {t} = {ans} m s⁻² – negative because it slows down.",
+   "dp": 2,
+   "unit": "m s⁻²"
+  },
+  {
+   "topic": "accel",
+   "level": "advanced",
+   "q": "Assertion (A): A body moving with uniform speed in a circle is accelerating.\nReason (R): Acceleration is the rate of change of velocity, and velocity changes when direction changes.",
+   "a": "Both A and R are true and R is the correct explanation of A.",
+   "w": [
+    "Both A and R are true but R is not the correct explanation of A.",
+    "A is true but R is false.",
+    "A is false but R is true."
+   ],
+   "e": "Speed is constant but direction keeps changing, so velocity changes."
+  },
+  {
+   "topic": "ptgraph",
+   "level": "advanced",
+   "type": "calc",
+   "q": "Two cyclists start together. From the position–time graph, how far apart are they at t = {t} s?",
+   "vars": {
+    "a": [
+     2,
+     5,
+     1
+    ],
+    "b": [
+     6,
+     9,
+     1
+    ],
+    "t": [
+     4,
+     10,
+     2
+    ]
+   },
+   "answer": "(b-a)*t",
+   "wrong": [
+    "b*t",
+    "(b+a)*t",
+    "b-a"
+   ],
+   "e": "Positions: {b} × {t} and {a} × {t}. Gap = ({b} − {a}) × {t} = {ans} m.",
+   "dp": 0,
+   "unit": "m",
+   "graph": {
+    "x": "Time (s)",
+    "y": "Position (m)",
+    "lines": [
+     {
+      "pts": [
+       [
+        0,
+        0
+       ],
+       [
+        "t",
+        "b*t"
+       ]
+      ],
+      "label": "P"
+     },
+     {
+      "pts": [
+       [
+        0,
+        0
+       ],
+       [
+        "t",
+        "a*t"
+       ]
+      ],
+      "label": "Q"
+     }
+    ],
+    "mark": false
+   }
+  },
+  {
+   "topic": "ptgraph",
+   "level": "advanced",
+   "q": "On a position–time graph, the lines of two cars cross each other. What does the crossing point tell you?",
+   "a": "Both cars are at the same position at that time",
+   "w": [
+    "Both cars have the same velocity",
+    "Both cars stop",
+    "The cars collide at the start"
+   ],
+   "e": "Same x and same t → same place at the same moment."
+  },
+  {
+   "topic": "ptgraph",
+   "level": "advanced",
+   "q": "A position–time graph curves upward, getting steeper with time. The object is…",
+   "a": "speeding up (accelerating)",
+   "w": [
+    "moving at constant speed",
+    "at rest",
+    "slowing down"
+   ],
+   "e": "Slope = velocity; an increasing slope means increasing velocity."
+  },
+  {
+   "topic": "vtgraph",
+   "level": "advanced",
+   "type": "calc",
+   "q": "From the velocity–time graph, find the displacement of the car in the time shown.",
+   "vars": {
+    "u": [
+     2,
+     10,
+     2
+    ],
+    "v": [
+     12,
+     24,
+     2
+    ],
+    "t": [
+     4,
+     10,
+     1
+    ]
+   },
+   "answer": "(u+v)/2*t",
+   "wrong": [
+    "v*t",
+    "(v-u)*t",
+    "(u+v)*t"
+   ],
+   "e": "Area of the trapezium = ½ × ({u} + {v}) × {t} = {ans} m.",
+   "dp": 0,
+   "unit": "m",
+   "graph": {
+    "x": "Time (s)",
+    "y": "Velocity (m s⁻¹)",
+    "lines": [
+     {
+      "pts": [
+       [
+        0,
+        "u"
+       ],
+       [
+        "t",
+        "v"
+       ]
+      ]
+     }
+    ],
+    "fill": true,
+    "ymin0": true
+   }
+  },
+  {
+   "topic": "vtgraph",
+   "level": "advanced",
+   "q": "Part of a velocity–time graph lies below the time axis. What does this mean?",
+   "a": "The object is moving in the negative direction",
+   "w": [
+    "The object is at rest",
+    "The graph is wrong",
+    "The speed is zero"
+   ],
+   "e": "Negative velocity means motion opposite to the chosen positive direction."
+  },
+  {
+   "topic": "kinematics",
+   "level": "advanced",
+   "type": "calc",
+   "q": "A car moving at {u} m s⁻¹ brakes with a deceleration of {a} m s⁻². How far does it travel before stopping?",
+   "vars": {
+    "u": [
+     10,
+     30,
+     2
+    ],
+    "a": [
+     2,
+     8,
+     1
+    ]
+   },
+   "answer": "u*u/(2*a)",
+   "wrong": [
+    "u*u/a",
+    "u/a",
+    "u*a/2"
+   ],
+   "e": "v² = u² + 2as with v = 0: s = {u}² ÷ (2 × {a}) = {ans} m.",
+   "dp": 1,
+   "unit": "m"
+  },
+  {
+   "topic": "kinematics",
+   "level": "advanced",
+   "type": "calc",
+   "q": "A ball is thrown straight up at {u} m s⁻¹. Taking g = 10 m s⁻², how high does it rise?",
+   "vars": {
+    "u": [
+     10,
+     40,
+     5
+    ]
+   },
+   "answer": "u*u/20",
+   "wrong": [
+    "u*u/10",
+    "u/10",
+    "u*10"
+   ],
+   "e": "At the top v = 0: h = u² ÷ 2g = {u}² ÷ 20 = {ans} m.",
+   "dp": 1,
+   "unit": "m"
+  },
+  {
+   "topic": "kinematics",
+   "level": "advanced",
+   "type": "calc",
+   "q": "Car A starts from rest with acceleration {a} m s⁻² just as car B passes it at a steady {v} m s⁻¹. After how long does A catch B?",
+   "vars": {
+    "a": [
+     1,
+     4,
+     1
+    ],
+    "v": [
+     5,
+     20,
+     1
+    ]
+   },
+   "answer": "2*v/a",
+   "wrong": [
+    "v/a",
+    "v*a",
+    "4*v/a"
+   ],
+   "e": "Same distance: ½ × {a} × t² = {v} × t → t = 2 × {v} ÷ {a} = {ans} s.",
+   "dp": 1,
+   "unit": "s"
+  },
+  {
+   "topic": "kinematics",
+   "level": "advanced",
+   "type": "calc",
+   "q": "A body starts from rest and moves with uniform acceleration {a} m s⁻². What is its velocity after covering {s} m?",
+   "vars": {
+    "a": [
+     2,
+     5,
+     1
+    ],
+    "k": [
+     2,
+     8,
+     1
+    ]
+   },
+   "answer": "Math.sqrt(2*a*s)",
+   "wrong": [
+    "2*a*s",
+    "a*s",
+    "Math.sqrt(a*s)"
+   ],
+   "e": "v² = 2as = 2 × {a} × {s}; v = {ans} m s⁻¹.",
+   "dp": 1,
+   "unit": "m s⁻¹",
+   "derive": {
+    "s": "2*a*k*k"
+   }
+  },
+  {
+   "topic": "circular",
+   "level": "advanced",
+   "type": "calc",
+   "q": "A stone tied to a string moves in a circle of radius {r} m, completing one revolution in {T} s. What is its speed? (Take π = 22/7.)",
+   "vars": {
+    "r": {
+     "of": [
+      7,
+      14,
+      21,
+      28,
+      35
+     ]
+    },
+    "T": [
+     2,
+     11,
+     1
+    ]
+   },
+   "answer": "2*22/7*r/T",
+   "wrong": [
+    "22/7*r/T",
+    "r/T",
+    "2*22/7*r*T"
+   ],
+   "e": "v = 2πr ÷ T = 2 × 22/7 × {r} ÷ {T} = {ans} m s⁻¹.",
+   "dp": 1,
+   "unit": "m s⁻¹"
+  },
+  {
+   "topic": "circular",
+   "level": "advanced",
+   "q": "A car goes round a circular track of radius r once. What are its distance and displacement?",
+   "a": "Distance 2πr; displacement 0",
+   "w": [
+    "Distance 0; displacement 2πr",
+    "Both 2πr",
+    "Distance 2r; displacement 2πr"
+   ],
+   "e": "It ends where it started."
+  },
+  {
+   "topic": "circular",
+   "level": "advanced",
+   "q": "In uniform circular motion, which quantity stays constant?",
+   "a": "Speed",
+   "w": [
+    "Velocity",
+    "Direction of motion",
+    "Displacement from the start"
+   ],
+   "e": "Only the magnitude of velocity (speed) is constant."
   }
  ]
 }
