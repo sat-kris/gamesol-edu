@@ -159,7 +159,7 @@ A multiple-choice question in a bank looks like this:
    "leaderboard": { "scriptUrl": "https://script.google.com/macros/s/AKfy…/exec" }
    ```
 5. Commit. Students now see the leaderboard and their rank. The French game uses the same link automatically.
-   Names are optional: each student is given a random fun game name (e.g. *NoCapNinja45*) that is remembered on their device. They can tap **🎲 New name** or type their own. There is no section field.
+   There is no name box and no section field. Each student gets a fun game name built from two word lists plus a number (e.g. *AuraCapybara18*), remembered on their device. They can pick the words or tap **🎲 Shuffle**, but cannot type, so real names never reach the leaderboard. `Code.gs` also rejects any name not built from the same word lists (redeploy after updating it).
 
 - Dashboard: `https://<username>.github.io/<repo>/dashboard.html`. Enter your teacher password. You can filter by period, class, subject, section and level, and see weak topics, students and the latest attempts.
 - Raw data: the **Attempts** tab of your Google Sheet.

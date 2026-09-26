@@ -54,7 +54,8 @@ h2{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-
 .step{display:flex;flex-direction:column;gap:10px;padding-bottom:14px;border-bottom:1px solid var(--line)}
 .step:last-of-type{border-bottom:0;padding-bottom:0}
 .fields{display:grid;grid-template-columns:2fr 1fr;gap:10px}
-.nick{font:inherit;font-size:16px;padding:9px 11px;border-radius:8px;border:1px solid var(--line-strong);background:var(--paper);color:var(--ink);flex:1 1 13em;min-width:0;max-width:22em}
+.nick{font:inherit;font-size:16px;padding:9px 11px;border-radius:8px;border:1px solid var(--line-strong);background:var(--paper);color:var(--ink);flex:1 1 9em;min-width:0;max-width:14em}
+.nicknum{font-weight:700;font-size:17px;padding:0 4px;font-variant-numeric:tabular-nums}
 .field{display:flex;flex-direction:column;gap:5px;font-size:14px;font-weight:700}
 .field input{font:inherit;font-weight:400;font-size:16px;padding:9px 11px;border-radius:8px;border:1px solid var(--line-strong);background:var(--paper);color:var(--ink)}
 .note,.muted{margin:0;font-size:13.5px;color:var(--ink-soft)}
@@ -443,12 +444,23 @@ const store={get(k){try{return JSON.parse(localStorage.getItem(k)||"null")}catch
 const LVL={easy:"Easy",hard:"Hard",advanced:"Advanced"};
 
 let CONFIG=null, API="", ONLINE=false;
-const NICK_A=["NoCap","Lowkey","BigBrain","MainCharacter","Certified","Vibey","Slay","Chill","Turbo","Sneaky","Mega","Goated","Epic","Galaxy","Glowup","Speedy","Cosmic","Hyper"];
-const NICK_B=["Panda","Mango","Ninja","Comet","Otter","Pixel","Tiger","Falcon","Nova","Koala","Rocket","Dragon","Samosa","Boba","Llama","Penguin","Wizard","Legend"];
-const nick=()=>NICK_A[Math.floor(Math.random()*NICK_A.length)]+NICK_B[Math.floor(Math.random()*NICK_B.length)]+(10+Math.floor(Math.random()*90));
-let player=Object.assign({name:"",auto:""},store.get("gamesol-player")||{});player.section="";
-if(!player.auto){player.auto=nick();store.set("gamesol-player",player)}
-const pname=()=>player.name||player.auto;
+/* Game names are built only from these word lists (no free typing), so real names never reach the leaderboard. */
+const NICK_A=["NoCap","Lowkey","Highkey","BigBrain","MainCharacter","Goated","Slay","Bussin","Vibey","Glowup","Aura","Cracked","Iconic","Legendary","Chill","Hype","Epic","Cosmic","Turbo","Mega","Ultra","Sparkly","Zoomy","Sneaky","Speedy","Galaxy","Neon","Fire","Yeet","Snacky","Pixel","Frosty"];
+const NICK_B=["Panda","Mango","Ninja","Comet","Otter","Axolotl","Capybara","Boba","Samosa","Taco","Llama","Penguin","Wizard","Legend","Dragon","Falcon","Tiger","Koala","Rocket","Nova","Unicorn","Dino","Bot","Noodle","Waffle","Pickle","Froggo","Doggo","Bunny","Yeti","Shark","Cactus","Cookie","Meteor"];
+const rndOf=a=>a[Math.floor(Math.random()*a.length)];
+const freshNick=()=>({a:rndOf(NICK_A),b:rndOf(NICK_B),n:10+Math.floor(Math.random()*90)});
+const validNick=k=>k&&NICK_A.includes(k.a)&&NICK_B.includes(k.b)&&k.n>=10&&k.n<=99;
+const nickPicker=()=>'<div class="row nickrow"><select id="nickA" class="nick" aria-label="First word">'+NICK_A.map(w=>'<option'+(w===player.nick.a?' selected':'')+'>'+w+'</option>').join("")+'</select>'+
+  '<select id="nickB" class="nick" aria-label="Second word">'+NICK_B.map(w=>'<option'+(w===player.nick.b?' selected':'')+'>'+w+'</option>').join("")+'</select>'+
+  '<span class="nicknum" id="nickN">'+player.nick.n+'</span><button type="button" class="btn small" id="nickBtn" title="Pick a new random name">🎲 Shuffle</button></div>';
+function bindNick(save){const A=document.getElementById("nickA"),B=document.getElementById("nickB"),N=document.getElementById("nickN"),show=document.getElementById("nickShow");if(!A)return;
+  const upd=()=>{player.nick.a=A.value;player.nick.b=B.value;N.textContent=player.nick.n;show.textContent=pname();save()};
+  A.addEventListener("change",upd);B.addEventListener("change",upd);
+  document.getElementById("nickBtn").addEventListener("click",()=>{player.nick=freshNick();A.value=player.nick.a;B.value=player.nick.b;upd()});}
+let player=store.get("gamesol-player")||{};
+if(!validNick(player.nick))player={nick:freshNick()};
+player={nick:player.nick};store.set("gamesol-player",player);
+const pname=()=>player.nick.a+player.nick.b+player.nick.n;
 let sel=Object.assign({cls:null,subject:null,chapter:null,topics:null,level:null,count:15,mode:null},store.get("gamesol-sel")||{});
 let BANK=null;
 const bankCache={};
@@ -486,10 +498,8 @@ function renderHome(){
 
   let h="";
   if(ONLINE){
-    h+='<div class="step"><h2>Your game name <span class="muted" style="text-transform:none;letter-spacing:0;font-weight:400">(optional)</span></h2><div class="row">'+
-      '<input id="pName" class="nick" type="text" maxlength="30" autocomplete="off" aria-label="Your game name" placeholder="'+esc(player.auto)+'" value="'+esc(player.name)+'">'+
-      '<button type="button" class="btn small" id="nickBtn" title="Pick a new random name">🎲 New name</button></div>'+
-      '<p class="note">You’ll play as <b id="nickShow">'+esc(pname())+'</b> on the leaderboard. Type your own if you like – keep it the same so your scores count together.</p></div>';
+    h+='<div class="step"><h2>Your game name</h2>'+nickPicker()+
+      '<p class="note">You’ll play as <b id="nickShow">'+esc(pname())+'</b>. Pick the words you like or tap 🎲. No real names here – keep the same game name so your scores add up.</p></div>';
   }
   h+='<div class="step"><h2>Class</h2><div class="pills">'+
     (classes.length?classes.map(c=>'<label class="pill"><input type="radio" name="cls" value="'+esc(c.id)+'"'+(c.id===sel.cls?" checked":"")+'><span>'+esc(c.name)+'</span></label>').join(""):'<p class="muted">No class is marked as ongoing in the config file.</p>')+
@@ -522,15 +532,14 @@ function renderHome(){
   $("home").querySelectorAll('input[name="subject"]').forEach(i=>i.addEventListener("change",()=>{sel.subject=i.value;sel.chapter=null;sel.topics=null;keepNames();renderHome()}));
   $("home").querySelectorAll('input[name="chapter"]').forEach(i=>i.addEventListener("change",()=>{sel.chapter=i.value;sel.topics=null;keepNames();renderHome()}));
   $("home").querySelectorAll('input[name="mode"]').forEach(i=>i.addEventListener("change",()=>{sel.mode=i.value;store.set("gamesol-sel",sel);keepNames();renderHome()}));
-  if($("nickBtn")){$("nickBtn").addEventListener("click",()=>{player.auto=nick();player.name="";$("pName").value="";$("pName").placeholder=player.auto;$("nickShow").textContent=pname();store.set("gamesol-player",player)});
-    $("pName").addEventListener("input",()=>{player.name=$("pName").value.replace(/\s+/g," ").trim();$("nickShow").textContent=pname();store.set("gamesol-player",player)})}
+  bindNick(()=>store.set("gamesol-player",player));
   $("home").querySelectorAll('.tutorIcon').forEach(b=>b.addEventListener("click",e=>{e.preventDefault();e.stopPropagation();const c=chapters.find(x=>x.id===b.dataset.tutor);sel.chapter=c.id;keepNames();openTutor(cls,subj,c,"overview")}));
   if(chap&&chap.tutor&&sel.mode==="play") loadTutor(chap).then(t=>renderPlaySummary(t,cls,subj,chap)).catch(()=>{$("topicStep").innerHTML='<p class="warn">Could not load the tutor file "'+esc(chap.tutor)+'".</p>'});
   else if(chap&&chap.tutor&&sel.mode==="tutor") loadTutor(chap).then(t=>renderTutorSummary(t,cls,subj,chap)).catch(()=>{$("topicStep").innerHTML='<h2>Chapter tutor</h2><p class="warn">Could not load the tutor file "'+esc(chap.tutor)+'". Check the path in edu-kids-config.json.</p>'});
   else if(chap) loadBank(chap).then(b=>renderTopics(b,cls,subj,chap)).catch(()=>{$("topicStep").innerHTML='<h2>Topics</h2><p class="warn">Could not load the question bank "'+esc(chap.bank)+'". Check the path in edu-kids-config.json.</p>'});
 }
 function soonLine(list){return list.length?'<p class="soon">Coming soon: '+list.map(x=>'<b>'+esc(x.name)+'</b>').join(", ")+'</p>':""}
-function keepNames(){if($("pName")){player.name=$("pName").value.replace(/\s+/g," ").trim();store.set("gamesol-player",player)}}
+function keepNames(){store.set("gamesol-player",player)}
 async function loadBank(chap){
   if(bankCache[chap.bank]) return bankCache[chap.bank];
   const r=await fetch(chap.bank,{cache:"no-store"});if(!r.ok)throw new Error(r.status);
