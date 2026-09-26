@@ -1,0 +1,710 @@
+{
+ "label": "School worksheet",
+ "source": "Loyola International School Grade 6 worksheets (Ch 1) and PA1 question bank",
+ "topics": [],
+ "questions": [
+  {
+   "topic": "seq",
+   "level": "easy",
+   "type": "calc",
+   "q": "What is the next number in the pattern?\n{s}, {t2}, {t3}, {t4}, ___",
+   "vars": {
+    "s": [
+     1,
+     20,
+     1
+    ],
+    "d": [
+     2,
+     9,
+     1
+    ]
+   },
+   "answer": "s+4*d",
+   "wrong": [
+    "s+4*d+1",
+    "s+3*d",
+    "s+5*d",
+    "s+4*d-1"
+   ],
+   "e": "The rule is ‘add {d}’: {t4} + {d} = {ans}.",
+   "dp": 0,
+   "derive": {
+    "t2": "s+d",
+    "t3": "s+2*d",
+    "t4": "s+3*d"
+   }
+  },
+  {
+   "topic": "seq",
+   "level": "easy",
+   "type": "pairs",
+   "q": "Identify the pattern rule: {x}, …",
+   "pairs": [
+    [
+     "3, 6, 9, 12, 15",
+     "Add 3"
+    ],
+    [
+     "2, 4, 6, 8, 10",
+     "Add 2"
+    ],
+    [
+     "88, 77, 66, 55, 44",
+     "Subtract 11"
+    ],
+    [
+     "3, 6, 12, 24, 48",
+     "Multiply by 2"
+    ],
+    [
+     "5, 9, 13, 17, 21",
+     "Add 4"
+    ],
+    [
+     "100, 90, 80, 70, 60",
+     "Subtract 10"
+    ],
+    [
+     "1, 3, 9, 27, 81",
+     "Multiply by 3"
+    ],
+    [
+     "64, 32, 16, 8, 4",
+     "Divide by 2"
+    ],
+    [
+     "7, 14, 21, 28, 35",
+     "Add 7"
+    ]
+   ],
+   "e": "{x} → rule: {ans}. Check it on every pair of neighbours, not just the first two."
+  },
+  {
+   "topic": "seq",
+   "level": "easy",
+   "type": "pairs",
+   "q": "Identify the pattern rule: {x}, …",
+   "pairs": [
+    [
+     "3, 6, 9, 12, 15",
+     "Add 3"
+    ],
+    [
+     "2, 4, 6, 8, 10",
+     "Add 2"
+    ],
+    [
+     "88, 77, 66, 55, 44",
+     "Subtract 11"
+    ],
+    [
+     "3, 6, 12, 24, 48",
+     "Multiply by 2"
+    ],
+    [
+     "5, 9, 13, 17, 21",
+     "Add 4"
+    ],
+    [
+     "100, 90, 80, 70, 60",
+     "Subtract 10"
+    ],
+    [
+     "1, 3, 9, 27, 81",
+     "Multiply by 3"
+    ],
+    [
+     "64, 32, 16, 8, 4",
+     "Divide by 2"
+    ],
+    [
+     "7, 14, 21, 28, 35",
+     "Add 7"
+    ]
+   ],
+   "e": "{x} → rule: {ans}. Check it on every pair of neighbours, not just the first two."
+  },
+  {
+   "topic": "seq",
+   "level": "easy",
+   "type": "pairs",
+   "q": "Identify the pattern rule: {x}, …",
+   "pairs": [
+    [
+     "3, 6, 9, 12, 15",
+     "Add 3"
+    ],
+    [
+     "2, 4, 6, 8, 10",
+     "Add 2"
+    ],
+    [
+     "88, 77, 66, 55, 44",
+     "Subtract 11"
+    ],
+    [
+     "3, 6, 12, 24, 48",
+     "Multiply by 2"
+    ],
+    [
+     "5, 9, 13, 17, 21",
+     "Add 4"
+    ],
+    [
+     "100, 90, 80, 70, 60",
+     "Subtract 10"
+    ],
+    [
+     "1, 3, 9, 27, 81",
+     "Multiply by 3"
+    ],
+    [
+     "64, 32, 16, 8, 4",
+     "Divide by 2"
+    ],
+    [
+     "7, 14, 21, 28, 35",
+     "Add 7"
+    ]
+   ],
+   "e": "{x} → rule: {ans}. Check it on every pair of neighbours, not just the first two."
+  },
+  {
+   "topic": "seq",
+   "level": "easy",
+   "type": "calc",
+   "q": "The 1st tower has {m} blocks, the 2nd tower has {m2} blocks and the 3rd tower has {m3} blocks. How many blocks will tower number {n} have?",
+   "vars": {
+    "m": {
+     "of": [
+      2,
+      3,
+      4,
+      5
+     ]
+    },
+    "n": [
+     6,
+     12,
+     1
+    ]
+   },
+   "answer": "m*n",
+   "wrong": [
+    "m*n+m",
+    "m*(n-1)",
+    "m+n",
+    "m*n+1"
+   ],
+   "e": "Each tower has {m} more blocks, so tower {n} has {m} × {n} = {ans} blocks.",
+   "dp": 0,
+   "derive": {
+    "m2": "2*m",
+    "m3": "3*m"
+   }
+  },
+  {
+   "topic": "seq",
+   "level": "hard",
+   "type": "calc",
+   "q": "In a plant nursery the rows have {m}, {m2}, {m3}, … plants. If the pattern continues, how many plants are there in row {n}?",
+   "vars": {
+    "m": {
+     "of": [
+      3,
+      4,
+      6
+     ]
+    },
+    "n": [
+     9,
+     25,
+     1
+    ]
+   },
+   "answer": "m*n",
+   "wrong": [
+    "m*n+m",
+    "m*(n-1)",
+    "m+n",
+    "2*m*n"
+   ],
+   "e": "Row n has {m} × n plants: {m} × {n} = {ans}.",
+   "dp": 0,
+   "derive": {
+    "m2": "2*m",
+    "m3": "3*m"
+   }
+  },
+  {
+   "topic": "seq",
+   "level": "easy",
+   "type": "calc",
+   "q": "A gardener puts 2 pots in the 1st row, 4 in the 2nd, 6 in the 3rd, and so on. How many pots are in row {n}?",
+   "vars": {
+    "n": [
+     7,
+     15,
+     1
+    ]
+   },
+   "answer": "2*n",
+   "wrong": [
+    "2*n+2",
+    "2*n-2",
+    "n+2",
+    "n*n"
+   ],
+   "e": "The rule is ‘add 2’ (even numbers): row {n} has 2 × {n} = {ans} pots.",
+   "dp": 0
+  },
+  {
+   "topic": "relations",
+   "level": "easy",
+   "q": "What sequence do we get when we add up odd numbers (1, 1+3, 1+3+5, …)?",
+   "a": "Square numbers",
+   "w": [
+    "Cube numbers",
+    "Triangular numbers",
+    "Even numbers"
+   ],
+   "e": "1, 4, 9, 16, … – adding the first n odd numbers gives n × n."
+  },
+  {
+   "topic": "relations",
+   "level": "hard",
+   "type": "calc",
+   "q": "What is the sum of the first {n} odd numbers?",
+   "vars": {
+    "n": [
+     8,
+     20,
+     1
+    ]
+   },
+   "answer": "n*n",
+   "wrong": [
+    "n*(n+1)",
+    "2*n",
+    "n*n-1",
+    "n*(n+1)/2"
+   ],
+   "e": "1 + 3 + 5 + … (first {n} odd numbers) = {n} × {n} = {ans}.",
+   "dp": 0
+  },
+  {
+   "topic": "relations",
+   "level": "easy",
+   "q": "The sequence 1, 2, 3, 5, 8, 13, 21, … is called the…",
+   "a": "Virahānka (Fibonacci) sequence",
+   "w": [
+    "Triangular number sequence",
+    "Square number sequence",
+    "Powers of 2"
+   ],
+   "e": "Each number is the sum of the two before it: 8 + 13 = 21."
+  },
+  {
+   "topic": "seq",
+   "level": "easy",
+   "q": "The branch of Mathematics that studies patterns in whole numbers is called…",
+   "a": "Number theory",
+   "w": [
+    "Geometry",
+    "Data handling",
+    "Mensuration"
+   ],
+   "e": "Number theory is the study of patterns and relationships among whole numbers."
+  },
+  {
+   "topic": "seq",
+   "level": "easy",
+   "q": "How are the terms of 3, 6, 12, 24, … generated?",
+   "a": "By multiplying the previous term by 2",
+   "w": [
+    "By adding 3 each time",
+    "By adding 6 each time",
+    "By squaring the previous term"
+   ],
+   "e": "3 × 2 = 6, 6 × 2 = 12, 12 × 2 = 24 – so the next term is 48."
+  },
+  {
+   "topic": "shapes",
+   "level": "easy",
+   "q": "A regular polygon is a shape with…",
+   "a": "all sides equal and all angles equal",
+   "w": [
+    "all sides equal but angles different",
+    "exactly four equal sides",
+    "at least one curved side"
+   ],
+   "e": "Equilateral triangle, square and regular hexagon are regular polygons."
+  },
+  {
+   "topic": "relations",
+   "level": "easy",
+   "type": "pairs",
+   "q": "Is {x} a square number, a cube number, both, or neither?",
+   "pairs": [
+    [
+     "16",
+     "Square number only"
+    ],
+    [
+     "49",
+     "Square number only"
+    ],
+    [
+     "81",
+     "Square number only"
+    ],
+    [
+     "100",
+     "Square number only"
+    ],
+    [
+     "8",
+     "Cube number only"
+    ],
+    [
+     "27",
+     "Cube number only"
+    ],
+    [
+     "125",
+     "Cube number only"
+    ],
+    [
+     "64",
+     "Both square and cube"
+    ],
+    [
+     "12",
+     "Neither"
+    ],
+    [
+     "20",
+     "Neither"
+    ],
+    [
+     "50",
+     "Neither"
+    ]
+   ],
+   "e": "{x}: {ans}. Squares: 1, 4, 9, 16, 25, 36, 49, 64, 81, 100. Cubes: 1, 8, 27, 64, 125."
+  },
+  {
+   "topic": "relations",
+   "level": "easy",
+   "type": "pairs",
+   "q": "Is {x} a square number, a cube number, both, or neither?",
+   "pairs": [
+    [
+     "16",
+     "Square number only"
+    ],
+    [
+     "49",
+     "Square number only"
+    ],
+    [
+     "81",
+     "Square number only"
+    ],
+    [
+     "100",
+     "Square number only"
+    ],
+    [
+     "8",
+     "Cube number only"
+    ],
+    [
+     "27",
+     "Cube number only"
+    ],
+    [
+     "125",
+     "Cube number only"
+    ],
+    [
+     "64",
+     "Both square and cube"
+    ],
+    [
+     "12",
+     "Neither"
+    ],
+    [
+     "20",
+     "Neither"
+    ],
+    [
+     "50",
+     "Neither"
+    ]
+   ],
+   "e": "{x}: {ans}. Squares: 1, 4, 9, 16, 25, 36, 49, 64, 81, 100. Cubes: 1, 8, 27, 64, 125."
+  },
+  {
+   "topic": "relations",
+   "level": "easy",
+   "type": "pairs",
+   "q": "Is {x} a square number, a cube number, both, or neither?",
+   "pairs": [
+    [
+     "16",
+     "Square number only"
+    ],
+    [
+     "49",
+     "Square number only"
+    ],
+    [
+     "81",
+     "Square number only"
+    ],
+    [
+     "100",
+     "Square number only"
+    ],
+    [
+     "8",
+     "Cube number only"
+    ],
+    [
+     "27",
+     "Cube number only"
+    ],
+    [
+     "125",
+     "Cube number only"
+    ],
+    [
+     "64",
+     "Both square and cube"
+    ],
+    [
+     "12",
+     "Neither"
+    ],
+    [
+     "20",
+     "Neither"
+    ],
+    [
+     "50",
+     "Neither"
+    ]
+   ],
+   "e": "{x}: {ans}. Squares: 1, 4, 9, 16, 25, 36, 49, 64, 81, 100. Cubes: 1, 8, 27, 64, 125."
+  },
+  {
+   "topic": "relations",
+   "level": "hard",
+   "q": "Which number is both a square number and a triangular number?",
+   "a": "36",
+   "w": [
+    "16",
+    "25",
+    "49"
+   ],
+   "e": "36 = 6 × 6 and 36 = 1 + 2 + 3 + … + 8. (1 is the other small example.)"
+  },
+  {
+   "topic": "relations",
+   "level": "easy",
+   "q": "The sequence 1, 4, 9, 16, 25, … is an example of…",
+   "a": "square numbers",
+   "w": [
+    "cube numbers",
+    "triangular numbers",
+    "odd numbers"
+   ],
+   "e": "1 × 1, 2 × 2, 3 × 3, … – these are squares, not cubes (cubes are 1, 8, 27, 64)."
+  },
+  {
+   "topic": "relations",
+   "level": "hard",
+   "q": "Is 64 a square number or a cube number?",
+   "a": "Both – 8 × 8 and 4 × 4 × 4",
+   "w": [
+    "Only a square number",
+    "Only a cube number",
+    "Neither"
+   ],
+   "e": "64 = 8 × 8 = 4 × 4 × 4."
+  },
+  {
+   "topic": "seq",
+   "level": "hard",
+   "q": "Assertion (A): The sequence 1, 3, 5, 7, 9, … is an odd number sequence.\nReason (R): The sequence 2, 4, 6, 8, … is an even number sequence.",
+   "a": "Both A and R are true but R is not the correct explanation of A.",
+   "w": [
+    "Both A and R are true and R is the correct explanation of A.",
+    "A is true but R is false.",
+    "A is false but R is true."
+   ],
+   "e": "Both statements are true, but the even sequence does not explain why the first one is odd."
+  },
+  {
+   "topic": "visual",
+   "level": "hard",
+   "q": "Assertion (A): All square numbers can be arranged in equal rows and columns.\nReason (R): Square numbers are formed by multiplying a number by itself.",
+   "a": "Both A and R are true and R is the correct explanation of A.",
+   "w": [
+    "Both A and R are true but R is not the correct explanation of A.",
+    "A is true but R is false.",
+    "A is false but R is true."
+   ],
+   "e": "n × n means n rows of n – which is exactly a square arrangement."
+  },
+  {
+   "topic": "relations",
+   "level": "hard",
+   "q": "Assertion (A): All odd numbers are prime numbers.\nReason (R): Odd numbers are not divisible by 2.",
+   "a": "A is false but R is true.",
+   "w": [
+    "Both A and R are true and R is the correct explanation of A.",
+    "Both A and R are true but R is not the correct explanation of A.",
+    "A is true but R is false."
+   ],
+   "e": "9, 15 and 21 are odd but not prime, so A is false; R is true."
+  },
+  {
+   "topic": "visual",
+   "level": "easy",
+   "type": "calc",
+   "q": "Annual Day LED lights grow in a square pattern: 1, 4, 9, 16 lights. How many lights are needed for Pattern {n}?",
+   "vars": {
+    "n": [
+     5,
+     12,
+     1
+    ]
+   },
+   "answer": "n*n",
+   "wrong": [
+    "2*n",
+    "n*n+n",
+    "(n-1)*(n-1)",
+    "4*n"
+   ],
+   "e": "Pattern {n} is a {n} × {n} square: {ans} lights.",
+   "dp": 0
+  },
+  {
+   "topic": "visual",
+   "level": "hard",
+   "type": "calc",
+   "q": "A toy shop packs 1, 8, 27 and 64 balls in the first four boxes. How many balls will box number {n} hold?",
+   "vars": {
+    "n": [
+     5,
+     8,
+     1
+    ]
+   },
+   "answer": "n*n*n",
+   "wrong": [
+    "n*n",
+    "n*n*n-1",
+    "3*n*n",
+    "(n+1)*(n+1)*(n+1)"
+   ],
+   "e": "These are cube numbers: {n} × {n} × {n} = {ans}.",
+   "dp": 0
+  },
+  {
+   "topic": "visual",
+   "level": "easy",
+   "q": "Square numbers can be shown as dots arranged in…",
+   "a": "a square with equal rows and columns",
+   "w": [
+    "a triangle",
+    "a single line",
+    "a hexagon"
+   ],
+   "e": "16 = 4 rows of 4 dots."
+  }
+ ],
+ "play": [
+  {
+   "topic": "relations",
+   "activity": {
+    "type": "sort",
+    "title": "Square, cube or both?",
+    "say": "From your school worksheet: sort each number. Squares are n × n, cubes are n × n × n.",
+    "buckets": [
+     "Square only",
+     "Cube only",
+     "Both",
+     "Neither"
+    ],
+    "items": [
+     [
+      "16",
+      0,
+      "4 × 4"
+     ],
+     [
+      "49",
+      0,
+      "7 × 7"
+     ],
+     [
+      "81",
+      0,
+      "9 × 9"
+     ],
+     [
+      "100",
+      0,
+      "10 × 10"
+     ],
+     [
+      "36",
+      0,
+      "6 × 6 – also triangular!"
+     ],
+     [
+      "8",
+      1,
+      "2 × 2 × 2"
+     ],
+     [
+      "27",
+      1,
+      "3 × 3 × 3"
+     ],
+     [
+      "125",
+      1,
+      "5 × 5 × 5"
+     ],
+     [
+      "64",
+      2,
+      "8 × 8 and 4 × 4 × 4"
+     ],
+     [
+      "1",
+      2,
+      "1 × 1 and 1 × 1 × 1"
+     ],
+     [
+      "12",
+      3,
+      "Not n × n or n × n × n"
+     ],
+     [
+      "50",
+      3,
+      "Between 49 and 64"
+     ]
+    ]
+   }
+  }
+ ]
+}

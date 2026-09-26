@@ -1,0 +1,826 @@
+{
+ "label": "School worksheet",
+ "source": "Loyola International School Grade 6 worksheet (Ch 2) and PA1 question bank",
+ "topics": [
+  {
+   "id": "triangle",
+   "ref": "School",
+   "name": "Angles in a triangle (school question bank)"
+  }
+ ],
+ "questions": [
+  {
+   "topic": "basics",
+   "level": "easy",
+   "type": "pairs",
+   "q": "Which geometric term best describes {x}?",
+   "pairs": [
+    [
+     "a beam of light from a laser pointer",
+     "Ray"
+    ],
+    [
+     "a straight highway that goes on forever in both directions",
+     "Line"
+    ],
+    [
+     "a new, unsharpened pencil",
+     "Line segment"
+    ],
+    [
+     "a single star in the night sky",
+     "Point"
+    ],
+    [
+     "the edge of a ruler",
+     "Line segment"
+    ],
+    [
+     "a torch beam shining into the sky",
+     "Ray"
+    ],
+    [
+     "the tip of a sharp needle",
+     "Point"
+    ],
+    [
+     "a railway track imagined to go on endlessly both ways",
+     "Line"
+    ]
+   ],
+   "e": "{x} → {ans}. Point: a location. Segment: two end points. Ray: one start point. Line: no end points."
+  },
+  {
+   "topic": "basics",
+   "level": "easy",
+   "type": "pairs",
+   "q": "Which geometric term best describes {x}?",
+   "pairs": [
+    [
+     "a beam of light from a laser pointer",
+     "Ray"
+    ],
+    [
+     "a straight highway that goes on forever in both directions",
+     "Line"
+    ],
+    [
+     "a new, unsharpened pencil",
+     "Line segment"
+    ],
+    [
+     "a single star in the night sky",
+     "Point"
+    ],
+    [
+     "the edge of a ruler",
+     "Line segment"
+    ],
+    [
+     "a torch beam shining into the sky",
+     "Ray"
+    ],
+    [
+     "the tip of a sharp needle",
+     "Point"
+    ],
+    [
+     "a railway track imagined to go on endlessly both ways",
+     "Line"
+    ]
+   ],
+   "e": "{x} → {ans}. Point: a location. Segment: two end points. Ray: one start point. Line: no end points."
+  },
+  {
+   "topic": "basics",
+   "level": "easy",
+   "type": "pairs",
+   "q": "Which geometric term best describes {x}?",
+   "pairs": [
+    [
+     "a beam of light from a laser pointer",
+     "Ray"
+    ],
+    [
+     "a straight highway that goes on forever in both directions",
+     "Line"
+    ],
+    [
+     "a new, unsharpened pencil",
+     "Line segment"
+    ],
+    [
+     "a single star in the night sky",
+     "Point"
+    ],
+    [
+     "the edge of a ruler",
+     "Line segment"
+    ],
+    [
+     "a torch beam shining into the sky",
+     "Ray"
+    ],
+    [
+     "the tip of a sharp needle",
+     "Point"
+    ],
+    [
+     "a railway track imagined to go on endlessly both ways",
+     "Line"
+    ]
+   ],
+   "e": "{x} → {ans}. Point: a location. Segment: two end points. Ray: one start point. Line: no end points."
+  },
+  {
+   "topic": "basics",
+   "level": "easy",
+   "q": "What is the main difference between a line segment and a line?",
+   "a": "A segment has two end points and a fixed length; a line has no end points",
+   "w": [
+    "A line has two end points; a segment has none",
+    "A segment goes on forever in one direction",
+    "There is no difference"
+   ],
+   "e": "A line extends endlessly in both directions, so it cannot be measured."
+  },
+  {
+   "topic": "basics",
+   "level": "hard",
+   "q": "Assertion (A): A ray has two end points.\nReason (R): A ray starts from one point and extends endlessly in one direction.",
+   "a": "A is false but R is true.",
+   "w": [
+    "Both A and R are true and R is the correct explanation of A.",
+    "Both A and R are true but R is not the correct explanation of A.",
+    "A is true but R is false."
+   ],
+   "e": "A ray has only ONE end point, so A is false; R correctly describes a ray."
+  },
+  {
+   "topic": "angles",
+   "level": "easy",
+   "type": "pairs",
+   "q": "A robot arm starts flat on the table (0°) and turns {x} of a full circle. What angle does it make?",
+   "pairs": [
+    [
+     "¼",
+     "90°"
+    ],
+    [
+     "½",
+     "180°"
+    ],
+    [
+     "¾",
+     "270°"
+    ],
+    [
+     "⅛",
+     "45°"
+    ],
+    [
+     "one full turn",
+     "360°"
+    ]
+   ],
+   "e": "A full turn is 360°, so {x} of it is {ans}."
+  },
+  {
+   "topic": "angles",
+   "level": "easy",
+   "type": "pairs",
+   "q": "A robot arm starts flat on the table (0°) and turns {x} of a full circle. What angle does it make?",
+   "pairs": [
+    [
+     "¼",
+     "90°"
+    ],
+    [
+     "½",
+     "180°"
+    ],
+    [
+     "¾",
+     "270°"
+    ],
+    [
+     "⅛",
+     "45°"
+    ],
+    [
+     "one full turn",
+     "360°"
+    ]
+   ],
+   "e": "A full turn is 360°, so {x} of it is {ans}."
+  },
+  {
+   "topic": "types",
+   "level": "easy",
+   "type": "pairs",
+   "q": "A {x} turn makes which type of angle?",
+   "pairs": [
+    [
+     "quarter (¼)",
+     "Right angle"
+    ],
+    [
+     "half (½)",
+     "Straight angle"
+    ],
+    [
+     "three-quarter (¾)",
+     "Reflex angle"
+    ],
+    [
+     "one-eighth (⅛)",
+     "Acute angle"
+    ],
+    [
+     "one-third (⅓)",
+     "Obtuse angle"
+    ]
+   ],
+   "e": "¼ turn = 90°, ½ turn = 180°, ¾ turn = 270°, ⅛ turn = 45°, ⅓ turn = 120°."
+  },
+  {
+   "topic": "types",
+   "level": "easy",
+   "type": "pairs",
+   "q": "A {x} turn makes which type of angle?",
+   "pairs": [
+    [
+     "quarter (¼)",
+     "Right angle"
+    ],
+    [
+     "half (½)",
+     "Straight angle"
+    ],
+    [
+     "three-quarter (¾)",
+     "Reflex angle"
+    ],
+    [
+     "one-eighth (⅛)",
+     "Acute angle"
+    ],
+    [
+     "one-third (⅓)",
+     "Obtuse angle"
+    ]
+   ],
+   "e": "¼ turn = 90°, ½ turn = 180°, ¾ turn = 270°, ⅛ turn = 45°, ⅓ turn = 120°."
+  },
+  {
+   "topic": "angles",
+   "level": "easy",
+   "q": "Fatima opens her scissors slightly to cut thread. Mariam opens hers wide to cut cardboard. Who makes the larger angle?",
+   "a": "Mariam – her blades are turned further apart",
+   "w": [
+    "Fatima – smaller openings make bigger angles",
+    "Both are equal because the scissors are the same",
+    "It depends on how long the blades are"
+   ],
+   "e": "The size of an angle is the amount of turn between the arms, not the length of the arms."
+  },
+  {
+   "topic": "types",
+   "level": "easy",
+   "type": "pairs",
+   "q": "At {x}, the hands of a clock make which type of angle?",
+   "pairs": [
+    [
+     "3:00",
+     "Right angle"
+    ],
+    [
+     "9:00",
+     "Right angle"
+    ],
+    [
+     "6:00",
+     "Straight angle"
+    ],
+    [
+     "5:00",
+     "Obtuse angle"
+    ],
+    [
+     "4:00",
+     "Obtuse angle"
+    ],
+    [
+     "1:00",
+     "Acute angle"
+    ],
+    [
+     "2:00",
+     "Acute angle"
+    ],
+    [
+     "10:00",
+     "Acute angle"
+    ],
+    [
+     "8:00",
+     "Obtuse angle"
+    ]
+   ],
+   "e": "Hour marks are 30° apart: count the gaps between the hands (take the smaller angle). {x} → {ans}."
+  },
+  {
+   "topic": "types",
+   "level": "easy",
+   "type": "pairs",
+   "q": "At {x}, the hands of a clock make which type of angle?",
+   "pairs": [
+    [
+     "3:00",
+     "Right angle"
+    ],
+    [
+     "9:00",
+     "Right angle"
+    ],
+    [
+     "6:00",
+     "Straight angle"
+    ],
+    [
+     "5:00",
+     "Obtuse angle"
+    ],
+    [
+     "4:00",
+     "Obtuse angle"
+    ],
+    [
+     "1:00",
+     "Acute angle"
+    ],
+    [
+     "2:00",
+     "Acute angle"
+    ],
+    [
+     "10:00",
+     "Acute angle"
+    ],
+    [
+     "8:00",
+     "Obtuse angle"
+    ]
+   ],
+   "e": "Hour marks are 30° apart: count the gaps between the hands (take the smaller angle). {x} → {ans}."
+  },
+  {
+   "topic": "types",
+   "level": "easy",
+   "type": "pairs",
+   "q": "At {x}, the hands of a clock make which type of angle?",
+   "pairs": [
+    [
+     "3:00",
+     "Right angle"
+    ],
+    [
+     "9:00",
+     "Right angle"
+    ],
+    [
+     "6:00",
+     "Straight angle"
+    ],
+    [
+     "5:00",
+     "Obtuse angle"
+    ],
+    [
+     "4:00",
+     "Obtuse angle"
+    ],
+    [
+     "1:00",
+     "Acute angle"
+    ],
+    [
+     "2:00",
+     "Acute angle"
+    ],
+    [
+     "10:00",
+     "Acute angle"
+    ],
+    [
+     "8:00",
+     "Obtuse angle"
+    ]
+   ],
+   "e": "Hour marks are 30° apart: count the gaps between the hands (take the smaller angle). {x} → {ans}."
+  },
+  {
+   "topic": "types",
+   "level": "hard",
+   "type": "calc",
+   "q": "At {h}:00, what is the angle between the hour hand and the minute hand?",
+   "vars": {
+    "h": [
+     1,
+     6,
+     1
+    ]
+   },
+   "answer": "30*h",
+   "wrong": [
+    "30*h+30",
+    "360-30*h",
+    "5*h",
+    "12*h"
+   ],
+   "e": "Each hour gap is 360° ÷ 12 = 30°, so {h} gaps = {ans}°.",
+   "dp": 0,
+   "unit": "°"
+  },
+  {
+   "topic": "types",
+   "level": "advanced",
+   "q": "At 1:30, what is the smaller angle between the hands of a clock?",
+   "a": "135°",
+   "w": [
+    "45°",
+    "90°",
+    "150°"
+   ],
+   "e": "The minute hand is at 6 (180° from 12). The hour hand is halfway between 1 and 2 (45° from 12). 180° − 45° = 135°. (Careful: it is not 45°.)"
+  },
+  {
+   "topic": "types",
+   "level": "easy",
+   "type": "calc",
+   "q": "A skate ramp must meet the ground at an angle less than 90°. Which could be the ramp’s angle?",
+   "vars": {
+    "a": [
+     15,
+     75,
+     5
+    ]
+   },
+   "answer": "a",
+   "wrong": [
+    "90",
+    "90+a",
+    "180",
+    "270-a"
+   ],
+   "e": "Less than 90° means an acute angle, so {ans}° works.",
+   "dp": 0,
+   "unit": "°"
+  },
+  {
+   "topic": "angles",
+   "level": "hard",
+   "type": "calc",
+   "q": "A laptop screen makes an angle of {s}° with the keyboard. You push the screen forward (closing it) by {c}°. What is the new angle?",
+   "vars": {
+    "s": [
+     100,
+     150,
+     10
+    ],
+    "c": [
+     10,
+     60,
+     10
+    ]
+   },
+   "answer": "s-c",
+   "wrong": [
+    "s+c",
+    "180-s",
+    "c",
+    "s-c+10"
+   ],
+   "e": "Closing makes the angle smaller: {s}° − {c}° = {ans}°. Check its type: under 90° is acute, over 90° is obtuse.",
+   "dp": 0,
+   "unit": "°",
+   "where": "s-c!==90"
+  },
+  {
+   "topic": "angles",
+   "level": "hard",
+   "type": "calc",
+   "q": "A laptop screen is open at {s}°. You open it further by {c}°. What is the new angle?",
+   "vars": {
+    "s": [
+     95,
+     130,
+     5
+    ],
+    "c": [
+     10,
+     40,
+     5
+    ]
+   },
+   "answer": "s+c",
+   "wrong": [
+    "s-c",
+    "180-s-c",
+    "s*2",
+    "s+c+10"
+   ],
+   "e": "Opening makes the angle larger: {s}° + {c}° = {ans}° (an obtuse angle).",
+   "dp": 0,
+   "unit": "°",
+   "where": "s+c<180"
+  },
+  {
+   "topic": "types",
+   "level": "easy",
+   "q": "Which is greater: a right angle or a straight angle?",
+   "a": "A straight angle (180°) – twice a right angle",
+   "w": [
+    "A right angle",
+    "They are equal",
+    "It depends on the arms"
+   ],
+   "e": "Right angle = 90°, straight angle = 180°."
+  },
+  {
+   "topic": "angles",
+   "level": "easy",
+   "q": "What are the arms of ∠OBQ?",
+   "a": "BO and BQ",
+   "w": [
+    "OB and OQ",
+    "OQ and BQ",
+    "QO and QB"
+   ],
+   "e": "The middle letter is the vertex (B); the arms start at B and pass through O and Q."
+  },
+  {
+   "topic": "angles",
+   "level": "easy",
+   "q": "What are the arms of ∠PQR?",
+   "a": "QP and QR",
+   "w": [
+    "PQ and PR",
+    "PR and QR",
+    "RP and RQ"
+   ],
+   "e": "The middle letter Q is the vertex; the arms are QP and QR."
+  },
+  {
+   "topic": "types",
+   "level": "hard",
+   "q": "Why do perpendicular lines always form right angles?",
+   "a": "Perpendicular lines are defined as lines that meet at 90°",
+   "w": [
+    "Because they never meet",
+    "Because they are the same length",
+    "Because they are parallel"
+   ],
+   "e": "If two lines meet at 90°, all four angles formed are right angles."
+  },
+  {
+   "topic": "types",
+   "level": "hard",
+   "q": "Assertion (A): Every obtuse angle is greater than a right angle.\nReason (R): A right angle measures 90°.",
+   "a": "Both A and R are true and R is the correct explanation of A.",
+   "w": [
+    "Both A and R are true but R is not the correct explanation of A.",
+    "A is true but R is false.",
+    "A is false but R is true."
+   ],
+   "e": "An obtuse angle lies between 90° and 180°, so it is always greater than 90°."
+  },
+  {
+   "topic": "measure",
+   "level": "easy",
+   "q": "When drawing ∠A = 55° with a protractor, where must the vertex A be placed?",
+   "a": "On the centre point of the protractor, with one arm along the 0° line",
+   "w": [
+    "On the 55° mark",
+    "At the end of the scale",
+    "Anywhere on the straight edge"
+   ],
+   "e": "Centre on the vertex, base arm on 0°, then mark 55° on the scale that starts from 0."
+  },
+  {
+   "topic": "measure",
+   "level": "hard",
+   "q": "The arm of an angle points to 60 on the outer scale and 120 on the inner scale. The base arm lies along the 0° of the outer scale. What is the angle?",
+   "a": "60°",
+   "w": [
+    "120°",
+    "90°",
+    "180°"
+   ],
+   "e": "Always read the scale that starts at 0 on the base arm – here the outer scale gives 60°."
+  },
+  {
+   "topic": "measure",
+   "level": "hard",
+   "q": "To draw an obtuse angle of 135°, the arm must be drawn…",
+   "a": "past the 90° mark, at 135 on the scale that starts from 0",
+   "w": [
+    "before the 90° mark",
+    "exactly on the 90° mark",
+    "on the 45° mark of the same scale"
+   ],
+   "e": "Obtuse angles are between 90° and 180°; 135° = 90° + 45°."
+  },
+  {
+   "topic": "triangle",
+   "level": "easy",
+   "q": "What is the sum of the three angles inside any triangle?",
+   "a": "180°",
+   "w": [
+    "90°",
+    "360°",
+    "270°"
+   ],
+   "e": "The angles of every triangle add up to a straight angle, 180°."
+  },
+  {
+   "topic": "triangle",
+   "level": "easy",
+   "type": "calc",
+   "q": "Two angles of a triangle are {a}° and {b}°. Find the third angle.",
+   "vars": {
+    "a": [
+     30,
+     80,
+     5
+    ],
+    "b": [
+     30,
+     80,
+     5
+    ]
+   },
+   "answer": "180-a-b",
+   "wrong": [
+    "360-a-b",
+    "a+b",
+    "90-a+b",
+    "180-a"
+   ],
+   "e": "180° − {a}° − {b}° = {ans}°.",
+   "dp": 0,
+   "unit": "°",
+   "where": "a+b<160"
+  },
+  {
+   "topic": "triangle",
+   "level": "hard",
+   "type": "calc",
+   "q": "One angle of a triangle is 90° and another is {b}°. Find the third angle.",
+   "vars": {
+    "b": [
+     20,
+     70,
+     5
+    ]
+   },
+   "answer": "90-b",
+   "wrong": [
+    "180-b",
+    "90+b",
+    "b",
+    "100-b"
+   ],
+   "e": "180° − 90° − {b}° = {ans}°. The other two angles of a right triangle add up to 90°.",
+   "dp": 0,
+   "unit": "°"
+  },
+  {
+   "topic": "triangle",
+   "level": "advanced",
+   "type": "calc",
+   "q": "In a triangle, one angle is {a}° and the other two angles are equal. What is each of the equal angles?",
+   "vars": {
+    "a": [
+     20,
+     100,
+     10
+    ]
+   },
+   "answer": "(180-a)/2",
+   "wrong": [
+    "180-a",
+    "(180+a)/2",
+    "90-a",
+    "a/2"
+   ],
+   "e": "(180° − {a}°) ÷ 2 = {ans}°.",
+   "dp": 0,
+   "unit": "°"
+  }
+ ],
+ "play": [
+  {
+   "topic": "basics",
+   "activity": {
+    "type": "match",
+    "title": "Real world → geometry",
+    "say": "From your worksheet: match each everyday thing with the geometric idea it shows.",
+    "pairs": [
+     [
+      "Laser pointer beam",
+      "Ray"
+     ],
+     [
+      "Endless straight highway",
+      "Line"
+     ],
+     [
+      "Unsharpened pencil",
+      "Line segment"
+     ],
+     [
+      "A single star",
+      "Point"
+     ]
+    ]
+   }
+  },
+  {
+   "topic": "types",
+   "activity": {
+    "type": "sort",
+    "title": "Angles all around us",
+    "say": "Sort each real-life angle by its type.",
+    "buckets": [
+     "Acute",
+     "Right",
+     "Obtuse",
+     "Straight"
+    ],
+    "items": [
+     [
+      "Clock at 3:00",
+      1,
+      "90°"
+     ],
+     [
+      "Clock at 6:00",
+      3,
+      "180°"
+     ],
+     [
+      "Clock at 5:00",
+      2,
+      "150°"
+     ],
+     [
+      "Clock at 2:00",
+      0,
+      "60°"
+     ],
+     [
+      "Robot arm turns ¼ circle",
+      1,
+      "90°"
+     ],
+     [
+      "Robot arm turns ½ circle",
+      3,
+      "180°"
+     ],
+     [
+      "Skate ramp meeting the ground",
+      0,
+      "Less than 90°"
+     ],
+     [
+      "Laptop open at 110°",
+      2,
+      "Between 90° and 180°"
+     ],
+     [
+      "Laptop at 110° closed by 30°",
+      0,
+      "80°"
+     ],
+     [
+      "Book lying fully open, flat",
+      3,
+      "180°"
+     ],
+     [
+      "Corner of a page",
+      1,
+      "90°"
+     ],
+     [
+      "Scissors opened slightly",
+      0,
+      "A small turn"
+     ]
+    ]
+   }
+  }
+ ]
+}
