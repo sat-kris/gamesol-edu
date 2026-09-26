@@ -32,6 +32,35 @@ Only items with `"status": "ongoing"` can be selected. Anything else (e.g. `"upc
 
 Edit the file on GitHub with the ✏️ pencil icon and commit. The site updates in about a minute.
 
+### Extra sources (e.g. school worksheets) and how to switch them off
+
+A chapter can list extra question files in `"extras"`. Their questions join the chapter's quiz (tagged **School worksheet**),
+any new topics appear in the topic list, and any `play` activities are added to Play & learn.
+
+```json
+{ "id": "ch2", "name": "Chapter 2 · Lines and Angles", "status": "ongoing",
+  "bank": "6/maths/bank-ch2-lines-angles.json", "tutor": "6/maths/tutor-ch2-lines-angles.json",
+  "extras": ["6/maths/adds/adds-ch2-lines-angles.json"] }
+```
+
+To **exclude every file in an `adds` folder** in one step, put the folder name in `exclude` at the top of the config:
+
+```json
+"exclude": ["adds"],
+```
+
+Remove it again (`"exclude": []`) to switch them back on. Nothing else needs to change. Class VI Maths currently has
+extras for Chapters 1, 2 and 4 built from the Loyola International School worksheets and PA1 question bank in `6/maths/adds/`.
+
+### Levels: Easy, Hard and Advanced
+
+Every quiz offers **Easy**, **Hard** and **Advanced**. Advanced questions stay inside the same syllabus but are multi-step,
+use unfamiliar contexts or combine ideas (e.g. average speed over two halves of a trip, reflex angles, Collatz step counts,
+"which statement is NOT correct" and assertion–reason in Social Science). Questions are marked with `"level": "advanced"` in
+the bank files; if a topic has none, Advanced falls back to Hard questions for that topic. The French game has its own
+**Avancé** level. The leaderboard and dashboard track Advanced separately – after updating, paste the new
+`apps-script/Code.gs` into your Apps Script project and choose **Deploy → Manage deployments → Edit → New version**.
+
 ## Science Chapter 4 topics
 
 | Ref | Topic |

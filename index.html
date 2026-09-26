@@ -94,6 +94,7 @@ h2{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-
   background-image:repeating-linear-gradient(to bottom,transparent 0 31px,var(--line-strong) 31px 32px),repeating-linear-gradient(to bottom,transparent 0 7px,var(--line) 7px 8px);background-position:0 14px}
 .sheet::before{content:"";position:absolute;top:0;bottom:0;left:40px;width:2px;background:var(--margin);opacity:.75}
 .qnum{position:absolute;left:0;width:40px;top:28px;text-align:center;font-family:"Young Serif",Georgia,serif;color:var(--margin);font-size:15px}
+.tag.src{color:var(--series2);background:var(--note)}
 .tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);padding:3px 8px;border-radius:4px}
 .qtext{white-space:pre-line;font-family:"Young Serif",Georgia,serif;font-size:clamp(19px,3.3vw,23px);line-height:1.5;margin:14px 0 6px;text-wrap:pretty}
 .graph{background:var(--sheet);border:1px solid var(--line-strong);border-radius:8px;padding:8px;margin:12px 0 4px;max-width:480px}
@@ -438,7 +439,7 @@ const rnd=a=>a[Math.floor(Math.random()*a.length)];
 const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
 const esc=s=>String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
 const store={get(k){try{return JSON.parse(localStorage.getItem(k)||"null")}catch(e){return null}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
-const LVL={easy:"Easy",hard:"Hard"};
+const LVL={easy:"Easy",hard:"Hard",advanced:"Advanced"};
 
 let CONFIG=null, API="", ONLINE=false;
 let player=Object.assign({name:"",section:""},store.get("gamesol-player")||{});
@@ -505,7 +506,7 @@ function renderHome(){
       h+='<div class="step"><h2>What do you want to do?</h2><div class="grid three modes">'+
         '<label class="choice"><input type="radio" name="mode" value="play"'+(sel.mode==="play"?" checked":"")+'><span><span class="big">'+ICON_PLAY+' Play &amp; learn</span><small>Hands-on activities: drag, tap and build to see how each idea works. Great for starting a topic.</small></span></label>'+
         '<label class="choice"><input type="radio" name="mode" value="tutor"'+(sel.mode==="tutor"?" checked":"")+'><span><span class="big">'+ICON_BOOK+' Chapter tutor</span><small>Learn each topic simply, see worked examples, then revise smart and get exam-ready.</small></span></label>'+
-        '<label class="choice"><input type="radio" name="mode" value="quiz"'+(sel.mode==="quiz"?" checked":"")+'><span><span class="big">'+ICON_CHECK+' Check knowledge</span><small>Quiz yourself on chosen topics at Easy or Hard level and see your rank.</small></span></label>'+
+        '<label class="choice"><input type="radio" name="mode" value="quiz"'+(sel.mode==="quiz"?" checked":"")+'><span><span class="big">'+ICON_CHECK+' Check knowledge</span><small>Quiz yourself on chosen topics at Easy, Hard or Advanced level and see your rank.</small></span></label>'+
         '</div></div>';
     }else sel.mode="quiz";
     h+='<div class="step" id="topicStep"><h2>Topics</h2><p class="muted">Loading topics…</p></div>';
@@ -525,19 +526,32 @@ function keepNames(){if($("pName")){player.name=$("pName").value.replace(/\s+/g,
 async function loadBank(chap){
   if(bankCache[chap.bank]) return bankCache[chap.bank];
   const r=await fetch(chap.bank,{cache:"no-store"});if(!r.ok)throw new Error(r.status);
-  return bankCache[chap.bank]=await r.json();
+  const bank=await r.json();
+  for(const x of await loadExtras(chap)){
+    (x.topics||[]).forEach(t=>{if(!bank.topics.some(b=>b.id===t.id))bank.topics.push(t)});
+    (x.questions||[]).forEach(q=>bank.questions.push(Object.assign({src:x.label||"Extra practice"},q)));
+    (bank.extraSources=bank.extraSources||[]).push(x.source||x.label);
+  }
+  return bankCache[chap.bank]=bank;
 }
+/* Extra sources (e.g. school worksheets) listed in a chapter's "extras". Any path inside a folder named in
+   the config's "exclude" list is skipped, so a whole folder of extras can be switched off in one line. */
+const extrasCache={};
+function extraPaths(chap){const ex=(CONFIG.exclude||[]).map(x=>String(x).toLowerCase());
+  return (chap.extras||[]).filter(p=>!String(p).toLowerCase().split("/").slice(0,-1).some(seg=>ex.includes(seg)))}
+async function loadExtras(chap){const out=[];
+  for(const p of extraPaths(chap)){try{if(!extrasCache[p]){const r=await fetch(p,{cache:"no-store"});if(!r.ok)throw new Error(r.status);extrasCache[p]=await r.json()}out.push(extrasCache[p])}catch(e){console.warn("Skipped extra source",p,e)}}
+  return out}
 function renderTopics(bank,cls,subj,chap){
   BANK=bank;
   const ids=bank.topics.map(t=>t.id);
   if(!Array.isArray(sel.topics)||!sel.topics.some(t=>ids.includes(t))) sel.topics=ids.slice();
-  const cnt=(t,l)=>bank.questions.filter(q=>q.topic===t&&q.level===l).length;
+  const cnt=(t,l)=>bank.questions.filter(q=>q.topic===t&&q.level===l).length;const hasAdv=bank.questions.some(q=>q.level==="advanced");
   let h='<div class="row" style="justify-content:space-between"><h2>Topics ('+bank.topics.length+')</h2><div class="row"><button class="btn small" id="allT">Select all</button><button class="btn small" id="noneT">Clear</button></div></div>'+
-    '<div class="topics">'+bank.topics.map(t=>'<label class="topic" for="t-'+esc(t.id)+'"><input type="checkbox" id="t-'+esc(t.id)+'" value="'+esc(t.id)+'"'+(sel.topics.includes(t.id)?" checked":"")+'><span class="ref">'+esc(t.ref||"")+'</span><span>'+esc(t.name)+'</span><span class="cnt">'+cnt(t.id,"easy")+' easy · '+cnt(t.id,"hard")+' hard</span></label>').join("")+'</div>'+
-    '<p class="note">Source: '+esc(bank.source||bank.chapter)+'. Numerical questions use new numbers every time.</p>';
-  h+='</div><div class="step"><h2>Level</h2><div class="grid two">'+
-    '<label class="choice"><input type="radio" name="level" value="easy"'+(sel.level==="easy"?" checked":"")+'><span><span class="big">Easy</span><small>Definitions, units, reading simple graphs and one-step calculations.</small></span></label>'+
-    '<label class="choice"><input type="radio" name="level" value="hard"'+(sel.level==="hard"?" checked":"")+'><span><span class="big">Hard</span><small>Exam-style reasoning, unit conversion, multi-step problems and graph analysis.</small></span></label>'+
+    '<div class="topics">'+bank.topics.map(t=>'<label class="topic" for="t-'+esc(t.id)+'"><input type="checkbox" id="t-'+esc(t.id)+'" value="'+esc(t.id)+'"'+(sel.topics.includes(t.id)?" checked":"")+'><span class="ref">'+esc(t.ref||"")+'</span><span>'+esc(t.name)+'</span><span class="cnt">'+cnt(t.id,"easy")+' easy · '+cnt(t.id,"hard")+' hard'+(hasAdv?' · '+cnt(t.id,"advanced")+' adv.':'')+'</span></label>').join("")+'</div>'+
+    '<p class="note">Source: '+esc(bank.source||bank.chapter)+'.'+(bank.extraSources?' Also includes: '+esc(bank.extraSources.join("; "))+' (tagged in the quiz).':'')+' Numerical questions use new numbers every time.</p>';
+  h+='</div><div class="step"><h2>Level</h2><div class="grid three">'+
+    ['easy','hard','advanced'].map(l=>'<label class="choice"><input type="radio" name="level" value="'+l+'"'+(sel.level===l?" checked":"")+'><span><span class="big">'+LVL[l]+'</span><small>'+esc((bank.levelNotes||{})[l]||LEVEL_NOTE[l])+'</small></span></label>').join("")+
     '</div></div><div class="step"><h2>Number of questions</h2><div class="pills">'+
     [10,15,20,30].map(n=>'<label class="pill"><input type="radio" name="count" value="'+n+'"'+(sel.count===n?" checked":"")+'><span>'+n+'</span></label>').join("")+
     '</div><p class="warn" id="warn" hidden></p><div class="row"><button class="btn primary" id="startBtn">Start quiz</button>'+(ONLINE?'<button class="btn" id="boardBtn">Leaderboard</button>':'')+'</div><div id="startBoard" hidden></div>';
@@ -555,7 +569,7 @@ function start(cls,subj,chap,boxes){
   const topics=boxes.filter(b=>b.checked).map(b=>b.value);
   if(!topics.length){say("Please choose at least one topic.");return}
   const lv=document.querySelector('input[name="level"]:checked');
-  if(!lv){say("Please choose a level: Easy or Hard.");return}
+  if(!lv){say("Please choose a level: Easy, Hard or Advanced.");return}
   warn.hidden=true;
   sel.topics=topics;sel.level=lv.value;sel.count=+document.querySelector('input[name="count"]:checked').value;
   store.set("gamesol-sel",sel);store.set("gamesol-player",player);
@@ -563,6 +577,7 @@ function start(cls,subj,chap,boxes){
   build();
 }
 
+const LEVEL_NOTE={easy:"Key facts, definitions and one-step questions.",hard:"Exam-style reasoning and multi-step questions.",advanced:"Stretch yourself: tricky, multi-step and unfamiliar questions – still from the same syllabus."};
 /* ---------- question generation ---------- */
 function evalIn(expr,env){const k=Object.keys(env);return Function(...k,'"use strict";return ('+expr+');')(...k.map(x=>env[x]))}
 function pickVar(spec){
@@ -599,20 +614,20 @@ function instantiate(item){
       for(const k in (item.derive||{})) env[k]=evalIn(item.derive[k],env);
       if(item.where&&!evalIn(item.where,env)) continue;
       const a=evalIn(item.answer,env); if(!isFinite(a)) continue;
-      const u=item.unit?" "+item.unit:"";
+      const u=item.unit?(/^[°%]/.test(item.unit)?"":" ")+item.unit:"";
       const ans=fmt(a,dp)+u;
       let wrong=[...new Set(item.wrong.map(w=>{try{const v=evalIn(w,env);return isFinite(v)?fmt(v,dp)+u:null}catch(e){return null}}).filter(w=>w&&w!==ans))];
       const extra=[a*2,a/2,a*10,a+ (Math.abs(a)>=1?1:0.5),a*1.5];let i=0;
       while(wrong.length<3&&i<extra.length){const w=fmt(extra[i++],dp)+u;if(w!==ans&&!wrong.includes(w))wrong.push(w)}
       wrong=shuffle(wrong).slice(0,3);
-      return {topic:item.topic,q:fill(item.q,env,fmt(a,dp)),ans,opts:shuffle([ans,...wrong]),expl:fill(item.e,env,fmt(a,dp)),graph:item.graph?resolveGraph(item.graph,env):null,calc:true};
+      return {topic:item.topic,q:fill(item.q,env,fmt(a,dp)),ans,opts:shuffle([ans,...wrong]),expl:fill(item.e,env,fmt(a,dp)),graph:item.graph?resolveGraph(item.graph,env):null,passage:item.passage?fill(item.passage,env,fmt(a,dp)):null,calc:true};
     }catch(e){continue}
   }
   return null;
 }
 function resolveGraph(g,env){
   const val=v=>typeof v==="string"?evalIn(v,env):v;
-  if(!g.lines)return g;
+  if(!g.lines){const sub=x=>typeof x==="string"&&x[0]==="="?evalIn(x.slice(1),env):Array.isArray(x)?x.map(sub):x&&typeof x==="object"?Object.fromEntries(Object.entries(x).map(([k,v])=>[k,sub(v)])):x;return sub(g)}
   return Object.assign({},g,{lines:g.lines.map(l=>Object.assign({},l,{pts:l.pts.map(p=>[val(p[0]),val(p[1])])}))});
 }
 function niceStep(max,target){const raw=max/(target||5);const p=Math.pow(10,Math.floor(Math.log10(raw||1)));const n=raw/p;return (n<=1?1:n<=2?2:n<=2.5?2.5:n<=5?5:10)*p}
@@ -645,14 +660,14 @@ let CTX=null, quiz=[], idx=0, score=0, answered=false, startedAt=0, attemptId=""
 function build(){
   const tmap=Object.fromEntries(BANK.topics.map(t=>[t.id,t]));
   const pools={};
-  sel.topics.forEach(t=>{let p=BANK.questions.filter(q=>q.topic===t&&q.level===sel.level);if(!p.length)p=BANK.questions.filter(q=>q.topic===t);pools[t]={all:p,deck:shuffle(p)}});
+  sel.topics.forEach(t=>{let p=BANK.questions.filter(q=>q.topic===t&&q.level===sel.level);if(!p.length&&sel.level==="advanced")p=BANK.questions.filter(q=>q.topic===t&&q.level==="hard");if(!p.length)p=BANK.questions.filter(q=>q.topic===t);pools[t]={all:p,deck:shuffle(p)}});
   const order=[];const tl=shuffle(sel.topics);for(let i=0;i<sel.count;i++)order.push(tl[i%tl.length]);
   const seen=new Set();quiz=[];
   shuffle(order).forEach(t=>{
     let q=null;
     for(let tries=0;tries<30;tries++){
       const P=pools[t];if(!P.deck.length)P.deck=shuffle(P.all);
-      const cand=instantiate(P.deck.pop());
+      const it=P.deck.pop(),cand=instantiate(it);if(cand&&it.src)cand.src=it.src;
       if(cand&&!seen.has(cand.q)){q=cand;break}
       if(cand&&tries>20){q=cand;break}
     }
@@ -669,7 +684,7 @@ function render(){
   $("progressBar").style.width=(100*done/total)+"%";
   if(idx>=total){renderResults();return}
   const q=quiz[idx];
-  let h='<article class="sheet"><span class="qnum">'+(idx+1)+'.</span><span class="tag">'+esc((q.topicObj.ref?q.topicObj.ref+" · ":"")+q.topicObj.name)+'</span>'+
+  let h='<article class="sheet"><span class="qnum">'+(idx+1)+'.</span><span class="tag">'+esc((q.topicObj.ref?q.topicObj.ref+" · ":"")+q.topicObj.name)+'</span>'+(q.src?' <span class="tag src">'+esc(q.src)+'</span>':'')+
     (q.passage?'<div class="passage">'+esc(q.passage)+'</div>':'')+'<p class="qtext">'+esc(q.q)+'</p>'+(q.graph?figBox(q.graph):'')+
     '<div class="opts'+(q.long?' long':'')+'" role="group" aria-label="Answers">';
   q.opts.forEach((o,i)=>{let c="opt";if(answered){c+=o===q.ans?" ok":o===q.picked?" bad":" dim"}
@@ -686,21 +701,21 @@ function choose(i){if(answered)return;const q=quiz[idx];q.picked=q.opts[i];if(q.
 function next(){if(!answered)return;answered=false;idx++;render();window.scrollTo({top:0,behavior:"smooth"})}
 function topicStats(){const m={};quiz.forEach(q=>{const k=q.topicObj.name;const s=m[k]||(m[k]={ok:0,n:0,ref:q.topicObj.ref});s.n++;if(q.picked===q.ans)s.ok++});return m}
 function renderResults(){
-  const total=quiz.length,pct=Math.round(100*score/total),easy=sel.level==="easy";
-  const msg=pct>=90?(easy?"Excellent! Try the Hard level next.":"Excellent – you are exam ready!"):pct>=70?"Well done. Go through the mistakes below.":pct>=50?"Good effort. A little more practice will help.":"Keep practising – review the explanations below.";
+  const total=quiz.length,pct=Math.round(100*score/total),easy=sel.level==="easy",up=sel.level==="easy"?"hard":sel.level==="hard"?"advanced":null;
+  const msg=pct>=90?(up?"Excellent! Try the "+LVL[up]+" level next.":"Outstanding – you can handle the toughest questions in this syllabus!"):pct>=70?"Well done. Go through the mistakes below.":pct>=50?"Good effort. A little more practice will help.":"Keep practising – review the explanations below.";
   const ts=topicStats();
   let h='<article class="sheet"><span class="qnum">✓</span><span class="tag">Results · '+esc(CTX.subj.name)+' · '+LVL[sel.level]+'</span>'+
     '<p class="score">'+score+' <small>/ '+total+'</small></p><p style="margin:0;font-weight:700">'+msg+'</p><div class="cats">';
   Object.entries(ts).sort((a,b)=>String(a[1].ref).localeCompare(String(b[1].ref),undefined,{numeric:true})).forEach(([k,s])=>{const p=s.ok/s.n;
     h+='<div class="cat"><span>'+esc(k)+'</span><span class="bar"><i class="'+(p<.6?"low":"")+'" style="width:'+(p*100)+'%"></i></span><span>'+s.ok+' / '+s.n+'</span></div>'});
-  h+='</div><div class="row"><button class="btn primary" id="againBtn">New quiz</button>'+(easy&&pct>=70?'<button class="btn" id="upBtn">Try Hard level</button>':'')+'<button class="btn" id="backBtn">Change topics</button></div>';
+  h+='</div><div class="row"><button class="btn primary" id="againBtn">New quiz</button>'+(up&&pct>=70?'<button class="btn" id="upBtn">Try '+LVL[up]+' level</button>':'')+'<button class="btn" id="backBtn">Change topics</button></div>';
   const wrong=quiz.filter(q=>q.picked!==q.ans);
   if(wrong.length){h+='<div class="review"><h3>To review ('+wrong.length+')</h3>'+wrong.map(q=>'<div class="rv"><span class="tag">'+esc(q.topicObj.name)+'</span><span>'+esc(q.q)+'</span><span class="y">Your answer: '+esc(q.picked)+'</span><span class="c">Correct answer: '+esc(q.ans)+'</span><span>'+esc(q.expl)+'</span></div>').join("")+'</div>'}
   h+=(ONLINE?'<div class="board" id="rankBox"></div>':'')+'</article>';
   $("stage").innerHTML=h;
   $("againBtn").addEventListener("click",build);
   $("backBtn").addEventListener("click",goHome);
-  if($("upBtn"))$("upBtn").addEventListener("click",()=>{sel.level="hard";store.set("gamesol-sel",sel);build()});
+  if($("upBtn"))$("upBtn").addEventListener("click",()=>{sel.level=up;store.set("gamesol-sel",sel);build()});
   if(ONLINE&&!submitted)submitResult($("rankBox"));
 }
 function goHome(){$("quizArea").hidden=true;$("tutorArea").hidden=true;$("home").hidden=false;$("homeBtn").hidden=true;renderHome();window.scrollTo({top:0})}
@@ -736,7 +751,7 @@ async function submitResult(el){
 }
 async function showBoard(el,cls,subj,level){
   el.hidden=false;
-  el.innerHTML='<div class="board"><div class="tabs"><button class="btn small" data-l="easy" aria-pressed="'+(level==="easy")+'">Easy</button><button class="btn small" data-l="hard" aria-pressed="'+(level==="hard")+'">Hard</button></div><div id="sbBody"><p class="muted">Loading…</p></div></div>';
+  el.innerHTML='<div class="board"><div class="tabs">'+['easy','hard','advanced'].map(l=>'<button class="btn small" data-l="'+l+'" aria-pressed="'+(level===l)+'">'+LVL[l]+'</button>').join("")+'</div><div id="sbBody"><p class="muted">Loading…</p></div></div>';
   el.querySelectorAll("[data-l]").forEach(b=>b.addEventListener("click",()=>showBoard(el,cls,subj,b.dataset.l)));
   try{
     const u=API+(API.includes("?")?"&":"?")+"action=leaderboard&cls="+encodeURIComponent(cls.id)+"&subject="+encodeURIComponent(subj.id)+"&level="+level+"&name="+encodeURIComponent(player.name)+"&section="+encodeURIComponent(player.section);
@@ -762,7 +777,9 @@ const tutorCache={};
 async function loadTutor(chap){
   if(tutorCache[chap.tutor])return tutorCache[chap.tutor];
   const r=await fetch(chap.tutor,{cache:"no-store"});if(!r.ok)throw new Error(r.status);
-  return tutorCache[chap.tutor]=await r.json();
+  const T=await r.json();
+  for(const x of await loadExtras(chap))(x.play||[]).forEach(p=>{const l=T.lessons.find(l=>l.topic===p.topic)||T.lessons[0];l.play=(l.play||[]).concat([Object.assign({src:x.label||"Extra practice"},p.activity)])});
+  return tutorCache[chap.tutor]=T;
 }
 const tprogKey=chap=>"gamesol-tutor-"+chap.tutor;
 const tprog=chap=>Object.assign({done:[],check:[]},store.get(tprogKey(chap))||{});
@@ -874,7 +891,7 @@ function tutorPage(k,p){
       '<div class="duo">'+side.map(x=>'<div class="note-card'+(x.kind==="mem"?" mem":"")+'"><h3>'+esc(x.title)+'</h3>'+list(x,x.kind!=="mem")+'</div>').join("")+'</div>'+
       '<div><h3>Am I ready? Tick what you can do without the book</h3><div class="meter" id="readyMeter">'+readyMeter(p)+'</div><div class="check" style="margin-top:8px">'+
       e.checklist.map((c,i)=>'<label><input type="checkbox" data-check="'+i+'"'+(p.check.includes(i)?" checked":"")+'><span>'+md(c)+'</span></label>').join("")+'</div></div>'+
-      '<div class="lfoot"><button class="btn primary" data-practise="'+TUT.lessons.map(l=>l.topic).join(",")+'" data-level="hard">Take the exam-level quiz →</button></div>';
+      '<div class="lfoot"><button class="btn primary" data-practise="'+TUT.lessons.map(l=>l.topic).join(",")+'" data-level="hard">Take the exam-level quiz →</button><button class="btn" data-practise="'+TUT.lessons.map(l=>l.topic).join(",")+'" data-level="advanced">Advanced challenge →</button></div>';
   }
   const i=+k.slice(1),L=TUT.lessons[i],done=p.done.includes(L.topic);
   return '<span class="tag">'+esc(L.ref)+' · '+esc(L.time)+' read</span><h2 class="t">'+esc(L.title)+'</h2>'+

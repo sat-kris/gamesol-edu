@@ -1,6 +1,8 @@
 {
   "appName": "Gamesol Edu",
   "tagline": "Exam practice games",
+  "exclude": [],
+  "_exclude_help": "Folder names to switch off. Put \"adds\" in the list to drop every extra question and activity stored in any adds/ folder.",
   "leaderboard": {
     "scriptUrl": ""
   },
@@ -21,14 +23,20 @@
               "name": "Chapter 1 · Patterns in Mathematics",
               "status": "ongoing",
               "bank": "6/maths/bank-ch1-patterns.json",
-              "tutor": "6/maths/tutor-ch1-patterns.json"
+              "tutor": "6/maths/tutor-ch1-patterns.json",
+              "extras": [
+                "6/maths/adds/adds-ch1-patterns.json"
+              ]
             },
             {
               "id": "ch2",
               "name": "Chapter 2 · Lines and Angles",
               "status": "ongoing",
               "bank": "6/maths/bank-ch2-lines-angles.json",
-              "tutor": "6/maths/tutor-ch2-lines-angles.json"
+              "tutor": "6/maths/tutor-ch2-lines-angles.json",
+              "extras": [
+                "6/maths/adds/adds-ch2-lines-angles.json"
+              ]
             },
             {
               "id": "ch3",
@@ -42,7 +50,10 @@
               "name": "Chapter 4 · Data Handling and Presentation",
               "status": "ongoing",
               "bank": "6/maths/bank-ch4-data-handling.json",
-              "tutor": "6/maths/tutor-ch4-data-handling.json"
+              "tutor": "6/maths/tutor-ch4-data-handling.json",
+              "extras": [
+                "6/maths/adds/adds-ch4-data-handling.json"
+              ]
             },
             {
               "id": "ch5",

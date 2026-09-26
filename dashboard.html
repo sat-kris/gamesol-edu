@@ -117,7 +117,7 @@ td.num,th.num{text-align:right}
       <label for="fSection">Section
         <select id="fSection"><option value="">All sections</option></select></label>
       <label for="fLevel">Level
-        <select id="fLevel"><option value="">Both levels</option><option value="easy">Easy</option><option value="hard">Hard</option></select></label>
+        <select id="fLevel"><option value="">All levels</option><option value="easy">Easy</option><option value="hard">Hard</option><option value="advanced">Advanced</option></select></label>
     </div>
 
     <div class="kpis" id="kpis"></div>
@@ -189,9 +189,9 @@ function render(){
   const rows=filtered();
   const today=dkey(new Date());
   const students=new Set(rows.map(who));
-  const easyN=rows.filter(r=>r.level==="easy").length, hardN=rows.length-easyN;
+  const easyN=rows.filter(r=>r.level==="easy").length, advN=rows.filter(r=>r.level==="advanced").length, hardN=rows.length-easyN-advN;
   $("kpis").innerHTML=[
-    ["Quizzes taken",rows.length,easyN+" easy · "+hardN+" hard"],
+    ["Quizzes taken",rows.length,easyN+" easy · "+hardN+" hard"+(advN?" · "+advN+" advanced":"")],
     ["Students",students.size,"different names"],
     ["Average score",rows.length?Math.round(avg(rows.map(r=>r.percent)))+"%":"–","across all attempts"],
     ["Today",rows.filter(r=>dkey(r.t)===today).length,"quizzes taken today"]
@@ -241,16 +241,16 @@ function accChart(rows){
 function studentTable(rows){
   const q=$("search").value.trim().toLowerCase();
   const m={};
-  rows.forEach(r=>{const k=who(r);const s=m[k]||(m[k]={name:r.name,cls:className(r.class),section:String(r.section).toUpperCase(),n:0,sum:0,easy:null,hard:null,last:r.t});
+  rows.forEach(r=>{const k=who(r);const s=m[k]||(m[k]={name:r.name,cls:className(r.class),section:String(r.section).toUpperCase(),n:0,sum:0,easy:null,hard:null,adv:null,last:r.t});
     s.n++;s.sum+=r.percent;if(r.t>s.last)s.last=r.t;
-    if(r.level==="hard")s.hard=Math.max(s.hard??0,r.percent);else s.easy=Math.max(s.easy??0,r.percent)});
+    if(r.level==="hard")s.hard=Math.max(s.hard??0,r.percent);else if(r.level==="advanced")s.adv=Math.max(s.adv??0,r.percent);else s.easy=Math.max(s.easy??0,r.percent)});
   let list=Object.values(m).map(s=>Object.assign(s,{avg:s.sum/s.n})).filter(s=>!q||String(s.name).toLowerCase().includes(q));
   const val=s=>sortKey==="name"||sortKey==="section"||sortKey==="cls"?String(s[sortKey]).toLowerCase():sortKey==="last"?s.last.getTime():(s[sortKey]??-1);
   list.sort((a,b)=>val(a)<val(b)?-sortDir:val(a)>val(b)?sortDir:0);
-  const cols=[["name","Name"],["cls","Class"],["section","Section"],["n","Quizzes",1],["avg","Average",1],["easy","Best easy",1],["hard","Best hard",1],["last","Last active",1]];
+  const cols=[["name","Name"],["cls","Class"],["section","Section"],["n","Quizzes",1],["avg","Average",1],["easy","Best easy",1],["hard","Best hard",1],["adv","Best adv.",1],["last","Last active",1]];
   const pc=v=>v==null?'<span class="muted">–</span>':'<span class="'+(v<60?"low":"")+'">'+Math.round(v)+'%</span>';
   $("students").innerHTML='<thead><tr>'+cols.map(c=>'<th class="sortable'+(c[2]?" num":"")+'" data-k="'+c[0]+'" aria-sort="'+(sortKey===c[0]?(sortDir>0?"ascending":"descending"):"none")+'">'+c[1]+(sortKey===c[0]?(sortDir>0?" ▲":" ▼"):"")+'</th>').join("")+'</tr></thead><tbody>'+
-    (list.length?list.map(s=>'<tr><td>'+esc(s.name)+'</td><td>'+esc(s.cls)+'</td><td>'+esc(s.section)+'</td><td class="num">'+s.n+'</td><td class="num">'+pc(s.avg)+'</td><td class="num">'+pc(s.easy)+'</td><td class="num">'+pc(s.hard)+'</td><td class="num">'+s.last.toLocaleDateString([], {day:"numeric",month:"short"})+'</td></tr>').join(""):'<tr><td colspan="8" class="empty">No students match.</td></tr>')+'</tbody>';
+    (list.length?list.map(s=>'<tr><td>'+esc(s.name)+'</td><td>'+esc(s.cls)+'</td><td>'+esc(s.section)+'</td><td class="num">'+s.n+'</td><td class="num">'+pc(s.avg)+'</td><td class="num">'+pc(s.easy)+'</td><td class="num">'+pc(s.hard)+'</td><td class="num">'+pc(s.adv)+'</td><td class="num">'+s.last.toLocaleDateString([], {day:"numeric",month:"short"})+'</td></tr>').join(""):'<tr><td colspan="9" class="empty">No students match.</td></tr>')+'</tbody>';
   $("students").querySelectorAll("th[data-k]").forEach(th=>th.addEventListener("click",()=>{const k=th.dataset.k;if(sortKey===k)sortDir=-sortDir;else{sortKey=k;sortDir=(k==="name"||k==="section"||k==="cls")?1:-1}studentTable(filtered())}));
 }
 
@@ -258,7 +258,7 @@ function recentTable(rows){
   const list=rows.slice().sort((a,b)=>b.t-a.t).slice(0,25);
   const fmt=s=>Math.floor(s/60)+"m "+String(Math.round(s%60)).padStart(2,"0")+"s";
   $("recent").innerHTML='<thead><tr><th>When</th><th>Name</th><th>Class</th><th>Subject</th><th>Level</th><th class="num">Score</th><th class="num">Time</th></tr></thead><tbody>'+
-    (list.length?list.map(r=>'<tr><td>'+r.t.toLocaleString([], {day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"})+'</td><td>'+esc(r.name)+'</td><td>'+esc(className(r.class)+(r.section?" – "+String(r.section).toUpperCase():""))+'</td><td>'+esc(subjectName(r.class,r.subject))+'</td><td><span class="pill '+(r.level==="hard"?"hard":"")+'">'+(r.level==="hard"?"Hard":"Easy")+'</span></td><td class="num"><span class="'+(r.percent<60?"low":"")+'">'+r.score+'/'+r.total+'</span> <span class="muted">('+Math.round(r.percent)+'%)</span></td><td class="num">'+fmt(r.seconds)+'</td></tr>').join(""):'<tr><td colspan="7" class="empty">No attempts yet.</td></tr>')+'</tbody>';
+    (list.length?list.map(r=>'<tr><td>'+r.t.toLocaleString([], {day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"})+'</td><td>'+esc(r.name)+'</td><td>'+esc(className(r.class)+(r.section?" – "+String(r.section).toUpperCase():""))+'</td><td>'+esc(subjectName(r.class,r.subject))+'</td><td><span class="pill '+(r.level==="easy"?"":"hard")+'">'+({hard:"Hard",advanced:"Advanced"}[r.level]||"Easy")+'</span></td><td class="num"><span class="'+(r.percent<60?"low":"")+'">'+r.score+'/'+r.total+'</span> <span class="muted">('+Math.round(r.percent)+'%)</span></td><td class="num">'+fmt(r.seconds)+'</td></tr>').join(""):'<tr><td colspan="7" class="empty">No attempts yet.</td></tr>')+'</tbody>';
 }
 
 /* tooltip */
