@@ -1,0 +1,683 @@
+{
+ "id": "class5-science-ch3",
+ "class": "5",
+ "subject": "science",
+ "chapter": "Chapter 3 · The Mystery of Food",
+ "source": "NCERT Our Wondrous World (Class V), Chapter 3",
+ "topics": [
+  {
+   "id": "spoil",
+   "name": "Why food spoils – microbes",
+   "ref": "3.1"
+  },
+  {
+   "id": "preserve",
+   "name": "Saving food – preservation",
+   "ref": "3.2"
+  },
+  {
+   "id": "good",
+   "name": "Good microbes, seasonal food",
+   "ref": "3.3"
+  },
+  {
+   "id": "teeth",
+   "name": "Chew right – teeth and hygiene",
+   "ref": "3.4"
+  }
+ ],
+ "levelNotes": {
+  "easy": "Facts from the chapter – who, what, where.",
+  "hard": "Why and how questions – use what you learnt.",
+  "advanced": "Think like a scientist: real-life puzzles and tricky reasoning, still from this chapter."
+ },
+ "questions": [
+  {
+   "topic": "spoil",
+   "level": "easy",
+   "q": "The coloured patches on Disha’s old uttapam were…",
+   "a": "mould",
+   "w": [
+    "paint",
+    "salt",
+    "sugar"
+   ],
+   "e": "Mould is a colony of thousands of microbes."
+  },
+  {
+   "topic": "spoil",
+   "level": "easy",
+   "q": "What instrument do we need to see microbes?",
+   "a": "A microscope",
+   "w": [
+    "A telescope",
+    "A thermometer",
+    "A magnet"
+   ],
+   "e": "Microbes are too tiny to see with our eyes."
+  },
+  {
+   "topic": "spoil",
+   "level": "easy",
+   "q": "Where are microbes found?",
+   "a": "In soil, water, air, plants, animals and inside us",
+   "w": [
+    "Only in food",
+    "Only in water",
+    "Only in space"
+   ],
+   "e": "Microbes are everywhere around us."
+  },
+  {
+   "topic": "spoil",
+   "level": "easy",
+   "q": "What do microbes need to grow?",
+   "a": "Moisture, air and the right temperature",
+   "w": [
+    "Only sunlight",
+    "Salt and sugar",
+    "Oil and cold"
+   ],
+   "e": "Remove any one of these and microbes stop growing."
+  },
+  {
+   "topic": "spoil",
+   "level": "hard",
+   "q": "Why did Paati’s pickle stay fresh for two months while the bread spoiled in two days?",
+   "a": "The pickle was covered with oil, which keeps air away",
+   "w": [
+    "The pickle was kept in the Sun every day",
+    "Bread has no microbes",
+    "Pickles are made of plastic"
+   ],
+   "e": "Oil stops air from getting in, so microbes cannot grow."
+  },
+  {
+   "topic": "spoil",
+   "level": "hard",
+   "q": "What could happen if spoiled food is eaten by mistake?",
+   "a": "We could get an upset stomach",
+   "w": [
+    "We grow taller",
+    "Nothing at all",
+    "Our teeth become stronger"
+   ],
+   "e": "Spoiled food can make us sick."
+  },
+  {
+   "topic": "spoil",
+   "level": "easy",
+   "q": "True or false? All microbes are harmful.",
+   "a": "False",
+   "w": [
+    "True",
+    "Not given in the chapter"
+   ],
+   "e": "Some microbes help us make curd and digest food."
+  },
+  {
+   "topic": "preserve",
+   "level": "easy",
+   "q": "Why are chillies dried in the Sun?",
+   "a": "To remove moisture so microbes cannot grow",
+   "w": [
+    "To make them wet",
+    "To make them bigger",
+    "To change their colour only"
+   ],
+   "e": "Without moisture, microbes cannot grow – the chilli powder lasts all year."
+  },
+  {
+   "topic": "preserve",
+   "level": "easy",
+   "q": "Why is oil added to pickles?",
+   "a": "Oil keeps out air and stops microbes",
+   "w": [
+    "To make them cold",
+    "To dry them",
+    "To add moisture"
+   ],
+   "e": "Finding #4 in Disha’s notebook."
+  },
+  {
+   "topic": "preserve",
+   "level": "easy",
+   "q": "A fridge keeps food fresh because…",
+   "a": "the cold slows down microbes",
+   "w": [
+    "it adds moisture",
+    "it heats the food",
+    "it adds air"
+   ],
+   "e": "Cold temperature slows down microbes."
+  },
+  {
+   "topic": "preserve",
+   "level": "hard",
+   "q": "Why does butter need a fridge but ghee does not?",
+   "a": "Ghee has no water left – the water is removed when butter is heated",
+   "w": [
+    "Ghee is always cold",
+    "Butter has no microbes",
+    "Ghee is kept in the Sun"
+   ],
+   "e": "Heating butter makes the water separate and evaporate, leaving ghee."
+  },
+  {
+   "topic": "preserve",
+   "level": "easy",
+   "q": "In food factories, food is kept safe in…",
+   "a": "air-tight cans and packaging",
+   "w": [
+    "open baskets",
+    "wet cloth",
+    "paper bags only"
+   ],
+   "e": "Air-tight packing keeps microbes away."
+  },
+  {
+   "topic": "preserve",
+   "level": "hard",
+   "q": "Which of these is NOT used to preserve food?",
+   "a": "Keeping cut fruit in a warm, wet place",
+   "w": [
+    "Salt",
+    "Sugar",
+    "Spices like pepper"
+   ],
+   "e": "Warm and wet helps microbes grow!"
+  },
+  {
+   "topic": "preserve",
+   "level": "easy",
+   "type": "pairs",
+   "q": "How is “{x}” preserved?",
+   "pairs": [
+    [
+     "chilli powder",
+     "Drying in the Sun"
+    ],
+    [
+     "dried papad",
+     "Drying in the Sun"
+    ],
+    [
+     "lemon pickle",
+     "Oil, salt and spices"
+    ],
+    [
+     "milk and vegetables",
+     "Keeping in the fridge"
+    ],
+    [
+     "canned juice",
+     "Air-tight can"
+    ],
+    [
+     "ghee from butter",
+     "Heating to remove water"
+    ]
+   ],
+   "e": "{x} → {ans}."
+  },
+  {
+   "topic": "preserve",
+   "level": "easy",
+   "type": "pairs",
+   "q": "How is “{x}” preserved?",
+   "pairs": [
+    [
+     "chilli powder",
+     "Drying in the Sun"
+    ],
+    [
+     "dried papad",
+     "Drying in the Sun"
+    ],
+    [
+     "lemon pickle",
+     "Oil, salt and spices"
+    ],
+    [
+     "milk and vegetables",
+     "Keeping in the fridge"
+    ],
+    [
+     "canned juice",
+     "Air-tight can"
+    ],
+    [
+     "ghee from butter",
+     "Heating to remove water"
+    ]
+   ],
+   "e": "{x} → {ans}."
+  },
+  {
+   "topic": "preserve",
+   "level": "easy",
+   "type": "pairs",
+   "q": "How is “{x}” preserved?",
+   "pairs": [
+    [
+     "chilli powder",
+     "Drying in the Sun"
+    ],
+    [
+     "dried papad",
+     "Drying in the Sun"
+    ],
+    [
+     "lemon pickle",
+     "Oil, salt and spices"
+    ],
+    [
+     "milk and vegetables",
+     "Keeping in the fridge"
+    ],
+    [
+     "canned juice",
+     "Air-tight can"
+    ],
+    [
+     "ghee from butter",
+     "Heating to remove water"
+    ]
+   ],
+   "e": "{x} → {ans}."
+  },
+  {
+   "topic": "preserve",
+   "level": "hard",
+   "type": "pairs",
+   "q": "Which product do we get when {x}?",
+   "pairs": [
+    [
+     "mango is dried",
+     "Aam papad"
+    ],
+    [
+     "roti is dried",
+     "Khakhra"
+    ],
+    [
+     "butter is heated",
+     "Ghee"
+    ],
+    [
+     "fish is dried",
+     "Dried fish"
+    ],
+    [
+     "chillies are dried and ground",
+     "Chilli powder"
+    ],
+    [
+     "lemons are pickled",
+     "Lemon pickle"
+    ]
+   ],
+   "e": "{ans}."
+  },
+  {
+   "topic": "preserve",
+   "level": "hard",
+   "type": "pairs",
+   "q": "Which product do we get when {x}?",
+   "pairs": [
+    [
+     "mango is dried",
+     "Aam papad"
+    ],
+    [
+     "roti is dried",
+     "Khakhra"
+    ],
+    [
+     "butter is heated",
+     "Ghee"
+    ],
+    [
+     "fish is dried",
+     "Dried fish"
+    ],
+    [
+     "chillies are dried and ground",
+     "Chilli powder"
+    ],
+    [
+     "lemons are pickled",
+     "Lemon pickle"
+    ]
+   ],
+   "e": "{ans}."
+  },
+  {
+   "topic": "good",
+   "level": "easy",
+   "q": "What makes idli batter rise and become fluffy?",
+   "a": "Microbes in the air",
+   "w": [
+    "Salt",
+    "Oil",
+    "Ice"
+   ],
+   "e": "Finding #7: microbes help the batter ferment."
+  },
+  {
+   "topic": "good",
+   "level": "easy",
+   "q": "Curd is made by adding a spoonful of old curd to…",
+   "a": "warm milk",
+   "w": [
+    "cold water",
+    "oil",
+    "sugar syrup"
+   ],
+   "e": "Microbes in the old curd turn the milk into curd – no machines needed!"
+  },
+  {
+   "topic": "good",
+   "level": "hard",
+   "q": "Why do elders give curd or buttermilk for an upset stomach?",
+   "a": "Microbes in curd join good microbes in the stomach and help digestion",
+   "w": [
+    "Curd is very cold",
+    "Curd has no microbes",
+    "Curd makes us sleep"
+   ],
+   "e": "If the problem is severe, we must see a doctor."
+  },
+  {
+   "topic": "good",
+   "level": "easy",
+   "q": "Fruits taste best when…",
+   "a": "eaten in their season",
+   "w": [
+    "eaten after a year in a fridge",
+    "they are dried",
+    "they are unripe"
+   ],
+   "e": "Finding #9: seasonal fruits taste best; waiting increases the joy."
+  },
+  {
+   "topic": "good",
+   "level": "hard",
+   "q": "Why are local mangoes very fresh?",
+   "a": "They did not have to travel far to reach us",
+   "w": [
+    "They are kept in oil",
+    "They are frozen",
+    "They grow in winter"
+   ],
+   "e": "Local fruits reach us quickly."
+  },
+  {
+   "topic": "good",
+   "level": "easy",
+   "q": "Which of these is a seasonal fruit mentioned by Disha’s Appa?",
+   "a": "Lychee",
+   "w": [
+    "Salt",
+    "Rice",
+    "Bread"
+   ],
+   "e": "Disha had to wait almost a year for lychees."
+  },
+  {
+   "topic": "good",
+   "level": "hard",
+   "q": "Fermented rice (pakhala, kanji) is good for us because it…",
+   "a": "cools the body and has good bacteria",
+   "w": [
+    "is very spicy",
+    "has no microbes",
+    "is fried in oil"
+   ],
+   "e": "It is eaten in many parts of India."
+  },
+  {
+   "topic": "teeth",
+   "level": "easy",
+   "q": "Which teeth are used to cut food?",
+   "a": "Incisors",
+   "w": [
+    "Molars",
+    "Premolars",
+    "Canines"
+   ],
+   "e": "Incisors cut, canines tear, premolars crush, molars grind."
+  },
+  {
+   "topic": "teeth",
+   "level": "easy",
+   "type": "pairs",
+   "q": "What do {x} do?",
+   "pairs": [
+    [
+     "incisors",
+     "Cut food"
+    ],
+    [
+     "canines",
+     "Tear food"
+    ],
+    [
+     "premolars",
+     "Crush food"
+    ],
+    [
+     "molars",
+     "Grind food"
+    ]
+   ],
+   "e": "{x} {ans}."
+  },
+  {
+   "topic": "teeth",
+   "level": "easy",
+   "type": "pairs",
+   "q": "What do {x} do?",
+   "pairs": [
+    [
+     "incisors",
+     "Cut food"
+    ],
+    [
+     "canines",
+     "Tear food"
+    ],
+    [
+     "premolars",
+     "Crush food"
+    ],
+    [
+     "molars",
+     "Grind food"
+    ]
+   ],
+   "e": "{x} {ans}."
+  },
+  {
+   "topic": "teeth",
+   "level": "easy",
+   "type": "pairs",
+   "q": "What do {x} do?",
+   "pairs": [
+    [
+     "incisors",
+     "Cut food"
+    ],
+    [
+     "canines",
+     "Tear food"
+    ],
+    [
+     "premolars",
+     "Crush food"
+    ],
+    [
+     "molars",
+     "Grind food"
+    ]
+   ],
+   "e": "{x} {ans}."
+  },
+  {
+   "topic": "teeth",
+   "level": "easy",
+   "q": "Chewing food properly releases ___, which helps digestion.",
+   "a": "saliva",
+   "w": [
+    "oil",
+    "blood",
+    "water vapour"
+   ],
+   "e": "Finding #10."
+  },
+  {
+   "topic": "teeth",
+   "level": "easy",
+   "q": "A hole in a tooth is called a…",
+   "a": "cavity",
+   "w": [
+    "canine",
+    "microbe",
+    "molar"
+   ],
+   "e": "The dentist treated Disha’s cavity."
+  },
+  {
+   "topic": "teeth",
+   "level": "hard",
+   "q": "Which habit helps prevent cavities?",
+   "a": "Rinse after eating, brush regularly and eat fewer sweets",
+   "w": [
+    "Eat sweets before sleeping",
+    "Never brush",
+    "Only rinse once a week"
+   ],
+   "e": "The dentist’s advice."
+  },
+  {
+   "topic": "teeth",
+   "level": "hard",
+   "q": "How can you avoid choking?",
+   "a": "Take small mouthfuls, chew well and do not talk or laugh with food in your mouth",
+   "w": [
+    "Gulp food quickly",
+    "Eat while running",
+    "Laugh while eating"
+   ],
+   "e": "Finding #13: eat slowly."
+  },
+  {
+   "topic": "spoil",
+   "level": "advanced",
+   "q": "Microbes need moisture, air and the right temperature. Drying, oiling and a fridge each remove one. Which one does a fridge remove?",
+   "a": "The right (warm) temperature",
+   "w": [
+    "Moisture",
+    "Air",
+    "All three at once"
+   ],
+   "e": "Drying removes moisture, oil keeps out air, and the fridge makes it too cold."
+  },
+  {
+   "topic": "preserve",
+   "level": "advanced",
+   "q": "You are going on a two-day trip without a fridge. Which food is safest to carry?",
+   "a": "Khakhra, dried fruits and a sealed pickle",
+   "w": [
+    "Cut fruit in a wet box",
+    "Cooked rice with curd in the Sun",
+    "Fresh milk in an open cup"
+   ],
+   "e": "Dry, sealed or oil-covered foods do not spoil quickly."
+  },
+  {
+   "topic": "preserve",
+   "level": "advanced",
+   "q": "A tomato is cut into slices and kept in sunlight for some days. What happens and why does it keep longer?",
+   "a": "It dries up; with less moisture, microbes cannot grow",
+   "w": [
+    "It grows bigger with more water",
+    "It turns into oil",
+    "It becomes a fresh tomato again"
+   ],
+   "e": "This is drying (dehydration) – the same way chillies are preserved."
+  },
+  {
+   "topic": "good",
+   "level": "advanced",
+   "q": "Which statement is TRUE about microbes?",
+   "a": "Some spoil food, while others help make idli and curd and help digestion",
+   "w": [
+    "All microbes spoil food",
+    "No microbes live inside us",
+    "Microbes can be seen easily with our eyes"
+   ],
+   "e": "Disha’s final discovery: thank the good microbes!"
+  },
+  {
+   "topic": "teeth",
+   "level": "advanced",
+   "q": "Ravi swallows food without chewing. Which two problems could this cause?",
+   "a": "Poor digestion (less saliva) and choking",
+   "w": [
+    "Stronger teeth and faster growth",
+    "More saliva and better taste",
+    "Cavities disappear"
+   ],
+   "e": "Chewing breaks food and releases saliva; gulping can cause choking."
+  },
+  {
+   "topic": "spoil",
+   "level": "hard",
+   "q": "Disha’s uttapam spoiled in a closed lunch box over the weekend. Which microbe need was NOT removed?",
+   "a": "Moisture and warmth were still there",
+   "w": [
+    "There was no air at all",
+    "It was frozen",
+    "It was dried in the Sun"
+   ],
+   "e": "Cooked food is moist, and the box was not cold – microbes grew."
+  },
+  {
+   "topic": "spoil",
+   "level": "hard",
+   "q": "How can you tell that food has spoiled?",
+   "a": "Bad smell and coloured patches (mould)",
+   "w": [
+    "It looks fresh and smells good",
+    "It is cold",
+    "It is in a box"
+   ],
+   "e": "Disha noticed a foul smell and coloured patches."
+  },
+  {
+   "topic": "teeth",
+   "level": "hard",
+   "q": "Why should we rinse our mouth after eating?",
+   "a": "To remove bits of food that can cause cavities",
+   "w": [
+    "To make teeth longer",
+    "To stop saliva",
+    "To grow new teeth"
+   ],
+   "e": "The dentist’s advice: rinse after eating and brush regularly."
+  },
+  {
+   "topic": "teeth",
+   "level": "hard",
+   "q": "Which teeth are at the back of the mouth and grind food?",
+   "a": "Molars",
+   "w": [
+    "Incisors",
+    "Canines",
+    "Front teeth"
+   ],
+   "e": "Incisors are in front; molars at the back."
+  }
+ ]
+}

@@ -1,0 +1,606 @@
+{
+ "id": "class5-science-ch4-tutor",
+ "chapter": "Chapter 4 · Our School — A Happy Place",
+ "source": "NCERT Our Wondrous World (Class V), Chapter 4",
+ "overview": {
+  "bigIdea": "A happy school is **green, clean, safe and kind**. Aasha and Mohit explore their school and find ways to manage waste, save water, stay cool, stay safe and be kind.",
+  "ladderTitle": "Four ways to a happy school",
+  "ladder": [
+   {
+    "step": "Explore",
+    "q": "What can we check?",
+    "a": "School Explorer Teams"
+   },
+   {
+    "step": "Clean",
+    "q": "Where does waste go?",
+    "a": "Wet, dry, recycler"
+   },
+   {
+    "step": "Cool & green",
+    "q": "How to stay cool?",
+    "a": "Trees, white roofs, save water"
+   },
+   {
+    "step": "Safe & kind",
+    "q": "How to behave?",
+    "a": "Traffic, fire drill, respect"
+   }
+  ],
+  "languagesTitle": "Three things to be able to do",
+  "languages": [
+   {
+    "name": "Sort",
+    "text": "Sort waste into wet, dry and recycler."
+   },
+   {
+    "name": "Explain",
+    "text": "Explain how trees and white roofs keep places cool."
+   },
+   {
+    "name": "Act",
+    "text": "Follow fire-drill and traffic safety steps."
+   }
+  ],
+  "plan": [
+   {
+    "pass": "Play first",
+    "time": "10 min",
+    "text": "Sort waste and order the fire drill."
+   },
+   {
+    "pass": "Learn",
+    "time": "20 min",
+    "text": "Read the four lessons."
+   },
+   {
+    "pass": "Quiz",
+    "time": "10 min",
+    "text": "Check knowledge at Easy, then Hard."
+   },
+   {
+    "pass": "Revise",
+    "time": "5 min",
+    "text": "Come back after 1, 3 and 7 days."
+   }
+  ]
+ },
+ "lessons": [
+  {
+   "topic": "green",
+   "ref": "4.1",
+   "title": "A green school · School explorers",
+   "time": "6 min",
+   "hook": "“I love school! It is my happy place,” said Mohit. **Can we make our school a green school too?**",
+   "core": [
+    {
+     "term": "Green school",
+     "def": "Manages waste, saves water, uses electricity carefully and grows trees."
+    },
+    {
+     "term": "Explorer teams",
+     "def": "Water watchers · Electricity savers · Waste warriors · Green guardians · Traffic trackers."
+    },
+    {
+     "term": "Swachh Bharat Swachh Vidyalaya",
+     "def": "Clean toilets, safe drinking water, waste management and hygiene education in schools."
+    },
+    {
+     "term": "Mawlynnong",
+     "def": "Village in Meghalaya celebrated as Asia’s cleanest village."
+    }
+   ],
+   "explain": [
+    "Make a map of your school: building, playground, garden, water tanks, gate and pathways.",
+    "Each team decides what to observe, then shares findings with the class."
+   ],
+   "example": {
+    "q": "What is a green school? Give two things you can do to make your school green. (2 marks)",
+    "steps": [
+     "A green school manages waste, saves water, uses electricity carefully and plants trees.",
+     "We can switch off unused lights and fans, and plant and care for trees."
+    ],
+    "answer": "Definition + two actions."
+   },
+   "mistakes": [
+    "Thinking a green school only means green paint."
+   ],
+   "tip": "Use the five explorer teams as a checklist for ideas.",
+   "memory": "Water, power, waste, green and road – five teams on the go!",
+   "examAsk": [
+    "What is a green school?",
+    "Name the School Explorer Teams.",
+    "What does Swachh Vidyalaya focus on?"
+   ],
+   "cards": [
+    {
+     "q": "Which team checks leaking taps?",
+     "a": "Water watchers"
+    },
+    {
+     "q": "Which team checks lights and fans?",
+     "a": "Electricity savers"
+    }
+   ],
+   "play": [
+    {
+     "type": "match",
+     "title": "Explorer teams",
+     "say": "Match each team with what it checks.",
+     "pairs": [
+      [
+       "Water watchers",
+       "Leaking taps, clean tanks"
+      ],
+      [
+       "Electricity savers",
+       "Lights and fans left on"
+      ],
+      [
+       "Waste warriors",
+       "Litter and dustbins"
+      ],
+      [
+       "Green guardians",
+       "Trees, plants, compost pit"
+      ],
+      [
+       "Traffic trackers",
+       "Vehicles and crossings at the gate"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "topic": "waste",
+   "ref": "4.2",
+   "title": "Waste management",
+   "time": "7 min",
+   "hook": "Food peels, paper, packets, old newspapers… **where should each one go?**",
+   "core": [
+    {
+     "term": "Reduce and reuse",
+     "def": "Use only what we need, reuse things and do not throw away useful items."
+    },
+    {
+     "term": "Wet waste (green bin)",
+     "def": "Food peels and leftovers."
+    },
+    {
+     "term": "Dry waste (blue bin)",
+     "def": "Packets, paper cups and other dry items."
+    },
+    {
+     "term": "Recyclers",
+     "def": "Collect items like old newspapers and bottles; value the work of recyclers and sanitation workers."
+    }
+   ],
+   "explain": [
+    "The segregation game uses three boxes: green (wet), blue (dry) and ‘items for recycler’.",
+    "If we do not separate waste, it is hard to manage and our surroundings get dirty."
+   ],
+   "example": {
+    "q": "Why should we separate wet and dry waste? (2 marks)",
+    "steps": [
+     "Separated waste is easier to manage – wet waste can become compost and dry waste can be recycled.",
+     "It keeps our surroundings clean and makes sanitation workers’ work easier and safer."
+    ],
+    "answer": "Easier to manage and recycle; cleaner surroundings."
+   },
+   "mistakes": [
+    "Putting newspapers in the wet bin."
+   ],
+   "tip": "Remember: green = wet (like leaves), blue = dry.",
+   "memory": "Green for peels, blue for packets, paper to the recycler!",
+   "examAsk": [
+    "What is wet waste?",
+    "What colour bin is used for dry waste?",
+    "Why should we value recyclers?"
+   ],
+   "cards": [
+    {
+     "q": "Where does a banana peel go?",
+     "a": "Wet waste (green bin)"
+    },
+    {
+     "q": "Where do old newspapers go?",
+     "a": "To the recycler"
+    }
+   ],
+   "play": [
+    {
+     "type": "sort",
+     "title": "Segregation game",
+     "say": "Put each item in the right box.",
+     "buckets": [
+      "Wet (green)",
+      "Dry (blue)",
+      "Recycler"
+     ],
+     "items": [
+      [
+       "Banana peel",
+       0,
+       ""
+      ],
+      [
+       "Leftover rice",
+       0,
+       ""
+      ],
+      [
+       "Vegetable peels",
+       0,
+       ""
+      ],
+      [
+       "Chips packet",
+       1,
+       ""
+      ],
+      [
+       "Used paper cup",
+       1,
+       ""
+      ],
+      [
+       "Old newspapers",
+       2,
+       ""
+      ],
+      [
+       "Glass bottle",
+       2,
+       ""
+      ],
+      [
+       "Old notebooks",
+       2,
+       ""
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "topic": "cool",
+   "ref": "4.3",
+   "title": "Keeping cool · Saving water · Trees",
+   "time": "8 min",
+   "hook": "Why does one classroom feel hotter than another? **Paint one tile black and one white, and touch them after an hour in the Sun.**",
+   "core": [
+    {
+     "term": "White vs black",
+     "def": "A white surface reflects the Sun’s heat and stays cooler; a black surface absorbs heat."
+    },
+    {
+     "term": "Keep cool",
+     "def": "Shady trees, windows for breeze, white roofs, clay pots (matkas) for cool water."
+    },
+    {
+     "term": "Dripping water",
+     "def": "Even a small leak wastes a lot of water over a day – fix leaks!"
+    },
+    {
+     "term": "Trees",
+     "def": "Clean the air, give shade, food and homes to birds and insects, keep surroundings cool."
+    },
+    {
+     "term": "Jal Shakti Abhiyan",
+     "def": "Campaign to plant trees, catch rainwater and use water wisely."
+    }
+   ],
+   "explain": [
+    "Activity 5: water kept under a tree stays cooler than water in the Sun.",
+    "Ladakh students build ice stupas that melt slowly to water gardens in summer."
+   ],
+   "example": {
+    "q": "How can we keep our school cool? (3 marks)",
+    "steps": [
+     "Plant trees that give shade.",
+     "Keep windows open for the breeze.",
+     "Paint roofs white so they reflect the Sun’s heat."
+    ],
+    "answer": "Trees, breeze, white roofs."
+   },
+   "mistakes": [
+    "Saying black roofs keep buildings cool."
+   ],
+   "tip": "Always explain WHY: white reflects, black absorbs.",
+   "memory": "White bounces heat away, black keeps it all day!",
+   "examAsk": [
+    "Which tile felt cooler, black or white?",
+    "How do trees help us?",
+    "How can we stop water wastage in school?"
+   ],
+   "cards": [
+    {
+     "q": "Which colour reflects heat?",
+     "a": "White"
+    },
+    {
+     "q": "How do matkas keep water cool?",
+     "a": "Without electricity – a clay pot design"
+    }
+   ],
+   "play": [
+    {
+     "type": "sort",
+     "title": "Cooler or hotter?",
+     "say": "Does it make a place cooler or hotter?",
+     "buckets": [
+      "Cooler",
+      "Hotter"
+     ],
+     "items": [
+      [
+       "Shady trees",
+       0,
+       ""
+      ],
+      [
+       "White roof",
+       0,
+       ""
+      ],
+      [
+       "Black roof",
+       1,
+       ""
+      ],
+      [
+       "Windows open for breeze",
+       0,
+       ""
+      ],
+      [
+       "Cutting all trees",
+       1,
+       ""
+      ],
+      [
+       "Cemented playground in the Sun",
+       1,
+       ""
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "topic": "safe",
+   "ref": "4.4",
+   "title": "Traffic, fire safety and kindness",
+   "time": "8 min",
+   "hook": "Thomas saw a road accident near school. Mohit’s school held a fire-safety session. **Being prepared helps everyone feel safe.**",
+   "core": [
+    {
+     "term": "Traffic rules",
+     "def": "Many accidents happen because rules are not followed; design signboards for the school gate."
+    },
+    {
+     "term": "Fire drill",
+     "def": "Move calmly to the exit, do not run; crawl low under smoke with mouth covered; do not hide; never go back inside; go to the assembly point; tell teachers if anyone is missing."
+    },
+    {
+     "term": "Kindness and respect",
+     "def": "Wait for your turn, use kind words, help others and keep places clean."
+    }
+   ],
+   "explain": [
+    "Discuss situations: skipping the line, scribbling on benches, littering, teasing, making noise in a park – what would you do, and how can we prevent it?"
+   ],
+   "example": {
+    "q": "What should you do during a fire? (3 marks)",
+    "steps": [
+     "Move quickly and calmly to the nearest exit; do not run or hide.",
+     "Crawl low under smoke with your mouth covered.",
+     "Go to the assembly point, never go back inside, and tell teachers if anyone is missing."
+    ],
+    "answer": "Calm exit, crawl low, assembly point."
+   },
+   "mistakes": [
+    "Saying ‘hide in the bathroom’ – never hide.",
+    "Going back for bags."
+   ],
+   "tip": "Learn the fire drill as 4 verbs: Walk – Crawl – Gather – Tell.",
+   "memory": "Walk, crawl, gather, tell – and everyone stays well!",
+   "examAsk": [
+    "Write three traffic rules.",
+    "What should you do if you smell smoke?",
+    "How can we show respect at school?"
+   ],
+   "cards": [
+    {
+     "q": "Should you run during a fire drill?",
+     "a": "No – move quickly and calmly"
+    },
+    {
+     "q": "Why crawl low in smoke?",
+     "a": "The air near the floor is cleaner"
+    },
+    {
+     "q": "Name one way to show respect.",
+     "a": "Wait for your turn / use kind words / help someone"
+    }
+   ],
+   "play": [
+    {
+     "type": "order",
+     "title": "Fire drill",
+     "say": "Tap the safe fire-drill steps in order.",
+     "first": "fire alarm",
+     "last": "safe",
+     "items": [
+      "Stay calm and move to the nearest exit",
+      "Crawl low under smoke with your mouth covered",
+      "Go to the assembly point with your group",
+      "Tell teachers if anyone is missing or hurt"
+     ],
+     "done": "Never hide and never go back inside!"
+    },
+    {
+     "type": "sort",
+     "title": "Kind or not kind?",
+     "say": "Is this behaviour kind and respectful?",
+     "buckets": [
+      "Kind",
+      "Not kind"
+     ],
+     "items": [
+      [
+       "Waiting for your turn at the tap",
+       0,
+       ""
+      ],
+      [
+       "Teasing a classmate",
+       1,
+       ""
+      ],
+      [
+       "Helping a shy classmate join a game",
+       0,
+       ""
+      ],
+      [
+       "Scribbling on a bench",
+       1,
+       ""
+      ],
+      [
+       "Picking up a wrapper and binning it",
+       0,
+       ""
+      ],
+      [
+       "Making noise near people doing yoga",
+       1,
+       ""
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "formulas": [
+  {
+   "name": "Green school",
+   "f": "Waste, water, electricity, trees",
+   "unit": "Explorer teams",
+   "when": "Definition"
+  },
+  {
+   "name": "Waste",
+   "f": "Wet (green) · dry (blue) · recycler",
+   "unit": "Peels · packets · newspapers",
+   "when": "Sorting"
+  },
+  {
+   "name": "Keep cool",
+   "f": "White reflects, black absorbs; trees give shade",
+   "unit": "Tile activity",
+   "when": "Why questions"
+  },
+  {
+   "name": "Save water",
+   "f": "Fix leaks, collect rainwater",
+   "unit": "Dripping tap activity",
+   "when": "Water questions"
+  },
+  {
+   "name": "Fire drill",
+   "f": "Walk calmly · crawl low · assembly point · tell teachers",
+   "unit": "Never go back inside",
+   "when": "Safety steps"
+  },
+  {
+   "name": "Kindness",
+   "f": "Wait your turn, kind words, help others",
+   "unit": "Happiness tree",
+   "when": "Behaviour questions"
+  }
+ ],
+ "revision": [
+  "A **green school** manages waste, saves water and electricity, and grows trees.",
+  "**Wet waste** → green bin; **dry waste** → blue bin; newspapers → **recycler**.",
+  "**White** surfaces reflect heat and stay cool; **black** absorbs heat.",
+  "Trees give **shade, clean air and homes** for birds and insects.",
+  "A dripping tap wastes a lot of water – **fix leaks**.",
+  "Fire drill: **walk calmly, crawl low, go to the assembly point, never go back inside.**"
+ ],
+ "exam": {
+  "paper": [
+   {
+    "q": "1 mark",
+    "marks": "MCQ / true–false / match",
+    "what": "Bin colours, explorer teams, white vs black roof"
+   },
+   {
+    "q": "2 marks",
+    "marks": "Short answer",
+    "what": "What is a green school; why separate waste"
+   },
+   {
+    "q": "3 marks",
+    "marks": "Long / situation",
+    "what": "Fire-drill steps; ways to keep the school cool; what you would do in a situation"
+   }
+  ],
+  "sections": [
+   {
+    "title": "Situation questions",
+    "kind": "steps",
+    "items": [
+     "Say what is wrong in the situation.",
+     "Say what you would do politely.",
+     "Say how to prevent it next time."
+    ]
+   },
+   {
+    "title": "Writing answers that score",
+    "kind": "mem",
+    "items": [
+     "Read the question twice and underline the key word (why, how, name, list).",
+     "Answer in full sentences using words from the book – e.g. ‘Microbes need moisture, air and the right temperature to grow.’",
+     "For ‘why’ questions, give the reason with ‘because’.",
+     "For 2–3 mark answers, write 2–3 separate points.",
+     "Add one example from the chapter (Godavari, Disha’s pickle, the green school) to show you understand.",
+     "Draw and label a simple diagram when it helps – the water cycle, types of teeth, the river’s journey."
+    ]
+   },
+   {
+    "title": "The day before the test",
+    "kind": "note",
+    "items": [
+     "Read the key facts sheet aloud once.",
+     "Play the Play & learn games again – if you get every card right first time, you are ready.",
+     "Take one Check knowledge quiz at Hard level."
+    ]
+   }
+  ],
+  "checklist": [
+   "I can explain what a green school is.",
+   "I can sort waste into wet, dry and recycler.",
+   "I can explain why white roofs keep buildings cool.",
+   "I can list the fire-drill steps.",
+   "I can give examples of kind and respectful behaviour."
+  ],
+  "paperTitle": "How this chapter is usually tested",
+  "paperCols": [
+   "Marks",
+   "Question type",
+   "Likely asks"
+  ],
+  "paperNote": "Typical Class V school test pattern (1-mark MCQ, fill in the blanks, true/false and matching; 2–3 mark short answers; activity-based questions). Your school’s paper may differ slightly."
+ },
+ "method": "Built on how children learn best: start with a story or activity, sort and match ideas with your hands, say answers aloud before checking (active recall), and come back after 1, 3 and 7 days (spaced revision).",
+ "sheetTitle": "Key facts sheet",
+ "sheetCols": [
+  "Topic",
+  "Key fact",
+  "Example",
+  "Remember it by"
+ ]
+}

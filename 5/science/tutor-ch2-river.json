@@ -1,0 +1,630 @@
+{
+ "id": "class5-science-ch2-tutor",
+ "chapter": "Chapter 2 · Journey of a River",
+ "source": "NCERT Our Wondrous World (Class V), Chapter 2",
+ "overview": {
+  "bigIdea": "The river Godavari tells its own story: **where it begins, how it grows, how it helps people, and what hurts it**. Rivers are a shared gift – we must keep them clean and use water wisely.",
+  "ladderTitle": "The river’s story in four parts",
+  "ladder": [
+   {
+    "step": "Journey",
+    "q": "Where does it go?",
+    "a": "Trimbakeshwar → 1,465 km → Bay of Bengal"
+   },
+   {
+    "step": "Helper",
+    "q": "How does it help?",
+    "a": "Water, crops, work, dams"
+   },
+   {
+    "step": "Hurt",
+    "q": "What harms it?",
+    "a": "Waste, plastic, soap, fertilisers"
+   },
+   {
+    "step": "Too much / too little",
+    "q": "Floods and droughts",
+    "a": "Stay safe, save water"
+   }
+  ],
+  "languagesTitle": "Three things to be able to do",
+  "languages": [
+   {
+    "name": "Tell",
+    "text": "Tell the Godavari’s journey in order."
+   },
+   {
+    "name": "Explain",
+    "text": "Explain how dams and pollution affect a river."
+   },
+   {
+    "name": "Act",
+    "text": "List ways to stay safe in floods and save water."
+   }
+  ],
+  "plan": [
+   {
+    "pass": "Play first",
+    "time": "10 min",
+    "text": "Order the river’s journey and match flood problems."
+   },
+   {
+    "pass": "Learn",
+    "time": "20 min",
+    "text": "Read the four lessons."
+   },
+   {
+    "pass": "Quiz",
+    "time": "10 min",
+    "text": "Check knowledge at Easy, then Hard."
+   },
+   {
+    "pass": "Revise",
+    "time": "5 min",
+    "text": "Come back after 1, 3 and 7 days."
+   }
+  ]
+ },
+ "lessons": [
+  {
+   "topic": "godavari",
+   "ref": "2.1",
+   "title": "The Godavari’s journey",
+   "time": "8 min",
+   "hook": "“I have no feet, but I travel far…” **Who am I?** A river! Meet the Godavari, who starts as a little stream and grows into India’s second longest river.",
+   "core": [
+    {
+     "term": "Source",
+     "def": "Trimbakeshwar, Brahmagiri Hills of the Western Ghats, Maharashtra."
+    },
+    {
+     "term": "Length and mouth",
+     "def": "1,465 km; joins the Bay of Bengal. Second longest river in India after the Ganga."
+    },
+    {
+     "term": "Tributaries",
+     "def": "Small streams that join a river and make it bigger – e.g. Indravati, Manjira, Sabari."
+    },
+    {
+     "term": "Perennial vs seasonal",
+     "def": "Perennial rivers flow all year (Godavari); seasonal rivers flow only in the rainy season."
+    },
+    {
+     "term": "Delta",
+     "def": "Where the river spreads into many small streams before meeting the sea – Coringa mangrove forests."
+    }
+   ],
+   "explain": [
+    "States on its way include Maharashtra, Telangana, Chhattisgarh, Odisha and Andhra Pradesh (see the map).",
+    "It passes rich forests with tigers, barking deer, the Indian golden gecko and red sandalwood trees.",
+    "It is called Dakshina Ganga; the Godavari Pushkaram is celebrated near Nashik."
+   ],
+   "example": {
+    "q": "Describe the journey of the Godavari. (3 marks)",
+    "steps": [
+     "It begins at Trimbakeshwar in the Western Ghats in Maharashtra as a small stream.",
+     "Tributaries and rainwater join it, making it wider and stronger as it flows 1,465 km.",
+     "It forms a delta and joins the Bay of Bengal at the Coringa mangrove forests."
+    ],
+    "answer": "Start → grows with tributaries → delta → Bay of Bengal."
+   },
+   "mistakes": [
+    "Saying it joins the Arabian Sea.",
+    "Mixing up tributary (joins the river) and delta (river splits at the sea)."
+   ],
+   "tip": "Learn the journey as a 4-word chain: Trimbakeshwar → tributaries → delta → Bay of Bengal.",
+   "memory": "Start small, grow tall, split at the sea!",
+   "examAsk": [
+    "Where does the Godavari begin and end?",
+    "What is a tributary?",
+    "What is a perennial river?"
+   ],
+   "cards": [
+    {
+     "q": "Where does the Godavari begin?",
+     "a": "Trimbakeshwar, Maharashtra"
+    },
+    {
+     "q": "What is a delta?",
+     "a": "Where a river spreads into many streams before the sea"
+    },
+    {
+     "q": "Name one tributary of the Godavari.",
+     "a": "Indravati / Manjira / Sabari"
+    }
+   ],
+   "play": [
+    {
+     "type": "order",
+     "title": "Follow the Godavari",
+     "say": "Tap the river’s journey from start to end.",
+     "first": "source",
+     "last": "sea",
+     "items": [
+      "Begins as a stream at Trimbakeshwar",
+      "Tributaries and rainwater join it",
+      "Flows through forests and farmlands",
+      "Spreads into a delta",
+      "Joins the Bay of Bengal"
+     ],
+     "done": "1,465 km from the Western Ghats to the sea!"
+    }
+   ]
+  },
+  {
+   "topic": "support",
+   "ref": "2.2",
+   "title": "How rivers support lives · Dams",
+   "time": "7 min",
+   "hook": "Open a tap and water flows. **But where did it start?** Often in a river far away, carried by pipes and canals, and stored behind giant dams.",
+   "core": [
+    {
+     "term": "River gives",
+     "def": "Water for drinking, cooking, washing, growing food and factories; livelihoods like fishing and boating."
+    },
+    {
+     "term": "Dam",
+     "def": "A giant wall that blocks a river and stores water in a reservoir."
+    },
+    {
+     "term": "Good of dams",
+     "def": "Water in dry seasons for drinking and crops; making electricity."
+    },
+    {
+     "term": "Problems of dams",
+     "def": "Flood land that was home to animals and people; many must leave their homes."
+    }
+   ],
+   "explain": [
+    "More than 900 dams store the Godavari’s water.",
+    "Ecotourism: visiting nature to enjoy and learn without harming it."
+   ],
+   "example": {
+    "q": "Write one benefit and one problem of building a dam. (2 marks)",
+    "steps": [
+     "Benefit: it stores water for drinking, crops and electricity even in dry seasons.",
+     "Problem: it floods land, so people and animals lose their homes."
+    ],
+    "answer": "Stores water / floods homes."
+   },
+   "mistakes": [
+    "Writing only benefits when asked for problems too."
+   ],
+   "tip": "Use ‘but’ to show both sides: ‘A dam stores water, but it floods homes.’",
+   "memory": "Dam = store water, but some lose their homes.",
+   "examAsk": [
+    "How do rivers support people?",
+    "What is a reservoir?",
+    "What problems can a dam cause?"
+   ],
+   "cards": [
+    {
+     "q": "What is a reservoir?",
+     "a": "The large water body stored behind a dam"
+    },
+    {
+     "q": "Name two uses of river water.",
+     "a": "Drinking, farming, factories, washing (any two)"
+    }
+   ],
+   "play": [
+    {
+     "type": "sort",
+     "title": "Dam: help or problem?",
+     "say": "Is each one a benefit or a problem of a dam?",
+     "buckets": [
+      "Benefit",
+      "Problem"
+     ],
+     "items": [
+      [
+       "Water in the dry season",
+       0,
+       ""
+      ],
+      [
+       "Electricity",
+       0,
+       ""
+      ],
+      [
+       "Forests get flooded",
+       1,
+       ""
+      ],
+      [
+       "Water for crops",
+       0,
+       ""
+      ],
+      [
+       "People must leave their homes",
+       1,
+       ""
+      ],
+      [
+       "Animals lose their homes",
+       1,
+       ""
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "topic": "pollution",
+   "ref": "2.3",
+   "title": "What pollutes a river",
+   "time": "7 min",
+   "hook": "Stir sugar into one glass of water and oil into another. **One looks clear, one does not.** But clear water is not always safe!",
+   "core": [
+    {
+     "term": "Pollution",
+     "def": "Waste, plastic and dirty water from homes and factories make river water unsafe."
+    },
+    {
+     "term": "Dissolve",
+     "def": "Sugar and salt dissolve (disappear) in water; oil and sand do not."
+    },
+    {
+     "term": "Green blanket",
+     "def": "Fertilisers washed from fields make plants grow very fast and cover the river, choking fish."
+    },
+    {
+     "term": "Help",
+     "def": "Use eco-friendly products, create less waste, Namami Gange programme."
+    }
+   ],
+   "explain": [
+    "Fish, turtles and birds have nowhere else to go when their river is polluted.",
+    "Harmful chemicals or soapy water can hide in water that looks clean."
+   ],
+   "example": {
+    "q": "How do fertilisers harm a river? (2 marks)",
+    "steps": [
+     "Fertilisers from fields wash into the river and make plants grow very fast.",
+     "They cover the river like a green blanket, so fish find it hard to breathe and the water becomes unsafe."
+    ],
+    "answer": "Fast plant growth → green blanket → fish choke."
+   },
+   "mistakes": [
+    "Thinking clear water is always clean."
+   ],
+   "tip": "Always end with a solution: ‘We can use less waste and eco-friendly products.’",
+   "memory": "Clear is not always clean!",
+   "examAsk": [
+    "What pollutes rivers?",
+    "Why can clean-looking water be unsafe?",
+    "Name three ways to protect water bodies."
+   ],
+   "cards": [
+    {
+     "q": "Does oil dissolve in water?",
+     "a": "No"
+    },
+    {
+     "q": "What is the green blanket?",
+     "a": "Fast-growing plants covering a river because of fertilisers"
+    },
+    {
+     "q": "Name a programme to clean the Ganga.",
+     "a": "Namami Gange"
+    }
+   ],
+   "play": [
+    {
+     "type": "sort",
+     "title": "Dissolves or not?",
+     "say": "Does it dissolve in water?",
+     "buckets": [
+      "Dissolves",
+      "Does not dissolve"
+     ],
+     "items": [
+      [
+       "Sugar",
+       0,
+       ""
+      ],
+      [
+       "Salt",
+       0,
+       ""
+      ],
+      [
+       "Cooking oil",
+       1,
+       ""
+      ],
+      [
+       "Sand",
+       1,
+       ""
+      ],
+      [
+       "Plastic wrapper",
+       1,
+       ""
+      ],
+      [
+       "Soap powder",
+       0,
+       "It mixes into the water – that is why soapy water can hide in rivers."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "topic": "flood",
+   "ref": "2.4",
+   "title": "Floods, droughts and saving water",
+   "time": "8 min",
+   "hook": "Sometimes the river roars and floods the land. Sometimes it runs dry. **Both too much and too little water cause trouble.**",
+   "core": [
+    {
+     "term": "Flood",
+     "def": "Too much rain makes a river overflow its banks and flood houses, fields and roads."
+    },
+    {
+     "term": "Trees help",
+     "def": "Trees slow rainwater and help soil soak it up; without trees water runs off faster."
+    },
+    {
+     "term": "Stay safe",
+     "def": "Get to higher ground, do not walk in flood water, do not touch power lines, keep an emergency bag."
+    },
+    {
+     "term": "Drought",
+     "def": "When no water is available for a long time, families may have to move."
+    },
+    {
+     "term": "Save water",
+     "def": "Turn off taps, fix leaks, reuse clean water for plants, remind others. Every drop counts!"
+    }
+   ],
+   "explain": [
+    "Chennai (2019) brought water by train because reservoirs dried up; Bengaluru (2022) was flooded by heavy rain.",
+    "Water ATMs and the National Water Mission help people use water wisely."
+   ],
+   "example": {
+    "q": "List three flood safety tips. (3 marks)",
+    "steps": [
+     "Get to higher ground.",
+     "Do not walk or swim in flood water.",
+     "Do not touch power lines; keep an emergency bag with food, medicines and a flashlight."
+    ],
+    "answer": "Higher ground · avoid flood water · stay away from power lines."
+   },
+   "mistakes": [
+    "Suggesting swimming in flood water.",
+    "Forgetting animals – free cattle and lead them to safety."
+   ],
+   "tip": "Group flood tips into before, during and after.",
+   "memory": "Up high, stay dry, power lines goodbye!",
+   "examAsk": [
+    "How do trees reduce floods?",
+    "Give three flood safety tips.",
+    "How can you save water at home?"
+   ],
+   "cards": [
+    {
+     "q": "Why do floods happen?",
+     "a": "Too much rain makes rivers overflow"
+    },
+    {
+     "q": "Name one way to save water while brushing.",
+     "a": "Turn off the tap"
+    }
+   ],
+   "play": [
+    {
+     "type": "match",
+     "title": "Flood problems",
+     "say": "Match each flood problem with what it affects.",
+     "pairs": [
+      [
+       "Dirty water",
+       "Safe drinking"
+      ],
+      [
+       "Broken roads",
+       "Travel and transport"
+      ],
+      [
+       "Lost crops",
+       "Food supply"
+      ],
+      [
+       "No electricity",
+       "Lights, fans and phones"
+      ],
+      [
+       "Spread of diseases",
+       "People’s health"
+      ],
+      [
+       "Damaged homes",
+       "Shelter for people"
+      ],
+      [
+       "Schools shut",
+       "Learning"
+      ]
+     ]
+    },
+    {
+     "type": "sort",
+     "title": "Before, during or after a flood?",
+     "say": "When should you do each safety step?",
+     "buckets": [
+      "Before",
+      "During",
+      "After"
+     ],
+     "items": [
+      [
+       "Prepare an emergency bag",
+       0,
+       ""
+      ],
+      [
+       "Know the safe routes to leave",
+       0,
+       ""
+      ],
+      [
+       "Get to higher ground",
+       1,
+       ""
+      ],
+      [
+       "Do not walk in flood water",
+       1,
+       ""
+      ],
+      [
+       "Do not go home until it is declared safe",
+       2,
+       ""
+      ],
+      [
+       "Clean and disinfect your home",
+       2,
+       ""
+      ],
+      [
+       "Tell your family you are safe",
+       2,
+       ""
+      ],
+      [
+       "Keep sandbags, ladder and rope ready",
+       0,
+       ""
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "formulas": [
+  {
+   "name": "Godavari",
+   "f": "Starts at Trimbakeshwar, 1,465 km, ends in the Bay of Bengal",
+   "unit": "Second longest after the Ganga",
+   "when": "Journey questions"
+  },
+  {
+   "name": "Tributary / delta",
+   "f": "Stream joining a river / river splitting at the sea",
+   "unit": "Indravati · Coringa",
+   "when": "Definitions"
+  },
+  {
+   "name": "Perennial / seasonal",
+   "f": "Flows all year / only in rains",
+   "unit": "Godavari is perennial",
+   "when": "Definitions"
+  },
+  {
+   "name": "Dam",
+   "f": "Wall storing water in a reservoir",
+   "unit": "900+ dams on the Godavari",
+   "when": "Benefits and problems"
+  },
+  {
+   "name": "Pollution",
+   "f": "Waste, plastic, soap, fertilisers",
+   "unit": "Green blanket",
+   "when": "Harm and solutions"
+  },
+  {
+   "name": "Floods",
+   "f": "Too much rain, few trees",
+   "unit": "Higher ground, emergency bag",
+   "when": "Safety tips"
+  }
+ ],
+ "revision": [
+  "The Godavari begins at **Trimbakeshwar** and flows **1,465 km** to the **Bay of Bengal**.",
+  "**Tributaries** join a river; a **delta** forms at the sea.",
+  "The Godavari is **perennial**; seasonal rivers flow only in the rains.",
+  "**Dams** store water in reservoirs but can flood homes.",
+  "Waste, soap and **fertilisers** pollute rivers; clear water may not be safe.",
+  "Trees reduce **floods**; save water – **every drop counts**."
+ ],
+ "exam": {
+  "paper": [
+   {
+    "q": "1 mark",
+    "marks": "MCQ / fill in the blank",
+    "what": "Source and length of the Godavari; perennial river; reservoir"
+   },
+   {
+    "q": "2 marks",
+    "marks": "Short answer",
+    "what": "Benefit and problem of a dam; how fertilisers harm rivers"
+   },
+   {
+    "q": "3 marks",
+    "marks": "Long answer",
+    "what": "Journey of the Godavari; flood safety tips; ways to save water"
+   }
+  ],
+  "sections": [
+   {
+    "title": "Map and story tips",
+    "kind": "steps",
+    "items": [
+     "Trace the Godavari on the map from west to east.",
+     "Mark its start, one tributary, one dam and the delta.",
+     "Tell the journey in 4 steps with ‘first, then, next, finally’."
+    ]
+   },
+   {
+    "title": "Writing answers that score",
+    "kind": "mem",
+    "items": [
+     "Read the question twice and underline the key word (why, how, name, list).",
+     "Answer in full sentences using words from the book – e.g. ‘Microbes need moisture, air and the right temperature to grow.’",
+     "For ‘why’ questions, give the reason with ‘because’.",
+     "For 2–3 mark answers, write 2–3 separate points.",
+     "Add one example from the chapter (Godavari, Disha’s pickle, the green school) to show you understand.",
+     "Draw and label a simple diagram when it helps – the water cycle, types of teeth, the river’s journey."
+    ]
+   },
+   {
+    "title": "The day before the test",
+    "kind": "note",
+    "items": [
+     "Read the key facts sheet aloud once.",
+     "Play the Play & learn games again – if you get every card right first time, you are ready.",
+     "Take one Check knowledge quiz at Hard level."
+    ]
+   }
+  ],
+  "checklist": [
+   "I can tell the Godavari’s journey in order.",
+   "I can explain tributary, delta and perennial river.",
+   "I can give one benefit and one problem of dams.",
+   "I can explain how rivers get polluted.",
+   "I can list flood safety tips and ways to save water."
+  ],
+  "paperTitle": "How this chapter is usually tested",
+  "paperCols": [
+   "Marks",
+   "Question type",
+   "Likely asks"
+  ],
+  "paperNote": "Typical Class V school test pattern (1-mark MCQ, fill in the blanks, true/false and matching; 2–3 mark short answers; activity-based questions). Your school’s paper may differ slightly."
+ },
+ "method": "Built on how children learn best: start with a story or activity, sort and match ideas with your hands, say answers aloud before checking (active recall), and come back after 1, 3 and 7 days (spaced revision).",
+ "sheetTitle": "Key facts sheet",
+ "sheetCols": [
+  "Topic",
+  "Key fact",
+  "Example",
+  "Remember it by"
+ ]
+}

@@ -1,0 +1,604 @@
+{
+ "id": "class5-science-ch3-tutor",
+ "chapter": "Chapter 3 · The Mystery of Food",
+ "source": "NCERT Our Wondrous World (Class V), Chapter 3",
+ "overview": {
+  "bigIdea": "Join **Detective Disha** to solve food mysteries: why food spoils, how we keep it safe, which microbes are our friends, and why we must chew well.",
+  "ladderTitle": "Disha’s four mysteries",
+  "ladder": [
+   {
+    "step": "Spoil",
+    "q": "What spoils food?",
+    "a": "Microbes need moisture, air, warmth"
+   },
+   {
+    "step": "Save",
+    "q": "How to preserve?",
+    "a": "Dry, oil, cold, salt, sugar, cans"
+   },
+   {
+    "step": "Friends",
+    "q": "Good microbes?",
+    "a": "Curd, idli, digestion"
+   },
+   {
+    "step": "Chew",
+    "q": "Why chew well?",
+    "a": "Teeth + saliva, no choking"
+   }
+  ],
+  "languagesTitle": "Three things to be able to do",
+  "languages": [
+   {
+    "name": "Explain",
+    "text": "Why food spoils and how preservation stops it."
+   },
+   {
+    "name": "Match",
+    "text": "Food → preservation method → product."
+   },
+   {
+    "name": "Care",
+    "text": "Look after teeth and eat safely."
+   }
+  ],
+  "plan": [
+   {
+    "pass": "Play first",
+    "time": "10 min",
+    "text": "Sort preservation methods and match teeth."
+   },
+   {
+    "pass": "Learn",
+    "time": "20 min",
+    "text": "Read the four lessons."
+   },
+   {
+    "pass": "Quiz",
+    "time": "10 min",
+    "text": "Check knowledge at Easy, then Hard."
+   },
+   {
+    "pass": "Revise",
+    "time": "5 min",
+    "text": "Come back after 1, 3 and 7 days."
+   }
+  ]
+ },
+ "lessons": [
+  {
+   "topic": "spoil",
+   "ref": "3.1",
+   "title": "Why food spoils – microbes",
+   "time": "7 min",
+   "hook": "Disha opened a lunch box forgotten since Friday. **A bad smell and coloured patches on her uttapam!** What happened? Mystery #1 begins.",
+   "core": [
+    {
+     "term": "Microbes",
+     "def": "Tiny living things seen only with a microscope. Found in soil, water, air, plants, animals and inside us."
+    },
+    {
+     "term": "Mould",
+     "def": "Coloured patches on food – a colony of thousands of microbes."
+    },
+    {
+     "term": "What microbes need",
+     "def": "Moisture, air and the right temperature. Remove any one and they stop growing."
+    },
+    {
+     "term": "Spoiled food",
+     "def": "Can give an upset stomach."
+    }
+   ],
+   "explain": [
+    "Bread left out for two days got mould, but pickles covered with oil stayed good for two months.",
+    "Some microbes are helpful – they make curd and help digestion."
+   ],
+   "example": {
+    "q": "Why do some foods spoil faster than others? (2 marks)",
+    "steps": [
+     "Microbes grow on food when they get moisture, air and the right temperature.",
+     "Foods kept dry, covered with oil or kept cold spoil slowly, like Paati’s pickle."
+    ],
+    "answer": "Moisture, air and warmth help microbes; removing them slows spoiling."
+   },
+   "mistakes": [
+    "Saying all microbes are bad.",
+    "Forgetting one of the three needs (moisture, air, temperature)."
+   ],
+   "tip": "Learn the three needs as M-A-T: Moisture, Air, Temperature.",
+   "memory": "Microbes need a MAT to grow!",
+   "examAsk": [
+    "What are microbes?",
+    "What do microbes need to grow?",
+    "Why did Disha’s uttapam spoil?"
+   ],
+   "cards": [
+    {
+     "q": "What is mould?",
+     "a": "A colony of thousands of microbes"
+    },
+    {
+     "q": "Which instrument shows microbes?",
+     "a": "Microscope"
+    },
+    {
+     "q": "Name the three needs of microbes.",
+     "a": "Moisture, air, right temperature"
+    }
+   ],
+   "play": [
+    {
+     "type": "sort",
+     "title": "Spoils fast or lasts long?",
+     "say": "Which food will spoil quickly, and which will last?",
+     "buckets": [
+      "Spoils quickly",
+      "Lasts long"
+     ],
+     "items": [
+      [
+       "Bread left on the balcony",
+       0,
+       ""
+      ],
+      [
+       "Pickle covered with oil",
+       1,
+       ""
+      ],
+      [
+       "Cooked uttapam in a closed box for 3 days",
+       0,
+       ""
+      ],
+      [
+       "Sun-dried chilli powder",
+       1,
+       ""
+      ],
+      [
+       "Cut fruit left outside",
+       0,
+       ""
+      ],
+      [
+       "Ghee",
+       1,
+       ""
+      ],
+      [
+       "Milk kept outside on a hot day",
+       0,
+       ""
+      ],
+      [
+       "Canned juice (unopened)",
+       1,
+       ""
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "topic": "preserve",
+   "ref": "3.2",
+   "title": "Saving food – preservation",
+   "time": "8 min",
+   "hook": "Chillies drying on the balcony, oil poured over pickles, milk in the fridge. **Every family is fighting microbes!** Preservation keeps food safe for longer.",
+   "core": [
+    {
+     "term": "Drying (dehydration)",
+     "def": "Removes moisture – chillies, papad, aam papad, khakhra, dried fish."
+    },
+    {
+     "term": "Oiling / pickling",
+     "def": "Oil keeps out air – lemon and mango pickles."
+    },
+    {
+     "term": "Refrigeration / freezing",
+     "def": "Cold slows microbes – milk, vegetables, butter."
+    },
+    {
+     "term": "Salt, sugar, spices",
+     "def": "Old methods still used today – pepper was so popular that Vasco da Gama came to India for it."
+    },
+    {
+     "term": "Canning and packaging",
+     "def": "Air-tight cans in factories keep microbes out."
+    },
+    {
+     "term": "Ghee",
+     "def": "Butter is heated; water separates and evaporates – ghee needs no fridge."
+    }
+   ],
+   "explain": [
+    "Matkas (clay pots) keep water cool without electricity.",
+    "Even insects preserve food – hunting wasps store food for their larvae."
+   ],
+   "example": {
+    "q": "Name three ways of preserving food with one example each. (3 marks)",
+    "steps": [
+     "Drying in the Sun – chilli powder.",
+     "Adding oil – lemon pickle.",
+     "Keeping in a fridge – milk and vegetables."
+    ],
+    "answer": "Drying, oiling, cooling (or salt/sugar, canning)."
+   },
+   "mistakes": [
+    "Mixing up why each method works (drying = no moisture, oil = no air, cold = slow microbes)."
+   ],
+   "tip": "For every method, say WHAT it removes.",
+   "memory": "Dry it, oil it, chill it, can it!",
+   "examAsk": [
+    "Why are chillies dried?",
+    "Why is oil added to pickles?",
+    "Why does ghee not need a fridge?"
+   ],
+   "cards": [
+    {
+     "q": "How is khakhra made from roti?",
+     "a": "By drying (dehydration)"
+    },
+    {
+     "q": "Why does a fridge keep food fresh?",
+     "a": "Cold slows down microbes"
+    },
+    {
+     "q": "What does oil do in a pickle?",
+     "a": "Keeps out air"
+    }
+   ],
+   "play": [
+    {
+     "type": "match",
+     "title": "Food factory",
+     "say": "Match each food with how it is preserved.",
+     "pairs": [
+      [
+       "Chilli powder",
+       "Drying in the Sun"
+      ],
+      [
+       "Lemon pickle",
+       "Oil and salt"
+      ],
+      [
+       "Milk and vegetables",
+       "Fridge"
+      ],
+      [
+       "Canned juice",
+       "Air-tight can"
+      ],
+      [
+       "Ghee",
+       "Heating out the water"
+      ],
+      [
+       "Aam papad",
+       "Drying mango"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "topic": "good",
+   "ref": "3.3",
+   "title": "Good microbes, seasonal food",
+   "time": "6 min",
+   "hook": "Not all microbes are villains! **Some of them make our idlis fluffy and our curd tasty.**",
+   "core": [
+    {
+     "term": "Idli batter",
+     "def": "Microbes in the air make the batter rise and become fluffy."
+    },
+    {
+     "term": "Curd",
+     "def": "A spoonful of old curd in warm milk – microbes do the rest."
+    },
+    {
+     "term": "Upset stomach",
+     "def": "Microbes in curd and buttermilk help the good microbes in our stomach. See a doctor if it is severe."
+    },
+    {
+     "term": "Seasonal fruits",
+     "def": "Taste best in their season, e.g. amla in winter, jamun in summer; local fruits are fresher."
+    }
+   ],
+   "explain": [
+    "Fermented rice (pakhala, kanji) cools the body and has good bacteria.",
+    "Bad eating habits can also cause indigestion (Finding #8)."
+   ],
+   "example": {
+    "q": "Give two ways in which microbes are useful to us. (2 marks)",
+    "steps": [
+     "They make idli batter rise and turn milk into curd.",
+     "Microbes in curd help digestion."
+    ],
+    "answer": "Food making and digestion."
+   },
+   "mistakes": [
+    "Forgetting that some microbes are helpful."
+   ],
+   "tip": "When asked ‘useful microbes’, write food + digestion.",
+   "memory": "Good microbes: curd, idli, happy tummy!",
+   "examAsk": [
+    "What makes idli batter fluffy?",
+    "How is curd made?",
+    "Why should we eat seasonal fruits?"
+   ],
+   "cards": [
+    {
+     "q": "What makes curd from milk?",
+     "a": "Microbes in old curd"
+    },
+    {
+     "q": "Name a seasonal fruit.",
+     "a": "Lychee / amla / jamun / mango"
+    }
+   ],
+   "play": [
+    {
+     "type": "sort",
+     "title": "Helpful or harmful microbe?",
+     "say": "Is the microbe helping or harming here?",
+     "buckets": [
+      "Helpful",
+      "Harmful"
+     ],
+     "items": [
+      [
+       "Turning milk into curd",
+       0,
+       ""
+      ],
+      [
+       "Mould on old bread",
+       1,
+       ""
+      ],
+      [
+       "Making idli batter fluffy",
+       0,
+       ""
+      ],
+      [
+       "Spoiling Disha’s uttapam",
+       1,
+       ""
+      ],
+      [
+       "Helping digestion in the stomach",
+       0,
+       ""
+      ],
+      [
+       "Causing an upset stomach from spoiled food",
+       1,
+       ""
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "topic": "teeth",
+   "ref": "3.4",
+   "title": "Chew right – teeth and hygiene",
+   "time": "7 min",
+   "hook": "Disha looked in the mirror and said **“Aaaaah!”** Different teeth, different jobs – and saliva joins in too.",
+   "core": [
+    {
+     "term": "Incisors",
+     "def": "Cut food."
+    },
+    {
+     "term": "Canines",
+     "def": "Tear food."
+    },
+    {
+     "term": "Premolars",
+     "def": "Crush food."
+    },
+    {
+     "term": "Molars",
+     "def": "Grind food."
+    },
+    {
+     "term": "Saliva",
+     "def": "Chewing well releases saliva, which helps digest food."
+    },
+    {
+     "term": "Oral hygiene",
+     "def": "Rinse after eating, brush regularly, eat fewer sweets; see a dentist for a cavity or toothache."
+    },
+    {
+     "term": "Choking",
+     "def": "Eat slowly, take small mouthfuls, do not talk or laugh with food in your mouth."
+    }
+   ],
+   "explain": [
+    "Eating with hands helps you feel the texture of food and prepares your stomach for digestion."
+   ],
+   "example": {
+    "q": "Name the four types of teeth and their work. (2 marks)",
+    "steps": [
+     "Incisors cut and canines tear.",
+     "Premolars crush and molars grind."
+    ],
+    "answer": "Cut, tear, crush, grind."
+   },
+   "mistakes": [
+    "Mixing up premolars (crush) and molars (grind)."
+   ],
+   "tip": "Point to your own teeth from front to back while saying cut–tear–crush–grind.",
+   "memory": "In-Can-Pre-Mo: Cut, Tear, Crush, Grind!",
+   "examAsk": [
+    "Which teeth grind food?",
+    "How does saliva help?",
+    "How can we avoid cavities and choking?"
+   ],
+   "cards": [
+    {
+     "q": "Which teeth tear food?",
+     "a": "Canines"
+    },
+    {
+     "q": "What is a cavity?",
+     "a": "A hole in a tooth"
+    },
+    {
+     "q": "Why chew food well?",
+     "a": "It breaks food down and releases saliva"
+    }
+   ],
+   "play": [
+    {
+     "type": "match",
+     "title": "Tooth jobs",
+     "say": "Match each tooth with its job.",
+     "pairs": [
+      [
+       "Incisors",
+       "Cut"
+      ],
+      [
+       "Canines",
+       "Tear"
+      ],
+      [
+       "Premolars",
+       "Crush"
+      ],
+      [
+       "Molars",
+       "Grind"
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "formulas": [
+  {
+   "name": "Microbes",
+   "f": "Tiny living things, seen with a microscope",
+   "unit": "Mould on bread",
+   "when": "Why food spoils"
+  },
+  {
+   "name": "Microbes need",
+   "f": "Moisture + air + right temperature",
+   "unit": "Remove one to stop them",
+   "when": "Preservation reasons"
+  },
+  {
+   "name": "Preservation",
+   "f": "Dry · oil · cold · salt/sugar · cans",
+   "unit": "Chilli powder, pickle, fridge",
+   "when": "Methods with examples"
+  },
+  {
+   "name": "Good microbes",
+   "f": "Curd, idli, digestion",
+   "unit": "Curd for upset stomach",
+   "when": "Useful microbes"
+  },
+  {
+   "name": "Teeth",
+   "f": "Incisor cut · canine tear · premolar crush · molar grind",
+   "unit": "Chew right",
+   "when": "Types of teeth"
+  },
+  {
+   "name": "Hygiene",
+   "f": "Rinse, brush, fewer sweets, eat slowly",
+   "unit": "Avoid cavities and choking",
+   "when": "Healthy habits"
+  }
+ ],
+ "revision": [
+  "**Microbes** are tiny living things everywhere; **mould** is a colony of them.",
+  "Microbes need **moisture, air and the right temperature**.",
+  "Preserve food by **drying, oiling, cooling, salt/sugar, canning**.",
+  "**Ghee** keeps without a fridge because its water is removed.",
+  "**Good microbes** make curd and idli and help digestion.",
+  "Teeth: **incisors cut, canines tear, premolars crush, molars grind**; chew well to avoid choking."
+ ],
+ "exam": {
+  "paper": [
+   {
+    "q": "1 mark",
+    "marks": "MCQ / fill in / match",
+    "what": "Mould, microscope, types of teeth, preservation matching"
+   },
+   {
+    "q": "2 marks",
+    "marks": "Short answer",
+    "what": "Why oil in pickles; why butter needs a fridge; useful microbes"
+   },
+   {
+    "q": "3 marks",
+    "marks": "Long / activity",
+    "what": "Ways to preserve food with examples; plan food for a two-day trip"
+   }
+  ],
+  "sections": [
+   {
+    "title": "Match-the-following tips",
+    "kind": "steps",
+    "items": [
+     "First match the ones you are sure of.",
+     "For preservation, ask: does it remove moisture, air or warmth?",
+     "Check every item is used once."
+    ]
+   },
+   {
+    "title": "Writing answers that score",
+    "kind": "mem",
+    "items": [
+     "Read the question twice and underline the key word (why, how, name, list).",
+     "Answer in full sentences using words from the book – e.g. ‘Microbes need moisture, air and the right temperature to grow.’",
+     "For ‘why’ questions, give the reason with ‘because’.",
+     "For 2–3 mark answers, write 2–3 separate points.",
+     "Add one example from the chapter (Godavari, Disha’s pickle, the green school) to show you understand.",
+     "Draw and label a simple diagram when it helps – the water cycle, types of teeth, the river’s journey."
+    ]
+   },
+   {
+    "title": "The day before the test",
+    "kind": "note",
+    "items": [
+     "Read the key facts sheet aloud once.",
+     "Play the Play & learn games again – if you get every card right first time, you are ready.",
+     "Take one Check knowledge quiz at Hard level."
+    ]
+   }
+  ],
+  "checklist": [
+   "I can explain why food spoils.",
+   "I can name what microbes need to grow.",
+   "I can match foods with their preservation method.",
+   "I can give two uses of good microbes.",
+   "I can name the four types of teeth and their jobs."
+  ],
+  "paperTitle": "How this chapter is usually tested",
+  "paperCols": [
+   "Marks",
+   "Question type",
+   "Likely asks"
+  ],
+  "paperNote": "Typical Class V school test pattern (1-mark MCQ, fill in the blanks, true/false and matching; 2–3 mark short answers; activity-based questions). Your school’s paper may differ slightly."
+ },
+ "method": "Built on how children learn best: start with a story or activity, sort and match ideas with your hands, say answers aloud before checking (active recall), and come back after 1, 3 and 7 days (spaced revision).",
+ "sheetTitle": "Key facts sheet",
+ "sheetCols": [
+  "Topic",
+  "Key fact",
+  "Example",
+  "Remember it by"
+ ]
+}

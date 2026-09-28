@@ -1,0 +1,650 @@
+{
+ "id": "class5-science-ch1-tutor",
+ "chapter": "Chapter 1 · Water — The Essence of Life",
+ "source": "NCERT Our Wondrous World (Class V), Chapter 1",
+ "overview": {
+  "bigIdea": "Water is everywhere, but **very little of it is fresh water we can use**. Water keeps moving – from sea to sky to land and back – and it shapes the land and gives a home to many plants and animals.",
+  "ladderTitle": "The chapter in four steps",
+  "ladder": [
+   {
+    "step": "How much?",
+    "q": "Fresh or salty?",
+    "a": "Only a teaspoon out of a glass is fresh"
+   },
+   {
+    "step": "Forms",
+    "q": "Solid, liquid, vapour",
+    "a": "Water cycle moves water round and round"
+   },
+   {
+    "step": "Where?",
+    "q": "Ground and surface",
+    "a": "Groundwater, rivers, lakes, ponds"
+   },
+   {
+    "step": "Life",
+    "q": "Who lives in water?",
+    "a": "Fish, heron, lotus, turtle…"
+   }
+  ],
+  "languagesTitle": "Three things to be able to do",
+  "languages": [
+   {
+    "name": "Name",
+    "text": "Name the forms and sources of water."
+   },
+   {
+    "name": "Explain",
+    "text": "Explain the water cycle in 4–5 steps."
+   },
+   {
+    "name": "Save",
+    "text": "Suggest ways to save and recharge water."
+   }
+  ],
+  "plan": [
+   {
+    "pass": "Play first",
+    "time": "10 min",
+    "text": "Play the sorting and ordering games."
+   },
+   {
+    "pass": "Learn",
+    "time": "20 min",
+    "text": "Read the four lessons and flip the cards."
+   },
+   {
+    "pass": "Quiz",
+    "time": "10 min",
+    "text": "Check knowledge at Easy, then Hard."
+   },
+   {
+    "pass": "Revise",
+    "time": "5 min",
+    "text": "Come back after 1, 3 and 7 days."
+   }
+  ]
+ },
+ "lessons": [
+  {
+   "topic": "amount",
+   "ref": "1.1",
+   "title": "How much water? Fresh and salt water",
+   "time": "6 min",
+   "hook": "Afreen and Jyoti watched the rain and wondered: **where does all this water come from, and where does it go?** Most of the Earth is covered with water – so why do people still run short of it?",
+   "core": [
+    {
+     "term": "Salt water",
+     "def": "Most water on Earth – in oceans and seas. Not fit for drinking."
+    },
+    {
+     "term": "Freshwater",
+     "def": "Water we can drink and use for crops: rain, rivers, lakes, ponds, groundwater. Very little of Earth’s water is fresh."
+    },
+    {
+     "term": "The glass and the teaspoon",
+     "def": "If all water were a 200 ml glass, freshwater would be only 5 ml – a teaspoon!"
+    },
+    {
+     "term": "Johads",
+     "def": "Traditional small earthen dams in Rajasthan that collect rainwater and recharge groundwater."
+    }
+   ],
+   "explain": [
+    "All living beings – people, animals, birds and plants – depend on **freshwater** for drinking, growing crops and daily work.",
+    "Ocean water is salty. In the salt pans of Gujarat it is dried to collect salt.",
+    "Wular Lake in Jammu and Kashmir is one of Asia’s largest freshwater lakes; it helps prevent floods."
+   ],
+   "example": {
+    "q": "Why can most of the water on Earth not be used for drinking or farming? (2 marks)",
+    "steps": [
+     "Most of the water on Earth is in oceans and seas.",
+     "This water is salty, so it is not fit for drinking or for crops.",
+     "Only a very small amount is freshwater."
+    ],
+    "answer": "Because most water is salty; only a little is fresh."
+   },
+   "mistakes": [
+    "Saying most of Earth’s water is fresh – it is salty.",
+    "Calling ocean water ‘freshwater’ because it is liquid."
+   ],
+   "tip": "When asked ‘why save water?’, use the glass-and-teaspoon fact.",
+   "memory": "A whole glass of water, only a spoon to drink!",
+   "examAsk": [
+    "Why is freshwater precious?",
+    "Name three sources of freshwater.",
+    "What are johads?"
+   ],
+   "cards": [
+    {
+     "q": "Is ocean water fresh or salty?",
+     "a": "Salty"
+    },
+    {
+     "q": "Name two sources of freshwater.",
+     "a": "Rivers, lakes, ponds, rain, groundwater (any two)"
+    },
+    {
+     "q": "What is dried in the salt pans of Gujarat?",
+     "a": "Seawater, to collect salt"
+    }
+   ],
+   "play": [
+    {
+     "type": "sort",
+     "title": "Fresh or salty?",
+     "say": "Tap where each water belongs.",
+     "buckets": [
+      "Freshwater",
+      "Salt water"
+     ],
+     "items": [
+      [
+       "Ocean",
+       1,
+       "Oceans are salty."
+      ],
+      [
+       "River Godavari",
+       0,
+       "Rivers are freshwater."
+      ],
+      [
+       "Rain",
+       0,
+       "Rain is freshwater."
+      ],
+      [
+       "Sea water in salt pans",
+       1,
+       "Dried to get salt."
+      ],
+      [
+       "Wular Lake",
+       0,
+       "A big freshwater lake."
+      ],
+      [
+       "Well water",
+       0,
+       "Groundwater is fresh."
+      ],
+      [
+       "Arabian Sea",
+       1,
+       "A sea is salty."
+      ],
+      [
+       "Pond near school",
+       0,
+       "Freshwater habitat."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "topic": "forms",
+   "ref": "1.2",
+   "title": "Forms of water and the water cycle",
+   "time": "8 min",
+   "hook": "Put ice in a steel glass and watch. **Tiny drops appear on the outside!** Where did they come from? The air itself has water in it.",
+   "core": [
+    {
+     "term": "Three forms",
+     "def": "Solid (ice, snow, hail) · Liquid (rain, river water) · Vapour (steam, water vapour in the air)."
+    },
+    {
+     "term": "Evaporation (heating)",
+     "def": "The Sun’s heat turns water from oceans and rivers into water vapour."
+    },
+    {
+     "term": "Clouds",
+     "def": "Water vapour cools and forms clouds, which come down as rain, snow and hail."
+    },
+    {
+     "term": "Water cycle",
+     "def": "The constant circular movement of water in nature."
+    }
+   ],
+   "explain": [
+    "Ice melts into water; heated water becomes steam; steam cools back into water – water can change and change back.",
+    "In nature: heat → water vapour → clouds → rain/snow/hail → rivers, lakes and oceans → again."
+   ],
+   "example": {
+    "q": "Explain the water cycle. (3 marks)",
+    "steps": [
+     "The Sun’s heat changes water from oceans and rivers into water vapour.",
+     "Water vapour cools and forms clouds.",
+     "Clouds come down as rain, snow or hail, and the water goes back into rivers, lakes and oceans. This goes on and on."
+    ],
+    "answer": "Heat → vapour → clouds → rain → back to water bodies."
+   },
+   "mistakes": [
+    "Thinking snow is a different substance – it is solid water.",
+    "Forgetting that the water cycle never stops (it is circular)."
+   ],
+   "tip": "Draw a circle with 4 arrows: Sun heats → vapour rises → clouds → rain falls.",
+   "memory": "Up as vapour, down as rain – round and round again!",
+   "examAsk": [
+    "Name the three forms of water with examples.",
+    "Where do water drops on a cold glass come from?",
+    "Draw and label the water cycle."
+   ],
+   "cards": [
+    {
+     "q": "What form of water is snow?",
+     "a": "Solid"
+    },
+    {
+     "q": "What turns water into vapour?",
+     "a": "The Sun’s heat"
+    },
+    {
+     "q": "What is the water cycle?",
+     "a": "The constant circular movement of water in nature"
+    }
+   ],
+   "play": [
+    {
+     "type": "order",
+     "title": "Build the water cycle",
+     "say": "Tap the steps in the right order.",
+     "first": "starts",
+     "last": "back to start",
+     "items": [
+      "The Sun heats water in seas and rivers",
+      "Water turns into water vapour",
+      "Water vapour cools and forms clouds",
+      "Clouds bring rain, snow and hail",
+      "Water flows back into rivers, lakes and oceans"
+     ],
+     "done": "That is the water cycle – and it keeps going round!"
+    },
+    {
+     "type": "sort",
+     "title": "Solid, liquid or vapour?",
+     "say": "Sort each one by its form.",
+     "buckets": [
+      "Solid",
+      "Liquid",
+      "Vapour"
+     ],
+     "items": [
+      [
+       "Ice cube",
+       0,
+       ""
+      ],
+      [
+       "Snow",
+       0,
+       ""
+      ],
+      [
+       "Hail",
+       0,
+       ""
+      ],
+      [
+       "Rain",
+       1,
+       ""
+      ],
+      [
+       "River water",
+       1,
+       ""
+      ],
+      [
+       "Steam from boiling water",
+       2,
+       ""
+      ],
+      [
+       "Water vapour in the air",
+       2,
+       ""
+      ],
+      [
+       "Melted ice",
+       1,
+       ""
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "topic": "ground",
+   "ref": "1.3",
+   "title": "Groundwater, surface water and rivers",
+   "time": "8 min",
+   "hook": "Pour water slowly onto soil in a glass – **it disappears!** Where does it go? Some rainwater sinks deep into the ground and waits there for us.",
+   "core": [
+    {
+     "term": "Groundwater",
+     "def": "Water stored deep underground after rain sinks through soil and rocks. We use wells, borewells, tube wells and handpumps to get it."
+    },
+    {
+     "term": "Surface water",
+     "def": "Rivers, ponds and lakes."
+    },
+    {
+     "term": "Recharge",
+     "def": "Open, uncovered land, soak pits, ponds, lakes and trees help rainwater go back underground. Cemented surfaces stop it."
+    },
+    {
+     "term": "Rivers flow downhill",
+     "def": "Water flows, stops or curves according to the shape of the land. Some rivers go to the Bay of Bengal, some to the Arabian Sea."
+    }
+   ],
+   "explain": [
+    "A river often begins in the mountains and flows down across the land.",
+    "The Luni river (Rajasthan) is the only major Indian river that does not reach a sea – it ends in the Rann of Kutch.",
+    "Hiware Bazar in Maharashtra became a water-positive village through rainwater harvesting."
+   ],
+   "example": {
+    "q": "Why does groundwater not get recharged easily in cities? How can we help? (3 marks)",
+    "steps": [
+     "Cities have many cemented surfaces like roads and paved areas.",
+     "Rainwater cannot soak into the ground through them.",
+     "We can keep open spaces, make soak pits and ponds, and plant more trees."
+    ],
+    "answer": "Cement blocks water; open land, soak pits and trees help."
+   },
+   "mistakes": [
+    "Saying groundwater is on the surface.",
+    "Thinking all rivers flow into the same sea."
+   ],
+   "tip": "Always give 2 ways to recharge groundwater – examiners love solutions.",
+   "memory": "Soil soaks, cement blocks!",
+   "examAsk": [
+    "What is groundwater?",
+    "How do we get groundwater?",
+    "Which surface helps recharge groundwater?"
+   ],
+   "cards": [
+    {
+     "q": "Name two ways to draw groundwater.",
+     "a": "Wells, borewells, tube wells, handpumps (any two)"
+    },
+    {
+     "q": "Which river does not reach a sea?",
+     "a": "Luni"
+    },
+    {
+     "q": "Why do rivers flow downhill?",
+     "a": "Water flows from higher to lower ground following the land’s shape"
+    }
+   ],
+   "play": [
+    {
+     "type": "sort",
+     "title": "Helps or blocks recharge?",
+     "say": "Does it help rainwater go underground, or block it?",
+     "buckets": [
+      "Helps recharge",
+      "Blocks recharge"
+     ],
+     "items": [
+      [
+       "Green lawn",
+       0,
+       "Soil soaks water."
+      ],
+      [
+       "Concrete road",
+       1,
+       "Cement stops water."
+      ],
+      [
+       "Soak pit",
+       0,
+       "Lets water seep in."
+      ],
+      [
+       "Paved area",
+       1,
+       "Water runs off."
+      ],
+      [
+       "Planting trees",
+       0,
+       "Trees help water soak in."
+      ],
+      [
+       "Pond",
+       0,
+       "Holds water that seeps in."
+      ],
+      [
+       "Cemented playground",
+       1,
+       "No soil exposed."
+      ],
+      [
+       "Johad",
+       0,
+       "Collects rainwater."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "topic": "life",
+   "ref": "1.4",
+   "title": "Life in water",
+   "time": "7 min",
+   "hook": "After the rain, the pond near school was full. **Tiny fish swam, and a frog sat on a lotus leaf!** Plants and animals in water have special features that help them live there.",
+   "core": [
+    {
+     "term": "Animals in water",
+     "def": "Have features like fins to swim; many cannot live out of water."
+    },
+    {
+     "term": "Water plants",
+     "def": "Floating (water hyacinth), rooted floating (lotus, water lily), edge plants (reeds), plants under water."
+    },
+    {
+     "term": "Waxy coating",
+     "def": "Makes leaves waterproof so too much water does not enter the plant."
+    },
+    {
+     "term": "Food chain",
+     "def": "Living beings depend on each other for food – small fish, big fish, birds, otters, crocodiles."
+    }
+   ],
+   "explain": [
+    "Information card: dragonfly eats mosquitoes; water scorpion breathes using a tail tube; pond heron stands still to catch fish; freshwater turtle is soft-shelled; water snake is harmless.",
+    "Keibul Lamjao (Manipur) – the only floating national park; phumdis and Sangai deer. The fishing cat has partially webbed paws."
+   ],
+   "example": {
+    "q": "How are lotus plants suited to living in water? (2 marks)",
+    "steps": [
+     "Their flowers and leaves float on the water while their roots stay in the pond bed.",
+     "The leaves have a waxy coating that keeps them waterproof."
+    ],
+    "answer": "Floating leaves, roots in the bed, waxy coat."
+   },
+   "mistakes": [
+    "Calling the water hyacinth a rooted plant – it is free-floating.",
+    "Forgetting that all these depend on freshwater."
+   ],
+   "tip": "For ‘how is it adapted’ questions, name the body part and its job.",
+   "memory": "Fins to swim, wax to stay dry, long legs to catch the fish nearby!",
+   "examAsk": [
+    "Give two features of animals that live in water.",
+    "Name a free-floating plant.",
+    "What happens if one animal in a food chain disappears?"
+   ],
+   "cards": [
+    {
+     "q": "What does a dragonfly eat?",
+     "a": "Mosquitoes"
+    },
+    {
+     "q": "How does a water scorpion breathe?",
+     "a": "Using a tail tube"
+    },
+    {
+     "q": "What makes leaves waterproof?",
+     "a": "A waxy coating"
+    }
+   ],
+   "play": [
+    {
+     "type": "match",
+     "title": "Pond pals",
+     "say": "Match each living being with its special feature.",
+     "pairs": [
+      [
+       "Dragonfly",
+       "Eats mosquitoes"
+      ],
+      [
+       "Water scorpion",
+       "Breathes through a tail tube"
+      ],
+      [
+       "Pond heron",
+       "Long legs, stands still to catch fish"
+      ],
+      [
+       "Lotus",
+       "Floats, roots in the pond bed"
+      ],
+      [
+       "Water hyacinth",
+       "Floats freely and spreads fast"
+      ],
+      [
+       "Fishing cat",
+       "Partly webbed paws"
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "formulas": [
+  {
+   "name": "Freshwater",
+   "f": "Only a teaspoon (5 ml) out of a 200 ml glass",
+   "unit": "Rain, rivers, lakes, groundwater",
+   "when": "Why we must save water"
+  },
+  {
+   "name": "Forms of water",
+   "f": "Solid · liquid · vapour",
+   "unit": "Ice · rain · steam",
+   "when": "Naming forms"
+  },
+  {
+   "name": "Water cycle",
+   "f": "Heat → vapour → clouds → rain → rivers/sea",
+   "unit": "Bag activity",
+   "when": "Explaining the cycle"
+  },
+  {
+   "name": "Groundwater",
+   "f": "Rain sinks through soil and rocks",
+   "unit": "Wells, borewells, handpumps",
+   "when": "Recharge questions"
+  },
+  {
+   "name": "Rivers",
+   "f": "Flow downhill following the land",
+   "unit": "Bay of Bengal or Arabian Sea; Luni ends in Rann of Kutch",
+   "when": "Map questions"
+  },
+  {
+   "name": "Water life",
+   "f": "Fins, waxy leaves, floating plants",
+   "unit": "Fish, lotus, heron",
+   "when": "Adaptation questions"
+  }
+ ],
+ "revision": [
+  "Most water on Earth is **salty**; very little is **fresh**.",
+  "Three forms: **solid, liquid, vapour**.",
+  "**Water cycle:** heat → vapour → clouds → rain → back to rivers and sea.",
+  "**Groundwater** is stored deep underground; open land, soak pits and trees help recharge it.",
+  "Rivers flow **from higher to lower** ground; Luni ends in the Rann of Kutch.",
+  "Water plants and animals have **special features** – fins, floating leaves, waxy coating."
+ ],
+ "exam": {
+  "paper": [
+   {
+    "q": "1 mark",
+    "marks": "MCQ / true–false / match",
+    "what": "Forms of water, fresh vs salt, name the animal"
+   },
+   {
+    "q": "2 marks",
+    "marks": "Short answer",
+    "what": "Why ocean water is not drunk; ways to get groundwater"
+   },
+   {
+    "q": "3 marks",
+    "marks": "Long / diagram",
+    "what": "Water cycle with a labelled drawing; how to recharge groundwater"
+   }
+  ],
+  "sections": [
+   {
+    "title": "Draw it right",
+    "kind": "steps",
+    "items": [
+     "Water cycle: draw the sun, sea, clouds and rain with arrows going round.",
+     "Label each arrow: heating, vapour, clouds, rain.",
+     "Write one line under it: ‘The water cycle never stops.’"
+    ]
+   },
+   {
+    "title": "Writing answers that score",
+    "kind": "mem",
+    "items": [
+     "Read the question twice and underline the key word (why, how, name, list).",
+     "Answer in full sentences using words from the book – e.g. ‘Microbes need moisture, air and the right temperature to grow.’",
+     "For ‘why’ questions, give the reason with ‘because’.",
+     "For 2–3 mark answers, write 2–3 separate points.",
+     "Add one example from the chapter (Godavari, Disha’s pickle, the green school) to show you understand.",
+     "Draw and label a simple diagram when it helps – the water cycle, types of teeth, the river’s journey."
+    ]
+   },
+   {
+    "title": "The day before the test",
+    "kind": "note",
+    "items": [
+     "Read the key facts sheet aloud once.",
+     "Play the Play & learn games again – if you get every card right first time, you are ready.",
+     "Take one Check knowledge quiz at Hard level."
+    ]
+   }
+  ],
+  "checklist": [
+   "I can explain why freshwater is precious.",
+   "I can name the three forms of water with examples.",
+   "I can draw and explain the water cycle.",
+   "I can say how groundwater is recharged.",
+   "I can name two water animals and two water plants with a feature."
+  ],
+  "paperTitle": "How this chapter is usually tested",
+  "paperCols": [
+   "Marks",
+   "Question type",
+   "Likely asks"
+  ],
+  "paperNote": "Typical Class V school test pattern (1-mark MCQ, fill in the blanks, true/false and matching; 2–3 mark short answers; activity-based questions). Your school’s paper may differ slightly."
+ },
+ "method": "Built on how children learn best: start with a story or activity, sort and match ideas with your hands, say answers aloud before checking (active recall), and come back after 1, 3 and 7 days (spaced revision).",
+ "sheetTitle": "Key facts sheet",
+ "sheetCols": [
+  "Topic",
+  "Key fact",
+  "Example",
+  "Remember it by"
+ ]
+}

@@ -1,0 +1,649 @@
+{
+ "id": "class5-science-ch4",
+ "class": "5",
+ "subject": "science",
+ "chapter": "Chapter 4 · Our School — A Happy Place",
+ "source": "NCERT Our Wondrous World (Class V), Chapter 4",
+ "topics": [
+  {
+   "id": "green",
+   "name": "A green school · School explorers",
+   "ref": "4.1"
+  },
+  {
+   "id": "waste",
+   "name": "Waste management",
+   "ref": "4.2"
+  },
+  {
+   "id": "cool",
+   "name": "Keeping cool · Saving water · Trees",
+   "ref": "4.3"
+  },
+  {
+   "id": "safe",
+   "name": "Traffic, fire safety and kindness",
+   "ref": "4.4"
+  }
+ ],
+ "levelNotes": {
+  "easy": "Facts from the chapter – who, what, where.",
+  "hard": "Why and how questions – use what you learnt.",
+  "advanced": "Think like a scientist: real-life puzzles and tricky reasoning, still from this chapter."
+ },
+ "questions": [
+  {
+   "topic": "green",
+   "level": "easy",
+   "q": "A green school is a school where we…",
+   "a": "manage waste, save water, use electricity carefully and plant trees",
+   "w": [
+    "only paint the walls green",
+    "never go outside",
+    "cut trees to make space"
+   ],
+   "e": "Aasha’s brother explained what a green school is."
+  },
+  {
+   "topic": "green",
+   "level": "easy",
+   "q": "Swachh Bharat Swachh Vidyalaya focuses on…",
+   "a": "clean toilets, safe drinking water, waste management and hygiene in schools",
+   "w": [
+    "building new roads",
+    "selling food",
+    "sports competitions"
+   ],
+   "e": "Every child has the right to a clean and safe school."
+  },
+  {
+   "topic": "green",
+   "level": "easy",
+   "q": "Which village in Meghalaya is called ‘Asia’s Cleanest Village’?",
+   "a": "Mawlynnong",
+   "w": [
+    "Hiware Bazar",
+    "Trimbakeshwar",
+    "Nashik"
+   ],
+   "e": "It is celebrated for its cleanliness."
+  },
+  {
+   "topic": "green",
+   "level": "easy",
+   "type": "pairs",
+   "q": "Which School Explorer Team checks “{x}”?",
+   "pairs": [
+    [
+     "leaking taps and wasted water",
+     "Water watchers"
+    ],
+    [
+     "lights and fans left on",
+     "Electricity savers"
+    ],
+    [
+     "litter and dustbins",
+     "Waste warriors"
+    ],
+    [
+     "trees, plants and compost pits",
+     "Green guardians"
+    ],
+    [
+     "vehicles and crossings at the gate",
+     "Traffic trackers"
+    ]
+   ],
+   "e": "That is the job of the {ans}."
+  },
+  {
+   "topic": "green",
+   "level": "easy",
+   "type": "pairs",
+   "q": "Which School Explorer Team checks “{x}”?",
+   "pairs": [
+    [
+     "leaking taps and wasted water",
+     "Water watchers"
+    ],
+    [
+     "lights and fans left on",
+     "Electricity savers"
+    ],
+    [
+     "litter and dustbins",
+     "Waste warriors"
+    ],
+    [
+     "trees, plants and compost pits",
+     "Green guardians"
+    ],
+    [
+     "vehicles and crossings at the gate",
+     "Traffic trackers"
+    ]
+   ],
+   "e": "That is the job of the {ans}."
+  },
+  {
+   "topic": "green",
+   "level": "easy",
+   "type": "pairs",
+   "q": "Which School Explorer Team checks “{x}”?",
+   "pairs": [
+    [
+     "leaking taps and wasted water",
+     "Water watchers"
+    ],
+    [
+     "lights and fans left on",
+     "Electricity savers"
+    ],
+    [
+     "litter and dustbins",
+     "Waste warriors"
+    ],
+    [
+     "trees, plants and compost pits",
+     "Green guardians"
+    ],
+    [
+     "vehicles and crossings at the gate",
+     "Traffic trackers"
+    ]
+   ],
+   "e": "That is the job of the {ans}."
+  },
+  {
+   "topic": "green",
+   "level": "hard",
+   "q": "Why should water tanks at school be clean and covered?",
+   "a": "To keep water safe and stop mosquitoes breeding",
+   "w": [
+    "To make the water warm",
+    "To hide the water",
+    "To save electricity"
+   ],
+   "e": "Water watchers also look for wet places where mosquitoes can breed."
+  },
+  {
+   "topic": "waste",
+   "level": "easy",
+   "q": "Food peels and leftovers are…",
+   "a": "wet waste",
+   "w": [
+    "dry waste",
+    "items for the recycler",
+    "electronic waste"
+   ],
+   "e": "Separate waste into wet and dry to manage it better."
+  },
+  {
+   "topic": "waste",
+   "level": "easy",
+   "q": "In the segregation game, the green box is for…",
+   "a": "wet waste",
+   "w": [
+    "dry waste",
+    "items for the recycler",
+    "books"
+   ],
+   "e": "Green for wet, blue for dry, and a third box for the recycler."
+  },
+  {
+   "topic": "waste",
+   "level": "easy",
+   "q": "Old newspapers are usually…",
+   "a": "kept aside and given to recyclers",
+   "w": [
+    "thrown into the river",
+    "burned",
+    "put in the wet waste bin"
+   ],
+   "e": "Different recyclers collect different items."
+  },
+  {
+   "topic": "waste",
+   "level": "easy",
+   "type": "pairs",
+   "q": "Where should {x} go?",
+   "pairs": [
+    [
+     "banana peel",
+     "Wet waste (green)"
+    ],
+    [
+     "leftover food",
+     "Wet waste (green)"
+    ],
+    [
+     "used paper cup",
+     "Dry waste (blue)"
+    ],
+    [
+     "chips packet",
+     "Dry waste (blue)"
+    ],
+    [
+     "old newspapers",
+     "Recycler"
+    ],
+    [
+     "empty glass bottle",
+     "Recycler"
+    ]
+   ],
+   "e": "{x} → {ans}."
+  },
+  {
+   "topic": "waste",
+   "level": "easy",
+   "type": "pairs",
+   "q": "Where should {x} go?",
+   "pairs": [
+    [
+     "banana peel",
+     "Wet waste (green)"
+    ],
+    [
+     "leftover food",
+     "Wet waste (green)"
+    ],
+    [
+     "used paper cup",
+     "Dry waste (blue)"
+    ],
+    [
+     "chips packet",
+     "Dry waste (blue)"
+    ],
+    [
+     "old newspapers",
+     "Recycler"
+    ],
+    [
+     "empty glass bottle",
+     "Recycler"
+    ]
+   ],
+   "e": "{x} → {ans}."
+  },
+  {
+   "topic": "waste",
+   "level": "easy",
+   "type": "pairs",
+   "q": "Where should {x} go?",
+   "pairs": [
+    [
+     "banana peel",
+     "Wet waste (green)"
+    ],
+    [
+     "leftover food",
+     "Wet waste (green)"
+    ],
+    [
+     "used paper cup",
+     "Dry waste (blue)"
+    ],
+    [
+     "chips packet",
+     "Dry waste (blue)"
+    ],
+    [
+     "old newspapers",
+     "Recycler"
+    ],
+    [
+     "empty glass bottle",
+     "Recycler"
+    ]
+   ],
+   "e": "{x} → {ans}."
+  },
+  {
+   "topic": "waste",
+   "level": "hard",
+   "q": "What happens if we do not separate our waste?",
+   "a": "It is harder to manage, recycle and keep our surroundings clean",
+   "w": [
+    "Waste disappears by itself",
+    "Nothing happens",
+    "It becomes food"
+   ],
+   "e": "Separating wet and dry waste helps recycling and composting."
+  },
+  {
+   "topic": "waste",
+   "level": "hard",
+   "q": "We can reduce waste by…",
+   "a": "using only what we need, reusing things and not throwing away useful items",
+   "w": [
+    "buying more packets",
+    "throwing away old books",
+    "using new plates every time"
+   ],
+   "e": "Reduce and reuse come first."
+  },
+  {
+   "topic": "cool",
+   "level": "easy",
+   "q": "Which roof colour keeps a building cooler?",
+   "a": "White",
+   "w": [
+    "Black",
+    "Dark blue",
+    "Dark green"
+   ],
+   "e": "White reflects the Sun’s heat; black absorbs heat."
+  },
+  {
+   "topic": "cool",
+   "level": "hard",
+   "q": "In Activity 3, a black tile and a white tile are kept in the Sun. Which feels cooler?",
+   "a": "The white tile",
+   "w": [
+    "The black tile",
+    "Both feel the same",
+    "Neither gets warm"
+   ],
+   "e": "A white surface reflects heat."
+  },
+  {
+   "topic": "cool",
+   "level": "easy",
+   "q": "What helps keep classrooms cool?",
+   "a": "Shady trees and windows that let the breeze in",
+   "w": [
+    "Closing all windows",
+    "Black roofs",
+    "Cutting trees"
+   ],
+   "e": "Trees and breeze make a difference."
+  },
+  {
+   "topic": "cool",
+   "level": "easy",
+   "q": "Clay pots (matkas) keep drinking water cool…",
+   "a": "without using electricity",
+   "w": [
+    "by using a fridge",
+    "by adding ice every hour",
+    "only in winter"
+   ],
+   "e": "A smart design!"
+  },
+  {
+   "topic": "cool",
+   "level": "hard",
+   "q": "A glass of water is kept under a tree and another in the Sun for an hour. What will you find?",
+   "a": "The water under the tree is cooler",
+   "w": [
+    "The water in the Sun is cooler",
+    "Both are equally warm",
+    "The water under the tree freezes"
+   ],
+   "e": "Trees give shade and keep surroundings cool."
+  },
+  {
+   "topic": "cool",
+   "level": "easy",
+   "q": "Trees help us by…",
+   "a": "cleaning the air, giving shade and food for birds and insects",
+   "w": [
+    "making the air hotter",
+    "blocking all rain",
+    "wasting water"
+   ],
+   "e": "Trees are home to many living beings."
+  },
+  {
+   "topic": "cool",
+   "level": "hard",
+   "q": "In Ladakh, students make ‘ice stupas’. What are they used for?",
+   "a": "They slowly melt in summer to water school gardens",
+   "w": [
+    "To make ice cream",
+    "To build houses",
+    "To stop rivers"
+   ],
+   "e": "A clever way to store water as ice."
+  },
+  {
+   "topic": "cool",
+   "level": "easy",
+   "q": "The Jal Shakti Abhiyan encourages people to…",
+   "a": "plant trees, catch rainwater and use water wisely",
+   "w": [
+    "waste water",
+    "cut trees",
+    "fill ponds with cement"
+   ],
+   "e": "Schools can help by fixing leaks and collecting rainwater."
+  },
+  {
+   "topic": "safe",
+   "level": "easy",
+   "q": "During a fire drill, you should…",
+   "a": "move calmly to the nearest exit without running",
+   "w": [
+    "hide in a bathroom",
+    "run and push others",
+    "go back for your bag"
+   ],
+   "e": "Then go to the assembly point and stay with your group."
+  },
+  {
+   "topic": "safe",
+   "level": "hard",
+   "q": "Why should you crawl low under smoke?",
+   "a": "The air near the floor is cleaner to breathe",
+   "w": [
+    "It is faster than walking",
+    "Smoke is heavy and stays on the floor",
+    "To find your things"
+   ],
+   "e": "Cover your mouth and crawl low."
+  },
+  {
+   "topic": "safe",
+   "level": "easy",
+   "q": "Once you are outside during a fire, you should…",
+   "a": "never go back into the building",
+   "w": [
+    "go back to get your books",
+    "hide in a closet",
+    "leave without telling anyone"
+   ],
+   "e": "Alert teachers if anyone is missing or injured."
+  },
+  {
+   "topic": "safe",
+   "level": "easy",
+   "q": "Many road accidents happen because…",
+   "a": "people do not follow traffic rules",
+   "w": [
+    "roads are too wide",
+    "it is always sunny",
+    "there are too many trees"
+   ],
+   "e": "Knowing and following traffic rules keeps us safe."
+  },
+  {
+   "topic": "safe",
+   "level": "hard",
+   "q": "Two students are pushing and skipping the line at the water tap. What is the kind thing to do?",
+   "a": "Politely remind them to wait for their turn",
+   "w": [
+    "Push them back",
+    "Join them in skipping",
+    "Ignore it and leave"
+   ],
+   "e": "Respect is shown by waiting for our turn."
+  },
+  {
+   "topic": "safe",
+   "level": "easy",
+   "q": "Which action shows kindness at school?",
+   "a": "Helping a shy classmate feel included",
+   "w": [
+    "Teasing a classmate",
+    "Scribbling on benches",
+    "Throwing wrappers"
+   ],
+   "e": "When we are kind and polite, everyone feels happy."
+  },
+  {
+   "topic": "cool",
+   "level": "advanced",
+   "type": "calc",
+   "q": "A dripping tap fills one glass in {m} minutes. How many glasses of water are wasted in one day (24 hours)?",
+   "vars": {
+    "m": {
+     "of": [
+      5,
+      10,
+      15,
+      20,
+      30,
+      60
+     ]
+    }
+   },
+   "answer": "24*60/m",
+   "wrong": [
+    "24*60/m/2",
+    "24*m",
+    "60/m"
+   ],
+   "e": "1 day = 24 × 60 = 1,440 minutes. 1,440 ÷ {m} = {ans} glasses!",
+   "dp": 0
+  },
+  {
+   "topic": "cool",
+   "level": "advanced",
+   "type": "calc",
+   "q": "A dripping tap fills a 200 ml glass every {m} minutes. How many litres are wasted in a day? (1 litre = 1,000 ml)",
+   "vars": {
+    "m": {
+     "of": [
+      5,
+      10,
+      20,
+      30,
+      60
+     ]
+    }
+   },
+   "answer": "24*60/m*200/1000",
+   "wrong": [
+    "24*60/m*200",
+    "24*60/m",
+    "24*60/m*200/100"
+   ],
+   "e": "{g} glasses × 200 ml = {ml} ml = {ans} litres.",
+   "dp": 1,
+   "derive": {
+    "g": "24*60/m",
+    "ml": "24*60/m*200"
+   }
+  },
+  {
+   "topic": "waste",
+   "level": "advanced",
+   "q": "Which set is sorted correctly?",
+   "a": "Wet: banana peel, leftover rice · Dry: chips packet, paper cup · Recycler: newspapers",
+   "w": [
+    "Wet: newspapers · Dry: banana peel · Recycler: leftover rice",
+    "Wet: chips packet · Dry: leftover rice · Recycler: banana peel",
+    "Everything in one bin"
+   ],
+   "e": "Food waste is wet, packets and cups are dry, newspapers go to the recycler."
+  },
+  {
+   "topic": "cool",
+   "level": "advanced",
+   "q": "Your area is getting warmer every summer. Which plan will cool it best?",
+   "a": "Plant shady trees, paint roofs white and let breeze in",
+   "w": [
+    "Paint roofs black",
+    "Cut trees for more parking",
+    "Cover all soil with cement"
+   ],
+   "e": "Trees give shade; white reflects heat; breeze cools rooms."
+  },
+  {
+   "topic": "safe",
+   "level": "advanced",
+   "q": "Put the fire drill in order.",
+   "a": "Move calmly to the exit → crawl low under smoke → go to the assembly point → tell teachers if anyone is missing",
+   "w": [
+    "Hide in the bathroom → wait → go back for your bag",
+    "Run fast → push others → go home",
+    "Go to the assembly point → go back inside → look for friends"
+   ],
+   "e": "Never hide and never go back into the building."
+  },
+  {
+   "topic": "green",
+   "level": "hard",
+   "q": "Aasha wants to make her school greener. Which is the best first step?",
+   "a": "Walk around, make a map and observe what needs improving",
+   "w": [
+    "Buy new uniforms",
+    "Close the garden",
+    "Stop using the playground"
+   ],
+   "e": "Explore first, then decide what to do."
+  },
+  {
+   "topic": "green",
+   "level": "hard",
+   "q": "Why should lights and fans be switched off in empty classrooms?",
+   "a": "To save electricity",
+   "w": [
+    "To make rooms hotter",
+    "To save water",
+    "To stop birds"
+   ],
+   "e": "Electricity savers check this."
+  },
+  {
+   "topic": "waste",
+   "level": "hard",
+   "q": "Why should we value recyclers and sanitation workers?",
+   "a": "They keep our surroundings clean and help reuse materials",
+   "w": [
+    "They create waste",
+    "They are not needed",
+    "They only work at night"
+   ],
+   "e": "Respecting their work teaches the dignity of labour."
+  },
+  {
+   "topic": "safe",
+   "level": "hard",
+   "q": "What could you put on a signboard at the school gate?",
+   "a": "‘Slow down – children crossing’",
+   "w": [
+    "‘Drive faster here’",
+    "‘No rules today’",
+    "‘Park on the crossing’"
+   ],
+   "e": "Signboards help make the area safer for students."
+  },
+  {
+   "topic": "safe",
+   "level": "hard",
+   "q": "A younger student copies an older one throwing a wrapper. What does this show?",
+   "a": "Our behaviour sets an example for others",
+   "w": [
+    "Wrappers are good for the playground",
+    "Younger students never copy",
+    "Littering is kind"
+   ],
+   "e": "The way we behave matters – others learn from us."
+  }
+ ]
+}

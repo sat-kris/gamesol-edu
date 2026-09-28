@@ -1,0 +1,579 @@
+{
+ "id": "class5-science-ch2",
+ "class": "5",
+ "subject": "science",
+ "chapter": "Chapter 2 · Journey of a River",
+ "source": "NCERT Our Wondrous World (Class V), Chapter 2",
+ "topics": [
+  {
+   "id": "godavari",
+   "name": "The Godavari’s journey",
+   "ref": "2.1"
+  },
+  {
+   "id": "support",
+   "name": "How rivers support lives · Dams",
+   "ref": "2.2"
+  },
+  {
+   "id": "pollution",
+   "name": "What pollutes a river",
+   "ref": "2.3"
+  },
+  {
+   "id": "flood",
+   "name": "Floods, droughts and saving water",
+   "ref": "2.4"
+  }
+ ],
+ "levelNotes": {
+  "easy": "Facts from the chapter – who, what, where.",
+  "hard": "Why and how questions – use what you learnt.",
+  "advanced": "Think like a scientist: real-life puzzles and tricky reasoning, still from this chapter."
+ },
+ "questions": [
+  {
+   "topic": "godavari",
+   "level": "easy",
+   "q": "Where does the river Godavari begin its journey?",
+   "a": "Trimbakeshwar in the Western Ghats, Maharashtra",
+   "w": [
+    "The Himalayas",
+    "The Aravalli Range",
+    "Coringa, Andhra Pradesh"
+   ],
+   "e": "It starts as a stream in the Brahmagiri Hills of the Western Ghats."
+  },
+  {
+   "topic": "godavari",
+   "level": "easy",
+   "q": "How long is the Godavari?",
+   "a": "1,465 kilometres",
+   "w": [
+    "465 kilometres",
+    "9 kilometres",
+    "182 kilometres"
+   ],
+   "e": "It travels 1,465 km before joining the Bay of Bengal."
+  },
+  {
+   "topic": "godavari",
+   "level": "easy",
+   "q": "The Godavari joins the…",
+   "a": "Bay of Bengal",
+   "w": [
+    "Arabian Sea",
+    "Rann of Kutch",
+    "Wular Lake"
+   ],
+   "e": "It flows east across India."
+  },
+  {
+   "topic": "godavari",
+   "level": "easy",
+   "q": "The Godavari is the second longest river in India after the…",
+   "a": "Ganga",
+   "w": [
+    "Brahmaputra",
+    "Luni",
+    "Chenab"
+   ],
+   "e": "It is also called Dakshina Ganga."
+  },
+  {
+   "topic": "godavari",
+   "level": "easy",
+   "q": "Small streams that join a river are called its…",
+   "a": "tributaries",
+   "w": [
+    "deltas",
+    "reservoirs",
+    "dams"
+   ],
+   "e": "Indravati, Manjira and Sabari are tributaries of the Godavari."
+  },
+  {
+   "topic": "godavari",
+   "level": "easy",
+   "q": "A river that flows all year round is called a…",
+   "a": "perennial river",
+   "w": [
+    "seasonal river",
+    "salt river",
+    "dry river"
+   ],
+   "e": "Seasonal rivers flow only in the rainy season."
+  },
+  {
+   "topic": "godavari",
+   "level": "hard",
+   "q": "What forms where the Godavari reaches the sea and spreads into many small streams?",
+   "a": "A delta",
+   "w": [
+    "A dam",
+    "A glacier",
+    "A tributary"
+   ],
+   "e": "Its freshwater meets the salty sea at the Coringa mangrove forests."
+  },
+  {
+   "topic": "godavari",
+   "level": "hard",
+   "q": "Why is the Godavari called ‘Dakshina Ganga’?",
+   "a": "It flows through southern India and is regarded as sacred",
+   "w": [
+    "It is longer than the Ganga",
+    "It starts in the Himalayas",
+    "It flows into the Ganga"
+   ],
+   "e": "Dakshina means south."
+  },
+  {
+   "topic": "godavari",
+   "level": "easy",
+   "type": "pairs",
+   "q": "Which of these is true about “{x}” in the Godavari’s journey?",
+   "pairs": [
+    [
+     "Trimbakeshwar",
+     "Where it begins"
+    ],
+    [
+     "Coringa mangrove forests",
+     "Where its journey ends"
+    ],
+    [
+     "Indravati",
+     "A tributary"
+    ],
+    [
+     "Polavaram",
+     "A dam on the river"
+    ],
+    [
+     "Nashik",
+     "Place of the Godavari Pushkaram"
+    ]
+   ],
+   "e": "{x} → {ans}."
+  },
+  {
+   "topic": "godavari",
+   "level": "easy",
+   "type": "pairs",
+   "q": "Which of these is true about “{x}” in the Godavari’s journey?",
+   "pairs": [
+    [
+     "Trimbakeshwar",
+     "Where it begins"
+    ],
+    [
+     "Coringa mangrove forests",
+     "Where its journey ends"
+    ],
+    [
+     "Indravati",
+     "A tributary"
+    ],
+    [
+     "Polavaram",
+     "A dam on the river"
+    ],
+    [
+     "Nashik",
+     "Place of the Godavari Pushkaram"
+    ]
+   ],
+   "e": "{x} → {ans}."
+  },
+  {
+   "topic": "support",
+   "level": "easy",
+   "q": "Since ancient times, people built homes near rivers because…",
+   "a": "rivers give water for drinking, farming and work",
+   "w": [
+    "rivers are always dry",
+    "rivers keep people cold",
+    "there are no animals there"
+   ],
+   "e": "Rivers provide water for drinking, cooking, washing, crops and factories."
+  },
+  {
+   "topic": "support",
+   "level": "easy",
+   "q": "A dam stores river water in a large water body called a…",
+   "a": "reservoir",
+   "w": [
+    "delta",
+    "tributary",
+    "glacier"
+   ],
+   "e": "A dam is like a giant wall that blocks the river’s flow."
+  },
+  {
+   "topic": "support",
+   "level": "easy",
+   "q": "About how many dams store the Godavari’s water?",
+   "a": "More than 900",
+   "w": [
+    "About 9",
+    "Exactly 50",
+    "None"
+   ],
+   "e": "They help people use water even in dry seasons."
+  },
+  {
+   "topic": "support",
+   "level": "hard",
+   "q": "Which is a problem caused when a dam is built?",
+   "a": "Land that was home to people and animals gets flooded",
+   "w": [
+    "There is more water in the dry season",
+    "Electricity can be made",
+    "Crops get water"
+   ],
+   "e": "Many people have to leave their homes and shift elsewhere."
+  },
+  {
+   "topic": "support",
+   "level": "hard",
+   "q": "Ecotourism means…",
+   "a": "visiting natural places to enjoy and learn without harming the environment",
+   "w": [
+    "building factories near rivers",
+    "cutting forests for tourists",
+    "throwing waste in rivers"
+   ],
+   "e": "Watching animals and birds in forests, rivers or mountains carefully."
+  },
+  {
+   "topic": "pollution",
+   "level": "easy",
+   "q": "Which of these pollutes a river?",
+   "a": "Plastic, waste and dirty water",
+   "w": [
+    "Rainwater",
+    "Fish",
+    "Lotus plants"
+   ],
+   "e": "Waste from people and factories makes river water unsafe."
+  },
+  {
+   "topic": "pollution",
+   "level": "hard",
+   "q": "In Activity 3, sugar and cooking oil are stirred in water. What happens?",
+   "a": "Sugar dissolves; oil does not",
+   "w": [
+    "Both dissolve",
+    "Neither dissolves",
+    "Oil dissolves; sugar does not"
+   ],
+   "e": "Some things dissolve in water and some do not – harmful things can hide in clear-looking water."
+  },
+  {
+   "topic": "pollution",
+   "level": "hard",
+   "q": "What causes a ‘green blanket’ on a river?",
+   "a": "Fertilisers washed from fields make plants grow very fast",
+   "w": [
+    "Too many fish",
+    "Too much ice",
+    "Clean rainwater"
+   ],
+   "e": "The green layer chokes life; fish find it hard to breathe."
+  },
+  {
+   "topic": "pollution",
+   "level": "hard",
+   "q": "Even when river water looks clean it may be unsafe because…",
+   "a": "harmful chemicals or soapy water can be dissolved in it",
+   "w": [
+    "clean water is always safe",
+    "fish make it unsafe",
+    "sunlight makes it unsafe"
+   ],
+   "e": "Things that dissolve cannot be seen."
+  },
+  {
+   "topic": "pollution",
+   "level": "easy",
+   "q": "Which programme helps clean the river Ganga?",
+   "a": "Namami Gange",
+   "w": [
+    "Jal Shakti Museum",
+    "Swachh Vidyalaya",
+    "Water ATM"
+   ],
+   "e": "It keeps the Ganga healthy for people, fish and birds."
+  },
+  {
+   "topic": "pollution",
+   "level": "easy",
+   "type": "pairs",
+   "q": "Does {x} dissolve in water?",
+   "pairs": [
+    [
+     "sugar",
+     "Dissolves"
+    ],
+    [
+     "salt",
+     "Dissolves"
+    ],
+    [
+     "cooking oil",
+     "Does not dissolve"
+    ],
+    [
+     "sand",
+     "Does not dissolve"
+    ],
+    [
+     "a plastic wrapper",
+     "Does not dissolve"
+    ]
+   ],
+   "e": "{x}: {ans}.",
+   "extra": [
+    "Turns into ice",
+    "Floats to the sky"
+   ]
+  },
+  {
+   "topic": "pollution",
+   "level": "easy",
+   "type": "pairs",
+   "q": "Does {x} dissolve in water?",
+   "pairs": [
+    [
+     "sugar",
+     "Dissolves"
+    ],
+    [
+     "salt",
+     "Dissolves"
+    ],
+    [
+     "cooking oil",
+     "Does not dissolve"
+    ],
+    [
+     "sand",
+     "Does not dissolve"
+    ],
+    [
+     "a plastic wrapper",
+     "Does not dissolve"
+    ]
+   ],
+   "e": "{x}: {ans}.",
+   "extra": [
+    "Turns into ice",
+    "Floats to the sky"
+   ]
+  },
+  {
+   "topic": "flood",
+   "level": "easy",
+   "q": "When too much rain falls, a river may…",
+   "a": "overflow its banks and flood the land",
+   "w": [
+    "dry up",
+    "become salty",
+    "stop flowing"
+   ],
+   "e": "Flood water damages houses, fields and roads."
+  },
+  {
+   "topic": "flood",
+   "level": "hard",
+   "q": "How do trees help reduce flooding?",
+   "a": "They slow down rainwater and help the soil soak it up",
+   "w": [
+    "They drink all the river water",
+    "They block rain from falling",
+    "They make the river faster"
+   ],
+   "e": "Without trees, water runs off faster and causes floods."
+  },
+  {
+   "topic": "flood",
+   "level": "easy",
+   "q": "Which is a flood safety tip?",
+   "a": "Get to higher ground",
+   "w": [
+    "Swim in flood water",
+    "Touch power lines",
+    "Go home before it is declared safe"
+   ],
+   "e": "Also keep an emergency bag with food, medicines and a flashlight."
+  },
+  {
+   "topic": "flood",
+   "level": "hard",
+   "q": "In 2019, which city had to bring water by special trains because its reservoirs dried up?",
+   "a": "Chennai",
+   "w": [
+    "Bengaluru",
+    "Nashik",
+    "Delhi"
+   ],
+   "e": "In 2022, heavy rains flooded Bengaluru – too little and too much water both cause problems."
+  },
+  {
+   "topic": "flood",
+   "level": "easy",
+   "q": "Which is a good way to save water?",
+   "a": "Turn off the tap while brushing your teeth",
+   "w": [
+    "Leave taps dripping",
+    "Throw away water after washing vegetables",
+    "Use drinking water to wash the car"
+   ],
+   "e": "Every drop counts!"
+  },
+  {
+   "topic": "flood",
+   "level": "hard",
+   "q": "Water left from washing fruits and vegetables can be…",
+   "a": "reused to water plants",
+   "w": [
+    "poured into the river",
+    "thrown away",
+    "frozen"
+   ],
+   "e": "Reusing clean water is a small step that helps."
+  },
+  {
+   "topic": "flood",
+   "level": "easy",
+   "q": "True or false? Water ATMs give clean water when you put in a card or coin.",
+   "a": "True",
+   "w": [
+    "False",
+    "Not given in the chapter"
+   ],
+   "e": "They help people get safe water and use it wisely."
+  },
+  {
+   "topic": "godavari",
+   "level": "advanced",
+   "type": "calc",
+   "q": "The Godavari is 1,465 km long. A boat travels {s} km along it each day. About how many whole days would it take to cover the river?",
+   "vars": {
+    "s": {
+     "of": [
+      50,
+      100,
+      150,
+      200
+     ]
+    }
+   },
+   "answer": "Math.ceil(1465/s)",
+   "wrong": [
+    "Math.floor(1465/s)-1",
+    "Math.ceil(1465/s)+3",
+    "Math.round(1465/s/2)"
+   ],
+   "e": "1,465 ÷ {s} ≈ {ans} days (rounding up so the last part is covered).",
+   "dp": 0
+  },
+  {
+   "topic": "support",
+   "level": "advanced",
+   "q": "A new dam will give water to a city but flood a forest village. What is the fairest plan?",
+   "a": "Build it only after the villagers are safely moved and given new homes and land",
+   "w": [
+    "Build it and ignore the villagers",
+    "Never store any water",
+    "Move the river somewhere else"
+   ],
+   "e": "Dams help many people, but those who lose homes must be taken care of."
+  },
+  {
+   "topic": "pollution",
+   "level": "advanced",
+   "q": "A town throws soapy water into the river and farms use lots of fertiliser. Which result is most likely?",
+   "a": "A green blanket forms, fish struggle to breathe and the water becomes unsafe",
+   "w": [
+    "The river becomes cleaner",
+    "More fish appear",
+    "The water turns salty like the sea"
+   ],
+   "e": "Fertilisers make plants grow fast; soap and chemicals dissolve and harm life."
+  },
+  {
+   "topic": "flood",
+   "level": "advanced",
+   "q": "Flood problem → what it affects: which pair is correct?",
+   "a": "Schools shut → learning",
+   "w": [
+    "Broken roads → lights and fans",
+    "No electricity → food supply",
+    "Lost crops → travel"
+   ],
+   "e": "Dirty water → safe drinking; broken roads → travel; lost crops → food supply; no electricity → lights and fans."
+  },
+  {
+   "topic": "flood",
+   "level": "advanced",
+   "q": "You are planning a new city near a river. Which set of steps helps with BOTH floods and water shortage?",
+   "a": "Plant trees, keep open land and collect rainwater",
+   "w": [
+    "Cement all open land",
+    "Build homes on the river bank",
+    "Waste water freely in summer"
+   ],
+   "e": "Trees and open land reduce floods and recharge groundwater; rainwater harvesting stores water for dry days."
+  },
+  {
+   "topic": "godavari",
+   "level": "hard",
+   "q": "What is the difference between a perennial and a seasonal river?",
+   "a": "A perennial river flows all year; a seasonal river flows only in the rainy season",
+   "w": [
+    "A perennial river is salty",
+    "A seasonal river never floods",
+    "They are the same"
+   ],
+   "e": "The Godavari is perennial."
+  },
+  {
+   "topic": "godavari",
+   "level": "hard",
+   "q": "Which of these is NOT found in the forests along the Godavari?",
+   "a": "Polar bears",
+   "w": [
+    "Tigers",
+    "Barking deer",
+    "Red sandalwood trees"
+   ],
+   "e": "The book mentions tigers, barking deer, the Indian golden gecko and red sandalwood."
+  },
+  {
+   "topic": "support",
+   "level": "hard",
+   "q": "How does river water reach houses, schools and fields far away?",
+   "a": "Through pipes and canals",
+   "w": [
+    "By flying in clouds only",
+    "Through salt pans",
+    "It cannot reach them"
+   ],
+   "e": "The river’s water is carried in pipes and canals and shared by many."
+  },
+  {
+   "topic": "support",
+   "level": "hard",
+   "q": "Why should we never waste tap water?",
+   "a": "Its journey from the river needed dams, pipes and sacrifices by people who lost their homes",
+   "w": [
+    "Tap water is unlimited",
+    "Tap water is salty",
+    "Taps make water"
+   ],
+   "e": "It is hard to imagine the journey water has taken to reach our taps."
+  }
+ ]
+}

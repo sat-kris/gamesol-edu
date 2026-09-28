@@ -1,0 +1,775 @@
+{
+ "id": "class5-science-ch1",
+ "class": "5",
+ "subject": "science",
+ "chapter": "Chapter 1 · Water — The Essence of Life",
+ "source": "NCERT Our Wondrous World (Class V), Chapter 1",
+ "topics": [
+  {
+   "id": "amount",
+   "name": "How much water? Fresh and salt water",
+   "ref": "1.1"
+  },
+  {
+   "id": "forms",
+   "name": "Forms of water and the water cycle",
+   "ref": "1.2"
+  },
+  {
+   "id": "ground",
+   "name": "Groundwater, surface water and rivers",
+   "ref": "1.3"
+  },
+  {
+   "id": "life",
+   "name": "Life in water",
+   "ref": "1.4"
+  }
+ ],
+ "levelNotes": {
+  "easy": "Facts from the chapter – who, what, where.",
+  "hard": "Why and how questions – use what you learnt.",
+  "advanced": "Think like a scientist: real-life puzzles and tricky reasoning, still from this chapter."
+ },
+ "questions": [
+  {
+   "topic": "amount",
+   "level": "easy",
+   "q": "Most of the water on Earth is…",
+   "a": "salty",
+   "w": [
+    "fresh",
+    "frozen",
+    "underground"
+   ],
+   "e": "Most of the Earth’s surface is covered with water, but the majority of it is salty."
+  },
+  {
+   "topic": "amount",
+   "level": "easy",
+   "q": "If all the water on Earth were in a 200 ml glass, how much would be freshwater?",
+   "a": "About a teaspoon (5 ml)",
+   "w": [
+    "Half the glass (100 ml)",
+    "Almost all of it",
+    "None of it"
+   ],
+   "e": "The book compares: 200 ml glass of water → only 5 ml (a teaspoon) is freshwater."
+  },
+  {
+   "topic": "amount",
+   "level": "easy",
+   "q": "All living beings — people, animals, birds and plants — depend on which water to survive?",
+   "a": "Freshwater",
+   "w": [
+    "Ocean water",
+    "Salt water",
+    "Steam"
+   ],
+   "e": "Freshwater is needed for drinking, growing crops and daily activities."
+  },
+  {
+   "topic": "amount",
+   "level": "easy",
+   "q": "In the salt pans of Gujarat, what is done with seawater?",
+   "a": "It is dried to collect salt",
+   "w": [
+    "It is drunk",
+    "It is used to water crops",
+    "It is frozen into ice"
+   ],
+   "e": "The salt pans of Gujarat are one of the largest salt-producing areas in India."
+  },
+  {
+   "topic": "amount",
+   "level": "easy",
+   "q": "Which of these is a freshwater lake in Jammu and Kashmir, one of the largest in Asia?",
+   "a": "Wular Lake",
+   "w": [
+    "Chilika Lake",
+    "Rann of Kutch",
+    "Bay of Bengal"
+   ],
+   "e": "Wular Lake helps regulate river flow to prevent floods."
+  },
+  {
+   "topic": "amount",
+   "level": "hard",
+   "q": "Why can’t we drink ocean water?",
+   "a": "It is salty",
+   "w": [
+    "It is too cold",
+    "It is frozen",
+    "It has no water in it"
+   ],
+   "e": "Ocean water is salt water, so it is not fit for drinking."
+  },
+  {
+   "topic": "amount",
+   "level": "hard",
+   "q": "‘Johads’ in Rajasthan are…",
+   "a": "small earthen dams built to collect rainwater and recharge groundwater",
+   "w": [
+    "salt pans",
+    "floating islands",
+    "large rivers"
+   ],
+   "e": "Johads are a traditional way of saving rainwater."
+  },
+  {
+   "topic": "amount",
+   "level": "easy",
+   "type": "pairs",
+   "q": "Is {x} freshwater or salt water?",
+   "pairs": [
+    [
+     "ocean water",
+     "Salt water"
+    ],
+    [
+     "sea water in the salt pans",
+     "Salt water"
+    ],
+    [
+     "rainwater",
+     "Freshwater"
+    ],
+    [
+     "river water",
+     "Freshwater"
+    ],
+    [
+     "lake water (Wular Lake)",
+     "Freshwater"
+    ],
+    [
+     "pond water",
+     "Freshwater"
+    ],
+    [
+     "groundwater from a well",
+     "Freshwater"
+    ]
+   ],
+   "e": "{x} → {ans}.",
+   "extra": [
+    "Neither",
+    "Both"
+   ]
+  },
+  {
+   "topic": "amount",
+   "level": "easy",
+   "type": "pairs",
+   "q": "Is {x} freshwater or salt water?",
+   "pairs": [
+    [
+     "ocean water",
+     "Salt water"
+    ],
+    [
+     "sea water in the salt pans",
+     "Salt water"
+    ],
+    [
+     "rainwater",
+     "Freshwater"
+    ],
+    [
+     "river water",
+     "Freshwater"
+    ],
+    [
+     "lake water (Wular Lake)",
+     "Freshwater"
+    ],
+    [
+     "pond water",
+     "Freshwater"
+    ],
+    [
+     "groundwater from a well",
+     "Freshwater"
+    ]
+   ],
+   "e": "{x} → {ans}.",
+   "extra": [
+    "Neither",
+    "Both"
+   ]
+  },
+  {
+   "topic": "forms",
+   "level": "easy",
+   "q": "Ice is the ___ form of water.",
+   "a": "solid",
+   "w": [
+    "liquid",
+    "vapour",
+    "gas only"
+   ],
+   "e": "Water has three forms: solid (ice), liquid (rain) and vapour (steam)."
+  },
+  {
+   "topic": "forms",
+   "level": "easy",
+   "q": "Steam is the ___ form of water.",
+   "a": "vapour",
+   "w": [
+    "solid",
+    "liquid",
+    "frozen"
+   ],
+   "e": "When water is heated it turns into water vapour (steam)."
+  },
+  {
+   "topic": "forms",
+   "level": "easy",
+   "type": "pairs",
+   "q": "Which form of water is {x}?",
+   "pairs": [
+    [
+     "ice",
+     "Solid"
+    ],
+    [
+     "snow",
+     "Solid"
+    ],
+    [
+     "hail",
+     "Solid"
+    ],
+    [
+     "rain",
+     "Liquid"
+    ],
+    [
+     "river water",
+     "Liquid"
+    ],
+    [
+     "steam",
+     "Vapour"
+    ],
+    [
+     "water vapour in the air",
+     "Vapour"
+    ]
+   ],
+   "e": "{x} is the {ans} form of water.",
+   "extra": [
+    "Salty"
+   ]
+  },
+  {
+   "topic": "forms",
+   "level": "easy",
+   "type": "pairs",
+   "q": "Which form of water is {x}?",
+   "pairs": [
+    [
+     "ice",
+     "Solid"
+    ],
+    [
+     "snow",
+     "Solid"
+    ],
+    [
+     "hail",
+     "Solid"
+    ],
+    [
+     "rain",
+     "Liquid"
+    ],
+    [
+     "river water",
+     "Liquid"
+    ],
+    [
+     "steam",
+     "Vapour"
+    ],
+    [
+     "water vapour in the air",
+     "Vapour"
+    ]
+   ],
+   "e": "{x} is the {ans} form of water.",
+   "extra": [
+    "Salty"
+   ]
+  },
+  {
+   "topic": "forms",
+   "level": "easy",
+   "q": "The constant circular movement of water in nature is called the…",
+   "a": "water cycle",
+   "w": [
+    "water table",
+    "food chain",
+    "river delta"
+   ],
+   "e": "Water evaporates, forms clouds, falls as rain, snow or hail and returns to rivers, lakes and oceans."
+  },
+  {
+   "topic": "forms",
+   "level": "hard",
+   "q": "In Activity 2, water droplets form on the outside of a steel glass with ice. Where do they come from?",
+   "a": "Water vapour in the air cools and turns into droplets",
+   "w": [
+    "Water leaks through the steel",
+    "The ice jumps out of the glass",
+    "The droplets come from the table"
+   ],
+   "e": "Yes – there is water in the air too (water vapour). It cools on the cold glass."
+  },
+  {
+   "topic": "forms",
+   "level": "hard",
+   "q": "What causes water in oceans and rivers to turn into water vapour?",
+   "a": "The Sun’s heat",
+   "w": [
+    "The wind only",
+    "The fish",
+    "The moon"
+   ],
+   "e": "Heat changes water into vapour; when vapour cools it forms droplets and clouds."
+  },
+  {
+   "topic": "forms",
+   "level": "hard",
+   "q": "In the water-cycle bag activity, what happens when the water vapour inside the bag cools?",
+   "a": "It forms small droplets that fall back down",
+   "w": [
+    "It disappears for ever",
+    "It turns into salt",
+    "It becomes ice immediately"
+   ],
+   "e": "This is just like clouds giving rain in nature."
+  },
+  {
+   "topic": "forms",
+   "level": "hard",
+   "q": "Clouds come down to Earth as…",
+   "a": "rain, snow and hail",
+   "w": [
+    "only rain",
+    "steam",
+    "salt"
+   ],
+   "e": "Water vapour forms clouds which come down as rain, snow and hail."
+  },
+  {
+   "topic": "ground",
+   "level": "easy",
+   "q": "Water that gets stored deep under the ground is called…",
+   "a": "groundwater",
+   "w": [
+    "surface water",
+    "salt water",
+    "steam"
+   ],
+   "e": "Rainwater soaks into the soil and sinks through layers of soil and rocks."
+  },
+  {
+   "topic": "ground",
+   "level": "easy",
+   "q": "Which of these do we use to draw groundwater?",
+   "a": "Wells, borewells, tube wells and handpumps",
+   "w": [
+    "Clouds",
+    "Salt pans",
+    "Dams only"
+   ],
+   "e": "These bring groundwater up for our use."
+  },
+  {
+   "topic": "ground",
+   "level": "easy",
+   "q": "Rivers, ponds and lakes are examples of…",
+   "a": "surface water",
+   "w": [
+    "groundwater",
+    "salt water",
+    "water vapour"
+   ],
+   "e": "They are natural sources of freshwater on the surface."
+  },
+  {
+   "topic": "ground",
+   "level": "hard",
+   "q": "Why is groundwater not recharged easily in cities?",
+   "a": "Cemented surfaces stop rainwater from going into the ground",
+   "w": [
+    "It does not rain in cities",
+    "Cities have too many trees",
+    "Groundwater is only in villages"
+   ],
+   "e": "Open, uncovered areas let water seep in."
+  },
+  {
+   "topic": "ground",
+   "level": "hard",
+   "q": "Which surface helps groundwater recharge the most?",
+   "a": "A green lawn",
+   "w": [
+    "A concrete road",
+    "A paved area",
+    "A tin roof"
+   ],
+   "e": "Water can soak into the soil of a lawn."
+  },
+  {
+   "topic": "ground",
+   "level": "hard",
+   "q": "In the mustard seed activity, how do the seeds move on the crumpled paper?",
+   "a": "Down the slopes, spreading and collecting in low places",
+   "w": [
+    "In a straight line only",
+    "Upwards to the highest point",
+    "They do not move"
+   ],
+   "e": "Like water, they flow from higher to lower ground and follow the shape of the land."
+  },
+  {
+   "topic": "ground",
+   "level": "easy",
+   "q": "Rivers in India flow into the Bay of Bengal or the…",
+   "a": "Arabian Sea",
+   "w": [
+    "Pacific Ocean",
+    "Wular Lake",
+    "Mediterranean Sea"
+   ],
+   "e": "Some rivers flow east to the Bay of Bengal, some west to the Arabian Sea."
+  },
+  {
+   "topic": "ground",
+   "level": "hard",
+   "q": "Which major Indian river does NOT drain into a sea?",
+   "a": "Luni",
+   "w": [
+    "Godavari",
+    "Ganga",
+    "Brahmaputra"
+   ],
+   "e": "The Luni starts in the Aravalli Range and ends in the marshy Rann of Kutch."
+  },
+  {
+   "topic": "ground",
+   "level": "easy",
+   "q": "Hiware Bazar in Maharashtra is an example of a…",
+   "a": "water-positive village",
+   "w": [
+    "salt pan",
+    "floating national park",
+    "desert"
+   ],
+   "e": "Local people worked on watershed management and rainwater harvesting."
+  },
+  {
+   "topic": "life",
+   "level": "easy",
+   "q": "Which animal has fins to swim?",
+   "a": "Fish",
+   "w": [
+    "Pond heron",
+    "Dragonfly",
+    "Cat"
+   ],
+   "e": "Animals in water have features like fins to swim."
+  },
+  {
+   "topic": "life",
+   "level": "easy",
+   "type": "pairs",
+   "q": "Which one is this? “{x}”",
+   "pairs": [
+    [
+     "Flies fast, lays eggs near water and eats mosquitoes",
+     "Dragonfly"
+    ],
+    [
+     "An insect with pincers that breathes using a tail tube",
+     "Water scorpion"
+    ],
+    [
+     "A bird with long legs that stands still to catch fish",
+     "Pond heron"
+    ],
+    [
+     "A soft-shelled animal that lives in ponds and rivers",
+     "Freshwater turtle"
+    ],
+    [
+     "A harmless snake that eats fish and frogs",
+     "Water snake"
+    ],
+    [
+     "Flowers float on water, roots stay in the pond bed",
+     "Lotus"
+    ],
+    [
+     "A fast-growing plant that floats and spreads on water",
+     "Water hyacinth"
+    ],
+    [
+     "Tall, grass-like plants along pond edges",
+     "Reeds"
+    ]
+   ],
+   "e": "That is the {ans}."
+  },
+  {
+   "topic": "life",
+   "level": "easy",
+   "type": "pairs",
+   "q": "Which one is this? “{x}”",
+   "pairs": [
+    [
+     "Flies fast, lays eggs near water and eats mosquitoes",
+     "Dragonfly"
+    ],
+    [
+     "An insect with pincers that breathes using a tail tube",
+     "Water scorpion"
+    ],
+    [
+     "A bird with long legs that stands still to catch fish",
+     "Pond heron"
+    ],
+    [
+     "A soft-shelled animal that lives in ponds and rivers",
+     "Freshwater turtle"
+    ],
+    [
+     "A harmless snake that eats fish and frogs",
+     "Water snake"
+    ],
+    [
+     "Flowers float on water, roots stay in the pond bed",
+     "Lotus"
+    ],
+    [
+     "A fast-growing plant that floats and spreads on water",
+     "Water hyacinth"
+    ],
+    [
+     "Tall, grass-like plants along pond edges",
+     "Reeds"
+    ]
+   ],
+   "e": "That is the {ans}."
+  },
+  {
+   "topic": "life",
+   "level": "easy",
+   "type": "pairs",
+   "q": "Which one is this? “{x}”",
+   "pairs": [
+    [
+     "Flies fast, lays eggs near water and eats mosquitoes",
+     "Dragonfly"
+    ],
+    [
+     "An insect with pincers that breathes using a tail tube",
+     "Water scorpion"
+    ],
+    [
+     "A bird with long legs that stands still to catch fish",
+     "Pond heron"
+    ],
+    [
+     "A soft-shelled animal that lives in ponds and rivers",
+     "Freshwater turtle"
+    ],
+    [
+     "A harmless snake that eats fish and frogs",
+     "Water snake"
+    ],
+    [
+     "Flowers float on water, roots stay in the pond bed",
+     "Lotus"
+    ],
+    [
+     "A fast-growing plant that floats and spreads on water",
+     "Water hyacinth"
+    ],
+    [
+     "Tall, grass-like plants along pond edges",
+     "Reeds"
+    ]
+   ],
+   "e": "That is the {ans}."
+  },
+  {
+   "topic": "life",
+   "level": "hard",
+   "q": "Why do lotus leaves not get soaked in water?",
+   "a": "They have a waxy coating that makes them waterproof",
+   "w": [
+    "They are made of plastic",
+    "They are always dry inside",
+    "They have fins"
+   ],
+   "e": "Activity 9 – a crayon-coated paper also makes water drops roll off."
+  },
+  {
+   "topic": "life",
+   "level": "easy",
+   "q": "Keibul Lamjao in Manipur is the only floating national park in the world. It is famous for the…",
+   "a": "Sangai deer",
+   "w": [
+    "Fishing cat",
+    "Ganges river dolphin",
+    "Pond heron"
+   ],
+   "e": "It has floating islands called phumdis."
+  },
+  {
+   "topic": "life",
+   "level": "hard",
+   "q": "The fishing cat is an excellent swimmer because it has…",
+   "a": "partially webbed paws",
+   "w": [
+    "fins",
+    "a tail tube",
+    "a waxy coat"
+   ],
+   "e": "It lives in India’s wetlands and dives for fish."
+  },
+  {
+   "topic": "life",
+   "level": "hard",
+   "q": "Why do a large number of living beings live near water bodies?",
+   "a": "They depend on water for drinking, food and shelter",
+   "w": [
+    "Water bodies are always warm",
+    "There is no sunlight there",
+    "Water bodies have no plants"
+   ],
+   "e": "Freshwater habitats support rich plant and animal life."
+  },
+  {
+   "topic": "life",
+   "level": "easy",
+   "q": "True or false? A water lily is a rooted floating plant.",
+   "a": "True",
+   "w": [
+    "False",
+    "Not given in the chapter"
+   ],
+   "e": "Its flowers float on the water but its roots stay in the pond bed."
+  },
+  {
+   "topic": "amount",
+   "level": "advanced",
+   "q": "A 200 ml glass stands for all the water on Earth and 5 ml of it is freshwater. What part of the water is freshwater?",
+   "a": "1 part out of 40",
+   "w": [
+    "1 part out of 5",
+    "Half",
+    "1 part out of 200"
+   ],
+   "e": "200 ÷ 5 = 40, so freshwater is only 1 part in 40 – that is why we must save it."
+  },
+  {
+   "topic": "forms",
+   "level": "advanced",
+   "q": "Put the water cycle in the right order starting from the sea.",
+   "a": "Heat → water vapour → clouds → rain → rivers → sea",
+   "w": [
+    "Clouds → heat → sea → rain",
+    "Rain → heat → clouds → steam → ice",
+    "Rivers → clouds → sea → water vapour"
+   ],
+   "e": "The Sun heats water, vapour forms clouds, clouds give rain, rain flows back through rivers to the sea."
+  },
+  {
+   "topic": "ground",
+   "level": "advanced",
+   "q": "A city is short of groundwater. Which plan will help most?",
+   "a": "Leave open spaces, build soak pits and plant more trees",
+   "w": [
+    "Cement every open space",
+    "Cut trees to build roads",
+    "Dig more borewells only"
+   ],
+   "e": "Water must be able to seep back underground to recharge it."
+  },
+  {
+   "topic": "ground",
+   "level": "advanced",
+   "q": "It has not rained in a village for two years. What is most likely to happen?",
+   "a": "Wells and ponds dry up and people struggle for water",
+   "w": [
+    "Groundwater keeps rising",
+    "Rivers become salty sea water",
+    "Nothing changes"
+   ],
+   "e": "Without rain, surface water and groundwater are not refilled."
+  },
+  {
+   "topic": "life",
+   "level": "advanced",
+   "q": "In a river food chain, what would happen if all the fish disappeared?",
+   "a": "Animals that eat fish, like birds, otters and crocodiles, would go hungry",
+   "w": [
+    "Nothing, because fish eat nobody",
+    "More fish would appear",
+    "Only plants would be affected"
+   ],
+   "e": "Living beings depend on each other for food (Activity 10)."
+  },
+  {
+   "topic": "forms",
+   "level": "advanced",
+   "q": "Rainwater falls in a forest and in a city. Where does more of it soak into the ground?",
+   "a": "In the forest – soil and trees slow the water down",
+   "w": [
+    "In the city – roads soak water",
+    "Equal in both",
+    "Neither – rain never soaks in"
+   ],
+   "e": "Cemented city surfaces send water running off instead of into the ground."
+  },
+  {
+   "topic": "amount",
+   "level": "hard",
+   "q": "Why is it important to save freshwater even though Earth is covered with water?",
+   "a": "Only a tiny part of Earth’s water is fresh and usable",
+   "w": [
+    "Freshwater never runs out",
+    "Ocean water is fine to drink",
+    "Plants do not need water"
+   ],
+   "e": "Remember the glass and the teaspoon."
+  },
+  {
+   "topic": "amount",
+   "level": "hard",
+   "q": "What can ocean water be used for?",
+   "a": "Getting salt, and as a home for sea animals",
+   "w": [
+    "Drinking every day",
+    "Watering crops",
+    "Filling water bottles for school"
+   ],
+   "e": "Salt pans of Gujarat dry seawater to collect salt."
+  },
+  {
+   "topic": "forms",
+   "level": "hard",
+   "q": "True or false? Water can change into ice and steam, and can also return to its liquid form.",
+   "a": "True",
+   "w": [
+    "False",
+    "Not given in the chapter"
+   ],
+   "e": "The experiments showed water changing form and changing back."
+  }
+ ]
+}
