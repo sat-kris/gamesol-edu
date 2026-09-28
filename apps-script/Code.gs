@@ -55,7 +55,10 @@ function better_(a, b) {
 // Best attempt per student (name + section) for one class + subject + level, ranked.
 function leaderboard_(cls, subject, level, name, section) {
   const best = {};
-  rows_().filter(r => r['class'] === String(cls) && r.subject === String(subject) && r.level === level).forEach(r => {
+  const all = rows_().filter(r => r['class'] === String(cls) && r.subject === String(subject));
+  // Every attempt in this class + subject (all levels), newest first – the "All attempts" feed.
+  const recent = all.slice().sort((a, b) => String(b.timestamp).localeCompare(String(a.timestamp)));
+  all.filter(r => r.level === level).forEach(r => {
     const k = who_(r);
     if (!best[k] || better_(r, best[k])) best[k] = r;
   });
@@ -65,8 +68,14 @@ function leaderboard_(cls, subject, level, name, section) {
   return {
     ok: true, level: level, players: list.length,
     top: list.slice(0, 10).map((r, i) => ({ rank: i + 1, name: r.name, section: r.section, percent: r.percent, score: r.score, total: r.total, seconds: r.seconds })),
-    me: idx >= 0 ? { rank: idx + 1, percent: list[idx].percent, score: list[idx].score, total: list[idx].total } : null
+    me: idx >= 0 ? { rank: idx + 1, percent: list[idx].percent, score: list[idx].score, total: list[idx].total } : null,
+    recent: recent.slice(0, 30).map(slim_),
+    mine: recent.filter(r => who_(r) === me).slice(0, 20).map(slim_)
   };
+}
+// One attempt, trimmed for the public feed (game name only – no topics, no ids).
+function slim_(r) {
+  return { name: r.name, chapter: r.chapter, level: r.level, percent: r.percent, score: r.score, total: r.total, seconds: r.seconds, t: r.timestamp };
 }
 
 // Game names must be built from the site's word lists (e.g. NoCapPanda42) – real names are never stored.
