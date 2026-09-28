@@ -78,17 +78,10 @@ function slim_(r) {
   return { name: r.name, chapter: r.chapter, level: r.level, percent: r.percent, score: r.score, total: r.total, seconds: r.seconds, t: r.timestamp };
 }
 
-// Game names must be built from the site's word lists (e.g. NoCapPanda42) – real names are never stored.
-const NICK_A = ["NoCap","Lowkey","Highkey","BigBrain","MainCharacter","Goated","Slay","Bussin","Vibey","Glowup","Aura","Cracked","Iconic","Legendary","Chill","Hype","Epic","Cosmic","Turbo","Mega","Ultra","Sparkly","Zoomy","Sneaky","Speedy","Galaxy","Neon","Fire","Yeet","Snacky","Pixel","Frosty"];
-const NICK_B = ["Panda","Mango","Ninja","Comet","Otter","Axolotl","Capybara","Boba","Samosa","Taco","Llama","Penguin","Wizard","Legend","Dragon","Falcon","Tiger","Koala","Rocket","Nova","Unicorn","Dino","Bot","Noodle","Waffle","Pickle","Froggo","Doggo","Bunny","Yeti","Shark","Cactus","Cookie","Meteor"];
+// Game names: 3–24 letters or numbers only (e.g. NoCapPanda42 or CalmFox). No spaces, so "First Last" style real names are refused.
 function nick_(s) {
-  const m = String(s || '').match(/^([A-Za-z]+?)([A-Z][A-Za-z]*)(\d{2})$/);
-  if (m && NICK_A.indexOf(m[1]) !== -1 && NICK_B.indexOf(m[2]) !== -1) return m[0];
-  for (let i = 1; i < String(s).length; i++) { // fallback split for words with inner capitals (e.g. BigBrain)
-    const a = String(s).slice(0, i), rest = String(s).slice(i).match(/^([A-Za-z]+)(\d{2})$/);
-    if (rest && NICK_A.indexOf(a) !== -1 && NICK_B.indexOf(rest[1]) !== -1) return String(s);
-  }
-  return '';
+  const v = String(s || '');
+  return /^[A-Za-z0-9]{3,24}$/.test(v) ? v : '';
 }
 
 // Accepted quiz levels; anything else is stored as 'easy'.
