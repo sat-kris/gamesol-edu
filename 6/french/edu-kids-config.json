@@ -1,0 +1,239 @@
+{
+  "appName": "GamesolEdu",
+  "tagline": "Exam practice",
+  "exclude": [],
+  "_exclude_help": "Folder names to switch off. Put \"adds\" in the list to drop every extra question and activity stored in any adds/ folder.",
+  "leaderboard": {
+    "scriptUrl": "https://script.google.com/macros/s/AKfycbxOCokHnpdz_BDBiS5q72Bng7x-9Fa25Cwbogje1GmgUpmKCIuGOzrwCN1cB18Kkoo5/exec"
+  },
+  "classes": [
+    {
+      "id": "5",
+      "name": "Class V",
+      "status": "ongoing",
+      "subjects": [
+        {
+          "id": "science",
+          "name": "Science – Our Wondrous World",
+          "status": "ongoing",
+          "note": "NCERT Our Wondrous World · Chapters 1–4",
+          "chapters": [
+            {
+              "id": "ch1",
+              "name": "Chapter 1 · Water — The Essence of Life",
+              "status": "ongoing",
+              "bank": "5/science/bank-ch1-water.json",
+              "tutor": "5/science/tutor-ch1-water.json"
+            },
+            {
+              "id": "ch2",
+              "name": "Chapter 2 · Journey of a River",
+              "status": "ongoing",
+              "bank": "5/science/bank-ch2-river.json",
+              "tutor": "5/science/tutor-ch2-river.json"
+            },
+            {
+              "id": "ch3",
+              "name": "Chapter 3 · The Mystery of Food",
+              "status": "ongoing",
+              "bank": "5/science/bank-ch3-food.json",
+              "tutor": "5/science/tutor-ch3-food.json"
+            },
+            {
+              "id": "ch4",
+              "name": "Chapter 4 · Our School — A Happy Place",
+              "status": "ongoing",
+              "bank": "5/science/bank-ch4-school.json",
+              "tutor": "5/science/tutor-ch4-school.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Class VI",
+      "status": "ongoing",
+      "subjects": [
+        {
+          "id": "maths",
+          "name": "Mathematics",
+          "status": "ongoing",
+          "note": "Midterm: Chapters 1–5 (NCERT Ganita Prakash)",
+          "chapters": [
+            {
+              "id": "ch1",
+              "name": "Chapter 1 · Patterns in Mathematics",
+              "status": "ongoing",
+              "bank": "6/maths/bank-ch1-patterns.json",
+              "tutor": "6/maths/tutor-ch1-patterns.json",
+              "extras": [
+                "6/maths/adds/adds-ch1-patterns.json"
+              ]
+            },
+            {
+              "id": "ch2",
+              "name": "Chapter 2 · Lines and Angles",
+              "status": "ongoing",
+              "bank": "6/maths/bank-ch2-lines-angles.json",
+              "tutor": "6/maths/tutor-ch2-lines-angles.json",
+              "extras": [
+                "6/maths/adds/adds-ch2-lines-angles.json"
+              ]
+            },
+            {
+              "id": "ch3",
+              "name": "Chapter 3 · Number Play",
+              "status": "ongoing",
+              "bank": "6/maths/bank-ch3-number-play.json",
+              "tutor": "6/maths/tutor-ch3-number-play.json"
+            },
+            {
+              "id": "ch4",
+              "name": "Chapter 4 · Data Handling and Presentation",
+              "status": "ongoing",
+              "bank": "6/maths/bank-ch4-data-handling.json",
+              "tutor": "6/maths/tutor-ch4-data-handling.json",
+              "extras": [
+                "6/maths/adds/adds-ch4-data-handling.json"
+              ]
+            },
+            {
+              "id": "ch5",
+              "name": "Chapter 5 · Prime Time",
+              "status": "ongoing",
+              "bank": "6/maths/bank-ch5-prime-time.json",
+              "tutor": "6/maths/tutor-ch5-prime-time.json"
+            }
+          ]
+        },
+        {
+          "id": "french",
+          "name": "French (Second Language)",
+          "status": "ongoing",
+          "note": "Midterm: verbs, grammar, vocabulary, reading, culture",
+          "chapters": [
+            {
+              "id": "ch1",
+              "name": "Chapter 1 · Les verbes au présent",
+              "status": "ongoing",
+              "bank": "6/french/bank-ch1-verbes.json",
+              "tutor": "6/french/tutor-ch1-verbes.json"
+            },
+            {
+              "id": "ch2",
+              "name": "Chapter 2 · Négation, articles et phrases",
+              "status": "ongoing",
+              "bank": "6/french/bank-ch2-grammaire.json",
+              "tutor": "6/french/tutor-ch2-grammaire.json"
+            },
+            {
+              "id": "ch3",
+              "name": "Chapter 3 · Vocabulaire",
+              "status": "ongoing",
+              "bank": "6/french/bank-ch3-vocabulaire.json",
+              "tutor": "6/french/tutor-ch3-vocabulaire.json"
+            },
+            {
+              "id": "ch4",
+              "name": "Chapter 4 · Compréhension et expression",
+              "status": "ongoing",
+              "bank": "6/french/bank-ch4-comprehension.json",
+              "tutor": "6/french/tutor-ch4-comprehension.json"
+            },
+            {
+              "id": "ch5",
+              "name": "Chapter 5 · Culture et civilisation",
+              "status": "ongoing",
+              "bank": "6/french/bank-ch5-culture.json",
+              "tutor": "6/french/tutor-ch5-culture.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Class IX",
+      "status": "ongoing",
+      "subjects": [
+        {
+          "id": "science",
+          "name": "Science",
+          "status": "ongoing",
+          "chapters": [
+            {
+              "id": "ch4",
+              "name": "Chapter 4 · Describing Motion Around Us",
+              "status": "ongoing",
+              "bank": "banks/class9-science-ch4.json",
+              "tutor": "tutor/class9-science-ch4.json"
+            }
+          ]
+        },
+        {
+          "id": "french",
+          "name": "French (018)",
+          "status": "ongoing",
+          "link": "french/index.html",
+          "note": "Midterm grammar: tenses, demonstratives, negation, questions, COD/COI, possessives"
+        },
+        {
+          "id": "maths",
+          "name": "Mathematics",
+          "status": "upcoming"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Class X",
+      "status": "ongoing",
+      "subjects": [
+        {
+          "id": "social",
+          "name": "Social Science – Political Science",
+          "status": "ongoing",
+          "note": "Democratic Politics II · Chapters 1–5",
+          "chapters": [
+            {
+              "id": "ch1",
+              "name": "Chapter 1 · Power-sharing",
+              "status": "ongoing",
+              "bank": "10/social/bank-ch1-power-sharing.json",
+              "tutor": "10/social/tutor-ch1-power-sharing.json"
+            },
+            {
+              "id": "ch2",
+              "name": "Chapter 2 · Federalism",
+              "status": "ongoing",
+              "bank": "10/social/bank-ch2-federalism.json",
+              "tutor": "10/social/tutor-ch2-federalism.json"
+            },
+            {
+              "id": "ch3",
+              "name": "Chapter 3 · Gender, Religion and Caste",
+              "status": "ongoing",
+              "bank": "10/social/bank-ch3-gender-religion-caste.json",
+              "tutor": "10/social/tutor-ch3-gender-religion-caste.json"
+            },
+            {
+              "id": "ch4",
+              "name": "Chapter 4 · Political Parties",
+              "status": "ongoing",
+              "bank": "10/social/bank-ch4-political-parties.json",
+              "tutor": "10/social/tutor-ch4-political-parties.json"
+            },
+            {
+              "id": "ch5",
+              "name": "Chapter 5 · Outcomes of Democracy",
+              "status": "ongoing",
+              "bank": "10/social/bank-ch5-outcomes-of-democracy.json",
+              "tutor": "10/social/tutor-ch5-outcomes-of-democracy.json"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
