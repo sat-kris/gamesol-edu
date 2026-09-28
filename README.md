@@ -89,6 +89,18 @@ Files live in `5/science/` next to the chapter PDFs (`c1.pdf` … `c4.pdf`):
 
 Same design as the other classes: Play & learn activities, a chapter tutor and Easy / Hard / Advanced quizzes, all taken from the textbook.
 
+## Class VI French (Second Language)
+
+Files live in `6/french/` next to the model paper, answer key and teaching notes. Built from the BHPS Class VI midterm model paper 2026-27 (and the -IR verb and culture notes):
+
+| Chapter | Question bank | Tutor | Topics |
+|---|---|---|---|
+| 1 · Les verbes au présent | `bank-ch1-verbes.json` | `tutor-ch1-verbes.json` | -ER verbs · -IR verbs · être/avoir/aller/faire · lire/prendre/comprendre/mettre |
+| 2 · Négation, articles et phrases | `bank-ch2-grammaire.json` | `tutor-ch2-grammaire.json` | ne…pas / pas de · au, à la, à l’, aux · du, de la, de l’, des · word order |
+| 3 · Vocabulaire | `bank-ch3-vocabulaire.json` | `tutor-ch3-vocabulaire.json` | Ordinals · days, months, seasons · family, opposites, clothes |
+| 4 · Compréhension et expression | `bank-ch4-comprehension.json` | `tutor-ch4-comprehension.json` | Reading · dialogues · descriptions |
+| 5 · Culture et civilisation | `bank-ch5-culture.json` | `tutor-ch5-culture.json` | Symbols · geography · monuments and food |
+
 ## Class VI Mathematics (NCERT Ganita Prakash, midterm Chapters 1–5)
 
 | Chapter | Topics | Files in `6/maths/` |

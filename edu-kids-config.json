@@ -106,6 +106,49 @@
               "tutor": "6/maths/tutor-ch5-prime-time.json"
             }
           ]
+        },
+        {
+          "id": "french",
+          "name": "French (Second Language)",
+          "status": "ongoing",
+          "note": "Midterm: verbs, grammar, vocabulary, reading, culture",
+          "chapters": [
+            {
+              "id": "ch1",
+              "name": "Chapter 1 · Les verbes au présent",
+              "status": "ongoing",
+              "bank": "6/french/bank-ch1-verbes.json",
+              "tutor": "6/french/tutor-ch1-verbes.json"
+            },
+            {
+              "id": "ch2",
+              "name": "Chapter 2 · Négation, articles et phrases",
+              "status": "ongoing",
+              "bank": "6/french/bank-ch2-grammaire.json",
+              "tutor": "6/french/tutor-ch2-grammaire.json"
+            },
+            {
+              "id": "ch3",
+              "name": "Chapter 3 · Vocabulaire",
+              "status": "ongoing",
+              "bank": "6/french/bank-ch3-vocabulaire.json",
+              "tutor": "6/french/tutor-ch3-vocabulaire.json"
+            },
+            {
+              "id": "ch4",
+              "name": "Chapter 4 · Compréhension et expression",
+              "status": "ongoing",
+              "bank": "6/french/bank-ch4-comprehension.json",
+              "tutor": "6/french/tutor-ch4-comprehension.json"
+            },
+            {
+              "id": "ch5",
+              "name": "Chapter 5 · Culture et civilisation",
+              "status": "ongoing",
+              "bank": "6/french/bank-ch5-culture.json",
+              "tutor": "6/french/tutor-ch5-culture.json"
+            }
+          ]
         }
       ]
     },
