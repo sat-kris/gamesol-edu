@@ -1,0 +1,607 @@
+{
+ "id": "class6-french-ch1-tutor",
+ "chapter": "Chapter 1 · Les verbes au présent",
+ "source": "BHPS Class VI French midterm model paper 2026-27 + teaching notes, Chapter 1",
+ "overview": {
+  "bigIdea": "A French verb changes its ending to match the person. **Find the subject → pick the right ending.** Learn two regular patterns (-ER, -IR) and eight irregular verbs from the model paper.",
+  "ladderTitle": "Four verb families",
+  "ladder": [
+   {
+    "step": "-ER",
+    "q": "parler",
+    "a": "-e -es -e -ons -ez -ent"
+   },
+   {
+    "step": "-IR",
+    "q": "finir",
+    "a": "-is -is -it -issons -issez -issent"
+   },
+   {
+    "step": "Big 4",
+    "q": "être avoir aller faire",
+    "a": "Learn by heart"
+   },
+   {
+    "step": "Paper verbs",
+    "q": "lire prendre mettre",
+    "a": "Q6 of the model paper"
+   }
+  ],
+  "languagesTitle": "Three things to be able to do",
+  "languages": [
+   {
+    "name": "Say",
+    "text": "Say each table aloud in 10 seconds."
+   },
+   {
+    "name": "Choose",
+    "text": "Pick the right form for any subject."
+   },
+   {
+    "name": "Spot",
+    "text": "Find the mistake in a sentence."
+   }
+  ],
+  "plan": [
+   {
+    "pass": "Play first",
+    "time": "10 min",
+    "text": "Match the verb tables."
+   },
+   {
+    "pass": "Learn",
+    "time": "20 min",
+    "text": "Read the four lessons, say tables aloud."
+   },
+   {
+    "pass": "Quiz",
+    "time": "10 min",
+    "text": "Check knowledge – Easy then Hard."
+   },
+   {
+    "pass": "Revise",
+    "time": "5 min",
+    "text": "After 1, 3 and 7 days."
+   }
+  ]
+ },
+ "lessons": [
+  {
+   "topic": "er",
+   "ref": "V1",
+   "title": "Verbes en -ER",
+   "time": "7 min",
+   "hook": "Most French verbs end in **-er**: parler, aimer, habiter, regarder. Good news – they all follow **one pattern**.",
+   "core": [
+    {
+     "term": "Pattern",
+     "def": "Remove -er, add: je -e · tu -es · il/elle -e · nous -ons · vous -ez · ils/elles -ent"
+    },
+    {
+     "term": "parler",
+     "def": "je parle, tu parles, il parle, nous parlons, vous parlez, ils parlent"
+    },
+    {
+     "term": "je → j’",
+     "def": "Before a vowel or h: j’aime, j’habite, j’écoute."
+    },
+    {
+     "term": "manger",
+     "def": "nous mangeons (keep the e so the g stays soft)."
+    }
+   ],
+   "explain": [
+    "-e, -es, -e and -ent all sound the same – only spelling changes.",
+    "Always find the subject first; ‘Le garçon’ = il, ‘Mes amis’ = ils."
+   ],
+   "example": {
+    "q": "Conjugate: Nous ___ la télévision. (regarder)",
+    "steps": [
+     "Subject: nous → ending -ons.",
+     "Stem: regard-.",
+     "nous regardons."
+    ],
+    "answer": "Nous regardons la télévision."
+   },
+   "mistakes": [
+    "Writing ‘ils parlons’ – ils takes -ent.",
+    "Forgetting j’ before a vowel (je aime ✗)."
+   ],
+   "tip": "Underline the subject before you write the verb.",
+   "memory": "E-ES-E, ONS-EZ-ENT – say it like a chant!",
+   "examAsk": [
+    "Conjugate an -ER verb for a given subject.",
+    "Correct the verb in a sentence."
+   ],
+   "cards": [
+    {
+     "q": "tu (parler)",
+     "a": "tu parles"
+    },
+    {
+     "q": "ils (aimer)",
+     "a": "ils aiment"
+    },
+    {
+     "q": "nous (manger)",
+     "a": "nous mangeons"
+    }
+   ],
+   "play": [
+    {
+     "type": "match",
+     "title": "parler table",
+     "say": "Match each subject with the right form of parler.",
+     "pairs": [
+      [
+       "je / j’",
+       "parle"
+      ],
+      [
+       "tu",
+       "parles"
+      ],
+      [
+       "il / elle",
+       "parle"
+      ],
+      [
+       "nous",
+       "parlons"
+      ],
+      [
+       "vous",
+       "parlez"
+      ],
+      [
+       "ils / elles",
+       "parlent"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "topic": "ir",
+   "ref": "V2",
+   "title": "Verbes en -IR (finir)",
+   "time": "7 min",
+   "hook": "Le garçon **finit** le travail. Regular **-IR** verbs have a secret: **-iss-** in the plural!",
+   "core": [
+    {
+     "term": "Pattern",
+     "def": "Remove -ir, add: -is · -is · -it · -issons · -issez · -issent"
+    },
+    {
+     "term": "finir",
+     "def": "je finis, tu finis, il finit, nous finissons, vous finissez, ils finissent"
+    },
+    {
+     "term": "Same pattern",
+     "def": "choisir, grandir, réussir"
+    },
+    {
+     "term": "Careful",
+     "def": "Not every -ir verb is regular."
+    }
+   ],
+   "explain": [
+    "The -iss- appears only with nous, vous, ils/elles.",
+    "Teaching note: finir, choisir, grandir, réussir are regular -IR verbs."
+   ],
+   "example": {
+    "q": "Conjugate: Ils ___ un livre. (choisir)",
+    "steps": [
+     "Subject ils → -issent.",
+     "Stem: chois-.",
+     "ils choisissent."
+    ],
+    "answer": "Ils choisissent un livre."
+   },
+   "mistakes": [
+    "Writing ‘nous finons’ – it is finissons."
+   ],
+   "tip": "When you see nous/vous/ils with an -IR verb, check for -iss-.",
+   "memory": "Plural? Put in the ISS!",
+   "examAsk": [
+    "Model paper Q6(b): Le garçon ___ le travail. (finir) → finit."
+   ],
+   "cards": [
+    {
+     "q": "il (finir)",
+     "a": "il finit"
+    },
+    {
+     "q": "vous (réussir)",
+     "a": "vous réussissez"
+    },
+    {
+     "q": "ils (grandir)",
+     "a": "ils grandissent"
+    }
+   ],
+   "play": [
+    {
+     "type": "match",
+     "title": "finir table",
+     "say": "Match each subject with the right form of finir.",
+     "pairs": [
+      [
+       "je / j’",
+       "finis"
+      ],
+      [
+       "tu",
+       "finis"
+      ],
+      [
+       "il / elle",
+       "finit"
+      ],
+      [
+       "nous",
+       "finissons"
+      ],
+      [
+       "vous",
+       "finissez"
+      ],
+      [
+       "ils / elles",
+       "finissent"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "topic": "irr",
+   "ref": "V3",
+   "title": "être, avoir, aller, faire",
+   "time": "8 min",
+   "hook": "The four most-used verbs are **irregular** – no pattern, just learn them. They appear everywhere!",
+   "core": [
+    {
+     "term": "être",
+     "def": "suis, es, est, sommes, êtes, sont"
+    },
+    {
+     "term": "avoir",
+     "def": "ai, as, a, avons, avez, ont"
+    },
+    {
+     "term": "aller",
+     "def": "vais, vas, va, allons, allez, vont"
+    },
+    {
+     "term": "faire",
+     "def": "fais, fais, fait, faisons, faites, font"
+    }
+   ],
+   "explain": [
+    "être = to be (Je suis en sixième); avoir = to have (J’ai un chien); aller = to go (Nous allons au restaurant); faire = to do (Je fais du vélo).",
+    "Q1(d) of the paper asks the infinitive: sommes → être, ai → avoir."
+   ],
+   "example": {
+    "q": "Conjugate: Nous ___ au restaurant. (aller)",
+    "steps": [
+     "aller is irregular.",
+     "nous → allons."
+    ],
+    "answer": "Nous allons au restaurant."
+   },
+   "mistakes": [
+    "‘Vous faisez’ ✗ → vous faites.",
+    "‘Ils allent’ ✗ → ils vont."
+   ],
+   "tip": "Group the -ont forms: ils sont, ils ont, ils vont, ils font.",
+   "memory": "SONT–ONT–VONT–FONT: the ‘ont’ gang!",
+   "examAsk": [
+    "Conjugate être, avoir, aller, faire.",
+    "Give the infinitive of a form (sommes, ai)."
+   ],
+   "cards": [
+    {
+     "q": "vous (faire)",
+     "a": "vous faites"
+    },
+    {
+     "q": "ils (aller)",
+     "a": "ils vont"
+    },
+    {
+     "q": "nous (être)",
+     "a": "nous sommes"
+    }
+   ],
+   "play": [
+    {
+     "type": "match",
+     "title": "aller table",
+     "say": "Match each subject with the right form of aller.",
+     "pairs": [
+      [
+       "je / j’",
+       "vais"
+      ],
+      [
+       "tu",
+       "vas"
+      ],
+      [
+       "il / elle",
+       "va"
+      ],
+      [
+       "nous",
+       "allons"
+      ],
+      [
+       "vous",
+       "allez"
+      ],
+      [
+       "ils / elles",
+       "vont"
+      ]
+     ]
+    },
+    {
+     "type": "sort",
+     "title": "Which verb?",
+     "say": "Which infinitive does each form come from?",
+     "buckets": [
+      "être",
+      "avoir",
+      "aller",
+      "faire"
+     ],
+     "items": [
+      [
+       "sommes",
+       0,
+       ""
+      ],
+      [
+       "ai",
+       1,
+       ""
+      ],
+      [
+       "vont",
+       2,
+       ""
+      ],
+      [
+       "faites",
+       3,
+       ""
+      ],
+      [
+       "es",
+       0,
+       ""
+      ],
+      [
+       "ont",
+       1,
+       ""
+      ],
+      [
+       "vais",
+       2,
+       ""
+      ],
+      [
+       "font",
+       3,
+       ""
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "topic": "irr2",
+   "ref": "V4",
+   "title": "lire, prendre, comprendre, mettre",
+   "time": "8 min",
+   "hook": "Model paper Q6: Elle **lit** le roman · Tu ne **comprends** pas la leçon ? · Ils **mettent** les livres sur la table.",
+   "core": [
+    {
+     "term": "lire",
+     "def": "lis, lis, lit, lisons, lisez, lisent"
+    },
+    {
+     "term": "prendre",
+     "def": "prends, prends, prend, prenons, prenez, prennent"
+    },
+    {
+     "term": "comprendre",
+     "def": "like prendre: comprends … comprennent"
+    },
+    {
+     "term": "mettre",
+     "def": "mets, mets, met, mettons, mettez, mettent"
+    }
+   ],
+   "explain": [
+    "prendre and comprendre: il prend (no t!), ils prennent (double n).",
+    "mettre: il met (one t), nous mettons (two t)."
+   ],
+   "example": {
+    "q": "Conjugate: Ils ___ les livres sur la table. (mettre)",
+    "steps": [
+     "ils → -ent.",
+     "mettre plural keeps tt: mettent."
+    ],
+    "answer": "Ils mettent les livres sur la table."
+   },
+   "mistakes": [
+    "‘il prent’ ✗ → il prend.",
+    "‘elles prenent’ ✗ → elles prennent."
+   ],
+   "tip": "comprendre = com + prendre – same endings.",
+   "memory": "prennent needs two n’s, like ‘penne’ pasta!",
+   "examAsk": [
+    "Model paper Q6: lire, comprendre, mettre."
+   ],
+   "cards": [
+    {
+     "q": "elle (lire)",
+     "a": "elle lit"
+    },
+    {
+     "q": "tu (comprendre)",
+     "a": "tu comprends"
+    },
+    {
+     "q": "ils (mettre)",
+     "a": "ils mettent"
+    }
+   ],
+   "play": [
+    {
+     "type": "match",
+     "title": "prendre table",
+     "say": "Match each subject with the right form of prendre.",
+     "pairs": [
+      [
+       "je / j’",
+       "prends"
+      ],
+      [
+       "tu",
+       "prends"
+      ],
+      [
+       "il / elle",
+       "prend"
+      ],
+      [
+       "nous",
+       "prenons"
+      ],
+      [
+       "vous",
+       "prenez"
+      ],
+      [
+       "ils / elles",
+       "prennent"
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "formulas": [
+  {
+   "name": "-ER verbs",
+   "f": "-e, -es, -e, -ons, -ez, -ent",
+   "unit": "je parle, nous parlons",
+   "when": "j’ before a vowel"
+  },
+  {
+   "name": "-IR verbs",
+   "f": "-is, -is, -it, -issons, -issez, -issent",
+   "unit": "nous finissons",
+   "when": "-iss- in plural"
+  },
+  {
+   "name": "être / avoir",
+   "f": "suis es est sommes êtes sont · ai as a avons avez ont",
+   "unit": "Je suis, j’ai",
+   "when": "Learn by heart"
+  },
+  {
+   "name": "aller / faire",
+   "f": "vais vas va allons allez vont · fais fais fait faisons faites font",
+   "unit": "vous faites",
+   "when": "Not ‘faisez’"
+  },
+  {
+   "name": "lire / mettre",
+   "f": "lis lis lit lisons lisez lisent · mets mets met mettons mettez mettent",
+   "unit": "elle lit",
+   "when": "il met (one t)"
+  },
+  {
+   "name": "prendre",
+   "f": "prends prends prend prenons prenez prennent",
+   "unit": "ils prennent",
+   "when": "double n"
+  }
+ ],
+ "revision": [
+  "Find the **subject** first: Le garçon = il, Mes amis = ils.",
+  "-ER: **-e, -es, -e, -ons, -ez, -ent**.",
+  "-IR: **-is, -is, -it, -issons, -issez, -issent**.",
+  "Irregular: **être, avoir, aller, faire, lire, prendre, mettre** – learn the tables.",
+  "je → **j’** before a vowel: j’ai, j’aime."
+ ],
+ "exam": {
+  "paper": [
+   {
+    "q": "Q6",
+    "marks": "5",
+    "what": "Conjugate: lire, finir, comprendre, aller, mettre"
+   }
+  ],
+  "sections": [
+   {
+    "title": "How to conjugate in the exam",
+    "kind": "steps",
+    "items": [
+     "Underline the subject.",
+     "Is the verb -ER, -IR or irregular?",
+     "Write the stem + ending (or the learnt form).",
+     "Check spelling and accents."
+    ]
+   },
+   {
+    "title": "Writing answers that score",
+    "kind": "mem",
+    "items": [
+     "Copy the spelling carefully – accents count (é, è, ê, ç).",
+     "Always start a sentence with a capital letter and end with a full stop or question mark.",
+     "Before writing a verb, find the subject first (je, tu, il, nous…) and use the matching ending.",
+     "For negation, check two things: ne…pas around the verb, and un/une/des → de after pas.",
+     "In descriptions write 5 simple sentences: name → where → what you see or do → why you like it → a feeling.",
+     "Answer culture questions in a full sentence: ‘La capitale de la France est Paris.’"
+    ]
+   },
+   {
+    "title": "The day before the test",
+    "kind": "note",
+    "items": [
+     "Say each verb table aloud once (je, tu, il, nous, vous, ils).",
+     "Redo the Play & learn activities – aim for every card right first time.",
+     "Take one Check knowledge quiz at Hard level."
+    ]
+   }
+  ],
+  "checklist": [
+   "I can conjugate -ER verbs for all subjects.",
+   "I can conjugate finir and other -IR verbs.",
+   "I know être, avoir, aller, faire by heart.",
+   "I know lire, prendre, comprendre, mettre.",
+   "I can give the infinitive of a verb form."
+  ],
+  "paperTitle": "In the Class VI midterm model paper",
+  "paperCols": [
+   "Question",
+   "Marks",
+   "What was asked"
+  ],
+  "paperNote": "BHPS Class VI French midterm model paper 2026-27 (80 marks: Reading 10 · Writing 20 · Grammar 30 · Culture 20). Practise these question types first."
+ },
+ "method": "Built on how languages stick: hear and see short patterns, practise them many times with instant feedback, say answers aloud before checking (active recall), and revisit after 1, 3 and 7 days (spaced revision).",
+ "sheetTitle": "Rules sheet",
+ "sheetCols": [
+  "Rule",
+  "Pattern",
+  "Example",
+  "Watch out"
+ ]
+}
