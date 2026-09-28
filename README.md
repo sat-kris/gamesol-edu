@@ -1,6 +1,6 @@
 # GamesolEdu – exam practice by class and subject
 
-Students pick their **class → subject → chapter → topics**, choose **Easy** or **Hard**, and play a quiz with new questions every time. At the end they see their score per topic, explanations for every mistake, and their **rank** on the class leaderboard. Teachers see everything on a dashboard.
+Students pick their **class → subject → chapter → topics**, choose **Easy**, **Hard** or **Advanced**, and take a quiz with new questions every time. At the end they see their score per topic, explanations for every mistake, and their **rank** on the class leaderboard. Teachers see everything on a dashboard.
 
 ## Files
 
@@ -188,6 +188,7 @@ A multiple-choice question in a bank looks like this:
 
 - Dashboard: `https://<username>.github.io/<repo>/dashboard.html`. Enter your teacher password. You can filter by period, class, subject, section and level, and see weak topics, students and the latest attempts.
 - Raw data: the **Attempts** tab of your Google Sheet.
+- **Feature usage** (on the dashboard): which parts of the site students use – visits, class/subject/chapter picks, Chapter tutor pages, flashcards, worked examples, Play & learn activities, quizzes started and finished, leaderboard tabs and nickname changes. Each row shows how many times it was used and by how many different nicknames; **Most used** lists the top chapters, tutor pages, activities and quizzes. The period, class and subject filters apply. Raw events go to a new **Activity** tab (created automatically) with time, nickname, a random per-tab session id, page, class, subject, chapter, event and detail. Nothing personal is logged – only the made-up nickname. Events are sent in small batches (when the tab is hidden or closed, and every minute), so the site stays fast. Logging starts only after you paste the new `Code.gs` and deploy a **New version**.
 - The leaderboard has three views: **🏆 Top scores** (best score per nickname, for each class + subject + level; ties go to the faster time), **🕒 All attempts** (every finished quiz in that class + subject, newest first, last 30) and **🙋 My attempts** (the player's own history with a progress tip).
 - If you change `Code.gs` later, go to **Deploy → Manage deployments → Edit → New version**.
 

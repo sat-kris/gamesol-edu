@@ -58,6 +58,12 @@ svg text{fill:var(--ink-soft);font-size:11px;font-family:"Atkinson Hyperlegible"
 .accrow{display:grid;grid-template-columns:minmax(0,10.5em) 1fr 4.5em;gap:10px;align-items:center;font-size:14px}
 .acctrack{height:10px;border-radius:5px;background:var(--line);position:relative;overflow:hidden}
 .acctrack i{position:absolute;left:0;top:0;bottom:0;border-radius:0 5px 5px 0;background:var(--accent)}
+.feat .accrow{grid-template-columns:minmax(0,12em) 1fr 7.5em}
+.feat .v{white-space:nowrap}
+.toplist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;font-size:14px}
+.toplist li{display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid var(--line);padding-bottom:6px}
+.toplist li span:first-child{min-width:0;overflow-wrap:anywhere}
+#topUsed h3{font-size:13px;margin:12px 0 4px;color:var(--ink-soft)}#topUsed h3:first-child{margin-top:0}
 .acctrack i.low{background:var(--bad)}
 .accrow .v{text-align:right;font-variant-numeric:tabular-nums}
 .flag{display:inline-block;font-size:11px;font-weight:700;color:var(--bad);background:var(--bad-soft);border-radius:4px;padding:1px 6px;margin-left:6px;white-space:nowrap}
@@ -135,6 +141,11 @@ td.num,th.num{text-align:right}
       <div class="tablewrap"><table id="students"></table></div>
     </section>
 
+    <div class="grid2">
+      <section class="panel"><h2 id="featTitle">Feature usage</h2><div class="acc feat" id="featChart"></div></section>
+      <section class="panel"><h2>Most used</h2><div id="topUsed"></div></section>
+    </div>
+
     <section class="panel">
       <h2>Latest attempts</h2>
       <div class="tablewrap"><table id="recent"></table></div>
@@ -148,9 +159,10 @@ let API="", CONFIG={classes:[]};
 const cfgReady=fetch("edu-kids-config.json",{cache:"no-store"}).then(r=>r.json()).then(c=>{CONFIG=c;API=String(c.leaderboard&&c.leaderboard.scriptUrl||"").trim()}).catch(()=>{});
 const className=id=>{const c=(CONFIG.classes||[]).find(c=>String(c.id)===String(id));return c?c.name:"Class "+id};
 const subjectName=(cid,sid)=>{for(const c of CONFIG.classes||[])for(const s of c.subjects||[])if(s.id===sid&&(!cid||String(c.id)===String(cid)))return s.name;return sid};
+const chapterName=(cid,sid,ch)=>{for(const c of CONFIG.classes||[])if(String(c.id)===String(cid))for(const s of c.subjects||[])if(s.id===sid)for(const x of s.chapters||[])if(x.id===ch)return x.name;return ch};
 const esc=s=>String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
 const $=id=>document.getElementById(id);
-let ROWS=[],sortKey="last",sortDir=-1;
+let ROWS=[],ACT=[],sortKey="last",sortDir=-1;
 
 function ss(k,v){try{if(v===undefined)return sessionStorage.getItem(k);if(v===null)sessionStorage.removeItem(k);else sessionStorage.setItem(k,v)}catch(e){return null}}
 
@@ -159,11 +171,12 @@ async function load(key){
   await cfgReady;
   if(!/^https:\/\/script\.google(usercontent)?\.com\//.test(API)){showErr("The Google Apps Script link is missing. Add it to edu-kids-config.json → leaderboard.scriptUrl (see README).");return}
   try{
-    const r=await fetch(API+(API.includes("?")?"&":"?")+"action=stats&key="+encodeURIComponent(key));
+    const r=await fetch(API+(API.includes("?")?"&":"?")+"action=stats&days=365&key="+encodeURIComponent(key));
     const d=await r.json();
     if(!d.ok){showErr(d.error==="wrong_key"?"That password is not correct.":"The backend returned an error.");ss("cockpit-key",null);return}
     ss("cockpit-key",key);
     ROWS=d.rows.map(r=>Object.assign(r,{t:new Date(r.timestamp)})).filter(r=>!isNaN(r.t));
+    ACT=(d.activity||[]).map(a=>Object.assign(a,{t:new Date(a.t)})).filter(a=>!isNaN(a.t));
     $("login").hidden=true;$("app").hidden=false;$("topActions").hidden=false;
     $("updated").textContent="Updated "+new Date().toLocaleTimeString([], {hour:"2-digit",minute:"2-digit"});
     const opts=(id,all,vals,label)=>{const cur=$(id).value;$(id).innerHTML='<option value="">'+all+'</option>'+vals.map(v=>'<option value="'+esc(v)+'"'+(v===cur?" selected":"")+'>'+esc(label(v))+'</option>').join("")};
@@ -199,7 +212,39 @@ function render(){
   if(!rows.length){
     $("dayChart").innerHTML='<p class="empty">No quizzes in this period yet.</p>';$("accChart").innerHTML='<p class="empty">No data yet.</p>';
   }else{dayChart(rows);accChart(rows)}
-  studentTable(rows);recentTable(rows);
+  studentTable(rows);recentTable(rows);usage();
+}
+
+/* ---------- feature usage (sheet "Activity") ---------- */
+const FEAT={visit:"Opened the site",choose_cls:"Picked a class",choose_subject:"Picked a subject",choose_chapter:"Picked a chapter",choose_mode:"Picked a mode",choose_level:"Picked a level",choose_count:"Picked no. of questions",choose_section:"Picked a French section",
+  open_tutor:"Chapter tutor",open_play:"Play & learn",tutor_icon:"Tutor icon",tutor_page:"Tutor page",flashcard:"Flashcard",worked_example:"Worked example",mark_understood:"Marked understood",practise_button:"Practise button (tutor)",play_activity:"Play & learn activity",
+  exam_checklist:"Exam checklist",quiz_start:"Quiz started",quiz_finish:"Quiz finished",results_button:"Results button",leaderboard_tab:"Leaderboard tab",leaderboard_level:"Leaderboard level",
+  nickname_shuffle:"New random nickname",nickname_colour:"Changed colour",nickname_edit:"Edited nickname"};
+function actFiltered(){
+  const days=+$("fPeriod").value, cls=$("fClass").value, sub=$("fSubject").value, from=days?Date.now()-days*864e5:0;
+  return ACT.filter(a=>a.t.getTime()>=from&&(!cls||String(a.class)===cls)&&(!sub||a.subject===sub));
+}
+function usage(){
+  const acts=actFiltered();
+  if(!acts.length){
+    $("featChart").innerHTML='<p class="empty">No activity logged in this period yet. Activity is recorded once the updated Apps Script is deployed.</p>';$("topUsed").innerHTML='<p class="empty">No data yet.</p>';
+    $("featTitle").textContent="Feature usage";return}
+  const users=new Set(acts.map(a=>String(a.name).toLowerCase())), sess=new Set(acts.map(a=>a.session));
+  $("featTitle").textContent="Feature usage · "+sess.size+" session"+(sess.size===1?"":"s")+", "+users.size+" name"+(users.size===1?"":"s");
+  const agg={};acts.forEach(a=>{const x=agg[a.event]||(agg[a.event]={ev:a.event,n:0,u:new Set()});x.n++;x.u.add(String(a.name).toLowerCase())});
+  const data=Object.values(agg).sort((a,b)=>b.n-a.n), max=data[0].n;
+  $("featChart").innerHTML=data.map(x=>'<div class="accrow" data-tip="'+esc((FEAT[x.ev]||x.ev)+": used "+x.n+" time"+(x.n===1?"":"s")+" by "+x.u.size+" name"+(x.u.size===1?"":"s"))+'"><span>'+esc(FEAT[x.ev]||x.ev)+'</span><span class="acctrack"><i style="width:'+(100*x.n/max)+'%"></i></span><span class="v">'+x.n+' <span class="muted">· '+x.u.size+' 👤</span></span></div>').join("")+
+    '<p class="muted" style="margin:0;font-size:13px">Times used · number of different nicknames.</p>';
+  const top=(filter,label,n)=>{const m={};acts.filter(filter).forEach(a=>{const k=label(a);if(k)m[k]=(m[k]||0)+1});return Object.entries(m).sort((a,b)=>b[1]-a[1]).slice(0,n||6)};
+  const chap=a=>(a.class?className(a.class)+" ":"")+(a.subject?subjectName(a.class,a.subject):"")+(a.chapter&&a.chapter!=="midterm"?" · "+chapterName(a.class,a.subject,a.chapter):"");
+  const lists=[
+    ["Chapters opened (tutor / Play & learn)",top(a=>a.event==="open_tutor"||a.event==="open_play",a=>chap(a)+(a.event==="open_play"?" (Play & learn)":""))],
+    ["Tutor pages",top(a=>a.event==="tutor_page",a=>a.detail)],
+    ["Play & learn activities",top(a=>a.event==="play_activity",a=>a.detail)],
+    ["Quizzes started",top(a=>a.event==="quiz_start",a=>chap(a)+(a.detail?" · "+String(a.detail).split(" · ")[0]:""))],
+    ["Pages",top(a=>a.event==="visit",a=>a.page==="french"?"Class IX French":"Main site")]
+  ].filter(l=>l[1].length);
+  $("topUsed").innerHTML=lists.length?lists.map(l=>'<h3>'+esc(l[0])+'</h3><ul class="toplist">'+l[1].map(([k,v])=>'<li><span>'+esc(k)+'</span><span class="muted">'+v+'</span></li>').join("")+'</ul>').join(""):'<p class="empty">No data yet.</p>';
 }
 
 function dayChart(rows){
