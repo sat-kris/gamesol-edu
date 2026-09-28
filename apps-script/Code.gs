@@ -1,5 +1,5 @@
 /**
- * Gamesol Edu – results backend (Google Apps Script)
+ * GamesolEdu – results backend (Google Apps Script)
  *
  * 1. Change TEACHER_KEY below to your own secret password.
  * 2. Deploy → New deployment → Web app
@@ -132,5 +132,5 @@ function doGet(e) {
     if (p.key !== TEACHER_KEY) return json_({ ok: false, error: 'wrong_key' });
     return json_({ ok: true, rows: rows_() });
   }
-  return json_({ ok: true, message: 'Gamesol Edu backend is running.' });
+  return json_({ ok: true, message: 'GamesolEdu backend is running.' });
 }
