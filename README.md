@@ -163,7 +163,7 @@ A multiple-choice question in a bank looks like this:
 
 - Dashboard: `https://<username>.github.io/<repo>/dashboard.html`. Enter your teacher password. You can filter by period, class, subject, section and level, and see weak topics, students and the latest attempts.
 - Raw data: the **Attempts** tab of your Google Sheet.
-- There's a separate leaderboard for each class + subject + level. Each student's best score counts, and ties go to the faster time.
+- The leaderboard has three views: **🏆 Top scores** (best score per game name, for each class + subject + level; ties go to the faster time), **🕒 All attempts** (every finished quiz in that class + subject, newest first, last 30) and **🙋 My attempts** (the player's own history with a progress tip).
 - If you change `Code.gs` later, go to **Deploy → Manage deployments → Edit → New version**.
 
 ## Notes

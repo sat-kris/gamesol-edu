@@ -141,6 +141,17 @@ h2{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-
 .lb{width:100%;border-collapse:collapse;font-size:14.5px;font-variant-numeric:tabular-nums}
 .lb th{text-align:left;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);padding:6px 8px;border-bottom:1px solid var(--line-strong)}
 .lb td{padding:8px;border-bottom:1px solid var(--line)}
+.bview{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0}
+.bview button{font:inherit;font-size:13px;font-weight:700;padding:6px 11px;border-radius:999px;border:1px solid var(--line-strong);background:var(--sheet);color:var(--ink);cursor:pointer}
+.bview button[aria-selected="true"]{background:var(--accent);border-color:var(--accent);color:var(--sheet)}
+.feed{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;border:1px solid var(--line-strong);border-radius:10px;overflow:hidden}
+.feed li{display:grid;grid-template-columns:3.6em 1fr auto;gap:10px;align-items:center;padding:8px 12px;border-bottom:1px solid var(--line);background:var(--sheet)}
+.feed li:last-child{border-bottom:0}
+.feed li.me{background:var(--accent-soft)}
+.feed .fs{font-weight:700;text-align:center;border-radius:8px;padding:4px 0;font-variant-numeric:tabular-nums}
+.feed .fs.hi{background:var(--good-soft);color:var(--good)} .feed .fs.mid{background:var(--note);color:var(--note-ink)} .feed .fs.lo{background:var(--bad-soft);color:var(--bad)}
+.feed .fm{display:flex;flex-direction:column;min-width:0} .feed .fm b{overflow:hidden;text-overflow:ellipsis;white-space:nowrap} .feed .fm small{color:var(--ink-soft);font-size:12.5px}
+.feed .ft{font-size:12px;color:var(--ink-soft);white-space:nowrap}
 .lb .num{text-align:right}
 .lb tr.me td{background:var(--accent-soft);font-weight:700}
 .tabs{display:flex;gap:6px}
@@ -741,16 +752,36 @@ const keyOf=(n,s)=>String(n||"").trim().toLowerCase()+"|"+String(s||"").trim().t
 const fmtTime=s=>{s=Math.round(+s||0);return Math.floor(s/60)+" min "+String(s%60).padStart(2,"0")};
 function boardHTML(d,cls,subj){
   if(!d||!d.ok)return '<p class="muted">Leaderboard unavailable right now.</p>';
+  const me=keyOf(pname(),"");
   let h="";
-  if(d.me)h+='<div class="rank"><b>#'+d.me.rank+'</b><span>Your rank out of <strong>'+d.players+'</strong> student'+(d.players>1?"s":"")+' · '+esc(cls.name)+' '+esc(subj.name)+' · '+LVL[d.level]+'<br><span class="muted">Your best score: '+d.me.percent+'%</span></span></div>';
-  if(!d.top.length)return h+'<p class="muted">No scores yet at this level. Be the first!</p>';
-  const me=keyOf(pname(),"");let shown=false;
-  h+='<div style="overflow-x:auto"><table class="lb"><thead><tr><th>#</th><th>Name</th><th class="num">Score</th><th class="num">Time</th></tr></thead><tbody>';
-  d.top.forEach(r=>{const m=keyOf(r.name,"")===me;if(m)shown=true;
-    h+='<tr'+(m?' class="me"':'')+'><td>'+r.rank+'</td><td>'+esc(r.name)+(m?" (you)":"")+'</td><td class="num">'+r.percent+'% <span class="muted">('+r.score+'/'+r.total+')</span></td><td class="num">'+fmtTime(r.seconds)+'</td></tr>'});
-  if(d.me&&!shown)h+='<tr><td colspan="4" class="muted">…</td></tr><tr class="me"><td>'+d.me.rank+'</td><td>'+esc(pname())+' (you)</td><td class="num">'+d.me.percent+'%</td><td></td></tr>';
-  return h+'</tbody></table></div><p class="muted">Best score per student. Ties go to the faster time.</p>';
+  if(d.me)h+='<div class="rank"><b>#'+d.me.rank+'</b><span>Your rank out of <strong>'+d.players+'</strong> player'+(d.players>1?"s":"")+' · '+esc(cls.name)+' '+esc(subj.name)+' · '+LVL[d.level]+'<br><span class="muted">Your best score: '+d.me.percent+'%</span></span></div>';
+  const recent=d.recent||[],mine=d.mine||[];
+  h+='<div class="bview" role="tablist"><button type="button" data-v="top" aria-selected="true">🏆 Top scores</button><button type="button" data-v="all" aria-selected="false">🕒 All attempts'+(recent.length?' ('+recent.length+')':'')+'</button><button type="button" data-v="mine" aria-selected="false">🙋 My attempts'+(mine.length?' ('+mine.length+')':'')+'</button></div>';
+  // Top scores (best per player, this level)
+  let t='';
+  if(!d.top.length)t='<p class="muted">No scores yet at this level. Be the first!</p>';
+  else{let shown=false;
+    t='<div style="overflow-x:auto"><table class="lb"><thead><tr><th>#</th><th>Game name</th><th class="num">Score</th><th class="num">Time</th></tr></thead><tbody>';
+    d.top.forEach(r=>{const m=keyOf(r.name,"")===me;if(m)shown=true;
+      t+='<tr'+(m?' class="me"':'')+'><td>'+medal(r.rank)+'</td><td>'+esc(r.name)+(m?" (you)":"")+'</td><td class="num">'+r.percent+'% <span class="muted">('+r.score+'/'+r.total+')</span></td><td class="num">'+fmtTime(r.seconds)+'</td></tr>'});
+    if(d.me&&!shown)t+='<tr><td colspan="4" class="muted">…</td></tr><tr class="me"><td>'+d.me.rank+'</td><td>'+esc(pname())+' (you)</td><td class="num">'+d.me.percent+'%</td><td></td></tr>';
+    t+='</tbody></table></div><p class="muted">Best score per player at this level. Ties go to the faster time.</p>'}
+  h+='<div class="bpane" data-v="top">'+t+'</div>';
+  const feed=(list,empty,showName)=>list.length?'<ul class="feed">'+list.map(r=>{const m=keyOf(r.name,"")===me;
+      return '<li'+(m?' class="me"':'')+'><span class="fs '+(r.percent>=80?"hi":r.percent>=50?"mid":"lo")+'">'+r.percent+'%</span><span class="fm">'+(showName?'<b>'+esc(r.name)+(m?' (you)':'')+'</b>':'<b>'+r.score+' / '+r.total+'</b>')+
+        '<small>'+esc(chapName(subj,r.chapter))+' · '+(LVL[r.level]||r.level)+(showName?' · '+r.score+'/'+r.total:'')+' · '+fmtTime(r.seconds)+'</small></span><span class="ft">'+ago(r.t)+'</span></li>'}).join("")+'</ul>':'<p class="muted">'+empty+'</p>';
+  h+='<div class="bpane" data-v="all" hidden>'+feed(recent,"No quizzes finished yet.",true)+'<p class="muted">Every finished quiz in '+esc(cls.name)+' '+esc(subj.name)+', newest first (last 30).</p></div>';
+  h+='<div class="bpane" data-v="mine" hidden>'+feed(mine,"You haven’t finished a quiz here yet as "+esc(pname())+".",false)+(mine.length>1?'<p class="muted">'+trend(mine)+'</p>':'')+'</div>';
+  return h;
 }
+const medal=n=>n===1?"🥇":n===2?"🥈":n===3?"🥉":n;
+function chapName(subj,id){const c=(subj.chapters||[]).find(x=>x.id===id);return c?String(c.name).split(" · ")[0]:(id||"")}
+function ago(t){const d=new Date(t);if(isNaN(d))return "";const s=(Date.now()-d.getTime())/1000;
+  return s<60?"just now":s<3600?Math.floor(s/60)+" min ago":s<86400?Math.floor(s/3600)+" h ago":s<7*86400?Math.floor(s/86400)+" d ago":d.toLocaleDateString([], {day:"numeric",month:"short"})}
+function trend(m){const last=m[0].percent,prev=m.slice(1).reduce((a,r)=>a+r.percent,0)/(m.length-1);const dlt=Math.round(last-prev);
+  return dlt>0?"📈 Your latest score is "+dlt+" points above your earlier average – keep going!":dlt<0?"Your latest score is "+(-dlt)+" points below your earlier average. Review the mistakes and try again.":"Steady! Your latest score matches your average."}
+document.addEventListener("click",e=>{const b=e.target.closest(".bview button");if(!b)return;const box=b.parentElement.parentElement;
+  box.querySelectorAll(".bview button").forEach(x=>x.setAttribute("aria-selected",x===b));box.querySelectorAll(".bpane").forEach(p=>p.hidden=p.dataset.v!==b.dataset.v)});
 async function submitResult(el){
   el.innerHTML='<p class="muted">Saving your score…</p>';
   const topics={};Object.entries(topicStats()).forEach(([k,s])=>topics[k]={ok:s.ok,n:s.n});
