@@ -257,7 +257,7 @@ barBuilder(host,cfg){const F=frame(host,cfg);const data=cfg.data||[["Cricket",40
 idliVada(host,cfg){const F=frame(host,cfg);const a=cfg.a||3,b=cfg.b||5;let n=1,lives=3,score=0;
   const big=el("div",{class:"pitem num"}),st=el("p",{class:"ptask"});
   const right=x=>x%a===0&&x%b===0?"idli-vada":x%a===0?"idli":x%b===0?"vada":"number";
-  function draw(){big.textContent=lives>0?String(n):"Game over";st.textContent="Score "+score+" · Lives "+"❤".repeat(Math.max(0,lives))}
+  function draw(){big.textContent=lives>0?String(n):"Out of lives";st.textContent="Score "+score+" · Lives "+"❤".repeat(Math.max(0,lives))}
   const say=w=>()=>{if(lives<=0)return;const r=right(n);if(w===r){score++;F.say(r==="idli-vada"?n+" is a multiple of both "+a+" and "+b+" – a common multiple! 🎉":(r==="number"?"Correct – just say the number.":r==="idli"?n+" is a multiple of "+a+".":n+" is a multiple of "+b+"."),r==="idli-vada");n++}
     else{lives--;F.say("Oops! "+n+(r==="number"?" is not a multiple of "+a+" or "+b+".":" → say “"+r+"”."),false);n++}draw()};
   F.stage.append(el("p",{class:"phint"},"Idli = multiple of "+a+" · Vada = multiple of "+b+" · Idli-vada = both"),st,big,el("div",{class:"chips"},btn("Say the number",say("number"),"light"),btn("Idli",say("idli"),"light"),btn("Vada",say("vada"),"light"),btn("Idli-vada",say("idli-vada"),"light")),row(btn("Restart",()=>{n=1;lives=3;score=0;F.say("");draw()},"primary")));draw();

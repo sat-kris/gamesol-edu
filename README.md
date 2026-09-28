@@ -1,4 +1,4 @@
-# Gamesol Edu – exam practice games
+# GamesolEdu – exam practice by class and subject
 
 Students pick their **class → subject → chapter → topics**, choose **Easy** or **Hard**, and play a quiz with new questions every time. At the end they see their score per topic, explanations for every mistake, and their **rank** on the class leaderboard. Teachers see everything on a dashboard.
 
@@ -6,10 +6,10 @@ Students pick their **class → subject → chapter → topics**, choose **Easy*
 
 | File | What it is |
 |---|---|
-| `index.html` | The game (home page) |
+| `index.html` | The main site (home page) |
 | `edu-kids-config.json` | **The config file**: classes, subjects, chapters and which ones are *ongoing* |
 | `banks/class9-science-ch4.json` | Science Ch 4 question bank (from `science c4.pdf`) |
-| `french/index.html` | The Class IX French grammar game |
+| `french/index.html` | The Class IX French grammar practice page |
 | `dashboard.html` | Teacher dashboard (password protected) |
 | `apps-script/Code.gs` | Saves scores in a Google Sheet (goes in Google, not GitHub) |
 
@@ -28,7 +28,7 @@ Only items with `"status": "ongoing"` can be selected. Anything else (e.g. `"upc
 
 - To **open** a class, subject or chapter, change its status to `"ongoing"`.
 - To **close** one after the exam, change it to `"completed"`.
-- A subject with `"link"` opens its own game (like French). A subject with `"chapters"` uses question banks.
+- A subject with `"link"` opens its own practice page (like French). A subject with `"chapters"` uses question banks.
 
 Edit the file on GitHub with the ✏️ pencil icon and commit. The site updates in about a minute.
 
@@ -57,7 +57,7 @@ extras for Chapters 1, 2 and 4 built from the Loyola International School worksh
 Every quiz offers **Easy**, **Hard** and **Advanced**. Advanced questions stay inside the same syllabus but are multi-step,
 use unfamiliar contexts or combine ideas (e.g. average speed over two halves of a trip, reflex angles, Collatz step counts,
 "which statement is NOT correct" and assertion–reason in Social Science). Questions are marked with `"level": "advanced"` in
-the bank files; if a topic has none, Advanced falls back to Hard questions for that topic. The French game has its own
+the bank files; if a topic has none, Advanced falls back to Hard questions for that topic. The French page has its own
 **Avancé** level. The leaderboard and dashboard track Advanced separately – after updating, paste the new
 `apps-script/Code.gs` into your Apps Script project and choose **Deploy → Manage deployments → Edit → New version**.
 
@@ -171,12 +171,12 @@ A multiple-choice question in a bank looks like this:
    ```json
    "leaderboard": { "scriptUrl": "https://script.google.com/macros/s/AKfy…/exec" }
    ```
-5. Commit. Students now see the leaderboard and their rank. The French game uses the same link automatically.
-   There is no section field. Each student is given a fun game name (e.g. *FrostyDino30*) and a colour avatar, remembered on their device. They can keep it, tap **🎲 New name**, or type their own made-up name (3–24 letters or numbers, no spaces). `Code.gs` refuses anything else (redeploy after updating it).
+5. Commit. Students now see the leaderboard and their rank. The French page uses the same link automatically.
+   There is no section field. Each student is given a short fun nickname (e.g. *CalmFox3F* – two short words plus a 2-character code) and a colour avatar, remembered on their device. They can keep it, tap **🎲 New name**, or type their own made-up name (3–24 letters or numbers, no spaces). `Code.gs` refuses anything else (redeploy after updating it).
 
 - Dashboard: `https://<username>.github.io/<repo>/dashboard.html`. Enter your teacher password. You can filter by period, class, subject, section and level, and see weak topics, students and the latest attempts.
 - Raw data: the **Attempts** tab of your Google Sheet.
-- The leaderboard has three views: **🏆 Top scores** (best score per game name, for each class + subject + level; ties go to the faster time), **🕒 All attempts** (every finished quiz in that class + subject, newest first, last 30) and **🙋 My attempts** (the player's own history with a progress tip).
+- The leaderboard has three views: **🏆 Top scores** (best score per nickname, for each class + subject + level; ties go to the faster time), **🕒 All attempts** (every finished quiz in that class + subject, newest first, last 30) and **🙋 My attempts** (the player's own history with a progress tip).
 - If you change `Code.gs` later, go to **Deploy → Manage deployments → Edit → New version**.
 
 ## Notes

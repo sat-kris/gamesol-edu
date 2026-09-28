@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Exam practice quiz games by class and subject">
-<title>Gamesol Edu</title>
+<meta name="description" content="Exam practice by class and subject">
+<title>GamesolEdu</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <script src="generators.js"></script>
@@ -54,10 +54,14 @@ h2{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-
 .step{display:flex;flex-direction:column;gap:10px;padding-bottom:14px;border-bottom:1px solid var(--line)}
 .step:last-of-type{border-bottom:0;padding-bottom:0}
 .fields{display:grid;grid-template-columns:2fr 1fr;gap:10px}
-.nick{font:inherit;font-size:16px;padding:9px 11px;border-radius:8px;border:1px solid var(--line-strong);background:var(--paper);color:var(--ink);flex:1 1 10em;min-width:0;max-width:16em}
-.nickav{width:40px;height:40px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-weight:800;font-size:18px;color:#1D2340;flex:none}
-.nickcols{display:flex;gap:8px;margin-top:8px}
-.nickcols button{width:26px;height:26px;border-radius:50%;border:2px solid transparent;cursor:pointer;padding:0}
+.nickhead{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.nickhead h2{margin:0}
+.nickrow{display:flex;align-items:center;gap:8px}
+.nick{font:inherit;font-size:15px;padding:6px 9px;border-radius:8px;border:1px solid var(--line-strong);background:var(--paper);color:var(--ink);flex:1;min-width:0;max-width:16em}
+.nickav{width:32px;height:32px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;color:#1D2340;flex:none}
+.nickdice{font-size:18px;line-height:1;padding:6px 8px;border-radius:8px;border:1px solid var(--line-strong);background:var(--sheet);cursor:pointer}
+.nickcols{display:inline-flex;gap:5px}
+.nickcols button{width:20px;height:20px;border-radius:50%;border:2px solid transparent;cursor:pointer;padding:0}
 .nickcols button[aria-pressed="true"]{border-color:var(--ink);box-shadow:0 0 0 2px var(--sheet) inset}
 .field{display:flex;flex-direction:column;gap:5px;font-size:14px;font-weight:700}
 .field input{font:inherit;font-weight:400;font-size:16px;padding:9px 11px;border-radius:8px;border:1px solid var(--line-strong);background:var(--paper);color:var(--ink)}
@@ -428,8 +432,8 @@ h2{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-
 <div class="wrap">
   <header>
     <div>
-      <h1 id="appName">Gamesol Edu</h1>
-      <p class="sub" id="tagline">Exam practice games</p>
+      <h1 id="appName">GamesolEdu</h1>
+      <p class="sub" id="tagline">Exam practice</p>
     </div>
     <button class="btn" id="homeBtn" hidden>← Change topics</button>
   </header>
@@ -458,23 +462,23 @@ const store={get(k){try{return JSON.parse(localStorage.getItem(k)||"null")}catch
 const LVL={easy:"Easy",hard:"Hard",advanced:"Advanced"};
 
 let CONFIG=null, API="", ONLINE=false;
-/* Game names (Stillz style): a fun name is generated for you and shown in one box – keep it, tap 🎲 for another, or type your own made-up name. */
-const NICK_A=["NoCap","Lowkey","Highkey","BigBrain","MainCharacter","Goated","Slay","Bussin","Vibey","Glowup","Aura","Cracked","Iconic","Legendary","Chill","Hype","Epic","Cosmic","Turbo","Mega","Ultra","Sparkly","Zoomy","Sneaky","Speedy","Galaxy","Neon","Fire","Yeet","Snacky","Pixel","Frosty"];
-const NICK_B=["Panda","Mango","Ninja","Comet","Otter","Axolotl","Capybara","Boba","Samosa","Taco","Llama","Penguin","Wizard","Legend","Dragon","Falcon","Tiger","Koala","Rocket","Nova","Unicorn","Dino","Bot","Noodle","Waffle","Pickle","Froggo","Doggo","Bunny","Yeti","Shark","Cactus","Cookie","Meteor"];
+/* Nicknames (Stillz style): a fun name is generated for you and shown in one box – keep it, tap 🎲 for another, or type your own made-up name. */
+const NICK_A=["Calm","Chill","Epic","Hype","Neon","Zoomy","Slay","Aura","Mega","Turbo","Fire","Yeet","Pixel","Nova","Lucky","Swift","Fizzy","Sunny","Brave","Jolly","Cosmo","Frost","Vibe","Glow"];
+const NICK_B=["Fox","Owl","Yak","Cat","Dino","Boba","Taco","Panda","Otter","Koala","Llama","Tiger","Shark","Yeti","Bunny","Bot","Mango","Froggo","Doggo","Comet","Bee","Crab","Seal","Moth"];
 const AV_COLORS=["#8EDCC0","#FFB98A","#B9A8FF","#7FC8FF","#FF9DB5","#E8E07A"];
 const rndOf=a=>a[Math.floor(Math.random()*a.length)];
-const freshName=()=>rndOf(NICK_A)+rndOf(NICK_B)+(10+Math.floor(Math.random()*90));
+const freshName=()=>rndOf(NICK_A)+rndOf(NICK_B)+Math.floor(Math.random()*256).toString(16).toUpperCase().padStart(2,"0");
 const cleanName=s=>String(s||"").replace(/[^A-Za-z0-9]/g,"").slice(0,24);
 const okName=s=>typeof s==="string"&&/^[A-Za-z0-9]{3,24}$/.test(s);
 function initPlayer(p){p=p||{};
   let name=p.nick&&p.nick.a&&p.nick.b&&p.nick.n?p.nick.a+p.nick.b+p.nick.n:p.name;   // keep existing players' names exactly
   if(!okName(name))name=freshName();
   return {name,color:AV_COLORS.includes(p.color)?p.color:rndOf(AV_COLORS)}}
-const nickPicker=()=>'<div class="row nickrow"><span class="nickav" id="nickAv" style="background:'+player.color+'" aria-hidden="true">'+esc(player.name.charAt(0).toUpperCase())+'</span>'+
-  '<input id="nickIn" class="nick" type="text" maxlength="24" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Your game name" placeholder="e.g. CalmFox" value="'+esc(player.name)+'">'+
-  '<button type="button" class="btn small" id="nickBtn" title="Get a new random name">🎲 New name</button></div>'+
-  '<div class="nickcols" role="radiogroup" aria-label="Avatar colour">'+AV_COLORS.map((c,i)=>'<button type="button" data-col="'+c+'" aria-label="Colour '+(i+1)+'" aria-pressed="'+(c===player.color)+'" style="background:'+c+'"></button>').join("")+'</div>'+
-  '<p class="warn" id="nickWarn" hidden>Use 3–24 letters or numbers – a made-up name, not your real one.</p>';
+const nickPicker=lbl=>'<div class="nickhead"><h2>'+lbl+'</h2><span class="nickcols" role="radiogroup" aria-label="Avatar colour">'+AV_COLORS.map((c,k)=>'<button type="button" data-col="'+c+'" aria-label="Colour '+(k+1)+'" aria-pressed="'+(c===player.color)+'" style="background:'+c+'"></button>').join("")+'</span></div><div class="nickrow"><span class="nickav" id="nickAv" style="background:'+player.color+'" aria-hidden="true">'+esc(player.name.charAt(0).toUpperCase())+'</span>'+
+  '<input id="nickIn" class="nick" type="text" maxlength="24" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Your nickname (made-up, not your real name)" placeholder="e.g. CalmFox3F" value="'+esc(player.name)+'">'+
+  '<button type="button" class="nickdice" id="nickBtn" title="New random name" aria-label="New random name">🎲</button>'+
+  '</div>'+
+  '<p class="warn" id="nickWarn" hidden>3–24 letters or numbers – a made-up name, not your real one.</p>';
 function bindNick(save){const I=document.getElementById("nickIn");if(!I)return;const show=document.getElementById("nickShow"),av=document.getElementById("nickAv"),warn=document.getElementById("nickWarn");
   const paint=()=>{av.textContent=player.name.charAt(0).toUpperCase();av.style.background=player.color;if(show)show.textContent=player.name};
   I.addEventListener("input",()=>{const v=cleanName(I.value);if(v!==I.value)I.value=v;if(okName(v)){player.name=v;warn.hidden=true;paint();save()}else warn.hidden=false});
@@ -520,19 +524,18 @@ function renderHome(){
 
   let h="";
   if(ONLINE){
-    h+='<div class="step"><h2>Your game name</h2>'+nickPicker()+
-      '<p class="note">You’ll play as <b id="nickShow">'+esc(pname())+'</b>. Keep it, tap 🎲, or type your own – use a made-up name, not your real one. Keep the same name so your scores add up.</p></div>';
+    h+='<div class="step">'+nickPicker("Your nickname")+'</div>';
   }
   h+='<div class="step"><h2>Class</h2><div class="pills">'+
     (classes.length?classes.map(c=>'<label class="pill"><input type="radio" name="cls" value="'+esc(c.id)+'"'+(c.id===sel.cls?" checked":"")+'><span>'+esc(c.name)+'</span></label>').join(""):'<p class="muted">No class is marked as ongoing in the config file.</p>')+
     '</div>'+soonLine(notOngoing(CONFIG.classes))+'</div>';
   if(cls){
     h+='<div class="step"><h2>Subject</h2><div class="grid">'+
-      (subjects.length?subjects.map(s=>'<label class="choice"><input type="radio" name="subject" value="'+esc(s.id)+'"'+(s.id===sel.subject?" checked":"")+'><span><strong>'+esc(s.name)+'</strong><small>'+esc(s.link?(s.note||"Opens its own game"):(ongoing(s.chapters).length+" chapter"+(ongoing(s.chapters).length===1?"":"s")+" open"))+'</small></span></label>').join(""):'<p class="muted">No subject is ongoing for this class yet.</p>')+
+      (subjects.length?subjects.map(s=>'<label class="choice"><input type="radio" name="subject" value="'+esc(s.id)+'"'+(s.id===sel.subject?" checked":"")+'><span><strong>'+esc(s.name)+'</strong><small>'+esc(s.link?(s.note||"Opens its own practice page"):(ongoing(s.chapters).length+" chapter"+(ongoing(s.chapters).length===1?"":"s")+" open"))+'</small></span></label>').join(""):'<p class="muted">No subject is ongoing for this class yet.</p>')+
       '</div>'+soonLine(notOngoing(cls.subjects))+'</div>';
   }
   if(subj&&subj.link){
-    h+='<div class="step"><h2>'+esc(subj.name)+'</h2><p class="muted">'+esc(subj.note||"")+'</p><div class="row"><a class="btn primary" href="'+esc(subj.link)+'">Open '+esc(subj.name)+' game →</a></div></div>';
+    h+='<div class="step"><h2>'+esc(subj.name)+'</h2><p class="muted">'+esc(subj.note||"")+'</p><div class="row"><a class="btn primary" href="'+esc(subj.link)+'">Open '+esc(subj.name)+' →</a></div></div>';
   }else if(subj){
     h+='<div class="step"><h2>Chapter</h2><div class="grid two">'+
       chapters.map(c=>'<label class="choice chap"><input type="radio" name="chapter" value="'+esc(c.id)+'"'+(c.id===sel.chapter?" checked":"")+'><span><strong>'+esc(c.name)+'</strong>'+
@@ -592,13 +595,12 @@ function renderTopics(bank,cls,subj,chap){
     ['easy','hard','advanced'].map(l=>'<label class="choice"><input type="radio" name="level" value="'+l+'"'+(sel.level===l?" checked":"")+'><span><span class="big">'+LVL[l]+'</span><small>'+esc((bank.levelNotes||{})[l]||LEVEL_NOTE[l])+'</small></span></label>').join("")+
     '</div></div><div class="step"><h2>Number of questions</h2><div class="pills">'+
     [10,15,20,30].map(n=>'<label class="pill"><input type="radio" name="count" value="'+n+'"'+(sel.count===n?" checked":"")+'><span>'+n+'</span></label>').join("")+
-    '</div><p class="warn" id="warn" hidden></p><div class="row"><button class="btn primary" id="startBtn">Start quiz</button>'+(ONLINE?'<button class="btn" id="boardBtn">Leaderboard</button>':'')+'</div><div id="startBoard" hidden></div>';
+    '</div><p class="warn" id="warn" hidden></p><div class="row"><button class="btn primary" id="startBtn">Start quiz</button>'+'</div><div id="startBoard" hidden></div>';
   const step=$("topicStep");step.innerHTML=h;
   const boxes=()=>[...step.querySelectorAll('.topics input')];
   $("allT").addEventListener("click",()=>boxes().forEach(b=>b.checked=true));
   $("noneT").addEventListener("click",()=>boxes().forEach(b=>b.checked=false));
   $("startBtn").addEventListener("click",()=>start(cls,subj,chap,boxes()));
-  if(ONLINE)$("boardBtn").addEventListener("click",()=>{const sb=$("startBoard");if(!sb.hidden){sb.hidden=true;return}keepNames();const l=document.querySelector('input[name="level"]:checked');showBoard(sb,cls,subj,l?l.value:"easy")});
 }
 function start(cls,subj,chap,boxes){
   const warn=$("warn");const say=m=>{warn.textContent=m;warn.hidden=false};
@@ -772,7 +774,7 @@ function boardHTML(d,cls,subj){
   let t='';
   if(!d.top.length)t='<p class="muted">No scores yet at this level. Be the first!</p>';
   else{let shown=false;
-    t='<div style="overflow-x:auto"><table class="lb"><thead><tr><th>#</th><th>Game name</th><th class="num">Score</th><th class="num">Time</th></tr></thead><tbody>';
+    t='<div style="overflow-x:auto"><table class="lb"><thead><tr><th>#</th><th>Nickname</th><th class="num">Score</th><th class="num">Time</th></tr></thead><tbody>';
     d.top.forEach(r=>{const m=keyOf(r.name,"")===me;if(m)shown=true;
       t+='<tr'+(m?' class="me"':'')+'><td>'+medal(r.rank)+'</td><td>'+esc(r.name)+(m?" (you)":"")+'</td><td class="num">'+r.percent+'% <span class="muted">('+r.score+'/'+r.total+')</span></td><td class="num">'+fmtTime(r.seconds)+'</td></tr>'});
     if(d.me&&!shown)t+='<tr><td colspan="4" class="muted">…</td></tr><tr class="me"><td>'+d.me.rank+'</td><td>'+esc(pname())+' (you)</td><td class="num">'+d.me.percent+'%</td><td></td></tr>';

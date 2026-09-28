@@ -1,6 +1,6 @@
 {
-  "appName": "Gamesol Edu",
-  "tagline": "Exam practice games",
+  "appName": "GamesolEdu",
+  "tagline": "Exam practice",
   "exclude": [],
   "_exclude_help": "Folder names to switch off. Put \"adds\" in the list to drop every extra question and activity stored in any adds/ folder.",
   "leaderboard": {
