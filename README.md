@@ -76,6 +76,19 @@ the bank files; if a topic has none, Advanced falls back to Hard questions for t
 
 There are 83 question templates: concept MCQs taken from the chapter, drawn graphs, and numerical problems (km h⁻¹ conversion, v = u + at, s = ut + ½at², v² = u² + 2as, braking and reaction distance, areas under v–t graphs, circular motion). The numerical questions get new numbers every time.
 
+## Class V Science – Our Wondrous World (NCERT, Chapters 1–4)
+
+Files live in `5/science/` next to the chapter PDFs (`c1.pdf` … `c4.pdf`):
+
+| Chapter | Question bank | Tutor | Topics |
+|---|---|---|---|
+| 1 · Water — The Essence of Life | `bank-ch1-water.json` | `tutor-ch1-water.json` | Fresh and salt water · Forms and water cycle · Groundwater and rivers · Life in water |
+| 2 · Journey of a River | `bank-ch2-river.json` | `tutor-ch2-river.json` | The Godavari · Rivers and dams · Pollution · Floods and saving water |
+| 3 · The Mystery of Food | `bank-ch3-food.json` | `tutor-ch3-food.json` | Microbes and spoilage · Preservation · Good microbes · Teeth and chewing |
+| 4 · Our School — A Happy Place | `bank-ch4-school.json` | `tutor-ch4-school.json` | Green school · Waste · Keeping cool and saving water · Safety and kindness |
+
+Same design as the other classes: Play & learn activities, a chapter tutor and Easy / Hard / Advanced quizzes, all taken from the textbook.
+
 ## Class VI Mathematics (NCERT Ganita Prakash, midterm Chapters 1–5)
 
 | Chapter | Topics | Files in `6/maths/` |
@@ -159,7 +172,7 @@ A multiple-choice question in a bank looks like this:
    "leaderboard": { "scriptUrl": "https://script.google.com/macros/s/AKfy…/exec" }
    ```
 5. Commit. Students now see the leaderboard and their rank. The French game uses the same link automatically.
-   There is no name box and no section field. Each student gets a fun game name built from two word lists plus a number (e.g. *AuraCapybara18*), remembered on their device. They can pick the words or tap **🎲 Shuffle**, but cannot type, so real names never reach the leaderboard. `Code.gs` also rejects any name not built from the same word lists (redeploy after updating it).
+   There is no section field. Each student is given a fun game name (e.g. *FrostyDino30*) and a colour avatar, remembered on their device. They can keep it, tap **🎲 New name**, or type their own made-up name (3–24 letters or numbers, no spaces). `Code.gs` refuses anything else (redeploy after updating it).
 
 - Dashboard: `https://<username>.github.io/<repo>/dashboard.html`. Enter your teacher password. You can filter by period, class, subject, section and level, and see weak topics, students and the latest attempts.
 - Raw data: the **Attempts** tab of your Google Sheet.

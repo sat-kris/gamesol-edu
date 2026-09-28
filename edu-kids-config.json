@@ -8,6 +8,49 @@
   },
   "classes": [
     {
+      "id": "5",
+      "name": "Class V",
+      "status": "ongoing",
+      "subjects": [
+        {
+          "id": "science",
+          "name": "Science – Our Wondrous World",
+          "status": "ongoing",
+          "note": "NCERT Our Wondrous World · Chapters 1–4",
+          "chapters": [
+            {
+              "id": "ch1",
+              "name": "Chapter 1 · Water — The Essence of Life",
+              "status": "ongoing",
+              "bank": "5/science/bank-ch1-water.json",
+              "tutor": "5/science/tutor-ch1-water.json"
+            },
+            {
+              "id": "ch2",
+              "name": "Chapter 2 · Journey of a River",
+              "status": "ongoing",
+              "bank": "5/science/bank-ch2-river.json",
+              "tutor": "5/science/tutor-ch2-river.json"
+            },
+            {
+              "id": "ch3",
+              "name": "Chapter 3 · The Mystery of Food",
+              "status": "ongoing",
+              "bank": "5/science/bank-ch3-food.json",
+              "tutor": "5/science/tutor-ch3-food.json"
+            },
+            {
+              "id": "ch4",
+              "name": "Chapter 4 · Our School — A Happy Place",
+              "status": "ongoing",
+              "bank": "5/science/bank-ch4-school.json",
+              "tutor": "5/science/tutor-ch4-school.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "6",
       "name": "Class VI",
       "status": "ongoing",
