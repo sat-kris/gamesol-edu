@@ -8,6 +8,8 @@
  */
 const TEACHER_KEY = 'change-this-password';
 const SHEET_NAME = 'Attempts';
+const ACT_NAME = 'Activity';   // usage log: which features students use
+const ACT_HEAD = ['timestamp', 'clientTime', 'name', 'session', 'page', 'class', 'subject', 'chapter', 'event', 'detail'];
 const HEAD = ['timestamp', 'name', 'section', 'class', 'subject', 'chapter', 'level',
   'score', 'total', 'percent', 'seconds', 'topics', 'attemptId'];
 
@@ -20,6 +22,45 @@ function sheet_() {
     sh.setFrozenRows(1);
   }
   return sh;
+}
+
+function actSheet_() {
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  let sh = ss.getSheetByName(ACT_NAME);
+  if (!sh) { sh = ss.insertSheet(ACT_NAME); sh.appendRow(ACT_HEAD); sh.setFrozenRows(1); }
+  return sh;
+}
+
+// Appends a batch of usage events sent by the site (max 60 per call).
+function logEvents_(d) {
+  const name = nick_(clean_(d.name, 40)) || 'guest';
+  const session = clean_(d.session, 24);
+  const page = clean_(d.page, 20);
+  const rows = (Array.isArray(d.events) ? d.events : []).slice(0, 60).map(ev => {
+    const t = Number(ev.t);
+    return [new Date(), isFinite(t) && t > 0 ? new Date(t) : '', name, session, page, clean_(ev.cls, 12), clean_(ev.sub, 30),
+      clean_(ev.ch, 30), clean_(ev.ev, 30), clean_(ev.d, 120)];
+  }).filter(r => r[8]);
+  if (!rows.length) return json_({ ok: true, logged: 0 });
+  const lock = LockService.getScriptLock();
+  lock.waitLock(10000);
+  try {
+    const sh = actSheet_();
+    sh.getRange(sh.getLastRow() + 1, 1, rows.length, ACT_HEAD.length).setValues(rows);
+  } finally { lock.releaseLock(); }
+  return json_({ ok: true, logged: rows.length });
+}
+
+// Usage events for the teacher dashboard, newest last; limited to the last `days` days (0 = all, capped).
+function activity_(days) {
+  const sh = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(ACT_NAME);
+  if (!sh || sh.getLastRow() < 2) return [];
+  const n = sh.getLastRow() - 1, take = Math.min(n, 30000);
+  const values = sh.getRange(sh.getLastRow() - take + 1, 1, take, ACT_HEAD.length).getValues();
+  const from = days > 0 ? Date.now() - days * 864e5 : 0;
+  return values.filter(r => r[0] instanceof Date && r[0].getTime() >= from).map(r => ({
+    t: r[0].toISOString(), name: r[2], session: r[3], page: r[4], 'class': String(r[5]), subject: String(r[6]), chapter: String(r[7]), event: r[8], detail: String(r[9])
+  }));
 }
 
 function json_(obj) {
@@ -90,6 +131,7 @@ function level_(x) { return ['easy', 'hard', 'advanced'].indexOf(x) !== -1 ? x :
 function doPost(e) {
   let d;
   try { d = JSON.parse(e.postData.contents); } catch (err) { return json_({ ok: false, error: 'bad_json' }); }
+  if (d.type === 'events') return logEvents_(d);
   const level = level_(d.level);
   const name = nick_(clean_(d.name, 40));
   const section = clean_(d.section, 12).toUpperCase();
@@ -130,7 +172,8 @@ function doGet(e) {
   }
   if (p.action === 'stats') {
     if (p.key !== TEACHER_KEY) return json_({ ok: false, error: 'wrong_key' });
-    return json_({ ok: true, rows: rows_() });
+    const days = p.days === undefined ? 90 : Math.max(0, Math.min(3650, Number(p.days) || 0));
+    return json_({ ok: true, rows: rows_(), activity: activity_(days) });
   }
   return json_({ ok: true, message: 'GamesolEdu backend is running.' });
 }
