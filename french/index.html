@@ -154,6 +154,17 @@ h2 .en{text-transform:none;letter-spacing:0;font-size:13px;margin-left:6px}
 .lb{width:100%;border-collapse:collapse;font-size:14.5px;font-variant-numeric:tabular-nums}
 .lb th{text-align:left;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);font-weight:700;padding:6px 8px;border-bottom:1px solid var(--line-strong)}
 .lb td{padding:8px;border-bottom:1px solid var(--line)}
+.bview{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0}
+.bview button{font:inherit;font-size:13px;font-weight:700;padding:6px 11px;border-radius:999px;border:1px solid var(--line-strong);background:var(--sheet);color:var(--ink);cursor:pointer}
+.bview button[aria-selected="true"]{background:var(--accent);border-color:var(--accent);color:var(--sheet)}
+.feed{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;border:1px solid var(--line-strong);border-radius:10px;overflow:hidden}
+.feed li{display:grid;grid-template-columns:3.6em 1fr auto;gap:10px;align-items:center;padding:8px 12px;border-bottom:1px solid var(--line);background:var(--sheet)}
+.feed li:last-child{border-bottom:0}
+.feed li.me{background:var(--accent-soft)}
+.feed .fs{font-weight:700;text-align:center;border-radius:8px;padding:4px 0;font-variant-numeric:tabular-nums}
+.feed .fs.hi{background:var(--good-soft);color:var(--good)} .feed .fs.mid{background:var(--note,#FFF6DB);color:var(--note-ink,#6B4E00)} .feed .fs.lo{background:var(--bad-soft);color:var(--bad)}
+.feed .fm{display:flex;flex-direction:column;min-width:0} .feed .fm b{overflow:hidden;text-overflow:ellipsis;white-space:nowrap} .feed .fm small{color:var(--ink-soft);font-size:12.5px}
+.feed .ft{font-size:12px;color:var(--ink-soft);white-space:nowrap}
 .lb td.num,.lb th.num{text-align:right}
 .lb tr.me td{background:var(--accent-soft);font-weight:700}
 .lb .pos{font-family:"Young Serif",Georgia,serif;color:var(--ink-soft);width:2.5em}
@@ -520,17 +531,32 @@ let startedAt=0,attemptId="",submitted=false;
 const keyOf=(n,s)=>String(n||"").trim().toLowerCase()+"|"+String(s||"").trim().toLowerCase();
 function boardHTML(d){
   if(!d||!d.ok) return '<p class="muted">Classement indisponible · Leaderboard unavailable.</p>';
-  let h="";
-  if(d.me) h+='<div class="rank"><b>#'+d.me.rank+'</b><span>Votre classement sur <strong>'+d.players+'</strong> élève'+(d.players>1?"s":"")+' · niveau '+LVL[d.level]+'<br><span class="en">Your rank out of '+d.players+' student'+(d.players>1?"s":"")+' · best score '+d.me.percent+'%</span></span></div>';
-  if(!d.top.length) return h+'<p class="muted">Personne n\'a encore joué à ce niveau. · No scores yet at this level.</p>';
   const me=keyOf(pname(),"");
-  h+='<div style="overflow-x:auto"><table class="lb"><thead><tr><th>#</th><th>Nom</th><th class="num">Score</th><th class="num">Temps</th></tr></thead><tbody>';
-  let meShown=false;
-  d.top.forEach(r=>{const isMe=keyOf(r.name,"")===me;if(isMe)meShown=true;
-    h+='<tr'+(isMe?' class="me"':'')+'><td class="pos">'+r.rank+'</td><td>'+esc(r.name)+(isMe?' (vous)':'')+'</td><td class="num">'+r.percent+'% <span class="muted">('+r.score+'/'+r.total+')</span></td><td class="num">'+fmtTime(r.seconds)+'</td></tr>'});
-  if(d.me&&!meShown) h+='<tr><td colspan="4" class="muted">…</td></tr><tr class="me"><td class="pos">'+d.me.rank+'</td><td>'+esc(pname())+' (vous)</td><td class="num">'+d.me.percent+'%</td><td class="num"></td></tr>';
-  return h+'</tbody></table></div><p class="muted">Meilleur score par élève. À égalité, le plus rapide passe devant. · Best score per student; ties go to the faster time.</p>';
+  let h="";
+  if(d.me) h+='<div class="rank"><b>#'+d.me.rank+'</b><span>Votre classement sur <strong>'+d.players+'</strong> joueur'+(d.players>1?"s":"")+' · niveau '+LVL[d.level]+'<br><span class="en">Your rank out of '+d.players+' player'+(d.players>1?"s":"")+' · best score '+d.me.percent+'%</span></span></div>';
+  const recent=d.recent||[],mine=d.mine||[];
+  h+='<div class="bview" role="tablist"><button type="button" data-v="top" aria-selected="true">🏆 Meilleurs · Top</button><button type="button" data-v="all" aria-selected="false">🕒 Tous · All attempts'+(recent.length?' ('+recent.length+')':'')+'</button><button type="button" data-v="mine" aria-selected="false">🙋 Les miens · Mine'+(mine.length?' ('+mine.length+')':'')+'</button></div>';
+  let t='';
+  if(!d.top.length) t='<p class="muted">Personne n\'a encore joué à ce niveau. · No scores yet at this level.</p>';
+  else{let meShown=false;
+    t='<div style="overflow-x:auto"><table class="lb"><thead><tr><th>#</th><th>Pseudo</th><th class="num">Score</th><th class="num">Temps</th></tr></thead><tbody>';
+    d.top.forEach(r=>{const isMe=keyOf(r.name,"")===me;if(isMe)meShown=true;
+      t+='<tr'+(isMe?' class="me"':'')+'><td class="pos">'+medal(r.rank)+'</td><td>'+esc(r.name)+(isMe?' (vous)':'')+'</td><td class="num">'+r.percent+'% <span class="muted">('+r.score+'/'+r.total+')</span></td><td class="num">'+fmtTime(r.seconds)+'</td></tr>'});
+    if(d.me&&!meShown) t+='<tr><td colspan="4" class="muted">…</td></tr><tr class="me"><td class="pos">'+d.me.rank+'</td><td>'+esc(pname())+' (vous)</td><td class="num">'+d.me.percent+'%</td><td class="num"></td></tr>';
+    t+='</tbody></table></div><p class="muted">Meilleur score par joueur. À égalité, le plus rapide passe devant. · Best score per player; ties go to the faster time.</p>'}
+  h+='<div class="bpane" data-v="top">'+t+'</div>';
+  const feed=(list,empty,showName)=>list.length?'<ul class="feed">'+list.map(r=>{const m=keyOf(r.name,"")===me;
+      return '<li'+(m?' class="me"':'')+'><span class="fs '+(r.percent>=80?"hi":r.percent>=50?"mid":"lo")+'">'+r.percent+'%</span><span class="fm">'+(showName?'<b>'+esc(r.name)+(m?' (vous)':'')+'</b>':'<b>'+r.score+' / '+r.total+'</b>')+
+        '<small>'+(LVL[r.level]||r.level)+(showName?' · '+r.score+'/'+r.total:'')+' · '+fmtTime(r.seconds)+'</small></span><span class="ft">'+ago(r.t)+'</span></li>'}).join("")+'</ul>':'<p class="muted">'+empty+'</p>';
+  h+='<div class="bpane" data-v="all" hidden>'+feed(recent,"Aucun quiz terminé pour l’instant. · No quizzes finished yet.",true)+'<p class="muted">Tous les quiz terminés, du plus récent au plus ancien (30 derniers). · Every finished quiz, newest first.</p></div>';
+  h+='<div class="bpane" data-v="mine" hidden>'+feed(mine,"Pas encore de quiz terminé en tant que "+esc(pname())+". · You haven’t finished a quiz yet.",false)+'</div>';
+  return h;
 }
+const medal=n=>n===1?"🥇":n===2?"🥈":n===3?"🥉":n;
+function ago(t){const d=new Date(t);if(isNaN(d))return "";const s=(Date.now()-d.getTime())/1000;
+  return s<60?"à l’instant":s<3600?Math.floor(s/60)+" min":s<86400?Math.floor(s/3600)+" h":s<7*86400?Math.floor(s/86400)+" j":d.toLocaleDateString([], {day:"numeric",month:"short"})}
+document.addEventListener("click",e=>{const b=e.target.closest(".bview button");if(!b)return;const box=b.parentElement.parentElement;
+  box.querySelectorAll(".bview button").forEach(x=>x.setAttribute("aria-selected",x===b));box.querySelectorAll(".bpane").forEach(p=>p.hidden=p.dataset.v!==b.dataset.v)});
 const fmtTime=s=>{s=Math.round(+s||0);return Math.floor(s/60)+" min "+String(s%60).padStart(2,"0")};
 async function getBoard(level){
   const u=API+(API.includes("?")?"&":"?")+"action=leaderboard&cls="+CLASS_ID+"&subject="+SUBJECT_ID+"&level="+level+"&name="+encodeURIComponent(pname())+"&section=";
