@@ -1,0 +1,456 @@
+{
+ "id": "class6-french-ch3-tutor",
+ "chapter": "Chapter 3 · Vocabulaire : nombres ordinaux, calendrier, saisons, mots",
+ "source": "BHPS Class VI French midterm model paper 2026-27 + teaching notes, Chapter 3",
+ "overview": {
+  "bigIdea": "Words you use every day: **first, second, third… · days and months · four seasons and their activities · family, opposites and clothes.**",
+  "ladderTitle": "Three word boxes",
+  "ladder": [
+   {
+    "step": "Ordinaux",
+    "q": "1st, 2nd…",
+    "a": "premier, deuxième…"
+   },
+   {
+    "step": "Calendrier",
+    "q": "days, months, seasons",
+    "a": "lundi… · janvier… · hiver…"
+   },
+   {
+    "step": "Mots",
+    "q": "family, opposites, clothes",
+    "a": "père, aimer ≠ détester, chemise"
+   }
+  ],
+  "languagesTitle": "Three things to be able to do",
+  "languages": [
+   {
+    "name": "Count",
+    "text": "Say ordinals 1st–12th."
+   },
+   {
+    "name": "Match",
+    "text": "Match seasons and activities."
+   },
+   {
+    "name": "Use",
+    "text": "Give opposites and clothes."
+   }
+  ],
+  "plan": [
+   {
+    "pass": "Play first",
+    "time": "10 min",
+    "text": "Order the days and months; match seasons."
+   },
+   {
+    "pass": "Learn",
+    "time": "15 min",
+    "text": "Three lessons."
+   },
+   {
+    "pass": "Quiz",
+    "time": "10 min",
+    "text": "Easy then Hard."
+   },
+   {
+    "pass": "Revise",
+    "time": "5 min",
+    "text": "After 1, 3 and 7 days."
+   }
+  ]
+ },
+ "lessons": [
+  {
+   "topic": "ordinal",
+   "ref": "W1",
+   "title": "Les nombres ordinaux",
+   "time": "7 min",
+   "hook": "Août, c’est le **huitième** mois de l’année. Vendredi est le **cinquième** jour de la semaine.",
+   "core": [
+    {
+     "term": "Rule",
+     "def": "number + -ième: deux → deuxième, six → sixième."
+    },
+    {
+     "term": "premier / première",
+     "def": "first (masc./fem.)"
+    },
+    {
+     "term": "Spelling",
+     "def": "cinq → cinquième (add u) · neuf → neuvième (f → v) · drop final e: quatre → quatrième, onze → onzième, douze → douzième."
+    },
+    {
+     "term": "Week",
+     "def": "In France the week starts on lundi: lundi = premier, mardi = deuxième…"
+    }
+   ],
+   "explain": [
+    "Model paper Q8: Août → huitième · Noël (décembre) → douzième · Vendredi → cinquième · Lundi → premier · Mardi → deuxième."
+   ],
+   "example": {
+    "q": "Complete: Vendredi est le ___ jour de la semaine.",
+    "steps": [
+     "Count from lundi: lundi 1, mardi 2, mercredi 3, jeudi 4, vendredi 5.",
+     "5 → cinquième."
+    ],
+    "answer": "cinquième"
+   },
+   "mistakes": [
+    "‘cinqième’ ✗ → cinquième.",
+    "‘neufième’ ✗ → neuvième.",
+    "Starting the week on dimanche."
+   ],
+   "tip": "Count the months on your fingers from janvier.",
+   "memory": "Cinq needs a Q-U, neuf turns to V!",
+   "examAsk": [
+    "Complétez avec les nombres ordinaux (5)."
+   ],
+   "cards": [
+    {
+     "q": "9th",
+     "a": "neuvième"
+    },
+    {
+     "q": "12th",
+     "a": "douzième"
+    },
+    {
+     "q": "1st (feminine)",
+     "a": "première"
+    }
+   ],
+   "play": [
+    {
+     "type": "match",
+     "title": "Ordinal match",
+     "say": "Match each number with its ordinal.",
+     "pairs": [
+      [
+       "1",
+       "premier"
+      ],
+      [
+       "3",
+       "troisième"
+      ],
+      [
+       "5",
+       "cinquième"
+      ],
+      [
+       "8",
+       "huitième"
+      ],
+      [
+       "9",
+       "neuvième"
+      ],
+      [
+       "12",
+       "douzième"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "topic": "calendar",
+   "ref": "W2",
+   "title": "Jours, mois et saisons",
+   "time": "8 min",
+   "hook": "Chaque saison a ses activités. En hiver, il fait froid – les enfants aiment **faire du ski** et **faire un bonhomme de neige**.",
+   "core": [
+    {
+     "term": "Days",
+     "def": "lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche"
+    },
+    {
+     "term": "Months",
+     "def": "janvier … décembre (no capital letters in French)"
+    },
+    {
+     "term": "Seasons",
+     "def": "le printemps, l’été, l’automne, l’hiver · au printemps, en été, en automne, en hiver"
+    },
+    {
+     "term": "Activities",
+     "def": "hiver: faire du ski, un bonhomme de neige · printemps: faire du jardinage, une promenade · été: faire de la natation, du vélo · automne: les feuilles tombent"
+    }
+   ],
+   "explain": [
+    "Weather: il fait froid / chaud / beau.",
+    "Model paper Q3 fills a text about the four seasons and their activities."
+   ],
+   "example": {
+    "q": "Complete: Au printemps, les gens aiment ___ dans le jardin.",
+    "steps": [
+     "Spring → flowers → gardening.",
+     "faire du jardinage."
+    ],
+    "answer": "faire du jardinage"
+   },
+   "mistakes": [
+    "‘En printemps’ ✗ → au printemps.",
+    "Capital letters for days/months ✗."
+   ],
+   "tip": "Picture one activity for each season.",
+   "memory": "Ski in winter, garden in spring, swim in summer, leaves fall in autumn!",
+   "examAsk": [
+    "Remplissez les blancs (seasons text).",
+    "Décrivez votre saison préférée."
+   ],
+   "cards": [
+    {
+     "q": "Month after juin",
+     "a": "juillet"
+    },
+    {
+     "q": "Season of janvier (France)",
+     "a": "l’hiver"
+    },
+    {
+     "q": "il fait froid en…",
+     "a": "hiver"
+    }
+   ],
+   "play": [
+    {
+     "type": "order",
+     "title": "Days of the week",
+     "say": "Tap the days in order, starting with the first.",
+     "first": "1st",
+     "last": "7th",
+     "items": [
+      "lundi",
+      "mardi",
+      "mercredi",
+      "jeudi",
+      "vendredi",
+      "samedi",
+      "dimanche"
+     ],
+     "done": "lundi → dimanche"
+    },
+    {
+     "type": "match",
+     "title": "Seasons and activities",
+     "say": "Match each season with an activity.",
+     "pairs": [
+      [
+       "l’hiver",
+       "faire du ski"
+      ],
+      [
+       "le printemps",
+       "faire du jardinage"
+      ],
+      [
+       "l’été",
+       "faire de la natation"
+      ],
+      [
+       "l’automne",
+       "les feuilles tombent"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "topic": "words",
+   "ref": "W3",
+   "title": "Famille, contraires, vêtements",
+   "time": "6 min",
+   "hook": "Liyanne’s family: **père, mère, sœur**. Opposites: aime ≠ **déteste**, intelligent ≠ **bête**.",
+   "core": [
+    {
+     "term": "Family",
+     "def": "le père, la mère, le frère, la sœur, le grand-père, la grand-mère"
+    },
+    {
+     "term": "Opposites",
+     "def": "aimer ≠ détester · grand ≠ petit · chaud ≠ froid · jeune ≠ vieux · content ≠ triste · intelligent ≠ bête"
+    },
+    {
+     "term": "Clothes (homme)",
+     "def": "une chemise, un pantalon, une cravate, une veste"
+    },
+    {
+     "term": "Clothes (femme)",
+     "def": "une jupe, une robe"
+    }
+   ],
+   "explain": [
+    "Model paper Q1(c): déteste ≠ aime, bête ≠ intelligent. Q12(a): Nommez deux vêtements d’homme."
+   ],
+   "example": {
+    "q": "Give two men’s clothes.",
+    "steps": [
+     "Think of a school uniform.",
+     "une chemise, un pantalon."
+    ],
+    "answer": "une chemise et un pantalon"
+   },
+   "mistakes": [
+    "Mixing up masculine and feminine articles (un pantalon, une chemise)."
+   ],
+   "tip": "Learn words with their article: le/un or la/une.",
+   "memory": "Opposites come in pairs – learn them two by two.",
+   "examAsk": [
+    "Trouvez le contraire.",
+    "Nommez deux vêtements."
+   ],
+   "cards": [
+    {
+     "q": "contraire de grand",
+     "a": "petit"
+    },
+    {
+     "q": "la sœur =",
+     "a": "sister"
+    }
+   ],
+   "play": [
+    {
+     "type": "match",
+     "title": "Opposites",
+     "say": "Match each word with its opposite.",
+     "pairs": [
+      [
+       "aimer",
+       "détester"
+      ],
+      [
+       "grand",
+       "petit"
+      ],
+      [
+       "chaud",
+       "froid"
+      ],
+      [
+       "jeune",
+       "vieux"
+      ],
+      [
+       "intelligent",
+       "bête"
+      ],
+      [
+       "content",
+       "triste"
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "formulas": [
+  {
+   "name": "Ordinals",
+   "f": "number + -ième",
+   "unit": "huitième, douzième",
+   "when": "cinquième, neuvième, premier/première"
+  },
+  {
+   "name": "Week",
+   "f": "lundi → dimanche",
+   "unit": "vendredi = cinquième",
+   "when": "starts on Monday"
+  },
+  {
+   "name": "Seasons",
+   "f": "au printemps · en été · en automne · en hiver",
+   "unit": "il fait froid en hiver",
+   "when": "au printemps"
+  },
+  {
+   "name": "Opposites",
+   "f": "aimer ≠ détester · grand ≠ petit",
+   "unit": "intelligent ≠ bête",
+   "when": "learn in pairs"
+  }
+ ],
+ "revision": [
+  "Ordinals: **number + -ième**; premier/première; **cinquième, neuvième**.",
+  "Week starts **lundi**; months have no capital letter.",
+  "**au printemps**, en été, en automne, en hiver.",
+  "Seasons and activities: ski, jardinage, natation, feuilles.",
+  "Opposites and clothes: learn with **un/une**."
+ ],
+ "exam": {
+  "paper": [
+   {
+    "q": "Q8",
+    "marks": "5",
+    "what": "Ordinal numbers (months, days)"
+   },
+   {
+    "q": "Q3",
+    "marks": "5",
+    "what": "Fill in a seasons text with given words"
+   },
+   {
+    "q": "Q1(c)",
+    "marks": "2",
+    "what": "Find the opposite"
+   }
+  ],
+  "sections": [
+   {
+    "title": "Fill-in-the-blank method",
+    "kind": "steps",
+    "items": [
+     "Read the whole text first.",
+     "Look at the clue words (il fait froid → hiver).",
+     "Use each given word only once.",
+     "Read again to check it makes sense."
+    ]
+   },
+   {
+    "title": "Writing answers that score",
+    "kind": "mem",
+    "items": [
+     "Copy the spelling carefully – accents count (é, è, ê, ç).",
+     "Always start a sentence with a capital letter and end with a full stop or question mark.",
+     "Before writing a verb, find the subject first (je, tu, il, nous…) and use the matching ending.",
+     "For negation, check two things: ne…pas around the verb, and un/une/des → de after pas.",
+     "In descriptions write 5 simple sentences: name → where → what you see or do → why you like it → a feeling.",
+     "Answer culture questions in a full sentence: ‘La capitale de la France est Paris.’"
+    ]
+   },
+   {
+    "title": "The day before the test",
+    "kind": "note",
+    "items": [
+     "Say each verb table aloud once (je, tu, il, nous, vous, ils).",
+     "Redo the Play & learn activities – aim for every card right first time.",
+     "Take one Check knowledge quiz at Hard level."
+    ]
+   }
+  ],
+  "checklist": [
+   "I can write ordinals 1st–12th correctly.",
+   "I can say days and months in order.",
+   "I can match seasons with activities.",
+   "I can give opposites of common words.",
+   "I can name clothes and family members."
+  ],
+  "paperTitle": "In the Class VI midterm model paper",
+  "paperCols": [
+   "Question",
+   "Marks",
+   "What was asked"
+  ],
+  "paperNote": "BHPS Class VI French midterm model paper 2026-27 (80 marks: Reading 10 · Writing 20 · Grammar 30 · Culture 20). Practise these question types first."
+ },
+ "method": "Built on how languages stick: hear and see short patterns, practise them many times with instant feedback, say answers aloud before checking (active recall), and revisit after 1, 3 and 7 days (spaced revision).",
+ "sheetTitle": "Rules sheet",
+ "sheetCols": [
+  "Rule",
+  "Pattern",
+  "Example",
+  "Watch out"
+ ]
+}

@@ -1,0 +1,900 @@
+{
+ "id": "class6-french-ch2",
+ "class": "6",
+ "subject": "french",
+ "chapter": "Chapter 2 · Négation, articles et phrases",
+ "source": "BHPS Class VI French midterm model paper 2026-27 + teaching notes, Chapter 2",
+ "topics": [
+  {
+   "id": "neg",
+   "name": "La négation (ne…pas, pas de)",
+   "ref": "G1"
+  },
+  {
+   "id": "a",
+   "name": "à + article (au, à la, à l’, aux)",
+   "ref": "G2"
+  },
+  {
+   "id": "de",
+   "name": "de + article (du, de la, de l’, des)",
+   "ref": "G3"
+  },
+  {
+   "id": "order",
+   "name": "Retrouvez les phrases (word order)",
+   "ref": "G4"
+  }
+ ],
+ "levelNotes": {
+  "easy": "Common words and forms – je, tu, il, the basic rules.",
+  "hard": "Model-paper style: all subjects, irregular verbs, tricky articles.",
+  "advanced": "Stretch: spot the error, build sentences, mix several rules at once."
+ },
+ "questions": [
+  {
+   "topic": "neg",
+   "level": "easy",
+   "q": "Mettez à la forme négative : Elle offre un cadeau à son ami.",
+   "a": "Elle n’offre pas de cadeau à son ami.",
+   "w": [
+    "Elle n’offre pas un cadeau à son ami.",
+    "Elle ne offre pas de cadeau à son ami.",
+    "Elle n’offre de pas cadeau à son ami."
+   ],
+   "e": "ne…pas goes around the verb, and after pas, un becomes de. → Elle n’offre pas de cadeau à son ami."
+  },
+  {
+   "topic": "neg",
+   "level": "hard",
+   "q": "Mettez à la forme négative : Ils ont des stylos noirs.",
+   "a": "Ils n’ont pas de stylos noirs.",
+   "w": [
+    "Ils n’ont pas des stylos noirs.",
+    "Ils ne ont pas de stylos noirs.",
+    "Ils n’ont de pas stylos noirs."
+   ],
+   "e": "ne…pas goes around the verb, and after pas, des becomes de. → Ils n’ont pas de stylos noirs."
+  },
+  {
+   "topic": "neg",
+   "level": "easy",
+   "q": "Mettez à la forme négative : J’ai un frère.",
+   "a": "Je n’ai pas de frère.",
+   "w": [
+    "Je n’ai pas un frère.",
+    "Je ne ai pas de frère.",
+    "Je n’ai de pas frère."
+   ],
+   "e": "ne…pas goes around the verb, and after pas, un becomes de. → Je n’ai pas de frère."
+  },
+  {
+   "topic": "neg",
+   "level": "easy",
+   "q": "Mettez à la forme négative : Mon amie a un chien.",
+   "a": "Mon amie n’a pas de chien.",
+   "w": [
+    "Mon amie n’a pas un chien.",
+    "Mon amie ne a pas de chien.",
+    "Mon amie n’a de pas chien."
+   ],
+   "e": "ne…pas goes around the verb, and after pas, un becomes de. → Mon amie n’a pas de chien."
+  },
+  {
+   "topic": "neg",
+   "level": "easy",
+   "q": "Mettez à la forme négative : Nous achetons une montre.",
+   "a": "Nous n’achetons pas de montre.",
+   "w": [
+    "Nous n’achetons pas une montre.",
+    "Nous ne achetons pas de montre.",
+    "Nous n’achetons de pas montre."
+   ],
+   "e": "ne…pas goes around the verb, and after pas, une becomes de. → Nous n’achetons pas de montre."
+  },
+  {
+   "topic": "neg",
+   "level": "easy",
+   "q": "Mettez à la forme négative : Tu manges une pomme.",
+   "a": "Tu ne manges pas de pomme.",
+   "w": [
+    "Tu ne manges pas une pomme.",
+    "Tu manges pas de pomme.",
+    "Tu ne manges de pas pomme."
+   ],
+   "e": "ne…pas goes around the verb, and after pas, une becomes de. → Tu ne manges pas de pomme."
+  },
+  {
+   "topic": "neg",
+   "level": "easy",
+   "q": "Mettez à la forme négative : Il a une voiture.",
+   "a": "Il n’a pas de voiture.",
+   "w": [
+    "Il n’a pas une voiture.",
+    "Il ne a pas de voiture.",
+    "Il n’a de pas voiture."
+   ],
+   "e": "ne…pas goes around the verb, and after pas, une becomes de. → Il n’a pas de voiture."
+  },
+  {
+   "topic": "neg",
+   "level": "hard",
+   "q": "Mettez à la forme négative : Vous avez des amis en France.",
+   "a": "Vous n’avez pas d’amis en France.",
+   "w": [
+    "Vous n’avez pas des amis en France.",
+    "Vous ne avez pas d’amis en France.",
+    "Vous n’avez d’pas amis en France."
+   ],
+   "e": "ne…pas goes around the verb, and after pas, des becomes d’. → Vous n’avez pas d’amis en France."
+  },
+  {
+   "topic": "neg",
+   "level": "easy",
+   "q": "Mettez à la forme négative : Elle a une jupe rouge.",
+   "a": "Elle n’a pas de jupe rouge.",
+   "w": [
+    "Elle n’a pas une jupe rouge.",
+    "Elle ne a pas de jupe rouge.",
+    "Elle n’a de pas jupe rouge."
+   ],
+   "e": "ne…pas goes around the verb, and after pas, une becomes de. → Elle n’a pas de jupe rouge."
+  },
+  {
+   "topic": "neg",
+   "level": "easy",
+   "q": "Mettez à la forme négative : Nous avons un examen demain.",
+   "a": "Nous n’avons pas d’examen demain.",
+   "w": [
+    "Nous n’avons pas un examen demain.",
+    "Nous ne avons pas d’examen demain.",
+    "Nous n’avons d’pas examen demain."
+   ],
+   "e": "ne…pas goes around the verb, and after pas, un becomes d’. → Nous n’avons pas d’examen demain."
+  },
+  {
+   "topic": "neg",
+   "level": "hard",
+   "q": "Mettez à la forme négative : Je bois du lait.",
+   "a": "Je ne bois pas de lait.",
+   "w": [
+    "Je ne bois pas du lait.",
+    "Je bois pas de lait.",
+    "Je ne bois de pas lait."
+   ],
+   "e": "ne…pas goes around the verb, and after pas, du becomes de. → Je ne bois pas de lait."
+  },
+  {
+   "topic": "neg",
+   "level": "hard",
+   "q": "Mettez à la forme négative : Il mange de la salade.",
+   "a": "Il ne mange pas de salade.",
+   "w": [
+    "Il ne mange pas de la salade.",
+    "Il mange pas de salade.",
+    "Il ne mange de pas salade."
+   ],
+   "e": "ne…pas goes around the verb, and after pas, de becomes de. → Il ne mange pas de salade."
+  },
+  {
+   "topic": "neg",
+   "level": "hard",
+   "q": "Mettez à la forme négative : J’aime le jus de fruits.",
+   "a": "Je n’aime pas le jus de fruits.",
+   "w": [
+    "Je aime pas le jus de fruits.",
+    "Je ne pas aime le jus de fruits.",
+    "Je n’aime pas de jus de fruits."
+   ],
+   "e": "le, la, les do NOT change after pas (only un, une, des, du, de la change to de). → Je n’aime pas le jus de fruits."
+  },
+  {
+   "topic": "neg",
+   "level": "hard",
+   "q": "Mettez à la forme négative : Elle regarde la télévision.",
+   "a": "Elle ne regarde pas la télévision.",
+   "w": [
+    "Elle regarde pas la télévision.",
+    "Elle ne pas regarde la télévision.",
+    "Elle ne regarde pas de télévision."
+   ],
+   "e": "le, la, les do NOT change after pas (only un, une, des, du, de la change to de). → Elle ne regarde pas la télévision."
+  },
+  {
+   "topic": "neg",
+   "level": "hard",
+   "q": "Mettez à la forme négative : Nous aimons les maths.",
+   "a": "Nous n’aimons pas les maths.",
+   "w": [
+    "Nous aimons pas les maths.",
+    "Nous ne pas aimons les maths.",
+    "Nous n’aimons pas de maths."
+   ],
+   "e": "le, la, les do NOT change after pas (only un, une, des, du, de la change to de). → Nous n’aimons pas les maths."
+  },
+  {
+   "topic": "neg",
+   "level": "easy",
+   "q": "Mettez à la forme négative : Il parle français.",
+   "a": "Il ne parle pas français.",
+   "w": [
+    "Il parle pas français.",
+    "Il ne pas parle français.",
+    "Il ne parle français pas."
+   ],
+   "e": "le, la, les do NOT change after pas (only un, une, des, du, de la change to de). → Il ne parle pas français."
+  },
+  {
+   "topic": "neg",
+   "level": "easy",
+   "q": "Mettez à la forme négative : Tu es en classe.",
+   "a": "Tu n’es pas en classe.",
+   "w": [
+    "Tu es pas en classe.",
+    "Tu ne pas es en classe.",
+    "Tu n’es en classe pas."
+   ],
+   "e": "le, la, les do NOT change after pas (only un, une, des, du, de la change to de). → Tu n’es pas en classe."
+  },
+  {
+   "topic": "neg",
+   "level": "easy",
+   "q": "Mettez à la forme négative : Ils habitent à Paris.",
+   "a": "Ils n’habitent pas à Paris.",
+   "w": [
+    "Ils habitent pas à Paris.",
+    "Ils ne pas habitent à Paris.",
+    "Ils n’habitent à Paris pas."
+   ],
+   "e": "le, la, les do NOT change after pas (only un, une, des, du, de la change to de). → Ils n’habitent pas à Paris."
+  },
+  {
+   "topic": "neg",
+   "level": "advanced",
+   "q": "Which sentence is correct?",
+   "a": "Je n’ai pas de frère.",
+   "w": [
+    "Je n’ai pas un frère.",
+    "Je ne ai pas de frère.",
+    "Je n’ai de pas frère."
+   ],
+   "e": "ne → n’ before a vowel; un → de after pas."
+  },
+  {
+   "topic": "neg",
+   "level": "advanced",
+   "q": "Which sentence is correct?",
+   "a": "Elle n’aime pas le chocolat.",
+   "w": [
+    "Elle n’aime pas de chocolat.",
+    "Elle ne aime pas le chocolat.",
+    "Elle aime ne pas le chocolat."
+   ],
+   "e": "With aimer, the definite article le stays: n’aime pas le chocolat."
+  },
+  {
+   "topic": "neg",
+   "level": "advanced",
+   "q": "Which sentence is correct?",
+   "a": "Nous n’achetons pas de montre.",
+   "w": [
+    "Nous n’achetons pas une montre.",
+    "Nous ne achetons pas de montre.",
+    "Nous n’achetons de montre pas."
+   ],
+   "e": "Model paper Q11(d): nous n’achetons pas de montre."
+  },
+  {
+   "topic": "a",
+   "level": "easy",
+   "q": "Complétez avec au, à la, à l’, aux ou à : Elle parle ___ professeur.",
+   "a": "au",
+   "w": [
+    "à la",
+    "à l’",
+    "aux"
+   ],
+   "e": "masculine noun → à + le = au: Elle parle au professeur."
+  },
+  {
+   "topic": "a",
+   "level": "easy",
+   "q": "Complétez avec au, à la, à l’, aux ou à : Elle parle ___ garçon.",
+   "a": "au",
+   "w": [
+    "à la",
+    "à l’",
+    "aux"
+   ],
+   "e": "masculine noun → à + le = au: Elle parle au garçon."
+  },
+  {
+   "topic": "a",
+   "level": "easy",
+   "q": "Complétez avec au, à la, à l’, aux ou à : Je vais ___ restaurant.",
+   "a": "au",
+   "w": [
+    "à la",
+    "à l’",
+    "aux"
+   ],
+   "e": "masculine noun → à + le = au: Je vais au restaurant."
+  },
+  {
+   "topic": "a",
+   "level": "easy",
+   "q": "Complétez avec au, à la, à l’, aux ou à : Je vais ___ marché.",
+   "a": "au",
+   "w": [
+    "à la",
+    "à l’",
+    "aux"
+   ],
+   "e": "masculine noun → à + le = au: Je vais au marché."
+  },
+  {
+   "topic": "a",
+   "level": "easy",
+   "q": "Complétez avec au, à la, à l’, aux ou à : Je vais ___ parc.",
+   "a": "au",
+   "w": [
+    "à la",
+    "à l’",
+    "aux"
+   ],
+   "e": "masculine noun → à + le = au: Je vais au parc."
+  },
+  {
+   "topic": "a",
+   "level": "easy",
+   "q": "Complétez avec au, à la, à l’, aux ou à : Je vais ___ cinéma.",
+   "a": "au",
+   "w": [
+    "à la",
+    "à l’",
+    "aux"
+   ],
+   "e": "masculine noun → à + le = au: Je vais au cinéma."
+  },
+  {
+   "topic": "a",
+   "level": "easy",
+   "q": "Complétez avec au, à la, à l’, aux ou à : Je vais ___ stade.",
+   "a": "au",
+   "w": [
+    "à la",
+    "à l’",
+    "aux"
+   ],
+   "e": "masculine noun → à + le = au: Je vais au stade."
+  },
+  {
+   "topic": "a",
+   "level": "easy",
+   "q": "Complétez avec au, à la, à l’, aux ou à : Elle parle ___ fille du professeur.",
+   "a": "à la",
+   "w": [
+    "au",
+    "à l’",
+    "aux"
+   ],
+   "e": "feminine noun → à la: Elle parle à la fille du professeur."
+  },
+  {
+   "topic": "a",
+   "level": "easy",
+   "q": "Complétez avec au, à la, à l’, aux ou à : Je vais ___ plage.",
+   "a": "à la",
+   "w": [
+    "au",
+    "à l’",
+    "aux"
+   ],
+   "e": "feminine noun → à la: Je vais à la plage."
+  },
+  {
+   "topic": "a",
+   "level": "easy",
+   "q": "Complétez avec au, à la, à l’, aux ou à : Je vais ___ piscine.",
+   "a": "à la",
+   "w": [
+    "au",
+    "à l’",
+    "aux"
+   ],
+   "e": "feminine noun → à la: Je vais à la piscine."
+  },
+  {
+   "topic": "a",
+   "level": "easy",
+   "q": "Complétez avec au, à la, à l’, aux ou à : Je vais ___ maison.",
+   "a": "à la",
+   "w": [
+    "au",
+    "à l’",
+    "aux"
+   ],
+   "e": "feminine noun → à la: Je vais à la maison."
+  },
+  {
+   "topic": "a",
+   "level": "easy",
+   "q": "Complétez avec au, à la, à l’, aux ou à : Je vais ___ boulangerie.",
+   "a": "à la",
+   "w": [
+    "au",
+    "à l’",
+    "aux"
+   ],
+   "e": "feminine noun → à la: Je vais à la boulangerie."
+  },
+  {
+   "topic": "a",
+   "level": "easy",
+   "q": "Complétez avec au, à la, à l’, aux ou à : Je vais ___ gare.",
+   "a": "à la",
+   "w": [
+    "au",
+    "à l’",
+    "aux"
+   ],
+   "e": "feminine noun → à la: Je vais à la gare."
+  },
+  {
+   "topic": "a",
+   "level": "hard",
+   "q": "Complétez avec au, à la, à l’, aux ou à : Je vais ___ école.",
+   "a": "à l’",
+   "w": [
+    "au",
+    "à la",
+    "aux"
+   ],
+   "e": "noun starting with a vowel or h → à l’: Je vais à l’école."
+  },
+  {
+   "topic": "a",
+   "level": "hard",
+   "q": "Complétez avec au, à la, à l’, aux ou à : Je vais ___ hôpital.",
+   "a": "à l’",
+   "w": [
+    "au",
+    "à la",
+    "aux"
+   ],
+   "e": "noun starting with a vowel or h → à l’: Je vais à l’hôpital."
+  },
+  {
+   "topic": "a",
+   "level": "hard",
+   "q": "Complétez avec au, à la, à l’, aux ou à : Je vais ___ hôtel.",
+   "a": "à l’",
+   "w": [
+    "au",
+    "à la",
+    "aux"
+   ],
+   "e": "noun starting with a vowel or h → à l’: Je vais à l’hôtel."
+  },
+  {
+   "topic": "a",
+   "level": "hard",
+   "q": "Complétez avec au, à la, à l’, aux ou à : Elle parle ___ ami de Paul.",
+   "a": "à l’",
+   "w": [
+    "au",
+    "à la",
+    "aux"
+   ],
+   "e": "noun starting with a vowel or h → à l’: Elle parle à l’ami de Paul."
+  },
+  {
+   "topic": "a",
+   "level": "hard",
+   "q": "Complétez avec au, à la, à l’, aux ou à : Elle parle ___ enfant.",
+   "a": "à l’",
+   "w": [
+    "au",
+    "à la",
+    "aux"
+   ],
+   "e": "noun starting with a vowel or h → à l’: Elle parle à l’enfant."
+  },
+  {
+   "topic": "a",
+   "level": "hard",
+   "q": "Complétez avec au, à la, à l’, aux ou à : Elle parle ___ enfants.",
+   "a": "aux",
+   "w": [
+    "au",
+    "à la",
+    "à l’"
+   ],
+   "e": "plural noun → à + les = aux: Elle parle aux enfants."
+  },
+  {
+   "topic": "a",
+   "level": "hard",
+   "q": "Complétez avec au, à la, à l’, aux ou à : Elle parle ___ élèves.",
+   "a": "aux",
+   "w": [
+    "au",
+    "à la",
+    "à l’"
+   ],
+   "e": "plural noun → à + les = aux: Elle parle aux élèves."
+  },
+  {
+   "topic": "a",
+   "level": "hard",
+   "q": "Complétez avec au, à la, à l’, aux ou à : Elle parle ___ parents.",
+   "a": "aux",
+   "w": [
+    "au",
+    "à la",
+    "à l’"
+   ],
+   "e": "plural noun → à + les = aux: Elle parle aux parents."
+  },
+  {
+   "topic": "a",
+   "level": "hard",
+   "q": "Complétez avec au, à la, à l’, aux ou à : Je vais ___ magasins.",
+   "a": "aux",
+   "w": [
+    "au",
+    "à la",
+    "à l’"
+   ],
+   "e": "plural noun → à + les = aux: Je vais aux magasins."
+  },
+  {
+   "topic": "a",
+   "level": "hard",
+   "q": "Complétez avec au, à la, à l’, aux ou à : Elle parle ___ Marie.",
+   "a": "à",
+   "w": [
+    "au",
+    "à la",
+    "à l’"
+   ],
+   "e": "name of a person or city → à alone: Elle parle à Marie."
+  },
+  {
+   "topic": "a",
+   "level": "hard",
+   "q": "Complétez avec au, à la, à l’, aux ou à : Elle parle ___ Marc.",
+   "a": "à",
+   "w": [
+    "au",
+    "à la",
+    "à l’"
+   ],
+   "e": "name of a person or city → à alone: Elle parle à Marc."
+  },
+  {
+   "topic": "a",
+   "level": "hard",
+   "q": "Complétez avec au, à la, à l’, aux ou à : Je vais ___ Paris.",
+   "a": "à",
+   "w": [
+    "au",
+    "à la",
+    "à l’"
+   ],
+   "e": "name of a person or city → à alone: Je vais à Paris."
+  },
+  {
+   "topic": "a",
+   "level": "hard",
+   "q": "Complétez avec au, à la, à l’, aux ou à : Je vais ___ Doha.",
+   "a": "à",
+   "w": [
+    "au",
+    "à la",
+    "à l’"
+   ],
+   "e": "name of a person or city → à alone: Je vais à Doha."
+  },
+  {
+   "topic": "de",
+   "level": "easy",
+   "q": "Complétez avec du, de la, de l’, des, de ou d’ : Le livre ___ professeur.",
+   "a": "du",
+   "w": [
+    "de la",
+    "de l’",
+    "des"
+   ],
+   "e": "masculine → de + le = du."
+  },
+  {
+   "topic": "de",
+   "level": "easy",
+   "q": "Complétez avec du, de la, de l’, des, de ou d’ : L’image ___ livre.",
+   "a": "du",
+   "w": [
+    "de la",
+    "de l’",
+    "des"
+   ],
+   "e": "masculine → de + le = du."
+  },
+  {
+   "topic": "de",
+   "level": "easy",
+   "q": "Complétez avec du, de la, de l’, des, de ou d’ : La porte ___ garage.",
+   "a": "du",
+   "w": [
+    "de la",
+    "de l’",
+    "des"
+   ],
+   "e": "masculine → de + le = du."
+  },
+  {
+   "topic": "de",
+   "level": "hard",
+   "q": "Complétez avec du, de la, de l’, des, de ou d’ : Le frère ___ Anne.",
+   "a": "d’",
+   "w": [
+    "du",
+    "de la",
+    "de l’"
+   ],
+   "e": "name starting with a vowel → d’."
+  },
+  {
+   "topic": "de",
+   "level": "easy",
+   "q": "Complétez avec du, de la, de l’, des, de ou d’ : Le manteau ___ Manuel.",
+   "a": "de",
+   "w": [
+    "du",
+    "de la",
+    "de l’"
+   ],
+   "e": "name → de."
+  },
+  {
+   "topic": "de",
+   "level": "hard",
+   "q": "Complétez avec du, de la, de l’, des, de ou d’ : La mère ___ enfants.",
+   "a": "des",
+   "w": [
+    "du",
+    "de la",
+    "de l’"
+   ],
+   "e": "plural → de + les = des."
+  },
+  {
+   "topic": "de",
+   "level": "easy",
+   "q": "Complétez avec du, de la, de l’, des, de ou d’ : Les clés ___ voiture.",
+   "a": "de la",
+   "w": [
+    "du",
+    "de l’",
+    "des"
+   ],
+   "e": "feminine → de la."
+  },
+  {
+   "topic": "de",
+   "level": "easy",
+   "q": "Complétez avec du, de la, de l’, des, de ou d’ : Le sac ___ fille.",
+   "a": "de la",
+   "w": [
+    "du",
+    "de l’",
+    "des"
+   ],
+   "e": "feminine → de la."
+  },
+  {
+   "topic": "de",
+   "level": "hard",
+   "q": "Complétez avec du, de la, de l’, des, de ou d’ : Le nom ___ école.",
+   "a": "de l’",
+   "w": [
+    "du",
+    "de la",
+    "des"
+   ],
+   "e": "vowel or h → de l’."
+  },
+  {
+   "topic": "de",
+   "level": "hard",
+   "q": "Complétez avec du, de la, de l’, des, de ou d’ : La cour ___ hôtel.",
+   "a": "de l’",
+   "w": [
+    "du",
+    "de la",
+    "des"
+   ],
+   "e": "vowel or h → de l’."
+  },
+  {
+   "topic": "de",
+   "level": "hard",
+   "q": "Complétez avec du, de la, de l’, des, de ou d’ : Les jouets ___ élèves.",
+   "a": "des",
+   "w": [
+    "du",
+    "de la",
+    "de l’"
+   ],
+   "e": "plural → de + les = des."
+  },
+  {
+   "topic": "de",
+   "level": "easy",
+   "q": "Complétez avec du, de la, de l’, des, de ou d’ : La maison ___ Marie.",
+   "a": "de",
+   "w": [
+    "du",
+    "de la",
+    "de l’"
+   ],
+   "e": "name → de."
+  },
+  {
+   "topic": "de",
+   "level": "hard",
+   "q": "Complétez avec du, de la, de l’, des, de ou d’ : Le vélo ___ Olivier.",
+   "a": "d’",
+   "w": [
+    "du",
+    "de la",
+    "de l’"
+   ],
+   "e": "name starting with a vowel → d’."
+  },
+  {
+   "topic": "a",
+   "level": "advanced",
+   "q": "Which sentence is correct?",
+   "a": "La mère dit une histoire aux enfants.",
+   "w": [
+    "La mère dit une histoire à les enfants.",
+    "La mère dit une histoire au enfants.",
+    "La mère dit une histoire à l’enfants."
+   ],
+   "e": "à + les always becomes aux."
+  },
+  {
+   "topic": "de",
+   "level": "advanced",
+   "q": "Which sentence is correct?",
+   "a": "Regardez l’image du livre.",
+   "w": [
+    "Regardez l’image de le livre.",
+    "Regardez l’image des livre.",
+    "Regardez l’image de la livre."
+   ],
+   "e": "de + le always becomes du."
+  },
+  {
+   "topic": "a",
+   "level": "advanced",
+   "q": "Which pair is correct?",
+   "a": "au cinéma · à l’école",
+   "w": [
+    "à le cinéma · à la école",
+    "au cinéma · au école",
+    "à la cinéma · à l’école"
+   ],
+   "e": "cinéma is masculine (au); école starts with a vowel (à l’)."
+  },
+  {
+   "topic": "order",
+   "level": "hard",
+   "q": "Retrouvez la phrase : n’ / jupe / elle / de / pas / rouge / a",
+   "a": "Elle n’a pas de jupe rouge.",
+   "w": [
+    "Elle a n’pas de jupe rouge.",
+    "Elle n’a de pas jupe rouge.",
+    "Elle n’a pas jupe de rouge."
+   ],
+   "e": "Subject → (ne) verb (pas) → the rest. → Elle n’a pas de jupe rouge."
+  },
+  {
+   "topic": "order",
+   "level": "hard",
+   "q": "Retrouvez la phrase : va / avec / Mathew / la / sa / plage / à / sœur",
+   "a": "Mathew va à la plage avec sa sœur.",
+   "w": [
+    "Mathew va avec la plage à sa sœur.",
+    "Sa sœur va à Mathew avec la plage.",
+    "Mathew à la plage va avec sa sœur."
+   ],
+   "e": "Subject → (ne) verb (pas) → the rest. → Mathew va à la plage avec sa sœur."
+  },
+  {
+   "topic": "order",
+   "level": "hard",
+   "q": "Retrouvez la phrase : amis / Julien / sympathiques / sont / de / les",
+   "a": "Les amis de Julien sont sympathiques.",
+   "w": [
+    "Julien de les amis sont sympathiques.",
+    "Les amis sont de Julien sympathiques.",
+    "Sympathiques les amis sont de Julien."
+   ],
+   "e": "Subject → (ne) verb (pas) → the rest. → Les amis de Julien sont sympathiques."
+  },
+  {
+   "topic": "order",
+   "level": "hard",
+   "q": "Retrouvez la phrase : nous / pas / de / achetons / montre / n’",
+   "a": "Nous n’achetons pas de montre.",
+   "w": [
+    "Nous achetons n’pas de montre.",
+    "Nous n’achetons de pas montre.",
+    "Nous pas n’achetons de montre."
+   ],
+   "e": "Subject → (ne) verb (pas) → the rest. → Nous n’achetons pas de montre."
+  },
+  {
+   "topic": "order",
+   "level": "hard",
+   "q": "Retrouvez la phrase : habitent / ils / Suisse / en / sa / avec / famille",
+   "a": "Ils habitent en Suisse avec sa famille.",
+   "w": [
+    "Ils habitent avec Suisse en sa famille.",
+    "En Suisse habitent ils avec sa famille.",
+    "Ils en habitent Suisse avec sa famille."
+   ],
+   "e": "Subject → (ne) verb (pas) → the rest. → Ils habitent en Suisse avec sa famille."
+  },
+  {
+   "topic": "order",
+   "level": "easy",
+   "q": "Retrouvez la phrase : mon / dans / sac / livre / le / est",
+   "a": "Le livre est dans mon sac.",
+   "w": [
+    "Le livre dans est mon sac.",
+    "Mon livre est dans le sac est.",
+    "Est le livre dans mon sac."
+   ],
+   "e": "Subject → (ne) verb (pas) → the rest. → Le livre est dans mon sac."
+  },
+  {
+   "topic": "order",
+   "level": "easy",
+   "q": "Retrouvez la phrase : s’appelle / sœur / ma / Emma",
+   "a": "Ma sœur s’appelle Emma.",
+   "w": [
+    "Sœur ma s’appelle Emma.",
+    "Ma s’appelle sœur Emma.",
+    "Emma ma s’appelle sœur."
+   ],
+   "e": "Subject → (ne) verb (pas) → the rest. → Ma sœur s’appelle Emma."
+  },
+  {
+   "topic": "order",
+   "level": "easy",
+   "q": "Retrouvez la phrase : au / nous / allons / parc / dimanche / le",
+   "a": "Le dimanche, nous allons au parc.",
+   "w": [
+    "Nous le allons au parc dimanche.",
+    "Le dimanche, nous au parc allons.",
+    "Au parc le dimanche allons nous."
+   ],
+   "e": "Subject → (ne) verb (pas) → the rest. → Le dimanche, nous allons au parc."
+  },
+  {
+   "topic": "order",
+   "level": "advanced",
+   "q": "Which word order is correct in a French negative sentence?",
+   "a": "subject + ne + verb + pas + rest",
+   "w": [
+    "subject + ne pas + verb + rest",
+    "ne + subject + verb + pas",
+    "subject + verb + ne pas + rest"
+   ],
+   "e": "Je ne mange pas de viande."
+  }
+ ]
+}
