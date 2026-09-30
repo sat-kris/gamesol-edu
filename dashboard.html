@@ -59,6 +59,7 @@ svg text{fill:var(--ink-soft);font-size:11px;font-family:"Atkinson Hyperlegible"
 .acctrack{height:10px;border-radius:5px;background:var(--line);position:relative;overflow:hidden}
 .acctrack i{position:absolute;left:0;top:0;bottom:0;border-radius:0 5px 5px 0;background:var(--accent)}
 .feat .accrow{grid-template-columns:minmax(0,12em) 1fr 7.5em}
+#accChart .accrow,#drill .accrow{grid-template-columns:minmax(0,1.4fr) 1fr 7.5em}
 .feat .v{white-space:nowrap}
 .toplist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;font-size:14px}
 .toplist li{display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid var(--line);padding-bottom:6px}
@@ -86,6 +87,50 @@ td.num,th.num{text-align:right}
 .empty{padding:30px;text-align:center;color:var(--ink-soft)}
 @media (max-width:820px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.grid2{grid-template-columns:1fr}}
 @media (max-width:460px){.accrow{grid-template-columns:1fr 4em}.accrow .acctrack{grid-column:1/-1;order:3}}
+.kpis{grid-template-columns:repeat(4,minmax(0,1fr))}
+button.kpi{min-width:0;overflow-wrap:anywhere;font:inherit;color:inherit;text-align:left;cursor:pointer;display:flex;flex-direction:column;gap:2px}
+button.kpi:hover{border-color:var(--accent)}
+button.kpi[aria-expanded="true"]{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent) inset}
+.kpi span.d,.kpi span.more{text-transform:none;letter-spacing:0}
+.kpi .d{font-size:12px;font-weight:700;color:var(--ink-soft)}
+.kpi .d.up{color:var(--good)}.kpi .d.down{color:var(--bad)}
+.kpi .more{font-size:12px;color:var(--accent);font-weight:700;margin-top:4px}
+.insights{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.insights li{display:flex;gap:10px;align-items:flex-start;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:8px}
+.insights li:last-child{border-bottom:0;padding-bottom:0}
+.insights .ic{flex:none;width:22px;text-align:center}
+.insights .tx{flex:1;min-width:0}
+.link{background:none;border:0;padding:0;font:inherit;font-size:13px;font-weight:700;color:var(--accent);cursor:pointer;white-space:nowrap}
+.link:hover{text-decoration:underline}
+.seg{display:inline-flex;border:1px solid var(--line-strong);border-radius:8px;overflow:hidden}
+.seg button{font:inherit;font-size:13px;font-weight:700;border:0;background:var(--sheet);color:var(--ink-soft);padding:5px 10px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--accent-soft);color:var(--accent)}
+.phead{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+.phead h2{margin:0}
+#drill{border-color:var(--accent)}
+#drill .phead h2{color:var(--accent)}
+details.panel>summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px}
+details.panel>summary::-webkit-details-marker{display:none}
+details.panel>summary h2{margin:0}
+details.panel>summary::after{content:"Show ▾";font-size:13px;font-weight:700;color:var(--accent)}
+details.panel[open]>summary::after{content:"Hide ▴"}
+details.panel[open]>summary{margin-bottom:12px}
+tr.click{cursor:pointer}tr.click:hover td{background:var(--accent-soft)}
+td a,.name{color:var(--accent);font-weight:700;cursor:pointer;text-decoration:none}
+dialog{border:1px solid var(--line-strong);border-radius:14px;background:var(--sheet);color:var(--ink);padding:0;width:min(760px,calc(100vw - 32px));max-height:calc(100vh - 40px)}
+dialog::backdrop{background:rgba(10,12,30,.45)}
+dialog .dh{position:sticky;top:0;background:var(--sheet);display:flex;justify-content:space-between;align-items:center;gap:10px;padding:14px 18px;border-bottom:1px solid var(--line)}
+dialog .dh h2{margin:0;font-family:"Young Serif",Georgia,serif;font-size:22px;letter-spacing:0;text-transform:none;color:var(--ink)}
+dialog .db{padding:16px 18px;display:flex;flex-direction:column;gap:16px}
+.minis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.mini{border:1px solid var(--line);border-radius:10px;padding:8px 10px}
+.mini span{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);font-weight:700}
+.mini b{display:block;font-size:20px;font-variant-numeric:tabular-nums}
+.dist{display:flex;flex-direction:column;gap:8px}
+.dist>*,.panel,details.panel>div{min-width:0;max-width:100%}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-size:13px;border:1px solid var(--line-strong);border-radius:999px;padding:2px 10px}
+@media (max-width:820px){.minis{grid-template-columns:repeat(2,minmax(0,1fr))}}
 </style>
 </head>
 <body>
@@ -115,7 +160,7 @@ td.num,th.num{text-align:right}
   <div id="app" hidden style="display:flex;flex-direction:column;gap:18px">
     <div class="filters">
       <label for="fPeriod">Period
-        <select id="fPeriod"><option value="7">Last 7 days</option><option value="30" selected>Last 30 days</option><option value="0">All time</option></select></label>
+        <select id="fPeriod"><option value="1">Today</option><option value="7">Last 7 days</option><option value="30" selected>Last 30 days</option><option value="90">Last 90 days</option><option value="0">All time</option></select></label>
       <label for="fClass">Class
         <select id="fClass"><option value="">All classes</option></select></label>
       <label for="fSubject">Subject
@@ -127,42 +172,45 @@ td.num,th.num{text-align:right}
     </div>
 
     <div class="kpis" id="kpis"></div>
+    <section class="panel" id="drill" hidden></section>
+
+    <section class="panel"><h2>Key insights</h2><ul class="insights" id="insights"></ul></section>
 
     <div class="grid2">
-      <section class="panel"><h2 id="dayTitle">Quizzes taken per day</h2><div id="dayChart"></div></section>
-      <section class="panel"><h2 id="accTitle">Accuracy by topic</h2><div class="acc" id="accChart"></div></section>
+      <section class="panel"><div class="phead"><h2 id="dayTitle">Per day</h2><div class="seg" id="trendSeg"><button type="button" data-m="quizzes" aria-pressed="true">Quizzes</button><button type="button" data-m="students" aria-pressed="false">Students</button><button type="button" data-m="sessions" aria-pressed="false">Sessions</button></div></div><div id="dayChart"></div></section>
+      <section class="panel"><h2>Score spread</h2><div class="acc" id="distChart"></div></section>
     </div>
 
-    <section class="panel">
-      <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px">
-        <h2 style="margin:0">Students</h2>
-        <input type="search" id="search" placeholder="Search a name" aria-label="Search students">
-      </div>
+    <div class="grid2">
+      <section class="panel"><div class="phead"><h2 id="accTitle">Weakest topics</h2><button class="link" data-drill="topics">All topics →</button></div><div class="acc" id="accChart"></div></section>
+      <section class="panel"><div class="phead"><h2 id="featTitle">Feature usage</h2><button class="link" data-drill="features">Details →</button></div><div class="acc feat" id="featChart"></div></section>
+    </div>
+
+    <section class="panel"><div class="phead"><h2>By class and subject</h2><span class="muted" style="font-size:13px">Click a row to focus on it</span></div><div class="tablewrap"><table id="bySubject"></table></div></section>
+
+    <details class="panel" id="dStudents"><summary><h2>Students</h2></summary>
+      <div style="display:flex;justify-content:flex-end;margin-bottom:10px"><input type="search" id="search" placeholder="Search a name" aria-label="Search students"></div>
       <div class="tablewrap"><table id="students"></table></div>
-    </section>
-
-    <div class="grid2">
-      <section class="panel"><h2 id="featTitle">Feature usage</h2><div class="acc feat" id="featChart"></div></section>
-      <section class="panel"><h2>Most used</h2><div id="topUsed"></div></section>
-    </div>
-
-    <section class="panel">
-      <h2>Latest attempts</h2>
-      <div class="tablewrap"><table id="recent"></table></div>
-    </section>
+      <p class="muted" style="margin:8px 0 0;font-size:13px">Click a name for that student’s full history.</p>
+    </details>
+    <details class="panel" id="dRecent"><summary><h2>Latest attempts</h2></summary><div class="tablewrap"><table id="recent"></table></div></details>
+    <details class="panel" id="dLog"><summary><h2>Activity log</h2></summary>
+      <div style="display:flex;justify-content:flex-end;margin-bottom:10px"><input type="search" id="logSearch" placeholder="Filter by name or event" aria-label="Filter activity"></div>
+      <div class="tablewrap"><table id="actLog"></table></div>
+    </details>
   </div>
 </div>
+<dialog id="stu"><div class="dh"><h2 id="stuName"></h2><button class="btn" id="stuClose">Close</button></div><div class="db" id="stuBody"></div></dialog>
 <div id="tip" hidden></div>
-
 <script>
 let API="", CONFIG={classes:[]};
 const cfgReady=fetch("edu-kids-config.json",{cache:"no-store"}).then(r=>r.json()).then(c=>{CONFIG=c;API=String(c.leaderboard&&c.leaderboard.scriptUrl||"").trim()}).catch(()=>{});
 const className=id=>{const c=(CONFIG.classes||[]).find(c=>String(c.id)===String(id));return c?c.name:"Class "+id};
 const subjectName=(cid,sid)=>{for(const c of CONFIG.classes||[])for(const s of c.subjects||[])if(s.id===sid&&(!cid||String(c.id)===String(cid)))return s.name;return sid};
 const chapterName=(cid,sid,ch)=>{for(const c of CONFIG.classes||[])if(String(c.id)===String(cid))for(const s of c.subjects||[])if(s.id===sid)for(const x of s.chapters||[])if(x.id===ch)return x.name;return ch};
-const esc=s=>String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+const esc=s=>String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
 const $=id=>document.getElementById(id);
-let ROWS=[],ACT=[],sortKey="last",sortDir=-1;
+let ROWS=[],ACT=[],sortKey="last",sortDir=-1,TREND="quizzes",DRILL=null;
 
 function ss(k,v){try{if(v===undefined)return sessionStorage.getItem(k);if(v===null)sessionStorage.removeItem(k);else sessionStorage.setItem(k,v)}catch(e){return null}}
 
@@ -175,149 +223,355 @@ async function load(key){
     const d=await r.json();
     if(!d.ok){showErr(d.error==="wrong_key"?"That password is not correct.":"The backend returned an error.");ss("cockpit-key",null);return}
     ss("cockpit-key",key);
-    ROWS=d.rows.map(r=>Object.assign(r,{t:new Date(r.timestamp)})).filter(r=>!isNaN(r.t));
-    ACT=(d.activity||[]).map(a=>Object.assign(a,{t:new Date(a.t)})).filter(a=>!isNaN(a.t));
+    ROWS=d.rows.map(r=>Object.assign(r,{t:new Date(r.timestamp),k:skey(r.name)})).filter(r=>!isNaN(r.t));
+    ACT=(d.activity||[]).map(a=>Object.assign(a,{t:new Date(a.t),k:skey(a.name)})).filter(a=>!isNaN(a.t));
     $("login").hidden=true;$("app").hidden=false;$("topActions").hidden=false;
     $("updated").textContent="Updated "+new Date().toLocaleTimeString([], {hour:"2-digit",minute:"2-digit"});
     const opts=(id,all,vals,label)=>{const cur=$(id).value;$(id).innerHTML='<option value="">'+all+'</option>'+vals.map(v=>'<option value="'+esc(v)+'"'+(v===cur?" selected":"")+'>'+esc(label(v))+'</option>').join("")};
-    const uniq=f=>[...new Set(ROWS.map(f).filter(Boolean))].sort((a,b)=>String(a).localeCompare(String(b),undefined,{numeric:true}));
-    opts("fClass","All classes",uniq(r=>String(r.class)),className);
-    opts("fSubject","All subjects",uniq(r=>r.subject),v=>subjectName("",v));
-    opts("fSection","All sections",uniq(r=>String(r.section||"").toUpperCase()),v=>v);$("fSection").closest("label").hidden=!ROWS.some(r=>String(r.section||"").trim());
+    const both=[...ROWS,...ACT];
+    const uniq=(src,f)=>[...new Set(src.map(f).filter(Boolean))].sort((a,b)=>String(a).localeCompare(String(b),undefined,{numeric:true}));
+    opts("fClass","All classes",uniq(both,r=>String(r.class||"")),className);
+    opts("fSubject","All subjects",uniq(both,r=>r.subject),v=>subjectName("",v));
+    opts("fSection","All sections",uniq(ROWS,r=>String(r.section||"").toUpperCase()),v=>v);$("fSection").closest("label").hidden=!ROWS.some(r=>String(r.section||"").trim());
     render();
-  }catch(e){showErr("Could not reach the backend. Check your internet connection and the link in edu-kids-config.json.")}
+  }catch(e){console.error(e);showErr("Could not reach the backend. Check your internet connection and the link in edu-kids-config.json.")}
 }
 function showErr(m){$("loginErr").textContent=m;$("loginErr").hidden=false}
 
-function filtered(){
-  const days=+$("fPeriod").value, sec=$("fSection").value, lvl=$("fLevel").value, cls=$("fClass").value, sub=$("fSubject").value;
-  const from=days?Date.now()-days*864e5:0;
-  return ROWS.filter(r=>r.t.getTime()>=from&&(!cls||String(r.class)===cls)&&(!sub||r.subject===sub)&&(!sec||String(r.section).toUpperCase()===sec)&&(!lvl||r.level===lvl));
-}
-const who=r=>String(r.name).trim().toLowerCase()+"|"+String(r.class)+"|"+String(r.section).trim().toUpperCase();
-const avg=a=>a.length?a.reduce((s,x)=>s+x,0)/a.length:0;
+/* ---------- filtering ---------- */
+const skey=n=>String(n||"").trim().toLowerCase();
 const dkey=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
+const avg=a=>a.length?a.reduce((s,x)=>s+x,0)/a.length:0;
+const median=a=>{if(!a.length)return 0;const b=a.slice().sort((x,y)=>x-y),m=b.length>>1;return b.length%2?b[m]:(b[m-1]+b[m])/2};
+const pct=(a,b)=>b?Math.round(100*a/b):0;
+const plural=(n,w,p)=>n+" "+(n===1?w:(p||w+"s"));
+function windowOf(prev){
+  const days=+$("fPeriod").value;if(!days)return prev?null:[0,Infinity];
+  const now=Date.now();let from;
+  if(days===1){const d=new Date();d.setHours(0,0,0,0);from=d.getTime()}else from=now-days*864e5;
+  const len=now-from;return prev?[from-len,from]:[from,Infinity];
+}
+function periodWord(){const d=+$("fPeriod").value;return d===1?"yesterday":d?"previous "+d+" days":""}
+function fRows(prev){const w=windowOf(prev);if(!w)return null;
+  const sec=$("fSection").value,lvl=$("fLevel").value,cls=$("fClass").value,sub=$("fSubject").value;
+  return ROWS.filter(r=>{const t=r.t.getTime();return t>=w[0]&&t<w[1]&&(!cls||String(r.class)===cls)&&(!sub||r.subject===sub)&&(!sec||String(r.section).toUpperCase()===sec)&&(!lvl||r.level===lvl)})}
+function fAct(prev){const w=windowOf(prev);if(!w)return null;
+  const cls=$("fClass").value,sub=$("fSubject").value,lvl=$("fLevel").value;
+  return ACT.filter(a=>{const t=a.t.getTime();if(t<w[0]||t>=w[1])return false;
+    if(cls&&String(a.class)!==cls)return false;if(sub&&a.subject!==sub)return false;
+    if(lvl&&(a.event==="quiz_start"||a.event==="quiz_finish")&&String(a.detail).split(" · ")[0]!==lvl)return false;return true})}
+const filtered=()=>fRows(false);
 
-function render(){
-  const rows=filtered();
-  const today=dkey(new Date());
-  const students=new Set(rows.map(who));
-  const easyN=rows.filter(r=>r.level==="easy").length, advN=rows.filter(r=>r.level==="advanced").length, hardN=rows.length-easyN-advN;
-  $("kpis").innerHTML=[
-    ["Quizzes taken",rows.length,easyN+" easy · "+hardN+" hard"+(advN?" · "+advN+" advanced":"")],
-    ["Students",students.size,"different names"],
-    ["Average score",rows.length?Math.round(avg(rows.map(r=>r.percent)))+"%":"–","across all attempts"],
-    ["Today",rows.filter(r=>dkey(r.t)===today).length,"quizzes taken today"]
-  ].map(k=>'<div class="kpi"><span>'+k[0]+'</span><b>'+k[1]+'</b><small>'+k[2]+'</small></div>').join("");
-  if(!rows.length){
-    $("dayChart").innerHTML='<p class="empty">No quizzes in this period yet.</p>';$("accChart").innerHTML='<p class="empty">No data yet.</p>';
-  }else{dayChart(rows);accChart(rows)}
-  studentTable(rows);recentTable(rows);usage();
+/* ---------- metrics ---------- */
+const LEVEL={easy:"Easy",hard:"Hard",advanced:"Advanced"};
+function metrics(rows,acts){
+  const started=acts.filter(a=>a.event==="quiz_start").length, finished=acts.filter(a=>a.event==="quiz_finish").length;
+  return {
+    students:new Set([...rows.map(r=>r.k),...acts.map(a=>a.k)].filter(k=>k&&k!=="guest")).size,
+    quizzes:rows.length,
+    avg:rows.length?avg(rows.map(r=>r.percent)):null,
+    completion:started?Math.min(100,100*finished/started):null,started,finished,
+    sessions:new Set(acts.map(a=>a.session).filter(Boolean)).size,
+    time:rows.length?median(rows.map(r=>r.seconds)):null,
+    tutor:acts.filter(a=>/^(open_tutor|tutor_page|flashcard|worked_example|mark_understood)$/.test(a.event)).length,
+    tutorUsers:new Set(acts.filter(a=>a.event==="open_tutor"||a.event==="tutor_page").map(a=>a.k)).size,
+    play:acts.filter(a=>a.event==="play_activity").length,
+    playUsers:new Set(acts.filter(a=>a.event==="play_activity"||a.event==="open_play").map(a=>a.k)).size
+  };
+}
+const fmtTime=s=>s==null?"–":Math.floor(s/60)+"m "+String(Math.round(s%60)).padStart(2,"0")+"s";
+function delta(cur,prev,kind){
+  if(prev==null||cur==null)return '<span class="d">&nbsp;</span>';
+  const w=periodWord();
+  if(kind==="pp"){const d=Math.round(cur-prev);return '<span class="d '+(d>0?"up":d<0?"down":"")+'">'+(d>0?"▲ +":d<0?"▼ ":"")+(d?d+" pts":"No change")+' vs '+w+'</span>'}
+  if(kind==="time"){const d=Math.round(cur-prev);return '<span class="d">'+(d>0?"▲ +":d<0?"▼ ":"")+(d?Math.abs(d)+"s":"No change")+' vs '+w+'</span>'}
+  if(!prev)return '<span class="d'+(cur?" up":"")+'">'+(cur?"New – none "+w:"None "+w)+'</span>';
+  const d=Math.round(100*(cur-prev)/prev);if(d>300)return '<span class="d up">▲ '+(cur/prev).toFixed(0)+'× '+w+'</span>';return '<span class="d '+(d>0?"up":d<0?"down":"")+'">'+(d>0?"▲ +":d<0?"▼ ":"")+(d?Math.abs(d)+"%":"No change")+' vs '+w+'</span>';
 }
 
-/* ---------- feature usage (sheet "Activity") ---------- */
+/* ---------- render ---------- */
+function render(){
+  const rows=fRows(false),acts=fAct(false),pr=fRows(true),pa=fAct(true);
+  const m=metrics(rows,acts),p=pr?metrics(pr,pa):{};
+  const lv=l=>rows.filter(r=>r.level===l).length;
+  const tiles=[
+    ["students","Active students",m.students,delta(m.students,p.students),"nicknames that used the site"],
+    ["attempts","Quizzes finished",m.quizzes,delta(m.quizzes,p.quizzes),lv("easy")+" easy · "+lv("hard")+" hard · "+lv("advanced")+" adv."],
+    ["scores","Average score",m.avg==null?"–":Math.round(m.avg)+"%",delta(m.avg,p.avg,"pp"),"across finished quizzes"],
+    ["completion","Completion",m.completion==null?"–":Math.round(m.completion)+"%",delta(m.completion,p.completion,"pp"),m.finished+" of "+m.started+" started quizzes"],
+    ["sessions","Sessions",m.sessions,delta(m.sessions,p.sessions),m.students?(m.sessions/m.students).toFixed(1)+" per student":"visits to the site"],
+    ["time","Time per quiz",fmtTime(m.time),delta(m.time,p.time,"time"),"median"],
+    ["tutor","Chapter tutor",m.tutor,delta(m.tutor,p.tutor),plural(m.tutorUsers,"student")+" used it"],
+    ["play","Play & learn",m.play,delta(m.play,p.play),plural(m.playUsers,"student")+" used it"]
+  ];
+  $("kpis").innerHTML=tiles.map(k=>'<button type="button" class="kpi" data-drill="'+k[0]+'" aria-expanded="'+(DRILL===k[0])+'"><span>'+k[1]+'</span><b>'+k[2]+'</b>'+k[3]+'<small>'+k[4]+'</small><span class="more">Details →</span></button>').join("");
+  insights(rows,acts,m);
+  dayChart(rows,acts);distChart(rows);accChart(rows);featChart(acts);subjectTable(rows,acts);
+  studentTable(rows,acts);recentTable(rows);logTable(acts);
+  if(DRILL)drill(DRILL,true);
+}
+
+/* ---------- aggregations reused by insights & drill-downs ---------- */
+function topicAgg(rows){
+  const multi=new Set(rows.map(r=>r.class+"|"+r.subject)).size>1, agg={};
+  rows.forEach(r=>Object.entries(r.topics||{}).forEach(([k,v])=>{const m=String(v).match(/^(\d+)\/(\d+)$/);if(!m)return;
+    const name=(multi?subjectName(r.class,r.subject)+" · ":"")+k;const a=agg[name]||(agg[name]={name,ok:0,n:0,who:new Set()});a.ok+=+m[1];a.n+=+m[2];a.who.add(r.k)}));
+  return Object.values(agg).filter(x=>x.n).map(x=>Object.assign(x,{p:x.ok/x.n})).sort((a,b)=>a.p-b.p);
+}
+function studentAgg(rows,acts){
+  const m={};
+  const get=(k,name)=>m[k]||(m[k]={k,name,cls:{},n:0,sum:0,easy:null,hard:null,adv:null,last:null,days:new Set(),events:0,list:[]});
+  rows.forEach(r=>{if(!r.k)return;const s=get(r.k,r.name);s.n++;s.sum+=r.percent;s.cls[r.class]=(s.cls[r.class]||0)+1;s.list.push(r);
+    if(!s.last||r.t>s.last)s.last=r.t;s.days.add(dkey(r.t));
+    if(r.level==="hard")s.hard=Math.max(s.hard??0,r.percent);else if(r.level==="advanced")s.adv=Math.max(s.adv??0,r.percent);else s.easy=Math.max(s.easy??0,r.percent)});
+  acts.forEach(a=>{if(!a.k||a.k==="guest")return;const s=get(a.k,a.name);s.events++;if(a.class)s.cls[a.class]=(s.cls[a.class]||0);if(!s.last||a.t>s.last)s.last=a.t;s.days.add(dkey(a.t))});
+  return Object.values(m).map(s=>{s.avg=s.n?s.sum/s.n:null;const c=Object.entries(s.cls).sort((a,b)=>b[1]-a[1])[0];s.clsName=c?className(c[0]):"–";s.active=s.days.size;
+    s.list.sort((a,b)=>a.t-b.t);const L=s.list;s.trend=L.length>=4?avg(L.slice(-3).map(r=>r.percent))-avg(L.slice(0,3).map(r=>r.percent)):null;return s});
+}
+function chapterAgg(rows,acts){
+  const m={};const key=(c,s,ch)=>c+"|"+s+"|"+ch;
+  const get=(c,s,ch)=>{const k=key(c,s,ch);return m[k]||(m[k]={cls:c,sub:s,ch,name:className(c)+" "+subjectName(c,s)+(ch&&ch!=="midterm"?" · "+chapterName(c,s,ch):""),n:0,sum:0,started:0,finished:0,tutor:0,who:new Set()})};
+  rows.forEach(r=>{const x=get(r.class,r.subject,r.chapter);x.n++;x.sum+=r.percent;x.who.add(r.k)});
+  acts.forEach(a=>{if(!a.class||!a.subject)return;const x=get(a.class,a.subject,a.chapter);
+    if(a.event==="quiz_start")x.started++;else if(a.event==="quiz_finish")x.finished++;else if(a.event==="open_tutor"||a.event==="tutor_page")x.tutor++});
+  return Object.values(m).map(x=>Object.assign(x,{avg:x.n?x.sum/x.n:null}));
+}
 const FEAT={visit:"Opened the site",choose_cls:"Picked a class",choose_subject:"Picked a subject",choose_chapter:"Picked a chapter",choose_mode:"Picked a mode",choose_level:"Picked a level",choose_count:"Picked no. of questions",choose_section:"Picked a French section",
   open_tutor:"Chapter tutor",open_play:"Play & learn",tutor_icon:"Tutor icon",tutor_page:"Tutor page",flashcard:"Flashcard",worked_example:"Worked example",mark_understood:"Marked understood",practise_button:"Practise button (tutor)",play_activity:"Play & learn activity",
   exam_checklist:"Exam checklist",quiz_start:"Quiz started",quiz_finish:"Quiz finished",results_button:"Results button",leaderboard_tab:"Leaderboard tab",leaderboard_level:"Leaderboard level",
   nickname_shuffle:"New random nickname",nickname_colour:"Changed colour",nickname_edit:"Edited nickname"};
-function actFiltered(){
-  const days=+$("fPeriod").value, cls=$("fClass").value, sub=$("fSubject").value, from=days?Date.now()-days*864e5:0;
-  return ACT.filter(a=>a.t.getTime()>=from&&(!cls||String(a.class)===cls)&&(!sub||a.subject===sub));
-}
-function usage(){
-  const acts=actFiltered();
-  if(!acts.length){
-    $("featChart").innerHTML='<p class="empty">No activity logged in this period yet. Activity is recorded once the updated Apps Script is deployed.</p>';$("topUsed").innerHTML='<p class="empty">No data yet.</p>';
-    $("featTitle").textContent="Feature usage";return}
-  const users=new Set(acts.map(a=>String(a.name).toLowerCase())), sess=new Set(acts.map(a=>a.session));
-  $("featTitle").textContent="Feature usage · "+sess.size+" session"+(sess.size===1?"":"s")+", "+users.size+" name"+(users.size===1?"":"s");
-  const agg={};acts.forEach(a=>{const x=agg[a.event]||(agg[a.event]={ev:a.event,n:0,u:new Set()});x.n++;x.u.add(String(a.name).toLowerCase())});
-  const data=Object.values(agg).sort((a,b)=>b.n-a.n), max=data[0].n;
-  $("featChart").innerHTML=data.map(x=>'<div class="accrow" data-tip="'+esc((FEAT[x.ev]||x.ev)+": used "+x.n+" time"+(x.n===1?"":"s")+" by "+x.u.size+" name"+(x.u.size===1?"":"s"))+'"><span>'+esc(FEAT[x.ev]||x.ev)+'</span><span class="acctrack"><i style="width:'+(100*x.n/max)+'%"></i></span><span class="v">'+x.n+' <span class="muted">· '+x.u.size+' 👤</span></span></div>').join("")+
-    '<p class="muted" style="margin:0;font-size:13px">Times used · number of different nicknames.</p>';
-  const top=(filter,label,n)=>{const m={};acts.filter(filter).forEach(a=>{const k=label(a);if(k)m[k]=(m[k]||0)+1});return Object.entries(m).sort((a,b)=>b[1]-a[1]).slice(0,n||6)};
-  const chap=a=>(a.class?className(a.class)+" ":"")+(a.subject?subjectName(a.class,a.subject):"")+(a.chapter&&a.chapter!=="midterm"?" · "+chapterName(a.class,a.subject,a.chapter):"");
-  const lists=[
-    ["Chapters opened (tutor / Play & learn)",top(a=>a.event==="open_tutor"||a.event==="open_play",a=>chap(a)+(a.event==="open_play"?" (Play & learn)":""))],
-    ["Tutor pages",top(a=>a.event==="tutor_page",a=>a.detail)],
-    ["Play & learn activities",top(a=>a.event==="play_activity",a=>a.detail)],
-    ["Quizzes started",top(a=>a.event==="quiz_start",a=>chap(a)+(a.detail?" · "+String(a.detail).split(" · ")[0]:""))],
-    ["Pages",top(a=>a.event==="visit",a=>a.page==="french"?"Class IX French":"Main site")]
-  ].filter(l=>l[1].length);
-  $("topUsed").innerHTML=lists.length?lists.map(l=>'<h3>'+esc(l[0])+'</h3><ul class="toplist">'+l[1].map(([k,v])=>'<li><span>'+esc(k)+'</span><span class="muted">'+v+'</span></li>').join("")+'</ul>').join(""):'<p class="empty">No data yet.</p>';
+const LEARN=["open_tutor","tutor_page","flashcard","worked_example","mark_understood","practise_button","open_play","play_activity","exam_checklist","quiz_start","quiz_finish","leaderboard_tab"];
+function featAgg(acts){const agg={};acts.forEach(a=>{const x=agg[a.event]||(agg[a.event]={ev:a.event,n:0,u:new Set()});x.n++;x.u.add(a.k)});return Object.values(agg).sort((a,b)=>b.n-a.n)}
+
+/* ---------- key insights ---------- */
+function insights(rows,acts,m){
+  const out=[];const add=(ic,html,drillKey,label)=>out.push('<li><span class="ic" aria-hidden="true">'+ic+'</span><span class="tx">'+html+'</span>'+(drillKey?'<button class="link" data-drill="'+drillKey+'">'+(label||"See who →")+'</button>':'')+'</li>');
+  if(!rows.length&&!acts.length){$("insights").innerHTML='<li><span class="tx muted">No activity in this period yet. Try a longer period.</span></li>';return}
+  const topics=topicAgg(rows).filter(t=>t.n>=5), weak=topics.filter(t=>t.p<.6);
+  if(weak.length)add("⚠️",'<b>'+esc(weak[0].name)+'</b> is the weakest topic: only <b>'+Math.round(weak[0].p*100)+'%</b> of '+weak[0].n+' answers correct'+(weak.length>1?', and '+plural(weak.length-1,"more topic")+' are below 60%':'')+'.',"topics","See topics →");
+  else if(topics.length)add("✅","Every topic is at 60% or above. The weakest is <b>"+esc(topics[0].name)+"</b> at "+Math.round(topics[0].p*100)+"%.","topics","See topics →");
+  const S=studentAgg(rows,acts);
+  const struggling=S.filter(s=>s.n>=2&&s.avg<50);
+  if(struggling.length)add("🆘",'<b>'+plural(struggling.length,"student")+'</b> average below 50% over 2 or more quizzes.',"struggling");
+  if(m.started>=5&&m.completion!=null&&m.completion<75)add("🚪",'<b>'+(m.started-m.finished)+'</b> of '+m.started+' quizzes were started but not finished ('+Math.round(100-m.completion)+'% drop-off).',"completion","By chapter →");
+  const all=studentAgg(ROWS,ACT), wk=Date.now()-7*864e5;
+  const cls=$("fClass").value,sub=$("fSubject").value;
+  const idle=all.filter(s=>s.last&&s.last.getTime()<wk&&(!cls||s.cls[cls]!==undefined)&&(!sub||s.list.some(r=>r.subject===sub)));
+  if(idle.length)add("😴",'<b>'+plural(idle.length,"student")+'</b> practised before but not in the last 7 days.',"idle");
+  const up=S.filter(s=>s.trend!=null&&s.trend>=15);
+  if(up.length)add("📈",'<b>'+plural(up.length,"student")+'</b> improved by 15+ points (last 3 quizzes vs first 3).',"improving");
+  const ready=S.filter(s=>s.easy!=null&&s.easy>=90&&s.hard==null);
+  if(ready.length)add("🚀",'<b>'+plural(ready.length,"student")+'</b> scored 90%+ on Easy but never tried Hard.',"ready");
+  const ch=chapterAgg(rows,acts).filter(x=>x.n);
+  if(ch.length>1){ch.sort((a,b)=>b.n-a.n);add("📚",'Most practised: <b>'+esc(ch[0].name)+'</b> ('+plural(ch[0].n,"quiz","quizzes")+'). Least: <b>'+esc(ch[ch.length-1].name)+'</b> ('+ch[ch.length-1].n+').',"chapters","By chapter →")}
+  const f=featAgg(acts.filter(a=>LEARN.includes(a.event)&&!/^quiz_/.test(a.event)));
+  if(f.length){const unused=["open_tutor","open_play","worked_example","flashcard"].filter(e=>!f.some(x=>x.ev===e));
+    add("🧭",'Most used learning feature: <b>'+esc(FEAT[f[0].ev]||f[0].ev)+'</b> ('+plural(f[0].u.size,"student")+').'+(unused.length?' Not used at all: '+unused.map(e=>FEAT[e]).join(", ")+'.':''),"features","Details →")}
+  if(rows.length>=5){const h=new Array(24).fill(0);rows.forEach(r=>h[r.t.getHours()]++);const b=h.indexOf(Math.max(...h));
+    const wd=new Array(7).fill(0);rows.forEach(r=>wd[r.t.getDay()]++);const bd=wd.indexOf(Math.max(...wd));
+    add("🕒",'Busiest time: <b>'+String(b).padStart(2,"0")+':00–'+String((b+1)%24).padStart(2,"0")+':00</b>; busiest day: <b>'+["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"][bd]+'</b>.',null)}
+  $("insights").innerHTML=out.slice(0,8).join("");
 }
 
-function dayChart(rows){
-  const days=+$("fPeriod").value||Math.min(60,Math.max(7,Math.ceil((Date.now()-Math.min(...rows.map(r=>r.t)))/864e5)+1));
-  $("dayTitle").textContent="Quizzes taken per day · last "+days+" days";
-  const list=[];for(let i=days-1;i>=0;i--){const d=new Date();d.setHours(12,0,0,0);d.setDate(d.getDate()-i);list.push({k:dkey(d),d,n:0})}
-  const map=Object.fromEntries(list.map(x=>[x.k,x]));rows.forEach(r=>{const x=map[dkey(r.t)];if(x)x.n++});
+/* ---------- drill-downs (details on demand) ---------- */
+function drill(kind,refresh){
+  if(!refresh&&DRILL===kind){closeDrill();return}
+  DRILL=kind;const rows=fRows(false),acts=fAct(false);
+  document.querySelectorAll(".kpi[data-drill]").forEach(b=>b.setAttribute("aria-expanded",b.dataset.drill===kind));
+  const S=studentAgg(rows,acts);let title="",body="";
+  const stuTable=(list,cols)=>'<div class="tablewrap"><table><thead><tr><th>Name</th><th>Class</th>'+cols.map(c=>'<th class="num">'+c[0]+'</th>').join("")+'</tr></thead><tbody>'+
+    (list.length?list.map(s=>'<tr class="click" data-stu="'+esc(s.k)+'"><td><span class="name">'+esc(s.name)+'</span></td><td>'+esc(s.clsName)+'</td>'+cols.map(c=>'<td class="num">'+c[1](s)+'</td>').join("")+'</tr>').join(""):'<tr><td colspan="'+(cols.length+2)+'" class="empty">Nobody here.</td></tr>')+'</tbody></table></div>';
+  const pc=v=>v==null?'<span class="muted">–</span>':'<span class="'+(v<60?"low":"")+'">'+Math.round(v)+'%</span>';
+  const last=s=>s.last?s.last.toLocaleDateString([], {day:"numeric",month:"short"}):"–";
+  const chTable=(list,cols)=>'<div class="tablewrap"><table><thead><tr><th>Chapter</th>'+cols.map(c=>'<th class="num">'+c[0]+'</th>').join("")+'</tr></thead><tbody>'+
+    (list.length?list.map(x=>'<tr><td>'+esc(x.name)+'</td>'+cols.map(c=>'<td class="num">'+c[1](x)+'</td>').join("")+'</tr>').join(""):'<tr><td colspan="'+(cols.length+1)+'" class="empty">No data.</td></tr>')+'</tbody></table></div>';
+  const bars=(list,label,val,tip)=>{const max=Math.max(1,...list.map(val));return '<div class="acc feat">'+(list.length?list.map(x=>'<div class="accrow" data-tip="'+esc(tip(x))+'"><span>'+esc(label(x))+'</span><span class="acctrack"><i style="width:'+(100*val(x)/max)+'%"></i></span><span class="v">'+val(x)+'</span></div>').join(""):'<p class="empty">No data yet.</p>')+'</div>'};
+  const count=(f,lab)=>{const m={};acts.filter(f).forEach(a=>{const k=lab(a);if(k)(m[k]=m[k]||{k,n:0,u:new Set()}).n++,m[k].u.add(a.k)});return Object.values(m).sort((a,b)=>b.n-a.n)};
+  const byTip=x=>x.k+": "+x.n+" times by "+plural(x.u.size,"student");
+  switch(kind){
+    case "students":title="Active students · most engaged first";
+      S.sort((a,b)=>(b.active-a.active)||(b.n-a.n));body=stuTable(S,[["Days active",s=>s.active],["Quizzes",s=>s.n],["Average",s=>pc(s.avg)],["Actions",s=>s.events],["Last active",last]]);break;
+    case "attempts":title="Quizzes finished · by chapter and level";
+      body=chTable(chapterAgg(rows,acts).filter(x=>x.n).sort((a,b)=>b.n-a.n),[["Quizzes",x=>x.n],["Students",x=>x.who.size],["Average",x=>pc(x.avg)]])+
+        '<h3 style="font-size:13px;margin:4px 0 0;color:var(--ink-soft)">By level</h3>'+bars(["easy","hard","advanced"].map(l=>({l,n:rows.filter(r=>r.level===l).length,a:avg(rows.filter(r=>r.level===l).map(r=>r.percent))})),x=>LEVEL[x.l],x=>x.n,x=>LEVEL[x.l]+": "+x.n+" quizzes, average "+Math.round(x.a)+"%");break;
+    case "scores":case "topics":title=kind==="scores"?"Scores · by topic, weakest first":"All topics · weakest first";
+      {const t=topicAgg(rows);body='<div class="tablewrap"><table><thead><tr><th>Topic</th><th class="num">Correct</th><th class="num">Answers</th><th class="num">Students</th></tr></thead><tbody>'+
+        (t.length?t.map(x=>'<tr><td>'+esc(x.name)+(x.p<.6?'<span class="flag">⚠ Needs work</span>':'')+'</td><td class="num">'+pc(x.p*100)+'</td><td class="num">'+x.n+'</td><td class="num">'+x.who.size+'</td></tr>').join(""):'<tr><td colspan="4" class="empty">No data yet.</td></tr>')+'</tbody></table></div>'}break;
+    case "completion":title="Completion · quizzes started vs finished";
+      body=chTable(chapterAgg(rows,acts).filter(x=>x.started).sort((a,b)=>(a.finished/a.started)-(b.finished/b.started)),[["Started",x=>x.started],["Finished",x=>x.finished],["Completion",x=>pc(Math.min(100,100*x.finished/x.started))]])+'<p class="muted" style="margin:0;font-size:13px">Lowest completion first. Needs the Activity log (started quizzes are only counted since it was switched on).</p>';break;
+    case "chapters":title="Chapters · practice and tutor use";
+      body=chTable(chapterAgg(rows,acts).sort((a,b)=>(b.n+b.tutor)-(a.n+a.tutor)),[["Quizzes",x=>x.n],["Average",x=>pc(x.avg)],["Tutor views",x=>x.tutor],["Started",x=>x.started]]);break;
+    case "sessions":title="Sessions · where and how long";
+      {const ses={};acts.forEach(a=>{const s=ses[a.session]||(ses[a.session]={a:a.t,b:a.t,n:0,page:a.page});s.n++;if(a.t<s.a)s.a=a.t;if(a.t>s.b)s.b=a.t});
+       const L=Object.values(ses),mins=L.map(s=>(s.b-s.a)/6e4);
+       body='<div class="minis"><div class="mini"><span>Sessions</span><b>'+L.length+'</b></div><div class="mini"><span>Median length</span><b>'+Math.round(median(mins))+' min</b></div><div class="mini"><span>Actions / session</span><b>'+(L.length?(avg(L.map(s=>s.n))).toFixed(1):"–")+'</b></div><div class="mini"><span>French page</span><b>'+L.filter(s=>s.page==="french").length+'</b></div></div>'+
+         '<h3 style="font-size:13px;margin:0;color:var(--ink-soft)">Sessions by hour of day</h3>'+bars(Array.from({length:24},(_,h)=>({h,n:L.filter(s=>s.a.getHours()===h).length})).filter(x=>x.n),x=>String(x.h).padStart(2,"0")+":00",x=>x.n,x=>String(x.h).padStart(2,"0")+":00 – "+x.n+" sessions")}break;
+    case "time":title="Time per quiz · by level";
+      body=bars(["easy","hard","advanced"].map(l=>({l,s:rows.filter(r=>r.level===l).map(r=>r.seconds)})).filter(x=>x.s.length),x=>LEVEL[x.l],x=>Math.round(median(x.s)),x=>LEVEL[x.l]+": median "+fmtTime(median(x.s))+" over "+x.s.length+" quizzes")+'<p class="muted" style="margin:0;font-size:13px">Median seconds per quiz. Very short times can mean guessing.</p>'+
+        stuTable(S.filter(s=>s.n).map(s=>Object.assign(s,{med:median(s.list.map(r=>r.seconds))})).sort((a,b)=>a.med-b.med).slice(0,15),[["Quizzes",s=>s.n],["Median time",s=>fmtTime(s.med)],["Average",s=>pc(s.avg)]]);break;
+    case "tutor":title="Chapter tutor · what students open";
+      body='<h3 style="font-size:13px;margin:0;color:var(--ink-soft)">Chapters opened</h3>'+bars(count(a=>a.event==="open_tutor",a=>className(a.class)+" "+subjectName(a.class,a.subject)+" · "+chapterName(a.class,a.subject,a.chapter)).slice(0,10),x=>x.k,x=>x.n,byTip)+
+        '<h3 style="font-size:13px;margin:0;color:var(--ink-soft)">Tutor pages and tools</h3>'+bars(count(a=>/^(tutor_page|flashcard|worked_example|mark_understood|practise_button|exam_checklist)$/.test(a.event),a=>a.event==="tutor_page"?"Page: "+a.detail:FEAT[a.event]),x=>x.k,x=>x.n,byTip);break;
+    case "play":title="Play & learn · activities used";
+      body=bars(count(a=>a.event==="play_activity",a=>a.detail),x=>x.k,x=>x.n,byTip)+'<h3 style="font-size:13px;margin:0;color:var(--ink-soft)">Chapters opened in Play & learn</h3>'+bars(count(a=>a.event==="open_play",a=>className(a.class)+" "+subjectName(a.class,a.subject)+" · "+chapterName(a.class,a.subject,a.chapter)),x=>x.k,x=>x.n,byTip);break;
+    case "features":title="Feature usage · every event";
+      body=bars(featAgg(acts).map(x=>({k:FEAT[x.ev]||x.ev,n:x.n,u:x.u})),x=>x.k,x=>x.n,byTip)+
+        '<h3 style="font-size:13px;margin:0;color:var(--ink-soft)">Leaderboard views</h3>'+bars(count(a=>a.event==="leaderboard_tab",a=>({top:"Top scores",all:"All attempts",mine:"My attempts"})[a.detail]||a.detail),x=>x.k,x=>x.n,byTip);break;
+    case "struggling":title="Students averaging below 50%";
+      body=stuTable(S.filter(s=>s.n>=2&&s.avg<50).sort((a,b)=>a.avg-b.avg),[["Quizzes",s=>s.n],["Average",s=>pc(s.avg)],["Tutor use",s=>acts.filter(a=>a.k===s.k&&(a.event==="open_tutor"||a.event==="tutor_page")).length],["Last active",last]]);break;
+    case "idle":title="Not seen in the last 7 days";
+      {const cls=$("fClass").value,sub=$("fSubject").value,wk=Date.now()-7*864e5;
+       body=stuTable(studentAgg(ROWS,ACT).filter(s=>s.last&&s.last.getTime()<wk&&(!cls||s.cls[cls]!==undefined)&&(!sub||s.list.some(r=>r.subject===sub))).sort((a,b)=>b.last-a.last),[["Quizzes (all time)",s=>s.n],["Average",s=>pc(s.avg)],["Last active",last]])}break;
+    case "improving":title="Improving students";
+      body=stuTable(S.filter(s=>s.trend!=null&&s.trend>=15).sort((a,b)=>b.trend-a.trend),[["Quizzes",s=>s.n],["Change",s=>'<span style="color:var(--good);font-weight:700">+'+Math.round(s.trend)+' pts</span>'],["Average",s=>pc(s.avg)]]);break;
+    case "ready":title="Ready for Hard";
+      body=stuTable(S.filter(s=>s.easy!=null&&s.easy>=90&&s.hard==null),[["Quizzes",s=>s.n],["Best easy",s=>pc(s.easy)],["Last active",last]]);break;
+  }
+  const el=$("drill");el.hidden=false;
+  el.innerHTML='<div class="phead"><h2>'+esc(title)+'</h2><button class="btn" id="drillClose">Close</button></div><div class="dist">'+body+'</div>';
+  if(!refresh)el.scrollIntoView({behavior:"smooth",block:"nearest"});
+}
+function closeDrill(){DRILL=null;$("drill").hidden=true;document.querySelectorAll(".kpi[data-drill]").forEach(b=>b.setAttribute("aria-expanded","false"))}
+
+/* ---------- charts ---------- */
+function niceStep(max){const raw=max/4;const p=Math.pow(10,Math.floor(Math.log10(raw||1)));const n=raw/p;return Math.max(1,(n<=1?1:n<=2?2:n<=5?5:10)*p)}
+function dayChart(rows,acts){
+  const all=[...rows,...acts];
+  if(!all.length){$("dayChart").innerHTML='<p class="empty">No activity in this period yet.</p>';$("dayTitle").textContent="Per day";return}
+  const per=+$("fPeriod").value;
+  const days=per===1?1:per||Math.min(90,Math.max(7,Math.ceil((Date.now()-Math.min(...all.map(r=>r.t)))/864e5)+1));
+  const label={quizzes:"Quizzes finished",students:"Active students",sessions:"Sessions"}[TREND];
+  if(per===1){ // today: by hour
+    $("dayTitle").textContent=label+" · today by hour";
+  }else $("dayTitle").textContent=label+" · per day, last "+days+" days";
+  const list=[];
+  if(per===1){for(let h=0;h<24;h++)list.push({k:h,lab:String(h).padStart(2,"0")+":00",set:new Set(),n:0})}
+  else for(let i=days-1;i>=0;i--){const d=new Date();d.setHours(12,0,0,0);d.setDate(d.getDate()-i);list.push({k:dkey(d),lab:d.toLocaleDateString([], {day:"numeric",month:"short"}),set:new Set(),n:0})}
+  const map=Object.fromEntries(list.map(x=>[x.k,x]));const K=t=>per===1?t.getHours():dkey(t);
+  if(TREND==="quizzes")rows.forEach(r=>{const x=map[K(r.t)];if(x)x.n++});
+  else if(TREND==="students")all.forEach(r=>{const x=map[K(r.t)];if(x&&r.k&&r.k!=="guest")x.set.add(r.k)});
+  else acts.forEach(a=>{const x=map[K(a.t)];if(x&&a.session)x.set.add(a.session)});
+  if(TREND!=="quizzes")list.forEach(x=>x.n=x.set.size);
   const W=620,H=220,L=30,R=8,T=10,B=26,max=Math.max(1,...list.map(x=>x.n));
   const step=niceStep(max),top=Math.ceil(max/step)*step;
   const bw=(W-L-R)/list.length, y=v=>T+(H-T-B)*(1-v/top);
-  let s='<svg viewBox="0 0 '+W+' '+H+'" width="100%" role="img" aria-label="Quizzes taken per day">';
+  let s='<svg viewBox="0 0 '+W+' '+H+'" width="100%" role="img" aria-label="'+esc(label)+'">';
   for(let v=0;v<=top;v+=step)s+='<line class="gridline" x1="'+L+'" x2="'+(W-R)+'" y1="'+y(v)+'" y2="'+y(v)+'"/><text x="'+(L-6)+'" y="'+(y(v)+4)+'" text-anchor="end">'+v+'</text>';
   const every=Math.ceil(list.length/8);
   list.forEach((x,i)=>{
     const bx=L+i*bw+Math.max(1,bw*0.12), w=Math.max(2,bw*0.76), h=(H-T-B)-(y(x.n)-T);
-    const label=x.d.toLocaleDateString([], {day:"numeric",month:"short"});
     if(x.n>0)s+='<path class="barv" d="M'+bx+' '+(H-B)+'V'+(y(x.n)+Math.min(4,h))+'q0 -4 4 -4h'+(w-8>0?w-8:0)+'q4 0 4 4V'+(H-B)+'Z"/>';
-    s+='<rect class="hit" x="'+(L+i*bw)+'" y="'+T+'" width="'+bw+'" height="'+(H-T-B)+'" fill="transparent" data-tip="'+esc(label+": "+x.n+" quiz"+(x.n===1?"":"zes"))+'"/>';
-    if(i%every===0||i===list.length-1&&list.length<=8)s+='<text x="'+(L+i*bw+bw/2)+'" y="'+(H-8)+'" text-anchor="middle">'+esc(label)+'</text>';
+    s+='<rect class="hit" x="'+(L+i*bw)+'" y="'+T+'" width="'+bw+'" height="'+(H-T-B)+'" fill="transparent" data-tip="'+esc(x.lab+": "+x.n+" "+label.toLowerCase())+'"/>';
+    if(i%every===0)s+='<text x="'+(L+i*bw+bw/2)+'" y="'+(H-8)+'" text-anchor="middle">'+esc(x.lab)+'</text>';
   });
   $("dayChart").innerHTML=s+'</svg>';
 }
-function niceStep(max){const raw=max/4;const p=Math.pow(10,Math.floor(Math.log10(raw||1)));const n=raw/p;return Math.max(1,(n<=1?1:n<=2?2:n<=5?5:10)*p)}
-
+function distChart(rows){
+  if(!rows.length){$("distChart").innerHTML='<p class="empty">No quizzes yet.</p>';return}
+  const B=[["80–100%",80,101],["60–79%",60,80],["40–59%",40,60],["Below 40%",0,40]].map(b=>({lab:b[0],lo:b[1],n:rows.filter(r=>r.percent>=b[1]&&r.percent<b[2]).length}));
+  const max=Math.max(1,...B.map(b=>b.n));
+  $("distChart").innerHTML=B.map(b=>'<div class="accrow" data-tip="'+esc(b.lab+": "+b.n+" quizzes ("+pct(b.n,rows.length)+"%)")+'"><span>'+b.lab+(b.lo<60&&b.n?'<span class="flag">⚠</span>':'')+'</span><span class="acctrack"><i class="'+(b.lo<60?"low":"")+'" style="width:'+(100*b.n/max)+'%"></i></span><span class="v">'+b.n+' <span class="muted">· '+pct(b.n,rows.length)+'%</span></span></div>').join("")+
+    '<p class="muted" style="margin:0;font-size:13px">Finished quizzes by score. Median '+Math.round(median(rows.map(r=>r.percent)))+'%.</p>';
+}
 function accChart(rows){
+  const data=topicAgg(rows);
+  if(!data.length){$("accChart").innerHTML='<p class="empty">No data yet.</p>';$("accTitle").textContent="Weakest topics";return}
   const multi=new Set(rows.map(r=>r.class+"|"+r.subject)).size>1;
-  $("accTitle").textContent=multi?"Accuracy by topic · all subjects (pick a subject to focus)":"Accuracy by topic · "+className(rows[0].class)+" "+subjectName(rows[0].class,rows[0].subject);
-  const agg={};
-  rows.forEach(r=>Object.entries(r.topics||{}).forEach(([k,v])=>{const m=String(v).match(/^(\d+)\/(\d+)$/);if(!m)return;
-    const name=(multi?subjectName(r.class,r.subject)+" · ":"")+k;const a=agg[name]||(agg[name]={name,ok:0,n:0});a.ok+=+m[1];a.n+=+m[2]}));
-  let data=Object.values(agg).filter(x=>x.n).map(x=>Object.assign(x,{p:x.ok/x.n}));
-  data.sort((a,b)=>a.p-b.p);
-  const more=data.length>12?data.length-12:0;data=data.slice(0,12);
-  $("accChart").innerHTML=data.map(x=>{const pct=Math.round(x.p*100),low=pct<60;
-    return '<div class="accrow" data-tip="'+esc(x.name+": "+x.ok+" of "+x.n+" answers correct")+'"><span>'+esc(x.name)+(low?'<span class="flag">⚠ Needs work</span>':'')+'</span><span class="acctrack"><i class="'+(low?"low":"")+'" style="width:'+pct+'%"></i></span><span class="v">'+pct+'%</span></div>'}).join("")+
-    '<p class="muted" style="margin:0;font-size:13px">Weakest first. Below 60% is flagged.'+(more?' '+more+' stronger topics not shown.':'')+'</p>';
+  $("accTitle").textContent="Weakest topics"+(multi?" · all subjects":" · "+className(rows[0].class)+" "+subjectName(rows[0].class,rows[0].subject));
+  $("accChart").innerHTML=data.slice(0,6).map(x=>{const p=Math.round(x.p*100),low=p<60;
+    return '<div class="accrow" data-tip="'+esc(x.name+": "+x.ok+" of "+x.n+" answers correct")+'"><span>'+esc(x.name)+(low?'<span class="flag">⚠</span>':'')+'</span><span class="acctrack"><i class="'+(low?"low":"")+'" style="width:'+p+'%"></i></span><span class="v">'+p+'%</span></div>'}).join("")+
+    '<p class="muted" style="margin:0;font-size:13px">Below 60% is flagged. '+(data.length>6?(data.length-6)+' more topics in “All topics”.':'')+'</p>';
+}
+function featChart(acts){
+  const data=featAgg(acts.filter(a=>LEARN.includes(a.event)));
+  if(!data.length){$("featChart").innerHTML='<p class="empty">No activity logged in this period yet.</p>';$("featTitle").textContent="Feature usage";return}
+  const ses=new Set(acts.map(a=>a.session)).size;
+  $("featTitle").textContent="Feature usage · "+plural(ses,"session");
+  const max=data[0].n;
+  $("featChart").innerHTML=data.slice(0,7).map(x=>'<div class="accrow" data-tip="'+esc((FEAT[x.ev]||x.ev)+": "+x.n+" times by "+plural(x.u.size,"student"))+'"><span>'+esc(FEAT[x.ev]||x.ev)+'</span><span class="acctrack"><i style="width:'+(100*x.n/max)+'%"></i></span><span class="v">'+x.n+' <span class="muted">· '+x.u.size+' 👤</span></span></div>').join("")+
+    '<p class="muted" style="margin:0;font-size:13px">Times used · different students. Learning features only; “Details” shows every event.</p>';
 }
 
-function studentTable(rows){
+/* ---------- tables ---------- */
+function subjectTable(rows,acts){
+  const m={};const get=(c,s)=>m[c+"|"+s]||(m[c+"|"+s]={c,s,n:0,sum:0,who:new Set(),started:0,finished:0,tutor:0,last:null});
+  rows.forEach(r=>{const x=get(r.class,r.subject);x.n++;x.sum+=r.percent;x.who.add(r.k);if(!x.last||r.t>x.last)x.last=r.t});
+  acts.forEach(a=>{if(!a.class||!a.subject)return;const x=get(a.class,a.subject);if(a.k!=="guest")x.who.add(a.k);if(!x.last||a.t>x.last)x.last=a.t;
+    if(a.event==="quiz_start")x.started++;else if(a.event==="quiz_finish")x.finished++;else if(a.event==="open_tutor"||a.event==="tutor_page")x.tutor++});
+  const list=Object.values(m).sort((a,b)=>b.n-a.n);
+  const pc=v=>v==null?'<span class="muted">–</span>':'<span class="'+(v<60?"low":"")+'">'+Math.round(v)+'%</span>';
+  $("bySubject").innerHTML='<thead><tr><th>Class</th><th>Subject</th><th class="num">Students</th><th class="num">Quizzes</th><th class="num">Average</th><th class="num">Completion</th><th class="num">Tutor views</th><th>Weakest topic</th></tr></thead><tbody>'+
+    (list.length?list.map(x=>{const w=topicAgg(rows.filter(r=>r.class===x.c&&r.subject===x.s))[0];
+      return '<tr class="click" data-cls="'+esc(x.c)+'" data-sub="'+esc(x.s)+'"><td>'+esc(className(x.c))+'</td><td>'+esc(subjectName(x.c,x.s))+'</td><td class="num">'+x.who.size+'</td><td class="num">'+x.n+'</td><td class="num">'+pc(x.n?x.sum/x.n:null)+'</td><td class="num">'+(x.started?pc(Math.min(100,100*x.finished/x.started)):'<span class="muted">–</span>')+'</td><td class="num">'+x.tutor+'</td><td>'+(w?esc(w.name)+' <span class="'+(w.p<.6?"low":"muted")+'">'+Math.round(w.p*100)+'%</span>':'<span class="muted">–</span>')+'</td></tr>'}).join(""):'<tr><td colspan="8" class="empty">No data in this period.</td></tr>')+'</tbody>';
+}
+function studentTable(rows,acts){
   const q=$("search").value.trim().toLowerCase();
-  const m={};
-  rows.forEach(r=>{const k=who(r);const s=m[k]||(m[k]={name:r.name,cls:className(r.class),section:String(r.section).toUpperCase(),n:0,sum:0,easy:null,hard:null,adv:null,last:r.t});
-    s.n++;s.sum+=r.percent;if(r.t>s.last)s.last=r.t;
-    if(r.level==="hard")s.hard=Math.max(s.hard??0,r.percent);else if(r.level==="advanced")s.adv=Math.max(s.adv??0,r.percent);else s.easy=Math.max(s.easy??0,r.percent)});
-  let list=Object.values(m).map(s=>Object.assign(s,{avg:s.sum/s.n})).filter(s=>!q||String(s.name).toLowerCase().includes(q));
-  const val=s=>sortKey==="name"||sortKey==="section"||sortKey==="cls"?String(s[sortKey]).toLowerCase():sortKey==="last"?s.last.getTime():(s[sortKey]??-1);
+  let list=studentAgg(rows||filtered(),acts||fAct(false)).filter(s=>!q||String(s.name).toLowerCase().includes(q));
+  const val=s=>sortKey==="name"||sortKey==="clsName"?String(s[sortKey]).toLowerCase():sortKey==="last"?(s.last?s.last.getTime():0):(s[sortKey]??-1);
   list.sort((a,b)=>val(a)<val(b)?-sortDir:val(a)>val(b)?sortDir:0);
-  const cols=[["name","Name"],["cls","Class"],["n","Quizzes",1],["avg","Average",1],["easy","Best easy",1],["hard","Best hard",1],["adv","Best adv.",1],["last","Last active",1]];
+  const cols=[["name","Name"],["clsName","Class"],["n","Quizzes",1],["avg","Average",1],["easy","Best easy",1],["hard","Best hard",1],["adv","Best adv.",1],["active","Days active",1],["last","Last active",1]];
   const pc=v=>v==null?'<span class="muted">–</span>':'<span class="'+(v<60?"low":"")+'">'+Math.round(v)+'%</span>';
   $("students").innerHTML='<thead><tr>'+cols.map(c=>'<th class="sortable'+(c[2]?" num":"")+'" data-k="'+c[0]+'" aria-sort="'+(sortKey===c[0]?(sortDir>0?"ascending":"descending"):"none")+'">'+c[1]+(sortKey===c[0]?(sortDir>0?" ▲":" ▼"):"")+'</th>').join("")+'</tr></thead><tbody>'+
-    (list.length?list.map(s=>'<tr><td>'+esc(s.name)+'</td><td>'+esc(s.cls)+'</td><td class="num">'+s.n+'</td><td class="num">'+pc(s.avg)+'</td><td class="num">'+pc(s.easy)+'</td><td class="num">'+pc(s.hard)+'</td><td class="num">'+pc(s.adv)+'</td><td class="num">'+s.last.toLocaleDateString([], {day:"numeric",month:"short"})+'</td></tr>').join(""):'<tr><td colspan="8" class="empty">No students match.</td></tr>')+'</tbody>';
-  $("students").querySelectorAll("th[data-k]").forEach(th=>th.addEventListener("click",()=>{const k=th.dataset.k;if(sortKey===k)sortDir=-sortDir;else{sortKey=k;sortDir=(k==="name"||k==="section"||k==="cls")?1:-1}studentTable(filtered())}));
+    (list.length?list.map(s=>'<tr class="click" data-stu="'+esc(s.k)+'"><td><span class="name">'+esc(s.name)+'</span></td><td>'+esc(s.clsName)+'</td><td class="num">'+s.n+'</td><td class="num">'+pc(s.avg)+'</td><td class="num">'+pc(s.easy)+'</td><td class="num">'+pc(s.hard)+'</td><td class="num">'+pc(s.adv)+'</td><td class="num">'+s.active+'</td><td class="num">'+(s.last?s.last.toLocaleDateString([], {day:"numeric",month:"short"}):"–")+'</td></tr>').join(""):'<tr><td colspan="9" class="empty">No students match.</td></tr>')+'</tbody>';
+  $("students").querySelectorAll("th[data-k]").forEach(th=>th.addEventListener("click",()=>{const k=th.dataset.k;if(sortKey===k)sortDir=-sortDir;else{sortKey=k;sortDir=(k==="name"||k==="clsName")?1:-1}studentTable()}));
 }
-
+function attemptRows(list,withName){
+  return list.map(r=>'<tr><td>'+r.t.toLocaleString([], {day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"})+'</td>'+(withName?'<td><span class="name" data-stu="'+esc(r.k)+'">'+esc(r.name)+'</span></td>':'')+'<td>'+esc(className(r.class))+' '+esc(subjectName(r.class,r.subject))+'<br><span class="muted" style="font-size:13px">'+esc(r.chapter==="midterm"?"Midterm":chapterName(r.class,r.subject,r.chapter))+'</span></td><td><span class="pill '+(r.level==="easy"?"":"hard")+'">'+(LEVEL[r.level]||"Easy")+'</span></td><td class="num"><span class="'+(r.percent<60?"low":"")+'">'+r.score+'/'+r.total+'</span> <span class="muted">('+Math.round(r.percent)+'%)</span></td><td class="num">'+fmtTime(r.seconds)+'</td></tr>').join("");
+}
 function recentTable(rows){
-  const list=rows.slice().sort((a,b)=>b.t-a.t).slice(0,25);
-  const fmt=s=>Math.floor(s/60)+"m "+String(Math.round(s%60)).padStart(2,"0")+"s";
-  $("recent").innerHTML='<thead><tr><th>When</th><th>Name</th><th>Class</th><th>Subject</th><th>Level</th><th class="num">Score</th><th class="num">Time</th></tr></thead><tbody>'+
-    (list.length?list.map(r=>'<tr><td>'+r.t.toLocaleString([], {day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"})+'</td><td>'+esc(r.name)+'</td><td>'+esc(className(r.class)+(r.section?" – "+String(r.section).toUpperCase():""))+'</td><td>'+esc(subjectName(r.class,r.subject))+'</td><td><span class="pill '+(r.level==="easy"?"":"hard")+'">'+({hard:"Hard",advanced:"Advanced"}[r.level]||"Easy")+'</span></td><td class="num"><span class="'+(r.percent<60?"low":"")+'">'+r.score+'/'+r.total+'</span> <span class="muted">('+Math.round(r.percent)+'%)</span></td><td class="num">'+fmt(r.seconds)+'</td></tr>').join(""):'<tr><td colspan="7" class="empty">No attempts yet.</td></tr>')+'</tbody>';
+  const list=rows.slice().sort((a,b)=>b.t-a.t).slice(0,50);
+  $("recent").innerHTML='<thead><tr><th>When</th><th>Name</th><th>Class · subject</th><th>Level</th><th class="num">Score</th><th class="num">Time</th></tr></thead><tbody>'+
+    (list.length?attemptRows(list,true):'<tr><td colspan="6" class="empty">No attempts yet.</td></tr>')+'</tbody>';
+}
+function logTable(acts){
+  acts=acts||fAct(false);const q=$("logSearch").value.trim().toLowerCase();
+  const list=acts.filter(a=>!q||(a.name+" "+a.event+" "+(FEAT[a.event]||"")+" "+a.detail).toLowerCase().includes(q)).sort((a,b)=>b.t-a.t).slice(0,200);
+  $("actLog").innerHTML='<thead><tr><th>When</th><th>Name</th><th>What</th><th>Where</th><th>Detail</th></tr></thead><tbody>'+
+    (list.length?list.map(a=>'<tr><td>'+a.t.toLocaleString([], {day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"})+'</td><td><span class="name" data-stu="'+esc(a.k)+'">'+esc(a.name)+'</span></td><td>'+esc(FEAT[a.event]||a.event)+'</td><td>'+(a.class?esc(className(a.class)+" "+subjectName(a.class,a.subject)):'<span class="muted">'+(a.page==="french"?"French page":"Home")+'</span>')+'</td><td class="muted">'+esc(a.detail)+'</td></tr>').join(""):'<tr><td colspan="5" class="empty">No activity logged yet.</td></tr>')+'</tbody>'+
+    (list.length===200?'<caption style="caption-side:bottom;text-align:left" class="muted">Newest 200 shown – narrow the filters or search.</caption>':'');
 }
 
-/* tooltip */
+/* ---------- student detail ---------- */
+function showStudent(k){
+  const s=studentAgg(ROWS.filter(r=>r.k===k),ACT.filter(a=>a.k===k))[0];if(!s)return;
+  const acts=ACT.filter(a=>a.k===k);
+  $("stuName").textContent=s.name;
+  const pc=v=>v==null?"–":Math.round(v)+"%";
+  let h='<div class="minis"><div class="mini"><span>Quizzes</span><b>'+s.n+'</b></div><div class="mini"><span>Average</span><b>'+pc(s.avg)+'</b></div><div class="mini"><span>Days active</span><b>'+s.active+'</b></div><div class="mini"><span>Last active</span><b>'+(s.last?s.last.toLocaleDateString([], {day:"numeric",month:"short"}):"–")+'</b></div></div>';
+  h+='<p class="muted" style="margin:0">'+esc(s.clsName)+' · best Easy '+pc(s.easy)+' · best Hard '+pc(s.hard)+' · best Advanced '+pc(s.adv)+(s.trend!=null?' · trend <b style="color:var('+(s.trend>=0?"--good":"--bad")+')">'+(s.trend>=0?"+":"")+Math.round(s.trend)+' pts</b>':'')+'</p>';
+  if(s.list.length>1){const L=s.list,W=600,H=120,P=24,x=i=>P+(W-2*P)*i/(L.length-1),y=v=>10+(H-30)*(1-v/100);
+    h+='<div><h2>Score over time</h2><svg viewBox="0 0 '+W+' '+H+'" width="100%" role="img" aria-label="Score over time">'+[0,50,100].map(v=>'<line class="gridline" x1="'+P+'" x2="'+(W-P)+'" y1="'+y(v)+'" y2="'+y(v)+'"/><text x="'+(P-4)+'" y="'+(y(v)+4)+'" text-anchor="end">'+v+'</text>').join("")+
+      '<polyline fill="none" stroke="var(--accent)" stroke-width="2" points="'+L.map((r,i)=>x(i)+","+y(r.percent)).join(" ")+'"/>'+L.map((r,i)=>'<circle cx="'+x(i)+'" cy="'+y(r.percent)+'" r="4" fill="var(--accent)" stroke="var(--sheet)" stroke-width="2" data-tip="'+esc(r.t.toLocaleDateString([], {day:"numeric",month:"short"})+" · "+(LEVEL[r.level]||"")+" · "+Math.round(r.percent)+"%")+'"/>').join("")+'</svg></div>'}
+  const t=topicAgg(s.list);
+  if(t.length)h+='<div><h2>Topics, weakest first</h2><div class="acc">'+t.slice(0,6).map(x=>{const p=Math.round(x.p*100);return '<div class="accrow"><span>'+esc(x.name)+'</span><span class="acctrack"><i class="'+(p<60?"low":"")+'" style="width:'+p+'%"></i></span><span class="v">'+p+'% <span class="muted">('+x.ok+'/'+x.n+')</span></span></div>'}).join("")+'</div></div>';
+  const f=featAgg(acts);
+  if(f.length)h+='<div><h2>What they used</h2><div class="chips">'+f.map(x=>'<span class="chip">'+esc(FEAT[x.ev]||x.ev)+' · '+x.n+'</span>').join("")+'</div></div>';
+  if(s.list.length)h+='<div><h2>All quizzes</h2><div class="tablewrap"><table><thead><tr><th>When</th><th>Class · subject</th><th>Level</th><th class="num">Score</th><th class="num">Time</th></tr></thead><tbody>'+attemptRows(s.list.slice().reverse(),false)+'</tbody></table></div></div>';
+  $("stuBody").innerHTML=h;
+  const d=$("stu");if(d.showModal){if(!d.open)d.showModal()}else d.setAttribute("open","");
+}
+
+/* ---------- tooltip & events ---------- */
 const tip=$("tip");
 document.addEventListener("mousemove",e=>{const t=e.target.closest&&e.target.closest("[data-tip]");if(!t){tip.hidden=true;return}
   tip.textContent=t.dataset.tip;tip.hidden=false;const x=Math.min(e.clientX+12,window.innerWidth-tip.offsetWidth-8);tip.style.left=x+"px";tip.style.top=(e.clientY-36)+"px"});
-
+document.addEventListener("click",e=>{const el=e.target;let x;
+  if(el.closest("#drillClose")){closeDrill();return}
+  if(el.closest("#stuClose")){$("stu").close();return}
+  if((x=el.closest("[data-stu]"))){showStudent(x.dataset.stu);return}
+  if((x=el.closest("[data-drill]"))){drill(x.dataset.drill);return}
+  if((x=el.closest("#bySubject tr[data-cls]"))){$("fClass").value=x.dataset.cls;$("fSubject").value=x.dataset.sub;render();window.scrollTo({top:0,behavior:"smooth"});return}
+  if((x=el.closest("#trendSeg button"))){TREND=x.dataset.m;document.querySelectorAll("#trendSeg button").forEach(b=>b.setAttribute("aria-pressed",b===x));dayChart(fRows(false),fAct(false))}
+});
+$("stu").addEventListener("click",e=>{if(e.target===$("stu"))$("stu").close()});
 $("loginForm").addEventListener("submit",e=>{e.preventDefault();load($("key").value)});
 ["fPeriod","fClass","fSubject","fSection","fLevel"].forEach(id=>$(id).addEventListener("change",render));
-$("search").addEventListener("input",()=>studentTable(filtered()));
+$("search").addEventListener("input",()=>studentTable());
+$("logSearch").addEventListener("input",()=>logTable());
 $("refresh").addEventListener("click",()=>load(ss("cockpit-key")||""));
 $("logout").addEventListener("click",()=>{ss("cockpit-key",null);location.reload()});
 const saved=ss("cockpit-key");if(saved)load(saved);
-setInterval(()=>{const k=ss("cockpit-key");if(k&&!document.hidden)load(k)},120000);
+setInterval(()=>{const k=ss("cockpit-key");if(k&&!document.hidden&&!$("stu").open)load(k)},120000);
 </script>
 </body>
 </html>
