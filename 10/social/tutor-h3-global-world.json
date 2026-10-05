@@ -1,0 +1,743 @@
+{
+ "id": "class10-social-h3-tutor",
+ "chapter": "History III · The Making of a Global World",
+ "source": "NCERT India and the Contemporary World II (Class X History), Chapter III",
+ "overview": {
+  "bigIdea": "Globalisation is not new. For centuries **trade, migration and capital** have linked the world – through silk routes, conquest and disease, colonial plantations, two world wars, a Great Depression and the Bretton Woods system. Each phase brought **growth for some and misery for others**.",
+  "ladderTitle": "Four phases of a global world",
+  "ladder": [
+   {
+    "step": "Pre-modern",
+    "q": "How old are global links?",
+    "a": "Silk routes, food, conquest and disease"
+   },
+   {
+    "step": "1815–1914",
+    "q": "How did a world economy form?",
+    "a": "Trade, labour and capital flows; technology; colonialism"
+   },
+   {
+    "step": "1914–1939",
+    "q": "What broke it?",
+    "a": "First World War, mass production, Great Depression"
+   },
+   {
+    "step": "After 1945",
+    "q": "How was it rebuilt?",
+    "a": "Bretton Woods, decolonisation, G-77, MNCs, globalisation"
+   }
+  ],
+  "languagesTitle": "How to answer",
+  "languages": [
+   {
+    "name": "Flows",
+    "text": "Trade, labour, capital – classify every example."
+   },
+   {
+    "name": "Chains",
+    "text": "Write cause → effect chains (Corn Laws, rinderpest, Depression)."
+   },
+   {
+    "name": "Two sides",
+    "text": "Always show who gained and who lost."
+   }
+  ],
+  "plan": [
+   {
+    "pass": "Pre-modern",
+    "time": "8 min",
+    "text": "Lesson 1 – silk routes, food, conquest and disease."
+   },
+   {
+    "pass": "19th century",
+    "time": "15 min",
+    "text": "Lessons 2–3 – three flows, Corn Laws chain, rinderpest, indenture, India’s trade."
+   },
+   {
+    "pass": "Inter-war",
+    "time": "10 min",
+    "text": "Lesson 4 – war, Ford, Depression and India."
+   },
+   {
+    "pass": "Post-war and test",
+    "time": "12 min",
+    "text": "Lesson 5, then the quiz; revise after 1, 3 and 7 days."
+   }
+  ]
+ },
+ "lessons": [
+  {
+   "topic": "premod",
+   "ref": "1",
+   "title": "The pre-modern world",
+   "time": "8 min",
+   "hook": "Your potato, tomato and chilli are travellers. Until about **500 years ago** nobody in India or Europe had tasted them – they came from the Americas after Columbus.",
+   "core": [
+    {
+     "term": "Early links",
+     "def": "Indus valley–West Asia coastal trade (3000 BCE); Maldives cowries to China and East Africa; germs spread from the 7th century."
+    },
+    {
+     "term": "Silk routes",
+     "def": "Land and sea routes linking Asia, Europe and northern Africa; Chinese silk and pottery, Indian and Southeast Asian textiles and spices; gold and silver flowed east; Buddhism, Christianity and Islam spread."
+    },
+    {
+     "term": "Food travels",
+     "def": "Noodles → spaghetti (perhaps); potatoes, soya, groundnuts, maize, tomatoes, chillies, sweet potatoes from America; Irish Potato Famine 1845–49."
+    },
+    {
+     "term": "Conquest and disease",
+     "def": "Portuguese and Spanish conquest of America by mid-16th century; smallpox killed natives who had no immunity; silver from Peru and Mexico."
+    },
+    {
+     "term": "Shift of trade",
+     "def": "China retreated into isolation from the 15th century; Americas rose; Europe became the centre of world trade."
+    }
+   ],
+   "explain": [
+    "**Indian Ocean:** for centuries a bustling trade with the subcontinent at its centre; Europeans expanded or redirected flows towards Europe.",
+    "**Slavery:** by the 18th century plantations in America, worked by slaves captured in Africa, grew cotton and sugar for European markets."
+   ],
+   "example": {
+    "q": "Explain how the global transfer of disease in the pre-modern world helped in the colonisation of the Americas. (3 marks)",
+    "steps": [
+     "**Isolation:** America’s original inhabitants had been cut off for millions of years and had no immunity to European diseases.",
+     "**Smallpox:** carried by Spanish conquerors, it spread deep into the continent, even ahead of Europeans.",
+     "**Result:** it killed and decimated whole communities, paving the way for conquest – guns could be captured, but not diseases."
+    ],
+    "answer": "No immunity → smallpox spread → communities destroyed → conquest."
+   },
+   "mistakes": [
+    "Saying potatoes are native to India.",
+    "Saying superior firepower alone won America.",
+    "Forgetting that gold and silver flowed FROM Europe TO Asia on the silk routes."
+   ],
+   "tip": "‘Two examples of global exchange before the 17th century’: one from Asia (silk routes) and one from the Americas (food crops or smallpox).",
+   "memory": "3000 BCE Indus–West Asia · Silk routes till ~15th c. · Potatoes after Columbus · Smallpox = weapon · Irish famine 1845–49.",
+   "examAsk": [
+    "Give two examples of global exchange before the 17th century.",
+    "How did disease help colonise the Americas?",
+    "What do we mean when we say the world ‘shrank’ in the 1500s?"
+   ],
+   "cards": [
+    {
+     "q": "Currency from the Maldives?",
+     "a": "Cowries (seashells)."
+    },
+    {
+     "q": "Deadliest ‘weapon’ in America?",
+     "a": "Smallpox germs."
+    },
+    {
+     "q": "Irish Potato Famine years?",
+     "a": "1845–1849."
+    }
+   ],
+   "play": [
+    {
+     "type": "sort",
+     "title": "What travelled where?",
+     "say": "Tap the direction in which each item moved.",
+     "buckets": [
+      "From the Americas",
+      "From Asia westwards",
+      "From Europe"
+     ],
+     "items": [
+      [
+       "Potatoes and maize",
+       0,
+       "Introduced to Europe and Asia after Columbus."
+      ],
+      [
+       "Chinese silk",
+       1,
+       "Gave the silk routes their name."
+      ],
+      [
+       "Smallpox germs to America",
+       2,
+       "Carried by Spanish conquerors."
+      ],
+      [
+       "Indian textiles and spices",
+       1,
+       "Travelled along the silk routes."
+      ],
+      [
+       "Silver from Peru and Mexico",
+       0,
+       "Enhanced Europe’s wealth."
+      ],
+      [
+       "Gold and silver to Asia",
+       2,
+       "Paid for Asian goods on the silk routes."
+      ],
+      [
+       "Chillies and tomatoes",
+       0,
+       "From America’s original inhabitants."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "topic": "c19",
+   "ref": "2–2.2",
+   "title": "A world economy takes shape (1815–1914)",
+   "time": "12 min",
+   "hook": "In 1890 a Londoner’s bread came from wheat grown thousands of miles away by a recently arrived worker on a farm that was a forest a generation ago – carried by a railway built just for it.",
+   "core": [
+    {
+     "term": "Three flows",
+     "def": "Trade (goods like cloth or wheat), labour (migration for work), capital (short- or long-term investment over long distances)."
+    },
+    {
+     "term": "Corn Laws",
+     "def": "Restricted corn imports under pressure from landed groups; abolished after industrialists and urban dwellers objected."
+    },
+    {
+     "term": "Migration",
+     "def": "Nearly 50 million left Europe for America and Australia; about 150 million worldwide."
+    },
+    {
+     "term": "World trade",
+     "def": "Multiplied 25–40 times, 1820–1914; nearly 60% primary products."
+    },
+    {
+     "term": "Technology",
+     "def": "Railways, steamships, telegraph; refrigerated ships for frozen meat."
+    },
+    {
+     "term": "Canal Colonies",
+     "def": "West Punjab irrigated for wheat and cotton exports, settled by peasants from other parts of Punjab."
+    }
+   ],
+   "explain": [
+    "**Corn Laws chain:** abolition → cheap imports → British farming collapses → unemployed go to cities or abroad → food prices fall, demand rises → lands cleared in Eastern Europe, Russia, America, Australia → railways, ports, settlements need capital (London) and labour (migrants).",
+    "**Meat:** before the 1870s live animals were shipped – costly, many died. Refrigerated ships made meat cheap: Europe’s poor added meat, butter and eggs to bread and potatoes."
+   ],
+   "example": {
+    "q": "Explain the effects of the British government’s decision to abolish the Corn Laws. (3 marks)",
+    "steps": [
+     "**Cheap imports:** food could be imported more cheaply than it was produced in Britain.",
+     "**Rural crisis:** British agriculture could not compete; land lay uncultivated; thousands lost work and moved to cities or overseas.",
+     "**Global change:** as food prices fell and demand rose, lands were cleared abroad, and capital and labour flowed to America and Australia."
+    ],
+    "answer": "Cheap food → farm collapse → migration → world agricultural economy."
+   },
+   "mistakes": [
+    "Saying the Corn Laws were abolished by landlords (industrialists and urban dwellers forced it).",
+    "Mixing the three flows.",
+    "Saying technology alone caused change (it was shaped by social and political factors)."
+   ],
+   "tip": "Draw the Corn Laws flow chart with 5 arrows – the textbook asks for it as an activity and it scores well in long answers.",
+   "memory": "3 flows: Trade · Labour · Capital · 50 million emigrants · Trade ×25–40 · 60% primary · Refrigerated ships.",
+   "examAsk": [
+    "Explain the three types of flows with examples involving India.",
+    "Effects of abolishing the Corn Laws.",
+    "Give two examples of the impact of technology on food availability."
+   ],
+   "cards": [
+    {
+     "q": "Three flows?",
+     "a": "Trade, labour, capital."
+    },
+    {
+     "q": "Emigrants from Europe to America/Australia?",
+     "a": "Nearly 50 million."
+    },
+    {
+     "q": "What made frozen meat exports possible?",
+     "a": "Refrigerated ships."
+    }
+   ],
+   "play": [
+    {
+     "type": "order",
+     "title": "The Corn Laws flow chart",
+     "say": "Tap each step of the chain in order.",
+     "first": "cause",
+     "last": "effect",
+     "items": [
+      "Corn Laws abolished",
+      "Cheap food imports enter Britain",
+      "British farming cannot compete; workers lose jobs",
+      "Food prices fall and consumption rises",
+      "Lands cleared in America, Russia and Australia",
+      "Capital flows from London and labour migrates"
+     ],
+     "done": "Britain’s decision to import food led to migration to America and Australia."
+    }
+   ]
+  },
+  {
+   "topic": "colonial",
+   "ref": "2.3–2.6",
+   "title": "Colonialism, rinderpest, indenture and Indian trade",
+   "time": "14 min",
+   "hook": "In the 1890s a cattle disease raced across Africa ‘like forest fire’ and killed **90%** of the cattle. For European colonisers it was the tool that finally forced Africans to work for wages.",
+   "core": [
+    {
+     "term": "Late 19th-century colonialism",
+     "def": "Britain and France expanded; Belgium and Germany new colonial powers; US took Spanish colonies; Berlin 1885 carved up Africa."
+    },
+    {
+     "term": "Rinderpest",
+     "def": "Came in the late 1880s with infected cattle from British Asia for Italian soldiers in Eritrea; Atlantic coast 1892; Cape five years later; 90% cattle killed."
+    },
+    {
+     "term": "Forcing labour",
+     "def": "Heavy taxes payable only by wage work; inheritance laws changed; miners confined in compounds; control of scarce cattle."
+    },
+    {
+     "term": "Indenture",
+     "def": "Five-year contracts; from eastern UP, Bihar, central India, dry Tamil Nadu; to Trinidad, Guyana, Surinam, Mauritius, Fiji; ‘a new system of slavery’; abolished 1921."
+    },
+    {
+     "term": "Indian entrepreneurs",
+     "def": "Shikaripuri Shroffs, Nattukottai Chettiars; Hyderabadi Sindhi traders’ emporia from the 1860s."
+    },
+    {
+     "term": "India’s trade",
+     "def": "Cotton textiles fell from ~30% of exports (1800) to 15% (1815) to below 3% (1870s); raw cotton rose 5% → 35% (1812–1871); opium to China; trade surplus paid home charges."
+    }
+   ],
+   "explain": [
+    "**Culture of survival:** Hosay in Trinidad, Rastafarianism, chutney music – cultural fusion is part of the making of the global world.",
+    "**Multilateral settlement:** Britain’s surplus with India balanced its deficits with other countries; it also paid ‘home charges’ – remittances, interest on India’s debt and pensions of British officials."
+   ],
+   "example": {
+    "q": "Explain the effects of the coming of rinderpest to Africa. (3/5 marks)",
+    "steps": [
+     "**Before:** land and livestock sustained Africans; few worked for wages.",
+     "**Spread:** entered East Africa in the late 1880s, reached the Atlantic coast in 1892 and the Cape five years later.",
+     "**Destruction:** killed 90 per cent of the cattle and destroyed African livelihoods.",
+     "**Monopoly:** planters, mine owners and colonial governments took control of scarce cattle.",
+     "**Result:** Africans were forced into the labour market; Europeans could conquer and subdue Africa."
+    ],
+    "answer": "Livelihood lost → cattle monopolised → forced labour → conquest."
+   },
+   "mistakes": [
+    "Saying rinderpest affected humans.",
+    "Saying indentured workers mostly returned to India (most stayed).",
+    "Saying India exported more cotton cloth in the 19th century (it exported raw cotton)."
+   ],
+   "tip": "For indenture letters or answers use: recruitment (agents, false promises) → journey → harsh work and punishment → cultural survival.",
+   "memory": "Berlin 1885 · Rinderpest 90% · 1892 Atlantic · Indenture 5 years, abolished 1921 · Cotton cloth 30% → <3% · Raw cotton 5% → 35%.",
+   "examAsk": [
+    "Effects of rinderpest in Africa.",
+    "Imagine you are an indentured labourer – write a letter home.",
+    "How did India help Britain balance its trade?"
+   ],
+   "cards": [
+    {
+     "q": "Cattle killed by rinderpest?",
+     "a": "90 per cent."
+    },
+    {
+     "q": "Indenture contract length?",
+     "a": "Five years."
+    },
+    {
+     "q": "Raw cotton share of exports 1812 → 1871?",
+     "a": "5% → 35%."
+    }
+   ],
+   "play": [
+    {
+     "type": "match",
+     "title": "Colonial connections",
+     "say": "Match each item with what it explains.",
+     "pairs": [
+      [
+       "Berlin, 1885",
+       "Africa carved up by European powers"
+      ],
+      [
+       "Rinderpest",
+       "Cattle plague that forced Africans into wage labour"
+      ],
+      [
+       "Hosay",
+       "Trinidad carnival from the Muharram procession"
+      ],
+      [
+       "Nattukottai Chettiars",
+       "Bankers financing export agriculture in Southeast Asia"
+      ],
+      [
+       "Opium",
+       "Sold to China to pay for tea"
+      ],
+      [
+       "Home charges",
+       "Pensions, interest and remittances paid to Britain"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "topic": "interwar",
+   "ref": "3",
+   "title": "The inter-war economy and the Great Depression",
+   "time": "12 min",
+   "hook": "Cars rolled off Henry Ford’s line every **three minutes** and Americans bought fridges on hire purchase. Then in 1929 it all vanished ‘in a puff of dust’.",
+   "core": [
+    {
+     "term": "First World War",
+     "def": "Allies (Britain, France, Russia, later US) vs Central Powers (Germany, Austria-Hungary, Ottoman Turkey); first modern industrial war; 9 million dead, 20 million injured; women took men’s jobs; US became a creditor."
+    },
+    {
+     "term": "Post-war Britain",
+     "def": "Lost Indian market to Indian and Japanese industry; huge debts; 1921 – one in five workers jobless."
+    },
+    {
+     "term": "Mass production",
+     "def": "Ford’s assembly line (from a Chicago slaughterhouse) in Detroit; $5 wage (1914); unions banned; T-Model; US car output 2 million (1919) → 5 million+ (1929); hire purchase."
+    },
+    {
+     "term": "Causes of the Depression",
+     "def": "Agricultural overproduction and falling prices; withdrawal of US loans (over $1 billion in early 1928 to a quarter a year later); US doubled import duties."
+    },
+    {
+     "term": "Impact in the US",
+     "def": "Over 4,000 banks closed by 1933; about 110,000 companies collapsed 1929–32."
+    },
+    {
+     "term": "India",
+     "def": "Exports and imports nearly halved 1928–34; wheat prices fell 50%; jute price crashed over 60%; revenue not cut; gold exported; urban fixed-income groups better off."
+    }
+   ],
+   "explain": [
+    "**Wheat glut:** eastern Europe’s supply returned after the war while Canada, America and Australia had expanded – prices fell and farmers fell into debt.",
+    "**Link to India’s politics:** rural India was seething with unrest when Gandhiji launched Civil Disobedience at the height of the Depression."
+   ],
+   "example": {
+    "q": "Explain the causes of the Great Depression. (5 marks)",
+    "steps": [
+     "**Fragile post-war economy:** the war boom ended and recovery was difficult.",
+     "**Agricultural overproduction:** falling prices made farmers grow more, worsening the glut; farm produce rotted.",
+     "**Dependence on US loans:** many countries financed investment with US loans; lenders panicked – loans fell from over $1 billion (first half of 1928) to a quarter of that a year later.",
+     "**Spread:** bank failures and currency collapse in Europe; slump in agricultural and raw material prices in Latin America.",
+     "**Protectionism:** the US doubled import duties, a severe blow to world trade; US banks called back loans and collapsed."
+    ],
+    "answer": "Overproduction + loan withdrawal + protectionism = worldwide slump."
+   },
+   "mistakes": [
+    "Saying the Depression began in India.",
+    "Saying Ford raised wages out of kindness (he called it his best cost-cutting decision).",
+    "Forgetting that urban India was less hurt."
+   ],
+   "tip": "India and the Depression: Trade halved, Wheat −50%, Jute −60%, Revenue unchanged, Gold exported, Cities better off.",
+   "memory": "WWI 9m dead · Ford $5 (1914) · Cars 2m → 5m · 1929 crash · 4,000 banks · India wheat −50%, jute −60%.",
+   "examAsk": [
+    "Explain the causes of the Great Depression.",
+    "Effects of the Great Depression on the Indian economy.",
+    "Effects of the death of working-age men in Europe in the war."
+   ],
+   "cards": [
+    {
+     "q": "Ford’s daily wage in 1914?",
+     "a": "$5 (doubled)."
+    },
+    {
+     "q": "US banks closed by 1933?",
+     "a": "Over 4,000."
+    },
+    {
+     "q": "Fall in Indian wheat prices 1928–34?",
+     "a": "50 per cent."
+    }
+   ],
+   "play": [
+    {
+     "type": "sort",
+     "title": "Who was hit hardest?",
+     "say": "Decide whether each group suffered or was better off in India during the Depression.",
+     "buckets": [
+      "Suffered",
+      "Better off"
+     ],
+     "items": [
+      [
+       "Bengal jute growers",
+       0,
+       "Raw jute price crashed over 60%."
+      ],
+      [
+       "Salaried middle-class employees",
+       1,
+       "Fixed incomes, falling prices."
+      ],
+      [
+       "Peasants producing for the world market",
+       0,
+       "Worst hit; revenue not reduced."
+      ],
+      [
+       "Town-dwelling landowners receiving rents",
+       1,
+       "Everything cost less."
+      ],
+      [
+       "Indebted peasants mortgaging land",
+       0,
+       "Sold jewellery and gold."
+      ],
+      [
+       "Industries given tariff protection",
+       1,
+       "Industrial investment grew."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "topic": "postwar",
+   "ref": "4",
+   "title": "Rebuilding the world economy after 1945",
+   "time": "10 min",
+   "hook": "In July 1944, while war still raged, delegates met at a hotel in **Bretton Woods** to design a world economy that would never collapse like 1929 again.",
+   "core": [
+    {
+     "term": "Second World War",
+     "def": "Axis (Germany, Japan, Italy) vs Allies (Britain, France, Soviet Union, US); at least 60 million dead (~3% of 1939 population); more civilians than soldiers died."
+    },
+    {
+     "term": "Two lessons",
+     "def": "Mass production needs mass consumption → stable incomes → full employment, ensured by government; governments must control flows of goods, capital and labour."
+    },
+    {
+     "term": "Bretton Woods",
+     "def": "IMF (external surpluses and deficits) and World Bank (reconstruction) – the Bretton Woods twins; operations from 1947; US effective veto; fixed exchange rates; dollar = $35 per ounce of gold."
+    },
+    {
+     "term": "Early post-war years",
+     "def": "World trade grew over 8% a year and incomes nearly 5% (1950–70); unemployment under 5%."
+    },
+    {
+     "term": "Decolonisation and G-77",
+     "def": "New nations poor; IMF/World Bank turned to them from the late 1950s; G-77 demanded NIEO."
+    },
+    {
+     "term": "Globalisation",
+     "def": "Dollar lost confidence → floating rates; developing countries borrowed from commercial banks → debt crises; MNCs moved to low-wage Asia (China); India, China, Brazil transformed."
+    }
+   ],
+   "explain": [
+    "**Two dominant powers:** the US in the Western world and the Soviet Union, which had transformed itself into a world power during the Depression years.",
+    "**MNCs:** large companies operating in many countries; spread in the 1950s–60s partly because high tariffs forced them to become ‘domestic producers’."
+   ],
+   "example": {
+    "q": "What is meant by the Bretton Woods Agreement? (3 marks)",
+    "steps": [
+     "**Conference:** UN Monetary and Financial Conference, July 1944, Bretton Woods, New Hampshire, USA – aim: economic stability and full employment in the industrial world.",
+     "**Institutions:** IMF to deal with members’ external surpluses and deficits; World Bank to finance post-war reconstruction.",
+     "**System:** fixed exchange rates – national currencies pegged to the dollar, the dollar anchored to gold at $35 per ounce."
+    ],
+    "answer": "Conference + twins + fixed exchange rates."
+   },
+   "mistakes": [
+    "Saying the IMF was set up to help colonies (it was designed for industrial countries).",
+    "Mixing fixed and floating exchange rates.",
+    "Saying the G-77 is a group of rich countries."
+   ],
+   "tip": "G-77 answers: who (developing countries), why (did not benefit, controlled by former colonial powers), what (NIEO – four demands).",
+   "memory": "WWII 60m · Bretton Woods July 1944 · IMF + World Bank (1947) · $35/oz · Trade +8% · G-77 → NIEO · MNCs to low-wage Asia.",
+   "examAsk": [
+    "What is meant by the Bretton Woods Agreement?",
+    "Explain the G-77 and its link to the Bretton Woods twins.",
+    "Effects of MNCs relocating production to Asia."
+   ],
+   "cards": [
+    {
+     "q": "Bretton Woods twins?",
+     "a": "IMF and World Bank."
+    },
+    {
+     "q": "Dollar–gold price?",
+     "a": "$35 per ounce."
+    },
+    {
+     "q": "G-77 demanded?",
+     "a": "A new international economic order (NIEO)."
+    }
+   ],
+   "play": [
+    {
+     "type": "order",
+     "title": "From war to globalisation",
+     "say": "Tap the events in order.",
+     "first": "earliest",
+     "last": "latest",
+     "items": [
+      "July 1944 – Bretton Woods conference",
+      "1947 – IMF and World Bank begin operations",
+      "Late 1950s – Bretton Woods institutions turn to developing countries",
+      "From the 1960s – US dollar loses confidence; fixed rates give way to floating rates",
+      "Mid-1970s – developing countries forced to borrow from Western commercial banks",
+      "Late 1970s – MNCs shift production to low-wage Asian countries"
+     ],
+     "done": "Bretton Woods → its twins → turn to developing countries → floating rates → debt → globalisation."
+    }
+   ]
+  }
+ ],
+ "formulas": [
+  {
+   "name": "Silk routes",
+   "f": "Asia–Europe–N. Africa, before the Christian Era to ~15th c.",
+   "unit": "Silk, pottery, spices; Buddhism",
+   "when": "Pre-modern exchange"
+  },
+  {
+   "name": "Disease",
+   "f": "Smallpox in 16th-century America",
+   "unit": "Natives had no immunity",
+   "when": "Colonisation of America"
+  },
+  {
+   "name": "Three flows",
+   "f": "Trade · Labour · Capital",
+   "unit": "50 million emigrants; trade ×25–40",
+   "when": "19th-century economy"
+  },
+  {
+   "name": "Corn Laws",
+   "f": "Abolished → cheap imports",
+   "unit": "Migration to America and Australia",
+   "when": "Flow-chart questions"
+  },
+  {
+   "name": "Rinderpest",
+   "f": "Late 1880s; 90% cattle killed",
+   "unit": "Africans forced into wage labour",
+   "when": "Colonial impact"
+  },
+  {
+   "name": "Indenture",
+   "f": "5-year contracts; abolished 1921",
+   "unit": "Trinidad, Guyana, Surinam, Mauritius, Fiji",
+   "when": "Labour migration"
+  },
+  {
+   "name": "India’s exports",
+   "f": "Cotton cloth 30% → <3%; raw cotton 5% → 35%",
+   "unit": "Opium to China; trade surplus",
+   "when": "India in the world economy"
+  },
+  {
+   "name": "Depression",
+   "f": "1929–mid-1930s",
+   "unit": "4,000 US banks; India wheat −50%",
+   "when": "Causes and effects"
+  },
+  {
+   "name": "Bretton Woods",
+   "f": "July 1944; IMF + World Bank",
+   "unit": "Dollar at $35/oz gold",
+   "when": "Post-war system"
+  }
+ ],
+ "revision": [
+  "Global links are old: Indus–West Asia trade (3000 BCE), Maldives cowries, silk routes.",
+  "Food travelled: potatoes, maize, tomatoes, chillies from America; Irish Potato Famine 1845–49.",
+  "Smallpox helped Spanish conquest of America; silver from Peru and Mexico enriched Europe.",
+  "Three flows: trade, labour, capital.",
+  "Corn Laws abolished → cheap imports → British farming declined → migration and global agriculture; ~50 million left Europe.",
+  "World trade ×25–40 (1820–1914), 60% primary products; refrigerated ships cut meat prices.",
+  "Berlin 1885 carved up Africa; rinderpest killed 90% cattle and forced Africans into wage labour.",
+  "Indenture: 5 years; eastern UP, Bihar, central India, Tamil Nadu → Caribbean, Mauritius, Fiji; abolished 1921.",
+  "Indian bankers abroad: Shikaripuri Shroffs, Nattukottai Chettiars; Hyderabadi Sindhi traders.",
+  "India: cotton cloth exports fell (30% → <3%), raw cotton rose (5% → 35%); opium to China; surplus paid home charges.",
+  "WWI: first industrial war; 9 million dead; US becomes creditor; Britain in debt; 1921 one in five unemployed.",
+  "Ford’s assembly line, $5 wage, mass consumption on hire purchase.",
+  "Depression (1929): overproduction, US loan withdrawal, US import duties; India – trade halved, wheat −50%, jute −60%.",
+  "Bretton Woods (1944): IMF, World Bank; fixed rates; dollar at $35/oz gold.",
+  "G-77 demanded NIEO; fixed rates collapsed; MNCs moved to low-wage Asia."
+ ],
+ "exam": {
+  "paper": [
+   {
+    "q": "1 mark",
+    "marks": "MCQ / A-R",
+    "what": "Silk routes, Corn Laws, rinderpest, Bretton Woods, G-77, figures"
+   },
+   {
+    "q": "3 marks",
+    "marks": "Short answer",
+    "what": "Effects of Corn Laws, rinderpest, war deaths, Depression on India, MNC relocation"
+   },
+   {
+    "q": "5 marks",
+    "marks": "Long answer",
+    "what": "Three flows with Indian examples; causes of the Great Depression; indenture; G-77"
+   },
+   {
+    "q": "Source-based",
+    "marks": "4 marks",
+    "what": "Indentured labourer’s testimony, jute growers’ lament or Winthorp on smallpox"
+   }
+  ],
+  "sections": [
+   {
+    "title": "Cause–effect answers · 4 steps",
+    "kind": "steps",
+    "items": [
+     "Name the event and its date.",
+     "Give the immediate effect.",
+     "Follow the chain to the wider effect (flow chart).",
+     "Say who gained and who lost."
+    ]
+   },
+   {
+    "title": "Answer writing that scores",
+    "kind": "mem",
+    "items": [
+     "Start with a one-line introduction using the textbook’s key term (e.g. ‘Proto-industrialisation was …’).",
+     "Write in points – one idea per point, key term first. A 3-mark answer needs 3 clear points; a 5-mark answer needs 5.",
+     "Add a date, a name or a figure from the chapter to each point – but only when you are sure of it.",
+     "For ‘Explain / Analyse’ use PEE: Point → Explain → Example. For ‘Compare’ draw a small two-column table.",
+     "Source-based questions: underline the key line in the source first; the answer is usually hidden in it."
+    ]
+   },
+   {
+    "title": "Before the exam",
+    "kind": "note",
+    "items": [
+     "Revise the key facts sheet and the revision list the night before.",
+     "Redo the Play & learn timelines and sorts – if you get every card first time, you know the chapter.",
+     "Practise one 5-mark answer in 8–10 minutes with a timer."
+    ]
+   }
+  ],
+  "checklist": [
+   "I can give examples of pre-modern global exchange from Asia and the Americas.",
+   "I can explain the three flows and the Corn Laws chain.",
+   "I can explain rinderpest, indenture and India’s role in the world economy.",
+   "I can explain the First World War’s effects and the causes of the Great Depression.",
+   "I can describe the Depression’s impact on India.",
+   "I can explain Bretton Woods, G-77 and the start of globalisation."
+  ],
+  "paperTitle": "How this chapter is examined",
+  "paperCols": [
+   "Marks",
+   "Question type",
+   "Likely asks"
+  ],
+  "paperNote": "Based on the CBSE Class X Social Science pattern (MCQ, assertion–reason, 3-mark short, 4-mark source-based and 5-mark long answers; History also has map work). Practise these types first."
+ },
+ "method": "Built on proven learning methods: understand the story first, sort and match ideas with your hands (active learning), write model answers point by point, test yourself (active recall) and revisit after 1, 3 and 7 days (spaced revision).",
+ "sheetTitle": "Key facts sheet",
+ "sheetCols": [
+  "Topic",
+  "Key fact",
+  "Detail",
+  "Use it for"
+ ]
+}

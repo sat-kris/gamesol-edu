@@ -1,0 +1,738 @@
+{
+ "id": "class10-social-h4-tutor",
+ "chapter": "History IV · The Age of Industrialisation",
+ "source": "NCERT India and the Contemporary World II (Class X History), Chapter IV",
+ "overview": {
+  "bigIdea": "Pictures of 1900 showed industrialisation as magic progress. The real history is slower and wider: **proto-industry before factories**, **hand labour alongside steam**, and in India a colony where **weavers declined, then survived**, while factories grew under colonial limits.",
+  "ladderTitle": "The chapter in four steps",
+  "ladder": [
+   {
+    "step": "Before factories",
+    "q": "How was cloth made?",
+    "a": "Merchants and village households – proto-industrialisation"
+   },
+   {
+    "step": "Britain",
+    "q": "How fast was change?",
+    "a": "Slow; cotton then iron; hand labour preferred"
+   },
+   {
+    "step": "India – weavers",
+    "q": "What did colonialism do?",
+    "a": "Gomasthas, Manchester imports, cotton shortage"
+   },
+   {
+    "step": "India – factories",
+    "q": "Who built industry?",
+    "a": "China traders, Tatas, jobbers; small-scale still dominant; adverts"
+   }
+  ],
+  "languagesTitle": "How to answer",
+  "languages": [
+   {
+    "name": "Numbers",
+    "text": "321 engines, <20% workforce, 33% → 3%, 31% → 50%, 5% → 10%."
+   },
+   {
+    "name": "Both sides",
+    "text": "Factories AND workshops; decline AND survival of weavers."
+   },
+   {
+    "name": "Sources",
+    "text": "Read the magistrate, Patna and millworker sources."
+   }
+  ],
+  "plan": [
+   {
+    "pass": "Britain",
+    "time": "15 min",
+    "text": "Lessons 1–2 – proto-industrialisation, factory, pace of change, hand labour."
+   },
+   {
+    "pass": "Weavers",
+    "time": "10 min",
+    "text": "Lesson 3 – Company control and Manchester (data activity)."
+   },
+   {
+    "pass": "Indian factories",
+    "time": "12 min",
+    "text": "Lessons 4–5 – entrepreneurs, workers, war, small-scale industry, advertisements."
+   },
+   {
+    "pass": "Test and revise",
+    "time": "10 min",
+    "text": "Check knowledge quiz; revise after 1, 3 and 7 days."
+   }
+  ]
+ },
+ "lessons": [
+  {
+   "topic": "before",
+   "ref": "1–1.1",
+   "title": "Before the Industrial Revolution",
+   "time": "10 min",
+   "hook": "Long before factory chimneys, English cloth was made in **village homes**. A merchant clothier moved wool from stapler to spinner to weaver to fuller to dyer – controlling hundreds of workers without a single factory.",
+   "core": [
+    {
+     "term": "Proto-industrialisation",
+     "def": "Large-scale industrial production for an international market, not based on factories, before the factory age."
+    },
+    {
+     "term": "Why the countryside",
+     "def": "Town guilds controlled production and blocked newcomers; enclosures pushed cottagers and poor peasants to seek extra income."
+    },
+    {
+     "term": "Town–country link",
+     "def": "Merchants in towns, work in villages; finishing in London; 20–25 workers per stage per merchant."
+    },
+    {
+     "term": "Coming of the factory",
+     "def": "Earliest English factories by the 1730s; cotton imports 2.5 million lb (1760) → 22 million lb (1787); Arkwright’s cotton mill brought processes under one roof."
+    }
+   ],
+   "explain": [
+    "**For peasant households:** income from proto-industry supplemented shrinking farm income and allowed fuller use of family labour.",
+    "**For mill owners:** supervision, quality control and regulation of labour became possible under one roof."
+   ],
+   "example": {
+    "q": "Explain what is meant by proto-industrialisation. (3 marks)",
+    "steps": [
+     "**Meaning:** the phase of large-scale industrial production for an international market before factories, based in rural households.",
+     "**How it worked:** merchants from towns gave advances to peasants and artisans to produce for them; guilds made town production difficult.",
+     "**Network:** controlled by merchants – wool stapler → spinners → weavers → fullers → dyers, finished in London; goods made within family farms."
+    ],
+    "answer": "Meaning + why villages + merchant-controlled network."
+   },
+   "mistakes": [
+    "Saying proto-industrialisation used factories.",
+    "Saying guilds encouraged new merchants.",
+    "Mixing stapler and fuller."
+   ],
+   "tip": "‘Why did merchants turn to the countryside?’ = guilds in towns (push) + enclosures and poor peasants needing income (pull).",
+   "memory": "Proto = early · Guilds block towns · Stapler → spinner → weaver → fuller → dyer → London · 1730s factories · 2.5 → 22 million lb.",
+   "examAsk": [
+    "What is meant by proto-industrialisation?",
+    "Why did 17th-century merchants employ peasants in villages?",
+    "How did the cotton mill change production?"
+   ],
+   "cards": [
+    {
+     "q": "Who created the cotton mill?",
+     "a": "Richard Arkwright."
+    },
+    {
+     "q": "Earliest English factories?",
+     "a": "By the 1730s."
+    },
+    {
+     "q": "Stapler does what?",
+     "a": "Sorts wool by its fibre."
+    }
+   ],
+   "play": [
+    {
+     "type": "order",
+     "title": "A merchant clothier’s chain",
+     "say": "Tap the stages of English cloth production in order.",
+     "first": "raw wool",
+     "last": "export",
+     "items": [
+      "Wool bought from a wool stapler",
+      "Spinners make yarn",
+      "Weavers weave the cloth",
+      "Fullers gather the cloth",
+      "Dyers colour it",
+      "Finishing in London, then the export merchant sells it"
+     ],
+     "done": "The work was done in villages, but merchants in towns controlled every step."
+    }
+   ]
+  },
+  {
+   "topic": "pace",
+   "ref": "1.2–2",
+   "title": "The pace of change, hand labour and workers’ lives",
+   "time": "14 min",
+   "hook": "James Watt’s improved steam engine was patented in **1781** – yet by 1800 all of England had only **321** steam engines. Why were factory owners so slow to use the ‘magic’ machine?",
+   "core": [
+    {
+     "term": "Leading sectors",
+     "def": "Cotton up to the 1840s, then iron and steel (railways); by 1873 iron and steel exports £77 million, double cotton."
+    },
+    {
+     "term": "Slow spread",
+     "def": "Less than 20% of workforce in advanced sectors by 1900; new technology expensive, broke down, repair costly, not as effective as claimed."
+    },
+    {
+     "term": "Hand labour preferred",
+     "def": "Plentiful cheap labour; seasonal demand (gas works, breweries, printers, ships); 500 kinds of hammers, 45 kinds of axes; upper classes liked hand-made goods."
+    },
+    {
+     "term": "Workers’ lives",
+     "def": "Jobs via friends and kin; nights under bridges, Night Refuges, Casual Wards; seasonal unemployment; 10% extremely poor; 35–75% unemployed in 1830s slumps."
+    },
+    {
+     "term": "Spinning Jenny",
+     "def": "James Hargreaves, 1764; one wheel, many spindles; women hand spinners attacked it."
+    }
+   ],
+   "explain": [
+    "**America vs Britain:** with labour shortage, America mechanised; Britain had no problem hiring hands.",
+    "**After the 1840s:** building boom – roads, stations, tunnels, sewers; transport workers doubled in the 1840s and again in 30 years."
+   ],
+   "example": {
+    "q": "Why did some industrialists in 19th-century Europe prefer hand labour over machines? (5 marks)",
+    "steps": [
+     "**Cheap labour:** poor peasants and vagrants flooded the cities; wages were low.",
+     "**Costly machines:** required large capital, broke down, repair was costly.",
+     "**Seasonal demand:** gas works, breweries, printers needed extra hands only in some seasons.",
+     "**Variety:** demand was for intricate designs – 500 varieties of hammers, 45 kinds of axes needed skill.",
+     "**Taste:** the upper classes preferred hand-made goods as a symbol of refinement; machine goods went to the colonies."
+    ],
+    "answer": "Labour, cost, seasonality, variety, taste."
+   },
+   "mistakes": [
+    "Saying steam engines spread quickly.",
+    "Saying most British workers were machine operators by 1900.",
+    "Forgetting women hand spinners were the ones who attacked the Jenny."
+   ],
+   "tip": "Learn three numbers that prove slow change: 321 engines, under 20% of workforce, typical worker = craftsperson.",
+   "memory": "Watt 1781 · 321 engines · £77m iron · <20% · Jenny 1764 (Hargreaves) · 500 hammers, 45 axes.",
+   "examAsk": [
+    "Why did industrialists prefer hand labour?",
+    "Why did women workers attack the Spinning Jenny?",
+    "How rapid was industrialisation in Britain?"
+   ],
+   "cards": [
+    {
+     "q": "Steam engines in England c. 1800?",
+     "a": "No more than 321."
+    },
+    {
+     "q": "Spinning Jenny inventor and year?",
+     "a": "James Hargreaves, 1764."
+    },
+    {
+     "q": "Leading sector after the 1840s?",
+     "a": "Iron and steel."
+    }
+   ],
+   "play": [
+    {
+     "type": "sort",
+     "title": "Hand or machine?",
+     "say": "Sort each reason by what it encouraged in 19th-century Britain.",
+     "buckets": [
+      "Hand labour",
+      "Machines"
+     ],
+     "items": [
+      [
+       "Plenty of poor job-seekers, low wages",
+       0,
+       "No labour shortage in Britain."
+      ],
+      [
+       "Labour shortage, as in America",
+       1,
+       "Mechanise to need fewer workers."
+      ],
+      [
+       "Demand peaks only before Christmas",
+       0,
+       "Hire workers for the season."
+      ],
+      [
+       "Uniform, standardised goods for a mass market",
+       1,
+       "What machines were made for."
+      ],
+      [
+       "500 varieties of hammers",
+       0,
+       "Needed human skill."
+      ],
+      [
+       "Upper-class taste for refinement",
+       0,
+       "Hand-made symbolised class."
+      ],
+      [
+       "Goods for export to the colonies",
+       1,
+       "Machine-made goods went there."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "topic": "colonies",
+   "ref": "3",
+   "title": "Indian textiles, weavers and Manchester",
+   "time": "14 min",
+   "hook": "In 1772 a Company official boasted that no nation could match Indian textiles. Within 80 years, piece-goods fell from a third of India’s exports to **3 per cent** – and Manchester cloth flooded Indian bazaars.",
+   "core": [
+    {
+     "term": "Age of Indian textiles",
+     "def": "Fine cottons and silks dominated world markets; land route via the north-west to Afghanistan, Persia, Central Asia; ports Surat, Masulipatam, Hoogly."
+    },
+    {
+     "term": "Decline of old ports",
+     "def": "European companies got concessions and monopolies; Surat Rs 16 million → Rs 3 million by the 1740s; Bombay and Calcutta grew."
+    },
+    {
+     "term": "Company control",
+     "def": "After 1760s: eliminated traders and brokers; gomasthas; advances tied weavers; no selling to others; low prices; floggings."
+    },
+    {
+     "term": "Manchester comes",
+     "def": "Import duties in Britain; British goods pushed into India; piece-goods 33% of exports (1811–12) → 3% (1850–51); cotton goods 31% of imports (1850) → over 50% (1870s)."
+    },
+    {
+     "term": "Cotton shortage",
+     "def": "American Civil War (1860s): raw cotton exported to Britain, prices shot up; then Indian factories competed too."
+    }
+   ],
+   "explain": [
+    "**Weavers’ response:** deserted villages, revolted with village traders, refused loans, closed workshops, became agricultural labourers.",
+    "**Two problems at once:** export market collapsed and the local market was glutted with cheap machine-made imports."
+   ],
+   "example": {
+    "q": "How did the East India Company procure regular supplies of cotton and silk textiles from Indian weavers? (5 marks)",
+    "steps": [
+     "**Political power:** after the 1760s in Bengal and Carnatic it asserted a monopoly right to trade.",
+     "**Removing middlemen:** existing traders and brokers were eliminated for direct control.",
+     "**Gomasthas:** paid servants supervised weavers, collected supplies and checked quality.",
+     "**Advances:** loans for raw material bound weavers to hand cloth only to the gomastha.",
+     "**Control by force:** gomasthas came with sepoys and peons, punished delays; prices stayed low."
+    ],
+    "answer": "Monopoly → no brokers → gomasthas → advances → coercion."
+   },
+   "mistakes": [
+    "Saying textile exports fell immediately after 1760 (they did not at first).",
+    "Saying the American Civil War helped Indian weavers.",
+    "Mixing export and import percentages."
+   ],
+   "tip": "Manchester answers: two numbers for exports (33% → 3%) and two for imports (31% → 50%).",
+   "memory": "Surat Rs 16m → 3m · Gomastha · 1811–12: 33% → 1850–51: 3% · Imports 31% → 50% · Civil War = cotton shortage.",
+   "examAsk": [
+    "Why did the port of Surat decline?",
+    "How did the Company procure supplies from weavers?",
+    "What problems did Indian weavers face in the 19th century?"
+   ],
+   "cards": [
+    {
+     "q": "Company servant who supervised weavers?",
+     "a": "Gomastha."
+    },
+    {
+     "q": "Piece-goods share of exports 1811–12 → 1850–51?",
+     "a": "33% → 3%."
+    },
+    {
+     "q": "Event that raised raw cotton prices in the 1860s?",
+     "a": "The American Civil War."
+    }
+   ],
+   "play": [
+    {
+     "type": "dataBars",
+     "title": "Manchester comes to India",
+     "say": "Tap the bars to read how cotton cloth moved in and out of India, then answer.",
+     "chart": "Cotton piece-goods as a share of India’s exports and imports (%)",
+     "labels": [
+      "Exports 1811–12",
+      "Exports 1850–51",
+      "Imports 1850",
+      "Imports 1870s"
+     ],
+     "unit": "%",
+     "step": 10,
+     "series": [
+      {
+       "name": "Share",
+       "values": [
+        33,
+        3,
+        31,
+        50
+       ]
+      }
+     ],
+     "source": "NCERT Class X History, Chapter IV (imports figures are ‘over’ 31% and 50%)",
+     "qs": [
+      {
+       "q": "What happened to piece-goods in India’s exports between 1811–12 and 1850–51?",
+       "a": "Fell from 33% to 3%",
+       "opts": [
+        "Fell from 33% to 3%",
+        "Rose from 3% to 33%",
+        "Stayed the same",
+        "Rose to 50%"
+       ],
+       "e": "The long decline of textile exports."
+      },
+      {
+       "q": "By the 1870s, cotton piece-goods made up what share of India’s imports?",
+       "a": "Over 50%",
+       "opts": [
+        "Over 50%",
+        "About 3%",
+        "About 10%",
+        "Nothing"
+       ],
+       "e": "Manchester goods flooded the market."
+      },
+      {
+       "q": "Why could weavers not compete with these imports?",
+       "a": "Machine-made goods were cheaper",
+       "opts": [
+        "Machine-made goods were cheaper",
+        "Indian cloth was banned",
+        "Weavers had no looms",
+        "Imports were taxed heavily in India"
+       ],
+       "e": "Produced by machines at lower costs."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "topic": "factories",
+   "ref": "4–5",
+   "title": "Factories come up; peculiarities of industrial growth",
+   "time": "14 min",
+   "hook": "The first Bombay cotton mill came up in **1854**. Its capital came from opium and tea traders, its workers from Ratnagiri villages – and they still went home every harvest.",
+   "core": [
+    {
+     "term": "First mills",
+     "def": "Bombay cotton mill 1854 (4 mills by 1862); Bengal jute 1855 and 1862; Elgin Mill, Kanpur 1860s; Ahmedabad a year later; Madras 1874."
+    },
+    {
+     "term": "Entrepreneurs",
+     "def": "China trade: Dwarkanath Tagore (six joint-stock companies, 1830s–40s), Dinshaw Petit, J.N. Tata, Seth Hukumchand (jute, 1917), Birla’s family; others traded with Burma, Middle East, East Africa."
+    },
+    {
+     "term": "Colonial limits",
+     "def": "Barred from trading manufactures with Europe; edged out of shipping; European Managing Agencies – Bird Heiglers, Andrew Yule, Jardine Skinner – controlled industry; separate chambers of commerce."
+    },
+    {
+     "term": "Workers",
+     "def": "584,000 (1901) → over 2,436,000 (1946); from nearby districts (Ratnagiri for Bombay); jobbers recruited and controlled."
+    },
+    {
+     "term": "Growth pattern",
+     "def": "Coarse yarn first; swadeshi and loss of China market → cloth (doubled 1900–1912); First World War boom; Manchester never recovered."
+    },
+    {
+     "term": "Small-scale dominant",
+     "def": "67% of large industries in Bengal and Bombay (1911); factories had 5% (1911) and 10% (1931) of industrial labour; handloom output almost trebled 1900–1940; fly shuttles 35% by 1941."
+    }
+   ],
+   "explain": [
+    "**Managing Agencies** invested in tea, coffee, mining, indigo and jute – mostly for export, not for sale in India.",
+    "**Weavers survived** by new technology (fly shuttle) and specialised fine weaves – but lived hard lives with the whole household working."
+   ],
+   "example": {
+    "q": "Why did industrial production in India increase during the First World War? (3/5 marks)",
+    "steps": [
+     "**Fewer imports:** British mills were busy with war production, so Manchester imports declined.",
+     "**Home market:** Indian mills suddenly had a vast home market to supply.",
+     "**War orders:** jute bags, cloth for army uniforms, tents, leather boots, horse and mule saddles.",
+     "**Expansion:** new factories set up, old ones ran multiple shifts, more workers worked longer hours.",
+     "**After the war:** Manchester never recaptured its position; local industrialists captured the home market."
+    ],
+    "answer": "Imports fell + home market + war orders = boom."
+   },
+   "mistakes": [
+    "Saying Indian mills first made fine cloth (they made coarse yarn).",
+    "Saying factories employed most industrial workers (5–10%).",
+    "Confusing the jobber with the gomastha."
+   ],
+   "tip": "‘Who set up industries?’ – China traders (Tagore, Petit, Tata, Hukumchand), internal traders, and the limits set by Managing Agencies.",
+   "memory": "1854 Bombay · 1855 jute · 1912 Tata steel · 1917 Hukumchand · Jobber · 5% → 10% · Handloom ×3 · Fly shuttle 35%.",
+   "examAsk": [
+    "Why did industrial production increase during the First World War?",
+    "Who were the early entrepreneurs and how did they get capital?",
+    "Why did handloom production expand in the 20th century?"
+   ],
+   "cards": [
+    {
+     "q": "First cotton mill in Bombay?",
+     "a": "1854."
+    },
+    {
+     "q": "Who recruited mill workers?",
+     "a": "The jobber."
+    },
+    {
+     "q": "Factory share of industrial labour in 1931?",
+     "a": "10 per cent."
+    }
+   ],
+   "play": [
+    {
+     "type": "order",
+     "title": "Factories come up",
+     "say": "Tap the events from earliest to latest.",
+     "first": "earliest",
+     "last": "latest",
+     "items": [
+      "1854 – first cotton mill in Bombay",
+      "1855 – first jute mill in Bengal",
+      "1862 – four cotton mills at work in Bombay",
+      "1874 – first spinning and weaving mill of Madras",
+      "1912 – Tata iron and steel works at Jamshedpur",
+      "1917 – Seth Hukumchand’s jute mill in Calcutta"
+     ],
+     "done": "Textiles first, steel much later."
+    }
+   ]
+  },
+  {
+   "topic": "market",
+   "ref": "6",
+   "title": "Market for goods",
+   "time": "8 min",
+   "hook": "Lakshmi on a cloth bundle, Vishnu bringing sunlight for a soap, baby Krishna selling gripe water – early advertisers in India knew exactly how to make foreign goods feel familiar.",
+   "core": [
+    {
+     "term": "Labels",
+     "def": "‘MADE IN MANCHESTER’ as a mark of quality; images of gods (Kartika, Lakshmi, Saraswati) gave divine approval; historic figures like Maharaja Ranjit Singh created respect."
+    },
+    {
+     "term": "Calendars",
+     "def": "Seen by people who could not read; hung in tea shops, homes and offices all year."
+    },
+    {
+     "term": "Royal figures",
+     "def": "If you respect the king or nawab, respect the product."
+    },
+    {
+     "term": "Swadeshi adverts",
+     "def": "Indian manufacturers: if you care for the nation, buy what Indians produce."
+    }
+   ],
+   "explain": [
+    "**Conclusion of the chapter:** industrialisation meant technological change, factories and a new workforce – but hand technology and small-scale production remained important. The ‘magic’ images of 1900 tell only part of the story."
+   ],
+   "example": {
+    "q": "How did advertisements help expand markets for new products in India? (3 marks)",
+    "steps": [
+     "**Labels:** ‘Made in Manchester’ built trust; images of Indian gods made foreign goods familiar and gave divine approval.",
+     "**Calendars:** reached even people who could not read, seen daily in tea shops and homes.",
+     "**Swadeshi:** Indian manufacturers used adverts to carry the nationalist message – buy Indian."
+    ],
+    "answer": "Labels, calendars, royal and religious images, swadeshi message."
+   },
+   "mistakes": [
+    "Saying only Indian manufacturers used gods’ images (Manchester labels did too).",
+    "Forgetting calendars reached illiterate buyers."
+   ],
+   "tip": "Link this to Chapter II: Swaraj and swadeshi – advertisements carried the nationalist message.",
+   "memory": "Made in Manchester · Gods = approval + familiarity · Calendars for all · Kings = quality · Swadeshi adverts.",
+   "examAsk": [
+    "How did manufacturers use advertisements to sell goods in India?",
+    "Why were calendars effective?",
+    "What message did Indian manufacturers’ advertisements carry?"
+   ],
+   "cards": [
+    {
+     "q": "Why gods on labels?",
+     "a": "Divine approval; foreign goods seem familiar."
+    },
+    {
+     "q": "Why calendars?",
+     "a": "Seen daily, even by people who could not read."
+    },
+    {
+     "q": "Indian manufacturers’ message?",
+     "a": "Swadeshi – buy Indian for the nation."
+    }
+   ],
+   "play": [
+    {
+     "type": "match",
+     "title": "Read the advertisement",
+     "say": "Match each advertising trick with its purpose.",
+     "pairs": [
+      [
+       "‘MADE IN MANCHESTER’ label",
+       "Mark of quality and familiar place of manufacture"
+      ],
+      [
+       "Images of Lakshmi or Saraswati",
+       "Divine approval for the goods"
+      ],
+      [
+       "Calendars in tea shops",
+       "Seen every day, even by those who could not read"
+      ],
+      [
+       "Maharaja Ranjit Singh on a label",
+       "Respect the royal figure, respect the product"
+      ],
+      [
+       "Goddess offering Ahmedabad mill cloth",
+       "Swadeshi – use things made in India"
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "formulas": [
+  {
+   "name": "Proto-industrialisation",
+   "f": "Merchant-controlled rural production",
+   "unit": "Guilds blocked towns",
+   "when": "Before factories"
+  },
+  {
+   "name": "Factory",
+   "f": "England by 1730s; Arkwright’s mill",
+   "unit": "Cotton 2.5 → 22 million lb (1760–1787)",
+   "when": "Coming of the factory"
+  },
+  {
+   "name": "Slow change",
+   "f": "321 steam engines c. 1800",
+   "unit": "<20% workforce in advanced sectors",
+   "when": "Pace of change"
+  },
+  {
+   "name": "Hand labour",
+   "f": "Cheap labour, seasonal demand",
+   "unit": "500 hammers, 45 axes",
+   "when": "Why not machines"
+  },
+  {
+   "name": "Weavers",
+   "f": "Gomasthas, advances, low prices",
+   "unit": "Surat Rs 16m → 3m",
+   "when": "Company control"
+  },
+  {
+   "name": "Manchester",
+   "f": "Exports 33% → 3% (1811–1851)",
+   "unit": "Imports 31% → 50% (1850–1870s)",
+   "when": "Decline of weaving"
+  },
+  {
+   "name": "Indian factories",
+   "f": "Bombay 1854; Tata steel 1912",
+   "unit": "Workers 584,000 → 2,436,000",
+   "when": "Factories come up"
+  },
+  {
+   "name": "Small-scale",
+   "f": "Factories 5% (1911), 10% (1931)",
+   "unit": "Handloom ×3 (1900–40); fly shuttle 35%",
+   "when": "Peculiarities"
+  },
+  {
+   "name": "Market",
+   "f": "Labels, calendars, gods, kings",
+   "unit": "Swadeshi adverts",
+   "when": "Advertising"
+  }
+ ],
+ "revision": [
+  "Images like ‘Dawn of the Century’ and ‘Two Magicians’ glorified machines; the real story was slower.",
+  "Proto-industrialisation: merchants gave advances to rural households; guilds blocked towns; London as finishing centre.",
+  "Factories in England by the 1730s; cotton imports 2.5 → 22 million lb (1760–1787); Arkwright’s mill.",
+  "Cotton led till the 1840s, then iron and steel (£77 million by 1873).",
+  "Slow change: under 20% in advanced sectors; 321 steam engines; typical worker a craftsperson.",
+  "Hand labour preferred: cheap plentiful labour, seasonal demand, variety of designs, upper-class taste.",
+  "Workers: jobs via kin; seasonal unemployment; 35–75% unemployed in the 1830s; women attacked the Spinning Jenny (1764).",
+  "India dominated fine textiles; Surat and Hoogly declined (Rs 16m → 3m), Bombay and Calcutta grew.",
+  "Company control: gomasthas, advances, no other buyers, low prices; weavers deserted, revolted or quit.",
+  "Manchester: piece-goods 33% → 3% of exports; cotton goods 31% → over 50% of imports; American Civil War raised cotton prices.",
+  "First mills: Bombay 1854, jute 1855, Madras 1874; Tata steel 1912; Hukumchand jute 1917.",
+  "Capital from China trade; European Managing Agencies controlled industry; jobbers recruited workers.",
+  "Coarse yarn first; shift to cloth after 1906; First World War boom.",
+  "Small-scale dominated: factories 5% (1911), 10% (1931); handloom almost trebled 1900–40; fly shuttle.",
+  "Advertising: Manchester labels, gods, calendars, kings; Indian swadeshi adverts."
+ ],
+ "exam": {
+  "paper": [
+   {
+    "q": "1 mark",
+    "marks": "MCQ / A-R / True-False",
+    "what": "Terms (proto-industrialisation, gomastha, jobber, fly shuttle), dates, figures"
+   },
+   {
+    "q": "3 marks",
+    "marks": "Short answer",
+    "what": "Jenny attacked; merchants in villages; Surat’s decline; proto-industrialisation"
+   },
+   {
+    "q": "5 marks",
+    "marks": "Long answer",
+    "what": "Hand labour over machines; Company and weavers; First World War and Indian industry"
+   },
+   {
+    "q": "Source-based",
+    "marks": "4 marks",
+    "what": "Magistrate’s report, Commissioner of Patna, Koshtis census or millworkers’ memories"
+   }
+  ],
+  "sections": [
+   {
+    "title": "Britain vs India answers · 4 steps",
+    "kind": "steps",
+    "items": [
+     "Say which country and period you are describing.",
+     "Give the main change with one figure.",
+     "Add the human side (workers, weavers).",
+     "End with the ‘peculiarity’ – slow change or survival of small-scale work."
+    ]
+   },
+   {
+    "title": "Answer writing that scores",
+    "kind": "mem",
+    "items": [
+     "Start with a one-line introduction using the textbook’s key term (e.g. ‘Proto-industrialisation was …’).",
+     "Write in points – one idea per point, key term first. A 3-mark answer needs 3 clear points; a 5-mark answer needs 5.",
+     "Add a date, a name or a figure from the chapter to each point – but only when you are sure of it.",
+     "For ‘Explain / Analyse’ use PEE: Point → Explain → Example. For ‘Compare’ draw a small two-column table.",
+     "Source-based questions: underline the key line in the source first; the answer is usually hidden in it."
+    ]
+   },
+   {
+    "title": "Before the exam",
+    "kind": "note",
+    "items": [
+     "Revise the key facts sheet and the revision list the night before.",
+     "Redo the Play & learn timelines and sorts – if you get every card first time, you know the chapter.",
+     "Practise one 5-mark answer in 8–10 minutes with a timer."
+    ]
+   }
+  ],
+  "checklist": [
+   "I can explain proto-industrialisation and why merchants went to villages.",
+   "I can explain why industrial change in Britain was slow and why hand labour was preferred.",
+   "I can describe workers’ lives and opposition to the Spinning Jenny.",
+   "I can explain how the Company controlled weavers and how Manchester affected them.",
+   "I can describe early Indian entrepreneurs, workers and the war-time growth.",
+   "I can explain why small-scale industry survived and how goods were advertised."
+  ],
+  "paperTitle": "How this chapter is examined",
+  "paperCols": [
+   "Marks",
+   "Question type",
+   "Likely asks"
+  ],
+  "paperNote": "Based on the CBSE Class X Social Science pattern (MCQ, assertion–reason, 3-mark short, 4-mark source-based and 5-mark long answers; History also has map work). Practise these types first."
+ },
+ "method": "Built on proven learning methods: understand the story first, sort and match ideas with your hands (active learning), write model answers point by point, test yourself (active recall) and revisit after 1, 3 and 7 days (spaced revision).",
+ "sheetTitle": "Key facts sheet",
+ "sheetCols": [
+  "Topic",
+  "Key fact",
+  "Detail",
+  "Use it for"
+ ]
+}

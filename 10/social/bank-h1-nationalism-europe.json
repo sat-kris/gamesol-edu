@@ -1,0 +1,1099 @@
+{
+ "id": "class10-social-h1",
+ "class": "10",
+ "subject": "social",
+ "chapter": "History I · The Rise of Nationalism in Europe",
+ "source": "NCERT India and the Contemporary World II (Class X History), Chapter I",
+ "topics": [
+  {
+   "id": "frev",
+   "name": "The French Revolution and Napoleon",
+   "ref": "1"
+  },
+  {
+   "id": "liberal",
+   "name": "Liberals, conservatives and revolutionaries",
+   "ref": "2"
+  },
+  {
+   "id": "revol",
+   "name": "The age of revolutions, 1830–1848",
+   "ref": "3"
+  },
+  {
+   "id": "unify",
+   "name": "Making of Germany, Italy and Britain",
+   "ref": "4"
+  },
+  {
+   "id": "visual",
+   "name": "Visualising the nation; nationalism and imperialism",
+   "ref": "5–6"
+  }
+ ],
+ "questions": [
+  {
+   "topic": "frev",
+   "level": "easy",
+   "q": "The first clear expression of nationalism came with –",
+   "a": "the French Revolution in 1789",
+   "w": [
+    "the Congress of Vienna in 1815",
+    "the unification of Italy in 1861",
+    "the Greek war of independence in 1821"
+   ],
+   "e": "The revolution transferred sovereignty from the monarchy to a body of French citizens."
+  },
+  {
+   "topic": "frev",
+   "level": "easy",
+   "q": "The French ideas of ‘la patrie’ and ‘le citoyen’ meant –",
+   "a": "the fatherland and the citizen",
+   "w": [
+    "the king and the church",
+    "liberty and equality",
+    "the army and the nation"
+   ],
+   "e": "They stressed a united community enjoying equal rights under a constitution."
+  },
+  {
+   "topic": "frev",
+   "level": "easy",
+   "q": "The Civil Code of 1804 is better known as the –",
+   "a": "Napoleonic Code",
+   "w": [
+    "Treaty of Vienna",
+    "Zollverein",
+    "Act of Union"
+   ],
+   "e": "It did away with privileges based on birth, established equality before the law and secured the right to property."
+  },
+  {
+   "topic": "frev",
+   "level": "easy",
+   "q": "In France the Estates General was elected by active citizens and renamed the –",
+   "a": "National Assembly",
+   "w": [
+    "Frankfurt Parliament",
+    "Reichstag",
+    "Jacobin Club"
+   ],
+   "e": "One of the measures to create a collective French identity."
+  },
+  {
+   "topic": "frev",
+   "level": "easy",
+   "q": "Which language became the common language of the French nation?",
+   "a": "French as spoken and written in Paris",
+   "w": [
+    "Latin",
+    "German",
+    "Regional dialects of each province"
+   ],
+   "e": "Regional dialects were discouraged."
+  },
+  {
+   "topic": "frev",
+   "level": "hard",
+   "q": "Which was NOT a step taken by the French revolutionaries to create a collective identity?",
+   "a": "Restoring the Bourbon royal standard as the flag",
+   "w": [
+    "A new tricolour flag",
+    "A uniform system of weights and measures",
+    "Abolition of internal customs duties and dues"
+   ],
+   "e": "The tricolour REPLACED the former royal standard; the Bourbons were restored only in 1815, by the conservatives."
+  },
+  {
+   "topic": "frev",
+   "level": "hard",
+   "q": "Why did the initial welcome to French armies in Holland, Switzerland, Brussels, Mainz, Milan and Warsaw turn to hostility?",
+   "a": "Administrative changes did not come with political freedom – taxes, censorship and forced conscription rose",
+   "w": [
+    "The French refused to abolish feudalism",
+    "Napoleon made Latin the official language",
+    "The French armies returned all land to the aristocracy"
+   ],
+   "e": "Increased taxation, censorship and forced conscription outweighed the advantages."
+  },
+  {
+   "topic": "frev",
+   "level": "hard",
+   "q": "Which reform did Napoleon NOT bring to the regions under French control?",
+   "a": "Universal adult suffrage",
+   "w": [
+    "Abolition of the feudal system",
+    "Freeing peasants from serfdom and manorial dues",
+    "Removal of guild restrictions in towns"
+   ],
+   "e": "Through a return to monarchy Napoleon destroyed democracy in France, though he made administration more rational and efficient."
+  },
+  {
+   "topic": "frev",
+   "level": "hard",
+   "q": "Why were businessmen and small producers pleased with Napoleon’s changes?",
+   "a": "Uniform laws, standard weights and measures and a common currency would ease movement of goods and capital",
+   "w": [
+    "They were exempted from all taxes",
+    "They were given seats in the National Assembly",
+    "Napoleon banned imports from England"
+   ],
+   "e": "This is the economic side of the new-found freedom."
+  },
+  {
+   "topic": "frev",
+   "level": "advanced",
+   "q": "Assertion (A): Napoleon destroyed democracy in France. Reason (R): In the administrative field he incorporated revolutionary principles to make the system more rational and efficient. Choose the correct option.",
+   "a": "Both A and R are true, but R is not the correct explanation of A",
+   "w": [
+    "Both A and R are true and R explains A",
+    "A is true but R is false",
+    "A is false but R is true"
+   ],
+   "e": "He destroyed democracy by returning to monarchy; R describes his administrative reforms, a different point."
+  },
+  {
+   "topic": "frev",
+   "level": "advanced",
+   "q": "Fig. 4 shows French soldiers seizing a peasant’s cart under a Tree of Liberty in Zweibrücken. The plaque reads ‘Take freedom and equality from us, the model of humanity.’ What is the painter’s point?",
+   "a": "It mocks the French claim to be liberators – they behaved as oppressors",
+   "w": [
+    "It praises the French for spreading liberty",
+    "It celebrates German unification",
+    "It shows peasants welcoming the Napoleonic Code"
+   ],
+   "e": "The inscription is a sarcastic reference to French claims."
+  },
+  {
+   "topic": "frev",
+   "level": "easy",
+   "q": "Read Renan’s view. Which of these, according to him, is NOT what forms a nation?",
+   "a": "A common language, race, religion or territory",
+   "w": [
+    "A heroic past of endeavours and sacrifice",
+    "A common will in the present",
+    "A wish to perform great deeds together"
+   ],
+   "e": "Renan criticises the idea that a nation is formed by a common language, race, religion or territory.",
+   "passage": "‘A nation is the culmination of a long past of endeavours, sacrifice and devotion. … To have common glories in the past, to have a common will in the present, to have performed great deeds together, to wish to perform still more, these are the essential conditions of being a people. A nation is therefore a large-scale solidarity … Its existence is a daily plebiscite …’ – Ernst Renan, ‘What is a Nation?’, Sorbonne, 1882"
+  },
+  {
+   "topic": "frev",
+   "level": "hard",
+   "q": "What does Renan mean by calling a nation’s existence ‘a daily plebiscite’?",
+   "a": "A nation lives only as long as its people keep choosing to belong to it",
+   "w": [
+    "A nation must vote on every law every day",
+    "Kings must be elected every day",
+    "Only property owners can belong to a nation"
+   ],
+   "e": "Plebiscite = a direct vote by which all the people of a region accept or reject a proposal.",
+   "passage": "‘A nation is the culmination of a long past of endeavours, sacrifice and devotion. … To have common glories in the past, to have a common will in the present, to have performed great deeds together, to wish to perform still more, these are the essential conditions of being a people. A nation is therefore a large-scale solidarity … Its existence is a daily plebiscite …’ – Ernst Renan, ‘What is a Nation?’, Sorbonne, 1882"
+  },
+  {
+   "topic": "liberal",
+   "level": "easy",
+   "q": "The term ‘liberalism’ comes from the Latin root ‘liber’, meaning –",
+   "a": "free",
+   "w": [
+    "equal",
+    "nation",
+    "people"
+   ],
+   "e": "For the new middle classes it stood for freedom for the individual and equality before the law."
+  },
+  {
+   "topic": "liberal",
+   "level": "easy",
+   "q": "The customs union formed in 1834 at the initiative of Prussia was called the –",
+   "a": "Zollverein",
+   "w": [
+    "Carbonari",
+    "Volksgeist",
+    "Reichstag"
+   ],
+   "e": "It abolished tariff barriers and reduced currencies from over thirty to two."
+  },
+  {
+   "topic": "liberal",
+   "level": "easy",
+   "q": "The Congress of Vienna (1815) was hosted by –",
+   "a": "the Austrian Chancellor Duke Metternich",
+   "w": [
+    "Otto von Bismarck",
+    "Napoleon Bonaparte",
+    "Giuseppe Mazzini"
+   ],
+   "e": "Britain, Russia, Prussia and Austria met there after defeating Napoleon."
+  },
+  {
+   "topic": "liberal",
+   "level": "easy",
+   "q": "Giuseppe Mazzini founded which two underground societies?",
+   "a": "Young Italy in Marseilles and Young Europe in Berne",
+   "w": [
+    "The Carbonari and the Jacobins",
+    "Red Shirts and Young Italy",
+    "The Zollverein and Young Europe"
+   ],
+   "e": "He had earlier been a member of the Carbonari."
+  },
+  {
+   "topic": "liberal",
+   "level": "easy",
+   "q": "Who described Mazzini as ‘the most dangerous enemy of our social order’?",
+   "a": "Metternich",
+   "w": [
+    "Bismarck",
+    "Napoleon",
+    "Cavour"
+   ],
+   "e": "Mazzini’s opposition to monarchy frightened the conservatives."
+  },
+  {
+   "topic": "liberal",
+   "level": "easy",
+   "q": "A merchant travelling from Hamburg to Nuremberg in 1833 had to pass through how many customs barriers?",
+   "a": "11",
+   "w": [
+    "2",
+    "39",
+    "30"
+   ],
+   "e": "And pay about 5 per cent duty at each one."
+  },
+  {
+   "topic": "liberal",
+   "level": "hard",
+   "q": "Which was NOT a decision of the Treaty of Vienna, 1815?",
+   "a": "The German confederation of 39 states was dissolved",
+   "w": [
+    "The Bourbon dynasty was restored in France",
+    "The kingdom of the Netherlands, including Belgium, was set up",
+    "Austria was given control of northern Italy"
+   ],
+   "e": "The confederation of 39 states set up by Napoleon was left untouched."
+  },
+  {
+   "topic": "liberal",
+   "level": "hard",
+   "q": "For 19th-century liberals, ‘equality before the law’ –",
+   "a": "did not necessarily mean universal suffrage",
+   "w": [
+    "always included the vote for women",
+    "meant abolition of private property",
+    "meant rule by a hereditary monarch"
+   ],
+   "e": "In revolutionary France the vote went only to property-owning men."
+  },
+  {
+   "topic": "liberal",
+   "level": "hard",
+   "q": "What did conservatives after 1815 believe about modernisation?",
+   "a": "It could strengthen traditional institutions like the monarchy",
+   "w": [
+    "It should be stopped completely",
+    "It would destroy the Church",
+    "It required universal suffrage"
+   ],
+   "e": "A modern army, efficient bureaucracy and abolition of serfdom could strengthen autocratic monarchies."
+  },
+  {
+   "topic": "liberal",
+   "level": "hard",
+   "q": "Why was the measure of cloth a problem for German traders before the Zollverein?",
+   "a": "The ‘elle’ stood for a different length in each region",
+   "w": [
+    "Cloth could be sold only in France",
+    "Every town used the metric system",
+    "Cloth was measured only by weight"
+   ],
+   "e": "An elle was 54.7 cm in Frankfurt but 65.6 cm in Nuremberg."
+  },
+  {
+   "topic": "liberal",
+   "level": "hard",
+   "q": "Liberal-nationalists who criticised the conservative order after 1815 took up which major issue?",
+   "a": "Freedom of the press",
+   "w": [
+    "Restoration of the Bourbons",
+    "Abolition of the railways",
+    "Return to serfdom"
+   ],
+   "e": "Conservative regimes imposed censorship on newspapers, books, plays and songs."
+  },
+  {
+   "topic": "liberal",
+   "level": "easy",
+   "q": "Which political ends does List hope to achieve through the zollverein?",
+   "a": "To bind the Germans economically into a nation and raise national sentiment",
+   "w": [
+    "To make Prussia a colony of Austria",
+    "To restore the Bourbon kings",
+    "To end all trade with other countries"
+   ],
+   "e": "Economic unity was to create national feeling.",
+   "passage": "Friedrich List, Professor of Economics at the University of Tübingen, wrote in 1834: ‘The aim of the zollverein is to bind the Germans economically into a nation. It will strengthen the nation materially as much by protecting its interests externally as by stimulating its internal productivity. It ought to awaken and raise national sentiment through a fusion of individual and provincial interests. The German people have realised that a free economic system is the only means to engender national feeling.’"
+  },
+  {
+   "topic": "liberal",
+   "level": "advanced",
+   "q": "Arrange the events in order: (i) Treaty of Vienna (ii) Zollverein formed (iii) Mazzini exiled for attempting a revolution in Liguria (iv) Napoleonic Code",
+   "a": "(iv) → (i) → (iii) → (ii)",
+   "w": [
+    "(i) → (iv) → (ii) → (iii)",
+    "(iv) → (iii) → (i) → (ii)",
+    "(iii) → (iv) → (i) → (ii)"
+   ],
+   "e": "1804 → 1815 → 1831 → 1834."
+  },
+  {
+   "topic": "liberal",
+   "level": "advanced",
+   "q": "Assertion (A): After 1815 many liberal-nationalists went underground. Reason (R): Conservative regimes did not tolerate criticism and dissent. Choose the correct option.",
+   "a": "Both A and R are true and R explains A",
+   "w": [
+    "Both A and R are true but R does not explain A",
+    "A is true but R is false",
+    "A is false but R is true"
+   ],
+   "e": "Fear of repression drove them into secret societies."
+  },
+  {
+   "topic": "revol",
+   "level": "easy",
+   "q": "The July Revolution of 1830 in France installed a constitutional monarchy headed by –",
+   "a": "Louis Philippe",
+   "w": [
+    "Napoleon III",
+    "William I",
+    "Victor Emmanuel II"
+   ],
+   "e": "The restored Bourbon kings were overthrown by liberal revolutionaries."
+  },
+  {
+   "topic": "revol",
+   "level": "easy",
+   "q": "‘When France sneezes, the rest of Europe catches cold.’ Who said this?",
+   "a": "Metternich",
+   "w": [
+    "Mazzini",
+    "Lord Byron",
+    "Bismarck"
+   ],
+   "e": "The July Revolution sparked an uprising in Brussels."
+  },
+  {
+   "topic": "revol",
+   "level": "easy",
+   "q": "Greece was recognised as an independent nation by the –",
+   "a": "Treaty of Constantinople, 1832",
+   "w": [
+    "Treaty of Vienna, 1815",
+    "Act of Union, 1707",
+    "Treaty of Versailles, 1871"
+   ],
+   "e": "The struggle had begun in 1821."
+  },
+  {
+   "topic": "revol",
+   "level": "easy",
+   "q": "Which English poet organised funds for the Greek struggle and died of fever in 1824?",
+   "a": "Lord Byron",
+   "w": [
+    "Karol Kurpinski",
+    "Jacob Grimm",
+    "Delacroix"
+   ],
+   "e": "West Europeans saw Greece as the cradle of European civilisation."
+  },
+  {
+   "topic": "revol",
+   "level": "easy",
+   "q": "Herder claimed that true German culture was found among the common people, called –",
+   "a": "das volk",
+   "w": [
+    "la patrie",
+    "le citoyen",
+    "the Junkers"
+   ],
+   "e": "Folk songs, poetry and dances popularised the volksgeist (spirit of the nation)."
+  },
+  {
+   "topic": "revol",
+   "level": "easy",
+   "q": "In 1848 the Frankfurt parliament met in –",
+   "a": "the Church of St Paul",
+   "w": [
+    "the Hall of Mirrors, Versailles",
+    "the Sorbonne",
+    "the Palace of Vienna"
+   ],
+   "e": "831 elected representatives marched there on 18 May 1848."
+  },
+  {
+   "topic": "revol",
+   "level": "hard",
+   "q": "Who rejected the crown offered by the Frankfurt parliament?",
+   "a": "Friedrich Wilhelm IV, King of Prussia",
+   "w": [
+    "William I",
+    "Louis Philippe",
+    "Victor Emmanuel II"
+   ],
+   "e": "He joined other monarchs to oppose the elected assembly."
+  },
+  {
+   "topic": "revol",
+   "level": "hard",
+   "q": "Why did the Frankfurt parliament lose popular support?",
+   "a": "It was dominated by the middle classes who resisted the demands of workers and artisans",
+   "w": [
+    "It gave the vote to all women",
+    "It was led by Bismarck",
+    "It refused to draft a constitution"
+   ],
+   "e": "The social basis of parliament eroded and troops finally disbanded it."
+  },
+  {
+   "topic": "revol",
+   "level": "hard",
+   "q": "How did the Polish clergy resist Russian rule after the failed rebellion of 1831?",
+   "a": "They used the Polish language for Church gatherings and religious instruction",
+   "w": [
+    "They invited Napoleon to invade Russia",
+    "They formed the Zollverein",
+    "They wrote fairy tales in Russian"
+   ],
+   "e": "Many priests were jailed or sent to Siberia for refusing to preach in Russian."
+  },
+  {
+   "topic": "revol",
+   "level": "hard",
+   "q": "Which was NOT a cause of economic hardship in Europe in the 1830s?",
+   "a": "A shortage of people looking for jobs",
+   "w": [
+    "Enormous population growth",
+    "Cheap machine-made imports from England",
+    "Feudal dues on peasants where aristocracy held power"
+   ],
+   "e": "There were more seekers of jobs than employment."
+  },
+  {
+   "topic": "revol",
+   "level": "hard",
+   "q": "What did the National Assembly do after Louis Philippe fled in 1848?",
+   "a": "Proclaimed a Republic and gave suffrage to all adult males above 21",
+   "w": [
+    "Restored the Bourbon kings",
+    "Banned all workers’ associations",
+    "Joined the German confederation"
+   ],
+   "e": "It also guaranteed the right to work and set up national workshops."
+  },
+  {
+   "topic": "revol",
+   "level": "easy",
+   "q": "Why did the Silesian weavers revolt in 1845?",
+   "a": "Contractors drastically reduced payments for the cloth they ordered",
+   "w": [
+    "They wanted a German emperor",
+    "The Church raised its tithes",
+    "Napoleon conscripted them into the army"
+   ],
+   "e": "The misery of the workers was extreme.",
+   "passage": "‘On 4 June at 2 p.m. a large crowd of weavers emerged from their homes and marched in pairs up to the mansion of their contractor demanding higher wages. They were treated with scorn and threats alternately. Following this, a group of them forced their way into the house … The contractor fled … He returned 24 hours later having requisitioned the army. In the exchange that followed, eleven weavers were shot.’ – Wilhelm Wolff on the Silesian weavers, 1845"
+  },
+  {
+   "topic": "revol",
+   "level": "hard",
+   "q": "What did Louise Otto-Peters mean by ‘Liberty is indivisible’?",
+   "a": "Liberty that excludes women is not real liberty",
+   "w": [
+    "Liberty must be shared only among men",
+    "Nations should not be divided",
+    "Liberty belongs only to property owners"
+   ],
+   "e": "She criticised liberals who fought for the freedom of only one half of humanity.",
+   "passage": "Louise Otto-Peters founded a women’s journal. Its first issue (21 April 1849) said: ‘Let us ask how many men, possessed by thoughts of living and dying for the sake of Liberty, would be prepared to fight for the freedom of the entire people, of all human beings? … their untiring efforts are intended for the benefit of only one half of humanity – men. But Liberty is indivisible! Free men therefore must not tolerate to be surrounded by the unfree …’"
+  },
+  {
+   "topic": "revol",
+   "level": "advanced",
+   "q": "Which change was introduced by the monarchies of Central and Eastern Europe AFTER 1848?",
+   "a": "Serfdom and bonded labour were abolished in the Habsburg dominions and Russia",
+   "w": [
+    "Universal suffrage for women",
+    "The Bourbons were restored",
+    "The Frankfurt constitution was adopted"
+   ],
+   "e": "Monarchs realised that cycles of revolution and repression could end only by granting concessions."
+  },
+  {
+   "topic": "revol",
+   "level": "advanced",
+   "q": "Delacroix’s ‘The Massacre at Chios’ (1824) is an example of how Romantic art –",
+   "a": "appealed to emotions to create sympathy for the Greeks",
+   "w": [
+    "glorified reason and science",
+    "celebrated Ottoman rule",
+    "showed the Frankfurt parliament at work"
+   ],
+   "e": "Romantics focused on emotions, intuition and mystical feelings rather than reason."
+  },
+  {
+   "topic": "unify",
+   "level": "easy",
+   "q": "The architect of German unification was –",
+   "a": "Otto von Bismarck",
+   "w": [
+    "Giuseppe Garibaldi",
+    "Count Cavour",
+    "Duke Metternich"
+   ],
+   "e": "Chief minister of Prussia, working with the Prussian army and bureaucracy."
+  },
+  {
+   "topic": "unify",
+   "level": "easy",
+   "q": "In January 1871 who was proclaimed German Emperor at Versailles?",
+   "a": "William I of Prussia",
+   "w": [
+    "Friedrich Wilhelm IV",
+    "Victor Emmanuel II",
+    "Louis Philippe"
+   ],
+   "e": "The ceremony was held in the Hall of Mirrors."
+  },
+  {
+   "topic": "unify",
+   "level": "easy",
+   "q": "In 1861, who was proclaimed king of united Italy?",
+   "a": "Victor Emmanuel II",
+   "w": [
+    "Garibaldi",
+    "Cavour",
+    "Mazzini"
+   ],
+   "e": "He was ruler of Sardinia-Piedmont."
+  },
+  {
+   "topic": "unify",
+   "level": "easy",
+   "q": "Garibaldi’s volunteers were popularly known as –",
+   "a": "Red Shirts",
+   "w": [
+    "Junkers",
+    "Carbonari",
+    "Young Europe"
+   ],
+   "e": "In 1860 he led the Expedition of the Thousand to South Italy."
+  },
+  {
+   "topic": "unify",
+   "level": "easy",
+   "q": "The Act of Union of 1707 was between –",
+   "a": "England and Scotland",
+   "w": [
+    "England and Ireland",
+    "Prussia and Austria",
+    "Sardinia and France"
+   ],
+   "e": "It formed the ‘United Kingdom of Great Britain’."
+  },
+  {
+   "topic": "unify",
+   "level": "easy",
+   "q": "The large landowners of Prussia were called –",
+   "a": "Junkers",
+   "w": [
+    "Sanatanis",
+    "Talukdars",
+    "Carbonari"
+   ],
+   "e": "They supported the monarchy and military in repressing the liberal initiative of 1848."
+  },
+  {
+   "topic": "unify",
+   "level": "hard",
+   "q": "Germany was unified through three wars over seven years. They were fought against –",
+   "a": "Austria, Denmark and France",
+   "w": [
+    "Russia, Britain and Italy",
+    "Spain, Portugal and France",
+    "Greece, Turkey and Austria"
+   ],
+   "e": "All three ended in Prussian victory."
+  },
+  {
+   "topic": "unify",
+   "level": "hard",
+   "q": "Which statement about Cavour is correct?",
+   "a": "He was neither a revolutionary nor a democrat and spoke French better than Italian",
+   "w": [
+    "He led the Red Shirts into Sicily",
+    "He founded Young Italy",
+    "He was proclaimed king of Italy"
+   ],
+   "e": "Through a diplomatic alliance with France he helped Sardinia-Piedmont defeat Austria in 1859."
+  },
+  {
+   "topic": "unify",
+   "level": "hard",
+   "q": "In the mid-19th century Italy was divided into seven states. Which one was ruled by an Italian princely house?",
+   "a": "Sardinia-Piedmont",
+   "w": [
+    "The Papal States",
+    "The Kingdom of the Two Sicilies",
+    "Lombardy"
+   ],
+   "e": "The north was under the Austrian Habsburgs, the centre under the Pope and the south under the Bourbon kings of Spain."
+  },
+  {
+   "topic": "unify",
+   "level": "hard",
+   "q": "When were the Papal States finally joined to Italy?",
+   "a": "1870, when France withdrew its troops from Rome",
+   "w": [
+    "1859, after the defeat of Austria",
+    "1861, with the proclamation of the king",
+    "1848, after the revolution"
+   ],
+   "e": "Garibaldi’s 1867 attempt had failed against French and Papal troops."
+  },
+  {
+   "topic": "unify",
+   "level": "hard",
+   "q": "How was Ireland forcibly incorporated into the United Kingdom?",
+   "a": "In 1801, after the failed revolt of Wolfe Tone’s United Irishmen (1798)",
+   "w": [
+    "By the Act of Union of 1707",
+    "By the Treaty of Vienna",
+    "By a plebiscite in 1848"
+   ],
+   "e": "The English helped Irish Protestants dominate a largely Catholic country."
+  },
+  {
+   "topic": "unify",
+   "level": "advanced",
+   "q": "Which feature made the formation of the British nation-state different from the rest of Europe?",
+   "a": "It was a long-drawn-out process, not the result of a sudden upheaval or revolution",
+   "w": [
+    "It was created by three wars led by Prussia",
+    "It was unified by Garibaldi’s volunteers",
+    "It was created by the Treaty of Vienna"
+   ],
+   "e": "The English parliament, which seized power in 1688, was the instrument that forged the nation-state."
+  },
+  {
+   "topic": "unify",
+   "level": "advanced",
+   "q": "The southern Italian peasants who supported Garibaldi believed ‘La Talia’ was Victor Emmanuel’s wife. What does this show?",
+   "a": "Much of the population was unaware of liberal-nationalist ideology",
+   "w": [
+    "Italians strongly supported the monarchy’s marriage",
+    "Garibaldi taught the peasants Italian",
+    "The peasants wanted a republic"
+   ],
+   "e": "Rates of illiteracy were very high."
+  },
+  {
+   "topic": "unify",
+   "level": "advanced",
+   "q": "Assertion (A): After 1848 nationalism moved away from democracy and revolution. Reason (R): Nationalist sentiments were mobilised by conservatives to promote state power. Choose the correct option.",
+   "a": "Both A and R are true and R explains A",
+   "w": [
+    "Both A and R are true but R does not explain A",
+    "A is true but R is false",
+    "A is false but R is true"
+   ],
+   "e": "Germany’s unification by Prussia’s army shows this."
+  },
+  {
+   "topic": "visual",
+   "level": "easy",
+   "q": "The female allegory of the French nation was –",
+   "a": "Marianne",
+   "w": [
+    "Germania",
+    "Britannia",
+    "Bharat Mata"
+   ],
+   "e": "Her characteristics were drawn from Liberty and the Republic – the red cap, the tricolour, the cockade."
+  },
+  {
+   "topic": "visual",
+   "level": "easy",
+   "q": "Germania wears a crown of oak leaves because the German oak stands for –",
+   "a": "heroism",
+   "w": [
+    "peace",
+    "a new era",
+    "being freed"
+   ],
+   "e": "From Box 3 – Meanings of the symbols."
+  },
+  {
+   "topic": "visual",
+   "level": "easy",
+   "q": "The most serious source of nationalist tension in Europe after 1871 was –",
+   "a": "the Balkans",
+   "w": [
+    "Brussels",
+    "Scotland",
+    "Sicily"
+   ],
+   "e": "A region of geographical and ethnic variation, largely under the Ottoman Empire."
+  },
+  {
+   "topic": "visual",
+   "level": "easy",
+   "q": "An abstract idea expressed through a person or a thing is called an –",
+   "a": "allegory",
+   "w": [
+    "ideology",
+    "utopia",
+    "plebiscite"
+   ],
+   "e": "Nations were portrayed as female figures – allegories of the nation."
+  },
+  {
+   "topic": "visual",
+   "level": "hard",
+   "q": "What did the black, red and gold tricolour stand for?",
+   "a": "The flag of the liberal-nationalists in 1848, banned by the Dukes of the German states",
+   "w": [
+    "The flag of the French Republic",
+    "The flag of Prussia’s army",
+    "The Union Jack"
+   ],
+   "e": "Germans carry it in Sorrieu’s print as an expression of liberal hopes."
+  },
+  {
+   "topic": "visual",
+   "level": "hard",
+   "q": "Why did nationalism become ‘a narrow creed’ in the last quarter of the 19th century?",
+   "a": "Nationalist groups became intolerant of each other and ready for war, and big powers used them for imperialist aims",
+   "w": [
+    "Nations stopped using flags",
+    "All empires became democracies",
+    "Women got the vote everywhere"
+   ],
+   "e": "Nationalism aligned with imperialism led Europe to disaster in 1914."
+  },
+  {
+   "topic": "visual",
+   "level": "hard",
+   "q": "Why did the Balkans become explosive?",
+   "a": "Romantic nationalism spread as the Ottoman Empire disintegrated, and big powers competed for control",
+   "w": [
+    "The region was united under one Slav king",
+    "Britain gave the Balkans independence",
+    "There were no ethnic differences there"
+   ],
+   "e": "Russia, Germany, England and Austro-Hungary each wanted to extend control."
+  },
+  {
+   "topic": "visual",
+   "level": "advanced",
+   "q": "Statues of Marianne were erected in public squares and her image put on coins and stamps. Why?",
+   "a": "To remind the public of the national symbol of unity and persuade them to identify with it",
+   "w": [
+    "To honour a real French queen",
+    "To advertise French cloth",
+    "To mark the defeat of Napoleon"
+   ],
+   "e": "The female figure did not stand for any particular woman in real life."
+  },
+  {
+   "topic": "visual",
+   "level": "advanced",
+   "q": "How did anti-imperial movements in the colonies relate to European nationalism?",
+   "a": "They were nationalist and formed nation-states, but developed their own specific variety of nationalism",
+   "w": [
+    "They copied European nationalism exactly",
+    "They rejected the idea of nation-states",
+    "They supported European empires"
+   ],
+   "e": "The idea that societies should be organised into nation-states came to be accepted as universal."
+  },
+  {
+   "topic": "visual",
+   "level": "easy",
+   "type": "pairs",
+   "q": "In Box 3, what does ‘{x}’ symbolise?",
+   "pairs": [
+    [
+     "Broken chains",
+     "Being freed"
+    ],
+    [
+     "Breastplate with eagle",
+     "Strength of the German empire"
+    ],
+    [
+     "Crown of oak leaves",
+     "Heroism"
+    ],
+    [
+     "Sword",
+     "Readiness to fight"
+    ],
+    [
+     "Olive branch around the sword",
+     "Willingness to make peace"
+    ],
+    [
+     "Rays of the rising sun",
+     "Beginning of a new era"
+    ]
+   ],
+   "e": "{x} → {ans}."
+  },
+  {
+   "topic": "visual",
+   "level": "easy",
+   "type": "pairs",
+   "q": "In Box 3, what does ‘{x}’ symbolise?",
+   "pairs": [
+    [
+     "Broken chains",
+     "Being freed"
+    ],
+    [
+     "Breastplate with eagle",
+     "Strength of the German empire"
+    ],
+    [
+     "Crown of oak leaves",
+     "Heroism"
+    ],
+    [
+     "Sword",
+     "Readiness to fight"
+    ],
+    [
+     "Olive branch around the sword",
+     "Willingness to make peace"
+    ],
+    [
+     "Rays of the rising sun",
+     "Beginning of a new era"
+    ]
+   ],
+   "e": "{x} → {ans}."
+  },
+  {
+   "topic": "unify",
+   "level": "easy",
+   "type": "pairs",
+   "q": "‘{x}’ – with whom is this linked?",
+   "pairs": [
+    [
+     "Founded Young Italy and Young Europe",
+     "Mazzini"
+    ],
+    [
+     "Led the Expedition of the Thousand",
+     "Garibaldi"
+    ],
+    [
+     "Engineered a diplomatic alliance with France",
+     "Cavour"
+    ],
+    [
+     "Proclaimed king of united Italy in 1861",
+     "Victor Emmanuel II"
+    ],
+    [
+     "Chief minister who unified Germany",
+     "Bismarck"
+    ],
+    [
+     "Proclaimed German Emperor in 1871",
+     "William I"
+    ]
+   ],
+   "e": "{x} → {ans}.",
+   "extra": [
+    "Metternich"
+   ]
+  },
+  {
+   "topic": "unify",
+   "level": "easy",
+   "type": "pairs",
+   "q": "‘{x}’ – with whom is this linked?",
+   "pairs": [
+    [
+     "Founded Young Italy and Young Europe",
+     "Mazzini"
+    ],
+    [
+     "Led the Expedition of the Thousand",
+     "Garibaldi"
+    ],
+    [
+     "Engineered a diplomatic alliance with France",
+     "Cavour"
+    ],
+    [
+     "Proclaimed king of united Italy in 1861",
+     "Victor Emmanuel II"
+    ],
+    [
+     "Chief minister who unified Germany",
+     "Bismarck"
+    ],
+    [
+     "Proclaimed German Emperor in 1871",
+     "William I"
+    ]
+   ],
+   "e": "{x} → {ans}.",
+   "extra": [
+    "Metternich"
+   ]
+  },
+  {
+   "topic": "revol",
+   "level": "hard",
+   "type": "pairs",
+   "q": "‘{x}’ – which year?",
+   "pairs": [
+    [
+     "July Revolution in France",
+     "1830"
+    ],
+    [
+     "Greek struggle for independence begins",
+     "1821"
+    ],
+    [
+     "Treaty of Constantinople recognises Greece",
+     "1832"
+    ],
+    [
+     "Frankfurt parliament convened",
+     "1848"
+    ],
+    [
+     "Silesian weavers’ revolt",
+     "1845"
+    ],
+    [
+     "Habsburgs grant more autonomy to Hungarians",
+     "1867"
+    ]
+   ],
+   "e": "{x} → {ans}."
+  },
+  {
+   "topic": "revol",
+   "level": "hard",
+   "type": "pairs",
+   "q": "‘{x}’ – which year?",
+   "pairs": [
+    [
+     "July Revolution in France",
+     "1830"
+    ],
+    [
+     "Greek struggle for independence begins",
+     "1821"
+    ],
+    [
+     "Treaty of Constantinople recognises Greece",
+     "1832"
+    ],
+    [
+     "Frankfurt parliament convened",
+     "1848"
+    ],
+    [
+     "Silesian weavers’ revolt",
+     "1845"
+    ],
+    [
+     "Habsburgs grant more autonomy to Hungarians",
+     "1867"
+    ]
+   ],
+   "e": "{x} → {ans}."
+  },
+  {
+   "topic": "liberal",
+   "level": "hard",
+   "type": "pairs",
+   "q": "‘{x}’ – liberal or conservative idea?",
+   "pairs": [
+    [
+     "Government by consent",
+     "Liberal"
+    ],
+    [
+     "Preserve the monarchy, the Church and social hierarchies",
+     "Conservative"
+    ],
+    [
+     "Freedom of markets and end of tariff barriers",
+     "Liberal"
+    ],
+    [
+     "Censorship of newspapers, books and plays",
+     "Conservative"
+    ],
+    [
+     "A constitution and representative government",
+     "Liberal"
+    ],
+    [
+     "Prefer gradual development to quick change",
+     "Conservative"
+    ]
+   ],
+   "e": "{x} → {ans}.",
+   "extra": [
+    "Romantic",
+    "Socialist"
+   ]
+  },
+  {
+   "topic": "liberal",
+   "level": "hard",
+   "type": "pairs",
+   "q": "‘{x}’ – liberal or conservative idea?",
+   "pairs": [
+    [
+     "Government by consent",
+     "Liberal"
+    ],
+    [
+     "Preserve the monarchy, the Church and social hierarchies",
+     "Conservative"
+    ],
+    [
+     "Freedom of markets and end of tariff barriers",
+     "Liberal"
+    ],
+    [
+     "Censorship of newspapers, books and plays",
+     "Conservative"
+    ],
+    [
+     "A constitution and representative government",
+     "Liberal"
+    ],
+    [
+     "Prefer gradual development to quick change",
+     "Conservative"
+    ]
+   ],
+   "e": "{x} → {ans}.",
+   "extra": [
+    "Romantic",
+    "Socialist"
+   ]
+  }
+ ]
+}

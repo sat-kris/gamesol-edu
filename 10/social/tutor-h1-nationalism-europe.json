@@ -1,0 +1,785 @@
+{
+ "id": "class10-social-h1-tutor",
+ "chapter": "History I · The Rise of Nationalism in Europe",
+ "source": "NCERT India and the Contemporary World II (Class X History), Chapter I",
+ "overview": {
+  "bigIdea": "In 1789 the French Revolution gave Europe a new idea – **the people, not the king, make the nation**. Through the 19th century liberals, revolutionaries, artists and then conservative statesmen turned this idea into **nation-states**, until nationalism joined imperialism and led to war in 1914.",
+  "ladderTitle": "The chapter in five steps",
+  "ladder": [
+   {
+    "step": "1789–1815",
+    "q": "Where did it begin?",
+    "a": "French Revolution and Napoleon’s reforms"
+   },
+   {
+    "step": "1815–1848",
+    "q": "Who pushed it?",
+    "a": "Liberal middle classes vs conservative Vienna order"
+   },
+   {
+    "step": "1830–1848",
+    "q": "How did it erupt?",
+    "a": "Revolutions, Romanticism, hunger and Frankfurt"
+   },
+   {
+    "step": "1859–1871",
+    "q": "Who completed it?",
+    "a": "Bismarck’s Germany, Cavour and Garibaldi’s Italy"
+   },
+   {
+    "step": "After 1871",
+    "q": "What went wrong?",
+    "a": "Balkans and imperialism → First World War"
+   }
+  ],
+  "languagesTitle": "How to answer",
+  "languages": [
+   {
+    "name": "Dates",
+    "text": "1789, 1804, 1815, 1830, 1834, 1848, 1861, 1871 – anchor every answer in time."
+   },
+   {
+    "name": "People",
+    "text": "Napoleon, Metternich, Mazzini, Cavour, Garibaldi, Bismarck."
+   },
+   {
+    "name": "Symbols",
+    "text": "Read images: Marianne, Germania, Box 3 meanings."
+   }
+  ],
+  "plan": [
+   {
+    "pass": "Revolution",
+    "time": "10 min",
+    "text": "Lessons 1–2 – French measures, Napoleonic Code, liberals and conservatives."
+   },
+   {
+    "pass": "1830–1848",
+    "time": "10 min",
+    "text": "Lesson 3 – revolutions, Romanticism, Frankfurt (timeline activity)."
+   },
+   {
+    "pass": "Unification",
+    "time": "15 min",
+    "text": "Lessons 4–5 – Germany, Italy, Britain; allegories; Balkans."
+   },
+   {
+    "pass": "Test and revise",
+    "time": "10 min",
+    "text": "Check knowledge quiz; revise after 1, 3 and 7 days."
+   }
+  ]
+ },
+ "lessons": [
+  {
+   "topic": "frev",
+   "ref": "1",
+   "title": "The French Revolution and the idea of the nation",
+   "time": "10 min",
+   "hook": "In 1848 the French artist **Frédéric Sorrieu** drew the peoples of Europe and America marching past the statue of Liberty – each group with its own flag. His ‘utopian’ dream of a world of democratic nations started with France in **1789**.",
+   "core": [
+    {
+     "term": "Nation-state",
+     "def": "A state in which the majority of citizens, not only rulers, share a sense of common identity and shared history or descent."
+    },
+    {
+     "term": "French measures",
+     "def": "Ideas of la patrie (fatherland) and le citoyen (citizen); tricolour flag; Estates General renamed National Assembly; new hymns, oaths, martyrs; uniform laws; no internal customs; uniform weights and measures; French of Paris as common language."
+    },
+    {
+     "term": "Napoleonic Code (1804)",
+     "def": "Ended privileges based on birth, gave equality before the law and secured the right to property."
+    },
+    {
+     "term": "Napoleon’s reforms abroad",
+     "def": "Simpler administrative divisions, end of feudal system, peasants freed from serfdom and manorial dues, guild restrictions removed, better transport and communication."
+    },
+    {
+     "term": "Renan (1882)",
+     "def": "A nation is a large-scale solidarity built on a shared past and a common will – ‘a daily plebiscite’, not just language, race, religion or territory."
+    }
+   ],
+   "explain": [
+    "**Mixed reactions:** in Holland, Switzerland, Brussels, Mainz, Milan and Warsaw the French were first welcomed as harbingers of liberty. Soon increased taxation, censorship and forced conscription outweighed the benefits.",
+    "**Absolutist vs modern:** Napoleon destroyed democracy in France by returning to monarchy, yet his administration followed revolutionary principles."
+   ],
+   "example": {
+    "q": "What steps did the French revolutionaries take to create a sense of collective identity among the French people? (3/5 marks)",
+    "steps": [
+     "**Ideas:** la patrie and le citoyen stressed a united community with equal rights under a constitution.",
+     "**Symbols:** a new tricolour replaced the royal standard; new hymns, oaths and martyrs commemorated in the nation’s name.",
+     "**Institutions:** the Estates General was elected by active citizens and renamed the National Assembly.",
+     "**Uniform administration:** centralised system with uniform laws; internal customs duties abolished; uniform weights and measures.",
+     "**Language:** regional dialects discouraged; French of Paris became the common language."
+    ],
+    "answer": "Ideas, symbols, assembly, uniform laws and economy, one language – five points."
+   },
+   "mistakes": [
+    "Saying Napoleon brought democracy (he restored monarchy).",
+    "Mixing up the Napoleonic Code (1804) with the Treaty of Vienna (1815).",
+    "Thinking all conquered people welcomed French rule throughout."
+   ],
+   "tip": "For Napoleon questions write two columns: ‘Administrative gains’ and ‘What people disliked’ (taxes, censorship, conscription).",
+   "memory": "1789 Revolution · 1804 Code · Patrie + Citoyen · Flag, Assembly, Laws, Measures, Language.",
+   "examAsk": [
+    "Steps taken by French revolutionaries to create collective identity.",
+    "Changes Napoleon introduced to make administration efficient.",
+    "Why did French rule become unpopular in conquered areas?"
+   ],
+   "cards": [
+    {
+     "q": "Year of the Napoleonic Code?",
+     "a": "1804 (Civil Code)."
+    },
+    {
+     "q": "La patrie and le citoyen mean?",
+     "a": "The fatherland and the citizen."
+    },
+    {
+     "q": "Renan’s nation is ‘a daily …’?",
+     "a": "Plebiscite."
+    }
+   ],
+   "play": [
+    {
+     "type": "sort",
+     "title": "Napoleon: gain or grievance?",
+     "say": "Tap whether each item was an administrative gain or something people resented.",
+     "buckets": [
+      "Gain",
+      "Grievance"
+     ],
+     "items": [
+      [
+       "Equality before the law",
+       0,
+       "From the Napoleonic Code."
+      ],
+      [
+       "Forced conscription into French armies",
+       1,
+       "Needed to conquer the rest of Europe."
+      ],
+      [
+       "Peasants freed from serfdom and manorial dues",
+       0,
+       "Feudal system abolished."
+      ],
+      [
+       "Increased taxation",
+       1,
+       "Outweighed the advantages."
+      ],
+      [
+       "Guild restrictions removed in towns",
+       0,
+       "Helped new businessmen."
+      ],
+      [
+       "Censorship",
+       1,
+       "No political freedom."
+      ],
+      [
+       "Improved transport and communication",
+       0,
+       "Helped trade."
+      ],
+      [
+       "Right to property secured",
+       0,
+       "Napoleonic Code."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "topic": "liberal",
+   "ref": "2",
+   "title": "Liberals, conservatives and revolutionaries",
+   "time": "12 min",
+   "hook": "Imagine paying customs duty **11 times** on one trip from Hamburg to Nuremberg, and the ‘elle’ of cloth being a different length in every town. No wonder the new middle class wanted **one nation, one market**.",
+   "core": [
+    {
+     "term": "Aristocracy",
+     "def": "Small but dominant landed class; spoke French in high society; linked by marriage across regions."
+    },
+    {
+     "term": "Liberalism",
+     "def": "From liber (free): individual freedom, equality before law, government by consent, constitution and parliament, end of autocracy and clerical privilege, inviolable private property, free markets."
+    },
+    {
+     "term": "Zollverein (1834)",
+     "def": "Customs union led by Prussia; abolished tariff barriers; cut currencies from over thirty to two; railways added mobility."
+    },
+    {
+     "term": "Conservatism",
+     "def": "Preserve monarchy, Church, social hierarchies, property and family; prefer gradual change; use modernisation to strengthen monarchy."
+    },
+    {
+     "term": "Treaty of Vienna (1815)",
+     "def": "Hosted by Metternich; Bourbons restored; buffer states around France (Netherlands incl. Belgium; Genoa added to Piedmont); Prussia gained western lands; Austria got northern Italy; Russia got part of Poland."
+    },
+    {
+     "term": "Mazzini",
+     "def": "Born Genoa 1805; Carbonari member; exiled 1831; founded Young Italy (Marseilles) and Young Europe (Berne); wanted a unified Italian republic."
+    }
+   ],
+   "explain": [
+    "**Limited suffrage:** in revolutionary France only property-owning men could vote; the Napoleonic Code reduced women to the status of a minor. Women and non-propertied men organised movements for equal political rights.",
+    "**After 1815:** conservative regimes were autocratic, used censorship and drove liberals underground into secret societies."
+   ],
+   "example": {
+    "q": "What did liberal nationalism stand for? (3 marks)",
+    "steps": [
+     "**Politically:** freedom for the individual, equality before the law, government by consent – a constitution and representative government through parliament.",
+     "**Socially:** end of autocracy and clerical privileges; inviolability of private property.",
+     "**Economically:** freedom of markets and abolition of state restrictions on the movement of goods and capital – e.g. the Zollverein of 1834."
+    ],
+    "answer": "Political, social and economic sides – with the Zollverein as the example."
+   },
+   "mistakes": [
+    "Saying liberals wanted universal suffrage – they mostly gave votes to property-owning men.",
+    "Saying the Treaty of Vienna broke up the German confederation (it was left untouched).",
+    "Calling Metternich a revolutionary."
+   ],
+   "tip": "Learn the Treaty of Vienna as ‘Restore + Contain’: restore monarchs (Bourbons) and contain France with buffer states.",
+   "memory": "Liber = free · Zollverein 1834 (30 → 2 currencies) · Vienna 1815 (Metternich) · Mazzini: Young Italy, Young Europe.",
+   "examAsk": [
+    "What did liberal nationalism stand for?",
+    "Main changes made by the Treaty of Vienna.",
+    "Who was Mazzini? Write a note."
+   ],
+   "cards": [
+    {
+     "q": "Zollverein reduced currencies from … to …?",
+     "a": "Over thirty to two."
+    },
+    {
+     "q": "Who hosted the Congress of Vienna?",
+     "a": "Duke Metternich of Austria."
+    },
+    {
+     "q": "Mazzini’s two societies?",
+     "a": "Young Italy (Marseilles), Young Europe (Berne)."
+    }
+   ],
+   "play": [
+    {
+     "type": "sort",
+     "title": "Liberal or conservative?",
+     "say": "Sort each idea into the right camp.",
+     "buckets": [
+      "Liberal",
+      "Conservative"
+     ],
+     "items": [
+      [
+       "Government by consent",
+       0,
+       "Core liberal idea."
+      ],
+      [
+       "Preserve the monarchy and the Church",
+       1,
+       "Traditional institutions."
+      ],
+      [
+       "Freedom of the press",
+       0,
+       "A major liberal demand after 1815."
+      ],
+      [
+       "Censorship laws",
+       1,
+       "Used by the regimes of 1815."
+      ],
+      [
+       "Abolish tariff barriers",
+       0,
+       "Economic liberalism – Zollverein."
+      ],
+      [
+       "Gradual development, not quick change",
+       1,
+       "Definition of conservatism."
+      ],
+      [
+       "Constitution and parliament",
+       0,
+       "Representative government."
+      ],
+      [
+       "Restore the Bourbon dynasty",
+       1,
+       "Treaty of Vienna, 1815."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "topic": "revol",
+   "ref": "3",
+   "title": "The age of revolutions, 1830–1848",
+   "time": "12 min",
+   "hook": "‘When France sneezes, the rest of Europe catches cold,’ said Metternich. In **1830** and again in **1848** France sneezed – and revolutions spread from Brussels to Frankfurt.",
+   "core": [
+    {
+     "term": "July 1830",
+     "def": "Bourbon kings overthrown in France; constitutional monarchy under Louis Philippe; Belgium breaks away from the United Kingdom of the Netherlands."
+    },
+    {
+     "term": "Greek war of independence",
+     "def": "Began 1821 against the Ottoman Empire; supported by West Europeans like Lord Byron (died 1824); Treaty of Constantinople, 1832."
+    },
+    {
+     "term": "Romanticism",
+     "def": "Culture over reason: emotions, folk songs, poetry, dances (Herder’s das volk, volksgeist); Grimm brothers’ folktales; Poland’s music and language (Kurpinski, polonaise, mazurka)."
+    },
+    {
+     "term": "Hunger and revolt",
+     "def": "1830s: population boom, unemployment, slums, cheap English imports; 1845 Silesian weavers’ revolt; 1848 Paris – Louis Philippe flees, Republic with suffrage for men above 21."
+    },
+    {
+     "term": "Frankfurt parliament (1848)",
+     "def": "831 representatives in the Church of St Paul; constitution with a monarchy subject to parliament; crown refused by Friedrich Wilhelm IV; disbanded by troops."
+    }
+   ],
+   "explain": [
+    "**Women in 1848:** they formed associations and newspapers but were denied suffrage and admitted only as observers in the gallery of the Frankfurt parliament (compare Welcker and Otto-Peters in Source C).",
+    "**Result:** conservatives suppressed 1848 but could not restore the old order – serfdom and bonded labour were abolished in the Habsburg dominions and Russia; Hungarians got more autonomy in 1867."
+   ],
+   "example": {
+    "q": "Explain what is meant by the 1848 revolution of the liberals. (5 marks)",
+    "steps": [
+     "**Who:** the educated middle classes, alongside revolts of the poor and unemployed.",
+     "**Where:** France (Republic with universal male suffrage) and regions without nation-states – Germany, Italy, Poland, Austria-Hungary.",
+     "**Demands:** a nation-state on parliamentary principles – a constitution, freedom of the press and freedom of association.",
+     "**Frankfurt:** 831 deputies drafted a constitution; Friedrich Wilhelm IV rejected the crown; troops disbanded the assembly.",
+     "**Limits and outcome:** women denied suffrage; middle class ignored workers; yet monarchs later granted concessions like abolishing serfdom."
+    ],
+    "answer": "Who, where, demands, Frankfurt, outcome."
+   },
+   "mistakes": [
+    "Confusing the 1830 July Revolution (Louis Philippe installed) with 1848 (Louis Philippe flees).",
+    "Saying the Frankfurt parliament succeeded.",
+    "Forgetting that culture (Romanticism) also built nationalism, not only wars."
+   ],
+   "tip": "For ‘role of culture’ questions give three examples: Romantic art (Delacroix), folk culture (Herder, Grimms), language/music in Poland.",
+   "memory": "1821 Greece starts · 1830 July Revolution · 1832 Greece free · 1845 Silesia · 1848 Paris & Frankfurt.",
+   "examAsk": [
+    "The 1848 revolution of the liberals.",
+    "Role of culture in the growth of nationalism in Europe.",
+    "Write a note on the Greek war of independence / Frankfurt parliament."
+   ],
+   "cards": [
+    {
+     "q": "Who refused the Frankfurt crown?",
+     "a": "Friedrich Wilhelm IV of Prussia."
+    },
+    {
+     "q": "Treaty that freed Greece?",
+     "a": "Treaty of Constantinople, 1832."
+    },
+    {
+     "q": "Herder’s word for the common people?",
+     "a": "Das volk."
+    }
+   ],
+   "play": [
+    {
+     "type": "order",
+     "title": "Revolutions timeline",
+     "say": "Tap the events from earliest to latest.",
+     "first": "earliest",
+     "last": "latest",
+     "items": [
+      "1821 – Greek struggle for independence begins",
+      "1830 – July Revolution in France",
+      "1832 – Treaty of Constantinople",
+      "1845 – Silesian weavers revolt",
+      "1848 – Frankfurt parliament meets",
+      "1867 – Hungarians get more autonomy"
+     ],
+     "done": "1821 → 1830 → 1832 → 1845 → 1848 → 1867."
+    }
+   ]
+  },
+  {
+   "topic": "unify",
+   "ref": "4",
+   "title": "The making of Germany, Italy and Britain",
+   "time": "12 min",
+   "hook": "Can the **army** be the architect of a nation? In Germany it was – Bismarck used ‘three wars over seven years’. In Italy a diplomat (Cavour) and a sailor-soldier (Garibaldi) did the job. Britain took centuries.",
+   "core": [
+    {
+     "term": "Germany",
+     "def": "1848 liberal attempt crushed by monarchy, military and Junkers; Prussia leads; Bismarck; wars with Austria, Denmark, France; William I proclaimed Emperor at Versailles, 18 January 1871."
+    },
+    {
+     "term": "Italy before 1861",
+     "def": "Seven states – only Sardinia-Piedmont under an Italian princely house; north Austrian Habsburgs, centre the Pope, south Bourbon kings of Spain."
+    },
+    {
+     "term": "Italy unified",
+     "def": "Mazzini’s 1831 and 1848 uprisings failed; Cavour’s alliance with France defeats Austria (1859); Garibaldi’s Red Shirts take the Two Sicilies (1860); Victor Emmanuel II king (1861); Papal States join 1870."
+    },
+    {
+     "term": "Britain",
+     "def": "Long process; English parliament (1688); Act of Union 1707 with Scotland; Scottish Highlanders’ culture suppressed; Ireland incorporated 1801; Union Jack, anthem, English language promoted."
+    }
+   ],
+   "explain": [
+    "**Prussian model:** the new German state modernised currency, banking, legal and judicial systems; Prussian practices became the model.",
+    "**Unaware masses:** southern peasants thought ‘La Talia’ was Victor Emmanuel’s wife – nationalism was an elite project."
+   ],
+   "example": {
+    "q": "Briefly trace the process of German unification. (5 marks)",
+    "steps": [
+     "**1848:** middle-class Germans tried to unite the confederation under an elected parliament (Frankfurt).",
+     "**Repression:** the monarchy, military and Junkers crushed this liberal initiative.",
+     "**Prussia leads:** chief minister Otto von Bismarck with the Prussian army and bureaucracy.",
+     "**Three wars over seven years:** against Austria, Denmark and France – all Prussian victories.",
+     "**1871:** William I proclaimed German Emperor in the Hall of Mirrors, Versailles; Prussian measures became the model for Germany."
+    ],
+    "answer": "1848 failure → Prussia/Bismarck → three wars → 1871 Empire."
+   },
+   "mistakes": [
+    "Making Garibaldi the king of Italy.",
+    "Saying Germany was unified by the Frankfurt parliament.",
+    "Writing that Britain was formed by revolution."
+   ],
+   "tip": "Italy = 3 people, 3 roles: Mazzini (ideas), Cavour (diplomacy), Garibaldi (volunteers) – and the king Victor Emmanuel II.",
+   "memory": "Germany: Bismarck, 3 wars, 1871 Versailles · Italy: 1859, 1860, 1861, 1870 · Britain: 1688, 1707, 1801.",
+   "examAsk": [
+    "Trace the process of German unification.",
+    "Explain how Italy was unified.",
+    "How was the history of nationalism in Britain unlike the rest of Europe?"
+   ],
+   "cards": [
+    {
+     "q": "Bismarck’s three wars were against?",
+     "a": "Austria, Denmark and France."
+    },
+    {
+     "q": "Garibaldi’s volunteers?",
+     "a": "Red Shirts (Expedition of the Thousand, 1860)."
+    },
+    {
+     "q": "Act of Union year?",
+     "a": "1707 (England and Scotland)."
+    }
+   ],
+   "play": [
+    {
+     "type": "match",
+     "title": "Who unified whom?",
+     "say": "Match each person with their role.",
+     "pairs": [
+      [
+       "Bismarck",
+       "Chief minister who unified Germany through war"
+      ],
+      [
+       "William I",
+       "Proclaimed German Emperor in 1871"
+      ],
+      [
+       "Mazzini",
+       "Founded Young Italy"
+      ],
+      [
+       "Cavour",
+       "Diplomatic alliance with France"
+      ],
+      [
+       "Garibaldi",
+       "Led the Red Shirts to South Italy"
+      ],
+      [
+       "Victor Emmanuel II",
+       "King of united Italy, 1861"
+      ]
+     ]
+    },
+    {
+     "type": "order",
+     "title": "Italy comes together",
+     "say": "Tap the steps of Italian unification in order.",
+     "first": "earliest",
+     "last": "latest",
+     "items": [
+      "1831 – Mazzini exiled after a failed revolution",
+      "1859 – Sardinia-Piedmont defeats Austria",
+      "1860 – Garibaldi’s Expedition of the Thousand",
+      "1861 – Victor Emmanuel II proclaimed king",
+      "1870 – Papal States join Italy"
+     ],
+     "done": "Ideas → war → volunteers → king → Rome."
+    }
+   ]
+  },
+  {
+   "topic": "visual",
+   "ref": "5–6",
+   "title": "Visualising the nation; nationalism and imperialism",
+   "time": "10 min",
+   "hook": "How do you draw a **nation**? Artists made it a woman – **Marianne** for France, **Germania** for Germany. But by 1871 nationalism had turned narrow and aggressive.",
+   "core": [
+    {
+     "term": "Allegory",
+     "def": "An abstract idea expressed through a person or thing; nations shown as female figures not representing any real woman."
+    },
+    {
+     "term": "Marianne",
+     "def": "France; red cap, tricolour, cockade; statues in public squares; on coins and stamps."
+    },
+    {
+     "term": "Germania",
+     "def": "Germany; crown of oak leaves (heroism); Veit’s 1848 banner hung in the Church of St Paul."
+    },
+    {
+     "term": "Box 3 symbols",
+     "def": "Broken chains – being freed; eagle breastplate – strength; oak crown – heroism; sword – readiness to fight; olive branch – peace; black-red-gold – liberal flag of 1848; rising sun – new era."
+    },
+    {
+     "term": "Balkans",
+     "def": "Romania, Bulgaria, Albania, Greece, Macedonia, Croatia, Bosnia-Herzegovina, Slovenia, Serbia, Montenegro – Slavs; Ottoman decline; big-power rivalry → wars and the First World War."
+    }
+   ],
+   "explain": [
+    "**After 1871** nationalism lost its liberal-democratic idealism; groups became intolerant and ready for war; big powers manipulated subject peoples for imperialist aims.",
+    "**Colonies** developed anti-imperial nationalism of their own, but accepted the idea of the nation-state as universal."
+   ],
+   "example": {
+    "q": "Why did nationalist tensions emerge in the Balkans? (5 marks)",
+    "steps": [
+     "**Diversity:** a region of geographical and ethnic variation whose people were broadly known as Slavs.",
+     "**Ottoman decline:** reforms failed; subject nationalities broke away one by one.",
+     "**Romantic nationalism:** people used history to claim long-lost independence.",
+     "**Rivalry among Balkan states:** each was jealous and wanted territory at the others’ expense.",
+     "**Big-power rivalry:** Russia, Germany, England and Austro-Hungary competed for control – a series of wars and finally the First World War."
+    ],
+    "answer": "Diversity, Ottoman decline, romantic claims, mutual jealousy, big powers."
+   },
+   "mistakes": [
+    "Saying Marianne was a real French queen.",
+    "Mixing up the meanings of the sword and the olive branch.",
+    "Leaving out big-power rivalry in Balkans answers."
+   ],
+   "tip": "For image questions: name the allegory, list 2–3 attributes from Box 3, then say what message they give together.",
+   "memory": "Marianne = France (red cap) · Germania = Germany (oak = heroism) · Balkans = Slavs + Ottoman decline + big powers.",
+   "examAsk": [
+    "Who were Marianne and Germania? Why were they portrayed this way?",
+    "Why did nationalist tensions emerge in the Balkans?",
+    "How did nationalism become linked with imperialism?"
+   ],
+   "cards": [
+    {
+     "q": "Oak leaves on Germania mean?",
+     "a": "Heroism."
+    },
+    {
+     "q": "Olive branch around the sword?",
+     "a": "Willingness to make peace."
+    },
+    {
+     "q": "Balkan peoples were broadly known as?",
+     "a": "Slavs."
+    }
+   ],
+   "play": [
+    {
+     "type": "match",
+     "title": "Read Germania’s symbols",
+     "say": "Match each attribute with its meaning (Box 3).",
+     "pairs": [
+      [
+       "Broken chains",
+       "Being freed"
+      ],
+      [
+       "Breastplate with eagle",
+       "Strength of the German empire"
+      ],
+      [
+       "Crown of oak leaves",
+       "Heroism"
+      ],
+      [
+       "Sword",
+       "Readiness to fight"
+      ],
+      [
+       "Olive branch around the sword",
+       "Willingness to make peace"
+      ],
+      [
+       "Rays of the rising sun",
+       "Beginning of a new era"
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "formulas": [
+  {
+   "name": "French Revolution",
+   "f": "1789 – sovereignty passes to the people",
+   "unit": "Patrie, citoyen, tricolour, National Assembly",
+   "when": "Collective identity questions"
+  },
+  {
+   "name": "Napoleonic Code",
+   "f": "1804 – equality before law, right to property",
+   "unit": "Abolished feudalism and serfdom abroad",
+   "when": "Napoleon’s reforms"
+  },
+  {
+   "name": "Treaty of Vienna",
+   "f": "1815 – hosted by Metternich",
+   "unit": "Bourbons restored; buffer states",
+   "when": "Conservatism"
+  },
+  {
+   "name": "Zollverein",
+   "f": "1834 – Prussian-led customs union",
+   "unit": "Currencies over 30 → 2",
+   "when": "Economic nationalism"
+  },
+  {
+   "name": "Revolutions",
+   "f": "1830 July Revolution; 1848 Paris and Frankfurt",
+   "unit": "Greek independence 1821–1832",
+   "when": "Age of revolutions"
+  },
+  {
+   "name": "Germany",
+   "f": "Bismarck; wars with Austria, Denmark, France",
+   "unit": "William I Emperor, Versailles, 1871",
+   "when": "German unification"
+  },
+  {
+   "name": "Italy",
+   "f": "Mazzini, Cavour, Garibaldi",
+   "unit": "Victor Emmanuel II king, 1861; Rome 1870",
+   "when": "Italian unification"
+  },
+  {
+   "name": "Britain",
+   "f": "1688 parliament; 1707 Act of Union; 1801 Ireland",
+   "unit": "Union Jack, anthem, English language",
+   "when": "Britain unlike Europe"
+  },
+  {
+   "name": "Allegories",
+   "f": "Marianne (France), Germania (Germany)",
+   "unit": "Box 3 meanings",
+   "when": "Visualising the nation"
+  }
+ ],
+ "revision": [
+  "Sorrieu’s 1848 prints show a utopian world of democratic and social republics.",
+  "French Revolution (1789): la patrie, le citoyen, tricolour, National Assembly, uniform laws, weights and measures, French of Paris.",
+  "Napoleonic Code (1804): no privileges by birth, equality before law, right to property; feudalism and serfdom abolished in conquered areas.",
+  "French rule turned unpopular: taxes, censorship, forced conscription.",
+  "Liberalism (liber = free): individual freedom, equality before law, government by consent; free markets; but votes only for property-owning men.",
+  "Zollverein 1834: tariff barriers abolished, currencies from over 30 to 2.",
+  "Treaty of Vienna 1815 (Metternich): Bourbons restored; Netherlands incl. Belgium; Austria gets northern Italy; German confederation of 39 states untouched.",
+  "Mazzini: Carbonari, Young Italy, Young Europe – ‘most dangerous enemy of our social order’.",
+  "1830 July Revolution; Belgium breaks away; Greece independent by Treaty of Constantinople 1832.",
+  "Romanticism: Delacroix, Herder’s das volk, Grimm brothers, Polish language and music.",
+  "1848: Paris Republic with male suffrage; Frankfurt parliament (831 deputies, St Paul’s) fails; women only observers.",
+  "Germany 1871: Bismarck, three wars, William I at Versailles.",
+  "Italy: Cavour + France beat Austria 1859; Garibaldi 1860; Victor Emmanuel II 1861; Rome 1870.",
+  "Britain: long process – 1688, 1707, 1801; English culture dominant.",
+  "Marianne and Germania are allegories; Balkans were the powder keg before 1914."
+ ],
+ "exam": {
+  "paper": [
+   {
+    "q": "1 mark",
+    "marks": "MCQ / A-R",
+    "what": "Dates (1804, 1815, 1834, 1871), people, Box 3 symbols, treaties"
+   },
+   {
+    "q": "3 marks",
+    "marks": "Short answer",
+    "what": "French measures for identity; Napoleon’s reforms; liberal nationalism; Marianne and Germania"
+   },
+   {
+    "q": "5 marks",
+    "marks": "Long answer",
+    "what": "German or Italian unification; 1848 revolution of liberals; Britain unlike Europe; Balkans"
+   },
+   {
+    "q": "Source-based",
+    "marks": "4 marks",
+    "what": "Renan, List, Silesian weavers or the women’s rights sources"
+   },
+   {
+    "q": "Map",
+    "marks": "1–2 marks",
+    "what": "Map work as listed in the current CBSE syllabus"
+   }
+  ],
+  "sections": [
+   {
+    "title": "Unification answers · 4 steps",
+    "kind": "steps",
+    "items": [
+     "State the starting situation (divided states, who ruled them).",
+     "Name the leaders and their roles.",
+     "Give the events in date order.",
+     "End with the result and its nature (e.g. ‘dominance of Prussian state power’)."
+    ]
+   },
+   {
+    "title": "Answer writing that scores",
+    "kind": "mem",
+    "items": [
+     "Start with a one-line introduction using the textbook’s key term (e.g. ‘Proto-industrialisation was …’).",
+     "Write in points – one idea per point, key term first. A 3-mark answer needs 3 clear points; a 5-mark answer needs 5.",
+     "Add a date, a name or a figure from the chapter to each point – but only when you are sure of it.",
+     "For ‘Explain / Analyse’ use PEE: Point → Explain → Example. For ‘Compare’ draw a small two-column table.",
+     "Source-based questions: underline the key line in the source first; the answer is usually hidden in it."
+    ]
+   },
+   {
+    "title": "Before the exam",
+    "kind": "note",
+    "items": [
+     "Revise the key facts sheet and the revision list the night before.",
+     "Redo the Play & learn timelines and sorts – if you get every card first time, you know the chapter.",
+     "Practise one 5-mark answer in 8–10 minutes with a timer."
+    ]
+   }
+  ],
+  "checklist": [
+   "I can list the French measures that created a collective identity.",
+   "I can explain Napoleon’s reforms and why people resented French rule.",
+   "I can explain liberalism, conservatism and the Treaty of Vienna.",
+   "I can describe 1830–1848, including Romanticism and the Frankfurt parliament.",
+   "I can trace German and Italian unification and explain Britain’s case.",
+   "I can interpret Marianne, Germania and the Balkan problem."
+  ],
+  "paperTitle": "How this chapter is examined",
+  "paperCols": [
+   "Marks",
+   "Question type",
+   "Likely asks"
+  ],
+  "paperNote": "Based on the CBSE Class X Social Science pattern (MCQ, assertion–reason, 3-mark short, 4-mark source-based and 5-mark long answers; History also has map work). Practise these types first."
+ },
+ "method": "Built on proven learning methods: understand the story first, sort and match ideas with your hands (active learning), write model answers point by point, test yourself (active recall) and revisit after 1, 3 and 7 days (spaced revision).",
+ "sheetTitle": "Key facts sheet",
+ "sheetCols": [
+  "Topic",
+  "Key fact",
+  "Detail",
+  "Use it for"
+ ]
+}

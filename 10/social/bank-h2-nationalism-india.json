@@ -1,0 +1,1066 @@
+{
+ "id": "class10-social-h2",
+ "class": "10",
+ "subject": "social",
+ "chapter": "History II · Nationalism in India",
+ "source": "NCERT India and the Contemporary World II (Class X History), Chapter II",
+ "topics": [
+  {
+   "id": "war",
+   "name": "War, satyagraha and the Rowlatt Act",
+   "ref": "1–1.2"
+  },
+  {
+   "id": "ncm",
+   "name": "Non-Cooperation and its differing strands",
+   "ref": "1.3–2"
+  },
+  {
+   "id": "cdm",
+   "name": "Towards Civil Disobedience and the Salt March",
+   "ref": "3–3.1"
+  },
+  {
+   "id": "groups",
+   "name": "How participants saw the movement and its limits",
+   "ref": "3.2–3.3"
+  },
+  {
+   "id": "belong",
+   "name": "The sense of collective belonging",
+   "ref": "4"
+  }
+ ],
+ "questions": [
+  {
+   "topic": "war",
+   "level": "easy",
+   "q": "According to the census of 1921, how many people died due to famines and the influenza epidemic?",
+   "a": "12 to 13 million",
+   "w": [
+    "1 to 2 million",
+    "50 million",
+    "100,000"
+   ],
+   "e": "Crops failed in 1918–19 and 1920–21, along with an influenza epidemic."
+  },
+  {
+   "topic": "war",
+   "level": "easy",
+   "q": "Mahatma Gandhi returned to India from South Africa in –",
+   "a": "January 1915",
+   "w": [
+    "April 1919",
+    "December 1920",
+    "March 1930"
+   ],
+   "e": "In South Africa he had fought the racist regime through satyagraha."
+  },
+  {
+   "topic": "war",
+   "level": "easy",
+   "q": "In 1917 Gandhiji went to Champaran in Bihar to inspire peasants against –",
+   "a": "the oppressive plantation system",
+   "w": [
+    "the salt tax",
+    "the Rowlatt Act",
+    "mill owners"
+   ],
+   "e": "His first satyagraha movements in India: Champaran 1917, Kheda and Ahmedabad 1918."
+  },
+  {
+   "topic": "war",
+   "level": "easy",
+   "q": "The Jallianwalla Bagh incident took place on –",
+   "a": "13 April 1919",
+   "w": [
+    "6 April 1919",
+    "5 February 1922",
+    "6 April 1930"
+   ],
+   "e": "General Dyer blocked the exits and opened fire, killing hundreds."
+  },
+  {
+   "topic": "war",
+   "level": "easy",
+   "q": "Which Act allowed detention of political prisoners without trial for two years?",
+   "a": "The Rowlatt Act, 1919",
+   "w": [
+    "The Inland Emigration Act, 1859",
+    "The Government of India Act, 1919",
+    "The Nari Shakti Act"
+   ],
+   "e": "It was passed despite the united opposition of the Indian members."
+  },
+  {
+   "topic": "war",
+   "level": "hard",
+   "q": "How did the First World War create a new economic situation in India?",
+   "a": "Defence spending rose, customs duties and income tax were raised and prices doubled between 1913 and 1918",
+   "w": [
+    "Prices fell sharply and taxes were abolished",
+    "Britain stopped recruiting Indian soldiers",
+    "Indian exports of cloth were banned"
+   ],
+   "e": "Forced recruitment in villages also caused widespread anger."
+  },
+  {
+   "topic": "war",
+   "level": "hard",
+   "q": "In 1918 the peasants of Kheda demanded relaxation of revenue collection because of –",
+   "a": "crop failure and a plague epidemic",
+   "w": [
+    "indigo planters’ oppression",
+    "a cut in mill wages",
+    "the salt tax"
+   ],
+   "e": "Kheda district, Gujarat."
+  },
+  {
+   "topic": "war",
+   "level": "hard",
+   "q": "What was General Dyer’s stated object in firing at Jallianwalla Bagh?",
+   "a": "To ‘produce a moral effect’ – create terror and awe in the minds of satyagrahis",
+   "w": [
+    "To arrest Gandhiji",
+    "To stop the Baisakhi fair only",
+    "To protect the railways"
+   ],
+   "e": "Many villagers present were unaware of martial law."
+  },
+  {
+   "topic": "war",
+   "level": "hard",
+   "q": "Why did Gandhiji take up the Khilafat issue?",
+   "a": "To bring Hindus and Muslims together in a broad-based national movement",
+   "w": [
+    "To support the British in Turkey",
+    "To end the Rowlatt satyagraha",
+    "To win seats in the councils"
+   ],
+   "e": "The Khalifa was the spiritual head of the Islamic world; the Khilafat Committee was formed in Bombay in March 1919."
+  },
+  {
+   "topic": "war",
+   "level": "easy",
+   "q": "According to Gandhiji, satyagraha is –",
+   "a": "active resistance based on truth and soul-force, not a weapon of the weak",
+   "w": [
+    "passive resistance used by the weak",
+    "physical force against the adversary",
+    "a form of armed struggle"
+   ],
+   "e": "It calls for intense activity.",
+   "passage": "‘It is said of “passive resistance” that it is the weapon of the weak, but the power which is the subject of this article can be used only by the strong. This power is not passive resistance; indeed it calls for intense activity. … Satyagraha is not physical force. A satyagrahi does not inflict pain on the adversary; he does not seek his destruction … Satyagraha is pure soul-force. Truth is the very substance of the soul.’ – Mahatma Gandhi"
+  },
+  {
+   "topic": "war",
+   "level": "advanced",
+   "q": "Assertion (A): The Rowlatt satyagraha was called off. Reason (R): Violence spread after Jallianwalla Bagh. Choose the correct option.",
+   "a": "Both A and R are true and R explains A",
+   "w": [
+    "Both A and R are true but R does not explain A",
+    "A is true but R is false",
+    "A is false but R is true"
+   ],
+   "e": "Seeing violence spread, Gandhiji called off the movement."
+  },
+  {
+   "topic": "war",
+   "level": "advanced",
+   "q": "Which description of satyagraha matches the textbook?",
+   "a": "If the cause is true, the oppressor can be persuaded to see the truth without physical force",
+   "w": [
+    "The oppressor must be forced to accept truth by violence",
+    "Satyagraha is the weapon of the weak",
+    "Satyagraha seeks the destruction of the adversary"
+   ],
+   "e": "It appeals to the conscience of the oppressor."
+  },
+  {
+   "topic": "ncm",
+   "level": "easy",
+   "q": "Gandhiji declared in Hind Swaraj (1909) that British rule survived in India because of –",
+   "a": "the cooperation of Indians",
+   "w": [
+    "superior weapons",
+    "the support of the princes only",
+    "the railways"
+   ],
+   "e": "If Indians refused to cooperate, British rule would collapse within a year."
+  },
+  {
+   "topic": "ncm",
+   "level": "easy",
+   "q": "The Non-Cooperation programme was adopted at the Congress session at –",
+   "a": "Nagpur, December 1920",
+   "w": [
+    "Calcutta, September 1920",
+    "Lahore, December 1929",
+    "Bombay, March 1919"
+   ],
+   "e": "At Calcutta (Sept 1920) Gandhiji convinced leaders; at Nagpur a compromise was worked out."
+  },
+  {
+   "topic": "ncm",
+   "level": "easy",
+   "q": "Peasants in Awadh were led by –",
+   "a": "Baba Ramchandra",
+   "w": [
+    "Alluri Sitaram Raju",
+    "Vallabhbhai Patel",
+    "Abdul Ghaffar Khan"
+   ],
+   "e": "A sanyasi who had been to Fiji as an indentured labourer."
+  },
+  {
+   "topic": "ncm",
+   "level": "easy",
+   "q": "‘Begar’ means –",
+   "a": "labour villagers were forced to contribute without payment",
+   "w": [
+    "a peasant tax on salt",
+    "a boycott of foreign cloth",
+    "a strike by mill workers"
+   ],
+   "e": "Abolition of begar was a demand of the Awadh peasants."
+  },
+  {
+   "topic": "ncm",
+   "level": "easy",
+   "q": "The value of foreign cloth imports dropped between 1921 and 1922 from –",
+   "a": "Rs 102 crore to Rs 57 crore",
+   "w": [
+    "Rs 57 crore to Rs 102 crore",
+    "Rs 16 crore to Rs 3 crore",
+    "Rs 30 crore to Rs 15 crore"
+   ],
+   "e": "Import of foreign cloth halved."
+  },
+  {
+   "topic": "ncm",
+   "level": "easy",
+   "q": "Who led the guerrilla movement in the Gudem Hills of Andhra Pradesh?",
+   "a": "Alluri Sitaram Raju",
+   "w": [
+    "Baba Ramchandra",
+    "Shaukat Ali",
+    "C. R. Das"
+   ],
+   "e": "He was captured and executed in 1924."
+  },
+  {
+   "topic": "ncm",
+   "level": "hard",
+   "q": "Why did the movement in the cities slow down?",
+   "a": "Khadi was more expensive than mill cloth, and alternative Indian institutions were slow to come up",
+   "w": [
+    "Students got higher scholarships",
+    "The British abolished the councils",
+    "Merchants doubled foreign imports"
+   ],
+   "e": "Students, teachers and lawyers trickled back."
+  },
+  {
+   "topic": "ncm",
+   "level": "hard",
+   "q": "Council elections were boycotted in most provinces except Madras because –",
+   "a": "the Justice Party (non-Brahmans) saw entering the council as a way to gain power",
+   "w": [
+    "the Congress was banned there",
+    "Madras had no elections",
+    "Gandhiji asked them to contest"
+   ],
+   "e": "Power had usually been accessible only to Brahmans."
+  },
+  {
+   "topic": "ncm",
+   "level": "hard",
+   "q": "For plantation workers in Assam, swaraj meant –",
+   "a": "the right to move freely in and out of the gardens and keep links with their villages",
+   "w": [
+    "higher land revenue",
+    "a seat in the legislative council",
+    "the right to make salt"
+   ],
+   "e": "The Inland Emigration Act of 1859 barred them from leaving without permission."
+  },
+  {
+   "topic": "ncm",
+   "level": "hard",
+   "q": "Which form of struggle in the Gudem Hills could the Congress NOT approve?",
+   "a": "Militant guerrilla warfare",
+   "w": [
+    "Wearing khadi",
+    "Giving up drinking",
+    "Chanting Gandhiji’s name"
+   ],
+   "e": "Raju said India could be liberated only by force."
+  },
+  {
+   "topic": "ncm",
+   "level": "hard",
+   "q": "What made the Gudem hill people revolt?",
+   "a": "Closure of forests and forced begar for road building",
+   "w": [
+    "A rise in the salt tax",
+    "Separate electorates",
+    "Factory closures"
+   ],
+   "e": "They felt their traditional rights were being denied."
+  },
+  {
+   "topic": "ncm",
+   "level": "hard",
+   "q": "Who set up the Oudh Kisan Sabha by October 1920?",
+   "a": "Jawaharlal Nehru, Baba Ramchandra and a few others",
+   "w": [
+    "Gandhiji and Shaukat Ali",
+    "C. R. Das and Motilal Nehru",
+    "Purshottamdas Thakurdas and G. D. Birla"
+   ],
+   "e": "Over 300 branches were set up within a month."
+  },
+  {
+   "topic": "ncm",
+   "level": "easy",
+   "q": "What lesson did Nehru say he learnt at Rae Bareli?",
+   "a": "The calm peasants reminded him of non-violence",
+   "w": [
+    "Peasants should use force",
+    "He should stop talking to peasants",
+    "The police were right to fire"
+   ],
+   "e": "‘I needed the lesson more than they.’",
+   "passage": "On 6 January 1921 the police fired at peasants near Rae Bareli. Nehru later wrote: ‘For a moment my blood was up, non-violence was almost forgotten – but for a moment only. The thought of the great leader … came to me, and I saw the kisans seated and standing near me, less excited, more peaceful than I was – and the moment of weakness passed, I spoke to them in all humility on non-violence – I needed the lesson more than they – and they heeded me and peacefully dispersed.’"
+  },
+  {
+   "topic": "ncm",
+   "level": "advanced",
+   "q": "Why did tribals and plantation workers act in Gandhiji’s name though their visions were not those of the Congress programme?",
+   "a": "By linking to the Mahatma they identified with an all-India movement beyond their locality",
+   "w": [
+    "They were members of the Congress Working Committee",
+    "Gandhiji had ordered them to attack police stations",
+    "They wanted separate electorates"
+   ],
+   "e": "They interpreted swaraj as a time when all suffering would end."
+  },
+  {
+   "topic": "ncm",
+   "level": "advanced",
+   "q": "Which statement about the Non-Cooperation stages proposed by Gandhiji is correct?",
+   "a": "It began with surrender of titles and boycotts; full civil disobedience would follow if the government used repression",
+   "w": [
+    "It began with breaking the salt law",
+    "It began with armed revolt",
+    "It began with a fast unto death"
+   ],
+   "e": "Boycott of civil services, army, police, courts, councils, schools and foreign goods."
+  },
+  {
+   "topic": "cdm",
+   "level": "easy",
+   "q": "Gandhiji withdrew the Non-Cooperation Movement in February 1922 after the violence at –",
+   "a": "Chauri Chaura",
+   "w": [
+    "Jallianwalla Bagh",
+    "Dandi",
+    "Peshawar"
+   ],
+   "e": "He felt satyagrahis needed proper training."
+  },
+  {
+   "topic": "cdm",
+   "level": "easy",
+   "q": "The Swaraj Party was formed by –",
+   "a": "C. R. Das and Motilal Nehru",
+   "w": [
+    "Jawaharlal Nehru and Subhas Chandra Bose",
+    "Gandhiji and Patel",
+    "Jinnah and Iqbal"
+   ],
+   "e": "To argue for a return to council politics."
+  },
+  {
+   "topic": "cdm",
+   "level": "easy",
+   "q": "The Simon Commission was greeted with the slogan –",
+   "a": "‘Go back Simon’",
+   "w": [
+    "‘Do or Die’",
+    "‘Inquilab Zindabad’",
+    "‘Vande Mataram’"
+   ],
+   "e": "It did not have a single Indian member."
+  },
+  {
+   "topic": "cdm",
+   "level": "easy",
+   "q": "The Lahore Congress of December 1929 was presided over by –",
+   "a": "Jawaharlal Nehru",
+   "w": [
+    "Mahatma Gandhi",
+    "Subhas Chandra Bose",
+    "C. R. Das"
+   ],
+   "e": "It formalised the demand for Purna Swaraj."
+  },
+  {
+   "topic": "cdm",
+   "level": "easy",
+   "q": "Gandhiji’s salt march went from Sabarmati to –",
+   "a": "Dandi",
+   "w": [
+    "Champaran",
+    "Kheda",
+    "Bardoli"
+   ],
+   "e": "Over 240 miles in 24 days, with 78 volunteers."
+  },
+  {
+   "topic": "cdm",
+   "level": "easy",
+   "q": "The Gandhi-Irwin Pact was signed on –",
+   "a": "5 March 1931",
+   "w": [
+    "6 April 1930",
+    "26 January 1930",
+    "September 1932"
+   ],
+   "e": "Gandhiji agreed to attend the Round Table Conference; prisoners were released."
+  },
+  {
+   "topic": "cdm",
+   "level": "hard",
+   "q": "Why did Gandhiji choose salt as the symbol of the movement?",
+   "a": "Salt was consumed by rich and poor alike and the salt tax showed the most oppressive face of British rule",
+   "w": [
+    "Salt was the main export of India",
+    "The British had banned eating salt",
+    "Only peasants used salt"
+   ],
+   "e": "It could unite all classes."
+  },
+  {
+   "topic": "cdm",
+   "level": "hard",
+   "q": "How was the Civil Disobedience Movement different from Non-Cooperation?",
+   "a": "People were asked not only to refuse cooperation but also to break colonial laws",
+   "w": [
+    "It was limited to cities",
+    "It used armed struggle",
+    "It asked people to join the councils"
+   ],
+   "e": "Salt law, forest laws, revenue and chaukidari taxes were defied."
+  },
+  {
+   "topic": "cdm",
+   "level": "hard",
+   "q": "Which two factors shaped Indian politics towards the late 1920s?",
+   "a": "The worldwide economic depression and the Simon Commission",
+   "w": [
+    "The First World War and the Rowlatt Act",
+    "Khilafat and Chauri Chaura",
+    "Quit India and the Cripps Mission"
+   ],
+   "e": "Agricultural prices fell from 1926 and collapsed after 1930."
+  },
+  {
+   "topic": "cdm",
+   "level": "hard",
+   "q": "When Abdul Ghaffar Khan was arrested in April 1930, crowds faced armoured cars and police firing in –",
+   "a": "Peshawar",
+   "w": [
+    "Sholapur",
+    "Amritsar",
+    "Nagpur"
+   ],
+   "e": "Ghaffar Khan was a devout disciple of Gandhiji."
+  },
+  {
+   "topic": "cdm",
+   "level": "hard",
+   "q": "What vague offer did Lord Irwin make in October 1929?",
+   "a": "‘Dominion status’ in an unspecified future and a Round Table Conference",
+   "w": [
+    "Immediate independence",
+    "Separate electorates for all",
+    "Abolition of the salt tax"
+   ],
+   "e": "This did not satisfy Congress leaders."
+  },
+  {
+   "topic": "cdm",
+   "level": "easy",
+   "q": "According to the pledge, why must India sever the British connection?",
+   "a": "British rule deprived Indians of freedom, exploited the masses and ruined India economically, politically, culturally and spiritually",
+   "w": [
+    "Britain refused to buy Indian salt",
+    "Britain wanted India to join the war",
+    "The pledge supports dominion status"
+   ],
+   "e": "Purna Swaraj or Complete Independence.",
+   "passage": "‘We believe that it is the inalienable right of the Indian people, as of any other people, to have freedom and to enjoy the fruits of their toil and have the necessities of life … The British Government in India has not only deprived the Indian people of their freedom but has based itself on the exploitation of the masses, and has ruined India economically, politically, culturally, and spiritually. We believe, therefore, that India must sever the British connection and attain Purna Swaraj or Complete Independence.’ – Independence Day Pledge, 26 January 1930"
+  },
+  {
+   "topic": "cdm",
+   "level": "advanced",
+   "q": "Arrange in order: (i) Gandhi-Irwin Pact (ii) Lahore Congress demands Purna Swaraj (iii) Simon Commission arrives (iv) Dandi salt law broken",
+   "a": "(iii) → (ii) → (iv) → (i)",
+   "w": [
+    "(ii) → (iii) → (iv) → (i)",
+    "(iii) → (iv) → (ii) → (i)",
+    "(iv) → (iii) → (ii) → (i)"
+   ],
+   "e": "1928 → Dec 1929 → 6 April 1930 → 5 March 1931."
+  },
+  {
+   "topic": "cdm",
+   "level": "advanced",
+   "q": "Gandhiji’s letter to Irwin on 31 January 1930 contained eleven demands. Why so many?",
+   "a": "So that all classes – industrialists to peasants – could identify with them",
+   "w": [
+    "Because Irwin asked for a long list",
+    "To delay the movement",
+    "Because each demand was about salt"
+   ],
+   "e": "The idea was a united campaign."
+  },
+  {
+   "topic": "groups",
+   "level": "easy",
+   "q": "Which rich peasant communities were active in the Civil Disobedience Movement?",
+   "a": "Patidars of Gujarat and Jats of Uttar Pradesh",
+   "w": [
+    "Koshtis of Central Provinces",
+    "Talukdars of Awadh",
+    "Shroffs of Shikarpur"
+   ],
+   "e": "As commercial crop producers they were hit by the depression."
+  },
+  {
+   "topic": "groups",
+   "level": "easy",
+   "q": "FICCI was formed in –",
+   "a": "1927",
+   "w": [
+    "1920",
+    "1930",
+    "1932"
+   ],
+   "e": "The Indian Industrial and Commercial Congress came earlier, in 1920."
+  },
+  {
+   "topic": "groups",
+   "level": "easy",
+   "q": "Dr B. R. Ambedkar organised the dalits into the Depressed Classes Association in –",
+   "a": "1930",
+   "w": [
+    "1919",
+    "1927",
+    "1942"
+   ],
+   "e": "He demanded separate electorates at the second Round Table Conference."
+  },
+  {
+   "topic": "groups",
+   "level": "easy",
+   "q": "The Poona Pact was signed in –",
+   "a": "September 1932",
+   "w": [
+    "March 1931",
+    "December 1929",
+    "April 1919"
+   ],
+   "e": "It gave reserved seats to the Depressed Classes, elected by the general electorate."
+  },
+  {
+   "topic": "groups",
+   "level": "easy",
+   "q": "Gandhiji called the ‘untouchables’ –",
+   "a": "harijan, the children of God",
+   "w": [
+    "sanatanis",
+    "dalit",
+    "begar"
+   ],
+   "e": "Dalit (oppressed) was the name they chose for themselves from around the 1930s."
+  },
+  {
+   "topic": "groups",
+   "level": "hard",
+   "q": "Why were rich peasants disappointed in 1931?",
+   "a": "The movement was called off without revenue rates being revised",
+   "w": [
+    "They were denied separate electorates",
+    "Their mills were closed",
+    "Salt was made tax-free"
+   ],
+   "e": "So many refused to join when it restarted in 1932."
+  },
+  {
+   "topic": "groups",
+   "level": "hard",
+   "q": "Why did the Congress refuse to support ‘no rent’ campaigns of poor peasants in most places?",
+   "a": "It feared upsetting rich peasants and landlords",
+   "w": [
+    "Poor peasants did not pay rent",
+    "Rents had already been abolished",
+    "The British supported the campaigns"
+   ],
+   "e": "So relations between poor peasants and Congress stayed uncertain."
+  },
+  {
+   "topic": "groups",
+   "level": "hard",
+   "q": "What did industrialists want from swaraj?",
+   "a": "An end to colonial restrictions on business, protection against imports and a rupee-sterling ratio that discouraged imports",
+   "w": [
+    "Abolition of private property",
+    "Separate electorates",
+    "Lower wages for all"
+   ],
+   "e": "Led by Purshottamdas Thakurdas and G. D. Birla."
+  },
+  {
+   "topic": "groups",
+   "level": "hard",
+   "q": "Why did Gandhiji oppose separate electorates for dalits?",
+   "a": "He believed they would slow down the dalits’ integration into society",
+   "w": [
+    "He wanted no seats for dalits",
+    "He wanted dalits to vote only for Congress",
+    "He wanted Muslim electorates instead"
+   ],
+   "e": "He began a fast unto death."
+  },
+  {
+   "topic": "groups",
+   "level": "hard",
+   "q": "Where did industrial workers participate in Civil Disobedience in large numbers?",
+   "a": "The Nagpur region",
+   "w": [
+    "Bombay mills only",
+    "Assam tea gardens",
+    "Kanpur leather works"
+   ],
+   "e": "Elsewhere workers stayed aloof as industrialists came closer to Congress."
+  },
+  {
+   "topic": "groups",
+   "level": "hard",
+   "q": "How did the Congress view women’s role in the movement?",
+   "a": "It was keen only on their symbolic presence and reluctant to give them positions of authority",
+   "w": [
+    "It made women leaders of most provinces",
+    "It barred women from protests",
+    "It gave women separate electorates"
+   ],
+   "e": "Gandhiji felt women’s duty was home and hearth."
+  },
+  {
+   "topic": "groups",
+   "level": "easy",
+   "q": "According to Iqbal, why did Muslims want to retain separate electorates?",
+   "a": "As a safeguard for a minority facing economic inferiority, debt and insufficient majorities",
+   "w": [
+    "To end all elections",
+    "To merge with the Congress",
+    "Because Hindus demanded them"
+   ],
+   "e": "His statement is said to have provided intellectual justification for the later Pakistan demand.",
+   "passage": "In 1930 Sir Muhammad Iqbal, as president of the Muslim League, said: ‘The Hindu thinks that separate electorates are contrary to the spirit of true nationalism … India is a land of racial and religious variety. Add to this the general economic inferiority of the Muslims, their enormous debt, especially in the Punjab, and their insufficient majorities in some of the provinces … and you will begin to see clearly the meaning of our anxiety to retain separate electorates.’"
+  },
+  {
+   "topic": "groups",
+   "level": "advanced",
+   "q": "Hope of a Congress–Muslim League compromise disappeared at the All Parties Conference in 1928 when –",
+   "a": "M. R. Jayakar of the Hindu Mahasabha strongly opposed it",
+   "w": [
+    "Jinnah demanded a separate country",
+    "Gandhiji refused to attend",
+    "The Simon Commission banned the conference"
+   ],
+   "e": "Jinnah was willing to give up separate electorates for reserved seats and proportional representation in Bengal and Punjab."
+  },
+  {
+   "topic": "groups",
+   "level": "advanced",
+   "q": "Assertion (A): Business groups were no longer uniformly enthusiastic after the Round Table Conference failed. Reason (R): They feared militant activities, prolonged disruption of business and the influence of socialism among young Congress members. Choose the correct option.",
+   "a": "Both A and R are true and R explains A",
+   "w": [
+    "Both A and R are true but R does not explain A",
+    "A is true but R is false",
+    "A is false but R is true"
+   ],
+   "e": "Their support had been strong in 1930."
+  },
+  {
+   "topic": "belong",
+   "level": "easy",
+   "q": "The image of Bharat Mata was first created by –",
+   "a": "Bankim Chandra Chattopadhyay",
+   "w": [
+    "Abanindranath Tagore",
+    "Rabindranath Tagore",
+    "Natesa Sastri"
+   ],
+   "e": "He wrote ‘Vande Mataram’ in the 1870s, later in his novel Anandamath."
+  },
+  {
+   "topic": "belong",
+   "level": "easy",
+   "q": "Who painted the famous image of Bharat Mata (1905) as a calm, ascetic figure?",
+   "a": "Abanindranath Tagore",
+   "w": [
+    "Raja Ravi Varma",
+    "Bankim Chandra Chattopadhyay",
+    "M. V. Dhurandhar"
+   ],
+   "e": "Moved by the Swadeshi movement."
+  },
+  {
+   "topic": "belong",
+   "level": "easy",
+   "q": "The Swaraj flag designed by Gandhiji by 1921 had in its centre –",
+   "a": "a spinning wheel",
+   "w": [
+    "eight lotuses",
+    "a crescent moon",
+    "a lion"
+   ],
+   "e": "Red, green and white – the Gandhian ideal of self-help."
+  },
+  {
+   "topic": "belong",
+   "level": "easy",
+   "q": "Who published the four-volume collection ‘The Folklore of Southern India’?",
+   "a": "Natesa Sastri",
+   "w": [
+    "Rabindranath Tagore",
+    "Bankim Chandra",
+    "Tarinicharan Chattopadhyay"
+   ],
+   "e": "He believed folklore was national literature."
+  },
+  {
+   "topic": "belong",
+   "level": "hard",
+   "q": "The tricolour designed during the Swadeshi movement in Bengal had –",
+   "a": "eight lotuses for eight provinces and a crescent moon for Hindus and Muslims",
+   "w": [
+    "a spinning wheel",
+    "a chakra of 24 spokes",
+    "a lion and an elephant"
+   ],
+   "e": "Red, green and yellow."
+  },
+  {
+   "topic": "belong",
+   "level": "hard",
+   "q": "Why did some communities feel left out of nationalist imagery?",
+   "a": "When the past glorified was Hindu and images were drawn from Hindu iconography",
+   "w": [
+    "The images were all European",
+    "The flags had no colours",
+    "Folk songs were sung only in English"
+   ],
+   "e": "These efforts to unify were not without problems."
+  },
+  {
+   "topic": "belong",
+   "level": "hard",
+   "q": "Why did Indians reinterpret history from the late 19th century?",
+   "a": "To counter British claims that Indians were backward and to instil pride in past achievements",
+   "w": [
+    "To prove British rule was beneficial",
+    "To support separate electorates",
+    "To end the Swadeshi movement"
+   ],
+   "e": "Nationalist histories described a glorious past followed by decline under colonialism."
+  },
+  {
+   "topic": "belong",
+   "level": "hard",
+   "q": "The Quit India resolution was passed by the Congress Working Committee at Wardha on –",
+   "a": "14 July 1942",
+   "w": [
+    "8 August 1942",
+    "26 January 1930",
+    "5 March 1931"
+   ],
+   "e": "The AICC endorsed it in Bombay on 8 August 1942, when Gandhiji gave the ‘Do or Die’ speech."
+  },
+  {
+   "topic": "belong",
+   "level": "advanced",
+   "q": "How is Bharat Mata in Fig. 14a different from Abanindranath Tagore’s image?",
+   "a": "She holds a trishul beside a lion and an elephant – symbols of power and authority",
+   "w": [
+    "She is shown dispensing learning, food and clothing",
+    "She holds a mala to show asceticism",
+    "She wears a crown of oak leaves"
+   ],
+   "e": "Tagore’s figure is calm, composed, divine and spiritual."
+  },
+  {
+   "topic": "belong",
+   "level": "advanced",
+   "q": "Which leaders and women are named in the Quit India Movement box?",
+   "a": "Jayprakash Narayan, Aruna Asaf Ali, Ram Manohar Lohia, Matangini Hazra, Kanaklata Barua, Rama Devi",
+   "w": [
+    "C. R. Das, Motilal Nehru, Bhagat Singh",
+    "Ambedkar, Jinnah, Iqbal",
+    "Dwarkanath Tagore, Tata, Birla"
+   ],
+   "e": "The British took more than a year to suppress the movement."
+  },
+  {
+   "topic": "ncm",
+   "level": "easy",
+   "type": "pairs",
+   "q": "‘{x}’ – what did swaraj mean to this group?",
+   "pairs": [
+    [
+     "Plantation workers in Assam",
+     "Freedom to leave the gardens and return home"
+    ],
+    [
+     "Peasants of Awadh",
+     "End of begar and high rents"
+    ],
+    [
+     "Gudem hill people",
+     "Forest rights; liberation by force"
+    ],
+    [
+     "Middle class in towns",
+     "Boycott of schools, courts and foreign cloth"
+    ]
+   ],
+   "e": "{x} → {ans}.",
+   "extra": [
+    "Separate electorates"
+   ]
+  },
+  {
+   "topic": "ncm",
+   "level": "easy",
+   "type": "pairs",
+   "q": "‘{x}’ – what did swaraj mean to this group?",
+   "pairs": [
+    [
+     "Plantation workers in Assam",
+     "Freedom to leave the gardens and return home"
+    ],
+    [
+     "Peasants of Awadh",
+     "End of begar and high rents"
+    ],
+    [
+     "Gudem hill people",
+     "Forest rights; liberation by force"
+    ],
+    [
+     "Middle class in towns",
+     "Boycott of schools, courts and foreign cloth"
+    ]
+   ],
+   "e": "{x} → {ans}.",
+   "extra": [
+    "Separate electorates"
+   ]
+  },
+  {
+   "topic": "groups",
+   "level": "hard",
+   "type": "pairs",
+   "q": "‘{x}’ – which group in Civil Disobedience?",
+   "pairs": [
+    [
+     "Wanted revenue reduced; disappointed in 1931",
+     "Rich peasants"
+    ],
+    [
+     "Wanted unpaid rent remitted",
+     "Poor peasants"
+    ],
+    [
+     "Formed FICCI; wanted protection from imports",
+     "Business classes"
+    ],
+    [
+     "Joined mostly in the Nagpur region",
+     "Industrial workers"
+    ],
+    [
+     "Demanded separate electorates and reserved seats",
+     "Dalits"
+    ],
+    [
+     "Feared domination by a Hindu majority",
+     "Many Muslim leaders"
+    ]
+   ],
+   "e": "{x} → {ans}."
+  },
+  {
+   "topic": "groups",
+   "level": "hard",
+   "type": "pairs",
+   "q": "‘{x}’ – which group in Civil Disobedience?",
+   "pairs": [
+    [
+     "Wanted revenue reduced; disappointed in 1931",
+     "Rich peasants"
+    ],
+    [
+     "Wanted unpaid rent remitted",
+     "Poor peasants"
+    ],
+    [
+     "Formed FICCI; wanted protection from imports",
+     "Business classes"
+    ],
+    [
+     "Joined mostly in the Nagpur region",
+     "Industrial workers"
+    ],
+    [
+     "Demanded separate electorates and reserved seats",
+     "Dalits"
+    ],
+    [
+     "Feared domination by a Hindu majority",
+     "Many Muslim leaders"
+    ]
+   ],
+   "e": "{x} → {ans}."
+  },
+  {
+   "topic": "cdm",
+   "level": "hard",
+   "type": "pairs",
+   "q": "‘{x}’ – which year?",
+   "pairs": [
+    [
+     "Jallianwalla Bagh massacre",
+     "1919"
+    ],
+    [
+     "Non-Cooperation-Khilafat movement begins",
+     "1921"
+    ],
+    [
+     "Chauri Chaura; movement withdrawn",
+     "1922"
+    ],
+    [
+     "Simon Commission arrives",
+     "1928"
+    ],
+    [
+     "Salt March to Dandi",
+     "1930"
+    ],
+    [
+     "Poona Pact",
+     "1932"
+    ]
+   ],
+   "e": "{x} → {ans}."
+  },
+  {
+   "topic": "cdm",
+   "level": "hard",
+   "type": "pairs",
+   "q": "‘{x}’ – which year?",
+   "pairs": [
+    [
+     "Jallianwalla Bagh massacre",
+     "1919"
+    ],
+    [
+     "Non-Cooperation-Khilafat movement begins",
+     "1921"
+    ],
+    [
+     "Chauri Chaura; movement withdrawn",
+     "1922"
+    ],
+    [
+     "Simon Commission arrives",
+     "1928"
+    ],
+    [
+     "Salt March to Dandi",
+     "1930"
+    ],
+    [
+     "Poona Pact",
+     "1932"
+    ]
+   ],
+   "e": "{x} → {ans}."
+  },
+  {
+   "topic": "belong",
+   "level": "easy",
+   "type": "pairs",
+   "q": "‘{x}’ – who is linked with this?",
+   "pairs": [
+    [
+     "Wrote ‘Vande Mataram’",
+     "Bankim Chandra Chattopadhyay"
+    ],
+    [
+     "Painted Bharat Mata, 1905",
+     "Abanindranath Tagore"
+    ],
+    [
+     "Collected ballads, nursery rhymes and myths in Bengal",
+     "Rabindranath Tagore"
+    ],
+    [
+     "The Folklore of Southern India",
+     "Natesa Sastri"
+    ],
+    [
+     "Designed the Swaraj flag with a spinning wheel",
+     "Mahatma Gandhi"
+    ]
+   ],
+   "e": "{x} → {ans}."
+  },
+  {
+   "topic": "belong",
+   "level": "easy",
+   "type": "pairs",
+   "q": "‘{x}’ – who is linked with this?",
+   "pairs": [
+    [
+     "Wrote ‘Vande Mataram’",
+     "Bankim Chandra Chattopadhyay"
+    ],
+    [
+     "Painted Bharat Mata, 1905",
+     "Abanindranath Tagore"
+    ],
+    [
+     "Collected ballads, nursery rhymes and myths in Bengal",
+     "Rabindranath Tagore"
+    ],
+    [
+     "The Folklore of Southern India",
+     "Natesa Sastri"
+    ],
+    [
+     "Designed the Swaraj flag with a spinning wheel",
+     "Mahatma Gandhi"
+    ]
+   ],
+   "e": "{x} → {ans}."
+  }
+ ]
+}

@@ -1,0 +1,1023 @@
+{
+ "id": "class10-social-h3",
+ "class": "10",
+ "subject": "social",
+ "chapter": "History III · The Making of a Global World",
+ "source": "NCERT India and the Contemporary World II (Class X History), Chapter III",
+ "topics": [
+  {
+   "id": "premod",
+   "name": "The pre-modern world",
+   "ref": "1"
+  },
+  {
+   "id": "c19",
+   "name": "The nineteenth century: a world economy takes shape",
+   "ref": "2–2.2"
+  },
+  {
+   "id": "colonial",
+   "name": "Colonialism, rinderpest, indenture and Indian trade",
+   "ref": "2.3–2.6"
+  },
+  {
+   "id": "interwar",
+   "name": "The inter-war economy and the Great Depression",
+   "ref": "3"
+  },
+  {
+   "id": "postwar",
+   "name": "Rebuilding the world economy after 1945",
+   "ref": "4"
+  }
+ ],
+ "questions": [
+  {
+   "topic": "premod",
+   "level": "easy",
+   "q": "As early as 3000 BCE an active coastal trade linked the Indus valley civilisations with –",
+   "a": "present-day West Asia",
+   "w": [
+    "China",
+    "the Americas",
+    "Australia"
+   ],
+   "e": "Trade links are very old."
+  },
+  {
+   "topic": "premod",
+   "level": "easy",
+   "q": "Cowries from which place found their way to China and East Africa as a form of currency?",
+   "a": "The Maldives",
+   "w": [
+    "Peru",
+    "Sicily",
+    "Ireland"
+   ],
+   "e": "Cowries are seashells used as money."
+  },
+  {
+   "topic": "premod",
+   "level": "easy",
+   "q": "The name ‘silk routes’ comes from the importance of –",
+   "a": "West-bound Chinese silk cargoes",
+   "w": [
+    "Indian cotton exports",
+    "European gold flowing east",
+    "Arab horses"
+   ],
+   "e": "Chinese pottery, Indian and Southeast Asian textiles and spices also travelled; gold and silver flowed from Europe to Asia."
+  },
+  {
+   "topic": "premod",
+   "level": "easy",
+   "q": "Which of these foods was NOT known to our ancestors until about five centuries ago?",
+   "a": "Potatoes",
+   "w": [
+    "Rice",
+    "Wheat",
+    "Lentils"
+   ],
+   "e": "Potatoes, soya, groundnuts, maize, tomatoes, chillies and sweet potatoes came from the Americas."
+  },
+  {
+   "topic": "premod",
+   "level": "easy",
+   "q": "The most powerful ‘weapon’ of the Spanish conquerors in America was –",
+   "a": "germs such as smallpox",
+   "w": [
+    "cannons",
+    "horses",
+    "iron armour"
+   ],
+   "e": "America’s original inhabitants had no immunity."
+  },
+  {
+   "topic": "premod",
+   "level": "hard",
+   "q": "Why did hundreds of thousands die in Ireland in the mid-1840s?",
+   "a": "Disease destroyed the potato crop on which the poorest peasants depended",
+   "w": [
+    "The Corn Laws were abolished",
+    "Smallpox came from America",
+    "Rinderpest killed their cattle"
+   ],
+   "e": "Great Irish Potato Famine (1845–1849): around 1,000,000 died of starvation."
+  },
+  {
+   "topic": "premod",
+   "level": "hard",
+   "q": "Which religion spread from eastern India through intersecting points on the silk routes?",
+   "a": "Buddhism",
+   "w": [
+    "Christianity",
+    "Islam",
+    "Zoroastrianism"
+   ],
+   "e": "Christian missionaries and Muslim preachers later travelled the routes too."
+  },
+  {
+   "topic": "premod",
+   "level": "hard",
+   "q": "Why did the centre of world trade shift westwards to Europe?",
+   "a": "China retreated into isolation from the 15th century and the Americas rose in importance",
+   "w": [
+    "India stopped producing textiles",
+    "The silk routes were closed by Britain",
+    "Europe discovered the Maldives"
+   ],
+   "e": "Until the 18th century China and India were among the world’s richest countries."
+  },
+  {
+   "topic": "premod",
+   "level": "hard",
+   "q": "Why did thousands flee Europe for America before the 19th century?",
+   "a": "Poverty, hunger, disease and persecution of religious dissenters",
+   "w": [
+    "To work in Indian textile mills",
+    "To escape the Great Depression",
+    "To mine gold in South Africa"
+   ],
+   "e": "By the 18th century, slave-worked plantations in America grew cotton and sugar for Europe."
+  },
+  {
+   "topic": "premod",
+   "level": "easy",
+   "q": "What does John Winthorp’s statement show about the colonisation of America?",
+   "a": "Smallpox wiped out the natives and made it easy for colonists to take their land",
+   "w": [
+    "Colonists brought medicines for natives",
+    "Natives defeated the colonists with guns",
+    "Smallpox killed most colonists"
+   ],
+   "e": "Disease paved the way for conquest.",
+   "passage": "John Winthorp, first governor of the Massachusetts Bay colony, wrote in May 1634 that smallpox signalled God’s blessing for the colonists: ‘… the natives … were neere all dead of small Poxe, so as the Lord hathe cleared our title to what we possess’."
+  },
+  {
+   "topic": "premod",
+   "level": "advanced",
+   "q": "What do historians mean when they say the world ‘shrank’ in the 1500s?",
+   "a": "European sailors found a sea route to Asia and crossed to America, linking distant lands more closely",
+   "w": [
+    "The size of continents reduced",
+    "Population fell sharply worldwide",
+    "Trade between Asia and Europe stopped"
+   ],
+   "e": "The entry of Europeans expanded or redirected Indian Ocean flows towards Europe."
+  },
+  {
+   "topic": "premod",
+   "level": "advanced",
+   "q": "Assertion (A): Precious metals from Peru and Mexico enhanced Europe’s wealth. Reason (R): Silver from these mines financed Europe’s trade with Asia. Choose the correct option.",
+   "a": "Both A and R are true and R explains A",
+   "w": [
+    "Both A and R are true but R does not explain A",
+    "A is true but R is false",
+    "A is false but R is true"
+   ],
+   "e": "Legends of El Dorado also spread."
+  },
+  {
+   "topic": "c19",
+   "level": "easy",
+   "q": "Economists identify three flows in international economic exchange. Which is NOT one of them?",
+   "a": "Flow of diseases",
+   "w": [
+    "Flow of trade",
+    "Flow of labour",
+    "Flow of capital"
+   ],
+   "e": "Trade in goods, migration for work, and investment over long distances."
+  },
+  {
+   "topic": "c19",
+   "level": "easy",
+   "q": "The laws that allowed the British government to restrict the import of corn were called the –",
+   "a": "Corn Laws",
+   "w": [
+    "Navigation Acts",
+    "Rowlatt Acts",
+    "Poor Laws"
+   ],
+   "e": "Industrialists and urban dwellers forced their abolition."
+  },
+  {
+   "topic": "c19",
+   "level": "easy",
+   "q": "How many people emigrated from Europe to America and Australia in the 19th century?",
+   "a": "Nearly 50 million",
+   "w": [
+    "About 5 million",
+    "Nearly 150 million",
+    "About 500,000"
+   ],
+   "e": "Around 150 million left their homes worldwide."
+  },
+  {
+   "topic": "c19",
+   "level": "easy",
+   "q": "Between 1820 and 1914 world trade is estimated to have multiplied –",
+   "a": "25 to 40 times",
+   "w": [
+    "2 to 3 times",
+    "100 times",
+    "5 to 10 times"
+   ],
+   "e": "Nearly 60% of this trade was in primary products."
+  },
+  {
+   "topic": "c19",
+   "level": "easy",
+   "q": "Which new technology made it possible to ship meat from America, Australia or New Zealand to Europe?",
+   "a": "Refrigerated ships",
+   "w": [
+    "The telegraph",
+    "The assembly line",
+    "The spinning jenny"
+   ],
+   "e": "Animals were slaughtered at the starting point and shipped as frozen meat."
+  },
+  {
+   "topic": "c19",
+   "level": "hard",
+   "q": "What happened after the Corn Laws were scrapped?",
+   "a": "Cheaper food imports made British farming uncompetitive; land lay uncultivated and workers migrated",
+   "w": [
+    "Food prices in Britain rose sharply",
+    "Britain stopped importing food",
+    "British farmers grew richer"
+   ],
+   "e": "They flocked to cities or migrated overseas."
+  },
+  {
+   "topic": "c19",
+   "level": "hard",
+   "q": "In west Punjab the British Indian government built canals to create the ‘Canal Colonies’ to grow –",
+   "a": "wheat and cotton for export",
+   "w": [
+    "opium for China",
+    "indigo for dye",
+    "rubber for Britain"
+   ],
+   "e": "Settled by peasants from other parts of Punjab."
+  },
+  {
+   "topic": "c19",
+   "level": "hard",
+   "q": "Why was meat an expensive luxury in Europe before the 1870s?",
+   "a": "Live animals took ship space and many died, fell ill or lost weight on the voyage",
+   "w": [
+    "Europeans did not eat meat",
+    "Meat was taxed by the Corn Laws",
+    "Only India exported meat"
+   ],
+   "e": "Refrigerated ships cut costs and prices."
+  },
+  {
+   "topic": "c19",
+   "level": "hard",
+   "q": "‘Primary products’ in 19th-century trade means –",
+   "a": "agricultural products like wheat and cotton, and minerals like coal",
+   "w": [
+    "machines and cars",
+    "banking services",
+    "only gold and silver"
+   ],
+   "e": "Nearly 60% of world trade."
+  },
+  {
+   "topic": "c19",
+   "level": "advanced",
+   "q": "Arrange the chain in order: (i) food prices fall and consumption rises (ii) Corn Laws abolished (iii) land cleared abroad, railways and ports built (iv) capital and labour flow to America and Australia",
+   "a": "(ii) → (i) → (iii) → (iv)",
+   "w": [
+    "(i) → (ii) → (iv) → (iii)",
+    "(iii) → (ii) → (i) → (iv)",
+    "(ii) → (iv) → (i) → (iii)"
+   ],
+   "e": "Abolition → cheap imports → demand met by new lands → capital and migration."
+  },
+  {
+   "topic": "c19",
+   "level": "advanced",
+   "q": "According to the textbook, cheaper meat and better living conditions in Europe also –",
+   "a": "promoted social peace at home and support for imperialism abroad",
+   "w": [
+    "ended all migration",
+    "caused the Great Depression",
+    "stopped colonial expansion"
+   ],
+   "e": "Technology was shaped by larger social, political and economic factors."
+  },
+  {
+   "topic": "colonial",
+   "level": "easy",
+   "q": "In 1885 the big European powers met in which city to complete the carving up of Africa?",
+   "a": "Berlin",
+   "w": [
+    "Vienna",
+    "Bretton Woods",
+    "Paris"
+   ],
+   "e": "Some borders were drawn almost with a ruler."
+  },
+  {
+   "topic": "colonial",
+   "level": "easy",
+   "q": "Rinderpest was a disease of –",
+   "a": "cattle",
+   "w": [
+    "potatoes",
+    "humans",
+    "cotton plants"
+   ],
+   "e": "It killed 90 per cent of the cattle in Africa."
+  },
+  {
+   "topic": "colonial",
+   "level": "easy",
+   "q": "Indian indentured labourers were promised return travel after working how many years?",
+   "a": "Five",
+   "w": [
+    "Two",
+    "Ten",
+    "Twenty"
+   ],
+   "e": "Hired under contracts for plantations."
+  },
+  {
+   "topic": "colonial",
+   "level": "easy",
+   "q": "‘Hosay’ in Trinidad was a carnival transformed from the –",
+   "a": "annual Muharram procession",
+   "w": [
+    "Diwali festival",
+    "Christmas celebration",
+    "Holi festival"
+   ],
+   "e": "Workers of all races and religions joined (Hosay = for Imam Hussain)."
+  },
+  {
+   "topic": "colonial",
+   "level": "easy",
+   "q": "Indentured labour migration from India was abolished in –",
+   "a": "1921",
+   "w": [
+    "1885",
+    "1947",
+    "1859"
+   ],
+   "e": "Nationalist leaders opposed it from the 1900s as abusive and cruel."
+  },
+  {
+   "topic": "colonial",
+   "level": "hard",
+   "q": "Rinderpest arrived in Africa in the late 1880s through –",
+   "a": "infected cattle from British Asia brought to feed Italian soldiers invading Eritrea",
+   "w": [
+    "Spanish ships to Peru",
+    "Indian traders in Mombasa",
+    "Dutch settlers at the Cape"
+   ],
+   "e": "It reached the Atlantic coast in 1892 and the Cape five years later."
+  },
+  {
+   "topic": "colonial",
+   "level": "hard",
+   "q": "How did Europeans force Africans into wage labour?",
+   "a": "Heavy taxes, changed inheritance laws, mineworkers kept in compounds – and control over scarce cattle after rinderpest",
+   "w": [
+    "By offering very high wages",
+    "By giving them more land",
+    "By banning all mining"
+   ],
+   "e": "Africans with land and livestock had little reason to work for wages."
+  },
+  {
+   "topic": "colonial",
+   "level": "hard",
+   "q": "Most Indian indentured workers came from –",
+   "a": "eastern Uttar Pradesh, Bihar, central India and dry districts of Tamil Nadu",
+   "w": [
+    "Punjab and Sindh",
+    "Bengal and Assam only",
+    "Bombay and Gujarat"
+   ],
+   "e": "Cottage industries declined, rents rose and lands were cleared for mines and plantations."
+  },
+  {
+   "topic": "colonial",
+   "level": "hard",
+   "q": "Main destinations of Indian indentured migrants included –",
+   "a": "Trinidad, Guyana, Surinam, Mauritius and Fiji",
+   "w": [
+    "Brazil, Argentina and Chile",
+    "Canada and Alaska",
+    "Germany and Italy"
+   ],
+   "e": "Tamil migrants went to Ceylon and Malaya; workers were also recruited for Assam."
+  },
+  {
+   "topic": "colonial",
+   "level": "hard",
+   "q": "Which groups of Indian bankers financed export agriculture in Central and Southeast Asia?",
+   "a": "Shikaripuri Shroffs and Nattukottai Chettiars",
+   "w": [
+    "Parsi shipbuilders",
+    "Marwari jute traders",
+    "Hyderabadi Sindhi tailors"
+   ],
+   "e": "Hyderabadi Sindhi traders set up emporia at ports worldwide from the 1860s."
+  },
+  {
+   "topic": "colonial",
+   "level": "hard",
+   "q": "Between 1812 and 1871, the share of raw cotton in India’s exports rose from –",
+   "a": "5 per cent to 35 per cent",
+   "w": [
+    "35 per cent to 5 per cent",
+    "30 per cent to 3 per cent",
+    "15 per cent to 50 per cent"
+   ],
+   "e": "Exports of manufactures fell while raw materials rose."
+  },
+  {
+   "topic": "colonial",
+   "level": "hard",
+   "q": "How did Britain use its trade surplus with India?",
+   "a": "To balance its deficits with other countries and to pay ‘home charges’",
+   "w": [
+    "To build factories in India",
+    "To reduce Indian taxes",
+    "To buy Indian cotton cloth"
+   ],
+   "e": "A multilateral settlement system."
+  },
+  {
+   "topic": "colonial",
+   "level": "easy",
+   "q": "What does Ram Narain Tewary’s testimony show about indenture?",
+   "a": "Tasks were extremely heavy and workers were jailed or had wages cut",
+   "w": [
+    "Workers earned more than promised",
+    "Workers could leave whenever they wished",
+    "Plantations gave free land to workers"
+   ],
+   "e": "Indenture has been described as ‘a new system of slavery’.",
+   "passage": "Ram Narain Tewary, an indentured labourer who spent ten years on Demerara: ‘… in spite of my best efforts, I could not properly do the works that were allotted to me ... In a few days I got my hands bruised all over and I could not go to work for a week for which I was prosecuted and sent to jail for 14 days. ... Deductions are also made from wages if the work is considered to have been done unsatisfactorily. Many people cannot therefore earn their full wages and are punished in various ways.’"
+  },
+  {
+   "topic": "colonial",
+   "level": "advanced",
+   "q": "How did Britain pay for its tea imports from China in the 19th century?",
+   "a": "By growing opium in India and selling it to China",
+   "w": [
+    "By exporting Indian cotton cloth to China",
+    "By sending gold from South Africa",
+    "By borrowing from US banks"
+   ],
+   "e": "Opium became for a while India’s single largest export."
+  },
+  {
+   "topic": "colonial",
+   "level": "advanced",
+   "q": "Why are cricketers Shivnarine Chanderpaul and Ramnaresh Sarwan’s names ‘vaguely Indian’?",
+   "a": "They descend from Indian indentured labour migrants to the Caribbean",
+   "w": [
+    "They migrated from India in the 1990s",
+    "Their parents were British officials",
+    "They are from the Maldives"
+   ],
+   "e": "V.S. Naipaul’s novels capture this community’s sense of loss."
+  },
+  {
+   "topic": "colonial",
+   "level": "advanced",
+   "q": "Assertion (A): The share of cotton textiles in India’s exports fell to below 3 per cent by the 1870s. Reason (R): Britain imposed tariffs on cloth imports and British manufacturers sought overseas markets. Choose the correct option.",
+   "a": "Both A and R are true and R explains A",
+   "w": [
+    "Both A and R are true but R does not explain A",
+    "A is true but R is false",
+    "A is false but R is true"
+   ],
+   "e": "From some 30% around 1800 to 15% by 1815."
+  },
+  {
+   "topic": "interwar",
+   "level": "easy",
+   "q": "How many people died in the First World War?",
+   "a": "9 million dead and 20 million injured",
+   "w": [
+    "60 million dead",
+    "1 million dead",
+    "100,000 dead"
+   ],
+   "e": "It was the first modern industrial war."
+  },
+  {
+   "topic": "interwar",
+   "level": "easy",
+   "q": "Who pioneered mass production with the assembly line in Detroit?",
+   "a": "Henry Ford",
+   "w": [
+    "John Maynard Keynes",
+    "Henry Morton Stanley",
+    "James Watt"
+   ],
+   "e": "He adapted it from a Chicago slaughterhouse."
+  },
+  {
+   "topic": "interwar",
+   "level": "easy",
+   "q": "The T-Model Ford was –",
+   "a": "the world’s first mass-produced car",
+   "w": [
+    "the first steam engine",
+    "a refrigerated ship",
+    "a British warplane"
+   ],
+   "e": "Cars came off the line at three-minute intervals."
+  },
+  {
+   "topic": "interwar",
+   "level": "easy",
+   "q": "In January 1914 Henry Ford doubled the daily wage to –",
+   "a": "$5",
+   "w": [
+    "$1",
+    "$35",
+    "$10"
+   ],
+   "e": "At the same time he banned trade unions."
+  },
+  {
+   "topic": "interwar",
+   "level": "easy",
+   "q": "The Great Depression began around –",
+   "a": "1929",
+   "w": [
+    "1914",
+    "1945",
+    "1890"
+   ],
+   "e": "It lasted till the mid-1930s."
+  },
+  {
+   "topic": "interwar",
+   "level": "hard",
+   "q": "How did the First World War change the US’s position?",
+   "a": "It turned the US from an international debtor into an international creditor",
+   "w": [
+    "It made the US the world’s largest debtor",
+    "It made the US a colony of Britain",
+    "It ended US trade with Europe"
+   ],
+   "e": "Britain borrowed large sums from US banks and the US public."
+  },
+  {
+   "topic": "interwar",
+   "level": "hard",
+   "q": "In 1921, what proportion of British workers was out of work?",
+   "a": "One in every five",
+   "w": [
+    "One in fifty",
+    "Half",
+    "None"
+   ],
+   "e": "The war boom ended and war expenditure was cut."
+  },
+  {
+   "topic": "interwar",
+   "level": "hard",
+   "q": "Which was NOT a cause of the Great Depression given in the textbook?",
+   "a": "Abolition of the Corn Laws",
+   "w": [
+    "Agricultural overproduction and falling prices",
+    "Withdrawal of US overseas loans",
+    "US doubling import duties"
+   ],
+   "e": "The Corn Laws were abolished in the 19th century."
+  },
+  {
+   "topic": "interwar",
+   "level": "hard",
+   "q": "What happened to the US banking system during the Depression?",
+   "a": "By 1933 over 4,000 banks had closed",
+   "w": [
+    "Banks made record profits",
+    "Banks lent more to farmers",
+    "Banks were nationalised by Britain"
+   ],
+   "e": "About 110,000 companies collapsed between 1929 and 1932."
+  },
+  {
+   "topic": "interwar",
+   "level": "hard",
+   "q": "Between 1928 and 1934, wheat prices in India fell by –",
+   "a": "50 per cent",
+   "w": [
+    "10 per cent",
+    "90 per cent",
+    "5 per cent"
+   ],
+   "e": "India’s exports and imports nearly halved."
+  },
+  {
+   "topic": "interwar",
+   "level": "hard",
+   "q": "Why was the Depression less grim for urban India?",
+   "a": "Falling prices helped those with fixed incomes, and tariff protection increased industrial investment",
+   "w": [
+    "Urban workers got higher wages from Britain",
+    "Cities exported more gold",
+    "Rents were abolished"
+   ],
+   "e": "Town-dwelling landowners and salaried employees were better off."
+  },
+  {
+   "topic": "interwar",
+   "level": "easy",
+   "q": "According to the jute growers’ lament, who profits from jute?",
+   "a": "Traders, who pay growers only Rs 5 a maund",
+   "w": [
+    "The growers themselves",
+    "The colonial government only",
+    "Factory workers in Britain"
+   ],
+   "e": "The price of raw jute crashed more than 60 per cent.",
+   "passage": "The Bengal jute growers’ lament: ‘grow more jute, brothers, with the hope of greater cash. / Costs and debts of jute will make your hopes get dashed. / When you have spent all your money and got the crop off the ground, / … traders, sitting at home, will pay only Rs 5 a maund.’"
+  },
+  {
+   "topic": "interwar",
+   "level": "advanced",
+   "q": "Why did agricultural regions suffer most in the Depression?",
+   "a": "The fall in agricultural prices was greater and more prolonged than that of industrial goods",
+   "w": [
+    "Farmers had no debts",
+    "Only farms were taxed",
+    "Industrial prices fell faster"
+   ],
+   "e": "Farmers expanded output to keep incomes, which worsened the glut."
+  },
+  {
+   "topic": "interwar",
+   "level": "advanced",
+   "q": "Keynes thought Indian gold exports promoted global recovery. What does the textbook say?",
+   "a": "They helped speed up Britain’s recovery but did little for the Indian peasant",
+   "w": [
+    "They made Indian peasants rich",
+    "They ended the Depression in India in 1930",
+    "They were stopped by the Congress"
+   ],
+   "e": "Peasants sold jewellery and mortgaged land to survive."
+  },
+  {
+   "topic": "postwar",
+   "level": "easy",
+   "q": "The Bretton Woods conference was held in July 1944 in –",
+   "a": "New Hampshire, USA",
+   "w": [
+    "London",
+    "Geneva",
+    "Paris"
+   ],
+   "e": "United Nations Monetary and Financial Conference."
+  },
+  {
+   "topic": "postwar",
+   "level": "easy",
+   "q": "Which institution was set up at Bretton Woods to finance post-war reconstruction?",
+   "a": "The World Bank (International Bank for Reconstruction and Development)",
+   "w": [
+    "The G-77",
+    "FICCI",
+    "The East India Company"
+   ],
+   "e": "The IMF dealt with external surpluses and deficits."
+  },
+  {
+   "topic": "postwar",
+   "level": "easy",
+   "q": "Under the Bretton Woods system the dollar was anchored to gold at –",
+   "a": "$35 per ounce",
+   "w": [
+    "$5 per ounce",
+    "$100 per ounce",
+    "no fixed price"
+   ],
+   "e": "National currencies were pegged to the dollar at fixed exchange rates."
+  },
+  {
+   "topic": "postwar",
+   "level": "easy",
+   "q": "Developing countries organised themselves as the G-77 to demand –",
+   "a": "a new international economic order (NIEO)",
+   "w": [
+    "the return of colonial rule",
+    "the abolition of the World Bank",
+    "fixed exchange rates"
+   ],
+   "e": "Real control over natural resources, fairer prices, more aid, better market access."
+  },
+  {
+   "topic": "postwar",
+   "level": "easy",
+   "q": "Large companies that operate in several countries at the same time are called –",
+   "a": "MNCs (multinational corporations)",
+   "w": [
+    "Managing agencies",
+    "Guilds",
+    "Chambers of commerce"
+   ],
+   "e": "The first MNCs were established in the 1920s."
+  },
+  {
+   "topic": "postwar",
+   "level": "hard",
+   "q": "How many people are believed to have died as a result of the Second World War?",
+   "a": "At least 60 million – about 3 per cent of the world’s 1939 population",
+   "w": [
+    "9 million",
+    "1 million",
+    "600 million"
+   ],
+   "e": "More civilians than soldiers died."
+  },
+  {
+   "topic": "postwar",
+   "level": "hard",
+   "q": "What were the two lessons drawn from the inter-war years?",
+   "a": "Mass production needs mass consumption with stable incomes and full employment; governments must be able to control flows of goods, capital and labour",
+   "w": [
+    "Markets alone guarantee full employment; tariffs must be abolished",
+    "Colonies must be kept forever; gold must be banned",
+    "Wars help economies; banks should be closed"
+   ],
+   "e": "Economic stability needs government intervention."
+  },
+  {
+   "topic": "postwar",
+   "level": "hard",
+   "q": "Between 1950 and 1970 world trade grew annually at over –",
+   "a": "8 per cent",
+   "w": [
+    "1 per cent",
+    "20 per cent",
+    "50 per cent"
+   ],
+   "e": "Incomes grew at nearly 5 per cent."
+  },
+  {
+   "topic": "postwar",
+   "level": "hard",
+   "q": "Why did the Bretton Woods system of fixed exchange rates collapse?",
+   "a": "From the 1960s the US dollar lost confidence and could not keep its value against gold",
+   "w": [
+    "The IMF was dissolved",
+    "India refused to join",
+    "Gold was banned worldwide"
+   ],
+   "e": "Floating exchange rates followed."
+  },
+  {
+   "topic": "postwar",
+   "level": "hard",
+   "q": "Why did MNCs shift production to Asian countries such as China from the late 1970s?",
+   "a": "Low wages",
+   "w": [
+    "High tariffs in Asia",
+    "Shortage of workers in Asia",
+    "Fixed exchange rates"
+   ],
+   "e": "This stimulated world trade and capital flows."
+  },
+  {
+   "topic": "postwar",
+   "level": "advanced",
+   "q": "Why can the G-77 be seen as a reaction to the Bretton Woods twins?",
+   "a": "The IMF and World Bank were designed for industrial countries and controlled by them; developing countries did not benefit from post-war growth",
+   "w": [
+    "The Bretton Woods twins gave developing countries a veto",
+    "The G-77 wanted fixed exchange rates restored",
+    "The IMF banned developing countries from trade"
+   ],
+   "e": "The US has an effective veto over key IMF and World Bank decisions."
+  },
+  {
+   "topic": "postwar",
+   "level": "advanced",
+   "q": "Assertion (A): High import tariffs helped the worldwide spread of MNCs in the 1950s and 1960s. Reason (R): Tariffs forced MNCs to become ‘domestic producers’ in as many countries as possible. Choose the correct option.",
+   "a": "Both A and R are true and R explains A",
+   "w": [
+    "Both A and R are true but R does not explain A",
+    "A is true but R is false",
+    "A is false but R is true"
+   ],
+   "e": "Box 4 – What are MNCs?"
+  },
+  {
+   "topic": "c19",
+   "level": "easy",
+   "type": "pairs",
+   "q": "‘{x}’ – which flow of international exchange is this?",
+   "pairs": [
+    [
+     "Wheat shipped from Australia to Britain",
+     "Trade"
+    ],
+    [
+     "Irish workers sailing to America",
+     "Labour"
+    ],
+    [
+     "London bankers financing railways abroad",
+     "Capital"
+    ],
+    [
+     "Indian indentured workers going to Fiji",
+     "Labour"
+    ],
+    [
+     "Cotton exported to British mills",
+     "Trade"
+    ],
+    [
+     "Indian Chettiars lending to farmers in Southeast Asia",
+     "Capital"
+    ]
+   ],
+   "e": "{x} → flow of {ans}.",
+   "extra": [
+    "Technology"
+   ]
+  },
+  {
+   "topic": "c19",
+   "level": "easy",
+   "type": "pairs",
+   "q": "‘{x}’ – which flow of international exchange is this?",
+   "pairs": [
+    [
+     "Wheat shipped from Australia to Britain",
+     "Trade"
+    ],
+    [
+     "Irish workers sailing to America",
+     "Labour"
+    ],
+    [
+     "London bankers financing railways abroad",
+     "Capital"
+    ],
+    [
+     "Indian indentured workers going to Fiji",
+     "Labour"
+    ],
+    [
+     "Cotton exported to British mills",
+     "Trade"
+    ],
+    [
+     "Indian Chettiars lending to farmers in Southeast Asia",
+     "Capital"
+    ]
+   ],
+   "e": "{x} → flow of {ans}.",
+   "extra": [
+    "Technology"
+   ]
+  },
+  {
+   "topic": "postwar",
+   "level": "hard",
+   "type": "pairs",
+   "q": "‘{x}’ – which term is this?",
+   "pairs": [
+    [
+     "Rates fixed, with governments intervening to prevent movement",
+     "Fixed exchange rate"
+    ],
+    [
+     "Rates fluctuate with demand and supply of currencies",
+     "Floating exchange rate"
+    ],
+    [
+     "Tax on a country’s imports levied at the border",
+     "Tariff"
+    ],
+    [
+     "Company operating in several countries at once",
+     "MNC"
+    ],
+    [
+     "Deals with external surpluses and deficits of members",
+     "IMF"
+    ],
+    [
+     "Group demanding a new international economic order",
+     "G-77"
+    ]
+   ],
+   "e": "{x} → {ans}."
+  },
+  {
+   "topic": "postwar",
+   "level": "hard",
+   "type": "pairs",
+   "q": "‘{x}’ – which term is this?",
+   "pairs": [
+    [
+     "Rates fixed, with governments intervening to prevent movement",
+     "Fixed exchange rate"
+    ],
+    [
+     "Rates fluctuate with demand and supply of currencies",
+     "Floating exchange rate"
+    ],
+    [
+     "Tax on a country’s imports levied at the border",
+     "Tariff"
+    ],
+    [
+     "Company operating in several countries at once",
+     "MNC"
+    ],
+    [
+     "Deals with external surpluses and deficits of members",
+     "IMF"
+    ],
+    [
+     "Group demanding a new international economic order",
+     "G-77"
+    ]
+   ],
+   "e": "{x} → {ans}."
+  },
+  {
+   "topic": "interwar",
+   "level": "easy",
+   "type": "pairs",
+   "q": "‘{x}’ – which period?",
+   "pairs": [
+    [
+     "Assembly line spreads in the US",
+     "1920s"
+    ],
+    [
+     "Over 4,000 US banks closed",
+     "1933"
+    ],
+    [
+     "Bretton Woods conference",
+     "1944"
+    ],
+    [
+     "Rinderpest reaches Africa’s Atlantic coast",
+     "1892"
+    ],
+    [
+     "Ford doubles the daily wage to $5",
+     "1914"
+    ],
+    [
+     "Indentured labour abolished",
+     "1921"
+    ]
+   ],
+   "e": "{x} → {ans}."
+  },
+  {
+   "topic": "interwar",
+   "level": "easy",
+   "type": "pairs",
+   "q": "‘{x}’ – which period?",
+   "pairs": [
+    [
+     "Assembly line spreads in the US",
+     "1920s"
+    ],
+    [
+     "Over 4,000 US banks closed",
+     "1933"
+    ],
+    [
+     "Bretton Woods conference",
+     "1944"
+    ],
+    [
+     "Rinderpest reaches Africa’s Atlantic coast",
+     "1892"
+    ],
+    [
+     "Ford doubles the daily wage to $5",
+     "1914"
+    ],
+    [
+     "Indentured labour abolished",
+     "1921"
+    ]
+   ],
+   "e": "{x} → {ans}."
+  }
+ ]
+}

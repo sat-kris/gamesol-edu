@@ -1,0 +1,933 @@
+{
+ "id": "class10-social-h4",
+ "class": "10",
+ "subject": "social",
+ "chapter": "History IV · The Age of Industrialisation",
+ "source": "NCERT India and the Contemporary World II (Class X History), Chapter IV",
+ "topics": [
+  {
+   "id": "before",
+   "name": "Before the Industrial Revolution and the coming of the factory",
+   "ref": "1–1.1"
+  },
+  {
+   "id": "pace",
+   "name": "The pace of change, hand labour and workers’ lives",
+   "ref": "1.2–2"
+  },
+  {
+   "id": "colonies",
+   "name": "Indian textiles, weavers and Manchester",
+   "ref": "3"
+  },
+  {
+   "id": "factories",
+   "name": "Factories come up; peculiarities of industrial growth",
+   "ref": "4–5"
+  },
+  {
+   "id": "market",
+   "name": "Market for goods",
+   "ref": "6"
+  }
+ ],
+ "questions": [
+  {
+   "topic": "before",
+   "level": "easy",
+   "q": "Industrial production for an international market before factories is called –",
+   "a": "proto-industrialisation",
+   "w": [
+    "mass production",
+    "deindustrialisation",
+    "globalisation"
+   ],
+   "e": "‘Proto’ means the first or early form of something."
+  },
+  {
+   "topic": "before",
+   "level": "easy",
+   "q": "Why could merchants not expand production within European towns?",
+   "a": "Urban crafts and trade guilds were powerful",
+   "w": [
+    "Towns had no workers",
+    "Kings banned trade in towns",
+    "Factories had taken over the towns"
+   ],
+   "e": "Guilds controlled production, competition and prices and restricted entry."
+  },
+  {
+   "topic": "before",
+   "level": "easy",
+   "q": "Who created the cotton mill?",
+   "a": "Richard Arkwright",
+   "w": [
+    "James Watt",
+    "James Hargreaves",
+    "Henry Ford"
+   ],
+   "e": "Costly new machines could be set up and maintained in the mill."
+  },
+  {
+   "topic": "before",
+   "level": "easy",
+   "q": "The earliest factories in England came up by the –",
+   "a": "1730s",
+   "w": [
+    "1830s",
+    "1630s",
+    "1880s"
+   ],
+   "e": "Their number multiplied only in the late 18th century."
+  },
+  {
+   "topic": "before",
+   "level": "easy",
+   "q": "Which city came to be known as a ‘finishing centre’ for cloth?",
+   "a": "London",
+   "w": [
+    "Manchester",
+    "Surat",
+    "Paris"
+   ],
+   "e": "Finishing was done in London before the export merchant sold the cloth."
+  },
+  {
+   "topic": "before",
+   "level": "hard",
+   "q": "Why did poor peasants eagerly agree to produce for merchants?",
+   "a": "Common lands were enclosed and tiny plots could not support the household; merchant advances gave extra income",
+   "w": [
+    "Merchants paid them in gold",
+    "They wanted to move to cities",
+    "Guilds forced them to"
+   ],
+   "e": "They could stay in the countryside and use family labour fully."
+  },
+  {
+   "topic": "before",
+   "level": "hard",
+   "q": "Britain’s raw cotton imports rose from 2.5 million pounds in 1760 to –",
+   "a": "22 million pounds in 1787",
+   "w": [
+    "5 million pounds in 1787",
+    "220 million pounds in 1787",
+    "2.5 million pounds in 1787"
+   ],
+   "e": "Linked to inventions that improved carding, twisting, spinning and rolling."
+  },
+  {
+   "topic": "before",
+   "level": "hard",
+   "q": "Which was an advantage of bringing all processes under one roof in a mill?",
+   "a": "Careful supervision of production, a watch over quality and regulation of labour",
+   "w": [
+    "Workers could choose their own hours",
+    "Machines became cheaper than hand tools",
+    "Guilds controlled the mill"
+   ],
+   "e": "This had been difficult when production was in the countryside."
+  },
+  {
+   "topic": "before",
+   "level": "hard",
+   "q": "In the proto-industrial system each merchant employed 20–25 workers at each stage. This meant –",
+   "a": "each clothier controlled hundreds of workers",
+   "w": [
+    "each worker controlled hundreds of merchants",
+    "guilds controlled the clothiers",
+    "factories employed most workers"
+   ],
+   "e": "The system was controlled by merchants, with goods made in family farms."
+  },
+  {
+   "topic": "before",
+   "level": "advanced",
+   "q": "Arrange the stages in the work of an English merchant clothier: (i) dyers (ii) wool from a stapler (iii) spinners (iv) weavers and fullers",
+   "a": "(ii) → (iii) → (iv) → (i)",
+   "w": [
+    "(iii) → (ii) → (i) → (iv)",
+    "(ii) → (iv) → (iii) → (i)",
+    "(i) → (ii) → (iii) → (iv)"
+   ],
+   "e": "Stapler → spinners → weavers → fullers → dyers; finishing in London."
+  },
+  {
+   "topic": "before",
+   "level": "advanced",
+   "q": "Assertion (A): Histories of industrialisation that begin with factories miss an important phase. Reason (R): Large-scale production for an international market existed before factories. Choose the correct option.",
+   "a": "Both A and R are true and R explains A",
+   "w": [
+    "Both A and R are true but R does not explain A",
+    "A is true but R is false",
+    "A is false but R is true"
+   ],
+   "e": "That phase is proto-industrialisation."
+  },
+  {
+   "topic": "pace",
+   "level": "easy",
+   "q": "Up to the 1840s, the leading sector in Britain’s first phase of industrialisation was –",
+   "a": "cotton",
+   "w": [
+    "iron and steel",
+    "railways",
+    "coal"
+   ],
+   "e": "After that iron and steel led the way."
+  },
+  {
+   "topic": "pace",
+   "level": "easy",
+   "q": "Who improved Newcomen’s steam engine and patented it in 1781?",
+   "a": "James Watt",
+   "w": [
+    "Mathew Boulton",
+    "Richard Arkwright",
+    "James Hargreaves"
+   ],
+   "e": "His friend Mathew Boulton manufactured it but found few buyers."
+  },
+  {
+   "topic": "pace",
+   "level": "easy",
+   "q": "The Spinning Jenny was devised in 1764 by –",
+   "a": "James Hargreaves",
+   "w": [
+    "James Watt",
+    "Henry Ford",
+    "E.T. Paull"
+   ],
+   "e": "One wheel set many spindles in motion."
+  },
+  {
+   "topic": "pace",
+   "level": "easy",
+   "q": "At the beginning of the 19th century there were no more than how many steam engines in all of England?",
+   "a": "321",
+   "w": [
+    "3,210",
+    "32",
+    "10,000"
+   ],
+   "e": "80 in cotton, 9 in wool, the rest in mining, canal works and iron works."
+  },
+  {
+   "topic": "pace",
+   "level": "easy",
+   "q": "In mid-19th-century Britain, how many varieties of hammers were produced?",
+   "a": "500",
+   "w": [
+    "5",
+    "50",
+    "45"
+   ],
+   "e": "And 45 kinds of axes – these needed human skill."
+  },
+  {
+   "topic": "pace",
+   "level": "hard",
+   "q": "By 1873 Britain’s export of iron and steel was worth about –",
+   "a": "£77 million, double the value of its cotton export",
+   "w": [
+    "£7 million, half its cotton export",
+    "£770 million",
+    "the same as its cotton export"
+   ],
+   "e": "Railway expansion raised demand for iron and steel."
+  },
+  {
+   "topic": "pace",
+   "level": "hard",
+   "q": "At the end of the 19th century, what share of Britain’s workforce was in technologically advanced industrial sectors?",
+   "a": "Less than 20 per cent",
+   "w": [
+    "About 80 per cent",
+    "About 50 per cent",
+    "Nearly 100 per cent"
+   ],
+   "e": "New industries could not easily displace traditional ones."
+  },
+  {
+   "topic": "pace",
+   "level": "hard",
+   "q": "Why did industrialists in Victorian Britain prefer hand labour?",
+   "a": "Labour was plentiful and cheap, demand was seasonal, and many products needed skill",
+   "w": [
+    "Machines were banned by law",
+    "Workers refused to use machines",
+    "There was a labour shortage"
+   ],
+   "e": "In America, with labour shortage, mechanisation was preferred."
+  },
+  {
+   "topic": "pace",
+   "level": "hard",
+   "q": "Why did the upper classes in Victorian Britain prefer hand-made goods?",
+   "a": "They symbolised refinement and class – better finished, individually produced and carefully designed",
+   "w": [
+    "They were cheaper",
+    "They were made in factories",
+    "They were exported from India"
+   ],
+   "e": "Machine-made goods were for export to the colonies."
+  },
+  {
+   "topic": "pace",
+   "level": "hard",
+   "q": "Which industries needed extra workers in the cold months or before Christmas?",
+   "a": "Gas works, breweries, book-binders and printers",
+   "w": [
+    "Cotton mills and iron works",
+    "Railway construction only",
+    "Tea plantations"
+   ],
+   "e": "Industrialists employed workers for the season."
+  },
+  {
+   "topic": "pace",
+   "level": "hard",
+   "q": "In periods of economic slump like the 1830s, the proportion of unemployed went up to –",
+   "a": "between 35 and 75 per cent in different regions",
+   "w": [
+    "about 1 per cent",
+    "exactly 10 per cent",
+    "100 per cent everywhere"
+   ],
+   "e": "At the best of times about 10 per cent of the urban population were extremely poor."
+  },
+  {
+   "topic": "pace",
+   "level": "easy",
+   "q": "Why did the colliers’ wives want to destroy the new machine?",
+   "a": "They had lost their work to spinning engines and feared less demand for manual labour",
+   "w": [
+    "The machine was too expensive",
+    "The machine made poor cloth",
+    "They wanted higher taxes"
+   ],
+   "e": "Women who survived on hand spinning attacked the Spinning Jenny.",
+   "passage": "A magistrate reported in 1790: ‘From the depredations of a lawless Banditti of colliers and their wives, for the wives had lost their work to spinning engines … they advanced at first with much insolence, avowing their intention of cutting to pieces the machine lately introduced in the woollen manufacture; which they suppose, if generally adopted, will lessen the demand for manual labour.’"
+  },
+  {
+   "topic": "pace",
+   "level": "advanced",
+   "q": "Why do wage rates tell us little about workers’ welfare in early 19th-century Britain?",
+   "a": "Averages hide variations; prices rose in the Napoleonic War; and income depended on the number of days of work",
+   "w": [
+    "Wages were the same everywhere",
+    "Workers were paid only in food",
+    "Prices never changed"
+   ],
+   "e": "Real value of wages fell when prices rose sharply."
+  },
+  {
+   "topic": "pace",
+   "level": "advanced",
+   "q": "After the 1840s, why did employment opportunities grow in British cities?",
+   "a": "Building activity intensified – roads, railway stations, tunnels, drainage and sewers",
+   "w": [
+    "All factories doubled wages",
+    "Guilds were restored",
+    "Emigration to America stopped"
+   ],
+   "e": "Transport workers doubled in the 1840s and doubled again in 30 years."
+  },
+  {
+   "topic": "colonies",
+   "level": "easy",
+   "q": "Before the age of machine industries, which country dominated the international market in silk and cotton textiles?",
+   "a": "India",
+   "w": [
+    "England",
+    "China",
+    "France"
+   ],
+   "e": "The finer varieties often came from India."
+  },
+  {
+   "topic": "colonies",
+   "level": "easy",
+   "q": "A paid servant appointed by the East India Company to supervise weavers was called a –",
+   "a": "gomastha",
+   "w": [
+    "jobber",
+    "sepoy",
+    "stapler"
+   ],
+   "e": "He collected supplies and examined the quality of cloth."
+  },
+  {
+   "topic": "colonies",
+   "level": "easy",
+   "q": "The gross value of trade through Surat fell from Rs 16 million (late 17th century) to –",
+   "a": "Rs 3 million by the 1740s",
+   "w": [
+    "Rs 30 million",
+    "Rs 1 million by 1700",
+    "Rs 16 billion"
+   ],
+   "e": "Old ports declined as European companies gained power."
+  },
+  {
+   "topic": "colonies",
+   "level": "easy",
+   "q": "As Surat and Hoogly decayed, which ports grew?",
+   "a": "Bombay and Calcutta",
+   "w": [
+    "Masulipatam and Goa",
+    "Madras and Cochin",
+    "Karachi and Dacca"
+   ],
+   "e": "An indicator of the growth of colonial power."
+  },
+  {
+   "topic": "colonies",
+   "level": "easy",
+   "q": "In 1811–12 piece-goods were 33 per cent of India’s exports. By 1850–51 they were –",
+   "a": "no more than 3 per cent",
+   "w": [
+    "50 per cent",
+    "33 per cent",
+    "15 per cent"
+   ],
+   "e": "The beginning of a long decline."
+  },
+  {
+   "topic": "colonies",
+   "level": "hard",
+   "q": "Which was NOT a step taken by the East India Company to control weavers?",
+   "a": "Allowing weavers to sell to the highest bidder",
+   "w": [
+    "Appointing gomasthas",
+    "Giving advances that tied weavers to the Company",
+    "Eliminating existing traders and brokers"
+   ],
+   "e": "The Company prevented weavers from dealing with other buyers."
+  },
+  {
+   "topic": "colonies",
+   "level": "hard",
+   "q": "Why did weavers clash with gomasthas?",
+   "a": "Gomasthas were outsiders who acted arrogantly, came with sepoys and peons and punished weavers for delays",
+   "w": [
+    "Gomasthas paid weavers too much",
+    "Gomasthas lived in the weaving villages",
+    "Gomasthas refused to buy cloth"
+   ],
+   "e": "Earlier supply merchants had close ties with the villages."
+  },
+  {
+   "topic": "colonies",
+   "level": "hard",
+   "q": "By 1850 cotton piece-goods were over 31 per cent of the value of Indian imports; by the 1870s they were –",
+   "a": "over 50 per cent",
+   "w": [
+    "under 10 per cent",
+    "exactly 31 per cent",
+    "zero"
+   ],
+   "e": "At the end of the 18th century there had been virtually no such imports."
+  },
+  {
+   "topic": "colonies",
+   "level": "hard",
+   "q": "Cotton weavers in India faced two problems at the same time in the early 19th century. They were –",
+   "a": "the export market collapsed and the local market was glutted with Manchester imports",
+   "w": [
+    "too many orders and too few looms",
+    "high wages and low prices",
+    "guild restrictions and Company taxes"
+   ],
+   "e": "Machine-made imports were so cheap that weavers could not compete."
+  },
+  {
+   "topic": "colonies",
+   "level": "hard",
+   "q": "How did the American Civil War affect Indian weavers in the 1860s?",
+   "a": "Raw cotton exports to Britain rose, prices shot up and weavers were starved of supplies",
+   "w": [
+    "It created a huge market for Indian cloth in America",
+    "It lowered the price of raw cotton",
+    "It stopped Manchester imports into India"
+   ],
+   "e": "Weaving could not pay."
+  },
+  {
+   "topic": "colonies",
+   "level": "easy",
+   "q": "Why had the cloth trade at Jahanabad ceased, according to the Commissioner of Patna?",
+   "a": "Cheap and durable Manchester goods could not be competed with",
+   "w": [
+    "A famine destroyed the looms",
+    "Weavers moved to Surat",
+    "The Company banned weaving"
+   ],
+   "e": "Deindustrialisation in Gangetic Bihar.",
+   "passage": "The Commissioner of Patna wrote: ‘It appears that twenty years ago, a brisk trade was carried on in the manufacture of cloth at Jahanabad, and Behar, which has in the former place entirely ceased, while in the latter the amount of manufacture is very limited, in consequence of the cheap and durable goods from Manchester with which the Native manufactures are unable to compete.’"
+  },
+  {
+   "topic": "colonies",
+   "level": "advanced",
+   "q": "How did weavers in Carnatic and Bengal respond to Company control?",
+   "a": "Some deserted villages, some revolted with village traders, and many refused loans and became agricultural labourers",
+   "w": [
+    "They all joined the Company army",
+    "They formed the Zollverein",
+    "They set up cotton mills in Bombay"
+   ],
+   "e": "They lost the space to bargain for prices."
+  },
+  {
+   "topic": "colonies",
+   "level": "advanced",
+   "q": "In 1772 Henry Patullo said demand for Indian textiles could never reduce. Why was he proved wrong?",
+   "a": "British industrialists won import duties at home and pushed Manchester goods into Indian markets",
+   "w": [
+    "India stopped producing cotton",
+    "The French bought all Indian cloth",
+    "Indian textiles became too cheap"
+   ],
+   "e": "Exports declined from the beginning of the 19th century."
+  },
+  {
+   "topic": "factories",
+   "level": "easy",
+   "q": "The first cotton mill in Bombay came up in –",
+   "a": "1854",
+   "w": [
+    "1755",
+    "1917",
+    "1912"
+   ],
+   "e": "It went into production two years later."
+  },
+  {
+   "topic": "factories",
+   "level": "easy",
+   "q": "The first iron and steel works in India was set up at Jamshedpur in 1912 by –",
+   "a": "J.N. Tata",
+   "w": [
+    "G.D. Birla",
+    "Dwarkanath Tagore",
+    "Dinshaw Petit"
+   ],
+   "e": "Iron and steel started much later than textiles."
+  },
+  {
+   "topic": "factories",
+   "level": "easy",
+   "q": "An old and trusted worker employed by industrialists to recruit new workers was called a –",
+   "a": "jobber",
+   "w": [
+    "gomastha",
+    "fuller",
+    "stapler"
+   ],
+   "e": "He gradually began demanding money and gifts."
+  },
+  {
+   "topic": "factories",
+   "level": "easy",
+   "q": "Over 50 per cent of workers in Bombay cotton industries in 1911 came from –",
+   "a": "Ratnagiri",
+   "w": [
+    "Kanpur",
+    "United Provinces",
+    "Bengal"
+   ],
+   "e": "In most regions workers came from nearby districts."
+  },
+  {
+   "topic": "factories",
+   "level": "easy",
+   "q": "Seth Hukumchand set up the first Indian jute mill in Calcutta in –",
+   "a": "1917",
+   "w": [
+    "1855",
+    "1854",
+    "1874"
+   ],
+   "e": "He was a Marwari businessman who also traded with China."
+  },
+  {
+   "topic": "factories",
+   "level": "hard",
+   "q": "Which of these was NOT a European Managing Agency?",
+   "a": "Tata and Sons",
+   "w": [
+    "Bird Heiglers & Co.",
+    "Andrew Yule",
+    "Jardine Skinner & Co."
+   ],
+   "e": "These Agencies dominated Indian industry till the First World War."
+  },
+  {
+   "topic": "factories",
+   "level": "hard",
+   "q": "How did many early Indian industrialists accumulate capital?",
+   "a": "Through trade with China – opium and tea – and raw cotton shipments",
+   "w": [
+    "From guild monopolies",
+    "From loans by the IMF",
+    "From selling machinery to Britain"
+   ],
+   "e": "Dwarkanath Tagore, Dinshaw Petit and J.N. Tata."
+  },
+  {
+   "topic": "factories",
+   "level": "hard",
+   "q": "Why did early Indian cotton mills produce coarse yarn rather than fabric?",
+   "a": "To avoid competing with Manchester goods, since yarn was not an important British import",
+   "w": [
+    "Indian workers could not weave",
+    "Fabric was banned by law",
+    "Yarn was the only thing Indians wore"
+   ],
+   "e": "The yarn was used by handloom weavers or exported to China."
+  },
+  {
+   "topic": "factories",
+   "level": "hard",
+   "q": "Why did Indian industrialists shift from yarn to cloth after 1906?",
+   "a": "Chinese and Japanese mills flooded the Chinese market, cutting Indian yarn exports – and swadeshi boosted cloth demand",
+   "w": [
+    "Britain banned Indian yarn",
+    "Weavers stopped using yarn",
+    "The jobbers demanded it"
+   ],
+   "e": "Cotton piece-goods production in India doubled between 1900 and 1912."
+  },
+  {
+   "topic": "factories",
+   "level": "hard",
+   "q": "Why did industrial production in India increase during the First World War?",
+   "a": "Manchester imports declined and Indian mills supplied the home market and war needs",
+   "w": [
+    "Britain sent new machines to India",
+    "Indian workers got higher wages",
+    "Exports to China doubled"
+   ],
+   "e": "Jute bags, uniform cloth, tents, boots, saddles."
+  },
+  {
+   "topic": "factories",
+   "level": "hard",
+   "q": "What share of the total industrial labour force worked in registered factories in 1911 and 1931?",
+   "a": "5 per cent and 10 per cent",
+   "w": [
+    "50 and 100 per cent",
+    "20 and 40 per cent",
+    "1 and 2 per cent"
+   ],
+   "e": "The rest worked in small workshops and household units."
+  },
+  {
+   "topic": "factories",
+   "level": "hard",
+   "q": "By 1941 over what share of handlooms in India had fly shuttles?",
+   "a": "Over 35 per cent",
+   "w": [
+    "Over 90 per cent",
+    "Under 5 per cent",
+    "Exactly 50 per cent"
+   ],
+   "e": "In Travancore, Madras, Mysore, Cochin and Bengal it was 70 to 80 per cent."
+  },
+  {
+   "topic": "factories",
+   "level": "easy",
+   "q": "According to Vasant Parkar, how were millworkers linked to their villages?",
+   "a": "They went home for harvest and sowing, and mills granted leave for it",
+   "w": [
+    "They never returned to their villages",
+    "They sent their land to the jobber",
+    "They lived permanently in mill housing"
+   ],
+   "e": "Workers moved between village and city.",
+   "passage": "Vasant Parkar, once a millworker in Bombay, said: ‘The workers would pay the jobbers money to get their sons work in the mill … The mill worker was closely associated with his village, physically and emotionally. He would go home to cut the harvest and for sowing. The Konkani would go home to cut the paddy and the Ghati, the sugarcane. It was an accepted practice for which the mills granted leave.’"
+  },
+  {
+   "topic": "factories",
+   "level": "advanced",
+   "q": "Why did weavers of finer cloth survive better than those producing coarse cloth?",
+   "a": "Demand for fine cloth from the well-to-do was stable, and mills could not imitate specialised weaves",
+   "w": [
+    "Fine cloth was made in factories",
+    "The poor bought more fine cloth in famines",
+    "Coarse cloth was banned"
+   ],
+   "e": "Banarasi and Baluchari saris, Madras lungis and handkerchiefs."
+  },
+  {
+   "topic": "factories",
+   "level": "advanced",
+   "q": "Assertion (A): Handloom cloth production almost trebled between 1900 and 1940. Reason (R): Weavers adopted new technology like the fly shuttle that raised productivity without excessively raising costs. Choose the correct option.",
+   "a": "Both A and R are true and R explains A",
+   "w": [
+    "Both A and R are true but R does not explain A",
+    "A is true but R is false",
+    "A is false but R is true"
+   ],
+   "e": "Handicrafts expanded even in the age of factories."
+  },
+  {
+   "topic": "market",
+   "level": "easy",
+   "q": "When buyers saw which words on cloth labels, they were expected to feel confident about quality?",
+   "a": "‘MADE IN MANCHESTER’",
+   "w": [
+    "‘MADE IN SURAT’",
+    "‘SWADESHI’",
+    "‘HAND-WOVEN’"
+   ],
+   "e": "Labels made the place of manufacture and company familiar."
+  },
+  {
+   "topic": "market",
+   "level": "easy",
+   "q": "Why were calendars a good way to advertise in India?",
+   "a": "They were used even by people who could not read and were seen every day",
+   "w": [
+    "They were free newspapers",
+    "They were only for offices",
+    "They were printed in Manchester only"
+   ],
+   "e": "Hung in tea shops, poor homes, offices and apartments."
+  },
+  {
+   "topic": "market",
+   "level": "hard",
+   "q": "Why did Manchester labels carry images of Indian gods and goddesses?",
+   "a": "To give divine approval and make foreign goods appear familiar",
+   "w": [
+    "To mock Indian religion",
+    "Because Indian law required it",
+    "To show the goods were made in temples"
+   ],
+   "e": "Kartika, Lakshmi, Saraswati, Krishna."
+  },
+  {
+   "topic": "market",
+   "level": "hard",
+   "q": "What message did advertisements of Indian manufacturers carry?",
+   "a": "If you care for the nation, buy products that Indians produce – swadeshi",
+   "w": [
+    "Buy only from Manchester",
+    "Royalty uses foreign goods",
+    "Machines are better than hands"
+   ],
+   "e": "Advertisements became a vehicle of the nationalist message."
+  },
+  {
+   "topic": "market",
+   "level": "advanced",
+   "q": "Why were figures of emperors and nawabs used in advertisements?",
+   "a": "If you respect the royal figure, respect the product – its quality could not be questioned",
+   "w": [
+    "They designed the products",
+    "They owned the Manchester mills",
+    "They were banned in India"
+   ],
+   "e": "Maharaja Ranjit Singh appeared on a Manchester label."
+  },
+  {
+   "topic": "pace",
+   "level": "easy",
+   "type": "pairs",
+   "q": "‘{x}’ – who is linked with this?",
+   "pairs": [
+    [
+     "Created the cotton mill",
+     "Richard Arkwright"
+    ],
+    [
+     "Improved the steam engine, patented 1781",
+     "James Watt"
+    ],
+    [
+     "Manufactured Watt’s new engine",
+     "Mathew Boulton"
+    ],
+    [
+     "Devised the Spinning Jenny, 1764",
+     "James Hargreaves"
+    ],
+    [
+     "Set up iron and steel works at Jamshedpur, 1912",
+     "J.N. Tata"
+    ],
+    [
+     "Made a fortune in China trade; six joint-stock companies",
+     "Dwarkanath Tagore"
+    ]
+   ],
+   "e": "{x} → {ans}."
+  },
+  {
+   "topic": "pace",
+   "level": "easy",
+   "type": "pairs",
+   "q": "‘{x}’ – who is linked with this?",
+   "pairs": [
+    [
+     "Created the cotton mill",
+     "Richard Arkwright"
+    ],
+    [
+     "Improved the steam engine, patented 1781",
+     "James Watt"
+    ],
+    [
+     "Manufactured Watt’s new engine",
+     "Mathew Boulton"
+    ],
+    [
+     "Devised the Spinning Jenny, 1764",
+     "James Hargreaves"
+    ],
+    [
+     "Set up iron and steel works at Jamshedpur, 1912",
+     "J.N. Tata"
+    ],
+    [
+     "Made a fortune in China trade; six joint-stock companies",
+     "Dwarkanath Tagore"
+    ]
+   ],
+   "e": "{x} → {ans}."
+  },
+  {
+   "topic": "factories",
+   "level": "hard",
+   "type": "pairs",
+   "q": "‘{x}’ – which year?",
+   "pairs": [
+    [
+     "First cotton mill in Bombay",
+     "1854"
+    ],
+    [
+     "First jute mill in Bengal",
+     "1855"
+    ],
+    [
+     "First spinning and weaving mill of Madras",
+     "1874"
+    ],
+    [
+     "Tata iron and steel works at Jamshedpur",
+     "1912"
+    ],
+    [
+     "Seth Hukumchand’s jute mill in Calcutta",
+     "1917"
+    ],
+    [
+     "Watt patents his steam engine",
+     "1781"
+    ]
+   ],
+   "e": "{x} → {ans}."
+  },
+  {
+   "topic": "factories",
+   "level": "hard",
+   "type": "pairs",
+   "q": "‘{x}’ – which year?",
+   "pairs": [
+    [
+     "First cotton mill in Bombay",
+     "1854"
+    ],
+    [
+     "First jute mill in Bengal",
+     "1855"
+    ],
+    [
+     "First spinning and weaving mill of Madras",
+     "1874"
+    ],
+    [
+     "Tata iron and steel works at Jamshedpur",
+     "1912"
+    ],
+    [
+     "Seth Hukumchand’s jute mill in Calcutta",
+     "1917"
+    ],
+    [
+     "Watt patents his steam engine",
+     "1781"
+    ]
+   ],
+   "e": "{x} → {ans}."
+  },
+  {
+   "topic": "before",
+   "level": "easy",
+   "type": "pairs",
+   "q": "‘{x}’ – what does this term mean?",
+   "pairs": [
+    [
+     "Stapler",
+     "Sorts wool according to its fibre"
+    ],
+    [
+     "Fuller",
+     "Gathers cloth by pleating"
+    ],
+    [
+     "Carding",
+     "Prepares fibres before spinning"
+    ],
+    [
+     "Gomastha",
+     "Company servant supervising weavers"
+    ],
+    [
+     "Jobber",
+     "Old worker who recruited new workers"
+    ],
+    [
+     "Fly shuttle",
+     "Device placing the weft into the warp"
+    ]
+   ],
+   "e": "{x} → {ans}."
+  },
+  {
+   "topic": "before",
+   "level": "easy",
+   "type": "pairs",
+   "q": "‘{x}’ – what does this term mean?",
+   "pairs": [
+    [
+     "Stapler",
+     "Sorts wool according to its fibre"
+    ],
+    [
+     "Fuller",
+     "Gathers cloth by pleating"
+    ],
+    [
+     "Carding",
+     "Prepares fibres before spinning"
+    ],
+    [
+     "Gomastha",
+     "Company servant supervising weavers"
+    ],
+    [
+     "Jobber",
+     "Old worker who recruited new workers"
+    ],
+    [
+     "Fly shuttle",
+     "Device placing the weft into the warp"
+    ]
+   ],
+   "e": "{x} → {ans}."
+  }
+ ]
+}
