@@ -192,9 +192,9 @@
       "subjects": [
         {
           "id": "social",
-          "name": "Social Science – Political Science",
+          "name": "Social Science",
           "status": "ongoing",
-          "note": "Democratic Politics II · Chapters 1–5",
+          "note": "Political Science Ch 1–5 · History Ch I–IV",
           "chapters": [
             {
               "id": "ch1",
@@ -230,6 +230,34 @@
               "status": "ongoing",
               "bank": "10/social/bank-ch5-outcomes-of-democracy.json",
               "tutor": "10/social/tutor-ch5-outcomes-of-democracy.json"
+            },
+            {
+              "id": "h1",
+              "name": "History I · The Rise of Nationalism in Europe",
+              "status": "ongoing",
+              "bank": "10/social/bank-h1-nationalism-europe.json",
+              "tutor": "10/social/tutor-h1-nationalism-europe.json"
+            },
+            {
+              "id": "h2",
+              "name": "History II · Nationalism in India",
+              "status": "ongoing",
+              "bank": "10/social/bank-h2-nationalism-india.json",
+              "tutor": "10/social/tutor-h2-nationalism-india.json"
+            },
+            {
+              "id": "h3",
+              "name": "History III · The Making of a Global World",
+              "status": "ongoing",
+              "bank": "10/social/bank-h3-global-world.json",
+              "tutor": "10/social/tutor-h3-global-world.json"
+            },
+            {
+              "id": "h4",
+              "name": "History IV · The Age of Industrialisation",
+              "status": "ongoing",
+              "bank": "10/social/bank-h4-industrialisation.json",
+              "tutor": "10/social/tutor-h4-industrialisation.json"
             }
           ]
         }

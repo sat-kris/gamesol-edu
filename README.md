@@ -126,7 +126,7 @@ Note: `6/maths/model/CLASS_6_MIDTERM_EXAM_MODEL_PAPER_2026.pdf` on GitHub is emp
 
 Activities are attached in each tutor file as `"play": [{"type": "…", "title": "…", "say": "…"}]`.
 
-## Class X Social Science – Political Science (NCERT Democratic Politics II, Chapters 1–5)
+## Class X Social Science – Political Science (NCERT Democratic Politics II, Chapters 1–5) and History (India and the Contemporary World II, Chapters I–IV)
 
 Files live flat in `10/social/` next to the chapter PDFs (`c1.pdf` … `c5.pdf`):
 
@@ -137,6 +137,18 @@ Files live flat in `10/social/` next to the chapter PDFs (`c1.pdf` … `c5.pdf`)
 | 3 · Gender, Religion and Caste | `bank-ch3-gender-religion-caste.json` | `tutor-ch3-gender-religion-caste.json` | Gender · Religion · Caste |
 | 4 · Political Parties | `bank-ch4-political-parties.json` | `tutor-ch4-political-parties.json` | Why parties · Party systems · National & State parties · Challenges & reforms |
 | 5 · Outcomes of Democracy | `bank-ch5-outcomes-of-democracy.json` | `tutor-ch5-outcomes-of-democracy.json` | Government · Economy · Dignity & freedom |
+
+**History** (added from `cs 01.pdf` … `cs 04.pdf`) sits in the same *Social Science* subject as chapters `h1`–`h4`:
+
+| Chapter | Question bank | Tutor | Topics |
+|---|---|---|---|
+| History I · The Rise of Nationalism in Europe | `bank-h1-nationalism-europe.json` | `tutor-h1-nationalism-europe.json` | French Revolution & Napoleon · Liberals & conservatives · Revolutions 1830–48 · Germany, Italy, Britain · Allegories & Balkans |
+| History II · Nationalism in India | `bank-h2-nationalism-india.json` | `tutor-h2-nationalism-india.json` | War, satyagraha, Rowlatt · Non-Cooperation · Civil Disobedience · How groups saw it · Collective belonging |
+| History III · The Making of a Global World | `bank-h3-global-world.json` | `tutor-h3-global-world.json` | Pre-modern world · 19th-century economy · Colonialism, rinderpest, indenture · Inter-war & Depression · Bretton Woods to globalisation |
+| History IV · The Age of Industrialisation | `bank-h4-industrialisation.json` | `tutor-h4-industrialisation.json` | Proto-industrialisation · Pace of change & hand labour · Weavers & Manchester · Indian factories · Market for goods |
+
+All questions use only facts from these textbook chapters (including source boxes as passages), with chronology and assertion–reason items at Advanced level.
+The History tutors add **timeline** activities (the `order` activity) for dates.
 
 Questions follow the CBSE pattern: one-mark MCQs, assertion–reason, case/source-based passages and "which one?" classification items
 that draw a random fact each time. Each tutor has the big idea, lessons with exam tips, a key-facts sheet, a revision sheet and an
